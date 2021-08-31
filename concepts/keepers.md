@@ -53,7 +53,7 @@ In all cases, the amount that can be given to keepers is capped.
 
 ## 🎁 Keepers for [Staking](staking.md)
 
-Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and, in some cases, stable holders. Governance will be able to specify these parameters \(a rate and a period during which tokens should be released\). 
+Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and, in some cases, stable holders. Governance will be able to specify these parameters (a rate and a period during which tokens should be released). 
 
 Based on the parameters specified by governance, keepers should be the ones calling the `drip` function of the contract handling the distribution of the governance tokens and actually letting the staking contracts know that they can distribute tokens.
 

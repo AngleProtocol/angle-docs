@@ -6,7 +6,7 @@ description: Angle is over-collateralized
 
 ## 🔎 TL;DR
 
-* Thanks to its two types of liquidity providers \(HAs and SLPs\), Angle is an over-collateralized protocol. 
+* Thanks to its two types of liquidity providers (HAs and SLPs), Angle is an over-collateralized protocol. 
 * Due to the protocol's structure, the exact level of over-collateralization that will be reached is still hard to determine.
 
 ## 📐 Collateral Ratio Structure
