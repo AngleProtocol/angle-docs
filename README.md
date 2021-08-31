@@ -6,7 +6,7 @@ description: >-
 
 # Angle Documentation Portal
 
-Welcome to the Angle Protocol Documentation Portal! This portal contains some essential info and key links to understand the fundamentals of the Angle protocol. test
+Welcome to the Angle Protocol Documentation Portal! This portal contains some essential info and key links to understand the fundamentals of the Angle protocol.
 
 So grab a coffee ☕ and enjoy the read! 
 
@@ -40,7 +40,7 @@ The protocol involves 3 populations, very common in other DeFi protocols, which 
 * ![](.gitbook/assets/emoji-ha.png) **Hedging Agents \(HAS\):** who are getting direct leverage in the form of perpetual futures from Angle. They just come to the protocol, choose a pair collateral/stablecoin \(like wETH/USD\) they want to get exposed to, bring some of the chosen collateral and get leveraged with the multiple of their choice on the associated pair. By doing so, they also insure the protocol against the volatility of the collateral brought by stable seekers and thus help the protocol sustain convertibility for users even in case of collateral price drops.
 * ![](.gitbook/assets/emoji-slp.png) **Standard Liquidity Providers \(SLP\)** : who lend money to the protocol and in return get part of the transaction fees induced by stable seekers minting and burning, as well as part of the returns made from lending some of the protocol reserves to lending protocols \(like Compound or Aave\). 
 
-In short, Angle matches people who want stability \(stable seekers\) and people who want volatility \(Hedging Agents who get volatility from the collateral brought by stable seekers\). Yet, there is not always a perfect match between offer and demand of volatility meaning the protocol's collateral may not be fully covered at all times by Hedging Agents. Standard Liquidity Providers, with the additional capital they bring in, serve as a buffer in this marketplace. 
+In short, Angle matches people who want stability (stable seekers) and people who want volatility (Hedging Agents who get volatility from the collateral brought by stable seekers). Yet, there is not always a perfect match between offer and demand of volatility meaning the protocol's collateral may not be fully covered at all times by Hedging Agents. Standard Liquidity Providers, with the additional capital they bring in, serve as a buffer in this marketplace. 
 
 The protocol is implemented as a set of **smart contracts** on top of the Ethereum blockchain. Smart contracts guarantee safety and do not require a middleman. 
 
