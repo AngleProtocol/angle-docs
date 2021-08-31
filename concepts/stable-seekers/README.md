@@ -9,19 +9,19 @@ description: Getting stablecoins from collateral and conversely
 * Users of Angle protocol can mint stablecoins at oracle value by giving collateral to the protocol.
 * They can always burn their stablecoins and get collateral in exchange at oracle value too. 
 * The experience for users is that of a swap except for the fact that there is no slippage on the price at which transactions are executed.
-* They pay small transaction fees (potentially around 0.3%) when they mint and when they burn.  
+* They pay small transaction fees \(potentially around 0.3%\) when they mint and when they burn.  
 
-## 🗺️ Principle 
+## 🗺️ Principle
 
-Angle is designed to be as simple as possible from a user perspective and like USDC (or also USDT), it relies on full convertibility of collateral and stable assets, meaning users can swap collateral against stablecoins as well as stablecoins against collateral at any time.
+Angle is designed to be as simple as possible from a user perspective and like USDC \(or also USDT\), it relies on full convertibility of collateral and stable assets, meaning users can swap collateral against stablecoins as well as stablecoins against collateral at any time.
 
-To generate a stable asset, a user just has to send to the protocol a whitelisted collateral. An oracle then determines how many stablecoins (`ERC-20`tokens) need to be minted and sent to the user. Like in an AMM swap, the collateral received by the protocol does no longer belong to the user.
+To generate a stable asset, a user just has to send to the protocol a whitelisted collateral. An oracle then determines how many stablecoins \(`ERC-20`tokens\) need to be minted and sent to the user. Like in an AMM swap, the collateral received by the protocol does no longer belong to the user.
 
 The same procedure works when users are willing to cash out. They just have to send to the protocol their stablecoins and specify the collateral they want in exchange. In return, they get the chosen collateral in an amount depending on the collateral price specified by the oracle and on the transaction fees. The stablecoins received by the protocol are then burnt.
 
 ## 🖨️ Minting
 
-Let's focus on the case of a stable Euro (agEUR), backed by USDC as collateral (and other collateral types too). If 1 USDC is worth 1€, and if the transaction fees are 0.1%, then a user giving 1000 USDC to the protocol will receive 999 newly minted agEUR.
+Let's focus on the case of a stable Euro \(agEUR\), backed by USDC as collateral \(and other collateral types too\). If 1 USDC is worth 1€, and if the transaction fees are 0.1%, then a user giving 1000 USDC to the protocol will receive 999 newly minted agEUR.
 
 The 1000 USDC given by the user are now in the protocol's reserves.
 
@@ -71,7 +71,7 @@ The structure of the mint transaction fees differs from that of the burn transac
 The exact amount and values of these transaction fees are still to be determined.
 {% endhint %}
 
-Regardless of the amounts chosen, this fee structure will be made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals. 
+Regardless of the amounts chosen, this fee structure will be made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
 
 {% hint style="info" %}
 For non-volatile collateral types like USDC and DAI, mint fees may for instance be as small as 0.1% regardless of the coverage by Hedging Agents.
@@ -81,11 +81,11 @@ Governance could also vote to induce a dependency of the transaction fees on the
 
 ## ❌ Slippage
 
-Mint and burn transactions are always executed at oracle value, meaning that there is no slippage in the price of the transaction. Regardless of the size of the transaction, the price at which it will be executed will remain the same. 
+Mint and burn transactions are always executed at oracle value, meaning that there is no slippage in the price of the transaction. Regardless of the size of the transaction, the price at which it will be executed will remain the same.
 
-However, too big transactions may affect the transaction fees structure (because they can move the coverage ratio and hence the coverage curve), and face different transaction fees than other smaller transactions would have at the same oracle price.
+However, too big transactions may affect the transaction fees structure \(because they can move the coverage ratio and hence the coverage curve\), and face different transaction fees than other smaller transactions would have at the same oracle price.
 
 Given that oracle values may change between the time at which users submit their transactions and the time at which they are executed, the protocol has a form of slippage protection for users that allow them in a mint/burn transaction to specify the minimum amount of stablecoins/collateral they are ready to get from the transaction.
 
-![](../../.gitbook/assets/emoji-user%20%281%29.png)
+![](../../.gitbook/assets/emoji-user%20%283%29.png)
 

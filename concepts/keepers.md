@@ -15,13 +15,13 @@ Keepers are external incentivized actors that help the protocol work smoothly. S
 
 Angle will need multiple types of keepers to get involved. Angle Core Team will develop bots to help keepers achieve some of their operations.
 
-## ⚖️ Arbitrage Keepers 
+## ⚖️ Arbitrage Keepers
 
 Tokens issued by the protocol will be tradable on exchanges and therefore have a market price. [To make the price of these tokens stable](stable-seekers/#stability), the protocol relies on arbitrageurs which will have profitable opportunities whenever the market prices of the tokens deviate from peg.
 
 ## Keepers for Transaction Fees and Slippage
 
-[The slippage](standard-liquidity-providers/#slippage) incurred by Standard Liquidity Providers depends on the collateral ratio of the protocol for the concerned stablecoin. Governance may also choose to introduce a relation between users minting and burning fees and the protocol's collateral ratio for the stablecoin. 
+[The slippage](standard-liquidity-providers/#slippage) incurred by Standard Liquidity Providers depends on the collateral ratio of the protocol for the concerned stablecoin. Governance may also choose to introduce a relation between users minting and burning fees and the protocol's collateral ratio for the stablecoin.
 
 It would actually be pretty expensive to compute the collateral ratio of the protocol on-chain each time a SLP tries to cash out. There is a need for keepers to call the function updating the transaction fees and the slippage induced in case of changes in the collateral ratio.
 
@@ -31,7 +31,7 @@ No specific rewards have been set for these keepers yet. Governance may define a
 
 ## 🍀 Keepers for [Standard Liquidity Providers](standard-liquidity-providers/)
 
-Keepers will also be the agents helping [the yield strategies](lending.md) function effectively and integrate smoothly with the protocol. It is possible that, at a given moment a too important proportion of collateral, is being lent to a strategy. In this case, keepers will be the ones adjusting the debt ratio of the strategy making sure that there are always enough reserves held in the protocol to pay users, SLPs, or HAs who would want to exit the protocol. 
+Keepers will also be the agents helping [the yield strategies](lending.md) function effectively and integrate smoothly with the protocol. It is possible that, at a given moment a too important proportion of collateral, is being lent to a strategy. In this case, keepers will be the ones adjusting the debt ratio of the strategy making sure that there are always enough reserves held in the protocol to pay users, SLPs, or HAs who would want to exit the protocol.
 
 The adjustments will be done within the defined target debt ratio of each strategy. SLPs willing to get as much returns as possible, or governance token holders acting for the good of the protocol are the ones expected to call the functions readjusting the debt ratio.
 
@@ -39,21 +39,21 @@ Governance will be able to vote to set additional rewards in the form of governa
 
 ## 🛡️ Keepers for [Hedging Agents](hedging-agents/)
 
-As explained[ in the Hedging Agents' part](hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs coverage is too important compared to what has been brought by users, then some positions need to be closed. 
+As explained[ in the Hedging Agents' part](hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs coverage is too important compared to what has been brought by users, then some positions need to be closed.
 
-The same goes [for the liquidation of HAs](hedging-agents/#price-decrease-scenario): if the position of an HA is inferior to its maintenance margin, this position should be liquidated. 
+The same goes [for the liquidation of HAs](hedging-agents/#price-decrease-scenario): if the position of an HA is inferior to its maintenance margin, this position should be liquidated.
 
 In both cases, the protocol, which is passive, relies on keepers for enforcing these rules.
 
 Keepers are directly incentivized to close unhealthy perpetuals. In the case of perpetuals that should be liquidated, keepers get a portion of the remaining cash out amount of the perpetual. For the perpetuals being cashed out, keepers get a fraction of the fees that are paid upon cash out.
 
-In the case where there are too many HAs, keepers will be able to select a list of HAs to cash out, and will get higher rewards if cashing out these perpetuals bring the protocol near the desired coverage bounds. 
+In the case where there are too many HAs, keepers will be able to select a list of HAs to cash out, and will get higher rewards if cashing out these perpetuals bring the protocol near the desired coverage bounds.
 
 In all cases, the amount that can be given to keepers is capped.
 
 ## 🎁 Keepers for [Staking](staking.md)
 
-Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and, in some cases, stable holders. Governance will be able to specify these parameters (a rate and a period during which tokens should be released). 
+Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and, in some cases, stable holders. Governance will be able to specify these parameters \(a rate and a period during which tokens should be released\).
 
 Based on the parameters specified by governance, keepers should be the ones calling the `drip` function of the contract handling the distribution of the governance tokens and actually letting the staking contracts know that they can distribute tokens.
 

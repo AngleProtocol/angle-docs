@@ -14,7 +14,7 @@ If Angle's agUSD is backed by wETH and wBTC, a user wishing to swap wETH against
 
 Angle leaves the choice to its users as for the collateral type they can get when burning their stablecoins.
 
-It is however possible that there is an imbalance between the value of the different collateral pools backing a stablecoin. If 100 agEUR are backed by 10 DAI and 150 USDC, the transaction of a user asking DAI against 100 agEUR will fail because there are not enough DAI in reserves to reimburse the user.  
+It is however possible that there is an imbalance between the value of the different collateral pools backing a stablecoin. If 100 agEUR are backed by 10 DAI and 150 USDC, the transaction of a user asking DAI against 100 agEUR will fail because there are not enough DAI in reserves to reimburse the user.
 
 ## Do I still own the collateral I bring to the protocol to mint stablecoins?
 
@@ -26,9 +26,9 @@ No, once the stablecoins are issued, they are not considered as a debt from the 
 
 ## Can I transfer my stablecoins to other addresses?
 
-Yes, Angle's stablecoins (which are called **agTokens**) are standard ERC-20 tokens. They can be exchanged and transferred from one address to another.
+Yes, Angle's stablecoins \(which are called **agTokens**\) are standard ERC-20 tokens. They can be exchanged and transferred from one address to another.
 
-This notably means that someone willing to get Angle's stablecoins may buy it on the open market (like on Uniswap) and without interacting with the protocol. The same goes for people willing to sell their stablecoins.
+This notably means that someone willing to get Angle's stablecoins may buy it on the open market \(like on Uniswap\) and without interacting with the protocol. The same goes for people willing to sell their stablecoins.
 
 Note that having people buying on secondary markets creates an increasing pressure on the market price of the stablecoins, thus incentivizing people to issue new tokens to restore peg.
 

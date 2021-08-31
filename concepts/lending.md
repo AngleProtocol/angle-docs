@@ -13,7 +13,7 @@ description: Getting surplus and proposing yield to the protocol's liquidity pro
 
 ## 💡 Rationale
 
-Lending a fraction of the reserves of the protocol to other lending platforms is part of what can make the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can on the one hand propose interesting yield to Standard Liquidity Providers and on the other hand accumulate some surplus. 
+Lending a fraction of the reserves of the protocol to other lending platforms is part of what can make the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can on the one hand propose interesting yield to Standard Liquidity Providers and on the other hand accumulate some surplus.
 
 ![](../.gitbook/assets/angle_explainers_-_simplified_version_1.jpg)
 
@@ -37,7 +37,7 @@ It was preferred to get inspiration from Yearn rather than using Yearn directly 
 
 ## 💹 Debt Ratio
 
-For each strategy associated to a collateral, it is possible to compute a debt ratio that corresponds to the ratio between what has been lent and the total amount of collateral in the pool (what's kept in reserves + what has been lent across all strategies). Each strategy has its target debt ratio. Below this debt ratio, keepers can call the `harvest` function to give more collateral to the strategy and above this debt ratio, collateral can be withdrawn from the strategy and hence from the corresponding lending platforms.
+For each strategy associated to a collateral, it is possible to compute a debt ratio that corresponds to the ratio between what has been lent and the total amount of collateral in the pool \(what's kept in reserves + what has been lent across all strategies\). Each strategy has its target debt ratio. Below this debt ratio, keepers can call the `harvest` function to give more collateral to the strategy and above this debt ratio, collateral can be withdrawn from the strategy and hence from the corresponding lending platforms.
 
 {% hint style="info" %}
 Keepers cannot choose the amount they lend or withdraw from lending platforms: this is automatically computed using the strategy's target debt ratio at each call to `harvest.`
@@ -45,5 +45,5 @@ Keepers cannot choose the amount they lend or withdraw from lending platforms: t
 
 ## ✖️ Back To The Multiplier Effect For SLPs
 
-Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital. 
+Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital.
 

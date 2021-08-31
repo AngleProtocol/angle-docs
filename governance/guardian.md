@@ -32,6 +32,6 @@ In clear terms, the guardian can:
 * Change references to oracle contracts in case of a massive oracle failure
 
 {% hint style="info" %}
-Everything has been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system. 
+Everything has been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system.
 {% endhint %}
 

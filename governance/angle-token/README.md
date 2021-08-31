@@ -16,7 +16,7 @@ The only situation in which the total supply is likely to inflate is where gover
 
 If the protocol has a too big surplus, some tokens could also be burnt, like Maker does in some situations.
 
-The only address with minting capability is the Angle DAO Timelock. The design of the token has been heavily inspired by Uniswap's UNI token. 
+The only address with minting capability is the Angle DAO Timelock. The design of the token has been heavily inspired by Uniswap's UNI token.
 
 ## 🧬 Tokenomics
 
@@ -27,7 +27,7 @@ The governance token will be distributed as follows:
 * 40% Through staking contracts for stable holders and SLPs or directly to HAs for the community. This mode of distribution is equivalent to that of Compound with the COMP tokens given to lenders and borrowers. Governance will be able to adjust the speed and amount of distribution for each stakeholder. The idea is to favor the SLPs of the different collateral pools.
 * 18% Through the [bonding curve](bonding-curve.md) when it is activated. Whenever the market price of the tokens will be superior to that proposed by the protocol, people will be incentivized to buy to the protocol. The goal is that the money received will serve as a surplus to the protocol.
 * 18% To Angle Core Team. These tokens are subject to a 3-year vesting to make sure that founders and team remain fully committed to the protocol and the community.
-* 10% To seed investors (subject to the same 3-year linear vesting as Angle Core Team)
+* 10% To seed investors \(subject to the same 3-year linear vesting as Angle Core Team\)
 * 10% To Angle's current and future strategic partners
 * 2% For grants and advisors of Angle Labs
 * 2% For future protocol incentive: this is a pocket that is controlled by the DAO and that can be seen as a buffer to avoid token inflation, it could for instance be distributed in the bonding curve or in staking contracts
