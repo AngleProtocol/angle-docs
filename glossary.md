@@ -4,7 +4,7 @@ description: A list of words and terms relating to the Angle Protocol
 
 # 📚 Glossary
 
-Some terms used throughout the documentation may be unfamiliar to our readers. Below, we list some common terms that will help you with your understanding.
+Some terms used throughout the documentation may be unfamiliar to our readers. Below, we list some common terms that will help you with your understanding. 
 
 If you still have some questions, or need some support, please do not hesitate to reach out on the [Angle community Discord server](https://discord.gg/67WSSZqBG6) 🕹️.
 
