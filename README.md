@@ -8,7 +8,7 @@ description: >-
 
 Welcome to the Angle Protocol Documentation Portal! This portal contains some essential info and key links to understand the fundamentals of the Angle protocol.
 
-So grab a coffee ☕ and enjoy the read! correction
+So grab a coffee ☕ and enjoy the read!
 
 {% hint style="success" %}
 Please join the discussion on Angle community [Discord server](https://discord.gg/67WSSZqBG6) 🕹️, our community looks forward to helping you use Angle, improve the protocol or even build on top of it!
