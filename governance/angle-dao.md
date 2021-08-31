@@ -11,7 +11,7 @@ description: The Decentralized Autonomous Organization driving Angle Protocol
 
 ## 🔘 Responsibilities
 
-A core principle of Angle Protocol is its decentralized nature and the DAO that will work on it from the beginning. While Angle Protocol was designed to completely minimize the need for an active governance to maintain the peg of the stablecoins \(arbitrageurs can directly do it\), there is still need for a governance and a DAO to get involved in the protocol's maintenance.
+A core principle of Angle Protocol is its decentralized nature and the DAO that will work on it from the beginning. While Angle Protocol was designed to completely minimize the need for an active governance to maintain the peg of the stablecoins (arbitrageurs can directly do it), there is still need for a governance and a DAO to get involved in the protocol's maintenance.
 
 The DAO will be responsible for parameters tuning, for deploying new stablecoins, for accepting new collateral types for a given stablecoin, for protocol upgrades and integrations.
 
@@ -36,6 +36,6 @@ Angle Protocol implementation enables a flexible access control system. The Time
 Ultimately the Angle DAO makes all of these decisions as the protocol evolves.
 
 {% hint style="info" %}
-Key parameters \(like the quorum, the proposal threshold, the voting delay\) are still to be tuned.
+Key parameters (like the quorum, the proposal threshold, the voting delay) are still to be tuned.
 {% endhint %}
 
