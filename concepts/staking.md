@@ -10,7 +10,7 @@ A portion of Angle's governance tokens will be distributed to stable holders, SL
 
 ## 💡 Rationale
 
-Angle aims to be a decentralized protocol. To this extent, the protocol will only succeed if the ownership of the governance token backing the protocol is decentralized. 
+Angle aims to be a decentralized protocol. To this extent, the protocol will only succeed if the ownership of the governance token backing the protocol is decentralized.
 
 A vast portion of the governance tokens will be distributed through staking contracts by the protocol to Standard Liquidity Providers (in majority), Hedging Agents and stable holders.
 
@@ -33,4 +33,3 @@ The distribution of governance tokens to the different staking contracts will be
 At each block, tokens will be distributed based on the rate specified by governance. If 1000 governance tokens are to be distributed for in 100 blocks (e.g, 10 governance tokens distributed each block), then stakers will receive at a each block a fraction of these 10 tokens depending on what they put in the staking contract and on what other stakers have put at the time of the block.
 
 Once tokens are given to an address, this address can freely dispose of these tokens, as there is no vesting at stake.
-
