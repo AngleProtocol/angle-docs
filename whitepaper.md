@@ -2,7 +2,7 @@
 
 The whitepaper contains a detailed and technical description of Angle's protocol.
 
-{% file src=".gitbook/assets/angle-wp \(1\).pdf" caption="Angle Whitepaper" %}
+{% file src=".gitbook/assets/angle-wp (1).pdf" caption="Angle Whitepaper" %}
 
 {% hint style="info" %}
 The whitepaper is a static document explaining the concept and inspiration for the first version of the protocol. The up-to-date source of truth for Angle Protocol functionality and contracts is this documentation guide.

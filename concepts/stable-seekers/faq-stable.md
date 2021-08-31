@@ -26,9 +26,9 @@ No, once the stablecoins are issued, they are not considered as a debt from the 
 
 ## Can I transfer my stablecoins to other addresses?
 
-Yes, Angle's stablecoins \(which are called **agTokens**\) are standard ERC-20 tokens. They can be exchanged and transferred from one address to another.
+Yes, Angle's stablecoins (which are called **agTokens**) are standard ERC-20 tokens. They can be exchanged and transferred from one address to another.
 
-This notably means that someone willing to get Angle's stablecoins may buy it on the open market \(like on Uniswap\) and without interacting with the protocol. The same goes for people willing to sell their stablecoins.
+This notably means that someone willing to get Angle's stablecoins may buy it on the open market (like on Uniswap) and without interacting with the protocol. The same goes for people willing to sell their stablecoins.
 
 Note that having people buying on secondary markets creates an increasing pressure on the market price of the stablecoins, thus incentivizing people to issue new tokens to restore peg.
 

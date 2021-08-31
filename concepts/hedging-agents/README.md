@@ -6,27 +6,27 @@ description: Insuring the protocol against the volatility of the collateral
 
 ## 🔎 TL;DR
 
-* Hedging Agents \(HAs\) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
+* Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
 * They are here to insure the protocol against the volatility of the collateral brought by users. With enough HAs, the protocol could resist collateral price drops of up to 99%.
 * HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
-* They pay small transaction fees \(potentially around 0.3%\) when they open their position and when they close it.
+* They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
 * Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
-Angle by essence is highly dependent on collateral volatility. If one stable seeker brings 1 wETH and gets 2000 agUSD, if the dollar price of wETH is afterwards divided by 2 \(50% decrease - from 2000$ to 1000$\), and the owner of the 2000 agUSD wants to get collateral back, the protocol would need to give this person 2 wETH: it thus needs to find somewhere in the market 1 wETH to maintain the stability of the tokens.
+Angle by essence is highly dependent on collateral volatility. If one stable seeker brings 1 wETH and gets 2000 agUSD, if the dollar price of wETH is afterwards divided by 2 (50% decrease - from 2000$ to 1000$), and the owner of the 2000 agUSD wants to get collateral back, the protocol would need to give this person 2 wETH: it thus needs to find somewhere in the market 1 wETH to maintain the stability of the tokens.
 
 We say that the protocol needs to insure itself against the volatility of the collateral. While surges in collateral prices are beneficial to the protocol, drops as in the example above are less desirable.
 
-For this reason, Angle created a way to transfer the volatility to other actors willing to get leveraged on the collateral: the Hedging Agents \(HAs\). They are the agents insuring the protocol against drops in collateral prices or surges in stable asset price, making sure that the protocol has always enough reserves to reimburse users.
+For this reason, Angle created a way to transfer the volatility to other actors willing to get leveraged on the collateral: the Hedging Agents (HAs). They are the agents insuring the protocol against drops in collateral prices or surges in stable asset price, making sure that the protocol has always enough reserves to reimburse users.
 
 ## 🔮 Perpetual Futures
 
-Hedging Agents are taking perpetual futures from the protocol. When they come in the protocol to back a given stablecoin, they bring a certain amount of collateral \(their margin\), and choose an amount of the same collateral from the protocol they want to back \(or cover, this is a synonym\). The protocol then stores the oracle value and the timestamp at which they came in the protocol in what we call a perpetual, as well as the timestamp.
+Hedging Agents are taking perpetual futures from the protocol. When they come in the protocol to back a given stablecoin, they bring a certain amount of collateral (their margin), and choose an amount of the same collateral from the protocol they want to back (or cover, this is a synonym). The protocol then stores the oracle value and the timestamp at which they came in the protocol in what we call a perpetual, as well as the timestamp.
 
 Hedging Agents are independent from one another, meaning that the actions of one Hedging Agent have no impact on the position of another Hedging Agent.
 
-Precisely speaking, if a HA enters with an amount `x` of collateral \(`x`is the margin\) and decides to cover the volatility of an amount `y` of the same collateral \(`y` is the amount committed or the position size\) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
+Precisely speaking, if a HA enters with an amount `x` of collateral (`x`is the margin) and decides to cover the volatility of an amount `y` of the same collateral (`y` is the amount committed or the position size) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
 
 At a given point in time this HA is entitled to get from the protocol:
 
@@ -50,7 +50,7 @@ $$
 
 ### 📈 Price Increase Scenario
 
-When the collateral price increases \(with respect to the asset stablecoins are pegged to\), besides their margin \(that is the amount the brought initially\), HAs are entitled to get the capital gains they would have made if they had owned the collateral they covered.
+When the collateral price increases (with respect to the asset stablecoins are pegged to), besides their margin (that is the amount the brought initially), HAs are entitled to get the capital gains they would have made if they had owned the collateral they covered.
 
 If the HA brought 1 wETH and decided to back 1 wETH from the protocol that was at first used to issue agUSD, and if the initial oracle price for wETH is such that 1 wETH is worth 2000$, then:
 
@@ -72,7 +72,7 @@ The HA made 6000$ from her 2000$ initially. If she had just stayed long without 
 
 ### 📉 Price Decrease Scenario
 
-When the collateral price decreases \(with respect to the asset stablecoins are pegged to\), HAs have to pay using the amount they initially brought for the capital losses they would have made if they had owned the collateral they covered.
+When the collateral price decreases (with respect to the asset stablecoins are pegged to), HAs have to pay using the amount they initially brought for the capital losses they would have made if they had owned the collateral they covered.
 
 Back to the previous example, if the price of wETH decreases to 1000$, then the cash out amount of the HA becomes:
 
@@ -172,11 +172,11 @@ The exact values of the transaction fees for HAs for the different collateral ty
 
 The entry transaction fees for HAs is an upfront cost paid when the perpetual is created.
 
-The more is covered \(the higher the coverage ratio\) the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help cover the protocol when the coverage ratio is low: they face low transaction fees in this case.
+The more is covered (the higher the coverage ratio) the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help cover the protocol when the coverage ratio is low: they face low transaction fees in this case.
 
 ![](../../.gitbook/assets/haentry.jpg)
 
-If an HA comes to the protocol with 1000 USDC for the agEUR stablecoin and commits to the variation of 2000 other USDC \(the position size in this case is 2000 USDC\), if the transaction fees are 0.3%, then the protocol considers that the HA has a margin of \(1000 - \(0.003 x 2000\)\) = 994 USDC to cover 2000 USDC.
+If an HA comes to the protocol with 1000 USDC for the agEUR stablecoin and commits to the variation of 2000 other USDC (the position size in this case is 2000 USDC), if the transaction fees are 0.3%, then the protocol considers that the HA has a margin of (1000 - (0.003 x 2000)) = 994 USDC to cover 2000 USDC.
 
 ### Exit Transaction Fees
 
@@ -184,11 +184,11 @@ Exit fees are paid by HAs when they cash out their perpetuals. The more collater
 
 ![](../../.gitbook/assets/haexit.jpg)
 
-If a HA had an initial margin \(initial amount brought\) of 1000 USDC and covered 2000 USDC for the Euro stablecoin protocol, then with 0.3% transaction fees, the HA will get in USDC the current value of her perpetual according to the formula above minus 0.3% of 2000 \(the amount covered\).
+If a HA had an initial margin (initial amount brought) of 1000 USDC and covered 2000 USDC for the Euro stablecoin protocol, then with 0.3% transaction fees, the HA will get in USDC the current value of her perpetual according to the formula above minus 0.3% of 2000 (the amount covered).
 
 ### Fees For Increasing Or Decreasing Leverage
 
-When HAs create a perpetual, they have the opportunity to increase or decrease their margin thus decreasing or increasing the leverage of their perpetual. Fees indeed depend on the position size \(also called committed amount\) of HAs, and since these add/remove operations do not modify the position size \(just the margin\), no fees are paid for such operations.
+When HAs create a perpetual, they have the opportunity to increase or decrease their margin thus decreasing or increasing the leverage of their perpetual. Fees indeed depend on the position size (also called committed amount) of HAs, and since these add/remove operations do not modify the position size (just the margin), no fees are paid for such operations.
 
 ![](../../.gitbook/assets/emoji-ha%20%281%29%20%281%29.png)
 
