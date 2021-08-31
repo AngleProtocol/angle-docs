@@ -192,5 +192,5 @@ When HAs create a perpetual, they have the opportunity to increase or decrease t
 
 
 
-![](../../.gitbook/assets/emoji-ha%20%281%29.png)
+![](../../.gitbook/assets/emoji-ha%20%281%29%20%286%29.png)
 

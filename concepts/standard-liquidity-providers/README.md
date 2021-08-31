@@ -66,5 +66,5 @@ One rule that can be set to incentivize SLPs to re-capitalize a pool when the ov
 
 These fees will only be recovered by SLPs once the pool becomes collateralized again, and they will be distributed in a proportion that depends on the composition of the pool at the time of re-collateralization. This means that a new SLP giving money to re-collateralize a pool may receive transaction fees for transactions that occurred before her arrival in the pool.
 
-![](../../.gitbook/assets/emoji-slp%20%281%29.png)
+![](../../.gitbook/assets/emoji-slp%20%281%29%20%285%29.png)
 
