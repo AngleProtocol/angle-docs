@@ -42,6 +42,21 @@ For instance, if a user brought 10 wETH to issue 20000 agUSD, then this amount i
 
 If the target proportion that HAs are allowed to cover is 90%, then after the burn the amount to cover by HAs is 5000 \* 0.9 = 4500 agUSD stablecoins. This means that the sum of the committed amount (in collateral) times the entry oracle rates for each HA should be no more than 4500.
 
+**Why is that quantity in stablecoins?**
+Let's say that there is one HA in the protocol that entered at a time where the price of collateral with respect to the stablecoin was `p_e` and commits to an amount of collateral of `c`. HAs are not allowed to hedge more collateral that is in the protocol. To this extent, `c` must be collateral in the protocol's reserves, brought by a user minting stablecoins.
+
+If the HA cashes out at a moment in which the collateral is worth `p`, if we imagine that there was only `c` of collateral in the protocol before the HA came in, then the protocol ends up with:
+
+$$
+c - \texttt{PnL} =  c \cdot \frac{p_e}{p}
+$$
+
+This means that the protocol has enough in reserves to burn:
+
+$$
+c \cdot \frac{p_e}{p} \cdot p = c \cdot p_e \texttt{ stablecoins}
+$$
+
 ## How is the amount covered by HAs computed?
 
 For a given stablecoin-collateral pair, it is the sum of the product between the amount covered by each HA perpetual and the entry rate when this perpetual was created. It is hence expressed in stablecoin value.
@@ -109,4 +124,3 @@ For a perpetual on the pair USDC (collateral) / EUR (stablecoin), the maximum le
 Yes. When coming in the protocol and creating a perpetual, HAs can specify the maximum oracle value they are willing to see stored in their perpetual.
 
 The same goes for HAs cashing out their perpetual: they can specify the smallest oracle value below which they do not want their transaction executed.
-
