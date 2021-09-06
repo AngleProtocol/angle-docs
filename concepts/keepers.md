@@ -6,8 +6,8 @@ description: Helping the protocol achieve its desired outcome
 
 ## 🔎 TL;DR
 
-* Keepers help the protocol perform some tasks which cannot be performed automatically.
-* Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
+- Keepers help the protocol perform some tasks which cannot be performed automatically.
+- Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
 
 ## 💡 Rationale
 
@@ -39,7 +39,7 @@ Governance will be able to vote to set additional rewards in the form of governa
 
 ## 🛡️ Keepers for [Hedging Agents](hedging-agents/)
 
-As explained[ in the Hedging Agents' part](hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs coverage is too important compared to what has been brought by users, then some positions need to be closed.
+As explained[ in the Hedging Agents' part](hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs hedging is too important compared to what has been brought by users, then some positions need to be closed.
 
 The same goes [for the liquidation of HAs](hedging-agents/#price-decrease-scenario): if the position of an HA is inferior to its maintenance margin, this position should be liquidated.
 
@@ -58,4 +58,3 @@ Staking is the mechanism by which governance tokens are distributed to HAs, SLPs
 Based on the parameters specified by governance, keepers should be the ones calling the `drip` function of the contract handling the distribution of the governance tokens and actually letting the staking contracts know that they can distribute tokens.
 
 Keepers are incentivized by receiving governance tokens upon calling this function.
-
