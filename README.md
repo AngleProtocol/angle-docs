@@ -8,10 +8,10 @@ description: >-
 
 Welcome to the Angle Protocol Documentation Portal! It contains essential info and key links to understand the fundamentals of the Angle protocol.
 
-Grab a coffee ☕ and enjoy the read!
+So grab a coffee ☕ and enjoy the read!
 
 {% hint style="success" %}
-Please join the discussion our [Discord server](https://discord.gg/67WSSZqBG6) 🕹️, our community is looking forward to help you use Angle, improve the protocol or even build on top of it!
+Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 🕹️, our community is looking forward to help you use Angle, improve the protocol or even build on top of it!
 {% endhint %}
 
 {% hint style="info" %}
@@ -22,7 +22,7 @@ Please join the discussion our [Discord server](https://discord.gg/67WSSZqBG6) �
 
 ### 🏅 Over-Collateralized, Decentralized, and Capital-Efficient Stablecoin Protocol
 
-Angle is the first over-collateralized, decentralized and capital-efficient stablecoin protocol. It offers full convertibility between stable assets and collateral at oracle value: with 1 of collateral, you get 1 of stablecoin and conversely.
+Angle is the first over-collateralized, decentralized and capital-efficient stablecoin protocol. It offers full convertibility between stable assets and collateral at oracle value: you can swap 1 of collateral against 1 of stablecoin and conversely.
 
 This makes the protocol both capital efficient and highly liquid.
 
@@ -36,9 +36,9 @@ Stable USD, CHF, and KRW should be following EUR after launch.
 
 The protocol involves 3 agents, very common in other DeFi protocols, which all bring something to Angle, while benefitting from the protocol:
 
-- **Stable Seekers/Holders, or Users:** they can swap accepted collateral against stable assets back and forth (minting & burning stablecoins) with no slippage and small transaction fees, and hold or use these stablecoins.
+- **Stable Seekers/Holders, or Users:** they can swap collateral against stable assets, and conversely swap stable assets against a whitelisted collateral of their choice at oracle value, with no slippage and small transaction fees.
 
-- **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to open positions on the available pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
+- **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to take positions on perpetuals futures on the available collateral/stablecoins pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
 
 - **Standard Liquidity Providers (SLP)** : they lend collateral to the protocol in return of a share of minting and burning fees, and of the rewards earned from investing part of the protocol reserves into yield-earning strategies.
 
@@ -60,7 +60,7 @@ Angle is currently being developed by its Core Team and community. Any help and 
 
 There is a large number of ways to build decentralized stablecoins, and we, at Angle, see the stablecoin space as a large playground where we explore ways to make a cool, sustainable and robust design.
 
-Angle community Discord is where we collectively organize ourselves to build the best protocol possible and help everyone understand what Angle is all about!
+Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
 ## Other Resources
 
