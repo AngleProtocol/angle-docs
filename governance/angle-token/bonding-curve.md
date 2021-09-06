@@ -42,4 +42,3 @@ $$
 In very few cases, governance will be able to vote and change the start price (and/or) the total amount of governance tokens to sell with this mechanism.
 
 This is mostly going to be the case when the protocol is at risk. To recollateralize the protocol, governance will be able to change the start price and decrease it below market price, to make buying governance tokens from the protocol more attractive to external users. This mechanism is equivalent to Maker's Flop auctions.
-
