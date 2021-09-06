@@ -23,7 +23,7 @@ The Angle DAO can make the following changes:
 * Deploy/revoke new strategies to get yield
 * Deploy/revoke collateral types
 * Add/remove incentives contracts for stable holders, SLPs and HAs
-* Upgrade oracles and other contracts throughout the system 
+* Upgrade oracles and other contracts throughout the system
 * Change bonding curve parameters
 * Deploy the surplus of the protocol
 
