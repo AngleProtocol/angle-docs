@@ -28,7 +28,7 @@ There are no fees for removing or adding collateral as margin to a position.
 
 ## Can HAs always open new positions with the protocol?
 
-With Angle, Hedging Agents are here to hedge the protocol against collateral volatility that was brought by users. If HAs hedge the total amount of collateral in the protocol, HAs won't be able to open new positions.
+With Angle, Hedging Agents are here to cover the volatility of the collateral that was brought by users. If the amount of collateral from users is worth `x` of stablecoins and HAs already cover this amount, then new ones will not be able to enter the protocol.
 
 To put it in other words, Angle can be seen as a marketplace between stability and volatility seekers. If the supply of volatility is fully taken by HAs, then the protocol cannot offer more leveraged positions (and thus more volatility) than what it has already offered.
 
@@ -69,7 +69,7 @@ This amount should always remain inferior to the target amount HAs should hedge 
 
 The hedging ratio refers to the portion of the amount to hedge by Hedging Agents that is actually hedged.
 
-If one user mints 2000 agUSD for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agUSD is 1800 USD of wETH. If one HA enters the protocol when wETH is worth 1000 USD, brings 2 wETH and decides to commit to the variation of 0.8 wETH (this HA has a leveraged of x1.4), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
+If one user mints 2000 agUSD for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agUSD is 1800 USD of wETH. If one HA enters the protocol when wETH is worth 1000 USD, brings 2 wETH and decides to commit to the variation of 0.8 wETH (this HA has a leverage of x1.4), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
 
 ## What happens if there are too many HAs with respect to the amount to hedge from the protocol?
 
@@ -78,6 +78,8 @@ At any given point in time, HAs could hedge more than the target hedge amount.
 In case this happens, the protocol has two parameters: the target hedging ratio, and the limit hedging ratio.
 
 The target heding ratio gives the amount to be hedged by HAs. Above this ratio, HAs can't open positions anymore. The limit hedging ratio is the maximum hedging ratio possible in the protocol. If HAs start hedging more than this ratio because of users burning stablecoins, their positions can be automatically cashed out.
+
+Imagine the limit hedging ratio is defined at 95%, then if `0.9x/(x-y)` becomes superior to `0.95`, then some HAs could be cashed out till the amount covered by HAs is back in the bounds again (below the target hedging ratio).
 
 When a HA position is cashed out like that, the HA gets back its margin plus any unrealized PnL. Keepers are responsible for cashing out HAs positions in such cases.
 
@@ -89,7 +91,7 @@ In this case, the HA will get everything that can be given to her from the colla
 
 ## Can I open multiple perpetuals?
 
-A HA can own multiple perpetuals across a similar pool. For example, a HA can choose to have atwo positions on the wETH/USD pair, one with a x5 leverage, and the other with a x2 leverage. Each position has its dedicated margin (isolated margin perpetuals).
+A HA can own multiple perpetuals across a similar pool. For example, a HA can choose to have two positions on the wETH/USD pair, one with a x5 leverage, and the other with a x2 leverage. Each position has its dedicated margin (isolated margin perpetuals).
 
 Once the amount hedged by a HA has been set, it can no longer be modified. For instance if a HA opens a position of 5 wETH with 1 wETH of collateral as margin, the HA can add or remove collateral from this perpetual to change the leverage, but it can never modify this amount committed (also defined as the position size). The solution would be to cash out this position and to open a new one.
 
@@ -107,11 +109,11 @@ This is a parameter that can be modified by protocol governance.
 
 ## Is there a maintenance margin like in centralized exchanges?
 
-Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin dependd on the stablecoin/collateral pair concerned. For instance for wETH/USD pair, the maintenance margin should be set at `6.25%`.
+Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/USD pair, the maintenance margin should be set at `6.25%`.
 
 ## Are there minimum or maximum leverage as a HA on Angle?
 
-There is no minimal leverage, meaning you can come as a HA in the protocol, bring 2 wETH and open a positiong of only 0.001 wETH (thus hedging only that amount).
+There is no minimal leverage, meaning you can come as a HA in the protocol, bring 2 wETH and open a position of only 0.001 wETH (thus hedging only that amount).
 
 There is a maximum leverage though. This parameter will depend on the volatility of the pairs. For instance, for a perpetual on the pair wETH/USD, the maximum leverage allowed will be 10.
 

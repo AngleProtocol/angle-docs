@@ -7,14 +7,14 @@ description: Insuring the protocol against collateral volatility.
 ## 🔎 TL;DR
 
 - Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
-- They are here to insure the protocol against the volatility of the collateral brought by users.
+- They are here to insure the protocol against the volatility of the collateral brought by users. With enough demand for HAs, the protocol could resist collateral price drops of up to 99%.
 - HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
 - They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
 - Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
-Angle by essence is highly dependent on collateral volatility. If one stable seeker brings 1 wETH against 2000 agUSD and the price of wETH then decreases by 50% (1 wETH = 1000$), the protocol now owes 2 wETH to the stable holder. It needs to find 1 wETH to ensure the redeemability of stablecoins and maintain their stability.
+Angle by essence is highly dependent on collateral volatility. Let's say one stable seeker brings 1 wETH against 2000 agUSD and the price of wETH then decreases by 50% (from 2000$ to 1000$). The protocol then needs to find 1 wETH to ensure the redeemability of the 2000$ of stablecoins and maintain their stability.
 
 We say that the protocol needs to insure itself against the volatility of the collateral. While surges in collateral prices are beneficial to the protocol, drops, as in the example above, are less desirable.
 
@@ -22,7 +22,7 @@ For this reason, Angle transfers this volatility to other actors looking to get 
 
 ## 🔮 Perpetual Futures
 
-Hedging Agents are taking perpetual futures from the protocol. When they come in the protocol to open a position, they bring a certain amount of collateral (their margin), and choose an amount of the same collateral from the protocol they want to hedge. The protocol then stores the oracle value and timestamp at which they opened a position.
+Hedging Agents are taking perpetual futures from the protocol. When they come in the protocol to open a position, they bring a certain amount of collateral (their margin), and choose an amount of the same collateral from the protocol they want to hedge (or cover/back). The protocol then stores the oracle value and timestamp at which they opened a position.
 
 Hedging Agents are independent from one another, meaning that the actions of one Hedging Agent have no impact on the position of another Hedging Agent.
 
@@ -72,7 +72,7 @@ The HA made 6000$ from her 2000$ initially. If she had just stayed long without 
 
 ### 📉 Price Decrease Scenario
 
-When the collateral price decreases (with respect to the asset stablecoins are pegged to), HAs will incur losses on their margin.
+When the collateral price decreases (with respect to the asset stablecoins are pegged to), HAs will incur losses on their margin as if they had owned the collateral they covered.
 
 Back to the previous example, if the price of wETH decreases to 1000$, then the cash out amount of the HA becomes:
 
@@ -118,17 +118,17 @@ This quantity remains constant and only depends on variables fixed upon HAs entr
 
 The total amount hedged by HAs for a given collateral/stablecoin pair is hence the sum of the product between the amount committed by HAs and their entry price: it is a measure of how much stablecoins issued are backed and insured.
 
-This quantity is compared to the amount of collateral needed by the protocol to pay back users in case they all want to burn their stablecoins. It is expressed in stablecoins. HAs are able to hedge a fraction of this quantity (close to 100%): this is called the `target hedge amount` .
+This quantity is compared to the amount of collateral `in stablecoin value` needed by the protocol to pay back users in case they all want to burn their stablecoins. For example, if a user brings 1 wETH to mint 2000 agUSD, and another one burns 1000 agUSD, the amount to hedge is 1000 USD of wETH. HAs are able to hedge a fraction of this quantity (close to 100%): this is called the target hedge amount .
 
 The heding ratio of the protocol for a given stablecoin/collateral pair is hence defined as:
 
 $$
-\texttt{hedging ratio} = \frac{\texttt{HAs stablecoin hedge amount}}{\texttt{target hedge amount in stablecoin value}}
+\texttt{Hedging Ratio} = \frac{\texttt{HAs stablecoin hedge amount}}{\texttt{Target hedge amount in stablecoin value}}
 $$
 
 ## 🏢 Insurance of the Protocol Against Collateral Volatility
 
-Above was explained how each HA helps to insure the protocol always have enough collateral to pay back users burning stablecoins. Here we explain in a more imaged way how that clearly works in case of a price increase or decrease of the collateral.
+Here we explain in a more imaged way how the protocol can always have enough collateral to pay back users burning stablecoins in case of price changes of the collateral.
 
 If HAs have a 6x leverage and back all the collateral in the protocol that was used to issue stablecoins:
 
@@ -166,7 +166,7 @@ Exit fees are paid by HAs when they cash out their perpetuals. The more collater
 
 ![](../../.gitbook/assets/haexit.jpg)
 
-If a HA had an initial margin of 1 wETH USDC and a position size of 2 wETH, then with 0.3% transaction fees, the HA will get in wETH the current value of her perpetual according to the cash out formula above minus 0.3% of 2 wETH (the amount hedged at the open).
+If a HA had an initial margin of 1 wETH and a position size of 2 wETH, then with 0.3% transaction fees, the HA will get in wETH the current value of her perpetual according to the cash out formula above minus 0.3% of 2 wETH (the amount hedged at the opening).
 
 ### Fees To Add or Remove Margin
 

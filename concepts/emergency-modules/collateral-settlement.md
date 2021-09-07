@@ -16,7 +16,7 @@ The main risk with protocols ensuring full convertibility is the risk of bank ru
 
 The emergency shutdown mechanism has been designed to make sure there is no sequentiality in the process, and that the first-arrived to redeem collateral will not necessarily be the first-served.
 
-While this process was built to prioritize stablecoin holders, it has also been thought to favor governance tokens owners. This helps incentivize users to get involved in the governance of the protocol. It's also a way to increase token sales through the bonding curve of the protocol, and potentially avoiding the necessity to go through this collateral settlement process.
+While this process was built to prioritize stablecoin holders, it has also been thought to favor governance tokens owners, which incentivizes users to get involved in the governance of the protocol. On a side note, this is a way to create an upwards pressure on the governance token price, thus making governance tokens sales through the bonding curve of the protocol more efficient.
 
 ## ⏱️ Process Timeline
 
@@ -34,7 +34,7 @@ SLPs can claim collateral by sending their sanTokens. Again here, HAs and SLPs c
 
 After the claim period, the protocol computes the amount it has in reserves, converts the claims of users which were in stablecoin value in collateral value and then computes the total amount of claims and how much of collateral each category of stakeholders should receive. The protocol pays back stable holders with governance tokens first, then stable holders without governance tokens, followed by HAs and SLPs which had governance tokens, and lastly HAs and SLP without governance tokens.
 
-Each stakeholder in a category therefore gets reimbursed proportionally to their claim with a proportional ratio that depends on their category. It is hence possible that stable holders which came with governance tokens are fully reimbursed, that stable holders without governance tokens only get half of their claim and that others do not get anything back. If a category (like LPs with governance tokens) is not fully paid back, then the following categories won't be paid back as well.
+Each stakeholder in a category therefore gets reimbursed proportionally to their claim with a proportional ratio that depends on their category. It is hence possible that stable holders which came with governance tokens are fully reimbursed, that stable holders without governance tokens only get half of their claim and that others do not get anything back. If a category (like LPs with governance tokens) is not fully paid back, then the following categories (in this case LPs without governance tokens) won't be paid back as well.
 
 ![Settlement Process](../../.gitbook/assets/settlementprocess2.jpg)
 
@@ -48,7 +48,7 @@ For instance let's say that this ratio is 2. This means that for each governance
 
 ## 🌊 Waterfall Between the Different Categories of Stakeholders
 
-At the end of the claim period, the protocol computes how much each category should get. There is an order with which each category gets reimbursed. If one category is not fully paid back, then the following ones won't get anything. This is illustrated by the following examples. Note that they illustrate situations after which the value of user claims in stablecoins has been converted to collateral:
+At the end of the claim period, the protocol computes how much each category should get. There is an order with which each category gets reimbursed. If one category is not fully paid back, then the following ones will not get anything. This is illustrated by the following examples. Note that they illustrate situations after which the value of user claims in stablecoins has been converted to collateral:
 
 ![](../../.gitbook/assets/settlementscenario1.jpg)
 
@@ -60,7 +60,7 @@ At the end of the claim period, the protocol computes how much each category sho
 
 The collateral settlement process concerns a single collateral type for a given stablecoin. To trigger the complete emergency shutdown of a stablecoin, collateral settlement should be initiated for all collateral accepted for this stablecoin.
 
-If different collateral settlements are triggered for a same stablecoin, stablecoin holders have the possibility to redeem the collateral of their choice. If two collaterals `A` and `B` are being settled, to prevent stablecoin holders from all redeeming collateral `A` and not collateral `B` thus penalizing SLPs and HAs of collateral `A`, the protocol caps the amount it is possible to claim for users for a given stablecoin. The cap is set to the same quantity as the one used to compute Hedging Agents hedging: it is the amount of collateral corresponding to the outstanding stablecoin value.
+If different collateral settlements are triggered for a same stablecoin, stablecoin holders have the possibility to redeem the collateral of their choice. If two collaterals `A` and `B` are being settled, to prevent stablecoin holders from all redeeming collateral `A` and not collateral `B` thus penalizing SLPs and HAs of collateral `A`, the protocol caps the amount it is possible to claim for users for a given stablecoin. The cap is set to the same quantity as the one used to compute Hedging Agents hedge: it is the amount of collateral corresponding to the outstanding stablecoin value.
 
 Another remark is that the reason why stable holders are not handled with the same oracle value as HAs is to prevent arbitrages among them during collateral settlement. If the value used to compute the claims in collateral was that of the beginning of the claim period (the one used for HA), then if this value decreased during the claim period meaning that stable holders would end up getting less than what they would get at current oracle value: there could be incentives for them not to claim anything because they could be treated at a more advantageous oracle value by burning their stablecoins and asking for a collateral that is not being settled.
 

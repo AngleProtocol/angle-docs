@@ -21,7 +21,7 @@ Here, we explore all the responses the protocol can give in case of distress. It
 
 Hedging Agents can enter the protocol with even very small leverage like x1.01, or x1.1. To be over-collateralized, the protocol doesn't need HAs to take on highly leveraged positions.
 
-Even if demand for perpetual futures decreases, the protocol should remain cheaper than most protocols allowing to get on-chain leverage, wether it is borrowing platforms (Aave, Compound) or perpetual protocols (PERP, Pika). In normal times, when demand for leverage is high and almost all the collateral is hedged, transaction fees are set so that it is slightly more expensive to open a position. When demand for perpetual futures drop, fees drop (following the hedging curve) and Angle becomes much cheaper than other on-chain protocols.
+Even if demand for perpetual futures decreases, the protocol should remain cheaper than most protocols allowing to get on-chain leverage, like Aave or Compound. In normal times, when demand for leverage is high and almost all the collateral is hedged, transaction fees are set so that it is slightly more expensive to open a position. When demand for perpetual futures drop, fees drop (following the hedging curve) and Angle becomes much cheaper than other on-chain protocols.
 
 It should also be cheaper to get leverage with Angle than with centralized exchanges. With Angle, traders only pay entry and exit fees: there is no funding cost. It is more cost efficient for Hedging Agents that have a long-term horizon to open positions on Angle rather than on a centralized exchange, as this funding rate ususally represents a high cost.
 
@@ -74,8 +74,6 @@ The following page explains how in details this collateral settlement process wo
 ## 📜 Stablecoins Independence
 
 The protocol's stablecoins are independent from one another, meaning that if one stablecoin fails, other stablecoins will not be impacted. The collateral pools related to each stablecoin are different and separated from one another, and the contracts behind have different addresses.
-
-Most parameters in the protocol are specific to a given collateral / stablecoin pair, though they are expected to be similar when the collaterals belong to a similar category (like USDC and DAI for example).
 
 ![Division of pools and collaterals](../../.gitbook/assets/division-of-funds.jpg)
 
