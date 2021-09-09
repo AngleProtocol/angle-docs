@@ -3,10 +3,10 @@
 ## Opening
 
 1. To open a position on Angle, you first need to select a collateral/stablecoin pair.
-2. Then, similarly to an isolated-margin exchange, they need to select the amount of collateral they will lock in Angle as margin for their position.
-3. After that, they can select their leverage or position size. Leverage in Angle is computed as $(margin + position Size)/margin$.
+2. Then, similarly to an isolated-margin exchange, you need to select the amount of collateral you want to lock in Angle as margin for your position.
+3. After that, select the leverage or position size of your choice. Leverage in Angle is computed as $(margin + position Size)/margin$.
 4. The collateral/stablecoin exchange rate and fee are displayed.
-5. Users need to approve their collateral.
+5. You then need to approve your collateral.
 6. Clicking the `Open position` button will send the margin to the protocol and open the leveraged position.
 
 {% hint style="warning" %}
