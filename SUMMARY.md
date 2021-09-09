@@ -29,7 +29,7 @@
   - [Opening & Managing Leveraged Positions](resources/user-guides/ha-positions.md)
   - [SLP Pools](resources/user-guides/slp-pools.md)
   - [Staking Pools](resources/user-guides/staking-pools.md)
-  - [App FAQ](resources/app-faq.md)
+  - [App FAQ](resources/user-guides/app-faq.md)
 
 ## Governance
 

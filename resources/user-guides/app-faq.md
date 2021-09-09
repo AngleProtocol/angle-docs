@@ -47,7 +47,7 @@ In the case there isn't enough funds in a pool Hadging Agents are withdrawing fr
 
 ### Why are the APYs different for same asset pools?
 
-As detailed [here](../faq.md), all collateral/agTokens pools are separated and managed by independent contract. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
+As detailed [here](../../faq.md), all collateral/agTokens pools are separated and managed by independent contract. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
 
 Additionally, the amount put by users minting on these pools will differ, which will impact the multiplier effect explained here [link to multiplier effect explanation], and change the APYs for SLPs.
 
