@@ -2,7 +2,7 @@
 
 You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewards.
 
-The rewards schedule can be consulted here. The weights between pools will be updated weekly by governance.
+The weights between pools will be updated weekly by governance.
 
 On the main Staking page, you can choose to `Stake` your tokens, `Claim` your rewards, or `Unstake` your tokens (which will claim rewards simultaneously).
 

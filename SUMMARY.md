@@ -24,12 +24,12 @@
 
 ## Resources
 
-- [📔 User Guides](resources/user-guides/README.md)
+- [📔 App Guides & Resources](resources/user-guides/README.md)
   - [Minting & Burning agTokens](resources/user-guides/mint-burn.md)
   - [Opening & Managing Leveraged Positions](resources/user-guides/ha-positions.md)
   - [SLP Pools](resources/user-guides/slp-pools.md)
   - [Staking Pools](resources/user-guides/staking-pools.md)
-- [🧐 App FAQ](resources/app-faq.md)
+  - [App FAQ](resources/app-faq.md)
 
 ## Governance
 

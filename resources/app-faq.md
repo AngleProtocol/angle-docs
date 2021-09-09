@@ -14,9 +14,10 @@ The negative side-effect is that users need to approve collateral not just once,
 
 There might by two rare cases in which a user is unable to burn agTokens:
 
-1. The pool users want to withdraw collateral from doesn't have enough collateral in reserves.
+1. The pool users want to withdraw collateral from doesn't have enough collateral in reserves because it is lent out. In this case, they should wait for the next harvest() call from strategies, which should send funds back to the pool.
 2. Users can't burn more agTokens for a collateral than what has been issued using this collateral.
-   In both cases, users can always burn the agTokens using another collateral.
+
+In both cases, users can always burn the agTokens using another collateral.
 
 ## Hedging Agents
 
@@ -38,19 +39,19 @@ If your open position is not displayed in your positions list, it means it has b
 
 The protocol has a target hedge ratio, and a limit hedge ratio (higher than the target). When the hedge ratio goes above the target, traders are unable to open new positions. When it goes above the limit, some positions can be force-closed to make the hedge ratio go back to the target.
 
-### What happens if the protocol doesn't have enough funds in reserve?
+### Why did I receive sanTokens upon removing collateral/closing my positions?
 
-In the case of Hedging Agents, the protocol will always let them get out of a position and close their exposure. However, if there isn't enough funds as well, Hedging Agents will first get the collateral present in the pool, and then receive an amount of sanTokens from the collateral/stablecoin pool they had a position on for the remaining value of collateral they should get. They can then sell those sanTokens whenever the pools have more funds.
+In the case there isn't enough funds in a pool Hadging Agents are withdrawing from, they will first get the collateral present in the pool, and then receive an amount of sanTokens for the remaining value of collateral they should get. They can then sell those sanTokens whenever the pools have more funds.
 
 ## Standard Liquidity Providers
 
 ### Why are the APYs different for same asset pools?
 
-As detailed here [link to the global FAQ], all collateral/agTokens pools are separated and managed by independent contract. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
+As detailed [here](../faq.md), all collateral/agTokens pools are separated and managed by independent contract. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
 
 Additionally, the amount put by users minting on these pools will differ, which will impact the multiplier effect explained here [link to multiplier effect explanation], and change the APYs for SLPs.
 
-### What happens if the pools doesn't have enough funds?
+### Why can't I withdraw my collateral?
 
 If SLPs want to withdraw more funds that are currently in a pool (due to funds being lent out), their transactions will get reverted. To prevent this from happening, we display an alert informing the users and preventing them to make the transaction.
 

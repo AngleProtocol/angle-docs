@@ -6,13 +6,13 @@ To use the protocol in testnet, you need to connect to the Rinkeby network.
 
 <div style="text-align: center;"><img src="../../.gitbook/assets/metamask-rinkeby-userguide.jpg" width="60%"></div>
 
-Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by following the instructions below (from [Teller guide](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)):
+Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by following the instructions below\*:
 
 1. Go to your preferred social media platform, and create a public tweet or post with your Ethereum wallet address.
 
 ![](../../.gitbook/assets/tweet-address-userguide.png)
 
-2. Open a new tab and go to https://faucet.rinkeby.io/, enter the link to your post and select the amount of test Ethers you would like.
+2. Open a new tab and go to https://faucet.rinkeby.io/, enter the link to your post and select the amount of test ETH you would like. You will need some to pay for gas.
 
 ![](../../.gitbook/assets/rinkeby-ethfaucet-userguide.png)
 
@@ -22,7 +22,7 @@ Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by foll
 
 4. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
 
-You should now be all set up to start testing Angle!
+You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)!
 
 {% page-ref page="mint-burn.md" %}
 
@@ -31,3 +31,5 @@ You should now be all set up to start testing Angle!
 {% page-ref page="slp-pools.md" %}
 
 {% page-ref page="staking-pools.md" %}
+
+\*guide from [Teller](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)
