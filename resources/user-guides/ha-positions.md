@@ -10,7 +10,7 @@
 6. Clicking the `Open position` button will send the margin to the protocol and open the leveraged position.
 
 {% hint style="warning" %}
-Be careful, when opening a position, updating and closing will be locked for an hour. More info [here](../user-faq.md).
+Be careful, when opening a position, updating and closing will be locked for an hour. More info [here](../app-faq.md).
 {% endhint %}
 
 ## Updating

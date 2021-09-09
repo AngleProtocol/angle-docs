@@ -1,10 +1,10 @@
-# User Guides
+# 📔 User Guides
 
 ## Testnet Users
 
 To use the protocol in testnet, you need to connect to the Rinkeby network.
 
-![](../../.gitbook/assets/metamask-rinkeby-userguide.jpg)
+<div style="text-align: center;"><img src="../../.gitbook/assets/metamask-rinkeby-userguide.jpg" width="60%"></div>
 
 Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by following the instructions below (from [Teller guide](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)):
 
@@ -18,7 +18,7 @@ Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by foll
 
 3. Then, if you want to get USDC or DAI, go to https://app.compound.finance/, and connect with Metamask on Rinkeby. If you click on any Supply Markets coin, you will see a FAUCET button at the bottom.
 
-![](../../.gitbook/assets/compound-daifaucet-userguide.png)
+<div style="text-align: center;"><img src="../../.gitbook/assets/compound-daifaucet-userguide.png" width="60%"></div>
 
 4. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
 
