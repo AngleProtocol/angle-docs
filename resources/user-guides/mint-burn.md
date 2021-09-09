@@ -2,7 +2,7 @@
 
 ## Minting
 
-1. Go to app.angle.money.
+1. Go to [app.angle.money](https://app.angle.money).
 2. Select the collateral you want to send, and the stablecoin you want to mint/receive.
    - Supported collaterals: DAI, USDC, wETH, wBTC
    - Available agTokens: agEUR, agUSD, agKRW, ...
