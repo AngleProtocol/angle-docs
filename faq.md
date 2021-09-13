@@ -32,7 +32,7 @@ Governance will be able to vote for new stablecoins.
 
 ## When will new stablecoins be launched?
 
-Governance and Angle DAO will have the power to vote for the launch of new stablecoins. It is the will of Angle Core Team to create an Angle stable Dollar short after the launch of the stable Euro, and to wait to have enough liquidity and integrations on existing stablecoins before launching new ones.
+Governance and Angle DAO will be able to vote for the launch of new stablecoins. Angle Core Team wants to create an Angle stable Dollar short after the launch of the stable Euro, and to wait to have enough liquidity and integrations on existing stablecoins before launching new ones.
 
 Angle Core Team hopes that the DAO will share this stance, which will dictate the timeline with which new stablecoins are deployed.
 

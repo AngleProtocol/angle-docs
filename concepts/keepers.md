@@ -23,7 +23,7 @@ Tokens issued by the protocol will be tradable on exchanges and therefore have a
 
 [The slippage](standard-liquidity-providers/#slippage) incurred by Standard Liquidity Providers depends on the collateral ratio of the protocol for the concerned stablecoin. Governance may also choose to introduce a relation between users minting and burning fees and the protocol's collateral ratio for the stablecoin.
 
-It would actually be pretty expensive to compute the collateral ratio of the protocol on-chain each time a SLP tries to cash out. There is a need for keepers to call the function updating the transaction fees and the slippage induced in case of changes in the collateral ratio.
+It would actually be pretty expensive to compute the collateral ratio of the protocol on-chain each time a SLP tries to withdraw. There is a need for keepers to call the function updating the transaction fees and the slippage induced in case of changes in the collateral ratio.
 
 {% hint style="info" %}
 No specific rewards have been set for these keepers yet. Governance may define an off-chain reward mechanism based on on-chain data.
@@ -45,9 +45,9 @@ The same goes [for the liquidation of HAs](hedging-agents/#price-decrease-scenar
 
 In both cases, the protocol, which is passive, relies on keepers for enforcing these rules.
 
-Keepers are directly incentivized to close unhealthy perpetuals. In the case of perpetuals that should be liquidated, keepers get a portion of the remaining cash out amount of the perpetual. For the perpetuals being cashed out, keepers get a fraction of the fees that are paid upon cash out.
+Keepers are directly incentivized to close unhealthy positions. In the case of perpetuals that should be liquidated, keepers get a portion of the remaining cash out amount. For those being force-closed, keepers get a fraction of the closing fees.
 
-In the case where there are too many HAs, keepers will be able to select a list of HAs to cash out, and will get higher rewards if cashing out these perpetuals bring the protocol near the desired coverage bounds.
+In the case where there are too many HAs, keepers will be able to select a list of HAs positions to close, and will get higher rewards if cashing out these perpetuals bring the protocol near the desired coverage bounds.
 
 In all cases, the amount that can be given to keepers is capped.
 
