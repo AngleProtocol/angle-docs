@@ -38,4 +38,3 @@ Ultimately the Angle DAO makes all of these decisions as the protocol evolves.
 {% hint style="info" %}
 Key parameters (like the quorum, the proposal threshold, the voting delay) are still to be tuned.
 {% endhint %}
-
