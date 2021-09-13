@@ -8,7 +8,7 @@ To use the protocol in testnet, you need to connect to the Rinkeby network.
 
 Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by following the instructions below\*:
 
-1. Go to your preferred social media platform, and create a public tweet or post with your Ethereum wallet address.
+1. Go to your preferred social media platform, and write a public tweet or post with your Ethereum wallet address.
 
 ![](../../.gitbook/assets/tweet-address-userguide.png)
 
@@ -16,11 +16,15 @@ Once you are connected to Rinkeby, you can get testnet ETH, USDC and DAI by foll
 
 ![](../../.gitbook/assets/rinkeby-ethfaucet-userguide.png)
 
-3. Then, if you want to get USDC or DAI, go to https://app.compound.finance/, and connect with Metamask on Rinkeby. If you click on any Supply Markets coin, you will see a FAUCET button at the bottom.
+3. On Angle, you will need to use wETH. You can go to [Uniswap](https://app.uniswap.org) or any other DEX working on Rinkeby and wrap your ETH there. You can also get wBTC from one of these exchanges.
+
+<div style="text-align: center;"><img src="../../.gitbook/assets/uniswap-weth.png" width="60%"></div>
+
+4. Then, if you want to get USDC or DAI, go to https://app.compound.finance/, and connect with Metamask on Rinkeby. If you click on any Supply Markets coin, you will see a FAUCET button at the bottom.
 
 <div style="text-align: center;"><img src="../../.gitbook/assets/compound-daifaucet-userguide.png" width="60%"></div>
 
-4. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
+5. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
 
 You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)!
 
