@@ -1,5 +1,13 @@
 # 📔 User Guides
 
+{% page-ref page="mint-burn.md" %}
+
+{% page-ref page="ha-positions.md" %}
+
+{% page-ref page="slp-pools.md" %}
+
+{% page-ref page="staking-pools.md" %}
+
 ## Testnet Users
 
 To use the protocol in testnet, you need to connect to the Rinkeby network.
@@ -29,13 +37,5 @@ Then, if you want to get USDC or DAI, go to https://app.compound.finance/, and c
 5. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
 
 You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)!
-
-{% page-ref page="mint-burn.md" %}
-
-{% page-ref page="ha-positions.md" %}
-
-{% page-ref page="slp-pools.md" %}
-
-{% page-ref page="staking-pools.md" %}
 
 \*guide from [Teller](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)
