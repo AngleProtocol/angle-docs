@@ -22,6 +22,13 @@
 - [🚑 Risks and Emergency Modules](concepts/emergency-modules/README.md)
   - [⌛ Collateral Settlement](concepts/emergency-modules/collateral-settlement.md)
 
+## Governance
+
+- [🗳 Angle DAO](governance/angle-dao.md)
+- [🚀 ANGLE Token](governance/angle-token/README.md)
+  - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
+- [💂 Angle Guardian](governance/guardian.md)
+
 ## Resources
 
 - [📔 App Guides & Resources](resources/user-guides/README.md)
@@ -30,13 +37,6 @@
   - [SLP Pools](resources/user-guides/slp-pools.md)
   - [Staking Pools](resources/user-guides/staking-pools.md)
   - [App FAQ](resources/user-guides/app-faq.md)
-
-## Governance
-
-- [🗳 Angle DAO](governance/angle-dao.md)
-- [🚀 ANGLE Token](governance/angle-token/README.md)
-  - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
-- [💂 Angle Guardian](governance/guardian.md)
 
 ## Community
 
