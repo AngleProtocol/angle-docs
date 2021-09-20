@@ -49,7 +49,7 @@ In the case there is not enough funds in a pool Hadging Agents are withdrawing f
 
 All collateral/agTokens pools are separated and managed by independent contracts. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
 
-Additionally, the amount put by users minting on these pools will differ, which will impact the multiplier effect explained [here](concepts/standard-liquidity-providers#multiplier-effect), and change the APYs for SLPs.
+Additionally, the amount put by users minting on these pools will differ, which will impact the multiplier effect explained [here](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect), and change the APYs for SLPs.
 
 ### Why can't I withdraw my collateral?
 
