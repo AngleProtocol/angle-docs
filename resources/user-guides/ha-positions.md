@@ -27,7 +27,7 @@ If you have some open positions, you might want to add or remove margin to some 
 ## Closing
 
 1. To close a position, click on the `Close` button of the positions you would like to close.
-2. You can then check oour position opening and current prices, as well as the amount you are going to get upon closing.
+2. You can then check your position's opening and current prices, as well as the amount you are going to get when closing it.
 3. Click on the `Close` button to confirm the transaction and receive the cash out amount (margin ± PnL).
 
 {% hint style="info" %} Upon closing a position, there is also an expert mode to protect for important slippage in price or in fees.
