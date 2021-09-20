@@ -38,8 +38,9 @@
   - [Staking Pools](resources/user-guides/staking-pools.md)
   - [App FAQ](resources/user-guides/app-faq.md)
 
-## Community
+## Ecosystem
 
+- [📀 App](https://app.angle.money/)
 - [🕹️ Discord](https://discord.gg/67WSSZqBG6)
 - [🐦 Twitter](https://twitter.com/AngleProtocol)
 - [🌳 Medium](https://blog.angle.money)
