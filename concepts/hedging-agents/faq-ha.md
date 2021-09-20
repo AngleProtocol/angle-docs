@@ -59,11 +59,11 @@ $$
 
 ## How is the amount hedged by HAs computed?
 
-For a given stablecoin-collateral pair, it is the sum of the product between the amount hedged by each HA perpetual and the entry rate when this perpetual was created. It is expressed in stablecoin value.
+For a given stablecoin-collateral pair, it is the sum of the product between the amount hedged by each HA perpetual and the entry rate when this perpetual was opened. It is expressed in stablecoin value.
 
 This amount is updated whenever a HA position is opened, closed, or liquidated.
 
-This amount should always remain inferior to the target amount HAs should hedge (as specified [above](faq-ha.md#how-is-the-collateral-to-cover-by-has-computed)). Above this amount hedged, HAs are no longer allowed to open perpetual positions on Angle. Additionally, if HAs hedge significantly more than the target hedge amount, then keepers can force cash out of some positions.
+This amount should always remain inferior to the target amount HAs should hedge (as specified [above](faq-ha.md#how-is-the-collateral-to-cover-by-has-computed)). Above this amount hedged, HAs are no longer allowed to open perpetual positions on Angle. Additionally, if HAs hedge significantly more than the target hedge amount, then keepers can force-close some positions.
 
 ## What is exactly implied by hedging ratio?
 
@@ -85,7 +85,7 @@ When a HA position is cashed out like that, the HA gets back its margin plus any
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
-It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves will be lent and thus not immediately available, that when a HA tries to cash out her position there is not enough collateral in the pool to which she contributed.
+It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves will be lent and thus not immediately available, that when a HA tries to close her position there is not enough collateral in the pool to which she contributed.
 
 In this case, the HA will get everything that can be given to her from the collateral pool, and the rest will be given in Standard Liquidity Providers' tokens (called sanTokens).
 
@@ -93,7 +93,7 @@ In this case, the HA will get everything that can be given to her from the colla
 
 A HA can own multiple perpetuals across a similar pool. For example, a HA can choose to have two positions on the wETH/USD pair, one with a x5 leverage, and the other with a x2 leverage. Each position has its dedicated margin (isolated margin perpetuals).
 
-Once the amount hedged by a HA has been set, it can no longer be modified. For instance if a HA opens a position of 5 wETH with 1 wETH of collateral as margin, the HA can add or remove collateral from this perpetual to change the leverage, but it can never modify this amount committed (also defined as the position size). The solution would be to cash out this position and to open a new one.
+Once the amount hedged by a HA has been set, it can no longer be modified. For instance if a HA opens a position of 5 wETH with 1 wETH of collateral as margin, the HA can add or remove collateral from this perpetual to change the leverage, but it can never modify this amount committed (also defined as the position size). The solution would be to close this position and to open a new one.
 
 A HA can also own perpetuals across multiple pairs for different stablecoins. For instance, a HA could have a perpetual on the pair USDC/EUR, and another perpetual on the pair wETH/USD.
 

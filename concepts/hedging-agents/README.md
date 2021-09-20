@@ -140,7 +140,7 @@ If HAs have a 6x leverage and back all the collateral in the protocol that was u
 
 ## 🪙 Transaction Fees
 
-In Angle, Hedging Agents have to pay small transaction fees when they come in and when they cash out from the protocol. These transaction fees are computed on the amount that is committed by the HA (the position size). Entry and exit fees for HAs depend on hedging curves, which define transaction fees for HAs based on the hedging ratio of the protocol.
+In Angle, Hedging Agents have to pay small transaction fees when they open and close positions from the protocol. These transaction fees are computed on the amount that is committed by the HA (the position size). Entry and exit fees for HAs depend on hedging curves, which define transaction fees for HAs based on the hedging ratio of the protocol.
 
 {% hint style="success" %}
 Note that on Angle, there is no funding rate to be paid by perpetual futures holders as opposed to most perps exchanges. This allow traders to hold their positions longer at a much lower cost.
@@ -152,7 +152,7 @@ The exact values of the transaction fees for HAs for the different collateral ty
 
 ### Entry Transaction Fees
 
-The entry transaction fees for HAs is an upfront cost paid when the perpetual is created.
+The entry transaction fees for HAs is an upfront cost paid when a HA opens a position.
 
 The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the protocol when the hedging ratio is low: transactions fees would be lower in this case.
 
@@ -162,7 +162,7 @@ Let' say a HA comes to the protocol with 1 wETH and opens a 2 wETH poisition (he
 
 ### Exit Transaction Fees
 
-Exit fees are paid by HAs when they cash out their perpetuals. The more collateral is hedged by HAs, the less expensive it is to exit the protocol. When the hedging ratio is low, HAs should be discouraged to exit with higher transaction fees.
+Exit fees are paid by HAs when they close their perpetuals. The more collateral is hedged by HAs, the less expensive it is to exit the protocol. When the hedging ratio is low, HAs should be discouraged to exit with higher transaction fees.
 
 ![](../../.gitbook/assets/haexit.jpg)
 
@@ -170,6 +170,6 @@ If a HA had an initial margin of 1 wETH and a position size of 2 wETH, then with
 
 ### Fees To Add or Remove Margin
 
-When HAs create a perpetual, they have the opportunity to add or remove to their margin thus decreasing or increasing their leverage. As entry and exit fees depend only on the position size (or committed amount) of HAs, and these add/remove operations do not modify it, no fees are paid for such operations.
+When HAs open a perpetual, they have the opportunity to add or remove to their margin thus decreasing or increasing their leverage. As entry and exit fees depend only on the position size (or committed amount) of HAs, and these add/remove operations do not modify it, no fees are paid for such operations.
 
 ![](../../.gitbook/assets/emoji-ha%20%281%29%20%281%29.png)
