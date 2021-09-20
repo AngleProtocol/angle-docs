@@ -1,3 +1,7 @@
+---
+description: How to get yield as a SLP using Angle app
+---
+
 # Standard Liquidity Providers Pools
 
 Each collateral/stablecoin pair on Angle has a dedicated pool, which funds are invested into yearn-like strategies to put the protocol capital to work and earn interests. You can deposit your collateral on the pools of your choice. Even though some pools have the same tokens, they don't necessarily have the same APY. The reason why is explained in the [App FAQ](app-faq.md).
