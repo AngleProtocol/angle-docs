@@ -25,5 +25,5 @@ On Angle testnet, you will need to use wETH, wBTC, USDC or DAI. To get these col
 You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)! In the following pages, we explain how to interact with protocol.
 
 {% hint style="info" %}
-This guide has been heavily inspired from [Teller](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)
+This guide has been heavily inspired from this other [one](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby) made by Teller.
 {% endhint %}
