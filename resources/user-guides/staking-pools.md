@@ -4,7 +4,7 @@ You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewa
 
 The weights between pools will be updated weekly by governance.
 
-On the main Staking page, you can choose to `Stake` your tokens, `Claim` your rewards, or `Unstake` your tokens (which will claim rewards simultaneously).
+On the main Staking page, you can choose to `Stake` your tokens, `Claim` your rewards, or `Unstake` your tokens (which will claim rewards simultaneously if you unstake everything you staked).
 
 You need to have either agTokens or sanTokens to be able to stake with Angle.
 
