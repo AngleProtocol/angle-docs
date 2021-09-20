@@ -7,7 +7,7 @@ description: How to mint and burn agTokens using Angle app
 ## Minting
 
 1. Go to [app.angle.money](https://app.angle.money).
-2. Make sure that you got DAI, USDC, wETH or wBTC, as well as ETH to pay for gas fees. Check this [user duide](README.md) we have made for how to get testnet tokens.
+2. Make sure that you got DAI, USDC, wETH or wBTC, as well as ETH to pay for gas fees. Check this [user guide](README.md) we have made for how to get testnet tokens.
 3. Select the collateral you want to send, and the stablecoin you want to mint/receive.
    - Supported collaterals: DAI, USDC, wETH, wBTC
    - Available agTokens: agEUR, agUSD, agJPY, agGBP, agCHF...
