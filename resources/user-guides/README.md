@@ -18,18 +18,8 @@ On Angle testnet, you will need to use wETH, wBTC, USDC or DAI. To get these col
 ![Compound Faucet](../../.gitbook/assets/compound-daifaucet-userguide.png)
 5. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
 
-You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)!
-
-In the following pages, we explain how to interact with protocol.
-
-{% page-ref page="mint-burn.md" %}
-
- {% page-ref page="ha-positions.md" %}
-
- {% page-ref page="slp-pools.md" %}
-
- {% page-ref page="staking-pools.md" %}
+You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)! In the following pages, we explain how to interact with protocol.
 
 {% hint style="info" %}
-This guide is from [Teller](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)
+This guide has been heavily inspired from [Teller](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby)
 {% endhint %}
