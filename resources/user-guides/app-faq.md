@@ -4,7 +4,7 @@
 
 ### Why do I need to approve the same token multiple times?
 
-In Angle, all funds tied to a specific collateral/agToken pair are managed by an individual contract. This increases security, as failures of one stablecoin or collateral in the protocol shouldn't impact the others. It also allows more flexibility in the protocol.
+In Angle, all funds tied to a specific collateral/agToken pair are managed by an individual contract. This increases security, as failures of one stablecoin or collateral in the protocol should not impact the others. It also allows for more flexibility in the protocol.
 
 The negative side-effect is that users need to approve collateral not just once, but for each collateral/agToken pair. Approvals should even be given twice for each pair: one for minting as a user and depositing as a SLP, and one to open positions as a Hedging Agent.
 
@@ -25,7 +25,7 @@ In both cases, users can always burn the agTokens using another collateral.
 
 The goal of the protocol is to balance the size of open positions (demand for volatility) with the quantity of agTokens issued from collateral (supply of volatility) for each collateral/agToken pair.
 
-The protocol has a target ratio of its balance called the target hedge ratio. When the current hedge ratio goes above this target, the protocol prevents HAs (traders) to open new leverage positions, which would increase this imbalance.
+The protocol tracks the ratio for each pair between the amount hedged by HAs and the available amount to hedge. This ratio is called the hedge ratio, and the protocol aims for a target. When the current hedge ratio goes above this target, the protocol prevents HAs (traders) to open new leverage positions, which would increase this imbalance.
 
 ### Why can't I update or close my position?
 
