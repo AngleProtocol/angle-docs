@@ -1,3 +1,7 @@
+---
+description: How to stake agTokens or sanTokens to get ANGLE governance tokens using Angle app
+---
+
 # Staking Pools
 
 You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewards.

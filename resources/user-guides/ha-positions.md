@@ -1,3 +1,7 @@
+---
+description: How to open, modify or close perpetual futures positions on Angle app
+---
+
 # Opening Leveraged Positions on Angle
 
 ## Opening
