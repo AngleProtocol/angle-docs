@@ -4,12 +4,13 @@ description: A list of words and terms relating to the Angle Protocol
 
 # 📚 Glossary
 
-Some terms used throughout the documentation may be unfamiliar to our readers. Below, we list some common terms that will help you with your understanding. 
+Some terms used throughout the documentation may be unfamiliar to our readers. Below, we list some common terms that will help you with your understanding.
 
 If you still have some questions, or need some support, please do not hesitate to reach out on the [Angle community Discord server](https://discord.gg/67WSSZqBG6) 🕹️.
 
 | Term | Description |
 | :---: | :--- |
+| **Collateral** | Cryptocurrency asset (USDC, DAI, wETH, wBTC, ...) held in reserves supporting the value of the stablecoins issued by the protocol. |
 | 💱 [**User**](concepts/stable-seekers/) | Someone using the protocol to get stablecoins from collateral or to redeem collateral from stablecoins. This is sometimes used interchangeably with the terms stable seeker (for someone willing to get stablecoins) or stable holder (for someone owning Angle's stablecoins). |
 | 🛡️ [**Hedging Agent (HA)**](concepts/hedging-agents/) | Stakeholder of Angle's protocol helping to hedge it against price volatility of the accepted collaterals. Hedging Agents get long leveraged positions through perpetual futures from Angle, actually hedging the protocol in case of a decrease in price of the collateral. |
 | 🍀 [**Standard Liquidity  Providers (SLP)**](concepts/standard-liquidity-providers/) | The third type of stakeholders involved in the protocol are called SLPs. They bring additional collateral to the protocol, and get yield and transaction fees in exchange. They are here as a buffer for when Hedging Agents do not cover all the collateral brought by users. In short, they are insuring the protocol against the risk of not having enough HAs positions. |
@@ -27,4 +28,3 @@ If you still have some questions, or need some support, please do not hesitate t
 | 💹  [**Debt Ratio**](concepts/lending.md#debt-ratio) | For a strategy used for a stablecoin/collateral pool, it refers to the ratio between how much of a collateral is deployed in a strategy and the total amount of collateral tied to the pool the strategy relates to. This total amount includes the amount in the contract corresponding to the pool and the sum of the amounts given to related strategies. Each strategy of the protocol has a target debt ratio. |
 | 🏭  [**Keeper**](concepts/keepers.md) | A keeper is an individual or a bot that carries out actions that are needed to keep the protocol functioning. They are usually incentivized to perform such actions. Angle Protocol uses different types of keepers. |
 | 🔱 [**Oracle**](concepts/oracles.md) | Oracles are third-party services that allow smart contracts within blockchains to receive external data from outside of their ecosystem. They are mainly used to make cryptocurrency market prices available and usable on-chain. The protocol relies on [Chainlink](https://chain.link) and [Uniswap V3 TWAP oracles](https://uniswap.org/blog/uniswap-v3/). |
-
