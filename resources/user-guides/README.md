@@ -10,24 +10,16 @@ To use [the protocol](https://app.angle.money) in testnet, you need to connect t
 
 ![Metamask Rinkeby](../../.gitbook/assets/metamask-rinkeby-userguide.jpg)
 
-On Angle testnet, you will need to use wETH, wBTC, USDC or DAI. To get these collateral types on Rinkeby, you can follow the instructions below:
+On Angle testnet, you will need ETH to pay for gas, and wETH, wBTC, USDC or DAI to use the app. We built a faucet at [app.angle.money/#/faucet](https://app.angle.money/#/faucet) so you can receive these tokens quickly!
 
-1. Go to your preferred social media platform, and write a public tweet or post with your Ethereum wallet address.
-![Ethereum Address Tweet](../../.gitbook/assets/tweet-address-userguide.png)
-2. Open a new tab and go to this [faucet](https://faucet.rinkeby.io/), enter the link to your post and select the amount of test ETH you would like. You will need some to pay for gas.
-![Faucet](../../.gitbook/assets/rinkeby-ethfaucet-userguide.png)
-3. To wrap your ETH and get wETH, you can go to [Uniswap](https://app.uniswap.org) or any other DEX working on Rinkeby. You can also get wBTC from one of these exchanges.
-![Uniswap](../../.gitbook/assets/uniswap-weth.png)
-4. Then, if you want to get USDC or DAI, go to [Compound](https://app.compound.finance/), and connect with Metamask on Rinkeby. If you click on any Supply Markets coin, you will see a FAUCET button at the bottom.
-![Compound Faucet](../../.gitbook/assets/compound-daifaucet-userguide.png)
-5. Click on the FAUCET button and confirm the transaction to receive Rinkeby testnet tokens you can use on Angle.
+Here are the steps to follow:
 
-You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money)! In the following pages, we explain how to interact with protocol.
+1. Post a tweet mentionning [@AngleProtocol](https://twitter.com/AngleProtocol/) and containing your Ethereum address.
+   <img width="" src="../../.gitbook/assets/tweet-address-userguide.png">
 
-{% hint style="info" %}
-If you are still having trouble getting testnet tokens, you can also ask on [Discord](https://discord.gg/xvQr7q7BHn) for some Rinkeby ETH, WETH, WBTC, DAI and USDC!
-{% endhint %}
+2. Go to [app.angle.money/#/faucet](https://app.angle.money/#/faucet), paste the link of your tweet, and click on **Get Tokens**.
+   ![Faucet](../../.gitbook/assets/faucet.jpg)
 
-{% hint style="info" %}
-This guide has been heavily inspired from this other [one](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby) made by Teller.
-{% endhint %}
+3. After a few minutes, you should receive some ETH, wETH, wBTC, USDC, and DAI. In case our faucet is down, you can also follow [this](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby) guide.
+
+You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money/#/faucet)! In the following pages, we explain how to interact with the protocol.
