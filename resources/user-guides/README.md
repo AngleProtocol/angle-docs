@@ -15,9 +15,8 @@ On Angle testnet, you will need ETH to pay for gas, and wETH, wBTC, USDC or DAI 
 Here are the steps to follow:
 
 1. Post a tweet mentionning [@AngleProtocol](https://twitter.com/AngleProtocol/) and containing your Ethereum address.
-   <img width="600" src="../../.gitbook/assets/tweet-address-userguide.png">
+   ![Tweet Screenshot](../../.gitbook/assets/tweet-address-userguide.png)
 2. Go to [app.angle.money/#/faucet](https://app.angle.money/#/faucet), paste the link of your tweet, and click on **Get Tokens**.
-   <img width="600" src="../../.gitbook/assets/faucet.jpg">
 3. After a few minutes, you should receive some ETH, wETH, wBTC, USDC, and DAI.
 
 You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money/#/faucet)! In the following pages, we explain how to interact with the protocol.
