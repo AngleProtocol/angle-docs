@@ -33,3 +33,4 @@ In clear terms, the guardian can:
 {% hint style="info" %}
 Everything has been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system. For instance, a guardian cannot modify references to an oracle contract and hence manipulate prices at its advantage.
 {% endhint %}
+

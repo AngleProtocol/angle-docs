@@ -1,8 +1,8 @@
 ---
-description: How to open, modify or close perpetual futures positions on Angle app
+description: 'How to open, modify or close perpetual futures positions on Angle app'
 ---
 
-# Opening Leveraged Positions on Angle
+# Opening & Managing Leveraged Positions
 
 ## Opening
 
@@ -32,7 +32,9 @@ If you have some open positions, you might want to add or remove margin to some 
 
 1. To close a position, click on the `Close` button of the positions you would like to close.
 2. You can then check your position's opening and current prices, as well as the amount you are going to get when closing it.
-3. Click on the `Close` button to confirm the transaction and receive the cash out amount (margin ± PnL).
+3. Click on the `Close` button to confirm the transaction and receive the cash out amount \(margin ± PnL\).
 
-{% hint style="info" %} Upon closing a position, there is also an expert mode to protect for important slippage in price or in fees.
+{% hint style="info" %}
+Upon closing a position, there is also an expert mode to protect for important slippage in price or in fees.
 {% endhint %}
+

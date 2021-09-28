@@ -6,7 +6,7 @@ description: Insuring the insurance (Hedging Agents)
 
 ## 🔎 TL;DR
 
-* Standard Liquidity Providers (SLPs) deposit collateral in the protocol and automatically accrue interests on it.
+* Standard Liquidity Providers \(SLPs\) deposit collateral in the protocol and automatically accrue interests on it.
 * Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
 * SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
 * They may face a small slippage when they exit the protocol if it is not enough collateralized.
@@ -15,14 +15,14 @@ description: Insuring the insurance (Hedging Agents)
 
 Standard Liquidity Providers are the buffer for the moments when hedging agents do not fully cover the collateral that was brought by users.
 
-They entrust Angle with their liquidity and like liquidity providers in other protocols (Compound, Uniswap, Aave), they automatically accrue interests on the assets they brought. The risk for them is to incur a slippage when the protocol is not enough collateralized and they want to cash out.
+They entrust Angle with their liquidity and like liquidity providers in other protocols \(Compound, Uniswap, Aave\), they automatically accrue interests on the assets they brought. The risk for them is to incur a slippage when the protocol is not enough collateralized and they want to cash out.
 
 ## 🎁 Rewards
 
 There are different incentives for SLPs to come to Angle:
 
 * A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
-* At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves will automatically be transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
+* At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves will automatically be transferred to strategies \(like Yearn strategies\) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
 
 The fraction of transaction fees and the fraction of lending returns going to SLPs correspond to two different parameters controlled by governance.
 
@@ -50,7 +50,7 @@ When the collateral ratio is too small, in order to guarantee that any owner of 
 
 For instance if the slippage is 10%, then a SLP willing to get 100 of collateral back will only be able to get 90, and the 10 of collateral difference will never be recovered.
 
-The slippage factor will depend on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio (for instance 101%), SLPs will face no slippage.
+The slippage factor will depend on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio \(for instance 101%\), SLPs will face no slippage.
 
 {% hint style="info" %}
 The exact structure of the slippage function is still to be determined before launch.
@@ -66,4 +66,5 @@ One rule that can be set to incentivize SLPs to re-capitalize a pool when the ov
 
 These fees will only be recovered by SLPs once the pool becomes collateralized again, and they will be distributed in a proportion that depends on the composition of the pool at the time of re-collateralization. This means that a new SLP giving money to re-collateralize a pool may receive transaction fees for transactions that occurred before her arrival in the pool.
 
-![](../../.gitbook/assets/emoji-slp%20%281%29.png)
+![](../../.gitbook/assets/emoji-slp%20%281%29%20%282%29%20%286%29.png)
+

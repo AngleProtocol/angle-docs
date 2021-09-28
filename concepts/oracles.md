@@ -6,12 +6,12 @@ description: Giving the protocol access to price feeds
 
 ## 🔎 TL;DR
 
-* Angle combines Uniswap V3 Time Weighted Average Price (TWAP) using a 5 minute time window with Chainlink oracles to provide price feeds for each collateral/stablecoin pair.
+* Angle combines Uniswap V3 Time Weighted Average Price \(TWAP\) using a 5 minute time window with Chainlink oracles to provide price feeds for each collateral/stablecoin pair.
 * If Uniswap's value differs from that of Chainlink, the protocol chooses the value which is most at its advantage.
 
 ## 🔮 Angle's Need for Oracles
 
-Angle Protocol lets people swap their collateral against the protocol's native stablecoins (minting). It also allows Hedging Agents to take leveraged long positions through perpetual futures on a collateral/stablecoin pair. The protocol needs to be able to access price feeds for all the supported collateral/stablecoin pairs: it does so using oracles.
+Angle Protocol lets people swap their collateral against the protocol's native stablecoins \(minting\). It also allows Hedging Agents to take leveraged long positions through perpetual futures on a collateral/stablecoin pair. The protocol needs to be able to access price feeds for all the supported collateral/stablecoin pairs: it does so using oracles.
 
 For instance, if USD and EUR stablecoins are supported, and if, for each of these, wETH and wBTC are used as collateral, then the protocol needs to be able to have the following oracle feeds: wBTC/USD, wBTC/EUR, wETH/USD, wETH/EUR.
 
@@ -31,15 +31,15 @@ On Uniswap, Angle will always consider that 1 USDC is worth 1 USD.
 
 ## 🔀 Combining Uniswap and Chainlink Feeds
 
-For some pairs, Uniswap V3 pools may not be sufficient. For instance, for a wETH/EUR pair, there may not be a Uniswap V3 pool allowing to get the price of wETH versus EUR (even in an indirect way using a circuit of pools). To this extent, the protocol may have to use a combination of a Uniswap and a Chainlink feeds to get the price of wETH vs. EUR.
+For some pairs, Uniswap V3 pools may not be sufficient. For instance, for a wETH/EUR pair, there may not be a Uniswap V3 pool allowing to get the price of wETH versus EUR \(even in an indirect way using a circuit of pools\). To this extent, the protocol may have to use a combination of a Uniswap and a Chainlink feeds to get the price of wETH vs. EUR.
 
-In this case, the protocol uses an only-Chainlink feed (wETH/USD then USD/EUR) and a feed made up of Uniswap for the part wETH/USD and Chainlink for the part USD/EUR, compares both feeds and chooses the one that is most at its advantage.
+In this case, the protocol uses an only-Chainlink feed \(wETH/USD then USD/EUR\) and a feed made up of Uniswap for the part wETH/USD and Chainlink for the part USD/EUR, compares both feeds and chooses the one that is most at its advantage.
 
 ## 🚁 Front-Running Risk and How We Prevent it
 
-Given that Angle lets people swap their collateral against stablecoins with no slippage, and given on-chain oracle latency (especially Chainlink), there can be a front-running risk.
+Given that Angle lets people swap their collateral against stablecoins with no slippage, and given on-chain oracle latency \(especially Chainlink\), there can be a front-running risk.
 
-If, at a point in time, the on-chain price for wETH is 1000 USD, but the real market price (which is the future on-chain price) is 1100 USD, then people have incentives to use USD stablecoins to get wETH at the price of 1 wETH for 1000 USD stablecoins on-chain, and then wait for the on-chain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
+If, at a point in time, the on-chain price for wETH is 1000 USD, but the real market price \(which is the future on-chain price\) is 1100 USD, then people have incentives to use USD stablecoins to get wETH at the price of 1 wETH for 1000 USD stablecoins on-chain, and then wait for the on-chain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
 
 This oracle latency is the cause of front-running risk Angle is subject to. Using a combination of Uniswap V3 time-weighted average price and Chainlink, along with transaction fees allows to mitigate this risk.
 
