@@ -1,10 +1,10 @@
-# Graphic Elements
+# Branding
 
-In this section, you can find all the graphic elements used in Angle to have fun and create the designs and animations you want!
+In this section, you can find all the graphical elements used in Angle to have fun and create the designs and animations you want!
 
 ## Color Palette
 
-Angle color palette is composed of 5 colors and there associated gradients:
+Angle color palette is composed of 5 colors and their associated gradients:
 
 - Spring Rain: #99B998
 - Peach: #FDCEAA
