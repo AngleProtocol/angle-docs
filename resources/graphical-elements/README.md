@@ -26,4 +26,4 @@ You can download [this zip file](../../.gitbook/assets/logo-icons.zip), where yo
 
 They look like this:
 
-![ANGLE ICON DARK PINK](.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_DARK_PINK.png)
+![Angle Dark Pink Icon](.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_DARK_PINK.png)
