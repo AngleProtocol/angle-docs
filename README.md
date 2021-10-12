@@ -4,7 +4,7 @@ description: >-
   stablecoin protocol.
 ---
 
-# 👋 Angle Documentation Portal
+# Angle Documentation Portal
 
 Welcome to the Angle Protocol Documentation Portal! It contains essential info and key links to understand the fundamentals of the Angle protocol.
 
