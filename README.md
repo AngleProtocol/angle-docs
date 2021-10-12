@@ -66,6 +66,8 @@ Angle community Discord server is where we collectively organize ourselves to bu
 * 🐦 [Twitter](https://twitter.com/AngleProtocol)
 * 🌳 [Medium/Blog](https://blog.angle.money)
 * 💻 [Github](https://github.com/AngleProtocol)
+* 📀 [App](https://app.angle.money)
+* 📊 [Analytics](https://analytics.angle.money/#/home)
 
 {% embed url="https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60" %}
 Angle Introduction Article

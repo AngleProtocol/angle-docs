@@ -39,4 +39,3 @@ Distribution through staking contracts and bonding curve may not initially be ac
 {% hint style="info" %}
 The numbers specified here may slightly change. It is for instance possible that a fraction of the 10% given to current and future strategic partners ends up being distributed through staking contracts. The same goes for the bonding curve. A smaller fraction of tokens may be sold by this medium; what's not sold by it will be distributed via staking or other means.
 {% endhint %}
-
