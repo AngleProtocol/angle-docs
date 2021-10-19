@@ -123,7 +123,7 @@ This quantity is compared to the amount of collateral `in stablecoin value` need
 The hedge ratio of the protocol **for a given stablecoin/collateral pair** is hence defined as:
 
 $$
-\texttt{Hedge Ratio} = \frac{\texttt{HAs total position size}}{\texttt{Total value of stablecoins issued}}
+\texttt{Hedge Ratio} = \frac{\texttt{Total amount hedged by HAs in stablecoin}}{\texttt{Total value of stablecoins issued}}
 $$
 
 ## 🏢 Insurance of the Protocol Against Collateral Volatility
