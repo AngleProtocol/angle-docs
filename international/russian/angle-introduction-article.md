@@ -2,7 +2,7 @@
 description: Angle Introduction Article
 ---
 
-# 🇷🇺 Angle Introduction Article 🇷🇺
+# 🇷🇺 Introducing Angle Protocol 🇷🇺
 
 * Based on: [Angle Introduction Article](https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60) posted in the Angle blog
 * Last Updated: 19th of October 2021

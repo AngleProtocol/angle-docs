@@ -50,5 +50,5 @@
 ## International
 
 * [🇷🇺 Russian - русский](international/russian/README.md)
-  * [Angle Global FAQ](international/russian/faq.md)
-  * [Angle Introduction Article](international/russian/angle-introduction-article.md)
+  * [Angle FAQ](international/russian/faq.md)
+  * [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
