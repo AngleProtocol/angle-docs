@@ -16,7 +16,7 @@ Angle is a scalable, efficient, over-collateralized and liquid decentralized sta
 
 ## When will Angle be live?
 
-Angle Core Team is currently developing the protocol. Audit will soon be done and a public testnet is going to be released in September. We hope to be live on mainnet by the month of October.
+Angle Core Team is currently developing the protocol. Audit will soon be done and a public testnet is going to be released in September. We hope to be live on mainnet in early November.
 
 {% hint style="info" %}
 Some elements like the collateral types accepted for each stablecoin may still change before launch.
@@ -50,8 +50,8 @@ The idea at first is to be kind of conservative and only accept few but carefull
 
 The plan for the moment is to have:
 
-* Angle's stable EUR \(agEUR\) backed by USDC and DAI.
-* Angle's stable USD \(agUSD\) backed by USDC, DAI, wETH and wBTC when launched.
+- Angle's stable EUR \(agEUR\) backed by USDC and DAI.
+- Angle's stable USD \(agUSD\) backed by USDC, DAI, wETH and wBTC when launched.
 
 USDT and other USD stablecoins may also be accepted collateral types for both stablecoins.
 
@@ -65,14 +65,14 @@ Being able to swap 1 of collateral for 1 stablecoin, and 1 stablecoin for 1 of c
 
 ## How is Angle's protocol different from other stablecoins?
 
-* Just like Maker, Angle is an over-collateralized protocol, but contrarily to it, it is capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
-* Angle's convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, Angle is still bank run resistant.
-* Because of the swaps between stablecoins and collateral allowed by the protocol, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
+- Just like Maker, Angle is an over-collateralized protocol, but contrarily to it, it is capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
+- Angle's convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, Angle is still bank run resistant.
+- Because of the swaps between stablecoins and collateral allowed by the protocol, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
 ## Besides stablecoins, what are Angle's other advantages?
 
-* Angle can be used to get direct leverage on collateral. As a Hedging Agent of Angle's protocol, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
-* Angle proposes higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider \(SLP\) of Angle's protocol, you get part of the transaction fees induced by users interacting with the protocol, and part of the lending returns obtained by lending the protocol's reserves. If there is 150 in the protocol that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
+- Angle can be used to get direct leverage on collateral. As a Hedging Agent of Angle's protocol, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
+- Angle proposes higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider \(SLP\) of Angle's protocol, you get part of the transaction fees induced by users interacting with the protocol, and part of the lending returns obtained by lending the protocol's reserves. If there is 150 in the protocol that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
 
 ## In short, why Angle?
 
@@ -90,7 +90,9 @@ In any case, you will need an ERC-20 Ethereum wallet, some ETH to pay for transa
 
 The platform has variable fees. For stable seekers minting and burning fees around 0.3% are taken, meaning that with 1 ETH worth 1000$, a stable seeker will get 997 agUSD. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependance on the collateral ratio of the protocol.
 
-For Hedging Agents getting perpetual futures from the protocol, there are some fees induced at position opening and close. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees will vary along 0.3%.
+For Hedging Agents getting perpetual futures from the protocol, there are some fees induced at position opening and close. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees will vary along 0.3% as well.
+
+You can see the specific fees implemented in detail in Angle's [analytics](https://analytics.angle.money).
 
 ## Where are the funds stored?
 
@@ -137,4 +139,3 @@ Feel free to refer to the [whitepaper](whitepaper.md) for a deeper dive into Ang
 {% hint style="info" %}
 💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
 {% endhint %}
-

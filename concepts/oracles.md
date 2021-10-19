@@ -6,8 +6,8 @@ description: Giving the protocol access to price feeds
 
 ## 🔎 TL;DR
 
-* Angle combines Uniswap V3 Time Weighted Average Price \(TWAP\) using a 5 minute time window with Chainlink oracles to provide price feeds for each collateral/stablecoin pair.
-* If Uniswap's value differs from that of Chainlink, the protocol chooses the value which is most at its advantage.
+- Angle combines Uniswap V3 Time Weighted Average Price \(TWAP\) using a 10 minutes time window with Chainlink oracles to provide price feeds for each collateral/stablecoin pair.
+- If Uniswap's value differs from that of Chainlink, the protocol chooses the value which is most at its advantage.
 
 ## 🔮 Angle's Need for Oracles
 
@@ -21,7 +21,7 @@ In the beginning, the agEUR stablecoin will not accept wETH and wBTC, this is ju
 
 ## 🎨 Angle's Oracle Design
 
-Angle will use a combination of Chainlink and Uniswap V3 TWAP oracles with a 5 minute time window. The idea is that whenever there is a need for an oracle value, Angle will choose between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
+Angle will use a combination of Chainlink and Uniswap V3 TWAP oracles with a 10 minutes time window. The idea is that whenever there is a need for an oracle value, Angle will choose between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
 
 For instance, for a mint transaction using collateral, Angle will choose the lowest value between Chainlink and Uniswap. But for a burn transaction, Angle will choose the highest one. If Uniswap's feed price for 1 wETH is 1000€ and if Chainlink's feed price is 990 €. Then a user could get 990 agEUR with 1 wETH, and could get 1 wETH from 1000 agEUR.
 
@@ -54,4 +54,3 @@ A high spread between Chainlink and Uniswap value is equivalent to taking more i
 ## ✊ Flash Loans Resistance
 
 The oracle values taken by Angle are not manipulable within a block. UniswapV3 TWAP are constant in a given block, and Chainlink values, given the decentralized nature of the system, cannot be manipulated. To this extent, it is going to be impossible with a flash loan, in a single block, to manipulate the price and make profits using Angle.
-

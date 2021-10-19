@@ -6,10 +6,10 @@ description: Getting stablecoins from collateral and conversely
 
 ## 🔎 TL;DR
 
-* Users of Angle protocol can mint stablecoins at oracle value by giving collateral to the protocol.
-* They can always burn their stablecoins and get collateral in exchange at oracle value too.
-* The experience for users is that of a swap except for the fact that there is no slippage on the price at which transactions are executed.
-* They pay small transaction fees (potentially around 0.3%) when they mint and when they burn.
+- Users of Angle protocol can mint stablecoins at oracle value by giving collateral to the protocol.
+- They can always burn their stablecoins and get collateral in exchange at oracle value too.
+- The experience for users is that of a swap except for the fact that there is no slippage on the price at which transactions are executed.
+- They pay small transaction fees (potentially around 0.3%) when they mint and when they burn.
 
 ## 🗺️ Principle
 
@@ -57,18 +57,18 @@ A stablecoin is only stable relative to the value of the oracle that was chosen 
 
 Transaction fees are taken from users minting and burning. While this is a way to prevent front-running attacks, it also helps to incentivize liquidity providers contributing to the protocol.
 
-The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve.
+The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 
-* Minting: The concept is that the higher the coverage ratio, the more the protocol is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
+- Minting: The concept is that the higher the coverage ratio, the more the protocol is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
 
 ![](../../.gitbook/assets/mintingfees.jpg)
 
-* Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the protocol is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
+- Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the protocol is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
 
 ![](../../.gitbook/assets/burningfees.jpg)
 
 {% hint style="info" %}
-The exact amount and values of these transaction fees are still to be determined.
+The exact amount and values of these transaction fees are still to be determined. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 {% endhint %}
 
 Regardless of the amounts chosen, this fee structure will be made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
