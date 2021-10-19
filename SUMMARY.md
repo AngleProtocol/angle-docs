@@ -46,3 +46,9 @@
 * [🐦 Twitter](https://twitter.com/AngleProtocol)
 * [🌳 Medium](https://blog.angle.money)
 * [💻 Github](https://github.com/AngleProtocol)
+
+## International
+
+* [🇷🇺 Russian](international/russian/README.md)
+  * [Angle Global FAQ](international/russian/faq.md)
+  * [Angle Introduction Article](international/russian/angle-introduction-article.md)
