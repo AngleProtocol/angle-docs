@@ -147,14 +147,14 @@ Note that on Angle, there is no funding rate to be paid by perpetual futures hol
 {% endhint %}
 
 {% hint style="info" %}
-The exact values of the transaction fees for HAs depend on the hedge ratio (sometimes referred to as coverage ratio) of the specific agToken/collateral pair. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
+The exact values of the transaction fees for HAs depend on the hedge ratio (sometimes referred to as coverage ratio) of the specific agToken/collateral pair. You can see the current fees situation in the [analytics](https://analytics.angle.money) page related to the collateral/stablecoin pool in question.
 {% endhint %}
 
 ### Entry Transaction Fees
 
 The entry transaction fees for HAs is an upfront cost paid when a HA opens a position.
 
-The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the protocol when the hedging ratio is low: transactions fees would be lower in this case.
+The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the protocol when the hedging ratio is low: transaction fees would be lower in this case.
 
 ![](../../.gitbook/assets/haentry.jpg)
 

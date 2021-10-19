@@ -51,7 +51,7 @@ In the meantime, transaction fees for users minting and burning will adjust auto
 
 Besides, if the collateral ratio keeps decreasing, governance can choose at its discretion to mitigate bank run scenari by increasing burn transaction fees by inducing a collateral ratio dependency.
 
-You can have a look at [Angle's analytics](https://analytics.angle.money) page to follow the different hedge and collateral ratios, and the current transactions fees.
+You can have a look at [Angle's analytics](https://analytics.angle.money) page to follow the different hedge and collateral ratios, and the current transaction fees.
 
 ## 🏷️ Governance Token Sale
 
