@@ -90,7 +90,9 @@ In any case, you will need an ERC-20 Ethereum wallet, some ETH to pay for transa
 
 The platform has variable fees. For stable seekers minting and burning fees around 0.3% are taken, meaning that with 1 ETH worth 1000$, a stable seeker will get 997 agUSD. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependance on the collateral ratio of the protocol.
 
-For Hedging Agents getting perpetual futures from the protocol, there are some fees induced at position opening and close. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees will vary along 0.3%.
+For Hedging Agents getting perpetual futures from the protocol, there are some fees induced at position opening and close. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees will vary along 0.3% as well.
+
+You can see the specific fees implemented in detail in Angle's [analytics](https://analytics.angle.money).
 
 ## Where are the funds stored?
 

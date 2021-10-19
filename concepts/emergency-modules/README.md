@@ -6,8 +6,8 @@ description: How the protocol behaves in case of distress
 
 ## 🔎 TL;DR
 
-* Angle is mostly at risk when a sudden collateral price decrease is combined with a severe drop in demand for leverage by Hedging Agents.
-* The protocol has the safety modules and incentives to be able to resist and maintain peg even in extreme market conditions.
+- Angle is mostly at risk when a sudden collateral price decrease is combined with a severe drop in demand for leverage by Hedging Agents.
+- The protocol has the safety modules and incentives to be able to resist and maintain peg even in extreme market conditions.
 
 ## ⚡ Protocol's Risks
 
@@ -51,6 +51,8 @@ In the meantime, transaction fees for users minting and burning will adjust auto
 
 Besides, if the collateral ratio keeps decreasing, governance can choose at its discretion to mitigate bank run scenari by increasing burn transaction fees by inducing a collateral ratio dependency.
 
+You can have a look at [Angle's analytics](https://analytics.angle.money) page to follow the different hedge and collateral ratios, and the current transactions fees.
+
 ## 🏷️ Governance Token Sale
 
 In case where the protocol is on its way to becoming under-collateralized and can no longer sustain full convertibility of stablecoins to collateral, then governance has the ability to change the parameters of the bonding curve to make buying governance tokens cheaper.
@@ -78,4 +80,3 @@ The protocol's stablecoins are independent from one another, meaning that if one
 ![Division of pools and collaterals](../../.gitbook/assets/division-of-funds.jpg)
 
 In case of a security breach, to trigger the emergency shutdown at the level of the protocol, all collateral for all stablecoins should be settled.
-

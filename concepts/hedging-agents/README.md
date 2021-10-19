@@ -147,7 +147,7 @@ Note that on Angle, there is no funding rate to be paid by perpetual futures hol
 {% endhint %}
 
 {% hint style="info" %}
-The exact values of the transaction fees for HAs for the different collateral types and stablecoins are still to be determined.
+The exact values of the transaction fees for HAs depend on the hedge ratio (sometimes referred to as coverage ratio) of the specific agToken/collateral pair. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 {% endhint %}
 
 ### Entry Transaction Fees
