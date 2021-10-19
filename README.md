@@ -15,7 +15,7 @@ Please join the discussion on the Angle Community [Discord Server](https://disco
 {% endhint %}
 
 {% hint style="info" %}
-📅 Angle Protocol is not live yet. Audits are currently being finalized (09/2021), and we are hoping to launch on mainnet around October 🍁.
+📅 Angle Protocol is not live yet. Audits are currently being finalized (09/2021), and we are hoping to launch on mainnet in early November 🍁.
 {% endhint %}
 
 ## Introduction to Angle
@@ -36,9 +36,9 @@ Stable USD, CHF, GBP, JPY and KRW should be following EUR after launch.
 
 The protocol involves 3 agents, very common in other DeFi protocols, which all bring something to Angle, while benefitting from the protocol:
 
-* **Stable Seekers/Holders, or Users:** they can swap collateral against stable assets, and conversely swap stable assets against a whitelisted collateral of their choice at oracle value, with no slippage and small transaction fees.
-* **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to take positions on perpetuals futures on the available collateral/stablecoins pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
-* **Standard Liquidity Providers (SLP)** : they lend collateral to the protocol in return of a share of minting and burning fees, and of the rewards earned from investing part of the protocol reserves into yield-earning strategies.
+- **Stable Seekers/Holders, or Users:** they can swap collateral against stable assets, and conversely swap stable assets against a whitelisted collateral of their choice at oracle value, with no slippage and small transaction fees.
+- **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to take positions on perpetuals futures on the available collateral/stablecoins pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
+- **Standard Liquidity Providers (SLP)** : they lend collateral to the protocol in return of a share of minting and burning fees, and of the rewards earned from investing part of the protocol reserves into yield-earning strategies.
 
 In short, Angle matches people who want stability (stable seekers) and people who want volatility (Hedging Agents). Yet, there isn't always a perfect match between supply and demand of volatility, meaning that the protocol's collateral may not be fully covered at all times by Hedging Agents. The additional collateral brought by Standard Liquidity Providers, serve as a buffer in this marketplace.
 
@@ -62,12 +62,12 @@ Angle community Discord server is where we collectively organize ourselves to bu
 
 ## Other Resources
 
-* 📡 [Website](https://angle.money)
-* 🐦 [Twitter](https://twitter.com/AngleProtocol)
-* 🌳 [Medium/Blog](https://blog.angle.money)
-* 💻 [Github](https://github.com/AngleProtocol)
-* 📀 [App](https://app.angle.money)
-* 📊 [Analytics](https://analytics.angle.money/#/home)
+- 📡 [Website](https://angle.money)
+- 🐦 [Twitter](https://twitter.com/AngleProtocol)
+- 🌳 [Medium/Blog](https://blog.angle.money)
+- 💻 [Github](https://github.com/AngleProtocol)
+- 📀 [App](https://app.angle.money)
+- 📊 [Analytics](https://analytics.angle.money/#/home)
 
 {% embed url="https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60" %}
 Angle Introduction Article

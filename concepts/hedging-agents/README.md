@@ -6,11 +6,11 @@ description: Insuring the protocol against collateral volatility.
 
 ## 🔎 TL;DR
 
-* Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
-* They are here to insure the protocol against the volatility of the collateral brought by users. With enough demand for HAs, the protocol could resist collateral price drops of up to 99%.
-* HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
-* They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
-* Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
+- Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
+- They are here to insure the protocol against the volatility of the collateral brought by users. With enough demand for HAs, the protocol could resist collateral price drops of up to 99%.
+- HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
+- They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
+- Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
@@ -120,10 +120,10 @@ The total amount hedged by HAs for a given collateral/stablecoin pair is hence t
 
 This quantity is compared to the amount of collateral `in stablecoin value` needed by the protocol to pay back users in case they all want to burn their stablecoins. For example, if a user brings 1 wETH to mint 2000 agUSD, and another one burns 1000 agUSD, the amount to hedge is 1000 USD of wETH. HAs are able to hedge a fraction of this quantity (close to 100%): this is called the target hedge amount .
 
-The heding ratio of the protocol for a given stablecoin/collateral pair is hence defined as:
+The hedge ratio of the protocol **for a given stablecoin/collateral pair** is hence defined as:
 
 $$
-\texttt{Hedging Ratio} = \frac{\texttt{HAs stablecoin hedge amount}}{\texttt{Target hedge amount in stablecoin value}}
+\texttt{Hedge Ratio} = \frac{\texttt{HAs total position size}}{\texttt{Total value of stablecoins issued}}
 $$
 
 ## 🏢 Insurance of the Protocol Against Collateral Volatility
