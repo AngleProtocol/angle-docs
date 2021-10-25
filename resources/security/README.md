@@ -8,7 +8,7 @@ description: Results and reports of Angle Protocol audit engagements
 
 Audit report of the smart contracts of the protocol performed by Chainsecurity between July and October 2021
 
-{% file src=".gitbook/assets/chainsecurity.pdf" %}
+{% file src="../../gitbook/assets/chainsecurity.pdf" %}
 Chainsecurity Audit Report
 {% endfile %}
 
@@ -16,6 +16,6 @@ Chainsecurity Audit Report
 
 Audit report of the smart contracts of the protocol performed by Sigma Prime between July and October 2021
 
-{% file src=".gitbook/assets/sp.pdf" %}
+{% file src="../../gitbook/assets/sp.pdf" %}
 Sigma Prime Audit Report
 {% endfile %}
