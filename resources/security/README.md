@@ -6,7 +6,7 @@ description: Results and reports of Angle Protocol audit engagements
 
 ## Chainsecurity
 
-Audit report of the smart contracts of the protocol performed by Chainsecurity between July and October 2021
+Audit report of the smart contracts of the protocol performed by Chainsecurity between July and October 2021. The official link from Chainsecurity can be found [here](https://chainsecurity.com/security-audit/angle-protocol/).
 
 {% file src="../../.gitbook/assets/chainsecurity.pdf" %}
 Chainsecurity Audit Report
