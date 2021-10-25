@@ -94,11 +94,11 @@ For Hedging Agents getting perpetual futures from the protocol, there are some f
 
 You can see the specific fees implemented in detail in Angle's [analytics](https://analytics.angle.money).
 
-## Where are the funds stored?
+## Where are the funds stored in the protocol, and how are they separated?
 
-The funds of Angle's protocol are stored in smart contracts. There will be one smart contract storing the funds per collateral/stablecoin pair. The code of the smart contract is public, open source and will be formally verified and audited by third party auditors.
+The funds of Angle's protocol are stored in smart contracts. There is one smart contract for each collateral/stablecoin pair, such that funds are distributed amongst multiple contracts. A portion of the funds will be transferred to strategies responsible for earning yield. These strategies will transfer some funds to other protocols like Compound or Aave.
 
-A portion of the funds will be transferred to strategies responsible for getting yield on these funds. These strategies may end transferring some funds to protocols like Compound or Aave.
+The code of the smart contracts is open source and has been be formally verified and audited by third party auditors.
 
 ## Is there any risk?
 
