@@ -38,10 +38,13 @@
   * [Staking Pools](resources/user-guides/staking-pools.md)
   * [App FAQ](resources/user-guides/app-faq.md)
 * [🖼 Branding](resources/graphical-elements/README.md)
+* [🔐 Security](resources/security/README.md)
 
 ## Ecosystem
 
 * [📀 App](https://app.angle.money)
+* [🗂️ Analytics](https://analytics.angle.money)
+* [⚒️ Developers Doc](https://developers.angle.money)
 * [🕹️ Discord](https://discord.gg/67WSSZqBG6)
 * [🐦 Twitter](https://twitter.com/AngleProtocol)
 * [🌳 Medium](https://blog.angle.money)
@@ -52,3 +55,5 @@
 * [🇷🇺 Russian - русский](international/russian/README.md)
   * [Angle FAQ](international/russian/faq.md)
   * [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
+* [🇯🇵 Japanese - 日本語](international/japanese/README.md)
+  * [Angle FAQ](international/japanese/faq.md)

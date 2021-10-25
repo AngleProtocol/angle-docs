@@ -60,6 +60,14 @@ There is a large number of ways to build decentralized stablecoins, and we, at A
 
 Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
+## [⚒️ Developers Doc](https://developers.angle.money)
+
+Angle has a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
+
+{% hint style="info" %}
+All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/security/README.md)
+{% endhint %}
+
 ## Other Resources
 
 - 📡 [Website](https://angle.money)
@@ -67,7 +75,7 @@ Angle community Discord server is where we collectively organize ourselves to bu
 - 🌳 [Medium/Blog](https://blog.angle.money)
 - 💻 [Github](https://github.com/AngleProtocol)
 - 📀 [App](https://app.angle.money)
-- 📊 [Analytics](https://analytics.angle.money/#/home)
+- 🗂️ [Analytics](https://analytics.angle.money/#/home)
 
 {% embed url="https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60" %}
 Angle Introduction Article
