@@ -24,7 +24,7 @@
 
 ## Governance
 
-- [🗳 Angle DAO](governance/angle-dao.md)
+- [🗳 Angle Governance](governance/angle-governance.md)
 - [🚀 ANGLE Token](governance/angle-token/README.md)
   - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
 - [💂 Angle Guardian](governance/guardian.md)
@@ -38,7 +38,7 @@
   - [Staking Pools](resources/user-guides/staking-pools.md)
   - [App FAQ](resources/user-guides/app-faq.md)
 - [🖼 Branding](resources/graphical-elements/README.md)
-- [🔐 Security](resources/security/README.md)
+- [🔐 Audits](resources/audits/README.md)
 
 ## Ecosystem
 

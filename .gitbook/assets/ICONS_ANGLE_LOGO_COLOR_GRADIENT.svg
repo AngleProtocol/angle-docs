@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.89 684.92" style="enable-background:new 0 0 841.89 684.92;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#27363B;stroke:#27363B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#27363B;stroke:#27363B;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="200.26,373.31 222.1,423.47 327.33,525.78 313.83,481.64 "/>
+<polygon class="st0" points="432.81,368.5 435.99,421.01 545.73,523.21 552.82,478.85 "/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="199.2135" y1="320.3878" x2="666.14" y2="320.3878">
+	<stop  offset="0.099" style="stop-color:#27363B"/>
+	<stop  offset="0.3091" style="stop-color:#EB4960"/>
+	<stop  offset="0.5063" style="stop-color:#F4837D"/>
+	<stop  offset="0.6881" style="stop-color:#FCD5B4"/>
+	<stop  offset="0.9603" style="stop-color:#99B998"/>
+</linearGradient>
+<polygon class="st1" points="199.21,370.91 431.78,159.14 666.14,365.6 552.82,478.85 432.81,368.5 313.83,481.64 "/>
+<g>
+	<line class="st2" x1="431.78" y1="159.14" x2="199.21" y2="370.91"/>
+	<line class="st2" x1="666.14" y1="365.6" x2="431.78" y2="159.14"/>
+	<line class="st2" x1="313.83" y1="481.64" x2="432.81" y2="368.25"/>
+	<line class="st2" x1="432.81" y1="368.25" x2="552.82" y2="478.85"/>
+	<line class="st2" x1="552.82" y1="478.85" x2="666.14" y2="365.6"/>
+	<line class="st2" x1="199.21" y1="370.91" x2="313.83" y2="481.64"/>
+	<line class="st2" x1="435.99" y1="421.01" x2="327.33" y2="525.78"/>
+	<line class="st2" x1="545.73" y1="523.21" x2="435.99" y2="421.01"/>
+	<line class="st2" x1="649.66" y1="418.55" x2="545.73" y2="523.21"/>
+	<line class="st2" x1="327.33" y1="525.78" x2="222.1" y2="423.47"/>
+	<line class="st2" x1="199.21" y1="370.91" x2="222.1" y2="423.47"/>
+	<line class="st2" x1="649.66" y1="418.55" x2="666.14" y2="365.6"/>
+	<line class="st2" x1="432.81" y1="368.25" x2="435.99" y2="421.01"/>
+	<line class="st2" x1="313.83" y1="481.64" x2="327.33" y2="525.78"/>
+	<line class="st2" x1="552.82" y1="478.85" x2="545.73" y2="523.21"/>
+</g>
+<polygon class="st3" points="313.83,481.64 327.33,525.78 435.99,421.01 432.81,368.25 "/>
+<polygon class="st3" points="552.82,478.85 545.73,523.21 649.66,418.55 663.48,368.25 "/>
+</svg>
