@@ -6,36 +6,53 @@ description: The ANGLE governance token for Angle DAO
 
 ## 🔎 TL;DR
 
-Angle has a governance token, that we call so far the ANGLE token, collectively responsible for managing the Angle DAO.
+Angle Protocol is governed by the community through the ANGLE governance token.
 
 ## 🎨 Design and Inflation
 
-ANGLE's total initial supply is 1 billion and there should be almost no inflation of the total supply.
+ANGLE's total initial supply is 1 billion and there is no planned token inflation.
 
-The only situation in which the total supply is likely to inflate is where governance needs to be able to sell more tokens through the [bonding curve](bonding-curve.md) to recollateralize the protocol and thus needs to issue fresh new tokens for that.
+The only situation in which the total supply might increase is in the case of a protocol failure, if the governance needs to sell tokens through the [bonding curve](bonding-curve.md) to recollateralize the protocol.
 
-If the protocol has a too big surplus, some tokens could also be burnt, like Maker does in some situations.
+If the protocol has a too big surplus, some tokens could also be burnt, like what Maker does in some situations.
 
 The only address with minting capability is the Angle DAO Timelock. The design of the token has been heavily inspired by Uniswap's UNI token.
 
 ## 🧬 Tokenomics
 
-The idea with Angle's governance token is to make its ownership decentralized and to distribute it to actors in the community which use the protocol or collateralize it as SLPs or HAs.
+The goals is for ANGLE's ownership to be decentralized, and that it the token be distributed to people from the community which use the protocol or collateralize it as HAs or SLPs.
 
-The governance token will be distributed as follows:
+ANGLE tokens will be distributed as follows:
 
-* 40% Through staking contracts for stable holders and SLPs or directly to HAs for the community. This mode of distribution is equivalent to that of Compound with the COMP tokens given to lenders and borrowers. Governance will be able to adjust the speed and amount of distribution for each stakeholder. The idea is to favor the SLPs of the different collateral pools.
-* 18% Through the [bonding curve](bonding-curve.md) when it is activated. Whenever the market price of the tokens will be superior to that proposed by the protocol, people will be incentivized to buy to the protocol. The goal is that the money received will serve as a surplus to the protocol.
-* 18% To Angle Core Team. These tokens are subject to a 3-year vesting to make sure that founders and team remain fully committed to the protocol and the community.
-* 10% To seed investors \(subject to the same 3-year linear vesting as Angle Core Team\)
-* 10% To Angle's current and future strategic partners
-* 2% For grants and advisors of Angle Labs
-* 2% For future protocol incentive: this is a pocket that is controlled by the DAO and that can be seen as a buffer to avoid token inflation, it could for instance be distributed in the bonding curve or in staking contracts
+### Liquidity Mining
+
+- 40% of tokens will be distributed through staking contracts for agTokens holders, HAs and SLPs. LP on other external pools will also probably be incentivized. Governance will be able to adjust the distribution of tokens between each stakeholders. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
+
+### DAO Treasury
+
+**Bonding curve and future protocol incentives**
+
+- 18% Through the [bonding curve](bonding-curve.md) when it is activated. Whenever the market price of the tokens will be superior to that proposed by the protocol, people will be incentivized to buy to the protocol. The goal is that the money received will serve as a surplus to the protocol.
+- 2% For future protocol incentive: this is a pocket that is controlled by the DAO and that can be seen as a buffer to avoid token inflation, it could for instance be distributed in the bonding curve or in staking contracts.
 
 {% hint style="info" %}
-Distribution through staking contracts and bonding curve may not initially be activated from scratch. In the beginning it is well possible that governance token ownership is still in majority controlled by Angle Labs. It is however the will of the team to rapidly push for decentralization.
+The distribution of tokens between the bonding curve and future protocol incentives specified here may change slightly.
 {% endhint %}
 
+### Grants and Partnerships
+
+- 10% to Angle's current and future strategic partners
+- 2% for grants and advisors of Angle Labs
+
+### Core team and early backers
+
+Tokens subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
+
+- 18% to the Angle Core Team
+- 10% to early backers
+
 {% hint style="info" %}
-The numbers specified here may slightly change. It is for instance possible that a fraction of the 10% given to current and future strategic partners ends up being distributed through staking contracts. The same goes for the bonding curve. A smaller fraction of tokens may be sold by this medium; what's not sold by it will be distributed via staking or other means.
+Distribution through the bonding curve will not be activated from the start, but can be at anytime by the governance.
 {% endhint %}
+
+![Angle](../../.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_GRADIENT.svg)

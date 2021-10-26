@@ -6,17 +6,17 @@ description: Selling governance tokens against the protocol's stablecoins
 
 ## 🔎 TL;DR
 
-* It is going to be possible to buy Angle's governance tokens through a bonding curve using the protocol's stablecoins.
-* The more tokens are bought from the bonding curve, the more expensive it gets to buy new tokens.
+- It is going to be possible to buy Angle's governance tokens through a bonding curve using the protocol's stablecoins.
+- The more tokens are bought from the bonding curve, the more expensive it gets to buy new tokens.
 
 ## 💡 Need for a Bonding Curve
 
-Angle leaves the possibility to buy governance tokens using the protocol's stablecoins. For instance, it will be possible to buy ANGLE tokens using Angle's agEUR, or Angle's agUSD.
+Angle leaves the possibility to buy governance tokens using the protocol's stablecoins. For instance, it will be possible to buy ANGLE tokens using Angle's agEUR, or agUSD.
 
-The stablecoins used to buy the governance tokens will be burnt. This is hence a way to directly increase the protocol's collateral ratio, to get some surplus for the protocol and to reduce risk.
+The agTokens used to buy the governance tokens will be burnt. This is a way to directly increase the protocol's collateral ratio and to grow its reserves, thus reducing the overall risk of the protocol.
 
 {% hint style="info" %}
-The bonding curve may not be directly activated at protocol launch.
+The bonding curve will not be directly activated at protocol launch. A maximum of 20% of the total supply is expected to be sold through the bonding curve.
 {% endhint %}
 
 ## 🏷️ Price for the Governance Tokens
@@ -39,7 +39,6 @@ $$
 
 ## 📑 Variability of the Parameters
 
-In very few cases, governance will be able to vote and change the start price \(and/or\) the total amount of governance tokens to sell with this mechanism.
+In very few cases, governance will be able to vote and change the start price (and/or) the total amount of governance tokens to sell with this mechanism.
 
 This is mostly going to be the case when the protocol is at risk. To recollateralize the protocol, governance will be able to change the start price and decrease it below market price, to make buying governance tokens from the protocol more attractive to external users. This mechanism is equivalent to Maker's Flop auctions.
-
