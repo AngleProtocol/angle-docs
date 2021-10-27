@@ -14,4 +14,14 @@ The whitepaper is a static document explaining the concept and inspiration for t
 If there is anything unclear or out of date or feel like you have feedbacks on the protocol, please do not hesitate to let us know on Angle community [Discord server](https://discord.gg/67WSSZqBG6) 🕹️. This is the place where we collectively play, exchange, improve, and help build the best protocol possible!
 {% endhint %}
 
-![](.gitbook/assets/angle_atmos_v5.jpg)
+## Translations
+
+Some contributors translated the whitepaper in their home language. These contributions have not been thoroughly verified by the whole community so they are to be considered as unofficial documents.
+
+### Russian 🇷🇺
+
+{% file src=".gitbook/assets/Angle_Whitepaper_Russian.pdf" %}
+Angle Whitepaper in Russian
+{% endfile %}
+
+![Angle Atmosphere](.gitbook/assets/angle_atmos_v5.jpg)
