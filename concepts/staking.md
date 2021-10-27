@@ -28,11 +28,11 @@ The fewer people there will be in a staking contract, the more interesting it is
 
 The distribution of governance tokens to the different staking contracts will be made by a contract controlled by governance. This contract will store for each staking contract a set of parameters like a duration for the distribution (100 blocks, a day, a week, a month, a year, ...), or a number of tokens to distribute across the duration.
 
-400,000,000 ANGLE (40% of supply) are planned to be distributed through staking. The amount distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the distribution by 1.50 every year.
+400,000,000 ANGLE (40% of supply) are planned to be distributed through staking. The ANGLE distribution through this medium has been thought of and modeled after Bitcoin mining with modifications on the halving factor. In the case of Angle Protocol, the amount distributed is divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the distribution by 1.50 every year.
 
 ![ANGLE Distribution](../.gitbook/assets/Liquidity-Mining-Distributed-Supply-Over-Time.png)
 
-We built some simulations to evaluate how supply will evolve over time, you can take a look at this [Google Sheet](https://docs.google.com/spreadsheets/d/1yraSUH_7D-VMnCUsIYWWdW1pxL7bDxN3o0M5japQmeY/edit#gid=0).
+We built some simulations to evaluate how supply evolves over time, you can take a look at this [Google Sheet](https://docs.google.com/spreadsheets/d/1yraSUH_7D-VMnCUsIYWWdW1pxL7bDxN3o0M5japQmeY/edit#gid=0).
 
 ## 📶 Token Accumulation
 
