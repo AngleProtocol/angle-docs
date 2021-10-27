@@ -41,7 +41,7 @@ If the incentives put in place do not attract enough HAs to fully insure the pro
 
 To prevent the cascading effect that could be induced if SLPs all exit the protocol, a slippage is introduced to discourage SLPs from exiting when the collateral ratio is too low: this is a way to make sure that there will always be SLPs in the protocol. Note here that HAs are never affected by exit restrictions: they can find incentives to enter at any point in time thus bringing extra-liquidity, regardless of whether there has been a price drop or not.
 
-Besides, when the protocol starts to be too unhealthy, as explained [in this page](../standard-liquidity-providers/), there are recollateralization incentives for SLPs: a fraction of the transaction fees and lending yield going to SLPs can be automatically put aside, and will only be recoverable by SLPs when the protocol is collateralized back again. This means that a new SLP giving money to recollateralize a pool may receive transaction fees and yield accumulated before her arrival in the pool.
+Besides, when the protocol starts to be too unhealthy, as explained [in this page](../standard-liquidity-providers/), there are recollateralization incentives for SLPs: a fraction of the transaction fees and lending yield going to SLPs can be automatically put aside, and only be recoverable by SLPs when the protocol is collateralized back again. This means that a new SLP giving money to recollateralize a pool may receive transaction fees and yield accumulated before her arrival in the pool.
 
 Governance can also choose to distribute a bigger fraction of the transaction fees and lending returns to SLPs to make them stay, or to offer more governance tokens through the staking contracts
 
@@ -61,7 +61,7 @@ Like Maker does when auctions are made where governance tokens are sold against 
 
 ## ⌛ Collateral Diversification and Settlement
 
-In the above sections, a protocol with a single collateral type was described. It is important to note that the protocol will accept different collateral types, diversifying the overall risk of the protocol. With asset diversification, Angle is less prone to having the issue where one asset drops and affects the stability of the whole system.
+In the above sections, a protocol with a single collateral type was described. It is important to note that the protocol accepts different collateral types, diversifying the overall risk of the protocol. With asset diversification, Angle is less prone to having the issue where one asset drops and affects the stability of the whole system.
 
 If one collateral becomes too risky, the protocol has the ability to incentivize liquidity providers to contribute more to one pool than to another through staking incentives and transaction fees.
 

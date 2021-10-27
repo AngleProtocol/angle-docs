@@ -34,7 +34,7 @@ A few months later, the SLP decides it's time to withdraw USDC from the protocol
 
 No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters \(one for the transaction fees, one for the lending returns\). These parameters can be changed by governance, meaning governance could choose to give more or less fees and yield to SLPs.
 
-Furthermore, SLPs only receives transaction fees from transactions which concern the pool they contribute to. Transaction fees from a mint transaction affecting the USDC liquidity pool will not go to SLPs which contributed to the ETH liquidity pool.
+Furthermore, SLPs only receives transaction fees from transactions which concern the pool they contribute to. Transaction fees from a mint transaction affecting the USDC liquidity pool do not go to SLPs which contributed to the ETH liquidity pool.
 
 ## Why don't SLPs receive all the transaction fees and lending returns?
 
@@ -46,7 +46,7 @@ sanTokens are ERC-20 tokens, visible on Etherscan. Just like any other token, th
 
 ## Can I transfer or trade my SLPs position?
 
-Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, and tradable on the open market. This means that a SLP willing to cash out could sell her sanTokens on a secondary exchange \(like UniSwap\) and hence get collateral without interacting with the protocol.
+Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, and tradable on the open market. This means that a SLP willing to cash out could sell her sanTokens on a secondary exchange (like UniSwap) and hence get collateral without interacting with the protocol.
 
 ## What's the advantage of being a SLP with Angle rather than going to other platforms that offer automatic yield like Aave or Compound?
 

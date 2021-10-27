@@ -41,7 +41,7 @@ The protocol has a target hedge ratio, and a limit hedge ratio \(higher than the
 
 ### Why did I receive sanTokens upon removing collateral/closing my positions?
 
-In the case there is not enough funds in a pool Hadging Agents are withdrawing from, they will first get the collateral present in the pool, and then receive an amount of sanTokens for the remaining value of collateral they should get. They can then sell those sanTokens whenever the pools have more funds, after a call to `harvest()` for instance.
+In the case there is not enough funds in a pool Hedging Agents are withdrawing from, they first get the collateral present in the pool, and then receive an amount of sanTokens for the remaining value of collateral they should get. They can then sell those sanTokens whenever the pools have more funds, after a call to `harvest()` for instance.
 
 ## Standard Liquidity Providers
 
@@ -49,11 +49,10 @@ In the case there is not enough funds in a pool Hadging Agents are withdrawing f
 
 All collateral/agTokens pools are separated and managed by independent contracts. This means that, even though pools for a given collateral can use the same strategies, it could be the case that they don't or that some parameters related to these strategies differ.
 
-Additionally, the amount put by users minting on these pools will differ, which will impact the multiplier effect explained [here](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect), and change the APYs for SLPs.
+Additionally, the amounts put by users minting on these pools differ, which impact the multiplier effect explained [here](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect), and change the APYs for SLPs.
 
 ### Why can't I withdraw my collateral?
 
-If SLPs want to withdraw more funds than what is immediately available in their pool \(due to funds being lent out\), their transactions will get reverted. To prevent this from happening, we display an alert preventing them from making the transaction.
+If SLPs want to withdraw more funds than what is immediately available in their pool (due to funds being lent out), their transactions will get reverted. To prevent this from happening, we display an alert preventing them from making the transaction.
 
 They should wait for the next `harvest()` call from strategies, which should send funds back to the pool.
-

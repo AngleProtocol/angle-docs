@@ -19,7 +19,7 @@ Angle is a scalable, efficient, over-collateralized and liquid decentralized sta
 Audits have been completed, and smart contracts code is now public in [our repository](https://github.com/AngleProtocol/angle-core).
 Angle will be officially live around November 3rd.
 
-## What stablecoins will I be able to issue with Angle?
+## What stablecoins can be minted on Angle?
 
 Angle can be used to issue virtually any type of stablecoins, provided that there is an oracle for it. The intial goal is to create Forex stablecoins with sufficient liquidity. To this extent, we will focus on creating only a few different stablecoins at first.
 

@@ -18,7 +18,7 @@ $$
 x+ y\cdot \frac{p}{q} +  y\cdot (1-\frac{p}{q}) = x+y
 $$
 
-Since the protocol is fully hedged by Hedging Agents with perpetual futures, the protocol will manage to sustain convertibility and keep the stablecoins stable.
+Since the protocol is fully hedged by Hedging Agents with perpetual futures, it can sustain convertibility and keep the stablecoins stable.
 
 ## Is there a cost for holding perpetual futures as a HA?
 
@@ -86,7 +86,7 @@ When a HA position is cashed out like that, the HA gets back its margin plus any
 
 It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when a HA tries to close her position there is not enough collateral in the pool to which she contributed.
 
-In this case, the HA will get everything that can be given to her from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
+In this case, the HA gets everything that can be given to from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
 
 ## Can I open multiple perpetuals?
 
