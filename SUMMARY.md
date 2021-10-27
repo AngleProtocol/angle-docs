@@ -24,7 +24,7 @@
 
 ## Governance
 
-- [🗳 Angle Governance](governance/angle-governance.md)
+- [🗳 Angle DAO](governance/angle-dao.md)
 - [🚀 ANGLE Token](governance/angle-token/README.md)
   - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
 - [💂 Angle Guardian](governance/guardian.md)
