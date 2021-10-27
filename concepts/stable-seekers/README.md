@@ -71,7 +71,7 @@ The structure of the mint transaction fees differs from that of the burn transac
 The exact amount and values of these transaction fees are still to be determined. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 {% endhint %}
 
-Regardless of the amounts chosen, this fee structure will be made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
+Regardless of the amounts chosen, this fee structure has been made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
 
 {% hint style="info" %}
 For non-volatile collateral types like USDC and DAI, mint fees may for instance be as small as 0.1% regardless of the coverage by Hedging Agents.
@@ -81,7 +81,7 @@ Governance could also vote to induce a dependency of the transaction fees on the
 
 ## ❌ Slippage
 
-Mint and burn transactions are always executed at oracle value, meaning that there is no slippage in the price of the transaction. Regardless of the size of the transaction, the price at which it will be executed will remain the same.
+Mint and burn transactions are always executed at oracle value, meaning that there is no slippage in the price of the transaction. Regardless of the size of the transaction, the price at which it is executed remains the same.
 
 However, too big transactions may affect the transaction fees structure (because they can move the coverage ratio and hence the coverage curve), and face different transaction fees than other smaller transactions would have at the same oracle price.
 

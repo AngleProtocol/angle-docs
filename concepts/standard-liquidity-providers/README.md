@@ -6,10 +6,10 @@ description: Insuring the insurance (Hedging Agents)
 
 ## 🔎 TL;DR
 
-* Standard Liquidity Providers (SLPs) deposit collateral in the protocol and automatically accrue interests on it.
-* Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
-* SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
-* They may face a small slippage when they exit the protocol if it is not enough collateralized.
+- Standard Liquidity Providers (SLPs) deposit collateral in the protocol and automatically accrue interests on it.
+- Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
+- SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
+- They may face a small slippage when they exit the protocol if it is not enough collateralized.
 
 ## 🗺️ Principle
 
@@ -21,8 +21,8 @@ They entrust Angle with their liquidity and like liquidity providers in other pr
 
 There are different incentives for SLPs to come to Angle:
 
-* A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
-* At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves will automatically be transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
+- A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
+- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves will automatically be transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
 
 The fraction of transaction fees and the fraction of lending returns going to SLPs correspond to two different parameters controlled by governance.
 
@@ -46,7 +46,7 @@ This multiplier effect becomes less interesting the more SLPs bring collateral t
 
 ## 🥅 Slippage
 
-When the collateral ratio is too small, in order to guarantee that any owner of agEUR will be able to redeem collateral with agEUR, SLPs will face a slippage when they exit.
+When the collateral ratio is too small, in order to guarantee that any owner of agEUR is able to redeem collateral with agEUR, SLPs will face a slippage when they exit.
 
 For instance if the slippage is 10%, then a SLP willing to get 100 of collateral back will only be able to get 90, and the 10 of collateral difference will never be recovered.
 
@@ -64,6 +64,6 @@ While the collateral ratio is a quantity that relates to a stablecoin, the slipp
 
 One rule that can be set to incentivize SLPs to re-capitalize a pool when the overall collateral ratio of the protocol is too low is putting aside progressively part of the transaction fees that should arrive to SLPs of this pool.
 
-These fees will only be recovered by SLPs once the pool becomes collateralized again, and they will be distributed in a proportion that depends on the composition of the pool at the time of re-collateralization. This means that a new SLP giving money to re-collateralize a pool may receive transaction fees for transactions that occurred before her arrival in the pool.
+These fees would only be recovered by SLPs once the pool becomes collateralized again, and they would be distributed in a proportion that depends on the composition of the pool at the time of re-collateralization. This means that a new SLP giving money to re-collateralize a pool may receive transaction fees for transactions that occurred before her arrival in the pool.
 
 ![](<../../.gitbook/assets/emoji-slp (1) (2) (1) (9).png>)
