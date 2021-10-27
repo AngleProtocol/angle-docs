@@ -16,7 +16,7 @@ If there is anything unclear or out of date or feel like you have feedbacks on t
 
 ## Translations
 
-We have had some contributors translating the whitepaper in their home language. These contributions have not been thoroughly verified by the Angle Core Team so they are to be considered as unofficial documents
+Some contributors translated the whitepaper in their home language. These contributions have not been thoroughly verified by the whole community so they are to be considered as unofficial documents.
 
 ### Russian 🇷🇺
 
@@ -24,4 +24,4 @@ We have had some contributors translating the whitepaper in their home language.
 Angle Whitepaper in Russian
 {% endfile %}
 
-![](.gitbook/assets/angle_atmos_v5.jpg)
+![Angle Atmosphere](.gitbook/assets/angle_atmos_v5.jpg)
