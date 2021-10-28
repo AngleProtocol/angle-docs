@@ -24,7 +24,7 @@ Staking contracts of the protocol may not be released immediately at launch of t
 
 There is one specific staking contract per sanToken and per agToken. The staking contracts for Hedging Agents are directly the contracts in which HAs' positions are stored.
 
-The fewer amount of tokens staked, the more interesting it is to participate in this staking contract because a similar amount of governance tokens are shared among a smaller amount of people.
+The fewer tokens are staked, the more interesting it is to participate in this staking contract because a similar amount of governance tokens are shared among a smaller amount of people.
 
 The distribution of governance tokens to the different staking contracts is done by a contract controlled by governance. This contract stores for each staking contract a set of parameters, like a duration for the distribution (100 blocks, a day, a week, a month, a year, ...), and a number of tokens to distribute across this duration.
 

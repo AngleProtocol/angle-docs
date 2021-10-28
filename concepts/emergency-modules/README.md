@@ -47,7 +47,7 @@ Governance can also choose to distribute a bigger fraction of the transaction fe
 
 ## 💱 Dynamic Transaction Fees for Users
 
-In the meantime, transaction fees for users minting and burning will adjust automatically based on the hedging ratio of the protocol. This means that it is more expensive for users to mint stablecoins \(thus adding collateral into the protocol\) if the collateral that is already there is not hedged enough by Hedging Agents.
+In the meantime, transaction fees for users minting and burning adjust automatically based on the hedging ratio of the protocol. This means that it is more expensive for users to mint stablecoins \(thus adding collateral into the protocol\) if the collateral that is already there is not hedged enough by Hedging Agents.
 
 Besides, if the collateral ratio keeps decreasing, governance can choose at its discretion to mitigate bank run scenari by increasing burn transaction fees by inducing a collateral ratio dependency.
 

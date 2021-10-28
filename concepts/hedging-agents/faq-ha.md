@@ -116,7 +116,7 @@ There is no minimal leverage, meaning you can come as a HA in the protocol, brin
 
 There is a maximum leverage though. This parameter will depend on the volatility of the pairs.
 
-For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
+For instance, for a perpetual on the pair wETH/USD, the maximum leverage allowed will be x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
 
 ## Are there slippage protections for HAs?
 

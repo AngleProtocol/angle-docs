@@ -11,7 +11,7 @@ description: The Guardian to take rapid decisions in a crisis
 
 ## 💡 Need for a Guardian
 
-The Angle Guardian is an address being granted the Guardian role in the contracts at deployment. The governor address of Angle Protocol, controlled by the DAO also has this role.
+The Angle Guardian is an address being granted the Guardian role in the contracts at deployment. The governor address of Angle Protocol, controlled by the DAO also has this role. Each new governor address will also be given this role.
 
 This guardian address is held by Angle Core Team in a multi-sig. The idea is that this address is able to renounce the role or to transition to a community held multi-sig several months after launch.
 

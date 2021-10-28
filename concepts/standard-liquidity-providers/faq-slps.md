@@ -6,29 +6,29 @@ description: Common questions about SLPs
 
 ## How do SLPs earn their interests?
 
-When contributing to a collateral pool as a Standard Liquidity Provider, a SLP receives a token that we call **sanToken**, marking her belonging in the pool, just like a lender on Compound would receive a cToken. For instance, a SLP bringing USDC to the protocol for the agEUR coin would receive sanUSDC\_EUR tokens based on the current exchange rate between the sanTokens and USDC.
+When contributing to a collateral pool as a Standard Liquidity Provider, a SLP receive a token that we call **sanToken**, marking her belonging in the pool, just like a lender on Compound would receive a cToken. For instance, a SLP bringing USDC to the protocol for the agEUR coin would receive sanUSDC_EUR tokens based on the current exchange rate between the sanTokens and USDC.
 
 By minting sanTokens, SLPs earn interest through the sanToken's exchange rate, which increases in value relative to the underlying asset \(USDC in the example\) as transaction fees arrive in that pool and as interests from collateral being lent are collected.
 
 ## How does the sanToken exchange rate vary?
 
-When a collateral is introduced for a given stablecoin, the sanToken exchange rate \(how much USDC one sanUSDC\_EUR is worth\) begins at 1 and increases at a rate depending on the transaction fees accumulated and on the lending returns.
+When a collateral is introduced for a given stablecoin, the sanToken exchange rate \(how much USDC one sanUSDC_EUR is worth\) begins at 1 and increases at a rate depending on the transaction fees accumulated and on the lending returns.
 
-For example, after one year, the exchange rate might equal 1.2, meaning each sanUSDC\_EUR can be used to redeem 1.2 USDC.
+For example, after one year, the exchange rate might equal 1.2, meaning each sanUSDC_EUR can be used to redeem 1.2 USDC.
 
 Each SLP has the same sanToken exchange rate.
 
 ## Do you have an example of how interests accrue?
 
-Let's say that a SLP supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC\_EUR and USDC is 1.
+Let's say that a SLP supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC_EUR and USDC is 1.
 
-Then, the SLP would receive 1000 \(1000/1\) sanUSDC\_EUR.
+Then, the SLP would receive 1000 \(1000/1\) sanUSDC_EUR.
 
 A few months later, the SLP decides it's time to withdraw USDC from the protocol and the exchange rate is now 1.2.
 
-* The SLPs sanUSDC\_EUR are now worth 1200 USDC \(1000 \* 1.2\)
-* The SLP could withdraw her 1200 USDC, which would redeem all sanUSDC\_EUR
-* Or she could withdraw a portion, such as her original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC\_EUR in her wallet
+- The SLPs sanUSDC_EUR are now worth 1200 USDC \(1000 \* 1.2\)
+- The SLP could withdraw her 1200 USDC, which would redeem all sanUSDC_EUR
+- Or she could withdraw a portion, such as her original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC_EUR in her wallet
 
 ## Do SLPs get all transaction fees and lending returns from the protocol?
 
@@ -53,4 +53,3 @@ Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, an
 SLPs with Angle enjoy an important multiplier effect. Because Angle's reserves are lent to other protocols and because among what is lent everything is not from SLPs, SLPs can get more yield than what they would get on Compound or Aave because they receive yield on collateral they did not bring initially.
 
 For instance if there is 150 of collateral in the protocol, among which 50 comes from SLPs, SLPs are entitled to get yield on the 50 they brought, but also on the 100 of collateral that was brought by users and hedging agents.
-

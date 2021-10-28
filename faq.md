@@ -6,7 +6,7 @@ description: The go-to source for all frequently asked questions about Angle!
 
 ## What is Angle?
 
-Angle is a scalable, efficient, over-collateralized and liquid decentralized stablecoin protocol. Angle could be used to issue virtually any type of stablecoins. The protocol is launching the agEUR, followed by agUSD in the near future, and other stablecoins later on.
+Angle is a scalable, efficient, over-collateralized and liquid decentralized stablecoin protocol. Angle could be used to issue virtually any type of stablecoins. The protocol is launching a Euro stablecoin, the agEUR, followed by other stablecoins in the near future, like agUSD or agCHF.
 
 ## How does Angle work?
 
@@ -16,8 +16,11 @@ Angle is a scalable, efficient, over-collateralized and liquid decentralized sta
 
 ## Is Angle live?
 
-Audits have been completed, and smart contracts code is now public in [our repository](https://github.com/AngleProtocol/angle-core).
 Angle will be officially live around November 3rd.
+
+## Have smart contracts been audited?
+
+Yes, Angle's smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core).
 
 ## What stablecoins can be minted on Angle?
 
@@ -34,8 +37,6 @@ Angle Core Team hopes that the DAO will share this stance, which will dictate th
 ## How to launch a stablecoin?
 
 Angle is a 3-sided platform that relies on 3 different types of agents to make the protocol work. When launching a new stablecoin, it is important to make sure that different stakeholders arrive in the right order.
-
-When bootstrapping a new stablecoin, SLPs should be the first allowed to come in. Then, both HAs and users can get in at the same time. This is a way to make sure that stablecoins start by being over-collateralized.
 
 To grow demand for newly launched stablecoins, governance can offer staking contracts for stable holders to get governance tokens. This aims to give users even more incentives to interact with the protocol, which in turn encourages LPs to also interact with the protocol.
 
@@ -70,13 +71,13 @@ The protocol is also completely open source, which allows anyone to interact wit
 
 ## How do I use the app?
 
-In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by the Angle Core Team at [app.angle.money](https://app.angle.money), or through any other app developed by another team.
+In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by the Angle Core Team at [app.angle.money](https://app.angle.money), or through any other app developed by another team. Note that the app is hosted publicly on IPFS, and not on private servers.
 
 To interact with the app, you need an Ethereum wallet like Metamask, some ETH to pay for transaction fees, and the base asset you would like to swap, deposit or get leveraged on. Once you have these things, you can either swap your assets for stablecoins, open a leveraged position, or simply deposit it and accumulate interests.
 
 ## What are the costs?
 
-Angle Protocol has dynamic fees. For stable seekers minting and burning fees vary around 0.3%, meaning that with 1 ETH worth 1000€, a stable seeker can get 997 agEUR. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependancy on the collateral ratio of the protocol.
+Angle Protocol has dynamic fees. For stable seekers minting and burning fees vary around 0.3%, meaning that with 1 ETH worth 1000€, a stable seeker can get 997 agEUR. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependency on the collateral ratio of the protocol.
 
 For Hedging Agents getting perpetual futures from the protocol, there are some fees induced at position opening and closing. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees vary around 0.3% as well.
 
@@ -104,9 +105,9 @@ Documentation on tokenomics and governance is available in the whitepaper and on
 
 Feel free to join the discussion in the governance forum at [gov.angle.money](https://gov.angle.money).
 
-## Is there an airdrop?
+## Is there an airdrop for testnet participants?
 
-No there won't be any ANGLE token aidrop.
+No there won't be any particular ANGLE token aidrop for testnet participants.
 
 ## Is there a public token sale?
 

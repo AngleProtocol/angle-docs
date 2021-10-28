@@ -55,6 +55,6 @@ In all cases, the amount that can be given to keepers is capped.
 
 Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and agTokens holders. It follows the parameters set by the governance and specified in the [Angle tokenomics article](https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001).
 
-Based on thoss parameters, keepers are the ones calling the `drip` function of the contract handling the distribution of the governance tokens and actually letting the staking contracts know that they can distribute tokens.
+Based on those parameters, keepers are the ones calling the `drip` function of the contract handling the distribution of the governance tokens and actually letting the staking contracts know that they can distribute tokens.
 
 Keepers are incentivized by receiving governance tokens upon calling this function.

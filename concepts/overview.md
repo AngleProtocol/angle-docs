@@ -21,7 +21,7 @@ The Angle protocol relies on three types of agents which all benefit from Angle 
 
 ## Generalization to Multiple Stable Assets
 
-Angle's design can be used to issue multiple stablecoins, provided that there is an oracle for that. Angle could for instance build a token which market value is designed to remain equal to the temperature in New York City. At launch, the protocol will start with agEUR, then followed by agUSD and stablecoins pegged to other currencies, like agGBP or agCHF.
+Angle's design can be used to issue multiple stablecoins, provided that there is an oracle for that. Angle could for instance build a token which market value is designed to remain equal to the temperature in New York City. The protocol has started with the agEUR (Euro stablecoin), and the idea is to follow with stablecoins pegged to other currencies like agUSD, agGBP, or agCHF.
 
 The idea in the protocol is that each stablecoin is independent from other stablecoins, meaning that the collateral pools are different in all cases. Being a Hedging Agent for the collateral DAI used to back Angle's agEUR implies nothing about being a Hedging Agent on the pair DAI/agUSD. The same goes for standard liquidity providers. You can be a standard liquidity provider for just the agEUR stablecoin, but not for the agUSD stablecoin.
 

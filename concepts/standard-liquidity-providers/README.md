@@ -6,7 +6,7 @@ description: Insuring the insurance (Hedging Agents)
 
 ## 🔎 TL;DR
 
-- Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens that automatically accrue interests.
+- Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens, yield-bearing tokens that automatically accrue interests and fees.
 - Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
 - SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
 - They may face a small slippage when they exit the protocol if it is not enough collateralized.
@@ -22,7 +22,7 @@ They entrust Angle with their liquidity and like liquidity providers in other pr
 There are different incentives for SLPs to come to Angle:
 
 - A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
-- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically be transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
+- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
 
 The fraction of transaction fees and the fraction of lending returns going to SLPs correspond to two different parameters controlled by governance.
 
@@ -50,14 +50,14 @@ When the collateral ratio is too small, in order to guarantee that any owner of 
 
 For instance if the slippage is 10%, then a SLP willing to get 100 of collateral back will only get back 90, and the 10 of collateral difference will never be recovered.
 
-The slippage factor depends on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio (120%), SLPs face no slippage.
+The slippage factor depends on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio (120%), SLPs face no slippage. They can be consulted in the Fees section of the [analytics](https://analytics.angle.money/#/USDC/EUR) for each Pool.
 
 {% hint style="info" %}
-The exact structure of the slippage function is still to be determined before launch.
+The structure of the slippage function is updatable by the governance or the guardian.
 {% endhint %}
 
 {% hint style="info" %}
-While the collateral ratio is a quantity that relates to a stablecoin, the slippage functions faced by SLPs are going to be specific to each collateral. For instance for a collateral ratio of 100%, the slippage may be 0.3% for SLPs that brought DAI and of 0% for SLPs that brought USDC.
+While the collateral ratio is a quantity that relates to a stablecoin, the slippage functions faced by SLPs is specific to each collateral. For instance for a collateral ratio of 100%, the slippage may be 0.3% for SLPs that brought DAI and of 0% for SLPs that brought USDC.
 {% endhint %}
 
 ## 🏦 Recollateralization Incentives

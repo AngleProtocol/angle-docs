@@ -23,7 +23,7 @@ The design of that has been heavily inspired by what [Yearn](https://yearn.finan
 
 Just like on Yearn, new strategies to get some yield on the protocol's collateral can be added along the way by governance votes. Each strategy can also support multiple lending platforms or protocols.
 
-Each collateral for each stablecoin have its set of strategies to get some yield on it. For instance, for a agEUR stablecoin backed by USDC and DAI, we may have for the USDC collateral a single strategy trying to always optimize to get the best APY between Compound and Aave, and for the DAI stablecoin two strategies, one that just consists in lending to Compound and one that consists in optimizing between Aave and Cream.
+Each collateral for each stablecoin has its set of strategies to get some yield on it. For instance, for a agEUR stablecoin backed by USDC and DAI, we may have for the USDC collateral a single strategy trying to always optimize to get the best APY between Compound and Aave, and for the DAI stablecoin two strategies, one that just consists in lending to Compound and one that consists in optimizing between Aave and Cream.
 
 The first strategy implemented simply consists in optimizing lending between Compound and Aave and pick the one with the best APY.
 
