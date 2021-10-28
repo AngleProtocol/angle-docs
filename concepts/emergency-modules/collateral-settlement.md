@@ -26,7 +26,7 @@ The collateral settlement process starts by freezing transactions and oracle pri
 The length of the claim period is still to be determined.
 {% endhint %}
 
-Stable holders \(users\) can do so by sending stablecoins associated to this collateral. In the process, they can choose to send governance tokens, and depending on the fraction they sent, they will be treated preferably by the protocol. The value of the claim of stable holders in collateral is only computed at the end of the claim period.
+Stable holders (users) can do so by sending stablecoins associated to this collateral. In the process, they can choose to send governance tokens, and depending on the fraction they sent, they will be treated preferably by the protocol. The value of the claim of stable holders in collateral is only computed at the end of the claim period.
 
 HAs who had perpetuals of the concerned collateral can come, point to a perpetual they own, and make their claim. The value of their claim is computed based on the oracle value at the time at which settlement was initiated.
 
@@ -65,4 +65,3 @@ If different collateral settlements are triggered for a same stablecoin, stablec
 Another remark is that the reason why stable holders are not handled with the same oracle value as HAs is to prevent arbitrages among them during collateral settlement. If the value used to compute the claims in collateral was that of the beginning of the claim period \(the one used for HA\), then if this value decreased during the claim period meaning that stable holders would end up getting less than what they would get at current oracle value: there could be incentives for them not to claim anything because they could be treated at a more advantageous oracle value by burning their stablecoins and asking for a collateral that is not being settled.
 
 If after a collateral settlement process there is collateral left because of a protocol surplus, or because not all stable holders and LPs came to claim during the claim period, governance has the ability to allocate the leftover collateral where it wants to \(for instance to SLPs of another collateral type\).
-

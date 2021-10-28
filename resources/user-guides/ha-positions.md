@@ -1,5 +1,5 @@
 ---
-description: 'How to open, modify or close perpetual futures positions on Angle app'
+description: "How to open, modify or close perpetual futures positions on Angle app"
 ---
 
 # Opening & Managing Leveraged Positions
@@ -15,7 +15,7 @@ description: 'How to open, modify or close perpetual futures positions on Angle 
 7. Clicking the `Open position` button will send the margin to the protocol and open the leveraged position.
 
 {% hint style="warning" %}
-Be careful, when opening a position, updating and closing will be locked for an hour. More info [here](app-faq.md).
+Be careful when opening a position, updating and closing is locked for an hour. More info [here](app-faq.md).
 {% endhint %}
 
 ## Updating
@@ -37,4 +37,3 @@ If you have some open positions, you might want to add or remove margin to some 
 {% hint style="info" %}
 Upon closing a position, there is also an expert mode to protect for important slippage in price or in fees.
 {% endhint %}
-

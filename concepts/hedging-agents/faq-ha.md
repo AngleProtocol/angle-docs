@@ -18,7 +18,7 @@ $$
 x+ y\cdot \frac{p}{q} +  y\cdot (1-\frac{p}{q}) = x+y
 $$
 
-Since the protocol is fully hedged by Hedging Agents with perpetual futures, the protocol will manage to sustain convertibility and keep the stablecoins stable.
+Since the protocol is fully hedged by Hedging Agents with perpetual futures, it can sustain convertibility and keep the stablecoins stable.
 
 ## Is there a cost for holding perpetual futures as a HA?
 
@@ -84,9 +84,9 @@ When a HA position is cashed out like that, the HA gets back its margin plus any
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
-It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves will be lent and thus not immediately available, that when a HA tries to close her position there is not enough collateral in the pool to which she contributed.
+It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when a HA tries to close her position there is not enough collateral in the pool to which she contributed.
 
-In this case, the HA will get everything that can be given to her from the collateral pool, and the rest will be given in Standard Liquidity Providers' tokens \(called sanTokens\).
+In this case, the HA gets everything that can be given to from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
 
 ## Can I open multiple perpetuals?
 
@@ -114,13 +114,12 @@ Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-
 
 There is no minimal leverage, meaning you can come as a HA in the protocol, bring 2 wETH and open a position of only 0.001 wETH \(thus hedging only that amount\).
 
-There is a maximum leverage though. This parameter will depend on the volatility of the pairs. For instance, for a perpetual on the pair wETH/USD, the maximum leverage allowed will be 10.
+There is a maximum leverage though. This parameter will depend on the volatility of the pairs.
 
-For perpetuals on forex pairs like USDC/EUR, the maximum leverage will be 100.
+For instance, for a perpetual on the pair wETH/USD, the maximum leverage allowed will be x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
 
 ## Are there slippage protections for HAs?
 
 Yes. When coming in the protocol and creating a perpetual, HAs can specify the maximum oracle value they are willing to accept as entry price.
 
 The same goes for HAs cashing out their perpetual: they can specify the smallest oracle value below which they do not want their transaction executed.
-

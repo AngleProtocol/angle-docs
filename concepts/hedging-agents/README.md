@@ -112,7 +112,7 @@ $$
 
 ## 🛏️ HAs Hedged Amounts
 
-When HAs enter the protocol, they specify a position size denominated in collateral, representing an amount of the protocol collateral reserves they will be hedging. Yet from a protocol perspective, when an HA comes in the protocol, this HA insures a fixed amount of stablecoins.
+When HAs enter the protocol, they specify a position size denominated in collateral, representing an amount of the protocol collateral reserves they are hedging. Yet from a protocol perspective, when an HA comes in the protocol, this HA insures a fixed amount of stablecoins.
 
 This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a protocol perspective, each HA insures the protocol for a fixed amount of stablecoins. This is what the accounting of the protocol keeps track of when determining when to let HAs come in or not.
 
