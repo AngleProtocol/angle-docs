@@ -39,6 +39,7 @@
   - [App FAQ](resources/user-guides/app-faq.md)
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [🔐 Audits](resources/audits/README.md)
+- [🧑‍🏫 Quizzes](resources/quizzes/README.md)
 
 ## Ecosystem
 
