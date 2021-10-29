@@ -58,5 +58,6 @@
   - [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
 - [🇯🇵 Japanese - 日本語](international/japanese/README.md)
   - [Angle FAQ](international/japanese/faq.md)
+  - [Angle プロトコルの紹介](international/japanese/angle-intro-japanese.md)
 - [🇨🇳 Chinese - 中国人](international/chinese/README.md)
   - [角度协议介绍](international/chinese/angle-intro-chinese.md)
