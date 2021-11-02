@@ -17,7 +17,7 @@ There might by two rare cases in which a user is unable to burn agTokens:
 1. The pool users want to withdraw collateral from does not have enough collateral in reserves because it is lent out. In this case, they should wait for the next `harvest()` call from strategies, which will send funds back to the pool.
 2. Users cannot burn more agTokens for a collateral than what has been issued using this collateral.
 
-In both cases, users can always burn the agTokens using another collateral.
+In both cases, users can always burn the agTokens against another collateral.
 
 ## Hedging Agents
 

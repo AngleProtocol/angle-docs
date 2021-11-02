@@ -4,6 +4,12 @@
 - [📖 Whitepaper](whitepaper.md)
 - [📚 Glossary](glossary.md)
 - [❓ FAQ](faq.md)
+- [📔 User Guides](user-guides/README.md)
+  - [Minting & Burning agTokens](user-guides/mint-burn.md)
+  - [Opening & Managing Perpetual Positions](user-guides/ha-positions.md)
+  - [SLP Pools](user-guides/slp-pools.md)
+  - [Staking](user-guides/staking-pools.md)
+  - [App FAQ](user-guides/app-faq.md)
 
 ## Angle Core Concepts <a href="concepts" id="concepts"></a>
 
@@ -31,15 +37,10 @@
 
 ## Resources
 
-- [📔 App Guides & Resources](resources/user-guides/README.md)
-  - [Minting & Burning agTokens](resources/user-guides/mint-burn.md)
-  - [Opening & Managing Leveraged Positions](resources/user-guides/ha-positions.md)
-  - [SLP Pools](resources/user-guides/slp-pools.md)
-  - [Staking Pools](resources/user-guides/staking-pools.md)
-  - [App FAQ](resources/user-guides/app-faq.md)
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [🔐 Audits](resources/audits/README.md)
 - [🧑‍🏫 Quizzes](resources/quizzes/README.md)
+- [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
 
 ## Ecosystem
 
