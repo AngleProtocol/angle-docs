@@ -4,9 +4,7 @@ description: Angle App user guide
 
 # 📔 App User Guide
 
-## Mainnet
-
-[app.angle.money](https://app.angle.money)
+You can access the app at [app.angle.money](https://app.angle.money).
 
 In this guide, you will learn how to:
 
