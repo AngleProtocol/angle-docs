@@ -41,11 +41,6 @@
 - [🔐 Audits](resources/audits/README.md)
 - [🧑‍🏫 Quizzes](resources/quizzes/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
-  - [Minting & Burning agTokens](resources/rinkeby-testnet/testnet-mint-burn.md)
-  - [Opening & Managing Perpetual Positions](resources/rinkeby-testnet/testnet-ha-positions.md)
-  - [SLP Pools](resources/rinkeby-testnet/testnet-slp-pools.md)
-  - [Staking](resources/rinkeby-testnet/testnet-staking-pools.md)
-  - [App FAQ](resources/rinkeby-testnet/testnet-app-faq.md)
 
 ## Ecosystem
 

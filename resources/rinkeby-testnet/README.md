@@ -6,7 +6,7 @@ description: Angle Rinkeby testnet guide
 
 ## Testnet Users
 
-To use [the protocol](https://app.angle.money) in testnet, you need to connect to the Rinkeby network.
+To use [the protocol](https://rinkeby.angle.money) in testnet, you need to connect to the Rinkeby network.
 
 ![Metamask Rinkeby](../../.gitbook/assets/metamask-rinkeby-userguide.jpg)
 

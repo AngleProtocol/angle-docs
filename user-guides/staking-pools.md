@@ -5,7 +5,7 @@ description: How to stake agTokens or sanTokens to get ANGLE rewards using Angle
 
 # Staking Pools
 
-You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewards.
+You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewards. Hedging Agents automatically accrue ANGLE rewards through their open positions.
 
 The weights of rewards distribution between pools is updated weekly by governance. You can find more information about the tokenomics [here in the docs](../governance/angle-token/README.md), or in [this blog post](https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001).
 
