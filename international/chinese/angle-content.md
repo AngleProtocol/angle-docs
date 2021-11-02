@@ -5,8 +5,8 @@ description: Angle Docs Introduction
 # 🇨🇳 Angle Documentation Portal 🇨🇳
 
 - Based on: [Angle Docs Introduction](https://docs.angle.money)
+- Last Updated: 1st of November 2021
 - Author: @licrazy#4951
-- Date: 1st of November 2021
 
 Angle 是一种资本高率、超额抵押且无限流动性的去中心化稳定币协议。
 

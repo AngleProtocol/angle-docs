@@ -2,13 +2,13 @@
 description: Angle Glossary
 ---
 
-# 🇨🇳 FAQ/常见问题 🇨🇳
+# 🇨🇳 Glossary/词汇表 🇨🇳
 
-- Based on: [Glossary/词汇表](https://docs.angle.money/faq)
+- Based on: [Angle Glossary](https://docs.angle.money/glossary)
+- Last Updated: 1st of November 2021
 - Author: @licrazy#4951
-- Date: 1st of November 2021
 
-## 与 Angle 协议有关的词汇和术语。
+## 与 Angle 协议有关的词汇和术语
 
 我们的读者可能不熟悉整个文档中使用的某些术语。下面，我们列出了一些有助于您理解的常用术语。
 

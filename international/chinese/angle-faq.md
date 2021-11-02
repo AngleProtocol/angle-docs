@@ -5,8 +5,8 @@ description: Angle FAQ
 # 🇨🇳 FAQ/常见问题 🇨🇳
 
 - Based on: [Angle FAQ](https://docs.angle.money/faq)
+- Last Updated: 1st of November 2021
 - Author: @licrazy#4951
-- Date: 1st of November 2021
 
 ## 什么是 Angle？
 

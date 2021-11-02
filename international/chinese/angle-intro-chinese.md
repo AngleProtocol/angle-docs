@@ -7,7 +7,6 @@ description: Angle Introduction Article
 - Based on: [Angle Introduction Article](https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60) posted in the Angle blog
 - Last Updated: 22nd of October 2021
 - Author: @licrazy#4951
-- Original translation link: https://mirror.xyz/giter.eth/fl-Fr8nuW6nhKPqhgOX_SOAlcmWlbZzxQasUKw5CZzg
 
 ## Angle 协议简介
 
