@@ -1,8 +1,8 @@
 ---
-description: How to get the tokens to interact with Angle on Rinkeby
+description: Angle Rinkeby testnet guide
 ---
 
-# 📔 App Guides & Resources
+# 🧪 Rinkeby testnet guide
 
 ## Testnet Users
 
@@ -21,9 +21,10 @@ Here are the steps to follow:
 2. Go to [app.angle.money/\#/faucet](https://app.angle.money/#/faucet), paste the link of your tweet, and click on **Get Tokens**.
 3. After a few minutes, you should receive some ETH, wETH, wBTC, USDC, and DAI.
 
-You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money/#/faucet)! In the following pages, we explain how to interact with the protocol.
+You should now be all set up to start testing Angle on [app.angle.money](https://app.angle.money/#/faucet)! Next, head to our main user guides to see how to use the protocol.
+
+{% page-ref page="user-guides/README.md" %}
 
 {% hint style="info" %}
 In case our faucet is down, you can also follow [this](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby) guide.
 {% endhint %}
-
