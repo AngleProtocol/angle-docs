@@ -1,6 +1,5 @@
 ---
-description: >-
-  How to stake agTokens or sanTokens to get ANGLE governance tokens using Angle
+description: How to stake agTokens or sanTokens to get ANGLE rewards using Angle
   app
 ---
 
@@ -8,11 +7,11 @@ description: >-
 
 You can stake your sanTokens and agTokens in the staking page to earn ANGLE rewards.
 
-The weights of rewards distribution between pools is updated weekly by governance.
+The weights of rewards distribution between pools is updated weekly by governance. You can find more information about the tokenomics [here in the docs](../governance/angle-token/README.md), or in [this blog post](https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001).
 
-On the main Staking page, you can choose to `Stake` your tokens, `Claim` your rewards, or `Unstake` your tokens \(which will claim rewards simultaneously if you unstake everything you staked\).
+On the main Staking page, you can choose to `Stake` your tokens, `Claim` your rewards, or `Unstake` your tokens (which will claim rewards simultaneously if you unstake everything you staked).
 
-You need to have either agTokens or sanTokens to be able to stake with Angle.
+You need to have either agTokens or sanTokens to be able to stake withing Angle.
 
 To **stake**, you simply need to click on the `Staking` button and enter the amount of tokens you want to stake.
 
