@@ -46,3 +46,9 @@ When opening or closing a position, there is an expert mode to protect for impor
 {% endhint %}
 
 ![Closing Perpetual](../.gitbook/assets/closing-perpetual.png)
+
+## Claiming ANGLE rewards
+
+If you have an open position on Angle, it will automatically accrue ANGLE token rewards. You can see how much you can claim by clicking on the `Details` button at the bottom of the position, and claim your tokens by clicking on the `Claim` button as shown in the screenshot below.
+
+![HA ANGLE rewards](../.gitbook/assets/ha-angle-rewards.png)
