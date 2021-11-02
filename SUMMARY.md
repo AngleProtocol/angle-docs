@@ -61,3 +61,6 @@
   - [Angle プロトコルの紹介](international/japanese/angle-intro-japanese.md)
 - [🇨🇳 Chinese - 中国人](international/chinese/README.md)
   - [角度协议介绍](international/chinese/angle-intro-chinese.md)
+  - [Document/文档](international/chinese/angle-content.md)
+  - [Glossary/词汇表](international/chinese/angle-glossary.md)
+  - [FAQ/常见问题](international/chinese/angle-faq.md)
