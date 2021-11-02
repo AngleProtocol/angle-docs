@@ -15,7 +15,7 @@ Please join the discussion on the Angle Community [Discord Server](https://disco
 {% endhint %}
 
 {% hint style="info" %}
-📅 Angle Protocol is not live yet. Audits are currently being finalized (09/2021), and we are hoping to launch on mainnet in early November 🍁.
+📅 Angle Protocol has been live on the Ethereum mainnet since the 3rd of November 2021 🍁.
 {% endhint %}
 
 ## Introduction to Angle
@@ -28,9 +28,9 @@ This makes the protocol both capital efficient and highly liquid.
 
 ### 🛣️ Roadmap
 
-Angle Protocol could be used to issue any stablecoin, and will start on mainnet with a stable Euro. Besides creating the first liquid Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
+Angle Protocol could be used to issue any stablecoin. and has started on mainnet with agEUR, a Euro stablecoin. Besides creating the first liquid Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
 
-Stable USD, CHF, GBP, JPY and KRW should be following EUR after launch.
+Stable USD, CHF, GBP, JPY and KRW should be following agEUR.
 
 ### 🎨 Protocol Design
 
@@ -60,7 +60,7 @@ There is a large number of ways to build decentralized stablecoins, and we, at A
 
 Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
-## [⚒️ Developers Doc](https://developers.angle.money)
+## ⚒️ [Developers Doc](https://developers.angle.money)
 
 Angle has a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
 
@@ -80,5 +80,16 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 {% embed url="https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60" %}
 Angle Introduction Article
 {% endembed %}
+
+## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
+
+This documentation portal is the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
+
+The Angle Protocol has been designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://blog.angle.money) in its home language.
+
+In order for your translation to appear on this doc, you need to:
+
+1. Make sure that your translation has been reviewed by members of your local community on Angle Discord. We will not accept any translation that has not been checked by other community members.
+2. Submit a pull request to the `angle-docs` repository and respect the formatting and conventions already in place for the `russian` section of the docs.
 
 ![Join Angle Playground!](.gitbook/assets/angle_multi_back.jpg)
