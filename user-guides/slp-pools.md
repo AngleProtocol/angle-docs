@@ -10,3 +10,11 @@ Each collateral/stablecoin pair on Angle has a dedicated pool, which funds are i
 2. On the deposit page, enter the amount of tokens you want to put in the pool and confirm the transaction. You might need to approve the pool if it hasn't been done before.
 3. You will receive sanTokens in exchange, which represent your liquidity in the pool and automatically accrue interest.
 4. To withdraw your funds, just click on the `Withdraw` button on the Pools page, and input the number of sanTokens you want to send back.
+
+## Deposit
+
+![Deposit SLP](../.gitbook/assets/deposit-for-slp.png)
+
+## Withdraw
+
+![Withdraw SLP](../.gitbook/assets/withdraw-sanDAI_EUR.png)

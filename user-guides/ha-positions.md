@@ -4,6 +4,8 @@ description: How to open, modify or close perpetual positions on Angle app
 
 # Opening & Managing Leveraged Perpetual Positions
 
+![Perpetuals page](../.gitbook/assets/open-perpetuals-card.png)
+
 ## Opening
 
 1. To open a position on Angle, click on the `+ Open Position`button and choose a collateral/stablecoin pair.
@@ -19,6 +21,8 @@ If this is the first time opening a position on this collateral/stablecoin pair,
 {% hint style="warning" %}
 Be careful when opening a position, updating and closing is locked for an hour. More info [here](app-faq.md).
 {% endhint %}
+
+![Perpetuals page](../.gitbook/assets/opening-perpetual.png)
 
 ## Updating
 
@@ -39,3 +43,5 @@ If you have open positions, you might want to add or remove margin to some of th
 {% hint style="info" %}
 When opening or closing a position, there is an expert mode to protect for important slippage in price or fees.
 {% endhint %}
+
+![Closing Perpetual](../.gitbook/assets/closing-perpetual.png)
