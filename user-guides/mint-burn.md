@@ -6,7 +6,7 @@ description: How to mint and burn agTokens using Angle app
 
 ## Approving tokens
 
-To interact with Angle protocol, you will need to approve tokens for each collateral/stablecoin pool. You can learn more [here](app-faq#why-do-i-need-to-approve-the-same-token-multiple-times).
+To interact with Angle protocol, you will need to approve tokens for each collateral/stablecoin pool. You can learn more about approving tokens [here](app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
 
 ![Approving tokens](../.gitbook/assets/approving-tokens.png)
 
@@ -15,8 +15,8 @@ To interact with Angle protocol, you will need to approve tokens for each collat
 1. Go to [app.angle.money](https://app.angle.money).
 2. Make sure that you have ETH to pay for gas fees, as well as some of the tokens accepted as collateral.
 3. Select the collateral you want to send, and the stablecoin you want to mint/receive.
-   - Supported collaterals: DAI, USDC
-   - Available agTokens: agEUR
+   * Supported collaterals: DAI, USDC
+   * Available agTokens: agEUR
 4. Approve your collateral. You will need to approve your collateral for every collateral/agToken pair (more details [here](app-faq.md)).
 5. Mint your stablecoins against collateral.
 
