@@ -24,7 +24,7 @@ The main purposes of the ANGLE token are to get as many people involved as possi
 
 The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution is broken down as follows:
 
-![ANGLE Distribution](../.gitbook/assets/allocation.png)
+![ANGLE Distribution](../../.gitbook/assets/allocation.png)
 
 ### Liquidity Mining
 
