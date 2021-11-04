@@ -39,6 +39,7 @@
 
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [🔐 Audits](resources/audits/README.md)
+- [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [🧑‍🏫 Quizzes](resources/quizzes/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
 
