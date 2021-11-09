@@ -8,7 +8,7 @@ description: Common questions about getting and exchanging the Ppotocol's stable
 
 Angle can be used as a decentralized exchange where there is no slippage for swapping.
 
-If Angle's agUSD is backed by wETH and wBTC, a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agUSD, and then use these agUSD to redeem wBTC.
+If Angle's agEUR is backed by wETH and wBTC, a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agEUR, and then use these agEUR to redeem wBTC.
 
 ## What happens if I ask to get a collateral that is not present in sufficient quantity against my stablecoins?
 

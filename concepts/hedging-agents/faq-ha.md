@@ -38,9 +38,9 @@ The amount to hedge for a given collateral corresponds to the quantity of stable
 
 It refers to the total position HAs can open with the protocol.
 
-For instance, if a user minted 20000 agUSD with wETH, then the amount to hedge is 20000 USD of wETH. Then, if a user burns 15000 agUSD against wETH, the amount to hedge becomes 5000 USD of wETH.
+For instance, if a user minted 20000 agEUR with wETH, then the amount to hedge is 20000 EUR of wETH. Then, if a user burns 15000 agEUR against wETH, the amount to hedge becomes 5000 EUR of wETH.
 
-If the target proportion that HAs are allowed to hedge is 90%, then after the burn the amount to hedge by HAs is 5000 \* 0.9 = 4500 USD worth of stablecoins. This means that the sum of the position size \(in collateral\) multiplied by the entry oracle rates of HAs should less or equal to 4500 USD.
+If the target proportion that HAs are allowed to hedge is 90%, then after the burn the amount to hedge by HAs is 5000 \* 0.9 = 4500 EUR worth of stablecoins. This means that the sum of the position size \(in collateral\) multiplied by the entry oracle rates of HAs should less or equal to 4500 EUR.
 
 **Why is that quantity expressed in stablecoins?** Let's say that there is one HA in the protocol that entered at a time where the price of collateral with respect to the stablecoin was `p_e` and commits to an amount of collateral of `c`. HAs are not allowed to hedge more collateral that is in the protocol. To this extent, `c` must be collateral in the protocol's reserves, brought by a user minting stablecoins.
 
@@ -68,7 +68,7 @@ This amount should always remain inferior to the target amount HAs should hedge 
 
 The hedging ratio refers to the portion of the amount to hedge by Hedging Agents that is actually hedged.
 
-If one user mints 2000 agUSD for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agUSD is 1800 USD of wETH. If one HA enters the protocol when wETH is worth 1000 USD, brings 2 wETH and decides to commit to the variation of 0.8 wETH \(this HA has a leverage of x1.4\), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
+If one user mints 2000 agEUR for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agEUR is 1800 agEUR of wETH. If one HA enters the protocol when wETH is worth 1000 EUR, brings 2 wETH and decides to commit to the variation of 0.8 wETH \(this HA has a leverage of x1.4\), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
 
 ## What happens if there are too many HAs with respect to the amount to hedge from the protocol?
 
@@ -90,11 +90,11 @@ In this case, the HA gets everything that can be given to from the collateral po
 
 ## Can I open multiple perpetuals?
 
-A HA can own multiple perpetuals across a similar pool. For example, a HA can choose to have two positions on the wETH/USD pair, one with a x5 leverage, and the other with a x2 leverage. Each position has its dedicated margin \(isolated margin perpetuals\).
+A HA can own multiple perpetuals across a similar pool. For example, a HA can choose to have two positions on the wETH/EUR pair, one with a x5 leverage, and the other with a x2 leverage. Each position has its dedicated margin \(isolated margin perpetuals\).
 
 Once the amount hedged by a HA has been set, it can no longer be modified. For instance if a HA opens a position of 5 wETH with 1 wETH of collateral as margin, the HA can add or remove collateral from this perpetual to change the leverage, but it can never modify this amount committed \(also defined as the position size\). The solution would be to close this position and to open a new one.
 
-A HA can also own perpetuals across multiple pairs for different stablecoins. For instance, a HA could have a perpetual on the pair USDC/EUR, and another perpetual on the pair wETH/USD.
+A HA can also own perpetuals across multiple pairs for different stablecoins. For instance, a HA could have a perpetual on the pair USDC/EUR, and another perpetual on the pair wETH/EUR.
 
 In the protocol, positions are represented as NFTs: they can be transferred from one address to another and are non fungible.
 
@@ -108,7 +108,7 @@ This is a parameter that can be modified by protocol governance.
 
 ## Is there a maintenance margin like in centralized exchanges?
 
-Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/USD pair, the maintenance margin should be set at `6.25%`.
+Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.
 
 ## Are there minimum or maximum leverage as a HA on Angle?
 
@@ -116,7 +116,7 @@ There is no minimal leverage, meaning you can come as a HA in the protocol, brin
 
 There is a maximum leverage though. This parameter will depend on the volatility of the pairs.
 
-For instance, for a perpetual on the pair wETH/USD, the maximum leverage allowed will be x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
+For instance, for a perpetual on the pair wETH/EUR, the maximum leverage allowed will be x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
 
 ## Are there slippage protections for HAs?
 
