@@ -11,7 +11,7 @@ description: Selling governance tokens against the protocol's stablecoins
 
 ## 💡 Need for a Bonding Curve
 
-Angle leaves the possibility to buy governance tokens using the protocol's stablecoins. For instance, it will be possible to buy ANGLE tokens using Angle's agEUR, or agUSD.
+Angle leaves the possibility to buy governance tokens using the protocol's stablecoins. For instance, it will be possible to buy ANGLE tokens using Angle's agEUR.
 
 The agTokens used to buy the governance tokens will be burnt. This is a way to directly increase the protocol's collateral ratio and grow its reserves, thus reducing the overall risk of the protocol.
 

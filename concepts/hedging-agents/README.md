@@ -14,7 +14,7 @@ description: Insuring the protocol against collateral volatility.
 
 ## 🗺 Principle
 
-Angle by essence is highly dependent on collateral volatility. Let's say one stable seeker brings 1 wETH against 2000 agUSD and the price of wETH then decreases by 50% (from 2000$ to 1000$). The protocol then needs to find 1 wETH to ensure the redeemability of the 2000$ of stablecoins and maintain their stability.
+Angle by essence is highly dependent on collateral volatility. Let's say one stable seeker brings 1 wETH against 2000 agEUR and the price of wETH then decreases by 50% (from 2000€ to 1000€). The protocol then needs to find 1 wETH to ensure the redeemability of the 2000€ of stablecoins and maintain their stability.
 
 We say that the protocol needs to insure itself against the volatility of the collateral. While surges in collateral prices are beneficial to the protocol, drops, as in the example above, are less desirable.
 
@@ -52,7 +52,7 @@ $$
 
 When the collateral price increases (with respect to the asset stablecoins are pegged to), besides their margin (amount brought initially), HAs are entitled to get the capital gains they would have made if they had owned the collateral they hedged.
 
-If the HA brought 1 wETH and decided to back 1 wETH from the protocol, at a wETH price of 2000$, then:
+If the HA brought 1 wETH and decided to back 1 wETH from the protocol, at a wETH price of 2000€, then:
 
 $$
 x = 1, \space y=1
@@ -62,19 +62,19 @@ $$
 \texttt{initial oracle price} = 2000
 $$
 
-If the price of wETH increases to 4000$, then according to the formula above, this HA can get from the protocol:
+If the price of wETH increases to 4000€, then according to the formula above, this HA can get from the protocol:
 
 $$
 \texttt{cash out amount} = 1.5 \space \texttt{wETH}
 $$
 
-The HA made 6000$ from her 2000$ initially. If she had just stayed long without leverage, she would have only 4000$.
+The HA made 6000€ from her 2000€ initially. If she had just stayed long without leverage, she would have only 4000€.
 
 ### 📉 Price Decrease Scenario
 
 When the collateral price decreases (with respect to the asset stablecoins are pegged to), HAs will incur losses on their margin as if they had owned the collateral they covered.
 
-Back to the previous example, if the price of wETH decreases to 1000$, then the cash out amount of the HA becomes:
+Back to the previous example, if the price of wETH decreases to 1000€, then the cash out amount of the HA becomes:
 
 $$
 \texttt{cash out amount} = 1 + 1 \cdot (1-2) = 0
@@ -118,7 +118,7 @@ This quantity remains constant and only depends on variables fixed upon HAs entr
 
 The total amount hedged by HAs for a given collateral/stablecoin pair is hence the sum of the product between the amount committed by HAs and their entry price: it is a measure of how much stablecoins issued are backed and insured.
 
-This quantity is compared to the amount of collateral `in stablecoin value` needed by the protocol to pay back users in case they all want to burn their stablecoins. For example, if a user brings 1 wETH to mint 2000 agUSD, and another one burns 1000 agUSD, the amount to hedge is 1000 USD of wETH. HAs are able to hedge a fraction of this quantity (close to 100%): this is called the target hedge amount .
+This quantity is compared to the amount of collateral `in stablecoin value` needed by the protocol to pay back users in case they all want to burn their stablecoins. For example, if a user brings 1 wETH to mint 2000 agEUR, and another one burns 1000 agEUR, the amount to hedge is 1000 EUR of wETH. HAs are able to hedge a fraction of this quantity (close to 100%): this is called the target hedge amount.
 
 The hedge ratio of the protocol **for a given stablecoin/collateral pair** is hence defined as:
 

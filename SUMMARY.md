@@ -56,8 +56,12 @@
 ## International
 
 - [🇷🇺 Russian - русский](international/russian/README.md)
+  - [Whitepaper](international/russian/ru-whitepaper.md)
   - [Angle FAQ](international/russian/faq.md)
   - [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
+  - [ценность для держателей стейблкоинов](international/russian/stablecoin-value-proposition.md)
+  - [Значение для хеджинговых агентов](international/russian/ha-value-proposition.md)
+  - [Ценность для стандартных поставщиков ликвидности](international/russian/slp-value-proposition.md)
 - [🇯🇵 Japanese - 日本語](international/japanese/README.md)
   - [Angle FAQ](international/japanese/faq.md)
   - [Angle プロトコルの紹介](international/japanese/angle-intro-japanese.md)

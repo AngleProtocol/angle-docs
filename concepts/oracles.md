@@ -13,7 +13,7 @@ description: Giving the protocol access to price feeds
 
 Angle Protocol lets people swap their collateral against the protocol's native stablecoins \(minting\). It also allows Hedging Agents to take leveraged long positions through perpetual futures on a collateral/stablecoin pair. The protocol needs to be able to access price feeds for all the supported collateral/stablecoin pairs: it does so using oracles.
 
-For instance, if USD and EUR stablecoins are supported, and if, for each of these, wETH and wBTC are used as collateral, then the protocol needs to be able to have the following oracle feeds: wBTC/USD, wBTC/EUR, wETH/USD, wETH/EUR.
+For instance, if EUR and CHF stablecoins are supported, and if, for each of these, wETH and wBTC are used as collateral, then the protocol needs to be able to have the following oracle feeds: wBTC/EUR, wBTC/CHF, wETH/EUR, wETH/CHF.
 
 {% hint style="info" %}
 In the beginning, the agEUR stablecoin will not accept wETH and wBTC. This is just for the purpose of this example.
@@ -39,7 +39,7 @@ In this case, the protocol uses an only-Chainlink feed \(wETH/USD then USD/EUR\)
 
 Given that Angle lets people swap their collateral against stablecoins with no slippage, and given on-chain oracle latency \(especially Chainlink\), there can be a front-running risk.
 
-If, at a point in time, the on-chain price for wETH is 1000 USD, but the real market price \(which is the future on-chain price\) is 1100 USD, then people have incentives to use USD stablecoins to get wETH at the price of 1 wETH for 1000 USD stablecoins on-chain, and then wait for the on-chain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
+If, at a point in time, the on-chain price for wETH is 1000€, but the real market price \(which is the future on-chain price\) is 1100€, then people have incentives to use EUR stablecoins to get wETH at the price of 1 wETH for 1000 EUR stablecoins on-chain, and then wait for the on-chain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
 
 This oracle latency is the cause of front-running risk Angle is subject to. Using a combination of Uniswap V3 time-weighted average price and Chainlink, along with transaction fees allows to mitigate this risk.
 

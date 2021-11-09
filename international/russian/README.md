@@ -2,7 +2,7 @@
 description: Russian Documents and Articles about Angle
 ---
 
-# 🇷🇺 Russian Documents and Articles about Angle
+# 🇷🇺 Russian Translations
 
 ## Disclaimer
 

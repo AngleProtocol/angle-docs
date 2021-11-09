@@ -30,7 +30,7 @@ This makes the protocol both capital efficient and highly liquid.
 
 Angle Protocol could be used to issue any stablecoin. and has started on mainnet with agEUR, a Euro stablecoin. Besides creating the first liquid Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
 
-Stable USD, CHF, GBP, JPY and KRW should be following agEUR.
+Stable CHF, GBP, JPY and KRW should be following agEUR.
 
 ### 🎨 Protocol Design
 
