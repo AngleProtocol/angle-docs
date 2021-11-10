@@ -45,7 +45,7 @@ $$
 Since HAs bring collateral to the protocol, we define their **leverage** as:
 
 $$
-\texttt{leverage} = \frac{x+y}{y} =  \frac{\texttt{margin + amount committed}}{\texttt{amount committed}}
+\texttt{leverage} = \frac{x+y}{x} =  \frac{\texttt{margin + amount committed}}{\texttt{margin}}
 $$
 
 ### 📈 Price Increase Scenario
