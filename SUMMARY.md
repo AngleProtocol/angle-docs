@@ -70,3 +70,5 @@
   - [Document/文档](international/chinese/angle-content.md)
   - [Glossary/词汇表](international/chinese/angle-glossary.md)
   - [FAQ/常见问题](international/chinese/angle-faq.md)
+- [🇻🇳 Vietnamese - tiếng-việt](international/vietnamese/README.md)
+  - [Whitepaper](international/vietnamese/vt-whitepaper.md)
