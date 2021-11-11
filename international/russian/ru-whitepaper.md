@@ -15,7 +15,3 @@ Russian translation of Angle Protocol whitepaper. This translation has **not** b
 {% file src="../../.gitbook/assets/Angle_Whitepaper_Russian.pdf" %}
 Angle Whitepaper in Russian
 {% endfile %}
-
-{% file src="../../.gitbook/assets/angle-wp (1).pdf" %}
-Original Whitepaper in English
-{% endfile %}
