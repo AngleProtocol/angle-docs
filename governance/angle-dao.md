@@ -8,6 +8,7 @@ description: The Decentralized Autonomous Organization driving Angle Protocol
 
 - Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
 - The Angle DAO manages the protocol through a governance module controlled by the ANGLE token. Angle governance contracts have been imported from OpenZeppelin and Compound implementations. More technical info can be found in the [developers documentation](https://developers.angle.money/side-smart-contract-modules/governance).
+- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -30,12 +31,14 @@ In particular, it can make the following changes:
 The Angle protocol naturally accumulates some surplus from transaction fees, yield and collateral appreciation. The DAO is also be responsible for deciding what to do with this surplus.
 While a portion should serve as a buffer to continue to absorb collateral volatility and earn yield to grow over time, this surplus could for instance be allocated to support initiatives around the protocol or for ANGLE buybacks under the form of auctions like is done by Maker DAO.
 
+Last, the DAO is responsible for deciding where the liquidity mining supply is to be distributed. Voting for this takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/), and the results of the vote are for the moment implemented by a multi-sig controlled by members of the Angle Core Team.
+
 ## Parameters
 
 Every protocol governance has a set of parameters that frame how proposals from the DAO can be submitted, voted, accepted and executed. They usually include at least a voting period, a quorum (minimum of votes in favor/neutral required for a proposal to be approved), and a proposal threshold (minimum number of tokens required to submit a proposal). In Angle governance module, these parameters are set as follows:
 
 - Voting period: 3 days
-- Quorum: 25M ANGLE, or 2.5% of the total supply.
+- Quorum: 5M ANGLE, or 0.5% of the total supply.
 - Proposal threshold: 2.5M ANGLE, or 0.25% of the total supply.
 
 These parameters have been set relatively low at the beginning, to ensure that the community will quickly be able to take part and lead the governance of the protocol. Later on, when Angle's governance is more established, some of these parameters could be updated by the DAO.

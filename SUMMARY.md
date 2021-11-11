@@ -33,6 +33,7 @@
 - [🗳 Angle DAO](governance/angle-dao.md)
 - [🚀 ANGLE Token](governance/angle-token/README.md)
   - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
+- [🏋️ Liquidity Mining Weights](governance/voting.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
 ## Resources
