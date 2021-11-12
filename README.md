@@ -52,7 +52,7 @@ Check Frequently Asked Questions for a deeper introduction to Angle and its key 
 
 If you are unsure about any specific terms, feel free to check the glossary.
 
-## ⭐ [Popularization](./ressources/popularization/README.md)
+## ⭐ [Popularization](./resources/popularization/README.md)
 
 If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
