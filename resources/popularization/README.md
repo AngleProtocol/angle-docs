@@ -1,5 +1,7 @@
 ---
-description: Content and elements designed to make Angle Protocol and DeFi more accessible to everyone
+description: >-
+  Content and elements designed to make Angle Protocol and DeFi more accessible
+  to everyone
 ---
 
 # ⭐ Popularization
@@ -18,9 +20,9 @@ Achieving this requires more than the implication of a dedicated Core Team and s
 What is Angle Protocol?
 {% endfile %}
 
-- Details: A simple and graphical presentation to quickly understand what the Angle Protocol is and how it works
-- DeFi Expertise Required: 2/5
-- Recommended If: You want a concise and straight to the point overview of what Angle is
+* _Details: A simple and graphical presentation to quickly understand what the Angle Protocol is and how it works_
+* _DeFi Expertise Required: 2/5_
+* _Recommended If: You want a concise and straight to the point overview of what Angle is_
 
 ## Angle Introduction Article
 
@@ -28,16 +30,14 @@ What is Angle Protocol?
 Angle Introduction Article
 {% endembed %}
 
-- Details: A more thorough article to get a clear and thorough overview of the Angle Protocol and its different stakeholders
-- DeFi Expertise Required: 2/5
-- Recommended If: You want to go deep in the subject, understand the vision behind the project and how it tries to achieve it
+* _Details: A more thorough article to get a clear and thorough overview of the Angle Protocol and its different stakeholders_
+* _DeFi Expertise Required: 2/5_
+* _Recommended If: You want to go deep in the subject, understand the vision behind the project and how it tries to achieve it_
 
 ## 🧑‍🏫 Angle Knowledge Quizzes
 
-- [Part 1](https://docs.google.com/forms/d/e/1FAIpQLSddUD8rNRBNvPHJN15DvPT9Lbglu5-M_iGQU_PGD4wchvHnLg/viewform?usp=sf_link)
-- [Part 2](https://docs.google.com/forms/d/e/1FAIpQLScK7dZtSHQUg3zEoLFP27-2M92Bpl6AUOiOi-WEc62gkvaPcw/viewform?usp=sf_link)
-- [Part 3](https://docs.google.com/forms/d/e/1FAIpQLSe7z5ZFgsokkFLIl4zhcjhY5LrnJ_gfbzAytWHKnFguQY7HFw/viewform?usp=sf_link)
+Quizzes: [Part 1](https://docs.google.com/forms/d/e/1FAIpQLSddUD8rNRBNvPHJN15DvPT9Lbglu5-M\_iGQU\_PGD4wchvHnLg/viewform?usp=sf\_link), [Part 2](https://docs.google.com/forms/d/e/1FAIpQLScK7dZtSHQUg3zEoLFP27-2M92Bpl6AUOiOi-WEc62gkvaPcw/viewform?usp=sf\_link), [Part 3](https://docs.google.com/forms/d/e/1FAIpQLSe7z5ZFgsokkFLIl4zhcjhY5LrnJ\_gfbzAytWHKnFguQY7HFw/viewform?usp=sf\_link)
 
-- Details: This quizzes will help you test your knowledge and understanding of the Angle Protocol
-- DeFi Expertise Required: From 2/5 to 4/5 (quizzes are increasing in difficulty)
-- Recommended If: You had fun reading the docs and other documents about the protocol and want to check how much you have learned
+* _Details: These quizzes will help you test your knowledge and understanding of the Angle Protocol_
+* _DeFi Expertise Required: From 2/5 to 4/5 (quizzes are increasing in difficulty)_
+* _Recommended If: You had fun reading the docs and other documents about the protocol and want to check how much you have learned_
