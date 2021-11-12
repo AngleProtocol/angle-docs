@@ -44,13 +44,17 @@ In short, Angle matches people who want stability (stable seekers) and people wh
 
 The protocol is implemented as a set of **smart contracts** on top of the Ethereum blockchain.
 
-## ❓[FAQ](faq.md)
+## ❓ [FAQ](faq.md)
 
 Check Frequently Asked Questions for a deeper introduction to Angle and its key features.
 
-## 📚[Glossary](glossary.md)
+## 📚 [Glossary](glossary.md)
 
 If you are unsure about any specific terms, feel free to check the glossary.
+
+## ⭐ [Popularization](./ressources/popularization/README.md)
+
+If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
 ## 🕹️ [Discord](https://discord.gg/3vaHCJw7Mz)
 
@@ -76,10 +80,6 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 - 💻 [Github](https://github.com/AngleProtocol)
 - 📀 [App](https://app.angle.money)
 - 🗂️ [Analytics](https://analytics.angle.money/#/home)
-
-{% embed url="https://blog.angle.money/introducing-angle-protocol-3e3e603d3f60" %}
-Angle Introduction Article
-{% endembed %}
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 

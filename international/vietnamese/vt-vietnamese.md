@@ -2,7 +2,7 @@
 description: Angle Whitepaper Vietnamese translation
 ---
 
-# 🇷🇺 Whitepaper
+# 🇻🇳 Whitepaper
 
 - Based on: [Angle Whitepaper](https://docs.angle.money/whitepaper)
 - Last Updated: 11th of November 2021

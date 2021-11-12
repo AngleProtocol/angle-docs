@@ -24,4 +24,10 @@ Some contributors translated the whitepaper in their home language. These contri
 Angle Whitepaper in Russian
 {% endfile %}
 
+### Vietnamese 🇻🇳
+
+{% file src="../../.gitbook/assets/Whitepaper_AngleProtocol_Vietnamese.pdf" %}
+Angle Whitepaper in Vietnamese
+{% endfile %}
+
 ![Angle Atmosphere](.gitbook/assets/angle_atmos_v5.jpg)
