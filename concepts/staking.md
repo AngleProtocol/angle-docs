@@ -35,7 +35,7 @@ The distribution of governance tokens to the different staking contracts is done
 We built some simulations to evaluate how supply evolves over time, you can take a look at this [Google Sheet](https://docs.google.com/spreadsheets/d/1yraSUH_7D-VMnCUsIYWWdW1pxL7bDxN3o0M5japQmeY/edit#gid=0).
 
 {% hint style="info" %}
-ANGLE token owners are able to participate to Snapshot votes in each week to decide how to allocate the liquidity mining supply across different pools. This is detailed [here](../governance/voting.md)
+ANGLE token owners are able to participate to Snapshot votes each week to decide how to allocate the liquidity mining supply across different pools. This is detailed [here](../governance/voting.md)
 {% endhint %}
 
 ## 📶 Token Accumulation
