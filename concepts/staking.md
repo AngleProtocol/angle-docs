@@ -34,6 +34,10 @@ The distribution of governance tokens to the different staking contracts is done
 
 We built some simulations to evaluate how supply evolves over time, you can take a look at this [Google Sheet](https://docs.google.com/spreadsheets/d/1yraSUH_7D-VMnCUsIYWWdW1pxL7bDxN3o0M5japQmeY/edit#gid=0).
 
+{% hint style="info" %}
+ANGLE token owners are able to participate to Snapshot votes each week to decide how to allocate the liquidity mining supply across different pools. This is detailed [here](../governance/voting.md)
+{% endhint %}
+
 ## 📶 Token Accumulation
 
 At each block, tokens are distributed based on the rate specified by governance. If 1000 governance tokens are to be distributed for in 100 blocks (e.g, 10 governance tokens distributed each block), then stakers receive at a each block a fraction of these 10 tokens depending on what they put in the staking contract and on what other stakers have put at the time of the block.

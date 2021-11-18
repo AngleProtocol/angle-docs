@@ -32,6 +32,8 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 Every week, governance will be able to adjust the distribution of tokens between each stakeholder. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
+Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available in [this page](../voting.md)
+
 ### DAO Treasury: Bonding Curve and Future Protocol Incentives
 
 20% of the tokens are controlled by the DAO Treasury: the DAO will be able to vote for how and where to allocate these tokens.
