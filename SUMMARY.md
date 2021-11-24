@@ -39,6 +39,7 @@
 ## Resources
 
 - [🔐 Audits](resources/audits/README.md)
+- [🧑‍💻 Code](resources/code/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [⭐ Popularization](resources/popularization/README.md)
