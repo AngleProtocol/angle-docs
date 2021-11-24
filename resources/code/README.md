@@ -2,7 +2,7 @@
 description: Angle open-sourced codebase
 ---
 
-# Angle Codebase
+# 🧑‍💻 Code
 
 ## Open-sourcing code
 
@@ -14,20 +14,17 @@ Even though the deployed contracts are public by nature, we felt normal to follo
 
 A deeper dive into the contracts code is available in the developers documentation at [developers.angle.money](https://developers.angle.money).
 
-- [Contracts code](https://github.com/AngleProtocol/angle-core)
-- [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
+* [Contracts code](https://github.com/AngleProtocol/angle-core)
+* [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
 
-## SDK
+## [SDK](https://github.com/AngleProtocol/angle-sdk)
 
 The Angle Protocol is composed of a set of diverse smart contracts that can be complicated to interpret or fetch information from.
 
-To help people build applications on top of the protocol and its set of smart contracts detailed in the repository shared above, we are releasing the SDK (Software Development Kit) used in [app.angle.money](https://app.angle.money) under the MIT open-source license.
+To help people build applications on top of the protocol and its set of smart contracts detailed in the repository shared above, we are releasing the SDK (Software Development Kit) used in [app.angle.money](https://app.angle.money) under the GLP-3.0 open-source license.
 
 We hope this will empower people to build new types of applications and user interfaces we haven't thought about to interact with the protocol.
 
-- [SDK code](https://github.com/AngleProtocol/angle-sdk)
-
 ## Contribution Guidelines
 
-This is only the beginning of the Angle protocol and codebase, and anyone is welcome to improve it.
-There are no clear guidelines on the process of helping with contributions for now. Feel free to reach out in the [#developers channel](https://discord.gg/HcRB8QMeKU) of our Discord Server if you want to talk about this further!
+This is only the beginning of the Angle protocol and codebase, and anyone is welcome to improve it. There are no clear guidelines on the process of helping with contributions for now. Feel free to reach out in the [#developers channel](https://discord.gg/HcRB8QMeKU) of our Discord Server if you want to talk about this further!
