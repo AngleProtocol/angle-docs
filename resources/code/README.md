@@ -14,16 +14,18 @@ Even though the deployed contracts are public by nature, we felt normal to follo
 
 A deeper dive into the contracts code is available in the developers documentation at [developers.angle.money](https://developers.angle.money).
 
-* [Contracts code](https://github.com/AngleProtocol/angle-core)
-* [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
+- [Contracts code](https://github.com/AngleProtocol/angle-core)
+- [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
 
-## [SDK](https://github.com/AngleProtocol/angle-sdk)
+## SDK
 
 The Angle Protocol is composed of a set of diverse smart contracts that can be complicated to interpret or fetch information from.
 
 To help people build applications on top of the protocol and its set of smart contracts detailed in the repository shared above, we are releasing the SDK (Software Development Kit) used in [app.angle.money](https://app.angle.money) under the GLP-3.0 open-source license.
 
 We hope this will empower people to build new types of applications and user interfaces we haven't thought about to interact with the protocol.
+
+- [SDK Code](https://github.com/AngleProtocol/angle-sdk)
 
 ## Contribution Guidelines
 
