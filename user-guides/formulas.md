@@ -1,27 +1,10 @@
 ---
-description: List of formulas and parameters used in the Angle protocol and at app.angle.money
+description: List of formulas used in the Angle protocol and at app.angle.money
 ---
 
-# Formulas & Parameters
-
-## Minting & Burning
-
-**USDC**
-
-- Minting fee: 0.25%
-- Burning fee: 0.45%
-
-**DAI**
-
-- Minting fee: 0.3%
-- Burning fee: 0.5%
+# Formulas
 
 ## Perpetuals (HA)
-
-### Fees
-
-- Entry: 0.3%
-- Close: 0.5%
 
 ### Maintenance Margins
 
@@ -107,3 +90,7 @@ The slippageFee is currently set as follows:
 | 115%                  | 0%       |
 | 105%                  | 20%      |
 | 99%                   | 90%      |
+
+## Global parameters
+
+If you want to know the current protocol parameters in place, you can have a look at the analytics at [analytics.angle.money](https://analytics.angle.money) or directly in the [SDK](https://github.com/AngleProtocol/angle-sdk).
