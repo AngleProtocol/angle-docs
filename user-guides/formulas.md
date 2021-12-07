@@ -39,6 +39,8 @@ The Cash Out Amount represents the amount you should receive in your wallet afte
 
 $$cashOutAmount = initialMargin \pm grossPnL - closingFee $$
 
+With $grossPnL = positionSize\times(1-\frac{initialPrice}{currentPrice})$
+
 ### PnL
 
 The PnL displayed on the app represents the gain or loss you would make if closing the position. It is computed **net** of fees.
