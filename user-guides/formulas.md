@@ -80,7 +80,7 @@ The current slippage for SLP can be consulted in the [analytics](https://analyti
 
 When the protocol gets close to be under-collateralized, it progressively keeps a bigger portion of the fees usually going to SLPs to grow the suplus and be able to pay back stable holders. Note that this doesn't impact the initial deposits of SLPs nor the fees earned up until the start of the slippageFee.
 
-The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _SlippageFee_ in the _Fee Info > SLP_ section.
+The current slippageFee for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _SlippageFee_ in the _Fee Info > SLP_ section.
 
 ## Global parameters
 
