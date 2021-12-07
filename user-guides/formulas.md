@@ -13,6 +13,8 @@ description: List of formulas used in the Angle protocol and at app.angle.money
 - FEI: 0.625%
 - FRAX: 0.625%
 
+_Note that these maintenance margin can change depending on the maximum leverage allowed on the app._
+
 ### Leverage
 
 In Angle, **leverage** is computed as:
@@ -66,30 +68,19 @@ $$ APR = 2.08 = 208\% $$
 ## Depositing Liquidity (SLP)
 
 _In the Yield page of the app_
+_Both the Slippage and SlippageFee can vary depending on the collateral/stablecoin pair._
 
 ### Slippage
 
 SLP can face a slippage when withdrawing funds depending on the collateral ratio of the pool they are withdrawing from. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
 
-The slippage is currently set as follows:
-
-| Pool Collateral Ratio | Slippage |
-| --------------------- | -------- |
-| 120%                  | 0%       |
-| 110%                  | 1%       |
-| 100%                  | 10%      |
+The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _Slippage_ in the _Fee Info > SLP_ section.
 
 ### Slippage on Fees for SLP
 
 When the protocol gets close to be under-collateralized, it progressively keeps a bigger portion of the fees usually going to SLPs to grow the suplus and be able to pay back stable holders. Note that this doesn't impact the initial deposits of SLPs nor the fees earned up until the start of the slippageFee.
 
-The slippageFee is currently set as follows:
-
-| Pool Collateral Ratio | Slippage |
-| --------------------- | -------- |
-| 115%                  | 0%       |
-| 105%                  | 20%      |
-| 99%                   | 90%      |
+The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _SlippageFee_ in the _Fee Info > SLP_ section.
 
 ## Global parameters
 
