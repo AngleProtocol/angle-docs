@@ -13,6 +13,13 @@ description: List of formulas used in the Angle protocol and at app.angle.money
 - FEI: 0.625%
 - FRAX: 0.625%
 
+**Margin Ratio Formula**
+In Angle, the margin ratio is computed as:
+
+$$
+marginRatio = \frac{cashOutAmount}{positionSize}
+$$
+
 ### Leverage
 
 In Angle, **leverage** is computed as:
@@ -54,11 +61,14 @@ ANGLE rewards for position holders depends on the Position Size, as what matters
 - ANGLE price: 0.80 DAI
 
 $$
+
 APR =
 \frac{5\times{52}
 \times{100}
 \times{0.80}}
 {10,000}
+
+
 $$
 
 $$ APR = 2.08 = 208\% $$
@@ -83,3 +93,6 @@ The current slippageFee for SLP can be consulted in the [analytics](https://anal
 ## Global parameters
 
 If you want to know the current protocol parameters in place, you can have a look at the analytics at [analytics.angle.money](https://analytics.angle.money) or directly in the [SDK](https://github.com/AngleProtocol/angle-sdk).
+
+$$
+$$
