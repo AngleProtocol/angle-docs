@@ -13,8 +13,6 @@ description: List of formulas used in the Angle protocol and at app.angle.money
 - FEI: 0.625%
 - FRAX: 0.625%
 
-_Note that these maintenance margin can change depending on the maximum leverage allowed on the app._
-
 ### Leverage
 
 In Angle, **leverage** is computed as:
