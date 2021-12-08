@@ -6,33 +6,41 @@ description: List of formulas used in the Angle protocol and at app.angle.money
 
 ## Perpetuals (HA)
 
+### Margin
+
+The margin displayed on your position is computed net of opening fees, i.e.
+
+$$
+\texttt{margin} = \texttt{initial margin - position size} \times \texttt{opening fees}
+$$
+
 ### Leverage
 
 In Angle, **leverage** is computed as:
 
-$$leverage = \frac{(margin + position Size)}{margin}$$
+$$\texttt{leverage} = \frac{\texttt{(margin + position Size)}}{\texttt{margin}}$$
 
 **Example**
 
 - Margin: 10,000 DAI
 - Position size: 100,000 DAI
 
-$$leverage = \frac{1 + 10}{1} = 11 $$
+$$\texttt{leverage} = \frac{1 + 10}{1} = 11 $$
 
 ### Cash Out Amount
 
 The Cash Out Amount represents the amount you should receive in your wallet after closing the perpetual:
 
-$$cashOutAmount = initialMargin \pm grossPnL - closingFee $$
+$$\texttt{cash out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee} $$
 
-With $grossPnL = positionSize\times(1-\frac{initialPrice}{currentPrice})$
+With $\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$
 
 ### PnL
 
 The PnL displayed on the app represents the gain or loss you would make if closing the position. It is computed **net** of fees.
 
-$$ PnL = cashOutAmount - initialMargin $$
-$$ PnL = grossPnL - closingFee $$
+$$ \texttt{PnL} = \texttt{cash out amount - initial margin} $$
+$$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
 
 ### Maintenance Margins
 
@@ -45,7 +53,7 @@ $$ PnL = grossPnL - closingFee $$
 In Angle, the margin ratio is computed as:
 
 $$
-marginRatio = \frac{cashOutAmount}{positionSize}
+\texttt{margin ratio} = \frac{\texttt{cash out amount}}{\texttt{position size}}
 $$
 
 ### Est. APR on open positions
@@ -63,14 +71,11 @@ ANGLE rewards for position holders depends on the Position Size, as what matters
 - ANGLE price: 0.80 DAI
 
 $$
-
 APR =
 \frac{5\times{52}
 \times{100}
 \times{0.80}}
 {10,000}
-
-
 $$
 
 $$ APR = 2.08 = 208\% $$
@@ -85,7 +90,7 @@ _Both the Slippage and SlippageFee can vary depending on the collateral/stableco
 SLP can face a slippage when withdrawing funds depending on the collateral ratio of the pool they are withdrawing from. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
 
 $$
-amntReceived = amntWithdrawn \times{(1 - slippage)}
+\texttt{amnt received} = \texttt{amnt withdrawn} \times{(1 - \texttt{slippage})}
 $$
 
 The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _Slippage_ in the _Fee Info > SLP_ section.
@@ -95,7 +100,7 @@ The current slippage for SLP can be consulted in the [analytics](https://analyti
 When the protocol gets close to be under-collateralized, it progressively keeps a bigger portion of the fees usually going to SLPs to grow the suplus and be able to pay back stable holders. Note that this doesn't impact the initial deposits of SLPs nor the fees earned up until the start of the slippageFee.
 
 $$
-feesReceived = feesToSLPs \times{(1-slippageFee)}
+\texttt{fees received} = \texttt{fees to SLPs} \times{(1-\texttt{slippage fee})}
 $$
 
 The current slippageFee for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _SlippageFee_ in the _Fee Info > SLP_ section.
