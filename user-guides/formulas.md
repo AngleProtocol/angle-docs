@@ -6,20 +6,6 @@ description: List of formulas used in the Angle protocol and at app.angle.money
 
 ## Perpetuals (HA)
 
-### Maintenance Margins
-
-- DAI: 0.625%
-- USDC: 0.625%
-- FEI: 0.625%
-- FRAX: 0.625%
-
-**Margin Ratio Formula**
-In Angle, the margin ratio is computed as:
-
-$$
-marginRatio = \frac{cashOutAmount}{positionSize}
-$$
-
 ### Leverage
 
 In Angle, **leverage** is computed as:
@@ -47,6 +33,20 @@ The PnL displayed on the app represents the gain or loss you would make if closi
 
 $$ PnL = cashOutAmount - initialMargin $$
 $$ PnL = grossPnL - closingFee $$
+
+### Maintenance Margins
+
+- DAI: 0.625%
+- USDC: 0.625%
+- FEI: 0.625%
+- FRAX: 0.625%
+
+**Margin Ratio Formula**
+In Angle, the margin ratio is computed as:
+
+$$
+marginRatio = \frac{cashOutAmount}{positionSize}
+$$
 
 ### Est. APR on open positions
 
