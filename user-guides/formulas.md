@@ -84,17 +84,22 @@ _Both the Slippage and SlippageFee can vary depending on the collateral/stableco
 
 SLP can face a slippage when withdrawing funds depending on the collateral ratio of the pool they are withdrawing from. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
 
+$$
+amntReceived = amntWithdrawn \times{(1 - slippage)}
+$$
+
 The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _Slippage_ in the _Fee Info > SLP_ section.
 
 ### Slippage on Fees for SLP
 
 When the protocol gets close to be under-collateralized, it progressively keeps a bigger portion of the fees usually going to SLPs to grow the suplus and be able to pay back stable holders. Note that this doesn't impact the initial deposits of SLPs nor the fees earned up until the start of the slippageFee.
 
+$$
+feesReceived = feesToSLPs \times{(1-slippageFee)}
+$$
+
 The current slippageFee for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _SlippageFee_ in the _Fee Info > SLP_ section.
 
 ## Global parameters
 
 If you want to know the current protocol parameters in place, you can have a look at the analytics at [analytics.angle.money](https://analytics.angle.money) or directly in the [SDK](https://github.com/AngleProtocol/angle-sdk).
-
-$$
-$$
