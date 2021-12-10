@@ -1,10 +1,10 @@
-# agEUR 和 ANGLE 正式上线 Polygon 🚀 🇪🇺
+# 🇨🇳 agEUR 和 ANGLE 正式上线 Polygon 🚀 🇪🇺
 
-Based on: [agEUR and ANGLE are live on Polygon](https://blog.angle.money/ageur-and-angle-are-live-on-polygon-cc470a2c4f76)
-Last Updated: 2021/12/1
-Author: Aaron Diong#2378
-Reviewed: licrazy#4951
-Assisted: RP#2743
+- Based on: [agEUR and ANGLE are live on Polygon](https://blog.angle.money/ageur-and-angle-are-live-on-polygon-cc470a2c4f76)
+- Last Updated: 2021/12/1
+- Author: Aaron Diong#2378
+- Reviewed: licrazy#4951
+- Assisted: RP#2743
 
 如今你能够使用 Polygon PoS 跨链桥，将 agEUR 稳定币以及 ANGLE 代币从以太坊主网跨链至 Polygon 网络。
 ![](../../.gitbook/assets/angle-background-pink.png)

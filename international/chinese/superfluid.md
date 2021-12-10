@@ -1,10 +1,10 @@
-# Angle ^ Superfluid | 赋能 agEUR 稳定币- 让资金实现可编程化
+# 🇨🇳 Angle ^ Superfluid | 赋能 agEUR 稳定币- 让资金实现可编程化
 
-Based on: [Angle ^ Superfluid | Making agEUR the stablecoin for programmable cashflows](https://blog.angle.money/angle-superfluid-making-ageur-the-stablecoin-for-programmable-cashflows-ec64c40863c2)
-Last Updated: 2021/12/1
-Author: Aaron Diong#2378
-Reviewed: licrazy#4951
-Assisted: RP#2743
+- Based on: [Angle ^ Superfluid | Making agEUR the stablecoin for programmable cashflows](https://blog.angle.money/angle-superfluid-making-ageur-the-stablecoin-for-programmable-cashflows-ec64c40863c2)
+- Last Updated: 2021/12/1
+- Author: Aaron Diong#2378
+- Reviewed: licrazy#4951
+- Assisted: RP#2743
 
 ![](../../.gitbook/assets/angle-background-pink.png)
 
