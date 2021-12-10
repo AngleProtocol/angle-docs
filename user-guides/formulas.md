@@ -33,7 +33,7 @@ The Cash Out Amount represents the amount you should receive in your wallet afte
 
 $$\texttt{cash out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee} $$
 
-With $\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$
+With $$\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$$
 
 ### PnL
 
