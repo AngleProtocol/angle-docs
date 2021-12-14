@@ -37,6 +37,10 @@
 - [🏋️ Liquidity Mining Weights](governance/voting.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
+## L2/Sidechains
+
+- [⛓️ Multichain Angle](sidechains/README.md)
+
 ## Resources
 
 - [🔐 Audits](resources/audits/README.md)
