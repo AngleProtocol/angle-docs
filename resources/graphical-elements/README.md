@@ -18,10 +18,8 @@ Angle color palette is composed of 5 colors and their associated gradients:
 
 You can find the complete color palette in this pdf:
 
+{% file src="../../.gitbook/assets/Angle Palette.pdf" %}
+
 ## Icons
 
 You can download [this zip file](https://github.com/AngleProtocol/angle-docs/tree/c3080d47c5588a6b7b2f2055f8328ef206b5b1d0/.gitbook/assets/logo-icons.zip), where you will find all the icons and logos related to Angle.
-
-They look like this:
-
- ![ANGLE ICON DARK PINK](../../.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_DARK_PINK.png)
