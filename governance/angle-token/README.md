@@ -28,11 +28,11 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 ### Liquidity Mining
 
-40% of tokens will be distributed through staking contracts for agTokens holders, HAs, SLPs. LP on other external pools will also probably be incentivized. For more details on Angle's staking contracts, you can look at this [page](../../concepts/staking.md)
+40% of tokens will be distributed through staking contracts for agTokens holders, HAs, SLPs. LP on other external pools will also probably be incentivized. For more details on Angle's staking contracts, you can look at this [page](../../concepts/staking.md).
 
 Every week, governance will be able to adjust the distribution of tokens between each stakeholder. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
-Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available in [this page](../voting.md)
+Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available in [this page](../voting.md).
 
 ### DAO Treasury: Bonding Curve and Future Protocol Incentives
 
@@ -40,8 +40,8 @@ Details on how ANGLE token owners can vote to allocate the liquidity mining supp
 
 Overall, the idea of the Angle Core Team is to distribute it as follows:
 
-- 18% Through the [bonding curve](bonding-curve.md) when it is activated. Whenever the market price of the tokens will be superior to that proposed by the protocol, people will be incentivized to buy to the protocol. The goal is that the money received will serve as a surplus to the protocol.
-- 2% For future protocol incentive: this pocket controlled by the DAO can be seen as a buffer to avoid token inflation, it could for instance be distributed in the bonding curve or in staking contracts.
+* 18% Through the [bonding curve](bonding-curve.md) when it is activated. Whenever the market price of the tokens will be superior to that proposed by the protocol, people will be incentivized to buy to the protocol. The goal is that the money received will serve as a surplus to the protocol.
+* 2% For future protocol incentive: this pocket controlled by the DAO can be seen as a buffer to avoid token inflation, it could for instance be distributed in the bonding curve or in staking contracts.
 
 {% hint style="info" %}
 The distribution of tokens between the bonding curve and future protocol incentives specified here may change because community will always end up deciding. Besides, distribution through the bonding curve will not be activated from the start, but can be at anytime by the governance.
@@ -55,8 +55,8 @@ The distribution of tokens between the bonding curve and future protocol incenti
 
 Tokens subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
 
-- 18% to the Angle Core Team
-- 10% to early backers
+* 18% to the Angle Core Team
+* 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
@@ -66,4 +66,4 @@ For more details on the tokenomics, this article adds some details:
 Angle Tokenomics
 {% endembed %}
 
-![Angle](../../.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_GRADIENT.svg)
+![Angle](../../.gitbook/assets/ICONS\_ANGLE\_LOGO\_COLOR\_GRADIENT.svg)
