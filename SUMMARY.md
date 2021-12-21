@@ -36,6 +36,11 @@
   - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
 - [🏋️ Liquidity Mining Weights](governance/voting.md)
 - [💂 Angle Guardian](governance/guardian.md)
+- [♠️ veANGLE](governance/veANGLE/README.md)
+  - [🔒 Lock Details](governance/veANGLE/lock-details.md)
+  - [💥 Boost](governance/veANGLE/boost.md)
+  - [📈 Interests](governance/veANGLE/interests.md)
+  - [🗳 Voting](governance/veANGLE/voting.md)
 
 ## L2/Sidechains
 
