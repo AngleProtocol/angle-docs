@@ -32,6 +32,10 @@ Then, this x2.5 multiplier in liquidity provided will translate into a boost on 
 Note that as the quantity of veANGLE owned by LPs on a pool increase, the amount of rewards received by non-veANGLE holders decreases, as they represent a smaller share of the liquidity.
 {% endhint %}
 
+{% hint style="info" %}
+Boosts will not apply for users taking part in Angle Perpetual contracts.
+{% endhint %}
+
 ### Details
 
 #### Understanding the formula

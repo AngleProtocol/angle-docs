@@ -12,7 +12,7 @@ description: How protocol interests are redistributed to veANGLE owners
 
 ![Angle Interests Redistribution](../../.gitbook/assets/angle-interests-redistribution.png)
 
-## Interests redistribution
+## 💝 Interests redistribution
 
 ### Share of interests for veANGLE holders
 
@@ -28,7 +28,7 @@ In practice, if the redistribution of interests to veANGLE token holder is at 30
 - The USDC will be deposited into the protocol against sanUSDC_EUR
 - The sanUSDC_EUR will be redeemable by veANGLE holders
 
-### Timeline
+### ⏲️ Timeline
 
 Fees are going to be distributed weekly. The porportional amount of fees that each user is to receive is calculated based on their veANGLE balance relative to the total veANGLE supply.
 
@@ -36,7 +36,7 @@ This amount is calculated at the start of the week. The actual distribution occu
 
 The available sanUSDC_EUR balance to distribute is tracked via something that is called the “token checkpoint”. This is updated at minimum every 24 hours. Fees that are received between the last checkpoint of the previous week and first checkpoint of the new week will be split evenly between the weeks.
 
-## Swap Process
+## 💱 Swap Process
 
 As mentionned above, all profits of the protocol are converted into USDC before being deposited in the protocol as sanUSDC_EUR.
 

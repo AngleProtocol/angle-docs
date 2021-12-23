@@ -8,11 +8,13 @@ description: Details about the veANGLE lock
 
 The first thing to keep in mind when locking ANGLE into veANGLE is that veANGLE are **non-transferrable by design**. Once an address owns veANGLE, it can't transfer or sell them in any way.
 
-## Decreasing veANGLE balance
+On a similar page, it should be noted that each account can only have a single lock duration meaning that a single address cannot lock certain ANGLE tokens for 2 years then another set of ANGLE tokens for 3 years etc. All ANGLE per account must have a uniform lock time.
+
+## 📉 Decreasing veANGLE balance
 
 After an address starts owning veANGLE, its balance will decrease with time to reflect the lock time expiration.
 
-### Formula
+### ⚗️ Formula
 
 Depending on the lock time, a specific amount of veANGLE will be received from the ANGLE locked. The lock scale is as follows:
 
@@ -28,7 +30,9 @@ Q_{\texttt{veANGLE}} =
 \times Q_{\texttt{ANGLE locked}}
 $$
 
-Once tokens have been locked, it is however possible to extend the lock time and hence increase the veANGLE balance.
+It's only at the end of the lock time that it becomes possible to recover the locked ANGLE tokens.
+
+During lock time, user can also increase their veANGLE balance by locking up ANGLE, extending the lock end date, or both.
 
 ### Example
 
@@ -55,7 +59,7 @@ Q_{\texttt{veANGLE}} =
 7.3973
 $$
 
-## veANGLE Governance Whitelisting
+## 🤍 veANGLE Governance Whitelisting
 
 Like in Curve and Frax systems, smart contracts & DAOs require whitelisting by governance to stake for veANGLE. Only externally owned accounts and normal user wallets can directly call the veANGLE stake locking function.
 
