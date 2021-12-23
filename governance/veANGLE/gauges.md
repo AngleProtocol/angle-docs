@@ -2,14 +2,14 @@
 description: How the gauge system works with Angle
 ---
 
-# 🗳 veANGLE Gauge Votes
+# 🗳 Gauges
 
 ## 🔎 TL;DR
 
-- veANGLE holders are able to decide where weekly ANGLE emissions go through gauge votes
-- The fact that veANGLE holders are responsible for such vote alines incentives within the protocol
+* veANGLE holders are able to decide where weekly ANGLE emissions go through gauge votes
+* The fact that veANGLE holders are responsible for such vote alines incentives within the protocol
 
-## Gauge Vote Principle
+## ✍️Gauge Vote Principle
 
 Besides voting on governance proposals, veANGLE owners can vote for ANGLE gauge weights with their veANGLE balance. The gauge system implemented by Angle is similar to that of Frax and of Curve.
 
@@ -19,7 +19,7 @@ A gauge corresponds in fact to a staking contract and by voting for a gauge a ve
 
 This allows veANGLE holders who are the most long term users of the protocol to have complete control over the future ANGLE emission rate.
 
-## Incentives alinement
+## ↔️Incentives alinement
 
 Interestingly, the gauge system lowers the influence of ANGLE pairs and pools where the majority of rewards are sold off since those LPs will not have veANGLE to continue voting for their pair.
 
@@ -53,11 +53,11 @@ veANGLE stakers can therefore feel confident staking the maximum duration of 4 y
 
 Curve introduced the gauge system for their CRV token emissions. Users lock their veCRV to vote on "weights" of different Curve liquidity pools. The idea with Angle gauges is to incentivize different types liquidity pools useful to the protocol:
 
-- agEUR single side staking
-- sanTokens owners
-- perpetual owners
-- liquidity pools on exchanges (like on Curve, on Uniswap)
-- liquidity pools on different chains (like agEUR/USDC on Quickswap on Polygon for instance)
+* agEUR single side staking
+* sanTokens owners
+* Perpetual owners
+* Liquidity pools on exchanges (like on Curve, on Uniswap)
+* Liquidity pools on different chains (like agEUR/USDC on Quickswap on Polygon for instance)
 
 The gauge system could also be used to incentivize different things than staking contracts. For instance, incentives for Convex voters on Curve could be linked to a gauge (in fact an EOA or a multisig) where veANGLE owners decide to send some rewards and responsible for then placing the incentives on Votium.
 
@@ -65,17 +65,15 @@ Overall, there is no restriction on which protocols or pairs can have a gauge we
 
 Given that a wide range of contracts could be considered Angle protocol gauges, the system distinguishes several gauge types. Each gauge therefore has in addition to its weight from people who voted for it a type:
 
-- Type 0 Gauges: corresponding to normal staking contracts of the protocol
-- Type 1 Gauges: corresponding to Angle Perpetual contracts. Note that there will be no boosts for veANGLE holders in these contracts.
-- Type 2 Gauges: for gauges which interface is not supported by the distributor contract. This could for instance correspond to gauges used for the distribution of ANGLE rewards to Convex voters. The address of the gauge would be the address of a multisig which would then transfer the reward to Convex
-- Gauges with type > 2: this corresponds to gauges for staking contracts that are not on Ethereum mainnet. The addresses of these gauges is that of a contract that will bridge the rewards to the desired chain and then to the staking contract.
+* Type 0 Gauges: corresponding to normal staking contracts of the protocol
+* Type 1 Gauges: corresponding to Angle Perpetual contracts. Note that there will be no boosts for veANGLE holders in these contracts.
+* Type 2 Gauges: for gauges which interface is not supported by the distributor contract. This could for instance correspond to gauges used for the distribution of ANGLE rewards to Convex voters. The address of the gauge would be the address of a multisig which would then transfer the reward to Convex
+* Gauges with type > 2: this corresponds to gauges for staking contracts that are not on Ethereum mainnet. The addresses of these gauges is that of a contract that will bridge the rewards to the desired chain and then to the staking contract.
 
 Each gauge type has its own weight. Assuming an inflation rate $$r$$ changing with every epoch (1 week), a gauge weight $$w_g$$ and a gauge type weight $$w_t$$, then the stream of inflation going to a gauge is:
 
 $$
-\begin{equation}
-r^' = w_g \times w_t \times r
-\end{equation}
+r' = w_g \times w_t \times r
 $$
 
 Every week, depending on gauge votes, the weight $$w_g$$ can change. Governance can also vote to update the weight $$w_t$$.
