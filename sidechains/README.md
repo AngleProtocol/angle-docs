@@ -12,11 +12,12 @@ Bridges are what allow agEUR and the ANGLE token to be available on different ch
 
 ## 🌉 Bridge Solutions
 
-| Chain         | Bridge                                                          |
-| ------------- | --------------------------------------------------------------- |
-| Polygon       | [Polygon PoS Bridge](https://wallet.polygon.technology/bridge/) |
-| Solana        | [Wormhole](https://wormholebridge.com/#/transfer)               |
-| NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)            |
+| Chain         | Bridge                                                                 |
+| ------------- | ---------------------------------------------------------------------- |
+| Polygon       | [Polygon PoS Bridge](https://wallet.polygon.technology/bridge/)        |
+| Avalanche     | [Multichain](https://app.multichain.org/#/router) (previously Anyswap) |
+| Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                      |
+| NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                   |
 
 {% hint style="info" %}
 Angle related contract addresses across the different sidechains, layer 2s and blockchains Angle is integrated with can be found [here](https://developers.angle.money/protocol-overview/smart-contracts/sidechains-layer2s-contracts).
