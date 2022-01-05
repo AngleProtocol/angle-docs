@@ -31,7 +31,7 @@ These three effects should help the protocol attract the remaining demand for le
 
 ## 💰 Protocol Surplus
 
-In normal times, the protocol accumulates some surplus from transaction fees and lending returns not distributed to SLPs. It can also generate revenue from governance token sales through the bonding curve, and from collateral prices increase when the collateral of the protocol is not fully covered by HAs.
+In normal times, the protocol accumulates some surplus from transaction fees and lending returns not distributed to SLPs. It can also generate revenue from collateral prices increase when the collateral of the protocol is not fully covered by HAs.
 
 While everything that can be done with this surplus is still to be determined \(like auctions where governance tokens are burnt against a portion of the surplus\), the surplus mostly serves as the first buffer to better deal with drops in collateral ratio.
 
@@ -52,12 +52,6 @@ In the meantime, transaction fees for users minting and burning adjust automatic
 Besides, if the collateral ratio keeps decreasing, governance can choose at its discretion to mitigate bank run scenari by increasing burn transaction fees by inducing a collateral ratio dependency.
 
 You can have a look at [Angle's analytics](https://analytics.angle.money) page to follow the different hedge and collateral ratios, and the current transaction fees.
-
-## 🏷️ Governance Token Sale
-
-In case where the protocol is on its way to becoming under-collateralized and can no longer sustain full convertibility of stablecoins to collateral, then governance has the ability to change the parameters of the bonding curve to make buying governance tokens cheaper.
-
-Like Maker does when auctions are made where governance tokens are sold against stablecoins, here the protocol proposes to issue tokens at a smaller price to burn some stablecoins and hence increase the collateral ratio of the protocol.
 
 ## ⌛ Collateral Diversification and Settlement
 

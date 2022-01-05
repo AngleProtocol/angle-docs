@@ -16,7 +16,7 @@ The main risk with protocols ensuring full convertibility is the risk of bank ru
 
 The emergency shutdown mechanism has been designed to make sure there is no sequentiality in the process, and that the first-arrived to redeem collateral will not necessarily be the first-served.
 
-While this process was built to prioritize stablecoin holders, it has also been thought to favor governance tokens owners, which incentivizes users to get involved in the governance of the protocol. On a side note, this is a way to create an upwards pressure on the governance token price, thus making governance tokens sales through the bonding curve of the protocol more efficient.
+While this process was built to prioritize stablecoin holders, it has also been thought to favor governance tokens owners, which incentivizes users to get involved in the governance of the protocol. 
 
 ## ⏱️ Process Timeline
 
