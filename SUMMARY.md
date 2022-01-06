@@ -53,6 +53,9 @@
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [⭐ Popularization](resources/popularization/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
+- 👵 [Deprecated](resources/deprecated/bonding-curve.md)
+  - [Bonding Curve](resources/deprecated/bonding-curve.md)
+  - [Liquidity Rewards Weights](resources/deprecated/reward-weights.md)
 
 ## Ecosystem
 
