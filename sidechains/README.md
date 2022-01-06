@@ -15,8 +15,8 @@ Bridges are what allow agEUR and the ANGLE token to be available on different ch
 | Chain         | Bridge                                                                 |
 | ------------- | ---------------------------------------------------------------------- |
 | Avalanche     | [Multichain](https://app.multichain.org/#/router) (previously Anyswap) |
-| Fantom        | [Multichain](https://app.multichain.org/#/router) (previously Anyswap) |
-| Fuse          | [Multichain](https://app.multichain.org/#/router) (previously Anyswap) |
+| Fantom        | [Multichain](https://app.multichain.org/#/router)                      |
+| Fuse          | [Multichain](https://app.multichain.org/#/router)                      |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                   |
 | Polygon       | [Polygon PoS Bridge](https://wallet.polygon.technology/bridge/)        |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                      |
