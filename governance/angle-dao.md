@@ -23,7 +23,7 @@ In particular, it can make the following changes:
 - Deploy new stablecoins
 - Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
 - Deploy/revoke collateral types
-- Add/remove incentives on staking contracts
+- Vote for gauge rewards weights
 - Upgrade oracles and other contracts throughout the system
 - Deploy the surplus of the protocol
 
@@ -35,8 +35,8 @@ More formal proposals are then dicussed in our governance forum at [gov.angle.mo
 
 ## 🗳 Voting
 
-After proposals have been discussed, [Snapshot](https://snapshot.org/#/anglegovernance.eth/) votes are being opened to vote on these proposals. Since the tokenomics upgrade of January 2022, veANGLE holders will be the ones with voting power over the protocol. 
+After proposals have been discussed, [Snapshot](https://snapshot.org/#/anglegovernance.eth/) votes are being opened to vote on these proposals. Since the tokenomics upgrade of January 2022, veANGLE holders will be the ones with voting power over the protocol.
 
-Last, the DAO is responsible for deciding where the liquidity mining supply is to be distributed. Voting for this takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/) as well. 
+Last, the DAO is responsible for deciding where the liquidity mining supply is to be distributed. Voting for this takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/) as well.
 
-In both cases, finalized votes are then implemented by a multi-sig composed of core team and community members. 
+In both cases, finalized votes are then implemented by a multi-sig composed of core team and community members.

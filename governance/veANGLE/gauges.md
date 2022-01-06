@@ -27,9 +27,11 @@ This system strongly favors LP providers who continually lock their rewards into
 
 ## In Practice
 
-Gauge weights are updated once every week every Thursday at 2am CET. This means that the ANGLE emission rate for each pair is constant for 1 week then updates to the new rate on each Thursday morning. Any user can change their weight allocation for a given gauge every 10 days.
+Gauge weights are updated once every week every Thursday at 2am CET. This means that the ANGLE distribution rate for each pool is constant for 1 week then updates to the new rate on each Thursday morning.
 
-When updating their weights, users will dedicate a share of their total veANGLE balances towards each gauge. Then, the sum of all the veANGLE assigned to each gauge by all holders will determine the quantity of rewards to be distributed.
+Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders will determine the quantity of rewards to be distributed. Once this is done, users don't have to confirm their weights every week except if they want to change them. Weightw allocations for a given gauge can be changed every 10 days, so that each votes apply for at least two weeks.
+
+A person could also decide not to allocate all its available voting power.
 
 {% hint style="info" %}
 When updating gauge weights and putting more weight on one gauge with respect to another, users should be wary of doing decreases first then increases.
@@ -60,10 +62,9 @@ Overall, there is no restriction on which protocols or pairs can have a gauge we
 
 Given that a wide range of contracts could be considered Angle protocol gauges, the system distinguishes several gauge types:
 
-- Type 0 Gauges: mainnet staking contracts
+- Type 0 Gauges: mainnet staking contracts internal to the Angle Protocol. LPs of these gauges can receive boosted rewards.
 - Type 1 Gauges: corresponding to Angle Perpetual staking contracts. Note that there will be no boosts for veANGLE holders in these contracts.
-- Type 2 Gauges: External staking contracts. This gauge type includes everything that is not being staked on Angle (Curve LP tokens staked on Convex for example)
-- Gauges with type > 2: this corresponds to gauges for staking contracts that are not on Ethereum mainnet. The addresses of these gauges is that of a contract that will bridge the rewards to the desired chain and then to the staking contract. This gauge type is not used for the moment.
+- Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, wether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
 
 ### Gauge type weight
 

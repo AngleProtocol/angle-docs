@@ -6,9 +6,13 @@ description: How veANGLE can boost ANGLE rewards for LPs
 
 ## 🔎 TL;DR
 
-* Liquidity providers staking on Angle can boost their ANGLE rewards by holding veANGLE.
-* This boost can represent up to to x2.5 the base rewards an address without any veANGLE could get.
-* To compute the boost, the total veANGLE supply of an address is applied to all the contracts this address is staking on.
+- Liquidity providers **staking on Angle** can boost their ANGLE rewards by holding veANGLE.
+- This boost can represent up to to x2.5 the base rewards an address without any veANGLE could get.
+- To compute the boost, the total veANGLE supply of an address is applied to all the contracts this address is staking on.
+
+{% hint style="warning" %}
+Boost on rewards only apply to internal staking contracts on Angle (type 0 gauges, more in the [gauge](gauges.md) page)
+{% endhint %}
 
 ## 🚜 Farming Boost
 
@@ -82,24 +86,24 @@ Now that we understand how veANGLE holders get a boost on capital compared to no
 
 **Example 1:** One holder of veANGLE with a big share of the pool:
 
-* Address A and B are providing 100 of liquidity each in pool P.
-* They are receiving 50% of the rewards each.
+- Address A and B are providing 100 of liquidity each in pool P.
+- They are receiving 50% of the rewards each.
 
 Now, let’s say that A owns the total supply of veANGLE.
 
-* The boost calculator now considers that A brings $$2.5  \times100 = 250$$ of liquidity to the pool.
-* Address A now owns $$\frac{250}{250+100} = 71.5\%$$ of the pool, and address B 28.5%.
-* Address A rewards multiplier is at x1.43 (from 50% to 71.5%).
+- The boost calculator now considers that A brings $$2.5  \times100 = 250$$ of liquidity to the pool.
+- Address A now owns $$\frac{250}{250+100} = 71.5\%$$ of the pool, and address B 28.5%.
+- Address A rewards multiplier is at x1.43 (from 50% to 71.5%).
 
 **Example 2:** Two holders of veANGLE, with very different shares of the pool.
 
-* Now say that address A provides 100 and address B 9900.
-* If none of them hold veANGLE, they are respectively earning 1% and 99% of the rewards.
-* Now let’s consider that A owns 1% or more of the veANGLE supply (i.e. as much as or more than its share of the pool).
-* Again, the boost calculator now considers that it brings $$2.5  \times100 = 250$$ of liquidity to the pool.
-* Therefore, address A is now earning $$\frac{250}{250+9900} = 2.46\%$$ of the rewards, or a x2.46 multiplier.
-* On the other hand, if B, which owns much more liquidity than A, had 1% of the veANGLE supply as well, its considered liquidity would go from 9900 to: $$9900 + 1.5 \times 10,000 \times 1\% = 10050$$.
-* Its share of earnings would go from 97.54% to $$\frac{10050}{250+ 10050} = 97.57\%$$.
+- Now say that address A provides 100 and address B 9900.
+- If none of them hold veANGLE, they are respectively earning 1% and 99% of the rewards.
+- Now let’s consider that A owns 1% or more of the veANGLE supply (i.e. as much as or more than its share of the pool).
+- Again, the boost calculator now considers that it brings $$2.5  \times100 = 250$$ of liquidity to the pool.
+- Therefore, address A is now earning $$\frac{250}{250+9900} = 2.46\%$$ of the rewards, or a x2.46 multiplier.
+- On the other hand, if B, which owns much more liquidity than A, had 1% of the veANGLE supply as well, its considered liquidity would go from 9900 to: $$9900 + 1.5 \times 10,000 \times 1\% = 10050$$.
+- Its share of earnings would go from 97.54% to $$\frac{10050}{250+ 10050} = 97.57\%$$.
 
 #### Remarks
 
@@ -109,13 +113,13 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that a user gets the boost at the time of the last action or checkpoint within a liquidity gauge contract.&#x20;
+Implementation details are such that a user's veANGLE balance used to calculate its boost is stored at the time of the last action or checkpoint within a liquidity gauge contract.
 
-On the one hand, after locking tokens, to apply or update a boost users need to **deposit, withdraw, or claim** from the liquidity gauge. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
+On the one hand, after locking tokens, users need to **deposit, withdraw, or claim** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 
-On the other hand, since the voting power decreases with time, it is favorable for users to apply a boost and do no further actions until they vote-lock more tokens.
+On the other hand, as the voting power decreases with time, the liqudity gauge will consider a higher veANGLE balance than the user actual has, which is favorable as it gives them a higher boost. Therefore, it's at the advantage of users to apply a boost and do no further actions until they vote-lock more tokens.
 
-However, once the vote-lock expires, everyone can “kick” the user by creating a checkpoint for that user and, essentially, resetting the user to no boost if they have no voting power at that point already.
+However, once the vote-lock expires, everyone can “kick” a user by creating a checkpoint for that address and, essentially, resetting the user to their actual voting power and boost.
 
 {% hint style="info" %}
 For more details on boosting, Curve has written [some docs](https://curve.readthedocs.io/dao-gauges.html) about it too. The formula used by Curve is put differently than we put it here but the outputs are exactly the same.
