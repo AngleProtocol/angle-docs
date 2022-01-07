@@ -72,7 +72,7 @@ Given that a wide range of contracts could be considered Angle protocol gauges, 
 - Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, whether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
 
 {% hint style="info" %}
-Gauges of types above 2 can be created if necessary, for staking contracts on specific networks for example.
+It has been planned that gauge of type strictly greater than would be for gauges on other networks. No such gauges exist for the moment, and gauges that are not on Ethereum mainnet are currently all of type 2.
 {% endhint %}
 
 ### Gauge type weight
