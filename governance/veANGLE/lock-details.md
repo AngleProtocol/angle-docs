@@ -18,9 +18,9 @@ After an address starts owning veANGLE, its balance will decrease with time to r
 
 Depending on the lock time, a specific amount of veANGLE will be received from the ANGLE locked. The lock scale is as follows:
 
-* 1 ANGLE locked 4 years → 1 veANGLE
-* 1 ANGLE locked 2 years → 0.5 veANGLE
-* 1 ANGLE locked 1 year → 0.25 veANGLE
+- 1 ANGLE locked 4 years → 1 veANGLE
+- 1 ANGLE locked 2 years → 0.5 veANGLE
+- 1 ANGLE locked 1 year → 0.25 veANGLE
 
 The general formula to compute the veANGLE balance at any point in time is:
 
@@ -52,6 +52,6 @@ $$
 
 ## 🤍 veANGLE Governance Whitelisting
 
-Like in Curve and Frax systems, smart contracts & DAOs require whitelisting by governance to stake for veANGLE. Only externally owned accounts and normal user wallets can directly call the veANGLE stake locking function.
+Like in Curve and Frax systems, smart contracts & DAOs require whitelisting by governance to lock ANGLE for veANGLE. Only externally owned accounts (EOA) can directly call the veANGLE stake locking function.
 
-In order to build veANGLE functionality into your protocol, begin the governance process with the ANGLE community in the [governance forum](https://gov.angle.money) by submitting a whitelisting proposal.
+In order to have your protocol or DAO ownn veANGLE, you can begin the governance process with the ANGLE community in the [governance forum](https://gov.angle.money) by submitting a whitelisting proposal.
