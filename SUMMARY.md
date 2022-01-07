@@ -32,16 +32,14 @@
 ## Governance
 
 - [🗳 Angle DAO](governance/angle-dao.md)
-- [🚀 ANGLE Token](governance/angle-token/README.md)
-  - [🧮 Bonding Curve](governance/angle-token/bonding-curve.md)
-- [🏋️ Liquidity Mining Weights](governance/voting.md)
-- [💂 Angle Guardian](governance/guardian.md)
+- [🚀 ANGLE Token](governance/angle-token.md)
 - [♠️ veANGLE](governance/veANGLE/README.md)
-
   - [🔒 Lock Details](governance/veANGLE/lock-details.md)
-  - [💥 Boost](governance/veANGLE/boost.md)
   - [🗳 Gauges](governance/veANGLE/gauges.md)
+  - [💥 Boost](governance/veANGLE/boost.md)
   - [📈 Interests](governance/veANGLE/interests.md)
+- [🏋️ Liquidity Mining Weights](governance/reward-weights.md)
+- [💂 Angle Guardian](governance/guardian.md)
 
 ## L2/Sidechains
 
@@ -55,6 +53,9 @@
 - [🖼 Branding](resources/graphical-elements/README.md)
 - [⭐ Popularization](resources/popularization/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
+- 👵 [Deprecated](resources/deprecated/bonding-curve.md)
+  - [Bonding Curve](resources/deprecated/bonding-curve.md)
+  - [Liquidity Rewards Weights](resources/deprecated/reward-weights.md)
 
 ## Ecosystem
 
