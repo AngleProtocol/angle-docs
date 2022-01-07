@@ -43,5 +43,5 @@ Stakers on contracts internal to Angle can boost the rewards they receive by hol
 This boost can go up to x2.5 the base quantity of rewards, and depends on the liquidity on the staking contract and the veANGLE balance of the stakers. All the information about the boost can be found on the [boost](../governance/veANGLE/boost.md) page.
 
 {% hint style="info" %}
-The boost on rewards apply only to staking contracts internal to Angle (gauge type 0, more info in the [gauge](../governance/veANGLE/gauges.md) page), and not external ones taking place on other protocols or networks.
+The boost on rewards apply only to staking contracts internal to Angle (gauge type 0, more info in the [gauge](../governance/veANGLE/gauges.md) page), and not perpetuals or external ones taking place on other protocols or networks.
 {% endhint %}

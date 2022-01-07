@@ -29,12 +29,16 @@ This system strongly favors LP providers who continually lock their rewards into
 
 Gauge weights are updated once every week every Thursday at 2am CET. This means that the ANGLE distribution rate for each pool is constant for 1 week then updates to the new rate on each Thursday morning.
 
-Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders will determine the quantity of rewards to be distributed. Once this is done, users don't have to confirm their weights every week except if they want to change them. Weightw allocations for a given gauge can be changed every 10 days, so that each votes apply for at least two weeks.
+Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once this is done, users don't have to confirm their weights every week except if they want to change them. Weight allocations for a given gauge can be changed every 10 days, so that each votes apply for at least two weeks.
 
 A person could also decide not to allocate all its available voting power.
 
 {% hint style="info" %}
 When updating gauge weights and putting more weight on one gauge with respect to another, users should be wary of doing decreases first then increases.
+{% endhint %}
+
+{% hint style="info" %}
+When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power.
 {% endhint %}
 
 ## ANGLE Issuance Rate
@@ -49,8 +53,9 @@ veANGLE stakers can therefore feel confident staking the maximum duration of 4 y
 
 ## Gauge Types
 
-Curve introduced the gauge system for their CRV token emissions. Users lock their veCRV to vote on "weights" of different Curve liquidity pools. The idea with Angle gauges is to incentivize different types of liquidity pools useful to the protocol:
+The idea with Angle gauges is to incentivize different types of liquidity pools useful to the protocol:
 
+- agEUR liquidity and markets
 - sanTokens owners
 - Perpetual owners
 - Liquidity pools on exchanges (like on Curve, on Uniswap)
@@ -64,7 +69,11 @@ Given that a wide range of contracts could be considered Angle protocol gauges, 
 
 - Type 0 Gauges: mainnet staking contracts internal to the Angle Protocol. LPs of these gauges can receive boosted rewards.
 - Type 1 Gauges: corresponding to Angle Perpetual staking contracts. Note that there will be no boosts for veANGLE holders in these contracts.
-- Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, wether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
+- Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, whether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
+
+{% hint style="info" %}
+Other types of
+{% endhint %}
 
 ### Gauge type weight
 
