@@ -2,7 +2,7 @@
 description: Some documentation about Angle that is not relevant anymore
 ---
 
-# Deprecated documentation
+# 👵 Deprecated Documentation
 
 This section keeps details of some documentation that used to be relevant for Angle.
 
