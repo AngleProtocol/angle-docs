@@ -23,3 +23,7 @@ Sigma Prime Audit Report
 ## Chainsecurity December 2021 - January 2022
 
 Audit report of some elements of Angle new governance system performed by Chainsecurity between December 2021 and January 2022
+
+{% file src="../../.gitbook/assets/chainsecurity-december.pdf" %}
+Chainsecurity December Report
+{% endfile %}
