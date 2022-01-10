@@ -91,4 +91,4 @@
 
 * [👵 About Deprecated Docs](deprecated/README.md)
   * [Bonding Curve](deprecated/bonding-curve.md)
-  * [Liquidity Rewards Weights](deprecated/reward-weights.md)
+  * [🏋♂ Liquidity Rewards Weights](deprecated/reward-weights.md)
