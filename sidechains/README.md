@@ -2,7 +2,7 @@
 description: Use Angle Protocol tokens on different chains!
 ---
 
-# ⛓️ Multichain Angle
+# ⛓ Multichain Angle
 
 Angle Protocol is deployed on Ethereum mainnet, but its corresponding tokens and stablecoins are meant to be bridged on other layers and sidechains.
 

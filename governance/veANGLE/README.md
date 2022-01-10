@@ -2,7 +2,7 @@
 description: Locked ANGLE that provides multiple benefits
 ---
 
-# ♠️ veANGLE
+# ♠ veANGLE
 
 ## Background
 

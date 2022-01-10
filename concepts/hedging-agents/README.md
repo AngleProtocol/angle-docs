@@ -2,15 +2,15 @@
 description: Insuring the protocol against collateral volatility.
 ---
 
-# 🛡️ Hedging Agents
+# 🛡 Hedging Agents
 
 ## 🔎 TL;DR
 
-- Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
-- They are here to insure the protocol against the volatility of the collateral brought by users. With enough demand for HAs, the protocol could resist collateral price drops of up to 99%.
-- HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
-- They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
-- Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
+* Hedging Agents (HAs) get perpetual futures from the protocol: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
+* They are here to insure the protocol against the volatility of the collateral brought by users. With enough demand for HAs, the protocol could resist collateral price drops of up to 99%.
+* HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
+* They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
+* Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
@@ -45,7 +45,7 @@ $$
 Since HAs bring collateral to the protocol, we define their **leverage** as:
 
 $$
-\texttt{leverage} = \frac{x+y}{x} =  \frac{\texttt{margin + amount committed}}{\texttt{margin}}
+\texttt{leverage} = \frac{x+y}{x} = \frac{\texttt{margin + amount committed}}{\texttt{margin}}
 $$
 
 ### 📈 Price Increase Scenario
