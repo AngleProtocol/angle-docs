@@ -6,8 +6,8 @@ description: The Guardian to take rapid decisions in a crisis
 
 ## 🔎 TL;DR
 
-- At protocol launch, it might be necessary to rapidly pause some functionalities, to change some parameters or references in the protocol.
-- Angle Core Team and involved stakeholders control an address in a Gnosis multi-sig that has the rights to perform such changes.
+* As in any protocol, it may be necessary to rapidly pause some functionalities, to change some parameters or references in the protocol.
+* Angle Core Team and involved stakeholders control an address in a Gnosis multi-sig that has the rights to perform such changes.
 
 ## 💡 Need for a Guardian
 
@@ -27,8 +27,8 @@ The Governor can revoke the Guardian ability at any time.
 
 In clear terms, the guardian can:
 
-- Pause and unpause some contracts functionalities
-- Update rapidly some parameters like users minting and burning fees, or the debt ratio for a lending strategy
+* Pause and unpause some contracts functionalities
+* Update rapidly some parameters like users minting and burning fees, or the debt ratio for a lending strategy
 
 {% hint style="info" %}
 Everything has been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system. For instance, a guardian cannot modify references to an oracle contract and hence manipulate prices at its advantage.
