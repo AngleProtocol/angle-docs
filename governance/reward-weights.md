@@ -2,7 +2,7 @@
 description: Voting to adjust ANGLE Liquidity Mining weights across different pools
 ---
 
-# 🏋️ Liquidity Mining Weights
+# 🏋 Liquidity Mining Weights
 
 The Angle system allows ANGLE holders to vote how ANGLE Liquidity Mining rewards are distributed by assigning weights to the different pools and protocols.
 
