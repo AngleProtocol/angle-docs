@@ -35,8 +35,12 @@ More formal proposals are then dicussed in our governance forum at [gov.angle.mo
 
 ## 🗳 Voting
 
-After proposals have been discussed, [Snapshot](https://snapshot.org/#/anglegovernance.eth/) votes are being opened to vote on these proposals. Since the tokenomics upgrade of January 2022, veANGLE holders will be the ones with voting power over the protocol.
+After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. After the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol.
 
-Last, the DAO is responsible for deciding where the liquidity mining supply is to be distributed. Voting for this takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/) as well.
+Last, the DAO is responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens through takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/) as well.
 
 In both cases, finalized votes are then implemented by a multi-sig composed of core team and community members.
+
+{% hint style="warning" %}
+A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for.
+{% endhint %}
