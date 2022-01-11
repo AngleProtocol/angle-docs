@@ -10,7 +10,7 @@ ANGLE's total initial supply is 1 billion and there is no planned token inflatio
 
 The only address with minting capability is the Angle DAO Timelock.
 
-Since January 2022, ANGLE's tokenomics has been upgraded and the ability to lock ANGLE into veANGLE, similarly than with CRV/veCRV or FXS/veFXS, has been introduced. More info about veANGLE can be found [here](./veANGLE/README.md).
+Since January 2022, ANGLE's tokenomics has been upgraded and the ability to lock ANGLE into veANGLE, similarly than with CRV/veCRV or FXS/veFXS, has been introduced. More info about veANGLE can be found [here](veANGLE/).
 
 ## 🧬 Tokenomics
 
@@ -18,15 +18,15 @@ The main purposes of the ANGLE token are to get as many people involved as possi
 
 The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution is broken down as follows:
 
-![ANGLE Distribution](../../.gitbook/assets/allocation.png)
+![ANGLE Distribution](../.gitbook/assets/allocation.png)
 
 ### Liquidity Mining
 
-40% of tokens are being distributed through staking contracts for agTokens holders, HAs, SLPs. LPs on other external pools are also being incentivized. For more details on Angle's staking contracts, you can look at this [page](../../concepts/staking.md).
+40% of tokens are being distributed through staking contracts for agTokens holders, HAs, SLPs. LPs on other external pools are also being incentivized. For more details on Angle's staking contracts, you can look at this [page](../concepts/staking.md).
 
 Every week, governance will be able to adjust the distribution of tokens between each stakeholder. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
-Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available on [this page](./veANGLE/gauges.md).
+Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available on [this page](veANGLE/gauges.md).
 
 ### DAO Treasury
 
@@ -42,8 +42,8 @@ The Treasury is controlled by the DAO, and can be used to build protocol reserve
 
 Tokens subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
 
-- 18% to the Angle Core Team
-- 10% to early backers
+* 18% to the Angle Core Team
+* 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
@@ -52,5 +52,3 @@ For more details on the tokenomics, this article adds some details:
 {% embed url="https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001" %}
 Angle Tokenomics
 {% endembed %}
-
-![Angle](../../.gitbook/assets/ICONS_ANGLE_LOGO_COLOR_GRADIENT.svg)
