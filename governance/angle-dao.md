@@ -6,9 +6,9 @@ description: The Decentralized Autonomous Organization driving Angle Protocol
 
 ## 🔎 TL;DR
 
-* Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
-* Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
-* The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
+- Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
+- Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
+- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -18,14 +18,14 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-* Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
-* Grant/revoke roles
-* Deploy new stablecoins
-* Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
-* Deploy/revoke collateral types
-* Vote for [gauge rewards weights](veANGLE/gauges.md)
-* Upgrade oracles and other contracts throughout the system
-* Deploy the surplus of the protocol
+- Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
+- Grant/revoke roles
+- Deploy new stablecoins
+- Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
+- Deploy/revoke collateral types
+- Vote for [gauge rewards weights](veANGLE/gauges.md)
+- Upgrade oracles and other contracts throughout the system
+- Deploy the surplus of the protocol
 
 ## 🗣 Discussions and debates
 
@@ -35,8 +35,12 @@ More formal proposals are then dicussed in our governance forum at [gov.angle.mo
 
 ## 🗳 Voting
 
-After proposals have been discussed, [Snapshot](https://snapshot.org/#/anglegovernance.eth/) votes are being opened to vote on these proposals. Since the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol and whose balance is looked at when considering voting weights.
+After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. After the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol.
 
-Finalized votes are implemented by a multi-sig composed of core team and community members.
+Last, the DAO is responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens through takes place on [Snapshot](https://snapshot.org/#/anglegovernance.eth/) as well.
 
-Only gauge votes for routing ANGLE emissions take place on-chain.
+In both cases, finalized votes are then implemented by a multi-sig composed of core team and community members.
+
+{% hint style="warning" %}
+A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for.
+{% endhint %}
