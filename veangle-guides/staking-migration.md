@@ -12,7 +12,7 @@ Close to the veANGLE upgrade, funds staked on Angle Ethereum mainnet staking con
 - SushiSwap agEUR/ANG LP
 - agEUR staking if it is not discontinued
 
-Rewards will stop flowing to the older version of these contracts on the **Wednesday following the upgrade** (January 19th).
+Rewards will stop flowing to the older version of these contracts on the **Wednesday January 19th**.
 
 ## Migrating the funds
 
