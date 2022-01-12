@@ -42,7 +42,6 @@
   - [🗳 Gauges](governance/veANGLE/gauges.md)
   - [💥 Boost](governance/veANGLE/boost.md)
   - [📈 Interests](governance/veANGLE/interests.md)
-- [🏋♂ Liquidity Mining Weights](governance/reward-weights.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
 ## L2/Sidechains
