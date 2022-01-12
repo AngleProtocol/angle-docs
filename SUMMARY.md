@@ -69,7 +69,7 @@
 
 ## International
 
-* [🇷🇺 🇷🇺 Russian - русский](international/russian/README.md)
+* [🇷🇺 Russian - русский](international/russian/README.md)
   * [Whitepaper](international/russian/ru-whitepaper.md)
   * [Angle FAQ](international/russian/faq.md)
   * [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
@@ -77,17 +77,17 @@
   * [Значение для хеджинговых агентов](international/russian/ha-value-proposition.md)
   * [Ценность для стандартных поставщиков ликвидности](international/russian/slp-value-proposition.md)
   * [Токеномика Angle Protocol](international/russian/tokenomics.md)
-* [🇯🇵 🇯🇵 Japanese - 日本語](international/japanese/README.md)
+* [🇯🇵 Japanese - 日本語](international/japanese/README.md)
   * [Angle FAQ](international/japanese/faq.md)
   * [Angle プロトコルの紹介](international/japanese/angle-intro-japanese.md)
-* [🇨🇳 🇨🇳 Chinese - 中国人](international/chinese/README.md)
+* [🇨🇳 Chinese - 中国人](international/chinese/README.md)
   * [角度协议介绍](international/chinese/angle-intro-chinese.md)
   * [Document/文档](international/chinese/angle-content.md)
   * [Glossary/词汇表](international/chinese/angle-glossary.md)
   * [FAQ/常见问题](international/chinese/angle-faq.md)
   * [agEUR 和 ANGLE 正式上线 Polygon](international/chinese/tokens-polygon.md)
   * [Partnering with Superfluid](international/chinese/superfluid.md)
-* [🇻🇳 🇻🇳 Vietnamese - tiếng-việt](international/vietnamese/README.md)
+* [🇻🇳 Vietnamese - tiếng-việt](international/vietnamese/README.md)
   * [Whitepaper](international/vietnamese/whitepaper.md)
 
 ## Deprecated
