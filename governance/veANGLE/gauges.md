@@ -9,17 +9,17 @@ description: How the gauge system works with Angle
 - veANGLE holders are able to decide where weekly ANGLE emissions go through gauge votes
 - The fact that veANGLE holders are responsible for such vote alines incentives within the protocol
 
-## ✍️Gauge Vote Principle
+## ✍️ Gauge Voting Principle
 
 Besides voting on governance proposals, veANGLE owners can vote for ANGLE gauge weights with their veANGLE balance. The gauge system implemented by Angle is similar to that of Frax and of Curve.
 
 Like what was done weekly on Snapshot by ANGLE holders before the Angle Governance upgrade, veANGLE holders will now be able to distribute their voting power across a single or multiple gauges on-chain.
 
-A gauge corresponds in fact to a staking contract and by voting for a gauge a veANGLE owner increases the amount of ANGLE tokens sent to the related staking contract with respect to other staking contracts. veANGLE owners will therefore vote for the gauges they think should receive more weight.
+A gauge corresponds in fact to a staking contract and by voting for a gauge a veANGLE owner increases the amount of ANGLE tokens sent to the related staking contract with respect to the others. veANGLE owners will therefore vote for the gauges they think should receive more weight.
 
 This allows veANGLE holders, who are the most long term users of the protocol, to have complete control over the future ANGLE emissions.
 
-## ↔️Incentives alinement
+## ↔️ Incentives alinement
 
 Interestingly, the gauge system lowers the influence of ANGLE pairs and pools where the majority of rewards are sold off since those LPs will not have veANGLE to continue voting for their pair.
 
