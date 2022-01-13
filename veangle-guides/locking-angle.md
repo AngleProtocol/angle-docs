@@ -14,9 +14,11 @@ ANGLE tokens can be locked at [dao.angle.money](https://dao.angle.money).
 
 Before locking, remember that only one lock per address can be created. Once an address initiates a lock, it can either increase the lock expiration, or add tokens to the lock.
 
+![ANGLE locking screen](../.gitbook/assets/veangle-screen.png)
+
 ### Creating the lock
 
-To create a lock, an expiration date and a quantity of tokens need to be specified. Then, two transactions are needed, first to approve the contract and then to create the lock with the specified amount of tokens.
+To create a lock, head over to the bottom right corner of the screen. There, an expiration date and quantity of tokens need to be specified. Then, two transactions are needed, first to approve the contract and then to create the lock with the specified amount of tokens.
 
 ![Locking veANGLE](../.gitbook/assets/locking-veangle.png)
 
