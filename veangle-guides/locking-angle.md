@@ -14,7 +14,7 @@ ANGLE tokens can be locked at [dao.angle.money](https://dao.angle.money).
 
 Before locking, remember that only one lock per address can be created. Once an address initiates a lock, it can either increase the lock expiration, or add tokens to the lock.
 
-![ANGLE locking screen](../.gitbook/assets/veangle-screen.png)
+![ANGLE locking screen](../.gitbook/assets/angle-locking-screen.png)
 
 ### Creating the lock
 
