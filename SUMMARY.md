@@ -11,7 +11,7 @@
   * [Staking](app-guides/staking-pools.md)
   * [App FAQ](app-guides/app-faq.md)
   * [Formulas](app-guides/formulas.md)
-* [📔 veANGLE Guides](veangle-guides/README.md)
+* [📔 veANGLE/DAO App Guides](veangle-guides/README.md)
   * [Locking ANGLE](veangle-guides/locking-angle.md)
   * [Voting on Gauges](veangle-guides/voting-gauges.md)
   * [Staking Migration](veangle-guides/staking-migration.md)
