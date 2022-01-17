@@ -36,9 +36,9 @@ Stable CHF, GBP, JPY and KRW should be following agEUR.
 
 The protocol involves 3 agents, very common in other DeFi protocols, which all bring something to Angle, while benefitting from the protocol:
 
-- **Stable Seekers/Holders, or Users:** they can swap collateral against stable assets, and conversely swap stable assets against a whitelisted collateral of their choice at oracle value, with no slippage and small transaction fees.
-- **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to take positions on perpetuals futures on the available collateral/stablecoins pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
-- **Standard Liquidity Providers (SLP)** : they lend collateral to the protocol in return of a share of minting and burning fees, and of the rewards earned from investing part of the protocol reserves into yield-earning strategies.
+* **Stable Seekers/Holders, or Users:** they can swap collateral against stable assets, and conversely swap stable assets against a whitelisted collateral of their choice at oracle value, with no slippage and small transaction fees.
+* **Hedging Agents (HAs):** they can open on-chain leveraged positions on Angle. They need to bring accepted collateral to the protocol, and are able to take positions on perpetuals futures on the available collateral/stablecoins pairs. By doing so, they insure the protocol against the volatility of the collateral brought by stable seekers. This volatility is transferred to these traders, and the protocol is able to ensure users of the convertibility of the stablecoins they own even in case of collateral price drops.
+* **Standard Liquidity Providers (SLP)** : they lend collateral to the protocol in return of a share of minting and burning fees, and of the rewards earned from investing part of the protocol reserves into yield-earning strategies.
 
 In short, Angle matches people who want stability (stable seekers) and people who want volatility (Hedging Agents). Yet, there isn't always a perfect match between supply and demand of volatility, meaning that the protocol's collateral may not be fully covered at all times by Hedging Agents. The additional collateral brought by Standard Liquidity Providers, serve as a buffer in this marketplace.
 
@@ -52,7 +52,7 @@ Check Frequently Asked Questions for a deeper introduction to Angle and its key 
 
 If you are unsure about any specific terms, feel free to check the glossary.
 
-## ⭐ [Popularization](./resources/popularization/README.md)
+## ⭐ [Popularization](resources/popularization/)
 
 If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
@@ -69,17 +69,19 @@ Angle community Discord server is where we collectively organize ourselves to bu
 Angle has a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
 
 {% hint style="info" %}
-All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/security/README.md)
+All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/security/)
 {% endhint %}
 
 ## Other Resources
 
-- 📡 [Website](https://angle.money)
-- 🐦 [Twitter](https://twitter.com/AngleProtocol)
-- 🌳 [Medium/Blog](https://blog.angle.money)
-- 💻 [Github](https://github.com/AngleProtocol)
-- 📀 [App](https://app.angle.money)
-- 🗂️ [Analytics](https://analytics.angle.money/#/home)
+* 📡 [Website](https://angle.money)
+* 🐦 [Twitter](https://twitter.com/AngleProtocol)
+* 🌳 [Medium/Blog](https://blog.angle.money)
+* 💻 [Github](https://github.com/AngleProtocol)
+* 📀 [App](https://app.angle.money)
+* 🗂️ [Analytics](https://analytics.angle.money/#/home)
+* 🗳️ [DAO App](https://dao.angle.money/#/)
+* 💬 [Governance Forum](https://gov.angle.money)
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
@@ -92,4 +94,4 @@ In order for your translation to appear on this doc, you need to:
 1. Make sure that your translation has been reviewed by members of your local community on Angle Discord. We will not accept any translation that has not been checked by other community members.
 2. Submit a pull request to the `angle-docs` repository and respect the formatting and conventions already in place for the `russian` section of the docs.
 
-![Join Angle Playground!](.gitbook/assets/angle_multi_back.jpg)
+![Join Angle Playground!](.gitbook/assets/angle\_multi\_back.jpg)
