@@ -18,9 +18,10 @@ Rewards will stop flowing to the older version of these contracts on the **Wedne
 
 Stakers will need to take three steps to migrate their funds:
 
-1. Unstake from old contracts
+1. Unstake from old contracts [here](https://app.angle.money/#/staking)
    * Optional: Lock ANGLE into veANGLE (required to get the boost on new contracts)
-2. Approve new contracts
-3. Stake on new contracts
+2. Go to [https://dao.angle.money/#/stake](https://dao.angle.money/#/stake)
+3. Approve new contracts
+4. Stake on new contracts
 
 The rewards will be interrupted for 5 hours from January 19th 4:30 PM UTC to January 20th 00:00 AM UTC.
