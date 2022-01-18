@@ -8,7 +8,7 @@ Angle is still a new piece in the ecosystem, but we need to make sure the image 
 
 ## Icons
 
-You can download the following zip file, where you will find all the icons and logos related to Angle.
+You can download the following [zip file](../../.gitbook/assets/logo-icons-tokens.zip), where you will find all the icons and logos related to Angle.
 
 {% file src="../../.gitbook/assets/logo-icons-tokens.zip" %}
 
@@ -22,11 +22,11 @@ Token logos for agEUR and ANGLE can be found here:
 
 Angle color palette is composed of 5 colors and their associated gradients:
 
-- Spring Rain: #99B998
-- Peach: #FDCEAA
-- Light Coral: #F4837D
-- Dark Pink: #EB4960
-- Oxford Blue: #27363B
+* Spring Rain: #99B998
+* Peach: #FDCEAA
+* Light Coral: #F4837D
+* Dark Pink: #EB4960
+* Oxford Blue: #27363B
 
 You can find the complete color palette in this pdf:
 
