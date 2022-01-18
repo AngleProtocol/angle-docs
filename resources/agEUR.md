@@ -19,3 +19,17 @@ More information on the functionment of agEUR in the [Stable Seeker and Holders]
 - [Coingecko - Market Info](https://www.coingecko.com/fr/pi%C3%A8ces/ageur)
 - [Dune Analytics Dashboard](https://dune.xyz/SebVentures/Angle-Dashboard)
 - [Etherscan](https://etherscan.io/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8)
+
+## Buying agEUR
+
+### On the blockchain
+
+**With an on-ramp solution**
+If you're not familiar with Ethereum, you can create a wallet with [Ledger](https://www.ledger.com/) or [Metamask](https://metamask.io/) and go through our on-ramp partner at [wert.io](https://widget.wert.io/01FPZ4G1VMZ67MGC83NADPB0F8/redirect/?commodity=agEUR&commodities=agEUR,agEUR%3Aethereum) to buy agEUR on Ethereum or Polygon.
+
+**On a decentralized exchange**
+If you already have a wallet with some ETH, you can buy agEUR directly on the blockchain through Uniswap or any DEx aggregator.
+
+### On an exchange
+
+Currently, agEUR is not available on any exchange. We are working hard to build the most integrations possible, and hope it will be available soon. If you know anyone that might be able to help us list agEUR, reach out in our [Discord](https://discord.gg/fNZmqdrM2F!
