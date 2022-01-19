@@ -102,8 +102,26 @@ Now, let’s say that A owns the total supply of veANGLE.
 - Now let’s consider that A owns 1% or more of the veANGLE supply (i.e. as much as or more than its share of the pool).
 - Again, the boost calculator now considers that it brings $$2.5  \times100 = 250$$ of liquidity to the pool.
 - Therefore, address A is now earning $$\frac{250}{250+9900} = 2.46\%$$ of the rewards, or a x2.46 multiplier.
-- On the other hand, if B, which owns much more liquidity than A, had 1% of the veANGLE supply as well, its considered liquidity would go from 9900 to: $$9900 + 1.5 \times 10,000 \times 1\% = 10050$$.
-- Its share of earnings would go from 97.54% to $$\frac{10050}{250+ 10050} = 97.57\%$$.
+- On the other hand, if B, which owns much more liquidity than A, had 1% of the veANGLE supply as well, its considered liquidity would go from 9900 to: $$9900 + 1.5 \times 10,000 \times 1\% = 10050$$
+- Its share of earnings would go from 97.54% to: $$\frac{10050}{250+ 10050} = 97.57\%$$
+  A very small increase compared to address A.
+- In this situation, address A share of rewards and boost would go from 2.46 to:
+  $$\frac{250}{250+ 10050} = 2.43\%$$
+
+**Example 3:** Introducing address C
+
+Staying in example 2's situation, let's introduce an address C providing 2000 of liquidity. In this case, the considered liquidity for B and C becomes:
+
+- Address B considered liquidity:
+  $$9900 + 1.5 \times 12,000 \times 1\% = 10080$$
+
+- Address C considered liquidity:
+  $$2000 + 1.5 \times 12,000 \times 1\% = 2180$$
+
+And address A, B, and C share of rewards become:
+$$\texttt{address A: }\frac{250}{250 + 10080 + 2180} = 2\%$$
+$$\texttt{address B: }\frac{10080}{250 + 10080 + 2180} = 80.58\%$$
+$$\texttt{address C: }\frac{2180}{250 + 10080 + 2180} = 17.42\%$$
 
 #### Remarks
 
@@ -113,11 +131,11 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that a user's veANGLE balance used to calculate its boost is stored at the time of the last action or checkpoint within a liquidity gauge contract.
+Implementation details are such that a user's veANGLE balance used to calculate its boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that a user's boost could stay higher than it's actual veANGLE balance. It has two main side effects.
 
 On the one hand, after locking tokens, users need to **deposit, withdraw, or claim** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 
-On the other hand, as the voting power decreases with time, the liqudity gauge will consider a higher veANGLE balance than the user actual has, giving them a higher boost. Therefore, it's at the advantage of users to apply a boost and do no further actions until they vote-lock more tokens.
+On the other hand, as the voting power decreases with time, the liquidity gauge will consider a higher veANGLE balance than the user actual has, giving them a higher boost. Therefore, it's at the advantage of users to apply a boost and do no further actions until they vote-lock more tokens.
 
 However, once the vote-lock expires, everyone can “kick” a user by creating a checkpoint for that address and, essentially, resetting the user to their actual voting power and boost.
 
