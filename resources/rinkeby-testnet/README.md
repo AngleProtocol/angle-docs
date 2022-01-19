@@ -18,12 +18,10 @@ Here are the steps to follow:
 
    ![Tweet Screenshot](../../.gitbook/assets/tweet-address-userguide.png)
 
-2. Go to [faucet.angle.money](https://faucet.angle.money/), paste the link of your tweet, and click on **Get Tokens**.
+2. Go to [faucet.angle.money](https://faucet.angle.money/), paste the link of your tweet, and click on **Use Faucet**.
 3. After a few minutes, you should receive some ETH, wETH, wBTC, USDC, and DAI.
 
-You should now be all set up to start testing Angle on [rinkeby.angle.money](https://rinkeby.angle.money/)! Next, head to our main user guides to see how to use the protocol.
-
-{% page-ref page="user-guides/README.md" %}
+You should now be all set up to start testing Angle on [rinkeby.angle.money](https://rinkeby.angle.money/)! Next, head to our [main user guides](../../app-guides/README.md) to see how to use the protocol.
 
 {% hint style="info" %}
 In case our faucet is down, you can also follow [this](https://teller.gitbook.io/teller-1/testing-guide/getting-testnet-tokens-rinkeby) guide.
