@@ -10,19 +10,7 @@ agEUR is a EUR-pegged stablecoin, meaning that it is made to hold a value of 1 E
 
 agEUR can be minted on the Ethereum blockchain at [app.angle.money](https://app.angle.money), and bridged to be used in other compatible networks (see the [Mulitchain Angle page](../sidechains/README.md)). It can be used to hold EUR value on the blockchain directly
 
-More information on the functionment of agEUR in the [Stable Seeker and Holders](https://docs.angle.money/concepts/stable-seekers) page.
-
-## Links and resources
-
-- [Blog post](https://blog.angle.money/angles-value-proposition-for-stablecoin-holders-68ee9a72d80b?source=collection_home---4------17-----------------------)
-- [Angle agEUR Analytics](https://analytics.angle.money/#/agEUR)
-- [Coingecko - Market Info](https://www.coingecko.com/fr/pi%C3%A8ces/ageur)
-- [Dune Analytics Dashboard](https://dune.xyz/SebVentures/Angle-Dashboard)
-- [Etherscan](https://etherscan.io/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8)
-
-{% hint style="info" %}
-A complete list of all agEUR integrations can be found on our Discord [here](https://discord.com/channels/835066439891157012/907535810067304458/907537277939482636).
-{% endhint %}
+More information on the functioning of agEUR in the [Stable Seeker and Holders](https://docs.angle.money/concepts/stable-seekers) page.
 
 ## Buying agEUR
 
@@ -36,4 +24,16 @@ If you already have a wallet with some ETH, you can buy agEUR directly on the bl
 
 ### On an exchange
 
-Currently, agEUR is not available on any exchange. We are working hard to build the most integrations possible, and hope it will be available soon. If you know anyone that might be able to help us list agEUR, reach out in our [Discord](https://discord.gg/fNZmqdrM2F!
+Currently, agEUR is available on Gate.io, Poloniex, and AEX. We are working hard to make it available on more exchanges. If you know anyone that might be able to help us list agEUR, reach out in our [Discord](https://discord.gg/fNZmqdrM2F)!
+
+## Links and resources
+
+- [agEUR value proposition article](https://blog.angle.money/angles-value-proposition-for-stablecoin-holders-68ee9a72d80b?source=collection_home---4------17-----------------------)
+- [Angle agEUR Analytics](https://analytics.angle.money/#/agEUR)
+- [Coingecko - Market Info](https://www.coingecko.com/fr/pi%C3%A8ces/ageur)
+- [Dune Analytics Dashboard](https://dune.xyz/SebVentures/Angle-Dashboard)
+- [agEUR on Etherscan](https://etherscan.io/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8)
+
+{% hint style="info" %}
+A complete list of all agEUR integrations can be found on our Discord [here](https://discord.com/channels/835066439891157012/907535810067304458/907537277939482636).
+{% endhint %}
