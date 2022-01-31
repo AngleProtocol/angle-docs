@@ -76,11 +76,11 @@ At any given point in time, HAs could hedge more than the target hedge amount.
 
 In case this happens, the protocol has two parameters: the target hedging ratio, and the limit hedging ratio.
 
-The target heding ratio gives the amount to be hedged by HAs. Above this ratio, HAs can't open positions anymore. The limit hedging ratio is the maximum hedging ratio possible in the protocol. If HAs start hedging more than this ratio because of users burning stablecoins, their positions can be automatically cashed out.
+The target heding ratio gives the amount to be hedged by HAs. Above this ratio, HAs can't open positions anymore. The limit hedging ratio is the maximum hedging ratio possible in the protocol. If HAs start hedging more than this ratio because of users burning stablecoins, their positions can be automatically cashed out. This is called **force-closing**.
 
-Imagine the limit hedging ratio is defined at 95%, then if `0.9x/(x-y)` becomes superior to `0.95`, then some HAs could be cashed out till the amount covered by HAs is back in the bounds again \(below the target hedging ratio\).
+Imagine the limit hedging ratio is defined at 95%, then if `0.9x/(x-y)` becomes superior to `0.95`, then some HAs positions could be force-closed until the amount covered by HAs is back in the bounds again \(below the target hedging ratio\).
 
-When a HA position is cashed out like that, the HA gets back its margin plus any unrealized PnL. Keepers are responsible for cashing out HAs positions in such cases.
+When a HA position is force-closed, the owner gets back its margin plus any unrealized PnL. Keepers are responsible for force-closing HAs positions in such cases. They are incentivized to force-close positions in a way that the hedge ratio comes back as close as possible to the target. There is no other conditions that could depend on the position size. More details in the [Keepers](../keepers.md) page.
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
