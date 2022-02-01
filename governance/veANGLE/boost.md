@@ -131,9 +131,9 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that a user's veANGLE balance used to calculate its boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that a user's boost could stay higher than it actually is with its current veANGLE balance. It has two main side effects.
+Implementation details are such that a user's veANGLE balance used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that a user's boost could stay higher than it actually is with its current veANGLE balance. It has two main side effects.
 
-On the one hand, after locking tokens, users need to **deposit, withdraw, or claim** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
+On the one hand, after locking tokens, users need to call the **deposit, withdraw (with amount > 0), or user_checkpoint() functions** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 
 On the other hand, as the voting power decreases with time, the liquidity gauge will consider a higher veANGLE balance than what users actually have, giving them a higher boost than they should. Therefore, it's at their advantage to apply a boost and do no further actions until they vote-lock more tokens.
 
