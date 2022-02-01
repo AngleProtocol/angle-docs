@@ -39,7 +39,7 @@ More formal proposals are then dicussed in our governance forum at [gov.angle.mo
 
 After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. After the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol.
 
-Finalized votes are then implemented by a multi-sig composed of core team and community members.
+Finalized votes are then implemented by a [multi-sig](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8) composed of core team and community members.
 
 {% hint style="warning" %}
 A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for.
