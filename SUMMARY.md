@@ -46,7 +46,7 @@
 
 ## L2/Sidechains
 
-* [⛓ Cross-Chain Angle and agEUR](sidechains/README.md)
+* [⛓ Cross-Chain ANGLE and agEUR](sidechains/README.md)
 
 ## Resources
 
@@ -98,4 +98,4 @@
 
 * [👵 About Deprecated Docs](deprecated/README.md)
   * [Bonding Curve](deprecated/bonding-curve.md)
-  * [🏋♂ 🏋♂ 🏋♂ 🏋♂ 🏋♂ Liquidity Rewards Weights](deprecated/reward-weights.md)
+  * [Liquidity Rewards Weights](deprecated/reward-weights.md)
