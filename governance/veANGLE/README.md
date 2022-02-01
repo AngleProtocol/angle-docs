@@ -8,8 +8,7 @@ description: Locked ANGLE that provides multiple benefits
 
 veANGLE stands for "voting-escrowed" ANGLE, and is the new governance token of the Angle Protocol.
 
-veANGLE is non-transferable and does not trade on liquid markets.
-
+It is a vesting and yield system based off of Curve’s veCRV and Frax's veFXS mechanisms. The key property of veANGLE, beyond being a governance token, is that it is non-transferable and it does not trade on liquid markets.
 
 ## 🧾 veANGLE Features
 
