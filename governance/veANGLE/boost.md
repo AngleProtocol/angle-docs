@@ -16,7 +16,7 @@ Boost on rewards only apply to internal staking contracts on Angle (type 0 gauge
 
 ## 🚜 Farming Boost
 
-Holding veANGLE will give users more weight when collecting certain farming rewards. A big majority of the farming rewards that are distributed directly through the protocol are eligible for veANGLE boosts.
+Holding veANGLE give users more weight when collecting certain farming rewards. A big majority of the farming rewards that are distributed directly through the protocol are eligible for veANGLE boosts.
 
 One notable exception is that of the rewards given to hedging agents taking part in Angle Perpetual contracts.
 
@@ -32,9 +32,9 @@ Angle forked its staking contract model (also called liquidity gauge) from Curve
 
 Basically, this staking contract considers that an address holding veANGLE is providing more liquidity than it really is.
 
-In a given gauge, owning veANGLE will increase a LP's share of the pool thus increasing the rewards received. As usual, LPs holding no veANGLE are considered as providing 100% of their liquidity. If an address owns enough veANGLE, the contract can consider that it brings up to 250% its original liquidity, or a x2.5 boost compared to the original 100%.
+In a given gauge, owning veANGLE increases a LP's share of the pool thus increasing the rewards received. As usual, LPs holding no veANGLE are considered as providing 100% of their liquidity. If an address owns enough veANGLE, the contract can consider that it brings up to 250% its original liquidity, or a x2.5 boost compared to the original 100%.
 
-Then, this x2.5 multiplier in liquidity provided will translate into a boost on rewards depending on the total liquidity provided in the pool and how it is considered by the boost calculator.
+Then, this x2.5 multiplier in liquidity provided translates into a boost on rewards depending on the total liquidity provided in the pool and how it is considered by the boost calculator.
 
 {% hint style="info" %}
 Note that as the quantity of veANGLE owned by LPs on a pool increases, the amount of rewards received by non-veANGLE holders decreases, as they represent a smaller share of the liquidity.
@@ -56,8 +56,6 @@ $$
 \begin{equation} \min(x_{lp} + 1.5\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}}, 2.5 \times x_{lp}) \end{equation}
 $$
 
-An address owning 0 veANGLE will get rewarded as usual.&#x20;
-
 To get the max possible boost on rewards, an address needs to get 100% of its provided liquidity taken into account by the protocol. This is equivalent to having the term on the left greater or equal than the value of the liquidity provided:
 
 $$
@@ -76,7 +74,7 @@ $$
 \begin{equation} \texttt{Share of veANGLE supply} \geq \texttt{Share of liquidity in the pool} \end{equation}
 $$
 
-**An address having a higher share of the total veANGLE supply than its share of liquidity provided in the pool for which the boost is being computed will be considered as having x2.5 more liquidity than an address with no veANGLE.**
+**An address having a higher share of the total veANGLE supply than its share of liquidity provided in the pool for which the boost is being computed is considered as having x2.5 more liquidity than an address with no veANGLE.**
 
 All gauges therefore have different requirements meaning some pools are easier to boost than others. In the end, it all depends on how much others have locked and how much the liquidity gauge has.
 
