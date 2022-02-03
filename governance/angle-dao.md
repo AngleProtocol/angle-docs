@@ -6,9 +6,9 @@ description: The Decentralized Autonomous Organization driving Angle Protocol
 
 ## 🔎 TL;DR
 
-* Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
-* Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
-* The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
+- Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
+- Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
+- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -18,14 +18,14 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-* Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
-* Grant/revoke roles
-* Deploy new stablecoins
-* Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
-* Deploy/revoke collateral types
-* Vote for [gauge rewards weights](veANGLE/gauges.md)
-* Upgrade oracles and other contracts throughout the system
-* Deploy the surplus of the protocol
+- Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
+- Grant/revoke roles
+- Deploy new stablecoins
+- Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
+- Deploy/revoke collateral types
+- Vote for [gauge rewards weights](veANGLE/gauges.md)
+- Upgrade oracles and other contracts throughout the system
+- Deploy the surplus of the protocol
 
 ## 🗣 Discussions and debates
 
@@ -44,6 +44,12 @@ Finalized votes are then implemented by a [multi-sig](https://etherscan.io/addre
 {% hint style="warning" %}
 A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for.
 {% endhint %}
+
+#### Delegating voting power
+
+Not all veANGLE holders feel the need to get involved in governance and vote on every proposal. While this is to be expected, it is better for the protocol that voting power remains in the hands of people interested, concerned, and involved in the future of the protocol. To that end, users have the possibility to **delegate** their voting power to other community members.
+
+By doing this, delegators keep their tokens but transfer **all** their voting power to its delegate. Though delegating only a part of voting power is not possible, delegations can be removed at anytime. Users can delegate their veANGLE tokens at [snapshot.org/delegate](https://snapshot.org/#/delegate), by ticking "Limit delegation to a specific space" and specifying `anglegovernance.eth` as space name.
 
 ### Voting on rewards distribution
 
