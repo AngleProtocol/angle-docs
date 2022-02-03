@@ -49,7 +49,7 @@ A signature from the multi-sig is required to enforce the outcomes of the Snapsh
 
 Not all veANGLE holders feel the need to get involved in governance and vote on every proposal. While this is to be expected, it is better for the protocol that voting power remains in the hands of people interested, concerned, and involved in the future of the protocol. To that end, users have the possibility to **delegate** their voting power to other community members.
 
-By doing this, delegators keep their tokens but transfers **all** their voting power to its delegate. Though delegating only a part of voting power is not possible, delegations can be removed at anytime. Users can delegate their veANGLE tokens at [snapshot.org/delegate](https://snapshot.org/#/delegate), by ticking "Limit delegation to a specific space" and specifying `anglegovernance.eth` as space name.
+By doing this, delegators keep their tokens but transfer **all** their voting power to its delegate. Though delegating only a part of voting power is not possible, delegations can be removed at anytime. Users can delegate their veANGLE tokens at [snapshot.org/delegate](https://snapshot.org/#/delegate), by ticking "Limit delegation to a specific space" and specifying `anglegovernance.eth` as space name.
 
 ### Voting on rewards distribution
 
