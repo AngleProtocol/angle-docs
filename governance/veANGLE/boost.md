@@ -23,7 +23,7 @@ One notable exception is that of the rewards given to hedging agents taking part
 Besides, external farming that are promoted by other protocols (such as Sushi Onsen) or that are available on other chains are typically not available for veANGLE boosts since they are independent of the mainnet Angle protocol itself.
 
 {% hint style="info" %}
-A user's veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.
+Users' veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.
 {% endhint %}
 
 ## 🧮 Boost Computation
@@ -129,13 +129,13 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that a user's veANGLE balance used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that a user's boost could stay higher than it actually is with its current veANGLE balance. It has two main side effects.
+Implementation details are such that users' veANGLE balances used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that users' boosts could stay higher than it actually is with their current veANGLE balance. It has two main side effects.
 
 On the one hand, after locking tokens, users need to call the **deposit, withdraw (with amount > 0), or user_checkpoint() functions** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 
 On the other hand, as the voting power decreases with time, the liquidity gauge will consider a higher veANGLE balance than what users actually have, giving them a higher boost than they should. Therefore, it's at their advantage to apply a boost and do no further actions until they vote-lock more tokens.
 
-However, once the vote-lock expires, everyone can “kick” a user by creating a checkpoint for that address and, essentially, resetting the user to their actual voting power and boost.
+However, once the vote-lock expires, everyone can “kick” users by creating a checkpoint for that address and, essentially, resetting their actual voting power and boost.
 
 {% hint style="info" %}
 For more details on boosting, Curve has written [some docs](https://curve.readthedocs.io/dao-gauges.html) about it too. The formula used by Curve is put differently than we put it here but the outputs are exactly the same.

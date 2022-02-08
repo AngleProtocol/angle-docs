@@ -20,15 +20,15 @@ The sanRate is common for all SLPs.
 
 ## Do you have an example of how interest accrue?
 
-Let's say that a SLP supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC_EUR and USDC (sanRate) is 1.
+Let's say that SLPs supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC_EUR and USDC (sanRate) is 1.
 
-Then, the SLP would receive 1000 \(1000/1\) sanUSDC_EUR.
+They would receive 1000 \(1000/1\) sanUSDC_EUR.
 
-A few months later, the SLP decides it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
+A few months later, the SLPs decide it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
 
 - The SLPs sanUSDC_EUR are now worth 1200 USDC \(1000 \* 1.2\)
-- The SLP could withdraw her 1200 USDC, which would redeem all sanUSDC_EUR
-- Or she could withdraw a portion, such as her original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC_EUR in her wallet
+- They could withdraw their 1200 USDC, which would redeem all sanUSDC_EUR
+- Or they could withdraw a portion, such as their original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC_EUR in their wallets
 
 ## Do SLPs get all transaction fees and interest from the protocol?
 

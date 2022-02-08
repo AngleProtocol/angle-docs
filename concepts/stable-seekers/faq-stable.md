@@ -18,7 +18,7 @@ For example, if Angle's agEUR is backed by wETH and wBTC, a user wishing to swap
 
 Angle leaves the choice to its users as for the collateral type they can get when burning their stablecoins.
 
-It is however possible that there is an imbalance between the value of the different collateral pools backing a stablecoin. If 100 agEUR are backed by 10 DAI and 150 USDC, the transaction of a user asking DAI against 100 agEUR will fail because there are not enough DAI in reserves to reimburse the user.
+It is however possible that there is an imbalance between the value of the different collateral pools backing a stablecoin. If 100 agEUR are backed by 10 DAI and 150 USDC, the transactions of users asking DAI against 100 agEUR will fail because there are not enough DAI in reserves to reimburse the users.
 
 In this case, users will have to burn agEUR in exchange for USDC.
 

@@ -6,7 +6,7 @@ description: How the protocol manages to liquidate a collateral for a given stab
 
 ## 💊 Use Cases
 
-Collateral settlement is the process by which the protocol goes through after a collateral is revoked for a stablecoin of the protocol. The goal of the process is to redistribute what remained of that collateral in the protocol. The settlement process chooses how much of this collateral each category of stakeholders \(users, HAs, SLPs\) is going to get based on the claims they made, and then reimburses each user, HA or SLP which made a claim based on that.
+Collateral settlement is the process by which the protocol goes through after a collateral is revoked for a stablecoin of the protocol. The goal of the process is to redistribute what remained of that collateral in the protocol. The settlement process chooses how much of this collateral each category of stakeholders \(users, HAs, SLPs\) is going to get based on the claims they made, and then reimburses each user, HA or SLP who made a claim based on that.
 
 Besides a long term unstable position of the protocol requiring the protocol to stop relying on a collateral, collateral settlement can also be activated by governance in case of a major security breach or a cyber-attack.
 
