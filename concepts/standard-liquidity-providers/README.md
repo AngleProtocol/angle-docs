@@ -6,7 +6,7 @@ description: Insuring the insurance (Hedging Agents)
 
 ## 🔎 TL;DR
 
-- Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens, yield-bearing tokens that automatically accrue interests and fees.
+- Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens, yield-bearing tokens that automatically accrue interest and fees.
 - Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
 - SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
 - They may face a small slippage when they exit the protocol if it is not enough collateralized.
@@ -15,30 +15,32 @@ description: Insuring the insurance (Hedging Agents)
 
 Standard Liquidity Providers are the buffer for the moments when hedging agents do not fully cover the collateral that was brought by users.
 
-They entrust Angle with their liquidity and like liquidity providers in other protocols (Compound, Uniswap, Aave), they automatically accrue interests on the assets they brought. The risk for them is to incur a slippage when the protocol is not enough collateralized and they want to cash out.
+They entrust Angle with their liquidity and like liquidity providers in other protocols (Compound, Uniswap, Aave), they automatically accrue interest on the assets they brought. The risk for them is to incur a slippage when the protocol is not enough collateralized and they want to cash out.
 
 ## 🎁 Rewards
 
 There are different incentives for SLPs to come to Angle:
 
 - A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
-- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the returns made by these strategies.
+- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the interest made by these strategies.
 
-The fraction of transaction fees and the fraction of lending returns going to SLPs correspond to two different parameters controlled by governance.
+Note that SLPs are also able to stake their positions (in the form of sanTokens) to receive ANGLE rewards.
 
-Note that SLPs are also able to stake their positions (in the form of sanTokens) to receive governance tokens.
+{% hint style="info" %}
+The fraction of transaction fees and interest going to SLPs correspond to two different parameters controlled by governance: feesForSLPs, and interestsForSLPs. InterestsForSLPs is what they get **after** taking into account the share going to veANGLE holders (interestsForSurplus). The value of these parameters can be seen in [Angle's SDK Parameters file](https://github.com/AngleProtocol/angle-sdk/blob/main/src/constants/parameters/mainnet.ts#L66). Note that they can be specific for each collateral.
+{% endhint %}
 
 ## ✖ Multiplier Effect
 
-In general, the less SLPs there are, the more a single SLP, for a similar amount invested, receives transaction fees, governance tokens, and interests. This mechanism thus incentivizes SLPs to re-collateralize the protocol when it is not collateralized enough because of a lack of SLPs.
+In general, the less SLPs there are, the more a single SLP, for a similar amount invested, receives transaction fees, interest, and ANGLE rewards. This mechanism thus incentivizes SLPs to re-collateralize the protocol when it is not collateralized enough.
 
-For the lending returns, there is an even more interesting multiplier effect for SLPs.
+For the interest on lending, there is an even more interesting multiplier effect for SLPs.
 
 ![Multiplier Effect for SLPs](../../.gitbook/assets/multipliereffect.jpg)
 
-Let's assume that 80% of the protocol's reserves are lent to Compound with a 10% APY and that 50% of the lending returns are given to SLPs. By directly lending their 500,000 USDC to this strategy, SLPs would earn 500K \* 10% = 50K USDC per year.
+Let's assume that 80% of the protocol's reserves are lent to Compound with a 10% APY and that 50% of the interest are given to SLPs. By directly lending their 500,000 USDC to this strategy, SLPs would earn 500K \* 10% = 50K USDC per year.
 
-With Angle, they get a multiplier effect on their collateral coming from the collateral of users and HAs on which they also receive yield
+With Angle, they get a multiplier effect on their collateral coming from the collateral of users and HAs on which they also receive interest.
 
 In that case, they would effectively get 2.5M \* 80% \* 10% \* 50% = 100,000 USDC / year, or double what they would earn by lending directly to Compound.
 
