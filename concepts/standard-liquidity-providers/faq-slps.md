@@ -30,9 +30,9 @@ A few months later, the SLP decides it's time to withdraw USDC from the protocol
 - The SLP could withdraw her 1200 USDC, which would redeem all sanUSDC_EUR
 - Or she could withdraw a portion, such as her original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC_EUR in her wallet
 
-## Do SLPs get all transaction fees and lending returns from the protocol?
+## Do SLPs get all transaction fees and interest from the protocol?
 
-No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters: `feesForSLPs` and `interestsForSLPs`. These parameters can be changed by governance, meaning governance could choose to give more or less fees and interest to SLPs.
+No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters: `feesForSLPs` and `interestsForSLPs`. These parameters can be changed by governance to give more or less fees and interest to SLPs. The current parameters' values can be found in [Angle's SDK](https://github.com/AngleProtocol/angle-sdk/blob/main/src/constants/parameters/mainnet.ts#L66).
 
 The ratio of `interestsForSLPs` is taken into account after the share of interest going to veANGLE holders (`interestsForSurplus`) has been distributed. For example, if `interestsForSurplus` is at 0.5 and `interestsForSLPs` at 0.6, then the share of interest going to SLPs is $0.6\times(1-0.5)=0.3$.
 
@@ -52,6 +52,6 @@ Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, an
 
 ## What's the advantage of being a SLP with Angle rather than going to other platforms that offer automatic yield like Aave or Compound?
 
-SLPs with Angle enjoy an increased yield through the [multiplier effect](README.md#multiplier-effect). Because Angle's reserves are lent to other protocols, among which some funds are not from SLPs, SLPs can get more yield than what they would get on Compound or Aave because they receive yield on collateral they did not bring initially.
+SLPs with Angle enjoy an increased yield through the [multiplier effect](README.md#%E2%9C%96-multiplier-effect). Because Angle's reserves are lent to other protocols, among which some funds are not from SLPs, SLPs can get more yield than what they would get on Compound or Aave because they receive yield on collateral they did not bring initially.
 
 For instance if there is 150 of collateral in the protocol, among which 50 comes from SLPs, SLPs are entitled to get yield on the 50 they brought, but also on the 100 of collateral that was brought by users and hedging agents.
