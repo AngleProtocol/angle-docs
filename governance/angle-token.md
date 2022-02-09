@@ -28,6 +28,12 @@ Every week, governance will be able to adjust the distribution of tokens between
 
 Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available on [this page](veANGLE/gauges.md).
 
+5% of the ANGLE's weekly emissions is still controlled by the Core Team and is allocated without any vote by veANGLE holders.
+
+{% hint style="info" %}
+[This document](https://docs.google.com/spreadsheets/d/1fxTBGEnOnzvpdBaeiDzy1j-g5-s75IhGPU8aOdu786g/edit?usp=sharing) summarizes where these 5% of the weekly ANGLE emissions are deployed.
+{% endhint %}
+
 ### DAO Treasury
 
 20% of the tokens are controlled by the DAO Treasury: the DAO will be able to vote for how and where to allocate these tokens.
