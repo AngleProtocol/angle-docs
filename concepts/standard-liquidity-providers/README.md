@@ -27,7 +27,7 @@ There are different incentives for SLPs to come to Angle:
 Note that SLPs are also able to stake their positions (in the form of sanTokens) to receive ANGLE rewards.
 
 {% hint style="info" %}
-The fraction of transaction fees and interest going to SLPs correspond to two different parameters controlled by governance: feesForSLPs, and interestsForSLPs. InterestsForSLPs is what they get **after** taking into account the share going to veANGLE holders (interestsForSurplus). The value of these parameters can be seen in [Angle's SDK Parameters file](https://github.com/AngleProtocol/angle-sdk/blob/main/src/constants/parameters/mainnet.ts#L66). Note that they can be specific for each collateral.
+The fraction of transaction fees and interest going to SLPs correspond to two different parameters controlled by governance. The interest for SLPs is computed **after** taking into account the share going to veANGLE holders. The value of these parameters can be seen in [Angle Analytics](https://analytics.angle.money). Note that they can be specific for each collateral.
 {% endhint %}
 
 ## ✖ Multiplier Effect

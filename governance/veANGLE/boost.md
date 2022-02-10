@@ -23,7 +23,7 @@ One notable exception is that of the rewards given to hedging agents taking part
 Besides, external farming that are promoted by other protocols (such as Sushi Onsen) or that are available on other chains are typically not available for veANGLE boosts since they are independent of the mainnet Angle protocol itself.
 
 {% hint style="info" %}
-Users' veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.
+A user veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.
 {% endhint %}
 
 ## 🧮 Boost Computation
@@ -129,7 +129,7 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that users' veANGLE balances used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that users' boosts could stay higher than it actually is with their current veANGLE balance. It has two main side effects.
+Implementation details are such that a user's veANGLE balance used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that this user's boost could stay higher than it actually is with their current veANGLE balance. It has two main side effects.
 
 On the one hand, after locking tokens, users need to call the **deposit, withdraw (with amount > 0), or user_checkpoint() functions** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 

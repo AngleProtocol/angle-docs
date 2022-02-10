@@ -26,15 +26,15 @@ Hedging Agents are taking perpetual futures from the protocol. When they come in
 
 Hedging Agents are independent from one another, meaning that the actions of one Hedging Agent have no impact on the position of another Hedging Agent.
 
-Precisely speaking, if HAs enter with an amount `x` of collateral (`x`is the margin) and decide to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which the HAs came in.
+Precisely speaking, if a HA enter with an amount `x` of collateral (`x`is the margin) and decide to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
 
-At any given point in time, HAs are entitled to get from the protocol:
+At any given point in time, the HA is entitled to get from the protocol:
 
 $$
 \texttt{cash out amount} = x+y\cdot (1-\frac{\texttt{initial oracle price}}{\texttt{current oracle price}})
 $$
 
-This formula means that HAs will get back their input `x`, plus or minus the capital gains or losses of the amount `y` they decided to back.
+This formula means that the HA will get back their input `x`, plus or minus the capital gains or losses of the amount `y` they decided to back.
 
 The **PnL** of the HA on this position is therefore:
 
@@ -52,7 +52,7 @@ $$
 
 When the collateral price increases (with respect to the asset stablecoins are pegged to), besides their margin (amount brought initially), HAs are entitled to get the capital gains they would have made if they had owned the collateral they hedged.
 
-If HAs brought 1 wETH and decided to back 1 wETH from the protocol, at a wETH price of 2000€, then:
+If an HA brought 1 wETH and decided to back 1 wETH from the protocol, at a wETH price of 2000€, then:
 
 $$
 x = 1, \space y=1
@@ -62,25 +62,25 @@ $$
 \texttt{initial oracle price} = 2000
 $$
 
-If the price of wETH increases to 4000€, then according to the formula above, HAs can get from the protocol:
+If the price of wETH increases to 4000€, then according to the formula above, the HA can get from the protocol:
 
 $$
 \texttt{cash out amount} = 1.5 \space \texttt{wETH}
 $$
 
-HAs made 6000€ from their initial 2000€. If they had just stayed long without leverage, they would have only 4000€.
+The HA made 6000€ from their initial 2000€. If they had just stayed long without leverage, they would have only 4000€.
 
 ### 📉 Price Decrease Scenario
 
 When the collateral price decreases (with respect to the asset stablecoins are pegged to), HAs will incur losses on their margin as if they had owned the collateral they covered.
 
-Back to the previous example, if the price of wETH decreases to 1000€, then the cash out amount of HAs becomes:
+Back to the previous example, if the price of wETH decreases to 1000€, then the cash out amount of the HA becomes:
 
 $$
 \texttt{cash out amount} = 1 + 1 \cdot (1-2) = 0
 $$
 
-At this point, HAs are liquidated and their collateral goes to the protocol. They cannot claim anything.
+At this point, the HA are liquidated and their collateral goes to the protocol. They cannot claim anything.
 
 In general, the cash out amount of HAs can go to zero if the price drops to:
 
@@ -90,9 +90,9 @@ $$
 
 ## 💧 HAs Liquidations
 
-In practice, and like in most centralized perpetual swaps exchanges, there is a maintenance margin meaning that if the value of the theorical cash out amount gets too small compared with the amount committed by HAs, then their positions can get liquidated. HAs can hence get liquidated even with a non null cash out amount.
+In practice, and like in most centralized perpetual swaps exchanges, there is a maintenance margin meaning that if the value of the theorical cash out amount gets too small compared with the amount committed by a HA, then this HA's position can get liquidated. HAs can hence get liquidated even with a non null cash out amount.
 
-Mathematically speaking, we define the margin ratio of HAs as:
+Mathematically speaking, we define the margin ratio of a HA as:
 
 $$
 \texttt{margin ratio} = \frac{\texttt{margin + PnL}}{\texttt{amount committed}}

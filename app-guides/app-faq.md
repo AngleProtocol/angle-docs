@@ -29,7 +29,7 @@ The protocol tracks the ratio for each pair between the amount hedged by HAs and
 
 ### Why can't I update or close my position?
 
-When users open a position, this position is locked for an hour. This means that they cannot remove collateral from their margin or close their position during this time. The lock time can be updated by governance.
+When a user opens a position, this position is locked for an hour. This means that they cannot remove collateral from their margin or close their position during this time. The lock time can be updated by governance.
 
 It was put in place to mitigate the front-running risks that could happen, in particular using flashloans, as the protocol relies on oracle prices that could deviate from market price.
 

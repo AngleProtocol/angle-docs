@@ -15,21 +15,21 @@ description: Getting stablecoins from collateral and conversely
 
 Angle is designed to be as simple as possible from a user perspective and like USDC (or also USDT), it relies on full convertibility of collateral and stable assets, meaning users can swap collateral against stablecoins as well as stablecoins against collateral at any time.
 
-To generate a stable asset, users just have to send to the protocol a whitelisted collateral. An oracle then determines how many stablecoins (`ERC-20`tokens) need to be minted and sent to the users. Like in an AMM swap, the collateral received by the protocol does no longer belong to the users.
+To generate a stable asset, a user just has to send to the protocol a whitelisted collateral. An oracle then determines how many stablecoins (`ERC-20`tokens) need to be minted and sent to the user. Like in an AMM swap, the collateral received by the protocol does no longer belong to the user.
 
 The same procedure works when users are willing to cash out. They just have to send their stablecoins to the protocol and specify the collateral they want in exchange. In return, they get the chosen collateral in an amount depending on the collateral price specified by the oracle and on the transaction fees. The stablecoins received by the protocol are then burnt.
 
 ## 🖨️ Minting
 
-Let's focus on the case of a stable Euro (agEUR), backed by USDC as collateral (and other collateral types too). If 1 USDC is worth 1€, and if the transaction fees are 0.1%, then users giving 1000 USDC to the protocol will receive 999 newly minted agEUR.
+Let's focus on the case of a stable Euro (agEUR), backed by USDC as collateral (and other collateral types too). If 1 USDC is worth 1€, and if the transaction fees are 0.1%, then a user giving 1000 USDC to the protocol will receive 999 newly minted agEUR.
 
 The 1000 USDC given by the users are now in the protocol's reserves.
 
 ## 🕯️ Burning
 
-If users own 1000 agEUR and want to burn it for collateral, they can do so using the collateral they want. Let's say that DAI and USDC are the two collaterals backing agEUR. Users can choose to get DAI or USDC against their 1000 agEUR.
+If a user owns 1000 agEUR and wants to burn it for collateral, they can do so using the collateral they want. Let's say that DAI and USDC are the two collaterals backing agEUR. The user can choose to get DAI or USDC against their 1000 agEUR.
 
-If according to the oracle 1 DAI is worth 1€, and if the transaction fees are 0.3%, then these users will get 997 DAI out of their 1000 agEUR.
+If according to the oracle 1 DAI is worth 1€, and if the transaction fees are 0.3%, then this user will get 997 DAI out of their 1000 agEUR.
 
 ## ⚖️ Stability
 

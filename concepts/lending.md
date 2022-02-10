@@ -6,7 +6,7 @@ description: Growing surplus, incentivizing veANGLE holders, and offering yield 
 
 ## 🔎 TL;DR
 
-- The protocol earn interest on the reserves it holds by lending it to other platforms.
+- The protocol earns interest on the reserves it holds by lending it to other platforms.
 - To do so, the protocol relies on strategies which decide how much and in which protocols reserves should be placed.
 - Angle is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
 - Strategies are what enables the protocol to offer higher yield to SLPs than what they would get by lending directly to other protocols.
@@ -15,7 +15,7 @@ description: Growing surplus, incentivizing veANGLE holders, and offering yield 
 
 Lending a fraction of the protocol reserves to other lending platforms is part of what makes the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
 
-The distribution of interest between SLPs, veANGLE holders, and protocol reserves, is dictated by two parameters that can be found in [Angle's SDK](https://github.com/AngleProtocol/angle-sdk/blob/main/src/constants/parameters/mainnet.ts#L66). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
+The distribution of interest between SLPs, veANGLE holders, and protocol reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
 
 ![](../.gitbook/assets/angle-strategies-flow.png)
 

@@ -4,6 +4,10 @@ description: Common questions about getting and exchanging the Ppotocol's stable
 
 # FAQ - Stable Seekers and Holders
 
+## Which stablecoins can be minted on Angle?
+
+For now, Angle only supports agEUR. The team and community are focused on developing the protocol around one stablecoin first, before potentially moving to others.
+
 ## What is agEUR backed by?
 
 First, agEUR is backed by the collateral that was used to mint it. Then, if this collateral is volatile, HA can open positions on the collateral stored in the protocol to protect it from changes in collateral/agEUR exchange rate. In case this is not enough, SLPs come to over-collateralize the protocol.
@@ -24,7 +28,7 @@ In this case, users will have to burn agEUR in exchange for USDC.
 
 ## Do I still own the collateral I bring to the protocol to mint agEUR?
 
-No. Unlike in Maker's system, Angle's protocol works with swaps from a user perspective, meaning that the collateral brought to get stablecoins no longer belongs to the person who brought it: it belongs to the protocol which keeps it in reserves and uses it to back the minted stablecoin.
+No. Unlike in Maker's system, Angle's protocol works with swaps from a user perspective, meaning that the collateral brought to get stablecoins does not longer belongs to the person who brought it: it belongs to the protocol which keeps it in reserves and uses it to back the minted stablecoin.
 
 ## Are the agEUR minted borrowed from the protocol?
 

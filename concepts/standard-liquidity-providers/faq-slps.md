@@ -20,21 +20,21 @@ The sanRate is common for all SLPs.
 
 ## Do you have an example of how interest accrue?
 
-Let's say that SLPs supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC_EUR and USDC (sanRate) is 1.
+Let's say that a SLP supplies 1000 USDC to the protocol for the agEUR stablecoin when the exchange rate between sanUSDC_EUR and USDC (sanRate) is 1.
 
 They would receive 1000 \(1000/1\) sanUSDC_EUR.
 
-A few months later, the SLPs decide it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
+A few months later, the SLP decide it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
 
-- The SLPs sanUSDC_EUR are now worth 1200 USDC \(1000 \* 1.2\)
+- The SLP sanUSDC_EUR are now worth 1200 USDC \(1000 \* 1.2\)
 - They could withdraw their 1200 USDC, which would redeem all sanUSDC_EUR
 - Or they could withdraw a portion, such as their original 1000 USDC, which would redeem 1000/1.2 = 833.33 sanUSDC-EUR, keeping 166.67 sanUSDC_EUR in their wallets
 
 ## Do SLPs get all transaction fees and interest from the protocol?
 
-No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters: `feesForSLPs` and `interestsForSLPs`. These parameters can be changed by governance to give more or less fees and interest to SLPs. The current parameters' values can be found in [Angle's SDK](https://github.com/AngleProtocol/angle-sdk/blob/main/src/constants/parameters/mainnet.ts#L66).
+No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters, which can be changed by governance to give more or less fees and interest to SLPs. The current parameters' values can be found in [Angle Analytics](https://analytics.angle.money) on each pool's page.
 
-The ratio of `interestsForSLPs` is taken into account after the share of interest going to veANGLE holders (`interestsForSurplus`) has been distributed. For example, if `interestsForSurplus` is at 0.5 and `interestsForSLPs` at 0.6, then the share of interest going to SLPs is $0.6\times(1-0.5)=0.3$.
+The interest for SLPs is taken into account after the share of interest going to veANGLE holders has been distributed. For example, if the interest for veANGLE holders is at 0.5 and the interest for SLPs at 0.6, then the share of interest going to SLPs is $0.6\times(1-0.5)=0.3$.
 
 Furthermore, SLPs only receive transaction fees from transactions which concern the pool they contribute to. Transaction fees from a mint transaction affecting the USDC liquidity pool do not go to SLPs which contributed to the DAI liquidity pool.
 
