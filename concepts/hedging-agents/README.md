@@ -26,7 +26,7 @@ Hedging Agents are taking perpetual futures from the protocol. When they come in
 
 Hedging Agents are independent from one another, meaning that the actions of one Hedging Agent have no impact on the position of another Hedging Agent.
 
-Precisely speaking, if a HA enter with an amount `x` of collateral (`x`is the margin) and decide to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
+Precisely speaking, if a HA enters with an amount `x` of collateral (`x`is the margin) and decides to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the protocol stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
 
 At any given point in time, the HA is entitled to get from the protocol:
 
@@ -80,9 +80,9 @@ $$
 \texttt{cash out amount} = 1 + 1 \cdot (1-2) = 0
 $$
 
-At this point, the HA are liquidated and their collateral goes to the protocol. They cannot claim anything.
+At this point, the HA is liquidated and their collateral goes to the protocol. They cannot claim anything.
 
-In general, the cash out amount of HAs can go to zero if the price drops to:
+In general, the cash out amount of a HA can go to zero if the price drops to:
 
 $$
 \texttt{current price} = \frac{y}{x+y}\cdot \texttt{initial price}
@@ -114,7 +114,7 @@ $$
 
 When HAs enter the protocol, they specify a position size denominated in collateral, representing an amount of the protocol collateral reserves they are hedging. Yet from a protocol perspective, when HAs come in the protocol, they insure a fixed amount of stablecoins.
 
-This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a protocol perspective, each HA insures the protocol for a fixed amount of stablecoins. This is what the accounting of the protocol keeps track of when determining when to let HAs come in or not.
+This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a protocol perspective, each HA insures the protocol for a fixed amount of stablecoins. This is what the accounting of the protocol keeps track of when determining when to let new HAs come in or not.
 
 The total amount hedged by HAs for a given collateral/stablecoin pair is hence the sum of the product between the amount committed by HAs and their entry price: it is a measure of how much stablecoins issued are backed and insured.
 
@@ -158,7 +158,7 @@ The higher the hedging ratio, the more expensive it gets to be an HA. Conversely
 
 ![](../../.gitbook/assets/haentry.jpg)
 
-Let' say HAs come to the protocol with 1 wETH and open a 2 wETH poisition (hedging the protocol against the changes in price of these 2 wETH). If the transaction fees are 0.3%, then the protocol considers that the HA has a margin of (1 - (0.003 x 2)) = 0,994 wETH for a position of 2 wETH.
+Let' say a HA comes to the protocol with 1 wETH and opens a 2 wETH poisition (hedging the protocol against the changes in price of these 2 wETH). If the transaction fees are 0.3%, then the protocol considers that the HA has a margin of (1 - (0.003 x 2)) = 0,994 wETH for a position of 2 wETH.
 
 ### Exit Transaction Fees
 
@@ -166,7 +166,7 @@ Exit fees are paid by HAs when they close their perpetuals. The more collateral 
 
 ![](../../.gitbook/assets/haexit.jpg)
 
-If HAs had an initial margin of 1 wETH and a position size of 2 wETH, then with 0.3% transaction fees, HAs will get in wETH the current value of their perpetual according to the cash out formula above minus 0.3% of 2 wETH (the amount hedged at the opening).
+If a HA had an initial margin of 1 wETH and a position size of 2 wETH, then with 0.3% transaction fees, they will get in wETH the current value of their perpetual according to the cash out formula above minus 0.3% of 2 wETH (the amount hedged at the opening).
 
 ### Fees To Add or Remove Margin
 

@@ -24,7 +24,7 @@ Let's say that a SLP supplies 1000 USDC to the protocol for the agEUR stablecoin
 
 They would receive 1000 \(1000/1\) sanUSDC_EUR.
 
-A few months later, the SLP decide it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
+A few months later, the SLP decides it's time to withdraw USDC from the protocol and the sanRate is now 1.2.
 
 - The SLP sanUSDC_EUR are now worth 1200 USDC \(1000 \* 1.2\)
 - They could withdraw their 1200 USDC, which would redeem all sanUSDC_EUR

@@ -16,7 +16,7 @@ First, agEUR is backed by the collateral that was used to mint it. Then, if this
 
 Angle can be used as a decentralized exchange where there is no slippage for swapping.
 
-For example, if Angle's agEUR is backed by wETH and wBTC, a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agEUR, and then use these agEUR to redeem wBTC.
+For example, if Angle's agEUR is backed by wETH and wBTC (at the moment Angle is only backed by USDC, DAI, FEI and FRAX), a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agEUR, and then use these agEUR to redeem wBTC.
 
 ## What happens if I want a collateral that is not present in sufficient quantity against my agEUR?
 
@@ -28,7 +28,7 @@ In this case, users will have to burn agEUR in exchange for USDC.
 
 ## Do I still own the collateral I bring to the protocol to mint agEUR?
 
-No. Unlike in Maker's system, Angle's protocol works with swaps from a user perspective, meaning that the collateral brought to get stablecoins does not longer belongs to the person who brought it: it belongs to the protocol which keeps it in reserves and uses it to back the minted stablecoin.
+No. Unlike in Maker's system, Angle's protocol works with swaps from a user perspective, meaning that the collateral brought to get stablecoins no longer belongs to the person who brought it: it belongs to the protocol which keeps it in reserves and uses it to back the minted stablecoin.
 
 ## Are the agEUR minted borrowed from the protocol?
 

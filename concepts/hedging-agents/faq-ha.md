@@ -40,14 +40,14 @@ The amount to hedge for a given collateral corresponds to the quantity of stable
 
 It refers to the total position HAs can open with the protocol.
 
-For instance, if users minted 20000 agEUR with wETH, then the amount to hedge is 20000 EUR of wETH. Then, if users burn 15000 agEUR against wETH, the amount to hedge becomes 5000 EUR of wETH.
+For instance, if a user minted 20000 agEUR with wETH, then the amount to hedge is 20000 EUR of wETH. Then, if a user burns 15000 agEUR against wETH, the amount to hedge becomes 5000 EUR of wETH.
 
 If the target proportion that HAs are allowed to hedge is 90%, then after the burn the amount to hedge by HAs is 5000 \* 0.9 = 4500 EUR worth of stablecoins. This means that the sum of the position size \(in collateral\) multiplied by the entry oracle rates of HAs should less or equal to 4500 EUR.
 
 **Why is that quantity expressed in stablecoins?**
 Let's say that there is one HA in the protocol that entered at a time where the price of collateral with respect to the stablecoin was `p_e` and commits to an amount of collateral of `c`. HAs are not allowed to hedge more collateral that is in the protocol. To this extent, `c` must be collateral in the protocol's reserves, brought by users minting stablecoins.
 
-If the HAs cashes out at a moment in which the collateral is worth `p`, if we imagine that there was only `c` of collateral in the protocol before the HA came in, then the protocol ends up with:
+If the HA cashes out at a moment in which the collateral is worth `p`, if we imagine that there was only `c` of collateral in the protocol before the HA came in, then the protocol ends up with:
 
 $$
 c - \texttt{PnL} =  c \cdot \frac{p_e}{p}
@@ -71,7 +71,7 @@ This amount should always remain inferior to the target amount HAs should hedge 
 
 The hedging ratio refers to the portion of the amount to hedge by Hedging Agents that is actually hedged.
 
-If users mint 2000 agEUR for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agEUR is 1800 agEUR of wETH. If one HA enters the protocol when wETH is worth 1000 EUR, brings 2 wETH and decides to commit to the variation of 0.8 wETH \(this HA has a leverage of x1.4\), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
+If one user mints 2000 agEUR for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agEUR is 1800 agEUR of wETH. If one HA enters the protocol when wETH is worth 1000 EUR, brings 2 wETH and decides to commit to the variation of 0.8 wETH \(this HA has a leverage of x1.4\), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
 
 ## What happens if there are too many HAs with respect to the amount to hedge from the protocol?
 
@@ -87,9 +87,9 @@ When a HA position is force-closed, the owner gets back its margin plus any unre
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
-It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when HAs try to close their positions there is not enough collateral in the pool to which they contributed.
+It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when a HA tries to close their positions there is not enough collateral in the pool to which they contributed.
 
-In this case, HAs get everything that can be given from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
+In this case, the HA gets everything that can be given from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
 
 ## Can I open multiple perpetuals?
 

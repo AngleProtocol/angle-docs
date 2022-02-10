@@ -23,7 +23,7 @@ The same procedure works when users are willing to cash out. They just have to s
 
 Let's focus on the case of a stable Euro (agEUR), backed by USDC as collateral (and other collateral types too). If 1 USDC is worth 1€, and if the transaction fees are 0.1%, then a user giving 1000 USDC to the protocol will receive 999 newly minted agEUR.
 
-The 1000 USDC given by the users are now in the protocol's reserves.
+The 1000 USDC given by the user are now in the protocol's reserves.
 
 ## 🕯️ Burning
 
