@@ -32,7 +32,7 @@ In practice, the redistribution of interest to veANGLE token holder is currently
 
 Fees are going to be distributed weekly. The proportional amount of fees that each user is to receive is calculated based on their veANGLE balance relative to the total veANGLE supply.
 
-This amount is calculated at the start of the week. The actual distribution occurs at the end of the week based on the fees that were collected. As such, a user that creates a new vote-lock should expect to receive their first fee payout at the end of the following epoch week.
+This amount is calculated at the start of the week. The actual distribution occurs at the end of the week based on the fees that were collected. As such, users that create a new vote-lock should expect to receive their first fee payout at the end of the following epoch week.
 
 The available sanUSDC_EUR balance to distribute is tracked via something that is called the “token checkpoint”. This is updated at minimum every 24 hours. Fees that are received between the last checkpoint of the previous week and first checkpoint of the new week are split evenly between the two weeks.
 

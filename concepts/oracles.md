@@ -23,7 +23,7 @@ In the beginning, the agEUR stablecoin will not accept wETH and wBTC. This is ju
 
 Angle uses a combination of Chainlink and Uniswap V3 TWAP oracles with a 10 minutes time window. The idea is that whenever there is a need for an oracle value, the protocol chooses between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
 
-For instance, for a mint transaction using collateral, Angle keeps the lowest value between Chainlink and Uniswap. But for a burn transaction, the protocol keeps the highest one. If Uniswap's feed price for 1 wETH is 1000€ and if Chainlink's feed price is 990 €. Then a user could get 990 agEUR with 1 wETH, and could get 1 wETH from 1000 agEUR.
+For instance, for a mint transaction using collateral, Angle keeps the lowest value between Chainlink and Uniswap. But for a burn transaction, the protocol keeps the highest one. If Uniswap's feed price for 1 wETH is 1000€ and if Chainlink's feed price is 990 €. Then, a user could get 990 agEUR with 1 wETH, and 1 wETH from 1000 agEUR.
 
 For some pairs, there may not be the direct feeds on Chainlink or pools on Uniswap to compute the price. The protocol should thus work with circuits of pairs to decompose the computation of the price: ETH/USD and then USD/EUR for a ETH/EUR feed.
 

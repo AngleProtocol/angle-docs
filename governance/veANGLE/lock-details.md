@@ -40,7 +40,7 @@ $$
 
 It's only at the end of the lock time that it becomes possible to recover the locked ANGLE tokens.
 
-During lock time, user can also increase their veANGLE balance by locking up ANGLE, extending the lock end date, or both.
+During lock time, users can also increase their veANGLE balance by locking up ANGLE, extending the lock end date, or both.
 
 **Example:** 12 ANGLE locked for 2 years and 8 months (with 30d/month) would give:
 

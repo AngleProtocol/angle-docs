@@ -27,9 +27,9 @@ The 1000 USDC given by the user are now in the protocol's reserves.
 
 ## 🕯️ Burning
 
-If a user owns 1000 agEUR and wants to burn it for collateral, she can do it with the collateral she wants. Let's say that DAI and USDC are the two collateral types backing agEUR, this user can choose to get DAI or USDC against her 1000 agEUR.
+If a user owns 1000 agEUR and wants to burn it for collateral, they can do so using the collateral they want. Let's say that DAI and USDC are the two collaterals backing agEUR. The user can choose to get DAI or USDC against their 1000 agEUR.
 
-If according to the oracle 1 DAI is worth 1€, and if the transaction fees are 0.3%, then this user will get 997 DAI out of her 1000 agEUR.
+If according to the oracle 1 DAI is worth 1€, and if the transaction fees are 0.3%, then this user will get 997 DAI out of their 1000 agEUR.
 
 ## ⚖️ Stability
 
@@ -55,7 +55,7 @@ A stablecoin is only stable relative to the value of the oracle that was chosen 
 
 ## 🪙 Transaction Fees
 
-Transaction fees are taken from users minting and burning. While this is a way to prevent front-running attacks, it also helps to incentivize liquidity providers contributing to the protocol.
+Transaction fees are taken from users minting and burning. While this is a way to prevent front-running attacks (details [here](https://blog.angle.money/angle-research-series-part-2-fees-and-front-running-resistance-for-users-393e0ae14b20)), it also helps to incentivize liquidity providers contributing to the protocol.
 
 The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 

@@ -1,21 +1,23 @@
 ---
-description: Getting surplus and proposing yield to the protocol's liquidity providers
+description: Growing surplus, incentivizing veANGLE holders, and offering yield to the protocol's liquidity providers
 ---
 
 # 📈 Lending Strategies - Yield on Reserves
 
 ## 🔎 TL;DR
 
-- The protocol makes yield on the reserves it holds by lending a portion of it to other platforms.
+- The protocol earns interest on the reserves it holds by lending it to other platforms.
 - To do so, the protocol relies on strategies which decide how much and in which protocols reserves should be placed.
 - Angle is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
-- Strategies are what enables the protocol to propose higher yield to SLPs than what they would get by lending directly to other protocols.
+- Strategies are what enables the protocol to offer higher yield to SLPs than what they would get by lending directly to other protocols.
 
 ## 💡 Rationale
 
-Lending a fraction of the reserves of the protocol to other lending platforms is part of what can make the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can on the one hand propose interesting yield to Standard Liquidity Providers and on the other hand accumulate some surplus.
+Lending a fraction of the protocol reserves to other lending platforms is part of what makes the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
 
-![](../.gitbook/assets/angle_explainers_-_simplified_version_1.jpg)
+The distribution of interest between SLPs, veANGLE holders, and protocol reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
+
+![](../.gitbook/assets/angle-strategies-flow.png)
 
 ## 🎨 Design
 
@@ -45,4 +47,8 @@ Keepers cannot choose the amount they lend or withdraw from lending platforms: t
 
 ## ✖️ Back To The Multiplier Effect For SLPs
 
-Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital.
+Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital. More info in the SLP page below.
+
+{% content-ref url="standard-liquidity-providers/README.md" %}
+[standard-liquidity-providers/README.md](standard-liquidity-providers/README.md#%E2%9C%96-multiplier-effect)
+{% endcontent-ref %}

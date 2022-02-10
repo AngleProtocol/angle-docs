@@ -11,12 +11,8 @@ Angle is a scalable, efficient, over-collateralized and liquid decentralized sta
 ## How does Angle work?
 
 1. Angle enables people to swap their collateral against stablecoins at oracle value. Anyone can come with an accepted collateral \(like wETH\), and swap it to get a corresponding amount of stablecoins. It is also possible to swap Angle's stablecoins for an accepted collateral type of the system. For a EUR stablecoin collateralized by wBTC and wETH, with 1 wETH worth 1000€ you can get 1000 agEUR. If 1 wBTC is worth 10000€, with 1000 agEUR, you can get either 1 wETH or 0.1 wBTC.
-2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the protocol needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the protocol against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by a stable seeker, someone can come to Angle, bring collateral \(like 0.5 wETH\) and choose to cover this 1 wETH \(hence getting a 3x leverage\). This means that this person gets the capital gains or has to pay for the loss she would have made if she had owned this 1 wETH from the beginning.
+2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the protocol needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the protocol against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral \(like 0.5 wETH\) and choose to cover this 1 wETH \(hence getting a 3x leverage\). This means that they get the capital gains or have to pay for the loss they would have realzied if they had owned this 1 wETH from the beginning.
 3. Angle can hence be seen a marketplace between stability and volatility: stable seekers get direct stability and people who want leverage and volatility get the volatility of the collateral brought by stable seekers. Yet, there may not always be a full demand for the offer in volatility taking the form of the perpetual futures. Angle needs a buffer of collateral to account for that. The protocol therefore enables people to come deposit collateral and serve as this buffer: these liquidity providers automatically accumulate interest on the collateral they deposited.
-
-## Is Angle live?
-
-Angle will be officially live around November 3rd.
 
 ## Have smart contracts been audited?
 
@@ -24,15 +20,13 @@ Yes, Angle's smart contracts have been audited by Chainsecurity and Sigma Prime.
 
 ## What stablecoins can be minted on Angle?
 
-Angle can be used to issue virtually any type of stablecoins, provided that there is an oracle for it. The intial goal is to create Forex stablecoins with sufficient liquidity. To this extent, we will focus on creating only a few different stablecoins at first.
+Angle can be used to issue virtually any type of stablecoins, provided that there is an oracle for it. The intial goal is to create Forex stablecoins with sufficient liquidity. To this extent, we want to focus on only a few different stablecoins at first, beginning with a EUR-pegged one.
 
-The plan is to begin with the agEUR, and to follow-up soon after with other stablecoins.
+Today, agEUR can be minted from USD stablecoins. We are currently focused on developing the market for agEUR and expanding the protocol, before venturing into other stablecoins.
 
 ## When will new stablecoins be launched?
 
-Governance and Angle DAO will be able to vote for the launch of new stablecoins. Angle Core Team wants to wait to have enough liquidity and integrations on existing stablecoins before launching new ones.
-
-Angle Core Team hopes that the DAO will share this stance, which will dictate the timeline with which new stablecoins are deployed.
+Governance and Angle DAO will be able to vote for the launch of new stablecoins. Angle Core Team wants to wait to have enough liquidity and integrations on the agEUR before launching new ones.
 
 ## How to launch a stablecoin?
 
@@ -42,9 +36,7 @@ To grow demand for newly launched stablecoins, governance can offer staking cont
 
 ## What collateral are accepted by Angle?
 
-The idea is to start by being conservative and only accepting a few, but carefully chosen, collaterals. At launch, agEUR will be backed by USDC and DAI. Next, wETH will be accepted as collateral as well.
-
-Governance is the entity able to whitelist new collateral types.
+Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
 
 ## Why are Angle's stablecoins stable?
 
@@ -69,7 +61,7 @@ Many types of people can benefit from using Angle: the stable seekers who can ge
 
 The protocol is also completely open source, which allows anyone to interact with the user interface client, API or directly with the smart contracts on the Ethereum network. Being open source means that you are able to build any third-party service or application to interact with the protocol and enrich your product.
 
-## How do I use the app?
+## How can I use the app?
 
 In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by the Angle Core Team at [app.angle.money](https://app.angle.money), or through any other app developed by another team. Note that the app is hosted publicly on IPFS, and not on private servers.
 
@@ -97,25 +89,16 @@ Every possible step has been taken to minimize the risk as much as possible. The
 
 ## Do you have a governance token?
 
-Yes, it is the ANGLE token.
+Yes, veANGLE (locked ANGLE) tokens are used as the governance token of the protocol. It is used to direct weekly ANGLE distribution and vote on governance proposals on [Snapshot](https://snapshot.org/#/anglegovernance.eth).
 
-ANGLE is the center of gravity of Angle Protocol governance: it is used to vote and decide on the outcome of Angle Improvement Proposals. Apart from this, ANGLE could be used when collateral settlement is triggered to be treated preferentially and get a higher chance of being reimbursed full claim.
-
-Documentation on tokenomics and governance is available in the whitepaper and on the [tokenomics blog post](https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001).
+You can learn more about how voting-escrowed tokens work in the [veANGLE](governance/veANGLE/README.md) page.
 
 Feel free to join the discussion in the governance forum at [gov.angle.money](https://gov.angle.money).
 
-## Is there an airdrop for testnet participants?
-
-No there won't be any particular ANGLE token aidrop for testnet participants.
-
-## Is there a public token sale?
-
-No, we do not have a public sale.
-
 ## Additional information and resources about Angle
 
-Feel free to refer to the [whitepaper](whitepaper.md) for a deeper dive into Angle Protocol mechanisms.
+- [Blog](https://blog.angle.money)
+- [Developers Doc](https://developers.angle.money)
 
 {% hint style="info" %}
 💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.

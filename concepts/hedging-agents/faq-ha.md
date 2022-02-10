@@ -30,6 +30,8 @@ There are no fees for removing or adding collateral as margin to a position.
 
 With Angle, Hedging Agents are here to cover the volatility of the collateral that was brought by users. If the amount of collateral from users is worth `x` of stablecoins and HAs already cover this amount, then new ones will not be able to enter the protocol.
 
+The ratio between what HA currently hedge and what they hedge in total can be seen in the analytics. If we take the [USDC/EUR pair](https://analytics.angle.money/#/USDC/EUR) as example, HA can't open positions anymore when the hedge ratio reaches the target hedge ratio.
+
 To put it in other words, Angle can be seen as a marketplace between stability and volatility seekers. If the supply of volatility is fully taken by HAs, then the protocol cannot offer more leveraged positions \(and thus more volatility\) than what it has already offered.
 
 ## How is the amount to hedge by HAs computed?
@@ -42,7 +44,8 @@ For instance, if a user minted 20000 agEUR with wETH, then the amount to hedge i
 
 If the target proportion that HAs are allowed to hedge is 90%, then after the burn the amount to hedge by HAs is 5000 \* 0.9 = 4500 EUR worth of stablecoins. This means that the sum of the position size \(in collateral\) multiplied by the entry oracle rates of HAs should less or equal to 4500 EUR.
 
-**Why is that quantity expressed in stablecoins?** Let's say that there is one HA in the protocol that entered at a time where the price of collateral with respect to the stablecoin was `p_e` and commits to an amount of collateral of `c`. HAs are not allowed to hedge more collateral that is in the protocol. To this extent, `c` must be collateral in the protocol's reserves, brought by a user minting stablecoins.
+**Why is that quantity expressed in stablecoins?**
+Let's say that there is one HA in the protocol that entered at a time where the price of collateral with respect to the stablecoin was `p_e` and commits to an amount of collateral of `c`. HAs are not allowed to hedge more collateral that is in the protocol. To this extent, `c` must be collateral in the protocol's reserves, brought by users minting stablecoins.
 
 If the HA cashes out at a moment in which the collateral is worth `p`, if we imagine that there was only `c` of collateral in the protocol before the HA came in, then the protocol ends up with:
 
@@ -84,9 +87,9 @@ When a HA position is force-closed, the owner gets back its margin plus any unre
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
-It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when a HA tries to close her position there is not enough collateral in the pool to which she contributed.
+It is possible, because of users bringing one collateral, getting stablecoins and directly burning it against another collateral or because some of the reserves are lent and thus not immediately available, that when a HA tries to close their positions there is not enough collateral in the pool to which they contributed.
 
-In this case, the HA gets everything that can be given to from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
+In this case, the HA gets everything that can be given from the collateral pool, and the rest is returned in Standard Liquidity Providers' tokens \(called sanTokens\).
 
 ## Can I open multiple perpetuals?
 
