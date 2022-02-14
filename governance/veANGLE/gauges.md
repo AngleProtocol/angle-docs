@@ -1,8 +1,8 @@
 ---
-description: How the gauge system works with Angle
+description: How the gauge voting system works with Angle
 ---
 
-# 🗳 Gauges
+# 🗳 Gauges voting
 
 ## 🔎 TL;DR
 
@@ -29,16 +29,16 @@ This system strongly favors LP who continually lock their rewards into veANGLE t
 
 Gauge weights are updated weekly, every Thursday at 2am CET. This means that the ANGLE distribution rate for each pool is constant for 1 week and then updates to the new rate at this time.
 
-Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once this is done, users don't have to vote again every week except if they want to change them. Weight allocations for a given gauge can be changed every 10 days, so that each votes apply for at least two weeks.
+Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once this is done, users don't have to vote again every week except if they want to change them. Votes for a given gauge can only be changed **every 10 days**, so that each votes apply for at least two weeks.
 
-A person can also decide not to allocate all its available voting power.
+A person can also decide not to allocate all their available voting power.
 
 {% hint style="info" %}
 When updating gauge weights and putting more weight on one gauge with respect to another, users should be wary of doing decreases first then increases.
 {% endhint %}
 
 {% hint style="info" %}
-When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power.
+When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power. More info on the [Increasing veANGLE balance page](increasing-veANGLE.md).
 {% endhint %}
 
 ## ANGLE Issuance Rate
