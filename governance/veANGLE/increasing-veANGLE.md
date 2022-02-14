@@ -2,7 +2,7 @@
 description: Details about adding ANGLE to your lock
 ---
 
-# 🔓 Increasing your veANGLE balance
+# 🔐 Increasing your veANGLE balance
 
 There are two ways to increase an address balance of veANGLE:
 
@@ -23,7 +23,7 @@ When increasing the veANGLE balance of an address, its voting power increases ac
 
 Let’s say that Carol locks 90 ANGLE for 4 years, giving her a balance of 90 veANGLE, and allocates 50% of her votes to Gauge A. This will take into account 45 veANGLE to allocate to Gauge A.
 
-A year later, Carol’s veANGLE balance will have decreased by 25% as the lock expiration gets closer. She will have $0.75\times90 = 67.5 \texttt{ veANGLE}$. The voting power allocated to Gauge A is currently 33.75 veANGLE.
+A year later, Carol’s veANGLE balance will have decreased by 25% as the lock expiration gets closer. She will have 0.75 x 90 = 67.5 veANGLE. The voting power allocated to Gauge A is currently 33.75 veANGLE.
 
 Now, Carol decides to push back her lock’s expiration to 4 years again, giving her her original balance of 90 veANGLE back. She also adds 10 ANGLE to the lock, such that she has a 100 veANGLE balance.
 

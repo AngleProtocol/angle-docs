@@ -42,7 +42,7 @@
   - [🗳 Gauges](governance/veANGLE/gauges.md)
   - [💥 Boost](governance/veANGLE/boost.md)
   - [📈 Interests](governance/veANGLE/interests.md)
-  - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
+  - [🔐 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
 ## L2/Sidechains
