@@ -11,3 +11,11 @@ As any protocol, Angle evolves. Better ways to make agents within the protocol i
 Since launch on November 3rd 2021, new staking contracts have for instance been launched as well as new ways to distribute ANGLE tokens across the different staking contracts.
 
 At launch, the Core Team wanted to launch a bonding curve to sell ANGLE tokens, but soon realized that it was not the best idea as better models like Olympus Pro exist. For the record, we believe it's important to keep here documentation that was written for these contracts as others may find it useful for their own uses.
+
+## Bonding Curve
+
+{% page-ref page="bonding-curve.md" %}
+
+## Reward Weights
+
+{% page-ref page="reward-weights.md" %}

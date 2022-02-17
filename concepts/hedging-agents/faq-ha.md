@@ -83,7 +83,7 @@ The target heding ratio gives the amount to be hedged by HAs. Above this ratio, 
 
 Imagine the limit hedging ratio is defined at 95%, then if `0.9x/(x-y)` becomes superior to `0.95`, then some HAs positions could be force-closed until the amount covered by HAs is back in the bounds again \(below the target hedging ratio\).
 
-When a HA position is force-closed, the owner gets back its margin plus any unrealized PnL. Keepers are responsible for force-closing HAs positions in such cases. They are incentivized to force-close positions in a way that the hedge ratio comes back as close as possible to the target. There is no other conditions that could depend on the position size. More details in the [Keepers](../keepers.md) page.
+When a HA position is force-closed, the owner gets back its margin plus any unrealized PnL. Keepers are responsible for force-closing HAs positions in such cases. They are incentivized to force-close positions in a way that the hedge ratio comes back as close as possible to the target. There is no other conditions that could depend on the position size. More details in the [Keepers](../other-aspects/keepers.md) page.
 
 ## What happens if the protocol does not have enough reserves to close a HA position?
 
