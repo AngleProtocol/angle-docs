@@ -13,3 +13,7 @@ These documents were translated by Russian members of the Angle Community, and a
 {% hint style="info" %}
 If you spot a translation error please let us or our Russian speaking community know on [Discord](https://discord.gg/kzBp32ZNK7). Anyone is also welcome to translate documents in their home language to spread Angle Knowledge to a wider audience.
 {% endhint %}
+
+## Translations
+
+{% page-ref page="angle-introduction-article.md" %}

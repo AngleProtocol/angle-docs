@@ -61,6 +61,8 @@
 - [⭐ Popularization](resources/popularization/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
 - [🌎 International](resources/international/README.md)
+  - [🇷🇺 Russian](resources/international/russian/README.md)
+    - [Angle Introduction](resources/international/russian/angle-introduction-article.md)
 - [👵 Deprecated Docs](resources/deprecated/README.md)
 
 ## Ecosystem
