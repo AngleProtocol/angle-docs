@@ -13,3 +13,7 @@ These documents were translated by Vietnamese members of the Angle Community, an
 {% hint style="info" %}
 If you spot a translation error please let us or our Vietnamese speaking community know on [Discord](https://discord.gg/kzBp32ZNK7). Anyone is also welcome to translate documents in their home language to spread Angle Knowledge to a wider audience.
 {% endhint %}
+
+## Translations
+
+{% page-ref page="vt-vietnamese.md" %}
