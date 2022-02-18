@@ -51,7 +51,7 @@ In the case where there are too many HAs, keepers are able to select a list of H
 
 In all cases, the amount that can be given to keepers is capped.
 
-## 🎁 Keepers for [Staking](staking.md)
+## 🎁 Keepers for [Staking](other-aspects/staking.md)
 
 Staking is the mechanism by which governance tokens are distributed to HAs, SLPs, and agTokens holders. It follows the parameters set by the governance and specified in the [Angle tokenomics article](https://blog.angle.money/angle-protocol-tokenomics-29ea8b7bf001).
 

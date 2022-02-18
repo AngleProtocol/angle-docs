@@ -47,7 +47,7 @@ If 1 agEUR trades at a price below 1€, the incentive is to buy agEUR on the ma
 
 Opportunities for arbitrage are however reduced when there are mint and burn transaction fees. With a 0.3% transaction fee on each side, it is no longer profitable to do arbitrage for price deviations of less than 0.3%, meaning in this case that the price of the stablecoins can vary between 0.997€ and 1.003€.
 
-Also, as specified in the 🔱 [Oracles Page](../oracles.md) 🔱, it is possible, for some stablecoin/collateral pairs, that the mint oracle price differs from the burn transaction price in some cases. In these situations, deviations of price from peg larger than observed transaction fees may occur.
+Also, as specified in the 🔱 [Oracles Page](../other-aspects/oracles.md) 🔱, it is possible, for some stablecoin/collateral pairs, that the mint oracle price differs from the burn transaction price in some cases. In these situations, deviations of price from peg larger than observed transaction fees may occur.
 
 {% hint style="success" %}
 A stablecoin is only stable relative to the value of the oracle that was chosen to track the price of the underlying asset. For a stablecoin/collateral pair, if the on-chain price-feed has some latency with respect to the real price feed, as the stablecoin tracks the price of the on-chain feed, the evolution of its price may slightly lag behind that of the real price feed.

@@ -4,6 +4,7 @@
 - [📖 Whitepaper](whitepaper.md)
 - [📚 Glossary](glossary.md)
 - [❓ FAQ](faq.md)
+- [⚒ Developers](https://developers.angle.money)
 - [📔 App Guides](app-guides/README.md)
   - [Minting & Burning agTokens](app-guides/mint-burn.md)
   - [Opening & Managing Perpetual Positions](app-guides/ha-positions.md)
@@ -14,9 +15,9 @@
 - [📗 veANGLE/DAO App Guides](veangle-guides/README.md)
   - [Locking ANGLE](veangle-guides/locking-angle.md)
   - [Voting on Gauges](veangle-guides/voting-gauges.md)
-  - [Staking Migration](veangle-guides/staking-migration.md)
+  - [Staking Migration](veangle-guides/staking-migration.md)🔍
 
-## Angle Core Concepts <a href="#concepts" id="concepts"></a>
+## Angle Core Concepts
 
 - [🔭 Concepts Overview](concepts/overview.md)
 - [💱 Stable Seekers and Holders](concepts/stable-seekers/README.md)
@@ -26,12 +27,13 @@
 - [🍀 Standard Liquidity Providers](concepts/standard-liquidity-providers/README.md)
   - [FAQ - Standard Liquidity Providers](concepts/standard-liquidity-providers/faq-slps.md)
 - [📈 Lending Strategies - Yield on Reserves](concepts/lending.md)
-- [🏭 Keepers](concepts/keepers.md)
-- [🔱 Oracles](concepts/oracles.md)
-- [🎁 Staking - Getting Governance Tokens](concepts/staking.md)
-- [📊 Collateral Ratio](concepts/collateral-ratio.md)
-- [🚑 Risks and Emergency Modules](concepts/emergency-modules/README.md)
-  - [⌛ Collateral Settlement](concepts/emergency-modules/collateral-settlement.md)
+- [🔍 Other aspects](concepts/other-aspects/README.md)
+  - [🏭 Keepers](concepts/other-aspects/keepers.md)
+  - [🔱 Oracles](concepts/other-aspects/oracles.md)
+  - [🎁 Staking - Getting Governance Tokens](concepts/other-aspects/staking.md)
+  - [📊 Collateral Ratio](concepts/other-aspects/collateral-ratio.md)
+  - [🚑 Risks and Emergency Modules](concepts/other-aspects/emergency-modules.md)
+  - [⌛ Collateral Settlement](concepts/other-aspects/collateral-settlement.md)
 
 ## Governance
 
@@ -53,11 +55,13 @@
 
 - [🔐 Audits](resources/audits/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
-- [🖥 Code](resources/code/README.md)
+- [🖥 Code & Smart Contracts](resources/code/README.md)
 - [🇪🇺 agEUR](resources/agEUR.md)
 - [🖼 Branding](resources/branding/README.md)
 - [⭐ Popularization](resources/popularization/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
+- [🌎 International](resources/international/README.md)
+- [👵 Deprecated Docs](deprecated/README.md)
 
 ## Ecosystem
 
@@ -70,33 +74,3 @@
 - [🌳 Medium](https://blog.angle.money)
 - [💻 Github](https://github.com/AngleProtocol)
 - [💬 Governance Forum](https://gov.angle.money)
-
-## International
-
-- [🇷🇺 Russian - русский](international/russian/README.md)
-  - [Whitepaper](international/russian/ru-whitepaper.md)
-  - [Angle FAQ](international/russian/faq.md)
-  - [Представляем Angle Protocol](international/russian/angle-introduction-article.md)
-  - [ценность для держателей стейблкоинов](international/russian/stablecoin-value-proposition.md)
-  - [Значение для хеджинговых агентов](international/russian/ha-value-proposition.md)
-  - [Ценность для стандартных поставщиков ликвидности](international/russian/slp-value-proposition.md)
-  - [Токеномика Angle Protocol](international/russian/tokenomics.md)
-- [🇯🇵 Japanese - 日本語](international/japanese/README.md)
-  - [Angle FAQ](international/japanese/faq.md)
-  - [Angle プロトコルの紹介](international/japanese/angle-intro-japanese.md)
-- [🇨🇳 Chinese - 中国人](international/chinese/README.md)
-  - [角度协议介绍](international/chinese/angle-intro-chinese.md)
-  - [Document/文档](international/chinese/angle-content.md)
-  - [Glossary/词汇表](international/chinese/angle-glossary.md)
-  - [FAQ/常见问题](international/chinese/angle-faq.md)
-  - [Keepers 在 Angle Protocol 的角色](international/chinese/keepers-chinese.md)
-  - [agEUR 和 ANGLE 正式上线 Polygon](international/chinese/tokens-polygon.md)
-  - [Partnering with Superfluid](international/chinese/superfluid.md)
-- [🇻🇳 Vietnamese - tiếng-việt](international/vietnamese/README.md)
-  - [Whitepaper](international/vietnamese/whitepaper.md)
-
-## Deprecated
-
-- [👵 About Deprecated Docs](deprecated/README.md)
-  - [Bonding Curve](deprecated/bonding-curve.md)
-  - [Liquidity Rewards Weights](deprecated/reward-weights.md)

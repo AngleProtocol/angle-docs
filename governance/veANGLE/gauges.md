@@ -43,7 +43,7 @@ When increasing the veANGLE balance by locking more tokens or extending a lock, 
 
 ## ANGLE Issuance Rate
 
-The rate of emission of ANGLE tokens remains unchanged. For details about the ANGLE emission rate, please refer to [this page](../concepts/staking.md).
+The rate of emission of ANGLE tokens remains unchanged. For details about the ANGLE emission rate, please refer to [this page](../concepts/other-aspects/staking.md).
 
 Essentially, the weekly decrease factor of 1.007827 of the ANGLE emissions is guaranteed on-chain.
 
