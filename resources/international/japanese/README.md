@@ -13,3 +13,9 @@ These documents were translated by Japanese members of the Angle Community, and 
 {% hint style="info" %}
 If you spot a translation error please let us or our Japanese speaking community know on [Discord](https://discord.gg/kzBp32ZNK7). Anyone is also welcome to translate documents in their home language to spread Angle Knowledge to a wider audience.
 {% endhint %}
+
+## Translations
+
+{% page-ref page="angle-intro-japanese.md" %}
+
+{% page-ref page="faq.md" %}
