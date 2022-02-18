@@ -15,7 +15,7 @@
 - [📗 veANGLE/DAO App Guides](veangle-guides/README.md)
   - [Locking ANGLE](veangle-guides/locking-angle.md)
   - [Voting on Gauges](veangle-guides/voting-gauges.md)
-  - [Staking Migration](veangle-guides/staking-migration.md)🔍
+  - [Staking Migration](veangle-guides/staking-migration.md)
 
 ## Angle Core Concepts
 
@@ -61,7 +61,7 @@
 - [⭐ Popularization](resources/popularization/README.md)
 - [🧪 Rinkeby User Guide](resources/rinkeby-testnet/README.md)
 - [🌎 International](resources/international/README.md)
-- [👵 Deprecated Docs](deprecated/README.md)
+- [👵 Deprecated Docs](resources/deprecated/README.md)
 
 ## Ecosystem
 

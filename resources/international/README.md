@@ -23,44 +23,44 @@ If you spot a translation error please let us know on [Discord](https://discord.
 
 ## 🇷🇺 Russian
 
-{% page-ref page="russian/angle-introduction-article.md" %}
+{% page-ref page="./resources/international/russian/angle-introduction-article.md" %}
 
-{% page-ref page="russian/faq.md" %}
+{% page-ref page="./resources/international/russian/faq.md" %}
 
-{% page-ref page="russian/ha-value-proposition.md" %}
+{% page-ref page="./resources/international/russian/ha-value-proposition.md" %}
 
-{% page-ref page="russian/ru-whitepaper.md" %}
+{% page-ref page="./resources/international/russian/ru-whitepaper.md" %}
 
-{% page-ref page="russian/slp-value-proposition.md" %}
+{% page-ref page="./resources/international/russian/slp-value-proposition.md" %}
 
-{% page-ref page="russian/stablecoin-value-proposition.md" %}
+{% page-ref page="./resources/international/russian/stablecoin-value-proposition.md" %}
 
-{% page-ref page="russian/tokenomics.md" %}
+{% page-ref page="./resources/international/russian/tokenomics.md" %}
 
 ## 🇨🇳 Chinese
 
-{% page-ref page="chinese/angle-content.md" %}
+{% page-ref page="./resources/international/chinese/angle-content.md" %}
 
-{% page-ref page="chinese/angle-faq.md" %}
+{% page-ref page="./resources/international/chinese/angle-faq.md" %}
 
-{% page-ref page="chinese/angle-glossary.md" %}
+{% page-ref page="./resources/international/chinese/angle-glossary.md" %}
 
-{% page-ref page="chinese/angle-intro-chinese.md" %}
+{% page-ref page="./resources/international/chinese/angle-intro-chinese.md" %}
 
-{% page-ref page="chinese/angle-intro-chinese.md" %}
+{% page-ref page="./resources/international/chinese/angle-intro-chinese.md" %}
 
-{% page-ref page="chinese/superfluid.md" %}
+{% page-ref page="./resources/international/chinese/superfluid.md" %}
 
-{% page-ref page="chinese/tokens-polygon.md" %}
+{% page-ref page="./resources/international/chinese/tokens-polygon.md" %}
 
 ## 🇻🇳 Vietnamese
 
-{% page-ref page="vietnamese/vt-vietnamese.md" %}
+{% page-ref page="./resources/international/vietnamese/vt-vietnamese.md" %}
 
-{% page-ref page="vietnamese/whitepaper.md" %}
+{% page-ref page="./resources/international/vietnamese/whitepaper.md" %}
 
 ## 🇯🇵 Japanese
 
-{% page-ref page="japanese/angle-intro-japanese.md" %}
+{% page-ref page="./resources/international/japanese/angle-intro-japanese.md" %}
 
-{% page-ref page="japanese/faq.md" %}
+{% page-ref page="./resources/international/japanese/faq.md" %}
