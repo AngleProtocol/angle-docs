@@ -23,7 +23,7 @@ If you spot a translation error please let us know on [Discord](https://discord.
 
 ## 🇷🇺 Russian
 
-{% page-ref page="russian/angle-introduction-article.md" %}
+{% page-ref page="./resources/international/russian/angle-introduction-article.md" %}
 
 {% page-ref page="./resources/international/russian/faq.md" %}
 
