@@ -26,6 +26,8 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 Every week, governance will be able to adjust the distribution of tokens between each stakeholder. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
+![ANGLE issuance schedule](../.gitbook/assets/liquidity-mining-schedule.png)
+
 Details on how ANGLE token owners can vote to allocate the liquidity mining supply are available on [this page](veANGLE/gauges.md).
 
 5% of the ANGLE's weekly emissions is still controlled by the Core Team and is allocated without any vote by veANGLE holders.
@@ -48,8 +50,8 @@ The Treasury is controlled by the DAO, and can be used to build protocol reserve
 
 Tokens subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
 
-* 18% to the Angle Core Team
-* 10% to early backers
+- 18% to the Angle Core Team
+- 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
