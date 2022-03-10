@@ -2,18 +2,18 @@
 description: Details about adding ANGLE to your lock
 ---
 
-# 🔐 Increasing your veANGLE balance
+# 🔓 Increasing your veANGLE balance
 
 There are two ways to increase an address balance of veANGLE:
 
-- extend the lock expiration date
-- add ANGLE to the lock
+* extend the lock expiration date
+* add ANGLE to the lock
 
 Increasing veANGLE balance has three impacts:
 
-- increase voting power
-- **potentially** increase boost
-- increase weekly interest distribution
+* increase voting power
+* **potentially** increase boost
+* increase weekly interest distribution
 
 ## Voting Power
 
@@ -49,14 +49,14 @@ As detailed in the [boost page](boost.md), a user’s boost depends on their sha
 
 A user’s boost in a pool doesn’t decrease continuously as their veANGLE balance does, but updates only on two specific occasions when:
 
-- They deposit, withdraw, or call the user_checkpoint() function from the liquidity gauge contract.
-- Other users call the `kick()` function on another address, if this address has an expired lock, or if it extended or added to it and should have a lower boost.
+* They deposit, withdraw, or call the user\_checkpoint() function from the liquidity gauge contract.
+* Other users call the `kick()` function on another address, if this address has an expired lock, or if it extended or added to it and should have a lower boost.
 
 **Let’s look at another example**
 
 Bob had originally locked 90 ANGLE for four years like Carol. One year later, he has the same 67.5 veANGLE balance than she does. Bob is not interested by his voting power, but only by his boost on rewards. He wants to extend his lock to four years again, and add 10 ANGLE to get to 100 veANGLE and increase his boost.
 
-However, other external factors, such as the total veANGLE supply or the pool liquidity might have changed. It could be that updating his boost will actually decrease it (see the [boost page details](boost.md#%F0%9F%96%8B%EF%B8%8F-details)).
+However, other external factors, such as the total veANGLE supply or the pool liquidity might have changed. It could be that updating his boost will actually decrease it (see the [boost page details](boost.md#🖋️-details)).
 
 Because of that, Bob should actually use the calculator from the [DAO App](https://dao.angle.money) to make sure that he would meet the necessary veANGLE balance he needs for his deposit to increase his boost as he wants to.
 

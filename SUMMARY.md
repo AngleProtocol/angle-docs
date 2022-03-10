@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Angle Documentation Portal](README.md)
-* [📖 Whitepaper](whitepaper.md)
+* [📖 Whitepapers](whitepaper.md)
 * [📚 Glossary](glossary.md)
 * [❓ FAQ](faq.md)
 * [⚒ Developers](https://developers.angle.money)

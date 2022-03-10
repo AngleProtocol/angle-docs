@@ -6,10 +6,10 @@ description: Insuring the insurance (Hedging Agents)
 
 ## 🔎 TL;DR
 
-- Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens, yield-bearing tokens that automatically accrue interest and fees.
-- Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
-- SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
-- They may face a small slippage when they exit the protocol if it is not enough collateralized.
+* Standard Liquidity Providers (SLPs) deposit collateral in the protocol against sanTokens, yield-bearing tokens that automatically accrue interest and fees.
+* Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
+* SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The protocol can guarantee them higher yield than what they would get on other lending platforms.
+* They may face a small slippage when they exit the protocol if it is not enough collateralized.
 
 ## 🗺️ Principle
 
@@ -21,8 +21,8 @@ They entrust Angle with their liquidity and like liquidity providers in other pr
 
 There are different incentives for SLPs to come to Angle:
 
-- A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
-- At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the interest made by these strategies.
+* A fraction of the transaction fees induced by users minting and burning stable assets are redistributed to SLPs in proportion to how they contribute to the protocol.
+* At each point in time, the protocol owns reserves which are only useful when redeemed by a user, a SLP or an HA. Part of the reserves is automatically transferred to strategies (like Yearn strategies) responsible for getting yield on it by, for instance, lending to protocols like Compound or Aave. SLPs gets a fraction of the interest made by these strategies.
 
 Note that SLPs are also able to stake their positions (in the form of sanTokens) to receive ANGLE rewards.
 
@@ -68,4 +68,4 @@ One rule that can be set to incentivize SLPs to re-capitalize a pool when the ov
 
 These fees would only be recovered by SLPs once the pool becomes collateralized again, and they would be distributed in a proportion that depends on the composition of the pool at the time of re-collateralization. This means that a new SLP giving money to re-collateralize a pool may receive transaction fees for transactions that occurred before her arrival in the pool.
 
-![](<../../.gitbook/assets/emoji-slp (1) (2) (1) (9).png>)
+![](<../../.gitbook/assets/emoji-slp (1) (2) (1) (1) (8).png>)

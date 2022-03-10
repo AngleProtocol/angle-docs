@@ -2,7 +2,7 @@
 description: Selling governance tokens against the protocol's stablecoins
 ---
 
-# 🧮 Bonding Curve
+# Bonding Curve
 
 {% hint style="info" %}
 The bonding curve is a smart contract that was originally coded but never used. There is no plan to use it in the near future as long as the Olympus Pro bonding program is live. More info about it [here](https://blog.angle.money/angle-bonding-program-is-live-on-olympus-pro-5569b5fcfbf).
@@ -10,8 +10,8 @@ The bonding curve is a smart contract that was originally coded but never used. 
 
 ## 🔎 TL;DR
 
-- It is going to be possible to buy Angle's governance tokens through a bonding curve using the protocol's stablecoins.
-- The more tokens are bought from the bonding curve, the more expensive it gets to buy new tokens.
+* It is going to be possible to buy Angle's governance tokens through a bonding curve using the protocol's stablecoins.
+* The more tokens are bought from the bonding curve, the more expensive it gets to buy new tokens.
 
 ## 💡 Need for a Bonding Curve
 

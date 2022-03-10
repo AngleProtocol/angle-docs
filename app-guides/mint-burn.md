@@ -6,7 +6,7 @@ description: How to mint and burn agTokens using Angle app
 
 ## Approving tokens
 
-To interact with Angle protocol, you will need to approve tokens for each collateral/stablecoin pool. You can learn more about approving tokens [here](app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
+To interact with Angle protocol, you will need to approve tokens for each collateral/stablecoin pool. You can learn more about approving tokens [here](../user-guides/app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
 
 ![Approving tokens](../.gitbook/assets/approving-tokens.png)
 
