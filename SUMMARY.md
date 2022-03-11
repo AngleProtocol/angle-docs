@@ -6,16 +6,17 @@
 * [❓ FAQ](faq.md)
 * [⚒ Developers](https://developers.angle.money)
 * [📔 App Guides](app-guides/README.md)
-  * [Minting & Burning agTokens](app-guides/mint-burn.md)
-  * [Opening & Managing Perpetual Positions](app-guides/ha-positions.md)
-  * [SLP Pools](app-guides/slp-pools.md)
-  * [Staking](app-guides/staking-pools.md)
+  * [First Steps in Crypto](app-guides/newbie.md)
+  * [Get agEUR](app-guides/mint-burn.md)
+  * [Opening & Managing Long Positions](app-guides/ha-positions.md)
+  * [Deposit Tokens for yield](app-guides/slp-pools.md)
+  * [Earning ANGLE](veangle-guides/incentives.md)
   * [App FAQ](app-guides/app-faq.md)
   * [Formulas](app-guides/formulas.md)
-* [📗 veANGLE/DAO App Guides](veangle-guides/README.md)
+* [📗 DAO App Guides](veangle-guides/README.md)
   * [Locking ANGLE](veangle-guides/locking-angle.md)
   * [Voting on Gauges](veangle-guides/voting-gauges.md)
-  * [Staking Migration](veangle-guides/staking-migration.md)
+  * [Earning ANGLE](veangle-guides/incentives.md)
 
 ## Angle Core Concepts
 
