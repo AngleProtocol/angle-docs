@@ -2,9 +2,9 @@
 description: How to open, modify or close perpetual positions on Angle app
 ---
 
-# Opening & Managing Long Positions within Angle
+# Opening & Managing Positions within Angle
 
-Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USD/EUR long positions, betting that the USD will increase in value against the EUR. 
+Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long positions, betting that the USD will increase in value against the EUR. 
 
 You can read more about this mechanism [here](/concepts/hedging-agents/README.md). 
 
@@ -17,10 +17,10 @@ You can read more about this mechanism [here](/concepts/hedging-agents/README.md
 3. Now, you can choose your position size or leverage. This is the amount of underlying tokens you will be exposed to. NB: leverage in Angle is computed as $$\frac{\texttt{margin + position size}}{\texttt{margin}}$$
 4. The collateral/stablecoin exchange rate and transaction fees are displayed. Note that the net initial margin of your position will be your initial margin input minus fees.
 5. Clicking the `Open position` button will prompt you to confirm the transaction. The margin will be sent to the protocol and the leveraged position will be opened.
-6. While it is opened, your position will automatically accrue ANGLE staking rewards.
+6. While it is opened, your position will automatically accrue ANGLE rewards.
 
 {% hint style="info" %}
-If this is the first time opening a position on this collateral/stablecoin pair, you will need to approve your tokens first. If you have already approved a collateral for a stablecoin to issue agTokens or to deposit collateral, you will need to approve it again when opening a perpetual
+If this is the first time opening a position on this collateral/stablecoin pair, you will need to approve your tokens with a transaction or a signature first.
 {% endhint %}
 
 {% hint style="warning" %}

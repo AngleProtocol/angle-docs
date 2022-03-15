@@ -2,9 +2,9 @@
 description: A guide for new crypto users
 ---
 
-# First steps in crypto
+# 👋 First steps in crypto
 
-## Wallet & seed phrase
+## 🔐 Wallet & seed phrase
 
 Before anything, navigating the crypto world happens through wallets that are used to store, receive, and send tokens. Whether you want to buy NFTs or earn yield on your capital, you will need a wallet. 
 
@@ -19,7 +19,7 @@ If you want to learn more about seed phrase or wallets, you can dive into [Metam
 Now that we know what a wallet is, let's create a wallet :point_down:
 
 
-## Creating a wallet with Metamask
+## 🦊 Creating a wallet with Metamask
 
 Metamask is a wallet that works as a browser extension. You can follow [these steps](https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install it. 
 

@@ -18,18 +18,18 @@ There are multiple ways to get agEUR:
 
 ### Approving tokens
 
-To interact with Angle protocol, you will need to approve tokens for each collateral/stablecoin pool. You can learn more about approving tokens [here](../user-guides/app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
+To interact with Angle protocol, you will need to send an approval transaction or sign a permit for each token you use. You can learn more about approving tokens [here](app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
 
 ![Approving tokens](../.gitbook/assets/approving-tokens.png)
 
 ### Minting agEUR
 
-1. Go to [app.angle.money](https://app.angle.money).
-2. Make sure that you have ETH to pay for gas fees, as well as some of the tokens accepted as collateral.
+1. Go to [app.angle.money](https://app.angle.money/#/user/mint).
+2. Make sure that you have ETH to pay for gas fees, as well as one of the tokens accepted as collateral.
 3. Select the collateral you want to send, and the stablecoin you want to mint/receive.
    * Supported collaterals: DAI, USDC, FEI, FRAX
    * Available agTokens: agEUR
-4. Approve your collateral. You will need to approve your collateral for every collateral/agToken pair (more details [here](app-faq.md)).
+4. Approve your collateral. 
 5. Mint your stablecoins against your tokens.
 
 You now have agEUR that mirror the value of the EUR!
@@ -38,9 +38,9 @@ You now have agEUR that mirror the value of the EUR!
 
 ### Burning agEUR
 
-If you want to get rid of your agEUR, you have a few options as well: 
-- swap them against any other token on [Uniswap](https://app.uniswap.org)
-- burn agEUR against one of the proposed token from the [Angle App](https://app.angle.money). 
+If you want to get rid of your agEUR, you have a few options: 
+- swap them against another token on [Uniswap](https://app.uniswap.org)
+- burn agEUR against one of the available token from the [Angle App](https://app.angle.money/#/user/burn). 
 
 Burning agTokens is a similar process than minting.
 
