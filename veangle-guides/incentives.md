@@ -8,9 +8,16 @@ To earn ANGLE distributed as part of the weekly emissions, users can deposit san
 
 You can find all the available pools in the [Incentives page](https://dao.angle.money/#/stake) of the DAO App. 
 
-After staking your tokens, you will start accruing ANGLE. You can claim your tokens from each card, or from the `Claim Rewards` button on your left to claim all rewards from Perps and boosted gauges in one transaction. 
+After staking your tokens, you will begin accumulating ANGLE tokens. 
 
-## Claim and Add to lock
-After clicking on the `Claim Rewards` button, you have an option to claim your ANGLE rewards and add them to your lock if you have one. This will automatically lock your ANGLE for the remaining time of your lock, and increase your veANGLE balance.  
+## Claiming ANGLE
 
-![Incentives](../.gitbook/assets/incentives.png)
+You have multiple options when claiming your ANGLE tokens: 
+-  Claim from a specific gauge by clicking on the `✨Claim` button inside the modal:
+![Claiming from pool](../.gitbook/assets/claiming-from-pool.png)
+
+- Claim from all your Boosted and Perpetuals gauges in **one transaction** by clicking on the `Claim Rewards` button on the left. When using this modal, you can:
+    - **`Claim ANGLE`**: this will claim your ANGLE rewards from all the selected gauges in one transaction.
+    - **`Claim and Lock ANGLE`**: this will claim your ANGLE rewards from all the selected gauges in one transaction **and** lock them into your existing ANGLE lock. This will increase your veANGLE balance and won't affect your lock expiration date.
+    _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE [here](https://dao.angle.money/#/veANGLE)._
+![Claiming from pool](../.gitbook/assets/claim-rewards-button.png)

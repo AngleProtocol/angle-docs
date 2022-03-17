@@ -12,7 +12,7 @@ There are multiple ways to get agEUR:
 
 - mint new agEUR directly from the [Angle App](https://app.angle.money/) against your tokens
 - swap ETH for agEUR on [Uniswap](https://app.uniswap.org)
-- buy agEUR with credit card from one of our on-ramp partner like [Wert.io](https://widget.wert.io/01FPZ4G1VMZ67MGC83NADPB0F8/redirect/?commodity=agEUR&commodities=agEUR,agEUR%3Aethereum)
+- buy agEUR with credit card from one of our on-ramp partners like [Wert.io](https://widget.wert.io/01FPZ4G1VMZ67MGC83NADPB0F8/redirect/?commodity=agEUR&commodities=agEUR,agEUR%3Aethereum)
 
 ## Minting agEUR on Angle
 
@@ -40,7 +40,7 @@ You now have agEUR that mirror the value of the EUR!
 
 If you want to get rid of your agEUR, you have a few options: 
 - swap them against another token on [Uniswap](https://app.uniswap.org)
-- burn agEUR against one of the available token from the [Angle App](https://app.angle.money/#/user/burn). 
+- burn agEUR against one of the available tokens from the [Angle App](https://app.angle.money/#/user/burn). 
 
 Burning agTokens is a similar process than minting.
 
