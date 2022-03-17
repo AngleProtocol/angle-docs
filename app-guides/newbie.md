@@ -40,5 +40,5 @@ If you have an account at a centralized exchange, you can also buy ETH from ther
 
 ### Follow our Angle guides
 
-Once you have ETH in your wallet, you can follow our Angle guides to see how to use the protocol. 
+Once you have ETH in your wallet, you can follow our Angle guides to see how to use the protocol! You can start by this guide explaining [how to get agEUR](/app-guides/mint-burn.md). 
 
