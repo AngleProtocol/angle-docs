@@ -1,21 +1,13 @@
 # Table of contents
 
 * [Angle Documentation Portal](README.md)
+* [⚒ Developers](https://developers.angle.money)
+
+## Protocol Overview
+
 * [📖 Whitepapers](whitepaper.md)
 * [📚 Glossary](glossary.md)
 * [❓ FAQ](faq.md)
-* [⚒ Developers](https://developers.angle.money)
-* [📔 App Guides](app-guides/README.md)
-  * [First Steps in Crypto](app-guides/newbie.md)
-  * [Get agEUR](app-guides/mint-burn.md)
-  * [Opening & Managing Positions](app-guides/ha-positions.md)
-  * [Deposit Tokens for Yield](app-guides/slp-pools.md)
-  * [App FAQ](app-guides/app-faq.md)
-  * [Formulas](app-guides/formulas.md)
-* [📗 DAO App Guides](veangle-guides/README.md)
-  * [Locking ANGLE](veangle-guides/locking-angle.md)
-  * [Voting on Gauges](veangle-guides/voting-gauges.md)
-  * [Earning ANGLE](veangle-guides/incentives.md)
 
 ## Angle Core Concepts
 
@@ -34,6 +26,15 @@
   * [📊 Collateral Ratio](concepts/other-aspects/collateral-ratio.md)
   * [🚑 Risks and Emergency Modules](concepts/other-aspects/emergency-modules.md)
   * [⌛ Collateral Settlement](concepts/other-aspects/collateral-settlement.md)
+* [📔 App Guides](app-guides/README.md)
+  * [First Steps in Crypto](app-guides/newbie.md)
+  * [Get agEUR](app-guides/mint-burn.md)
+  * [Opening & Managing Positions](app-guides/ha-positions.md)
+  * [Deposit Tokens for Yield](app-guides/slp-pools.md)
+  * [Earning ANGLE](veangle-guides/incentives.md)
+  * [App FAQ](app-guides/app-faq.md)
+  * [Formulas](app-guides/formulas.md)
+
 
 ## Governance
 
@@ -46,6 +47,10 @@
   * [📈 Interest](governance/veangle/interest.md)
   * [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 * [💂 Angle Guardian](governance/guardian.md)
+* [📗 DAO App Guides](veangle-guides/README.md)
+  * [Locking ANGLE](veangle-guides/locking-angle.md)
+  * [Voting on Gauges](veangle-guides/voting-gauges.md)
+  * [Earning ANGLE](veangle-guides/incentives.md)
 
 ## L2/Sidechains
 
