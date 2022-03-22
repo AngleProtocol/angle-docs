@@ -13,7 +13,7 @@ agEUR can be minted on the Ethereum blockchain at [app.angle.money](https://app.
 More information on the functioning of agEUR in the [Stable Seeker and Holders](https://docs.angle.money/concepts/stable-seekers) page.
 
 {% hint style="info" %}
-We have made [a small guide](../app-guides/mint-burn.md) to help people get agEUR.
+We have made [a small guide](../app-guides/mint-burn.md) to help onboard people to agEUR.
 {% endhint %}
 
 ## Buying agEUR

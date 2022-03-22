@@ -43,7 +43,7 @@
   * [🔒 Lock Details](governance/veANGLE/lock-details.md)
   * [🗳 Gauges](governance/veANGLE/gauges.md)
   * [💥 Boost](governance/veANGLE/boost.md)
-  * [📈 Interests](governance/veANGLE/interests.md)
+  * [📈 Interest](governance/veangle/interest.md)
   * [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 * [💂 Angle Guardian](governance/guardian.md)
 
