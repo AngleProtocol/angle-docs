@@ -87,4 +87,4 @@ However, too big transactions may affect the transaction fees structure (because
 
 Given that oracle values may change between the time at which users submit their transactions and the time at which they are executed, the protocol has a form of slippage protection for users that allow them in a mint/burn transaction to specify the minimum amount of stablecoins/collateral they are ready to get from the transaction.
 
-![](<../../.gitbook/assets/emoji-user (3) (1).png>)
+![](<../../.gitbook/assets/emoji-user (3) (1) (1).png>)

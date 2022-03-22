@@ -10,7 +10,6 @@
   * [Get agEUR](app-guides/mint-burn.md)
   * [Opening & Managing Positions](app-guides/ha-positions.md)
   * [Deposit Tokens for Yield](app-guides/slp-pools.md)
-  * [Earning ANGLE](veangle-guides/incentives.md)
   * [App FAQ](app-guides/app-faq.md)
   * [Formulas](app-guides/formulas.md)
 * [📗 DAO App Guides](veangle-guides/README.md)

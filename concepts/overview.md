@@ -33,4 +33,4 @@ Although this is unlikely to happen, if the stable EUR fails for some reason, it
 
 In the following pages, we will dive a bit more in-depth in the specificities of each stakeholder of Angle Protocol and explain in more detail how some essential bricks of the protocol work.
 
-![](<../.gitbook/assets/angle\_atmos\_v7 (4) (1) (6).jpg>)
+![](<../.gitbook/assets/angle\_atmos\_v7 (4) (1) (1) (5).jpg>)
