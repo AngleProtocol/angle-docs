@@ -20,7 +20,7 @@ The main features of vaults are Borrow & Repay agTokens, and leverage collateral
 
 The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as **[collateral](/new-module/glossary.md)** into a VaultManager contract. When doing so, they can choose to borrow a certain amount of agTokens. The agTokens borrowed will be minted and deposited into their wallets, for them to use however they want. 
 
-While they have an open loan, users will have to monitor their vaults' Collateral Ratio. This metric keeps track of the "health" of the vault: the value of the collateral compared to the value of the loan. If the value of the collateral with respect to the agToken decreases, the collateral ratio will go below a certain threshold and the vault can get **[liquidated](/new-module/liquidations.md)**. 
+While they have an open loan, users have to monitor their vaults' Collateral Ratio. This metric keeps track of the "health" of the vault: the value of the collateral compared to the value of the loan. If the value of the collateral with respect to the agToken decreases, the collateral ratio will go below a certain threshold and the vault can get **[liquidated](/new-module/liquidations.md)**. 
 
 At some point, users that don't need their agTokens anymore can pay bak their debt, to get back what they originally deposited as collateral. 
 
@@ -48,7 +48,7 @@ Vaults are defined by a specific set of information:
 
 ### Collateral Ratio
 
-The most defining parameter of a vault is its **Collateral Ratio**. It defines the ratio between the value of the collateral deposited, and the value of the stablecoins borrowed. 
+The most defining parameter of a vault is its **Collateral Ratio**. It defines the ratio between the collateral's value in stablecoin, and the value of the stablecoins borrowed. 
 
 $$
 \texttt{Collateral Ratio} = \frac{\texttt{collateral value}}{\texttt{debt value}}
@@ -65,15 +65,15 @@ For example, if the CF of a vault type is at 2/3, or 150% of collateral ratio, u
 #### Isolated positions
 One interesting charateristic of vaults is that they are isolated meaning that a position of an address in a vault is totally separated from a position of the same address in another vault. 
 
-One vault liquidation will have no impact on the others. 
+One vault liquidation has no impact on the others. 
 
 #### Debt transfers
 
-Thanks to the isolatation of positions, one could become under a risk of liquidation, while the other has plenty collateral and a much higher collateral ratio. 
+Thanks to the isolation of positions, one could become under a risk of liquidation, while the other has plenty collateral and a much higher collateral ratio. 
 
 In this case, users are able to perform a debt transfer, meaning that they will transfer part of their debt from one of their vault to another. 
 
-This will lower the collateral ratio of the first vault, and increase that of the second one. It allows users to rebalance their debt and collateral ratio between their different vaults. 
+This lowers the collateral ratio of the first vault, and increases that of the second. It allows users to rebalance their debt and collateral ratio between their different vaults. 
 
 ### Dust Amount
 

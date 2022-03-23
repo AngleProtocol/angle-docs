@@ -2,7 +2,7 @@
 description: Angle _New_ Module
 ---
 
-# Angle _New_ Module
+# _Angle Borrowing Module_
 
 Angle Borrow module goal is to help expand the Angle Protocol through another minting mechanism for Angle stablecoins. It is based on a debt mechanism, similar to those used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters. 
 
@@ -11,7 +11,7 @@ The main advanatages of Angle Borrow module are:
 * Easier to add new collaterals
 * Users can keep exposure to their collateral tokens while using agEUR
 
-These advantages will help further expand Angle and its agTokens, both in terms of the stablecoins issued, their volume, and the chains and networks where they can be issued/redeemed. It has been designed to work hand in hand with the current one, and strenghten the Angle Protocol. AgTokens, like agEUR, will be fully interoperable between both modules.
+These advantages help further expand Angle and its agTokens, both in terms of the stablecoins issued, their volume, and the chains and networks where they can be issued/redeemed. It has been designed to work hand in hand with the current one, and strenghten the Angle Protocol. AgTokens, like agEUR, are fully interoperable between both modules.
 
 ## Expanding agTokens
 
@@ -30,6 +30,6 @@ Coupled with the above difference, it makes this module much easier to deploy on
 As explained above, this module allows users to deposit tokens as collateral into the protocol, and mint agTokens that represent a debt they have toward the protocol. As opposed to the previous Angle module, users don't have to They have to pay an interest on this debt, and eventually pay it back at one point or another. If the value of their collateral compared to their debt drops below a certain safety level, called the minimum collateral ratio, the vault can get closed (liquidated). The important thing to note here is that there is no need for additional agents to come in to secure the protocol when agTokens are minted. 
 
 ### Boosting agTokens' expansion
-By not being restricted by the demand for hedging agents or the loss of exposure to collateral for minters, and with its ability to safely and easily add new collaterals, this new module will give more opportunities to users to mint agTokens. This should increase the demand for agEUR and future agTokens to help the protocol grow to become the go-to decentralised stablecoin protocol. 
+By not being restricted by the demand for hedging agents or the loss of exposure to collateral for minters, and with its ability to safely and easily add new collaterals, this new module gives more opportunities to users to mint agTokens. This should increase the demand for agEUR and future agTokens to help the protocol grow to become the go-to decentralised stablecoin protocol. 
 
 
