@@ -1,5 +1,5 @@
 ---
-description: Whitelisting addresses, volatile assets as collateral, and token reactors
+description: Whitelisting addresses and volatile assets as collateral
 ---
 
 # Special features
@@ -27,6 +27,6 @@ We can also imagine the case of a DAO with governance tokens reserves. In this c
 
 ## Token Reactors
 
-Expanding on this idea, Angle Borrow module can also be used to mint agEUR from riskier tokens. The minted agEUR could be used only by a whitelisted strategy contract, which would invest them directly in pre-defined strategies on behalf of users. The parameters for this type of vaults would be set according to the risk of the assets accepted as collateral, and the collateral ratio of the vault would be programatically managed by the underlying strategy to reduce the chances of getting liquidated. 
+Expanding on this idea, Angle Borrow module could also be used to create Tokens Reactors. Read more in the page below :point_down:
 
-This would allow users to earn yield in agTokens on top of volatile assets that potentially increase in value, giving them additional utility. 
+{% page-ref page="token-reactor.md" %}

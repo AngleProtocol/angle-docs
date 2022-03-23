@@ -4,7 +4,9 @@ description: Liquidations in Angle _New_ Module
 
 # Liquidations
 
-To make sure collateral is always backing agTokens issued, Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. This is determined by a parameter called the [collateral factor](/new-module/glossary.md). 
+To make sure collateral is always backing agTokens issued, Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. This is determined by two similar parameters, the [collateral factor](/new-module/glossary.md) or the [health factor](/new-module/glossary.md). 
+
+As we will see in the [Variable liquidations amount](#variable-liquidations-amount), liquidations in Angle Borrowing module have been designed to be as much borrower friendly as possble. 
 
 **TLDR**
 * Vaults with a health factor below one risk getting liquidated
@@ -42,7 +44,7 @@ This is a way for the protocol to grow reserves especially from collaterals that
 
 In Angle Borrow module, **the amount of debt to repay during a liquidation is dynamic** and computed such that after the liquidation, the liquidated vault ends up in a level of “health” defined by a target parameter: the [target health factor](/new-module/glossary.md). In some conditions, liquidators may be able to liquidate all of a position’s available debt or collateral to avoid leaving an amount of debt that is too small for the owner to be incentivized to come to repay. 
 
-In most cases though, liquidated vaults may get less than 50% of their position liquidated: this system is designed to be far more borrower friendly than existing alternatives.
+In most cases though, liquidated vaults may get less than 50% of their position liquidated. This allow them to keep as much collateral in their vault as possible, and makes this system much more borrower friendly than existing alternatives.
 
 More details in section 4.3 of the [Angle Borrow Module Whitepaper](/whitepaper.md#angle-borrowing-module).
 
