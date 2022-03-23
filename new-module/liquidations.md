@@ -52,15 +52,25 @@ To incentivize liquidations, the protocol lets liquidators buy the available col
 
 For example, if the liquidation discount is 5%, the liquidator will be able to get 100 of collateral by paying back only 95 of stablecoin debt. 
 
-This discount is dynamic, increasing linearly with a decrease of the vault Health Factor to incentivize liquidators more as the vault risk increases. 
+This discount is dynamic, increasing linearly with a decrease of the vault Health Factor to incentivize liquidators more as the vault risk increases. It is defined by: 
 
-The slope of the function is determined by a factor called the liquidation booster. 
+$$
+e(HF) = a(1-HF)
+$$
+
+With `a` as the liquidation booster, a factor determining the slope of the function. 
 
 ### Liquidation Booster
 
 By being stakeholders in the protocol, liquidators holding veANGLE could get a higher discount than others depending on their veANGLE balance.
 
 This would give utility to veANGLE, as well as incentivize veANGLE to liquidate before others, further aligning the interests of veANGLE holders with the protocol. 
+
+$$
+a = \texttt{baseBoost} \times f(\texttt{veANGLE balance})
+$$
+
+Where `f` is a piecewise linear increasing function of the veANGLE balance, capped by a certain amount.
 
 ## Example
 

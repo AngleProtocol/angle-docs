@@ -46,4 +46,4 @@ This debt increase through fees happen at three moments:
 In the event of a [liquidation](/new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault. 
 
 ### Storing and distributing revenue
-All the revenue from this module is gathered in Treasury contracts. The funds are split between a reserve and the Governance according to a parameter that can be set by Governance. The Governor address can then pull funds dedicated to governance, to distribute them to veANGLE holders as interest. 
+All the revenue from this module is gathered in Treasury contracts. The funds are split between a reserve and the Governance according to a parameter that can be set by Governance. An `surplusManager` address can then receive the funds, to distribute them to veANGLE holders as interest later. 

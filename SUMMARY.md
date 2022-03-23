@@ -37,7 +37,14 @@
 
 
 ## Angle Borrowing Module
-
+* [Overview](/new-module/README.md)
+* [Vaults](/new-module/vaults/README.md)
+  * [Whitelisting and exotic collaterals](/new-module/vaults/whitelisting-and-volatile-assets.md)
+  * [Token Reactors](/new-module/vaults/token-reactor.md)
+* [Fees and revenue](/new-module/fees.md)
+* [Liquidations](/new-module/liquidations.md)
+* [Flash Loans](/new-module/flash-loans.md)
+* [Glossary](/new-module/glossary.md)
 
 
 ## Governance
