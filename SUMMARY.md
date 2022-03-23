@@ -5,8 +5,7 @@
 * [Angle Documentation Portal](README.md)
 * [⚒ Developers](https://developers.angle.money)
 * [📖 Whitepapers](whitepaper.md)
-* [📚 Glossary](glossary.md)
-* [❓ FAQ](faq.md)
+
 
 ## Angle Core Concepts
 
@@ -33,6 +32,8 @@
   * [Earning ANGLE](veangle-guides/incentives.md)
   * [App FAQ](app-guides/app-faq.md)
   * [Formulas](app-guides/formulas.md)
+* [📚 Glossary](/concepts/glossary.md)
+* [❓ FAQ](/concepts/faq.md)
 
 
 ## Angle Borrowing Module
