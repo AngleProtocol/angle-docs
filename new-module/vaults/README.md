@@ -1,10 +1,10 @@
 ---
-description: Angle _New_ Module agTokens Vaults
+description: Angle Borrowing Module agTokens Vaults
 ---
 
 # agTokens Vaults
 
-The core mechanism of this module relies on a vault system. Users can deposit collateral in vault contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction. 
+The core mechanism of this module relies on a vault system. Users can deposit collateral in `vaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction. 
 
 **TLDR**
 * Borrow agTokens from tokens deposited as collateral in the protocol

@@ -29,9 +29,11 @@ If this health factor goes below 1, it means that the value of the collateral ba
 
 Liquidating a position means repaying part or the entirety of the vault's debt (agTokens) against the collateral it holds (ETH or any other collateral token), usually at a discount.
 
-After getting liquidated, a vault will either be closed, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a heatlhy target. 
+After getting liquidated, a vault will either be empty, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a heatlhy target. 
 
 This means that users will either lose their collateral completely, but won't have anything to pay back anything to the protocol, or lose part of their collateral and still have some debt towards the protocol. 
+
+---
 
 ## Details about liquidations within Angle 
 
@@ -42,11 +44,22 @@ This is a way for the protocol to grow reserves especially from collaterals that
 
 ### Variable Liquidations Amount
 
-In Angle Borrow module, **the amount of debt to repay during a liquidation is dynamic** and computed such that after the liquidation, the liquidated vault ends up in a level of “health” defined by a target parameter: the [target health factor](/new-module/glossary.md). In some conditions, liquidators may be able to liquidate all of a position’s available debt or collateral to avoid leaving an amount of debt that is too small for the owner to be incentivized to come to repay. 
+In Angle Borrow module, **the amount of debt to repay during a liquidation is dynamic** and computed such that after the liquidation, the liquidated vault ends up in a level of “health” defined by a target parameter: the [target health factor](/new-module/glossary.md). This is determined by the following equation: 
 
-In most cases though, liquidated vaults may get less than 50% of their position liquidated. This allow them to keep as much collateral in their vault as possible, and makes this system much more borrower friendly than existing alternatives.
+$$
+HF_{post}(x_{max}) = \frac{(c - \frac{x}{1-e})\times CF }{d-x(1-s)} = \texttt{Target Health Factor}
+$$
 
-More details in section 4.3 of the [Angle Borrow Module Whitepaper](/whitepaper.md#angle-borrowing-module).
+With:
+* `x` as the amount of stablecoin debt to repay
+* `c` as the collateral's value in stablecoin
+* `d` as the amount of stablecoin debt of the vault
+* `e` as the liquidation discount, and 
+* `s` as the liquidation surcharge
+
+In some conditions, the variables at liquidation are such that $HF_{post}(x_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased. 
+
+In practice, full liquidations should be extremely occasional and most vaults should get less than 50% of their position liquidated. This allows them to keep as much collateral in their vault as possible, and makes this system much more borrower friendly than existing alternatives.
 
 ### Dynamic Discount
 

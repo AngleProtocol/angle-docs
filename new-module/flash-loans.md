@@ -14,4 +14,4 @@ They are a type of loans that allow to borrow and repay tokens in one transactio
 
 Users can take out flash loans with agTokens. The main use case for flash loans is arbitrage between pools, which usually helps rebalancing liquidity over the ecosystem. 
 
-More info in our developers documentation. 
+More info in our [developers documentation](https://developers.angle.money/overview/guides/flashloans). 

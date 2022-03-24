@@ -20,9 +20,13 @@ Please join the discussion on the Angle Community [Discord Server](https://disco
 
 ## Introduction to Angle
 
-Angle is a decentralized stablecoins protocol composed of smart contracts mostly deployed on the Ethereum blockchain. 
+Angle is a decentralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain. 
 
-It has three modules, or set of smart contracts: [Angle Core module](/concepts/overview.md), the new [Angle Borrowing module](/new-module/README.md), and the [Angle Governance module](/governance/angle-dao.md). 
+It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to. For example, the agEUR is the EUR-pegged stablecoin issued through Angle Protocol. 
+
+Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](/concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](/new-module/README.md). 
+
+Angle also relies on a [Governance module](/governance/angle-dao.md) to manage the protocol. 
 
 ### 🛣️ Roadmap
 

@@ -2,7 +2,7 @@
 description: A list of words and terms relating to the Angle Borrowing Module
 ---
 
-# 📚 Glossary - New Module
+# 📚 Glossary - Borrowing Module
 
 Here, you will find a list of the terms and expressions that are used in this module.
 
