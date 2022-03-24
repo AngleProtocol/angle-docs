@@ -2,7 +2,7 @@
 description: Flash loans using agTokens
 ---
 
-# Angle flash-loans
+# ⚡️ Angle flash-loans
 
 Flash-loans are now possible with agTokens!
 

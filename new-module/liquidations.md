@@ -2,7 +2,7 @@
 description: Liquidations in Angle _New_ Module
 ---
 
-# Liquidations
+# 🎳 Liquidations
 
 To make sure collateral is always backing agTokens issued, Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. This is determined by two similar parameters, the [collateral factor](/new-module/glossary.md) or the [health factor](/new-module/glossary.md). 
 

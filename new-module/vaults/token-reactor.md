@@ -2,7 +2,7 @@
 description: Minting agEUR from specific tokens
 ---
 
-# Token Reactors
+# 🛩 Token Reactors
 
 Thanks to the previous features of whitelisting addresses and accepting riskier collaterals with tailored parameters, Angle Borrow module could also be used to mint agEUR for specific use cases only. 
 

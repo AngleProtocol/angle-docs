@@ -2,7 +2,7 @@
 description: Fees and revenue in Angle _New_ Module
 ---
 
-# Fees and revenue
+# 💵 Fees and revenue
 
 At the top level, two types of fees can be charged to users borrowing agEUR: 
 - a minting fee

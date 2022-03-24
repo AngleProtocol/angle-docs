@@ -2,7 +2,7 @@
 description: Whitelisting addresses and volatile assets as collateral
 ---
 
-# Special features
+# 🤝 Whitelisting and volatile assets
 
 
 ## Whitelisting Addresses

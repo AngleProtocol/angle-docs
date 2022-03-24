@@ -40,14 +40,14 @@
 
 
 ## Angle Borrowing Module
-* [Vaults](/new-module/vaults/README.md)
-  * [Whitelisting and volatile assets](/new-module/vaults/whitelisting-and-volatile-assets.md)
-  * [Token Reactors](/new-module/vaults/token-reactor.md)
-  * [Fees and revenue](/new-module/vaults/fees.md)
-  * [Liquidations](/new-module/liquidations.md)
-* [Flash Loans](/new-module/flash-loans.md)
-* [App Guides](/new-module/new-module-guides/README.md)
-* [Glossary](/new-module/glossary.md)
+* [🏦 Vaults](/new-module/vaults/README.md)
+  * [🤝 Whitelisting and volatile assets](/new-module/vaults/whitelisting-and-volatile-assets.md)
+  * [🛩 Token Reactors](/new-module/vaults/token-reactor.md)
+  * [💵 Fees and revenue](/new-module/vaults/fees.md)
+  * [🎳 Liquidations](/new-module/liquidations.md)
+* [⚡️ Flash Loans](/new-module/flash-loans.md)
+* [📔 App Guides](/new-module/new-module-guides/README.md)
+* [📚 Glossary](/new-module/glossary.md)
 
 
 ## Governance
