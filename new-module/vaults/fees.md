@@ -23,11 +23,23 @@ When users open a vault, they deposit collateral and can mint agEUR depending on
 As an example, if the minting fee is 1%, after minting 100 agEUR users would find themselves with 101 agEUR of debt. 
 
 ### Stability Fee
-This fee is similar to an interest rate charged on the loan taken by users while it remains outstanding. 
+The stability fee is similar to a **compounding interest rate** charged on the loan taken by users while it remains outstanding. Compounding means that the interest rate continuously accumulate on the debt. 
 
-For example, if a user borrows 10,000 agEUR for 2 years and the stability fee is 3% / year, they will have an outstanding debt of 10,600 agEUR. 
+#### Example
+For example, if a user borrows 10,000 agEUR (`x`) for a time `t` of 2 years and the stability fee `r` is 2% / year, they will have an outstanding debt `d` of:
+$$
+d = x\times(1+r)^{t} \\
+d=10,000 \times 1.02^{2} \\
+d=10,404
+$$
 
-It can be set by governance and could potentially be 0, though this is unlikely. 
+If during year 3, the interest rate `r'` is 2%, then the debt `d` owed by the user will become:
+$$
+d=10,000 \times 1.02^{2} \times 1.03 \\
+d=10 821.18
+$$
+
+It's important to keep in mind that this fee can be changed by governance, and could also potentially be set to 0, though this is unlikely. 
 
 ### Putting this all together
 

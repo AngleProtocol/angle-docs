@@ -20,7 +20,7 @@ The main features of vaults are the ability to borrow agTokens, and to leverage 
 
 The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as **[collateral](/new-module/glossary.md)** into a `VaultManager` contract. When doing so, they can choose to borrow a certain amount of agTokens against their collateral. The agTokens borrowed will be minted and deposited into their wallets, for them to use however they want. 
 
-Once they have an open vault, users can borrow agTokens, rebay their agTokens debt, and add or remove collateral from the vault. They can also  
+Once they have an open vault, users can borrow agTokens, repay their agTokens debt, and add or remove collateral from it.  
 
 They also have to monitor their vaults' [health factor](/new-module/glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get **[liquidated](/new-module/liquidations.md)**. 
 
