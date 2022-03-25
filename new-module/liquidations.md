@@ -29,7 +29,7 @@ If this health factor goes below 1, it means that the value of the collateral ba
 
 Liquidating a position means repaying part or the entirety of the vault's debt (agTokens) against the collateral it holds (ETH or any other collateral token), usually at a discount.
 
-After getting liquidated, a vault will either be empty, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a heatlhy target. 
+After getting liquidated, a vault will either be empty, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a healthy target. 
 
 This means that users will either lose their collateral completely, but won't have anything to pay back anything to the protocol, or lose part of their collateral and still have some debt towards the protocol. 
 
@@ -134,3 +134,7 @@ $$
 ### No capital requirements
 
 When liquidating a position, the liquidator can initiate the transaction without capital, and receive the collateral to then swap it against the required amount of stablecoin to pay back the debt by the end of the transaction.  
+
+### Developers doc
+
+If you want more details about how liquidations work from a Solidity perspective, you can have a look at our [developers documentation](https://developers.angle.money/overview/guides/liquidations-borrowing). 

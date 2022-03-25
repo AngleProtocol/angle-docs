@@ -26,6 +26,10 @@ It can be used to issue stablecoins, called agTokens, that are pegged to a speci
 
 Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](/concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](/new-module/README.md). 
 
+{% hint style="info" %}
+Angle Borrowing Module should be deployed in May 2022. 
+{% endhint %}
+
 Angle also relies on a [Governance module](/governance/angle-dao.md) to manage the protocol. 
 
 ### 🛣️ Roadmap
