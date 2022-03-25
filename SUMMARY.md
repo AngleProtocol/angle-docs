@@ -12,7 +12,7 @@
 
 ## Angle Core Concepts
 
-* [🔭 Concepts Overview](concepts/overview.md)
+* [🔭 Angle Core Module Overview](concepts/overview.md)
 * [💱 Stable Seekers and Holders](concepts/stable-seekers/README.md)
   * [FAQ - Stable Seekers and Holders](concepts/stable-seekers/faq-stable.md)
 * [🛡 Hedging Agents](concepts/hedging-agents/README.md)
@@ -40,6 +40,7 @@
 
 
 ## Angle Borrowing Module
+* [🔭 Borrowing Module overview](/new-module/README.md)
 * [🏦 Vaults](/new-module/vaults/README.md)
   * [🤝 Whitelisting and volatile assets](/new-module/vaults/whitelisting-and-volatile-assets.md)
   * [🛩 Token Reactors](/new-module/vaults/token-reactor.md)

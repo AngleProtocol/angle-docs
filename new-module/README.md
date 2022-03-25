@@ -20,8 +20,18 @@ These advantages help further expand Angle and its agTokens, both in terms of th
 
 ### Vaults
 
-With the Angle Borrowing module, users 
+With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allow them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins. 
+
+More about vaults [here](/new-module/vaults/README.md). 
 
 ### Token Reactors
 
+Angle Borrowing module also introduces Token Reactors. They allow users or DAOs to deposit volatile tokens in specific vaults to earn yield on their deposits. This is made possible by minting agTokens that are invested directly in pre-defined strategies earning yield while maintaining a healthy collateral ratio. 
+
+More about tokens reactors [here](/new-module/vaults/token-reactor.md). 
+
 ### Flash-loans
+
+Another side feature of these smart contracts are the possibility of taking out flash-loans using agTokens. 
+
+More about flash-loans [here](/new-module/flash-loans.md).  
