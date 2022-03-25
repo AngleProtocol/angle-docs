@@ -65,7 +65,7 @@ For example, if the CF of a vault type is at 2/3, or 150% of collateral ratio, u
 
 ### Isolated positions & debt transfer
 #### Isolated positions
-One interesting charateristic of vaults is that they are isolated meaning that a position of an address in a vault is totally separated from a position of the same address in another vault. 
+One interesting charateristic of vaults is that positions are represented by NFTs. This makes them isolated and transferrable. Additionally, this means that a position of an address in a vault is totally separated from a position of the same address in another vault. 
 
 One vault liquidation has no impact on the others. 
 
