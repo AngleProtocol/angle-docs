@@ -1,5 +1,5 @@
 ---
-description: Angle App user guide
+description: Angle Core App user guide
 ---
 
 # 📔 User Guides
