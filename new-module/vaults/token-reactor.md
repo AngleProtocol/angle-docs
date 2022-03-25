@@ -13,3 +13,7 @@ For example, the agTokens minted from a specific vault can be used only by a whi
 ## Offering yield on any tokens
 
 This effectively creates staking pools for volatile assets. Users depositing their tokens in a token reactor can earn yield in agTokens on top of these volatile assets, that potentially increase in value themselves. This gives them additional utility. 
+
+## Increasing agTokens liquidity
+
+On top of offering native yield on volatile tokens, Angle Token Reactors also allow to increase agEUR liquidity across DeFi, making it a much better stablecoin for users.  
