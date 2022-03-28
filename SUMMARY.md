@@ -9,7 +9,6 @@
 * [First Steps in Crypto](app-guides/newbie.md)
 * [Get agEUR](app-guides/mint-burn.md)
 
-
 ## Angle Core Concepts
 
 * [🔭 Angle Core Module Overview](concepts/overview.md)
@@ -28,28 +27,23 @@
   * [🚑 Risks and Emergency Modules](concepts/other-aspects/emergency-modules.md)
   * [⌛ Collateral Settlement](concepts/other-aspects/collateral-settlement.md)
 * [📔 App Guides](app-guides/README.md)
-  * [First Steps in Crypto](app-guides/newbie.md)
-  * [Get agEUR](app-guides/mint-burn.md)
   * [Opening & Managing Positions](app-guides/ha-positions.md)
   * [Deposit Tokens for Yield](app-guides/slp-pools.md)
-  * [Earning ANGLE](veangle-guides/incentives.md)
   * [App FAQ](app-guides/app-faq.md)
   * [Formulas](app-guides/formulas.md)
-* [📚 Glossary](/concepts/glossary.md)
-* [❓ FAQ](/concepts/faq.md)
-
+* [📚 Glossary](concepts/glossary.md)
+* [❓ FAQ](concepts/faq.md)
 
 ## Angle Borrowing Module
-* [🔭 Borrowing Module overview](/new-module/README.md)
-* [🏦 Vaults](/new-module/vaults/README.md)
-  * [🤝 Whitelisting and volatile assets](/new-module/vaults/whitelisting-and-volatile-assets.md)
-  * [🛩 Token Reactors](/new-module/vaults/token-reactor.md)
-  * [💵 Fees and revenue](/new-module/vaults/fees.md)
-  * [🎳 Liquidations](/new-module/liquidations.md)
-* [⚡️ Flash Loans](/new-module/flash-loans.md)
-* [📔 App Guides](/new-module/new-module-guides/README.md)
-* [📚 Glossary](/new-module/glossary.md)
 
+* [🔭 Borrowing Module Overview](new-module/README.md)
+* [🏦 Vaults](new-module/vaults/README.md)
+  * [🤝 Whitelisting and volatile assets](new-module/vaults/whitelisting-and-volatile-assets.md)
+  * [🛩 Token Reactors](new-module/vaults/token-reactor.md)
+  * [🎳 Liquidations](new-module/liquidations.md)
+  * [💵 Fees and revenue](new-module/vaults/fees.md)
+* [⚡️ Flash Loans](new-module/flash-loans.md)
+* [📚 Glossary](new-module/glossary.md)
 
 ## Governance
 
@@ -65,7 +59,7 @@
 * [📗 DAO App Guides](veangle-guides/README.md)
   * [Locking ANGLE](veangle-guides/locking-angle.md)
   * [Voting on Gauges](veangle-guides/voting-gauges.md)
-  * [Earning ANGLE](veangle-guides/incentives.md)
+  * [Earning ANGLE](governance/veangle-guides/incentives.md)
 
 ## L2/Sidechains
 

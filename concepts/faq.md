@@ -10,8 +10,8 @@ Angle is a scalable, efficient, over-collateralized and liquid decentralized sta
 
 ## How does Angle work?
 
-1. Angle enables people to swap their collateral against stablecoins at oracle value. Anyone can come with an accepted collateral \(like wETH\), and swap it to get a corresponding amount of stablecoins. It is also possible to swap Angle's stablecoins for an accepted collateral type of the system. For a EUR stablecoin collateralized by wBTC and wETH, with 1 wETH worth 1000€ you can get 1000 agEUR. If 1 wBTC is worth 10000€, with 1000 agEUR, you can get either 1 wETH or 0.1 wBTC.
-2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the protocol needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the protocol against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral \(like 0.5 wETH\) and choose to cover this 1 wETH \(hence getting a 3x leverage\). This means that they get the capital gains or have to pay for the loss they would have realzied if they had owned this 1 wETH from the beginning.
+1. Angle enables people to swap their collateral against stablecoins at oracle value. Anyone can come with an accepted collateral (like wETH), and swap it to get a corresponding amount of stablecoins. It is also possible to swap Angle's stablecoins for an accepted collateral type of the system. For a EUR stablecoin collateralized by wBTC and wETH, with 1 wETH worth 1000€ you can get 1000 agEUR. If 1 wBTC is worth 10000€, with 1000 agEUR, you can get either 1 wETH or 0.1 wBTC.
+2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the protocol needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the protocol against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral (like 0.5 wETH) and choose to cover this 1 wETH (hence getting a 3x leverage). This means that they get the capital gains or have to pay for the loss they would have realzied if they had owned this 1 wETH from the beginning.
 3. Angle can hence be seen a marketplace between stability and volatility: stable seekers get direct stability and people who want leverage and volatility get the volatility of the collateral brought by stable seekers. Yet, there may not always be a full demand for the offer in volatility taking the form of the perpetual futures. Angle needs a buffer of collateral to account for that. The protocol therefore enables people to come deposit collateral and serve as this buffer: these liquidity providers automatically accumulate interest on the collateral they deposited.
 
 ## Have smart contracts been audited?
@@ -46,14 +46,14 @@ Being able to swap 1 of collateral for 1 stablecoin, and 1 stablecoin for 1 of c
 
 ## How is Angle's protocol different from other stablecoins?
 
-- Just like Maker, Angle is an over-collateralized protocol, but contrarily to it, it is capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
-- Angle's convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, Angle is still bank run resistant.
-- Because of the swaps between stablecoins and collateral allowed by the protocol, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
+* Just like Maker, Angle is an over-collateralized protocol, but contrarily to it, it is capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
+* Angle's convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, Angle is still bank run resistant.
+* Because of the swaps between stablecoins and collateral allowed by the protocol, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
 ## Besides stablecoins, what are Angle's other advantages?
 
-- Angle can be used to get direct leverage on collateral. As a Hedging Agent of Angle's protocol, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
-- Angle proposes higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider \(SLP\) of Angle's protocol, you get part of the transaction fees induced by users interacting with the protocol, and part of the lending returns obtained by lending the protocol's reserves. If there is 150 in the protocol that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
+* Angle can be used to get direct leverage on collateral. As a Hedging Agent of Angle's protocol, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
+* Angle proposes higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle's protocol, you get part of the transaction fees induced by users interacting with the protocol, and part of the lending returns obtained by lending the protocol's reserves. If there is 150 in the protocol that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
 
 ## In short, why Angle?
 
@@ -85,20 +85,20 @@ The code of the smart contracts is open source and has been be formally verified
 
 No platform can be considered entirely risk free. The risks related to the Angle platform are the smart contract risk (risk of a bug within the protocol code) and the risk that the protocol is not able to maintain over-collateralization and to sustain the convertibility of the minted tokens.
 
-Every possible step has been taken to minimize the risk as much as possible. The protocol code is public, open sourced, and has been audited. There are open bug bounties on Angle's [immunefi](https://immunefi.com/) portal. There are also failure modes that can be activated by governance votes in some occasions.
+Every possible step has been taken to minimize the risk as much as possible. The protocol code is public, open sourced, and has been audited. There are open bug bounties on Angle's [immunefi](https://immunefi.com) portal. There are also failure modes that can be activated by governance votes in some occasions.
 
 ## Do you have a governance token?
 
 Yes, veANGLE (locked ANGLE) tokens are used as the governance token of the protocol. It is used to direct weekly ANGLE distribution and vote on governance proposals on [Snapshot](https://snapshot.org/#/anglegovernance.eth).
 
-You can learn more about how voting-escrowed tokens work in the [veANGLE](governance/veANGLE/README.md) page.
+You can learn more about how voting-escrowed tokens work in the [veANGLE](../governance/veANGLE/) page.
 
 Feel free to join the discussion in the governance forum at [gov.angle.money](https://gov.angle.money).
 
 ## Additional information and resources about Angle
 
-- [Blog](https://blog.angle.money)
-- [Developers Doc](https://developers.angle.money)
+* [Blog](https://blog.angle.money)
+* [Developers Doc](https://developers.angle.money)
 
 {% hint style="info" %}
 💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.

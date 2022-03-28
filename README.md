@@ -20,24 +20,21 @@ Please join the discussion on the Angle Community [Discord Server](https://disco
 
 ## Introduction to Angle
 
-Angle is a decentralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain. 
+Angle is a decentralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain.
 
-It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to. For example, the agEUR is the EUR-pegged stablecoin issued through Angle Protocol. 
+It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to. For example, the agEUR is the EUR-pegged stablecoin issued through Angle Protocol.
 
-Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](/concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](/new-module/README.md). 
+Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](new-module/).
 
 {% hint style="info" %}
-Angle Borrowing Module should be deployed in May 2022. 
+Angle Borrowing Module should be deployed in May 2022.
 {% endhint %}
 
-Angle also relies on a [Governance module](/governance/angle-dao.md) to manage the protocol. 
+Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
 ### 🛣️ Roadmap
 
 Angle Protocol could be used to issue any stablecoin. and has started on mainnet with agEUR, a Euro stablecoin. Besides creating the first liquid and decentralized Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
-
-Stable CHF, GBP, JPY and KRW should be following agEUR.
-
 
 ## ⭐ [Popularization](resources/popularization/)
 
@@ -61,14 +58,14 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 
 ## Other Resources
 
-- 📡 [Website](https://angle.money)
-- 🐦 [Twitter](https://twitter.com/AngleProtocol)
-- 🌳 [Medium/Blog](https://blog.angle.money)
-- 💻 [Github](https://github.com/AngleProtocol)
-- 📀 [App](https://app.angle.money)
-- 🗂️ [Analytics](https://analytics.angle.money/#/home)
-- 🗳️ [DAO App](https://dao.angle.money/#/)
-- 💬 [Governance Forum](https://gov.angle.money)
+* 📡 [Website](https://angle.money)
+* 🐦 [Twitter](https://twitter.com/AngleProtocol)
+* 🌳 [Medium/Blog](https://blog.angle.money)
+* 💻 [Github](https://github.com/AngleProtocol)
+* 📀 [App](https://app.angle.money)
+* 🗂️ [Analytics](https://analytics.angle.money/#/home)
+* 🗳️ [DAO App](https://dao.angle.money/#/)
+* 💬 [Governance Forum](https://gov.angle.money)
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
@@ -81,4 +78,4 @@ In order for your translation to appear on this doc, you need to:
 1. Make sure that your translation has been reviewed by members of your local community on Angle Discord. We will not accept any translation that has not been checked by other community members.
 2. Submit a pull request to the `angle-docs` repository and respect the formatting and conventions already in place for the `russian` section of the docs.
 
-![Join Angle Playground!](.gitbook/assets/angle_multi_back.jpg)
+![Join Angle Playground!](.gitbook/assets/angle\_multi\_back.jpg)
