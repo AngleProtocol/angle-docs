@@ -53,7 +53,7 @@ Angle community Discord server is where we collectively organize ourselves to bu
 Angle has a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
 
 {% hint style="info" %}
-All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/security/).
+All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](https://github.com/AngleProtocol/angle-core/tree/main/audits).
 {% endhint %}
 
 ## Other Resources
