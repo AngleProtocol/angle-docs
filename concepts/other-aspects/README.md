@@ -1,10 +1,10 @@
 ---
-description: Learn more about other aspects of the protocol
+description: Learn more about other aspects of the core module
 ---
 
 # 🔍 Other aspects
 
-In the following pages, we go into more details about specific aspects of Angle Protocol.
+In the following pages, we go into more details about specific aspects of Angle core module.
 
 ## Keepers
 

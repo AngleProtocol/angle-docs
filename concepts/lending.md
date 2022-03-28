@@ -1,35 +1,35 @@
 ---
-description: Growing surplus, incentivizing veANGLE holders, and offering yield to the protocol's liquidity providers
+description: Growing surplus, incentivizing veANGLE holders, and offering yield to the core module's liquidity providers
 ---
 
 # 📈 Lending Strategies - Yield on Reserves
 
 ## 🔎 TL;DR
 
-- The protocol earns interest on the reserves it holds by lending it to other platforms.
-- To do so, the protocol relies on strategies which decide how much and in which protocols reserves should be placed.
-- Angle is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
-- Strategies are what enables the protocol to offer higher yield to SLPs than what they would get by lending directly to other protocols.
+- The core module earns interest on the reserves it holds by lending it to other platforms.
+- To do so, the core module relies on strategies which decide how much and in which core modules reserves should be placed.
+- Angle Core module is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
+- Strategies are what enable the core module to offer higher yield to SLPs than what they would get by lending directly to other core modules.
 
 ## 💡 Rationale
 
-Lending a fraction of the protocol reserves to other lending platforms is part of what makes the protocol attractive to Standard Liquidity Providers. By lending reserves, the protocol can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
+Lending a fraction of the reserves to other lending platforms is part of what makes the core module attractive to Standard Liquidity Providers. By lending reserves, it can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
 
-The distribution of interest between SLPs, veANGLE holders, and protocol reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
+The distribution of interest between SLPs, veANGLE holders, and reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
 
 ![](../.gitbook/assets/angle-strategies-flow.png)
 
 ## 🎨 Design
 
-The design of that has been heavily inspired by what [Yearn](https://yearn.finance) does. Angle relies on strategies, that themselves use Lender's contracts interacting with lending and other yield farming protocols.
+The design of that has been heavily inspired by what [Yearn](https://yearn.finance) does. Angle core module relies on strategies, that themselves use Lender's contracts interacting with lending and other yield farming core modules.
 
-Just like on Yearn, new strategies to get some yield on the protocol's collateral can be added along the way by governance votes. Each strategy can also support multiple lending platforms or protocols.
+Just like on Yearn, new strategies to get some yield on the core module's collateral can be added along the way by governance votes. Each strategy can also support multiple lending platforms or core modules.
 
 Each collateral for each stablecoin has its set of strategies to get some yield on it. For instance, for a agEUR stablecoin backed by USDC and DAI, we may have for the USDC collateral a single strategy trying to always optimize to get the best APY between Compound and Aave, and for the DAI stablecoin two strategies, one that just consists in lending to Compound and one that consists in optimizing between Aave and Cream.
 
 The first strategy implemented simply consists in optimizing lending between Compound and Aave and pick the one with the best APY.
 
-Since gas cost is quite high in Ethereum, users minting and burning, SLPs depositing and withdrawing, as well as HAs opening and closing positions never interact directly with strategy contracts. When they send or withdraw collateral to the protocol, their collateral goes or is taken from the protocol's reserves, and it is not directly lent or withdrawn from strategies.
+Since gas cost is quite high in Ethereum, users minting and burning, SLPs depositing and withdrawing, as well as HAs opening and closing positions never interact directly with strategy contracts. When they send or withdraw collateral to the core module, their collateral goes or is taken from the core module's reserves, and it is not directly lent or withdrawn from strategies.
 
 The way collateral is lent or withdrawn from strategies and their corresponding lending platforms is through keepers calling the `harvest`function to withdraw or lend collateral to strategies.
 
