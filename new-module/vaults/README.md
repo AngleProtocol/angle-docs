@@ -6,7 +6,7 @@ description: Angle Borrowing Module agTokens Vaults
 
 The core mechanism of this module relies on a vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction.
 
-**TLDR**
+### TL;DR
 
 * Borrow agTokens from tokens deposited as collateral in the protocol
 * Leverage collateral exposure in one transaction
@@ -20,9 +20,9 @@ The main features of vaults are the ability to borrow agTokens, and to leverage 
 
 The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as [**collateral**](../glossary.md) into a `VaultManager` contract. When doing so, they can choose to borrow a certain amount of agTokens against their collateral. The agTokens borrowed are minted and deposited into their wallets, for them to use however they want.
 
-Once they have an open vault, users can borrow agTokens, repay their agTokens debt, and add or remove collateral from it.
+Once they have an open vault, users can borrow agTokens at a fee, repay their agTokens debt, and add or remove collateral from it.
 
-They also have to monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](../liquidations.md).
+They also have to monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](/new-module/vaults/liquidations.md).
 
 At some point, users that don't need their agTokens anymore can pay bak their debt, to get back what they originally deposited as collateral.
 
@@ -83,4 +83,12 @@ This lowers the collateral ratio of the first vault, and increases that of the s
 
 To make sure the protocol doesn't accumulate bad debt, the protocol needs to enforce a minimum amount of agEUR to be borrowed. This is required to make sure that each position has enough debt so that it's always worth to liquidate it.
 
-It's important to keep in mind that these debt-based models similar to Maker rely heavily on liquidations to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
+It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](/new-module/vaults/liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
+
+## Next
+
+The next sections will dive in more details into some aspects of the vaults, such as fees, liquidations, the whitelisting of specific addresses, and token reactors. 
+
+
+
+

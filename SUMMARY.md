@@ -5,7 +5,7 @@
 * [Angle Documentation Portal](README.md)
 * [⚒ Developers](https://developers.angle.money)
 * [📖 Whitepapers](whitepaper.md)
-* [Glossary](main-glossary.md)
+* [📚 Glossary](main-glossary.md)
 * [First Steps in Crypto](app-guides/newbie.md)
 * [Get agEUR](app-guides/mint-burn.md)
 
@@ -38,11 +38,11 @@
 
 * [🔭 Borrowing Module Overview](new-module/README.md)
 * [🏦 Vaults](new-module/vaults/README.md)
+  * [💵 Fees and revenue](new-module/vaults/fees.md)
+  * [🎳 Liquidations](new-module/liquidations.md)
   * [🤝 Whitelisting and volatile assets](new-module/vaults/whitelisting-and-volatile-assets.md)
   * [🛩 Token Reactors](new-module/vaults/token-reactor.md)
-  * [🎳 Liquidations](new-module/liquidations.md)
-  * [💵 Fees and revenue](new-module/vaults/fees.md)
-* [⚡️ Flash Loans](new-module/flash-loans.md)
+* [⚡️  Flash Loans](new-module/flash-loans.md)
 * [📚 Glossary](new-module/glossary.md)
 
 ## Governance

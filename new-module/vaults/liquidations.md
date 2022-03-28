@@ -8,7 +8,7 @@ To make sure collateral is always backing agTokens issued, Angle Vaults can get 
 
 As we will see in the [Variable liquidations amount](liquidations.md#variable-liquidations-amount), liquidations in Angle Borrowing module have been designed to be as much borrower friendly as possble.
 
-**TLDR**
+### TL;DR
 
 * Vaults with a health factor below one risk getting liquidated
 * Liquidated vaults can lose part or all their collateral
