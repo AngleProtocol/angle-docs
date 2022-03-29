@@ -55,7 +55,7 @@ You can have a look at [Angle's analytics](https://analytics.angle.money) page t
 
 ## ⌛ Collateral Diversification and Settlement
 
-In the above sections, a core module with a single collateral type was described. It is important to note that the core module accepts different collateral types, diversifying the overall risk of the core module. With asset diversification, Angle core module is less prone to having the issue where one asset drops and affects the stability of the whole system.
+In the above sections, the situation with a single collateral type was described. It is important to note that the core module accepts different collateral types, diversifying its overall riske. With asset diversification, Angle core module is less prone to having the issue where one asset drops and affects the stability of the whole system.
 
 If one collateral becomes too risky, the core module has the ability to incentivize liquidity providers to contribute more to one pool than to another through staking incentives and transaction fees.
 

@@ -22,7 +22,7 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 ### Liquidity Mining
 
-40% of tokens are being distributed through staking contracts for agTokens holders, HAs, SLPs. LPs on other external pools are also being incentivized. For more details on Angle's staking contracts, you can look at this [page](../concepts/other-aspects/staking.md).
+40% of tokens are being distributed through staking contracts for agTokens holders, HAs, SLPs. LPs on other external pools are also being incentivized. For more details on Angle's staking contracts, you can look at [this page](/governance/staking.md).
 
 Every week, governance will be able to adjust the distribution of tokens between each stakeholder. The amount of ANGLE distributed will be divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 

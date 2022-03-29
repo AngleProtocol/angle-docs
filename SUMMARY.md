@@ -5,7 +5,7 @@
 * [Angle Documentation Portal](README.md)
 * [⚒ Developers](https://developers.angle.money)
 * [📖 Whitepapers](whitepaper.md)
-* [📚 Glossary](main-glossary.md)
+* [📚 Glossary](global-glossary.md)
 * [First Steps in Crypto](app-guides/newbie.md)
 * [Get agEUR](app-guides/mint-burn.md)
 
@@ -22,7 +22,6 @@
 * [🔍 Other aspects](concepts/other-aspects/README.md)
   * [🏭 Keepers](concepts/other-aspects/keepers.md)
   * [🔱 Oracles](concepts/other-aspects/oracles.md)
-  * [🎁 Staking - Getting Governance Tokens](concepts/other-aspects/staking.md)
   * [📊 Collateral Ratio](concepts/other-aspects/collateral-ratio.md)
   * [🚑 Risks and Emergency Modules](concepts/other-aspects/emergency-modules.md)
   * [⌛ Collateral Settlement](concepts/other-aspects/collateral-settlement.md)
@@ -49,6 +48,7 @@
 
 * [🗳 Angle DAO](governance/angle-dao.md)
 * [🚀 ANGLE Token](governance/angle-token.md)
+* [🎁 Staking - Earning ANGLE](governance/staking.md)
 * [♠ veANGLE](governance/veANGLE/README.md)
   * [🔒 Lock Details](governance/veANGLE/lock-details.md)
   * [🗳 Gauges](governance/veANGLE/gauges.md)

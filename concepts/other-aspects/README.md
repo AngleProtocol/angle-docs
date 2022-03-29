@@ -14,10 +14,6 @@ In the following pages, we go into more details about specific aspects of Angle 
 
 {% page-ref page="oracles.md" %}
 
-## Staking
-
-{% page-ref page="staking.md" %}
-
 ## Collateral Ratio
 
 {% page-ref page="collateral-ratio.md" %}

@@ -24,7 +24,8 @@ $$
 \texttt{HF = CR * CF} \\ \texttt{HF} = 160/100 * 2/3 = 1.07
 $$
 
-If this health factor goes below 1, it means that the value of the collateral backing the stablecoin is too low compared to what was defined by the protocol and the position can get liquidated.
+If this health factor goes below 1, it means that the value of the collateral backing the stablecoin is too low compared to what was defined by the protocol and the position can get liquidated, like in the example below. 
+
 
 ### What happens to a position getting liquidated
 
@@ -33,6 +34,10 @@ Liquidating a position means repaying part or the entirety of the vault's debt (
 After getting liquidated, a vault will either be empty, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a healthy target.
 
 This means that users will either lose their collateral completely, but won't have anything to pay back anything to the protocol, or lose part of their collateral and still have some debt towards the protocol.
+
+From a liquidator perspective, there is **no capital requirement when liquidating Angle Vaults**. Liquidator receive the collateral of the vault first, before having to repay the collateral. 
+
+![Vault before liquidation](../../.gitbook/assets/Vault%20before%20a%20liquidation.png)
 
 ***
 
@@ -60,7 +65,7 @@ With:
 * `e` as the liquidation discount, and
 * `s` as the liquidation surcharge
 
-In some conditions, the variables at liquidation are such that $HF\_{post}(x\_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
+In some conditions, the variables at liquidation are such that $HF_{post}(x_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
 
 In practice, full liquidations should be extremely occasional and most vaults should get less than 50% of their position liquidated. This allows them to keep as much collateral in their vault as possible, and makes this system much more borrower friendly than existing alternatives.
 
@@ -90,6 +95,19 @@ $$
 
 Where `f` is a piecewise linear increasing function of the veANGLE balance, capped by a certain amount.
 
+### No capital requirements
+
+As said above, a liquidator can liquidate a vault without bringing in any capital. They will receive the collateral at the beginning of the transaction, so they can swap it against the required amount of stablecoin to pay back the debt by the end of the transaction.
+
+### Amount of debt to repay
+
+The amount of stablecoins debt `x` to be repaid by the liquidator is determined by the Target Health Factor parameter such that:
+
+$$
+HF_{post}(x) = \texttt{target health factor}
+$$
+
+
 ## Example
 
 Now that we are aware of the different aspects of liquidations in the Angle Borrow module, let's look at an example.
@@ -97,8 +115,8 @@ Now that we are aware of the different aspects of liquidations in the Angle Borr
 Let's say that we have the following parameter:
 
 * `CF` = 2/3, as the collateral factor
-* `c` = 200, as the collateral value expressed in stablecoin
-* `d` = 150, as the debt value or stablecoins borrowed
+* `c` = 120, as the collateral value expressed in stablecoin
+* `d` = 90, as the debt value or stablecoins borrowed
 * `s` = 2%, as the liquidation surcharge
 * `e` = 10%, as the liquidation discount
 * `x`, as the amount of stablecoins / debt repaid by the liquidator
@@ -106,43 +124,31 @@ Let's say that we have the following parameter:
 At this point, the vault has a Health Factor of:
 
 $$
-HF = \frac{c\times CF}{d}= \frac{200\times 2/3}{150} = 0.89
+HF = \frac{c\times CF}{d}= \frac{120\times 2/3}{90} = 0.89
 $$
 
-As HF < 1, the vault should get liquidated. After being liquidated, the new Health Factor of a vault becomes:
+As HF < 1, the vault should get liquidated. After being liquidated, the new Health Factor of a vault should be:
 
 $$
-HF_{post}(x) = \frac{c_{post}\times CF }{d_{post}} = \frac{(c - \frac{x}{1-e})\times CF }{d-x(1-s)}
+HF_{post}(x) = \frac{c_{post}\times CF }{d_{post}} = \frac{(c - \frac{x}{1-e})\times CF }{d-x(1-s)} = \texttt{target health factor}
 $$
 
-Let's say that the Target Health Factor is such that the amount to repay is $x = 100$. We can decompose each component of the vault, and we get:
+Let's say that the Target Health Factor is equal to 1.25, such that we get an amount to repay x = 67 after solving the equation. We can decompose each component of the vault, and we get:
 
 $$
-c_{post} = 200 - \frac{100}{1-0.90} ≈ 200 - 111 ≈ 89
+c_{post} = 120 - \frac{67}{1-0.10} ≈ 120 - 74,5 ≈ 45,5
 $$
 
 $$
-d_{post} = 150 - 100(1-0.02) = 150 - 98 = 52
+d_{post} = 90 - 67(1-0.02) = 90 - 66 = 24
 $$
 
-Such that the new health factor after the liquidation becomes:
+In this example, the liquidator repays 67 of stablecoin, and get back ~74,5 of collateral. 
 
-$$
-HF_{post}(x) = \frac{c_{post}\times CF }{d_{post}} ≈ \frac{89\times 2/3 }{52} ≈ 1.14
-$$
+![Vault before liquidation](../../.gitbook/assets/Vault%20before%20a%20liquidation.png)
 
-### In practice
+![Angle vault after liquidation](../../.gitbook/assets/Vault%20post%20liquidation.png)
 
-In practice, there is a target health factor and the amount repaid by liquidators `x` is determined from the above equation such that
-
-$$
-HF_{post}(x) = \texttt{target health factor}
-$$
-
-### No capital requirements
-
-When liquidating a position, the liquidator can initiate the transaction without capital, and receive the collateral to then swap it against the required amount of stablecoin to pay back the debt by the end of the transaction.
-
-### Developers doc
+## Developers doc
 
 If you want more details about how liquidations work from a Solidity perspective, you can have a look at our [developers documentation](https://developers.angle.money/overview/guides/liquidations-borrowing).

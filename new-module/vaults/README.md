@@ -28,6 +28,8 @@ At some point, users that don't need their agTokens anymore can pay bak their de
 
 Borrowing stablecoins is a very useful feature for users wanting to spend funds or profit from stablecoins yield, while keeping exposure to their original token.
 
+![Angle Vaults](../../.gitbook/assets/Vault.png)
+
 ### Leveraging collateral exposure
 
 The second feature is an extension of the first one. It lets users borrow agTokens to **leverage their collateral exposure** in one transaction. When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. Then, the protocol will mint agEUR, swap it against the desired collateral, deposit it back into the vault, and repeat until the correct amount has been deposited.
@@ -59,9 +61,9 @@ $$
 
 The higher the collateral ratio, the "safer" the vault, as the price decline of the collateral needed to get liquidated and lose the collateral is much bigger.
 
-Additionnally, each vault type has its own **collateral factor**. It dictates the minimum ratio between the value of stablecoins borrowed and the value of collateral deposited. If this ratio drops below the CF, the vault risk being liquidated.
+Additionnally, each vault type has its own **collateral factor** parameter. It dictates the minimum ratio between the value of stablecoins borrowed and the value of collateral deposited. If this ratio drops below the CF, the vault risk being liquidated.
 
-For example, if the CF of a vault type is at 2/3, or 150% of collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 agEUR need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
+For example, if the CF of a vault type is at 2/3, or 150% of min collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 agEUR need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
 
 ### Isolated positions & debt transfer
 
@@ -85,9 +87,19 @@ To make sure the protocol doesn't accumulate bad debt, the protocol needs to enf
 
 It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](/new-module/vaults/liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
 
+### Keepers & oracle
+
+#### Keepers
+
+Angle borrowing module only relies on two types of keepers: liquidators, which erase risky positions and are key to the health of the system, and keepers to push the surplus stored in the module Treasury to the protocol. 
+
+#### Oracle 
+
+Angle borrowing module uses Chainlink price feeds, and may sometimes also rely on on-chain data. For the case of WStETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of WStETH.
+
 ## Next
 
-The next sections will dive in more details into some aspects of the vaults, such as fees, liquidations, the whitelisting of specific addresses, and token reactors. 
+The next sections will dive in more details into some aspects of the vaults, such as [fees](/new-module/vaults/fees.md), [liquidations](/new-module/vaults/liquidations.md), the [whitelisting](/new-module/vaults/whitelisting-and-volatile-assets.md) of specific addresses, and [token reactors](/new-module/vaults/token-reactor.md). 
 
 
 

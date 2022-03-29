@@ -6,7 +6,7 @@ description: The go-to source for all frequently asked questions about Angle cor
 
 ## What is Angle core module?
 
-Angle core module is a scalable, efficient, over-collateralized and liquid decentralized stablecoin core module. The core module could be used to issue virtually any type of stablecoins. The core module is launching a Euro stablecoin, the agEUR, followed by other stablecoins in the near future, like or agCHF or agJPY.
+Angle core module is an efficient, over-collateralized, and liquid decentralized stablecoin protocol. It could be used to issue virtually any type of stablecoins. 
 
 ## How does Angle core module work?
 
@@ -16,7 +16,7 @@ Angle core module is a scalable, efficient, over-collateralized and liquid decen
 
 ## Have smart contracts been audited?
 
-Yes, Angle's smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/Anglecore module/angle-core).
+Yes, Angle core module smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core).
 
 ## What stablecoins can be minted on Angle core module?
 
@@ -24,28 +24,14 @@ Angle core module can be used to issue virtually any type of stablecoins, provid
 
 Today, agEUR can be minted from USD stablecoins. We are currently focused on developing the market for agEUR and expanding the core module, before venturing into other stablecoins.
 
-## When will new stablecoins be launched?
-
-Governance and Angle DAO will be able to vote for the launch of new stablecoins. Angle Core Team wants to wait to have enough liquidity and integrations on the agEUR before launching new ones.
-
-## How to launch a stablecoin?
-
-Angle core module is a 3-sided platform that relies on 3 different types of agents to make the core module work. When launching a new stablecoin, it is important to make sure that different stakeholders arrive in the right order.
-
-To grow demand for newly launched stablecoins, governance can offer staking contracts for stable holders to get governance tokens. This aims to give users even more incentives to interact with the core module, which in turn encourages LPs to also interact with the core module.
-
 ## What collateral are accepted by Angle core module?
 
 Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
 
-## Why are Angle's stablecoins stable?
+## How is Angle's core module different from other stablecoins protocols?
 
-Angle's stablecoins are stable thanks to their peg mechanisms, and arbitrages with the market. You can read more about it [here](/concepts/stable-seekers/README.md#⚖️-stability). 
-
-## How is Angle's core module different from other stablecoins?
-
-* Angle core module is an over-collateralized but capital efficient protocol: to issue 1 stablecoin, you only need 1 of collateral, no more.
-* Angle's convertibility is not done at the expense of the robustness of the core module. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the core module is still bank run resistant.
+* Angle core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
+* Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the core module is still bank run resistant.
 * Because of the swaps between stablecoins and collateral allowed by the core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
 ## Besides stablecoins, what are Angle core module other advantages?
@@ -53,13 +39,7 @@ Angle's stablecoins are stable thanks to their peg mechanisms, and arbitrages wi
 * Angle core module can be used to get direct leverage on collateral. As a Hedging Agent of Angle's core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
 * Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle's core module, you get part of the transaction fees induced by users interacting with the core module, and part of the lending returns obtained by lending the core module's reserves. If there is 150 in the core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
 
-## In short, why Angle?
-
-Many types of people can benefit from using Angle: the stable seekers who can get stablecoins simply by swapping it against collateral, the highly speculative people who can get a direct leverage through perpetual futures on a pair collateral/stablecoin, the yield farmers who can simply deposit their collateral in the core module, automatically accumulate interest on it and get a higher yield than what they would get on other lending platforms like Compound.
-
-The core module is also completely open source, which allows anyone to interact with the user interface client, API or directly with the smart contracts on the Ethereum network. Being open source means that you are able to build any third-party service or application to interact with the core module and enrich your product.
-
-## How can I use the app?
+## How can I use the Core module app?
 
 In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by the Angle Core Team at [app.angle.money](https://app.angle.money), or through any other app developed by another team. Note that the app is hosted publicly on IPFS, and not on private servers.
 
@@ -79,11 +59,9 @@ The funds of Angle's core module are stored in smart contracts. There is one sma
 
 The code of the smart contracts is open source and has been be formally verified and audited by third party auditors.
 
-## Is there any risk?
+## Is there any risk specific to the core module?
 
-No platform can be considered entirely risk free. The risks related to the Angle platform are the smart contract risk (risk of a bug within the core module code) and the risk that the core module is not able to maintain over-collateralization and to sustain the convertibility of the minted tokens.
-
-Every possible step has been taken to minimize the risk as much as possible. The core module code is public, open sourced, and has been audited. There are open bug bounties on Angle's [immunefi](https://immunefi.com) portal. There are also failure modes that can be activated by governance votes in some occasions.
+As well as the global risks detailed [here](../global-faq.md#is-there-any-risk), the core module relies on hedging agents covering the protocol reserves, and SLPs over-collateralizing the protocol. If the core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time. 
 
 ## Do you have a governance token?
 
@@ -93,11 +71,6 @@ You can learn more about how voting-escrowed tokens work in the [veANGLE](../gov
 
 Feel free to join the discussion in the governance forum at [gov.angle.money](https://gov.angle.money).
 
-## Additional information and resources about Angle
+## Additional information and resources about the core module
 
-* [Blog](https://blog.angle.money)
-* [Developers Doc](https://developers.angle.money)
-
-{% hint style="info" %}
-💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
-{% endhint %}
+[Core module overview](/concepts/overview.md)
