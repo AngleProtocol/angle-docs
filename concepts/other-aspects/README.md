@@ -1,10 +1,10 @@
 ---
-description: Learn more about other aspects of the core module
+description: Learn more about other aspects of the Core module
 ---
 
 # 🔍 Other aspects
 
-In the following pages, we go into more details about specific aspects of Angle core module.
+In the following pages, we go into more details about specific aspects of Angle Core module.
 
 ## Keepers
 

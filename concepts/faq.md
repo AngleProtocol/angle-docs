@@ -4,11 +4,11 @@ description: The go-to source for all frequently asked questions about Angle cor
 
 # ❓ FAQ
 
-## What is Angle core module?
+## What is Angle Core module?
 
 Angle core module is an efficient, over-collateralized, and liquid decentralized stablecoin protocol. It could be used to issue virtually any type of stablecoins. 
 
-## How does Angle core module work?
+## How does Angle Core module work?
 
 1. Angle core module enables people to swap their collateral against stablecoins at oracle value. Anyone can come with an accepted collateral (like wETH), and swap it to get a corresponding amount of stablecoins. It is also possible to swap Angle's stablecoins for an accepted collateral type of the system. For a EUR stablecoin collateralized by wBTC and wETH, with 1 wETH worth 1000€ you can get 1000 agEUR. If 1 wBTC is worth 10000€, with 1000 agEUR, you can get either 1 wETH or 0.1 wBTC.
 2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the core module needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the core module against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral (like 0.5 wETH) and choose to cover this 1 wETH (hence getting a 3x leverage). This means that they get the capital gains or have to pay for the loss they would have realzied if they had owned this 1 wETH from the beginning.
@@ -18,23 +18,23 @@ Angle core module is an efficient, over-collateralized, and liquid decentralized
 
 Yes, Angle core module smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core).
 
-## What stablecoins can be minted on Angle core module?
+## What stablecoins can be minted on Angle Core module?
 
 Angle core module can be used to issue virtually any type of stablecoins, provided that there is an oracle for it. The intial goal is to create Forex stablecoins with sufficient liquidity. To this extent, we want to focus on only a few different stablecoins at first, beginning with a EUR-pegged one.
 
 Today, agEUR can be minted from USD stablecoins. We are currently focused on developing the market for agEUR and expanding the core module, before venturing into other stablecoins.
 
-## What collateral are accepted by Angle core module?
+## What collateral are accepted by Angle Core module?
 
 Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
 
-## How is Angle's core module different from other stablecoins protocols?
+## How is Angle's Core module different from other stablecoins protocols?
 
 * Angle core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
 * Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the core module is still bank run resistant.
 * Because of the swaps between stablecoins and collateral allowed by the core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
-## Besides stablecoins, what are Angle core module other advantages?
+## Besides stablecoins, what are Angle Core module other advantages?
 
 * Angle core module can be used to get direct leverage on collateral. As a Hedging Agent of Angle's core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
 * Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle's core module, you get part of the transaction fees induced by users interacting with the core module, and part of the lending returns obtained by lending the core module's reserves. If there is 150 in the core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
@@ -53,24 +53,17 @@ For Hedging Agents getting perpetual futures from the core module, there are som
 
 You can see the specific fees implemented in detail in Angle's [analytics](https://analytics.angle.money).
 
-## Where are the funds stored in the core module, and how are they separated?
+## Where are the funds stored in the Core module, and how are they separated?
 
 The funds of Angle's core module are stored in smart contracts. There is one smart contract for each collateral/stablecoin pair, such that funds are distributed amongst multiple contracts. A portion of the funds is transferred to strategies responsible for earning yield. These strategies transfer some funds to other protocols like Compound or Aave.
 
 The code of the smart contracts is open source and has been be formally verified and audited by third party auditors.
 
-## Is there any risk specific to the core module?
+## Is there any risk specific to the Core module?
 
 As well as the global risks detailed [here](../global-faq.md#is-there-any-risk), the core module relies on hedging agents covering the protocol reserves, and SLPs over-collateralizing the protocol. If the core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time. 
 
-## Do you have a governance token?
 
-Yes, veANGLE (locked ANGLE) tokens are used as the governance token of the core module. It is used to direct weekly ANGLE distribution and vote on governance proposals on [Snapshot](https://snapshot.org/#/anglegovernance.eth).
-
-You can learn more about how voting-escrowed tokens work in the [veANGLE](../governance/veANGLE/) page.
-
-Feel free to join the discussion in the governance forum at [gov.angle.money](https://gov.angle.money).
-
-## Additional information and resources about the core module
+## Additional information and resources about the Core module
 
 [Core module overview](/concepts/overview.md)

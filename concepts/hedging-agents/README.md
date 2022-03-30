@@ -1,34 +1,34 @@
 ---
-description: Insuring the core module against collateral volatility.
+description: Insuring the Core module against collateral volatility.
 ---
 
 # 🛡 Hedging Agents
 
 ## 🔎 TL;DR
 
-* Hedging Agents (HAs) open perpetual futures from the core module: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
-* They are here to insure the core module against the volatility of the collateral brought by users. With enough demand for HAs, the core module could resist collateral price drops of up to 99%.
+* Hedging Agents (HAs) open perpetual futures from the Core module: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
+* They are here to insure the Core module against the volatility of the collateral brought by users. With enough demand for HAs, Angle Core module could resist collateral price drops of up to 99%.
 * HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
 * They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
 * Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
-Angle core module by essence is highly dependent on collateral volatility. Let's say one stable seeker brings 1 wETH against 2000 agEUR and the price of wETH then decreases by 50% (from 2000€ to 1000€). The core module then needs to find 1 wETH to ensure the redeemability of the 2000€ of stablecoins and maintain their stability.
+Angle Core module is by essence highly dependent on collateral volatility. Let's say one stable seeker brings 1 wETH against 2000 agEUR and the price of wETH then decreases by 50% (from 2000€ to 1000€). The Core module then needs to find 1 wETH to ensure the redeemability of the 2000€ of stablecoins and maintain their stability.
 
-We say that the core module needs to insure itself against the volatility of the collateral. While surges in collateral prices are beneficial to the core module, drops, as in the example above, are less desirable.
+We say that the Core module needs to insure itself against the volatility of the collateral. While surges in collateral prices are beneficial, drops, as in the example above, are less desirable.
 
-For this reason, the core module transfers this volatility to other actors looking to get leverage on the collateral: Hedging Agents (HAs). They are the agents insuring the core module against drops in collateral prices, making sure that the core module has always enough reserves to reimburse users.
+For this reason, the Core module transfers this volatility to other actors looking to get leverage on the collateral: Hedging Agents (HAs). They are the agents insuring the Core module against drops in collateral prices, making sure that it always has enough reserves to reimburse users.
 
 ## 🔮 Perpetual Futures
 
-Hedging Agents are taking perpetual futures from the core module. When they come in the core module to open a position, they bring a certain amount of collateral (their margin), and choose an amount of the same collateral from the core module they want to hedge (or cover/back). The core module then stores the oracle value and timestamp at which they opened a position.
+Hedging Agents are taking perpetual futures from the Core module. When they come in to open a position, they bring a certain amount of collateral (their margin), and choose an amount of the same collateral from the Core module they want to hedge (or cover/back). The contract then stores the oracle value and timestamp at which they opened a position.
 
 Hedging Agents are independent from one another, meaning that the actions of one Hedging Agent have no impact on the position of another Hedging Agent.
 
-Precisely speaking, if a HA enters with an amount `x` of collateral (`x`is the margin) and decides to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the core module stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
+Precisely speaking, if a HA enters with an amount `x` of collateral (`x`is the margin) and decides to take on the volatility of an amount `y` of the same collateral (`y` is the amount committed, or the position size) that was brought by users minting stablecoins, then the contract stores `x`, `y`, the oracle value and the timestamp at which this HA came in.
 
-At any given point in time, the HA is entitled to get from the core module:
+At any given point in time, the HA is entitled to get from the Core module:
 
 $$
 \texttt{cash out amount} = x+y\cdot (1-\frac{\texttt{initial oracle price}}{\texttt{current oracle price}})
@@ -42,7 +42,7 @@ $$
 \texttt{PnL} = y\cdot (1-\frac{\texttt{initial oracle price}}{\texttt{current oracle price}})
 $$
 
-Since HAs bring collateral to the core module, we define their **leverage** as:
+Since HAs bring collateral to the Core module, we define their **leverage** as:
 
 $$
 \texttt{leverage} = \frac{x+y}{x} = \frac{\texttt{margin + amount committed}}{\texttt{margin}}
@@ -52,7 +52,7 @@ $$
 
 When the collateral price increases (with respect to the asset stablecoins are pegged to), besides their margin (amount brought initially), HAs are entitled to get the capital gains they would have made if they had owned the collateral they hedged.
 
-If an HA brought 1 wETH and decided to back 1 wETH from the core module, at a wETH price of 2000€, then:
+If an HA brought 1 wETH and decided to back 1 wETH from the Core module, at a wETH price of 2000€, then:
 
 $$
 x = 1, \space y=1
@@ -62,7 +62,7 @@ $$
 \texttt{initial oracle price} = 2000
 $$
 
-If the price of wETH increases to 4000€, then according to the formula above, the HA can get from the core module:
+If the price of wETH increases to 4000€, then according to the formula above, the HA can get from the Core module:
 
 $$
 \texttt{cash out amount} = 1.5 \space \texttt{wETH}
@@ -80,7 +80,7 @@ $$
 \texttt{cash out amount} = 1 + 1 \cdot (1-2) = 0
 $$
 
-At this point, the HA is liquidated and their collateral goes to the core module. They cannot claim anything.
+At this point, the HA is liquidated and their collateral goes to the Core module. They cannot claim anything.
 
 In general, the cash out amount of a HA can go to zero if the price drops to:
 
@@ -112,25 +112,25 @@ $$
 
 ## 🛏️ HAs Hedged Amounts
 
-When HAs enter the core module, they specify a position size denominated in collateral, representing an amount of the collateral reserves they are hedging. Yet from a core module perspective, when HAs come in, they insure a fixed amount of stablecoins.
+When HAs enter Angle Core module, they specify a position size denominated in collateral, representing an amount of the collateral reserves they are hedging. Yet from a contracts perspective, when HAs come in, they insure a fixed amount of stablecoins.
 
-This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a core module perspective, each HA insures the core module for a fixed amount of stablecoins. This is what the accounting of the core module keeps track of when determining when to let new HAs come in or not.
+This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a contract perspective, each HA insures the Core module for a fixed amount of stablecoins. This is what the accounting of the Core module keeps track of when determining when to let new HAs come in or not.
 
 The total amount hedged by HAs for a given collateral/stablecoin pair is hence the sum of the product between the amount committed by HAs and their entry price: it is a measure of how much stablecoins issued are backed and insured.
 
-This quantity is compared to the amount of collateral `in stablecoin value` needed by the core module to pay back users in case they all want to burn their stablecoins. For example, if some users bring 1 wETH to mint 2000 agEUR, and others burn 1000 agEUR, the amount to hedge is 1000 EUR of wETH. HAs can hedge a fraction of this quantity (close to 100%): this is called the target hedge amount.
+This quantity is compared to the amount of collateral `in stablecoin value` needed by the Core module to pay back users in case they all want to burn their stablecoins. For example, if some users bring 1 wETH to mint 2000 agEUR, and others burn 1000 agEUR, the amount to hedge is 1000 EUR of wETH. HAs can hedge a fraction of this quantity (close to 100%): this is called the target hedge amount.
 
-The hedge ratio of the core module **for a given stablecoin/collateral pair** is hence defined as:
+The hedge ratio of Angle Core module **for a given stablecoin/collateral pair** is hence defined as:
 
 $$
 \texttt{Hedge Ratio} = \frac{\texttt{Total amount hedged by HAs in stablecoin}}{\texttt{Total value of stablecoins issued}}
 $$
 
-## 🏢 Insurance of the core module Against Collateral Volatility
+## 🏢 Insurance of the Core module Against Collateral Volatility
 
-Here we explain in a more imaged way how the core module can always have enough collateral to pay back users burning stablecoins in case of price changes of the collateral.
+Here we explain in a more imaged way how the Core module can always have enough collateral to pay back users burning stablecoins in case of price changes of the collateral.
 
-If HAs have a 6x leverage and back all the collateral in the core module that was used to issue stablecoins:
+If HAs have a 6x leverage and back all the collateral in the Core module that was used to issue stablecoins:
 
 ![](../../.gitbook/assets/h13.jpg)
 
@@ -140,10 +140,10 @@ If HAs have a 6x leverage and back all the collateral in the core module that wa
 
 ## 🪙 Transaction Fees
 
-In Angle core module, Hedging Agents have to pay small transaction fees when they open and close positions from the core module. These transaction fees are computed on the amount that is committed by the HA (the position size). Entry and exit fees for HAs depend on hedging curves, which define transaction fees for HAs based on the hedging ratio of the core module.
+In Angle Core module, Hedging Agents have to pay small transaction fees when they open and close positions. These transaction fees are computed on the amount that is committed by the HA (the position size). Entry and exit fees for HAs depend on hedging curves, which define transaction fees for HAs based on the hedging ratio of the Core module.
 
 {% hint style="success" %}
-Note that on Angle core module, there is no funding rate to be paid by perpetual futures holders as opposed to most perps exchanges. This allow traders to hold their positions longer at a much lower cost.
+Note that on Angle Core module, there is no funding rate to be paid by perpetual futures holders as opposed to most perps exchanges. This allow traders to hold their positions longer at a much lower cost.
 {% endhint %}
 
 {% hint style="info" %}
@@ -154,15 +154,15 @@ The exact values of the transaction fees for HAs depend on the hedge ratio (some
 
 The entry transaction fees for HAs is an upfront cost paid when HAs open a position.
 
-The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the core module when the hedging ratio is low: transaction fees would be lower in this case.
+The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the Core module when the hedging ratio is low: transaction fees would be lower in this case.
 
 ![](../../.gitbook/assets/haentry.jpg)
 
-Let' say a HA comes to the core module with 1 wETH and opens a 2 wETH poisition (hedging the core module against the changes in price of these 2 wETH). If the transaction fees are 0.3%, then the core module considers that the HA has a margin of (1 - (0.003 x 2)) = 0,994 wETH for a position of 2 wETH.
+Let' say a HA comes to the Core module with 1 wETH and opens a 2 wETH poisition (hedging the Core module against the changes in price of these 2 wETH). If the transaction fees are 0.3%, then the contracts consider that the HA has a margin of (1 - (0.003 x 2)) = 0,994 wETH for a position of 2 wETH.
 
 ### Exit Transaction Fees
 
-Exit fees are paid by HAs when they close their perpetuals. The more collateral is hedged by HAs, the less expensive it is to exit the core module. When the hedging ratio is low, HAs should be discouraged to exit with higher transaction fees.
+Exit fees are paid by HAs when they close their perpetuals. The more collateral is hedged by HAs, the less expensive it is to exit the Core module. When the hedging ratio is low, HAs should be discouraged to exit with higher transaction fees.
 
 ![](../../.gitbook/assets/haexit.jpg)
 
