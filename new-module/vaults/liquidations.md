@@ -97,7 +97,9 @@ Where `f` is a piecewise linear increasing function of the veANGLE balance, capp
 
 ### No capital requirements
 
-As said above, a liquidator can liquidate a vault without bringing in any capital. They will receive the collateral at the beginning of the transaction, so they can swap it against the required amount of stablecoin to pay back the debt by the end of the transaction.
+As said above, a liquidator can liquidate a vault without bringing in any capital. They will receive the collateral at the beginning of the transaction, so they can swap it against the required amount of stablecoins to pay back the debt by the end of the transaction.
+
+This decreases **a lot** the barriers to entry for potential liquidators and makes it more competitive, which is better for borrowers. 
 
 ### Amount of debt to repay
 

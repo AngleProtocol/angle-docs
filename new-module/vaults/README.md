@@ -24,15 +24,23 @@ Once they have an open vault, users can borrow agTokens at a fee, repay their ag
 
 They also have to monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](/new-module/vaults/liquidations.md).
 
-At some point, users that don't need their agTokens anymore can pay bak their debt, to get back what they originally deposited as collateral.
+![Angle Vaults](../../.gitbook/assets/Vault.png)
+
+#### Capital-efficient debt repayment
+Another important feature  of Angle Vaults is that users can repay their debt in without any capital requirement. At some point, users should want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users would get back the remaining collateral after the debt has been fully paid back.
 
 Borrowing stablecoins is a very useful feature for users wanting to spend funds or profit from stablecoins yield, while keeping exposure to their original token.
 
-![Angle Vaults](../../.gitbook/assets/Vault.png)
+![Capital Efficient Debt Repayment](../../.gitbook/assets/Debt-repayment.png)
+
+
+
 
 ### Leveraging collateral exposure
 
-The second feature is an extension of the first one. It lets users borrow agTokens to **leverage their collateral exposure** in one transaction. When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. Then, the protocol will mint agEUR, swap it against the desired collateral, deposit it back into the vault, and repeat until the correct amount has been deposited.
+The second feature is an extension of the first one. It lets users borrow agTokens to **leverage their collateral exposure** in one transaction. When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. Then, the protocol will mint the necessary quantity of agToken, swap it against the desired collateral, and deposit it back into the vault.
+
+![Angle Leverage exposure](../../.gitbook/assets/Leverage.png)
 
 Similarly than in the above situation, if the value of the collateral decreases, the vault can get liquidated.
 
@@ -79,7 +87,7 @@ Thanks to the isolation of positions, one could become under a risk of liquidati
 
 In this case, users are able to perform a debt transfer, meaning that they will transfer part of their debt from one of their vault to another.
 
-This lowers the collateral ratio of the first vault, and increases that of the second. It allows users to rebalance their debt and collateral ratio between their different vaults.
+This increases the health ratio of the first vault, as it has less debt, and decreases that of the second. It allows users to rebalance their debt and collateral ratio between the different vaults they own.
 
 ### Dust Amount
 
