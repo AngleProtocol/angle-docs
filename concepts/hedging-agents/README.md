@@ -52,7 +52,7 @@ $$
 
 When the collateral price increases (with respect to the asset stablecoins are pegged to), besides their margin (amount brought initially), HAs are entitled to get the capital gains they would have made if they had owned the collateral they hedged.
 
-If an HA brought 1 wETH and decided to back 1 wETH from the Core module, at a wETH price of 2000€, then:
+If an HA brought 1 wETH and decided to back 1 wETH at a wETH price of 2000€, then:
 
 $$
 x = 1, \space y=1

@@ -42,7 +42,7 @@ Angle Borrowing Module should be deployed in May 2022.
 {% endhint %}
 
 
-#### Governanve module
+#### Governance module
 
 Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
