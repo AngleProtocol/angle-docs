@@ -4,9 +4,9 @@
 
 - [Angle Documentation Portal](README.md)
 - [⚒ Developers](https://developers.angle.money)
-- [📖 Whitepapers](overview/whitepapers.md)
+- [📖 Whitepapers](whitepapers.md)
 - [📒 Glossary](global-glossary.md)
-- [🧑🎓 Guides](guides/README.md)
+- [🎓 Guides](guides/README.md)
   - [🚶 First Steps in Crypto](guides/newbie.md)
   - [🇪🇺 Get agEUR](guides/getAgEUR.md)
   - [📔 App Guides](guides/app-guides/README.md)
