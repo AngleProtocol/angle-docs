@@ -26,15 +26,31 @@ It can be used to issue stablecoins, called agTokens, that are pegged to a speci
 
 Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](new-module/).
 
+#### Core module
+Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg. These agents are users minting and burning the stablecoins, hedging agents covering the protocol collateral from price changes, and standard liquidity providers helping to over-collateralize the protocol. 
+
+Learn more in the [core module documentation](concepts/overview.md), and start using it at [app.angle.money](https://app.angle.money/). 
+
+#### Borrowing module
+
+Angle Borrowing module is based on a borrowing mechanism similar to Maker with DAI. Users deposit collateral tokens in the protocol, and can then borrow certain amounts of agTokens from these deposits. This allows them to keep exposure to their tokens deposited in the protocol, while benefitting from additional liquidity in borrowed agTokens. 
+
+Learn more in the new [borrowing module documentation](/new-module/README.md).
+
 {% hint style="info" %}
 Angle Borrowing Module should be deployed in May 2022.
 {% endhint %}
 
+
+#### Governance module
+
 Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
-### 🛣️ Roadmap
+## 🛣️ Roadmap
 
 Angle Protocol could be used to issue any stablecoin. and has started on mainnet with agEUR, a Euro stablecoin. Besides creating the first liquid and decentralized Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
+
+You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-220m-tvl-6475711f458b) from March 3rd 2022 to learn more.  
 
 ## ⭐ [Popularization](resources/popularization/)
 

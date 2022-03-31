@@ -63,4 +63,4 @@ In the event of a [liquidation](../liquidations.md), the protocol captures a fee
 
 ### Storing and distributing revenue
 
-All the revenue from this module is gathered in Treasury contracts. The funds are split between a reserve and the Governance according to a parameter that can be set by Governance. An `surplusManager` address can then receive the funds, to distribute them to veANGLE holders as interest later.
+All the revenue from this module is gathered in Treasury contracts. The funds are split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers are then in charge of pushing the surplus to a `surplusManager` address, that should distribute them to veANGLE holders as interest later.

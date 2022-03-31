@@ -1,10 +1,10 @@
 ---
-description: Learn more about other aspects of the protocol
+description: Learn more about other aspects of the Core module
 ---
 
 # 🔍 Other aspects
 
-In the following pages, we go into more details about specific aspects of Angle Protocol.
+In the following pages, we go into more details about specific aspects of Angle Core module.
 
 ## Keepers
 
@@ -13,10 +13,6 @@ In the following pages, we go into more details about specific aspects of Angle 
 ## Oracles
 
 {% page-ref page="oracles.md" %}
-
-## Staking
-
-{% page-ref page="staking.md" %}
 
 ## Collateral Ratio
 
