@@ -2,13 +2,13 @@
 description: veANGLE guide about how to vote on gauges rewards
 ---
 
-# Voting on gauges
+# Voting on Gauges
 
 One key feature of veANGLE is its voting power to influence the distribution of token emissions as rewards across pools.
 
-This happens by assigning weights of an address's voting power on the different gauges available. The process is explained in more details in the [gauges](../governance/veANGLE/gauges.md) page.
+This happens by assigning weights of an address's voting power on the different gauges available. The process is explained in more details in the [gauges](../../governance/veANGLE/gauges.md) page.
 
-![Gauges voting screen](../.gitbook/assets/gauges-screen.png)
+![Gauges voting screen](../../.gitbook/assets/gauges-screen.png)
 
 ## Allocating voting weights to gauges with veANGLE
 

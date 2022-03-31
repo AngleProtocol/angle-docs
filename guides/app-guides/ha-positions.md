@@ -2,13 +2,13 @@
 description: How to open, modify or close perpetual positions on Angle app
 ---
 
-# Opening & Managing Positions within Angle
+# Opening & Managing Positions
 
-Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long positions, betting that the USD will increase in value against the EUR. 
+Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long positions, betting that the USD will increase in value against the EUR.
 
-You can read more about this mechanism [here](/concepts/hedging-agents/README.md). 
+You can read more about this mechanism [here](../../concepts/hedging-agents/).
 
-![Perpetuals page](../.gitbook/assets/open-perpetuals-card.png)
+![Perpetuals page](../../.gitbook/assets/open-perpetuals-card.png)
 
 ## Opening a position
 
@@ -27,7 +27,7 @@ If this is the first time opening a position on this collateral/stablecoin pair,
 Be careful when opening a position, updating and closing is locked for an hour. More info [here](app-faq.md).
 {% endhint %}
 
-![Perpetuals page](../.gitbook/assets/opening-perpetual.png)
+![Perpetuals page](../../.gitbook/assets/opening-perpetual.png)
 
 ## Updating a position
 
@@ -49,10 +49,10 @@ If you have open positions, you might want to add or remove margin to some of th
 When opening or closing a position, there is an expert mode to protect for important slippage in price or fees.
 {% endhint %}
 
-![Closing Perpetual](../.gitbook/assets/closing-perpetual.png)
+![Closing Perpetual](../../.gitbook/assets/closing-perpetual.png)
 
 ## Claiming ANGLE rewards
 
 If you have an open position on Angle, it will automatically accrue ANGLE token rewards. You can see how much you can claim by clicking on the `Details` button at the bottom of the position, and claim your tokens by clicking on the `Claim` button as shown in the screenshot below.
 
-![HA ANGLE rewards](../.gitbook/assets/ha-angle-rewards.png)
+![HA ANGLE rewards](../../.gitbook/assets/ha-angle-rewards.png)
