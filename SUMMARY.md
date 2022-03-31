@@ -44,7 +44,7 @@
 - [🔭 Borrowing Module Overview](new-module/README.md)
 - [🏦 Vaults](new-module/vaults/README.md)
   - [💵 Fees and revenue](new-module/vaults/fees.md)
-  - [🎳 Liquidations](new-module/liquidations.md)
+  - [🎳 Liquidations](new-module/vaults/liquidations.md)
   - [🤝 Whitelisting and volatile assets](new-module/vaults/whitelisting-and-volatile-assets.md)
   - [🛩 Token Reactors](new-module/vaults/token-reactor.md)
 - [⚡️ Flash Loans](new-module/flash-loans.md)

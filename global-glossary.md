@@ -6,7 +6,7 @@ description: A list of words and terms relating to the Angle Protocol
 
 Here, you will find a list of the terms and expressions that are used across the protocol.
 
-If you still have some questions, do not hesitate to reach out on the [Angle Discord](https://discord.gg/67WSSZqBG6) 🕹️.
+If you still have some questions, do not hesitate to reach out on the [Angle Discord](https://discord.gg/67WSSZqBG6) 📐.
 
 | Term                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
