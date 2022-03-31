@@ -42,7 +42,7 @@ $$
 \texttt{PnL} = y\cdot (1-\frac{\texttt{initial oracle price}}{\texttt{current oracle price}})
 $$
 
-Since HAs bring collateral to the Core module, we define their **leverage** as:
+Since HAs bring collateral to the protocol, we define their **leverage** as:
 
 $$
 \texttt{leverage} = \frac{x+y}{x} = \frac{\texttt{margin + amount committed}}{\texttt{margin}}
@@ -80,7 +80,7 @@ $$
 \texttt{cash out amount} = 1 + 1 \cdot (1-2) = 0
 $$
 
-At this point, the HA is liquidated and their collateral goes to the Core module. They cannot claim anything.
+At this point, the HA is liquidated and their collateral goes to the protocol. They cannot claim anything.
 
 In general, the cash out amount of a HA can go to zero if the price drops to:
 
@@ -114,7 +114,7 @@ $$
 
 When HAs enter Angle Core module, they specify a position size denominated in collateral, representing an amount of the collateral reserves they are hedging. Yet from a contracts perspective, when HAs come in, they insure a fixed amount of stablecoins.
 
-This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a contract perspective, each HA insures the Core module for a fixed amount of stablecoins. This is what the accounting of the Core module keeps track of when determining when to let new HAs come in or not.
+This quantity remains constant and only depends on variables fixed upon HAs entry. So while HAs only see that they back an amount of collateral from users, from a smart contract perspective, each HA insures the Core module for a fixed amount of stablecoins. This is what the accounting of the Core module keeps track of when determining when to let new HAs come in or not.
 
 The total amount hedged by HAs for a given collateral/stablecoin pair is hence the sum of the product between the amount committed by HAs and their entry price: it is a measure of how much stablecoins issued are backed and insured.
 

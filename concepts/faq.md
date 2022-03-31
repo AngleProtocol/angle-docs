@@ -6,23 +6,23 @@ description: The go-to source for all frequently asked questions about Angle Cor
 
 ## What is Angle Core module?
 
-Angle Core module is an efficient, over-collateralized, and liquid decentralized stablecoin protocol. It could be used to issue virtually any type of stablecoins. 
+Angle Core module is an efficient, over-collateralized, and liquid decentralized stablecoin protocol. It could be used to issue virtually any type of stablecoins.
 
 ## How does Angle Core module work?
 
 1. Angle Core module enables people to swap their collateral against stablecoins at oracle value. Anyone can come with an accepted collateral (like wETH), and swap it to get a corresponding amount of stablecoins. It is also possible to swap Angle's stablecoins for an accepted collateral type of the system. For a EUR stablecoin collateralized by wBTC and wETH, with 1 wETH worth 1000€ you can get 1000 agEUR. If 1 wBTC is worth 10000€, with 1000 agEUR, you can get either 1 wETH or 0.1 wBTC.
-2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the Core module needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the Core module against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral (like 0.5 wETH) and choose to cover this 1 wETH (hence getting a 3x leverage). This means that they get the capital gains or have to pay for the loss they would have realized if they had owned this 1 wETH from the beginning.
+2. To be able to always swap collateral against stablecoins and stablecoins against collateral, the Core module needs to remain over-collateralized regardless of the variations of the price of the collateral: it does so by issuing perpetual futures, which are leveraging contracts. People can come to Angle, bring some collateral and choose the amount of collateral from stable seekers they want to cover: they then get leveraged with the multiplier of their choice and at the same time they insure the protocol against the volatility of its collateral. If there is 1 wETH that was brought to get stablecoins by stable seekers, someone can come to Angle, bring collateral (like 0.5 wETH) and choose to cover this 1 wETH (hence getting a 3x leverage). This means that they get the capital gains or have to pay for the loss they would have realized if they had owned this 1 wETH from the beginning.
 3. Angle Core module can hence be seen a marketplace between stability and volatility: stable seekers get direct stability and people who want leverage and volatility get the volatility of the collateral brought by stable seekers. Yet, there may not always be a full demand for the offer in volatility taking the form of the perpetual futures. Angle Core module needs a buffer of collateral to account for that. Therefore, it enables people to come deposit collateral and serve as this buffer: these liquidity providers automatically accumulate interest on the collateral they deposited.
 
 ## Have smart contracts been audited?
 
-Yes, Angle Core module smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core).
+Yes, Angle Core module smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core). They can also be accessed in the [Audits section](../resources/audits/) of this docs.
 
 ## What collateral are accepted by Angle Core module?
 
 Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
 
-## How is Angle's Core module different from other stablecoins protocols?
+## How is Angle's Core module different from other stablecoin protocols?
 
 * Angle Core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
 * Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the Core module is still bank run resistant.
@@ -55,9 +55,14 @@ The code of the smart contracts is open source and has been be formally verified
 
 ## Is there any risk specific to the Core module?
 
-As well as the global risks detailed [here](../global-faq.md#is-there-any-risk), the Core module relies on hedging agents covering its reserves, and SLPs over-collateralizing it. If the Core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time. 
-
+As well as the global risks detailed [here](../global-faq.md#is-there-any-risk), the Core module relies on hedging agents covering its reserves, and SLPs over-collateralizing it. If the Core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time.
 
 ## Additional information and resources about the Core module
 
-[Core module overview](/concepts/overview.md)
+* [Blog](https://blog.angle.money)
+* [Developers Doc](https://developers.angle.money)
+* [Core module overview](overview.md)
+
+{% hint style="info" %}
+💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
+{% endhint %}

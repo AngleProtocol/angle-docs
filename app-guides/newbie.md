@@ -2,7 +2,7 @@
 description: A guide for new crypto users
 ---
 
-# First Steps in Crypto
+# 🚶 First Steps in Crypto
 
 ## 🔐 Wallet & seed phrase
 

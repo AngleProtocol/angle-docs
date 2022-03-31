@@ -22,19 +22,17 @@ The main feature of vaults is the ability to **borrow** Angle stablecoins. A vau
 
 Once they have an open vault, users can borrow agTokens at a fee, repay their agTokens debt, and add or remove collateral from it.
 
-They also have to monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](/new-module/vaults/liquidations.md).
+They also have to monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](liquidations.md).
 
 ![Angle Vaults](../../.gitbook/assets/Vault.png)
 
 #### Capital-efficient debt repayment
-Another important feature  of Angle Vaults is that users can repay their debt in without any capital requirement. At some point, users should want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users would get back the remaining collateral after the debt has been fully paid back.
+
+Another important feature of Angle Vaults is that users can repay their debt in without any capital requirement. At some point, users should want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users would get back the remaining collateral after the debt has been fully paid back.
 
 Borrowing stablecoins is a very useful feature for users wanting to spend funds or profit from stablecoins yield, while keeping exposure to their original token.
 
 ![Capital Efficient Debt Repayment](../../.gitbook/assets/Debt-repayment.png)
-
-
-
 
 ### Leveraging collateral exposure
 
@@ -93,22 +91,18 @@ This increases the health ratio of the first vault, as it has less debt, and dec
 
 To make sure the protocol doesn't accumulate bad debt, the protocol needs to enforce a minimum amount of agEUR to be borrowed. This is required to make sure that each position has enough debt so that it's always worth to liquidate it.
 
-It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](/new-module/vaults/liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
+It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
 
 ### Keepers & oracle
 
 #### Keepers
 
-Angle borrowing module only relies on two types of keepers: liquidators, which erase risky positions and are key to the health of the system, and keepers to push the surplus stored in the module Treasury to the protocol. 
+Angle borrowing module only relies on two types of keepers: liquidators, which erase risky positions and are key to the health of the system, and keepers to push the surplus stored in the module Treasury to the protocol.
 
-#### Oracle 
+#### Oracle
 
 Angle borrowing module uses Chainlink price feeds, and may sometimes also rely on on-chain data. For the case of WStETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of WStETH.
 
 ## Next
 
-The next sections will dive in more details into some aspects of the vaults, such as [fees](/new-module/vaults/fees.md), [liquidations](/new-module/vaults/liquidations.md), the [whitelisting](/new-module/vaults/whitelisting-and-volatile-assets.md) of specific addresses, and [token reactors](/new-module/vaults/token-reactor.md). 
-
-
-
-
+The next sections will dive in more details into some aspects of the vaults, such as [fees](fees.md), [liquidations](liquidations.md), the [whitelisting](whitelisting-and-volatile-assets.md) of specific addresses, and [token reactors](../../angle-borrowing-module/token-reactor.md).

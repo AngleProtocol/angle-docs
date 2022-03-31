@@ -2,7 +2,7 @@
 description: A list of words and terms relating to the Angle Protocol
 ---
 
-# Glossary
+# 📒 Glossary
 
 Here, you will find a list of the terms and expressions that are used across the protocol.
 

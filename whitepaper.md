@@ -12,7 +12,7 @@ If there is anything unclear or out of date or feel like you have feedback on th
 
 ## Angle Core Module
 
-The whitepaper contains a detailed and technical description of Angle's Core Module.
+The whitepaper contains a detailed and technical description of Angle's Core module.
 
 {% file src=".gitbook/assets/angle-wp (1).pdf" %}
 Angle Whitepaper
@@ -24,11 +24,9 @@ The whitepaper is a static document explaining the concept and inspiration for t
 
 ## Angle Borrowing Module
 
-The following is a whitepaper for the upcoming Angle Borrowing Module. This module has not been voted yet by governance. It is however being developed by Angle Core Team and should be ready for production for the month of May.
+The following is a whitepaper for the upcoming Angle Borrowing module. This module has not been voted yet by governance. It is however being developed by Angle Core Team and should be ready for production for the month of May.
 
-{% file src=".gitbook/assets/AngleBorrowingModuleWhitepaper.pdf" %}
-Angle Borrowing Module Whitepaper
-{% endfile %}
+{% file src=".gitbook/assets/AngleBorrowWhitepaper (1).pdf" %}
 
 ## Translations
 

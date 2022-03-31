@@ -8,7 +8,7 @@ description: Angle Borrowing Module Overview
 
 Angle Borrowing Module goal is to help **expand the Angle Protocol** through another minting mechanism for Angle stablecoins. It is based on a **debt mechanism**, similar to those used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 
-The main advanatages of Angle Borrow module are:
+The main advantages of Angle Borrowing module are:
 
 * No need for hedging agents to cover the protocol
 * Easier to add new collaterals
@@ -20,16 +20,21 @@ These advantages help **further expand Angle and its agTokens**, both in terms o
 
 ### 🏦 Vaults
 
-**Borrowing agTokens from collateral deposit**
-With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allow them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
+**Borrowing agTokens from collateral deposit:** With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allow them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
 
-**Leveraging collateral exposure**
-Users can also leverage their collateral token exposure through vaults, to get reasonable on-chain leverage up to x4 depending on the parameters. 
+**Capital-efficient interactions:** Borrowing stablecoins from deposited collateral, liquidating a vault, repaying a debt and getting collateral back: all of this can be done in just one transaction and without any capital commitment thanks to the protocol built-in swap features.
 
-**Variable liquidations amounts**
-Angle vaults liquidations have been reworked to allow for variable liquidations, letting users keep a maximum amount of collateral in their vaults when getting liquidated. 
+**Leveraging collateral exposure:** Users can also leverage their collateral token exposure through vaults, to get on-chain leverage up to x10 depending on the parameters set by governance.
 
-More about vaults [here](/new-module/vaults/README.md).
+**Optimized liquidations amounts:** Angle vaults liquidations have been reworked to allow for variable liquidations, letting users keep a maximum amount of collateral in their vaults when getting liquidated. This ensures that liquidators get just what they need and not a too important discount which protects borrowers.
+
+**Improved position management:** Users can easily transfer their debt from one position to another without having to actually transfer collateral between these positions.
+
+**Self repaying loans:** Any yield-bearing token could be accepted as a collateral. **** Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral.
+
+{% hint style="info" %}
+[This section](vaults/) presents in greater details vaults in Angle Borrowing Module.
+{% endhint %}
 
 ### 🛩 Token Reactors
 
@@ -37,7 +42,7 @@ More about vaults [here](/new-module/vaults/README.md).
 
 Angle Borrowing module also introduces Token Reactors. They allow users or DAOs to deposit volatile tokens in specific vaults to earn yield on their deposits. This is made possible by minting agTokens that are invested directly in pre-defined strategies earning yield while maintaining a healthy collateral ratio.
 
-More about tokens reactors [here](vaults/token-reactor.md).
+More about tokens reactors [here](../angle-borrowing-module/token-reactor.md).
 
 ### ⚡️ Flash-loans
 
