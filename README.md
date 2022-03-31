@@ -11,7 +11,7 @@ Welcome to the Angle Protocol Documentation Portal! It contains essential info a
 So grab a coffee ☕ and enjoy the read!
 
 {% hint style="success" %}
-Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) �, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
+Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 🕹️, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
 {% endhint %}
 
 {% hint style="info" %}
@@ -58,7 +58,7 @@ You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-2
 
 If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
-## � [Discord](https://discord.gg/3vaHCJw7Mz)
+## 🕹️ [Discord](https://discord.gg/3vaHCJw7Mz)
 
 Angle is currently being developed by its Core Team and community. Any help and initiative is more than welcome!
 
