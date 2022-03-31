@@ -23,8 +23,8 @@ The Angle Protocol is currently available to anyone on the Ethereum mainnet. To 
 
 This sections contains user guides for all of these apps:
 
-{% content-ref url="../overview/guides/app-guides/" %}
-[app-guides](../overview/guides/app-guides/)
+{% content-ref url="app-guides/" %}
+[app-guides](app-guides/)
 {% endcontent-ref %}
 
 {% content-ref url="veangle-guides/" %}
