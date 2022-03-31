@@ -6,10 +6,10 @@ description: Getting stablecoins from collateral and conversely
 
 ## 🔎 TL;DR
 
-* Users of Angle Core module can mint stablecoins at oracle value by giving collateral to the Core module.
-* They can always burn their stablecoins and get collateral in exchange at oracle value too.
-* The experience for users is that of a swap except for the fact that there is no slippage on the price at which transactions are executed.
-* They pay small transaction fees (potentially around 0.3%) when they mint and when they burn.
+- Users of Angle Core module can mint stablecoins at oracle value by giving collateral to the Core module.
+- They can always burn their stablecoins and get collateral in exchange at oracle value too.
+- The experience for users is that of a swap except for the fact that there is no slippage on the price at which transactions are executed.
+- They pay small transaction fees (potentially around 0.3%) when they mint and when they burn.
 
 ## 🗺️ Principle
 
@@ -59,11 +59,11 @@ Transaction fees are taken from users minting and burning. While this is a way t
 
 The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
 
-* Minting: The concept is that the higher the coverage ratio, the more the Core module is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
+- Minting: The concept is that the higher the coverage ratio, the more the Core module is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
 
 ![](../../.gitbook/assets/mintingfees.jpg)
 
-* Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the Core module is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
+- Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the Core module is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
 
 ![](../../.gitbook/assets/burningfees.jpg)
 
@@ -86,5 +86,3 @@ Mint and burn transactions are always executed at oracle value, meaning that the
 However, too big transactions may affect the transaction fees structure (because they can move the coverage ratio and hence the coverage curve), and face different transaction fees than other smaller transactions would have at the same oracle price.
 
 Given that oracle values may change between the time at which users submit their transactions and the time at which they are executed, the Core module has a form of slippage protection for users that allow them in a mint/burn transaction to specify the minimum amount of stablecoins/collateral they are ready to get from the transaction.
-
-![](<../../.gitbook/assets/emoji-user (3) (1) (1) (1).png>)

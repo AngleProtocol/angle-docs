@@ -20,13 +20,13 @@ A DAO or a company could have a significant amount of a specific token. With thi
 
 Let's look at a few examples:
 
-Let's say that a company has ETH in reserves, and want to provide liquidity in the agEUR/USDC Uniswap V3 pool. In this case, we could imagine a specific vault type that could only use the borrowed funds to provide liquidity to the UniV3 agEUR/USDC pool with a pre-defined ratio. In this case, this vault could benefit from a higher collateral factor or a lower stability fee for example.
+Let's say that a company has ETH in reserves, and wants to provide liquidity in the agEUR/USDC Uniswap V3 pool. In this case, we could imagine a specific vault type that could only use the borrowed funds to provide liquidity to the UniV3 agEUR/USDC pool with a pre-defined ratio. In this case, this vault could benefit from a higher collateral factor or a lower stability fee for example.
 
 We can also imagine the case of a DAO with governance tokens reserves. In this case, the DAO might want to benefit from the use of a stablecoin for its operations, or to invest it in pre-defined strategies. In this case, the protocol would be able to build a tailored vault, that would allow to borrow agEUR from this governance token, but at a lower collateral factor.
 
 ## Token Reactors
 
-Expanding on this idea, Angle Borrow module could also be used to create Tokens Reactors. Read more in the page below :point\_down:
+Expanding on this idea, Angle Borrow module could also be used to create Tokens Reactors. Read more in the page below 👇:
 
 {% content-ref url="../../angle-borrowing-module/token-reactor.md" %}
 [token-reactor.md](../../angle-borrowing-module/token-reactor.md)

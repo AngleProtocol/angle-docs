@@ -12,7 +12,7 @@ Angle 是一种资本高率、超额抵押且无限流动性的去中心化稳�
 
 欢迎大家来到 Angle 协议文档门户！它包含项目的基本信息和主要链接，以了解 Angle 协议的基础知识。让我一起喝杯咖啡 ☕，开始我们的阅读之旅吧！
 
-🍹 随我一起加入 Angle 社区[Discord](https://discord.gg/67WSSZqBG6) 🕹️ 讨论吧，我们的社区期待帮助您能使用 Angle 协议，并给我们提出宝贵的建议！
+🍹 随我一起加入 Angle 社区[Discord](https://discord.gg/67WSSZqBG6) 📐 讨论吧，我们的社区期待帮助您能使用 Angle 协议，并给我们提出宝贵的建议！
 
 📅 目前 Angle 协议尚未上线。协议的审计工作已经完成（09/2021），我们希望在 11 月初启动我们的主网 🍁。
 
@@ -46,7 +46,7 @@ Angle 协议是作为以太坊区块链之上的一组**智能合约**来实现�
 
 如果您对任何特定术语又疑惑，欢迎随时查阅该词汇表。
 
-### [🕹️Discord](https://discord.com/invite/3vaHCJw7Mz)
+### [📐Discord](https://discord.com/invite/3vaHCJw7Mz)
 
 Angle 协议目前正在由其核心团队和社区进行开发，欢迎大家提供给任何有帮助的建议！
 

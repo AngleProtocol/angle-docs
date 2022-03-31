@@ -10,11 +10,15 @@ Angle Borrowing Module goal is to help **expand the Angle Protocol** through ano
 
 The main advantages of Angle Borrowing module are:
 
-* No need for hedging agents to cover the protocol
-* Easier to add new collaterals
-* Users can keep exposure to their collateral tokens while using agEUR
+- No need for hedging agents to cover the protocol
+- Easier to add new collaterals
+- Users can keep exposure to their collateral tokens while using agEUR
 
 These advantages help **further expand Angle and its agTokens**, both in terms of the stablecoins issued, their volume, and the chains and networks where they can be issued & redeemed. It has been designed to work hand in hand with the current one, and strenghten the Angle Protocol. AgTokens, like agEUR, are fully interoperable between both modules.
+
+{% hint style="info" %}
+Angle Borrowing Module has not yet been deployed and will soon be open-sourced. It should be live by the end of May 2022.
+{% endhint %}
 
 ## Main Features
 
@@ -30,7 +34,7 @@ These advantages help **further expand Angle and its agTokens**, both in terms o
 
 **Improved position management:** Users can easily transfer their debt from one position to another without having to actually transfer collateral between these positions.
 
-**Self repaying loans:** Any yield-bearing token could be accepted as a collateral. **** Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral.
+**Self repaying loans:** Any yield-bearing token could be accepted as a collateral. Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral.
 
 {% hint style="info" %}
 [This section](vaults/) presents in greater details vaults in Angle Borrowing Module.
@@ -38,7 +42,7 @@ These advantages help **further expand Angle and its agTokens**, both in terms o
 
 ### 🛩 Token Reactors
 
-**Earning native yield on top of volatile tokens**
+#### Earning native yield on top of volatile tokens
 
 Angle Borrowing module also introduces Token Reactors. They allow users or DAOs to deposit volatile tokens in specific vaults to earn yield on their deposits. This is made possible by minting agTokens that are invested directly in pre-defined strategies earning yield while maintaining a healthy collateral ratio.
 

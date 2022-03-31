@@ -58,6 +58,6 @@ Super ANGLE (or ANGLEx): 0xDD5D06b0B271EA239531694D0e337bbD78B85B4A
 Quickswap agEUR/USDC pool: 0x82A54e66c05FCd555ADAE593848a4257C9e51AD9
 Super tokens 是在 Superfluid 机制里所封装（wrap）的代币，以赋予它完成一些特别功能，它与一般的 ERC 20 代币并不同。
 
-## 想了解更多？加入我们的社群吧！🕹️
+## 想了解更多？加入我们的社群吧！📐
 
 [Twitter](https://twitter.com/AngleProtocol) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)

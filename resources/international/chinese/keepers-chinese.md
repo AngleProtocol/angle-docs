@@ -155,6 +155,6 @@ Keepers 是一个比较困难去理解的概念，但它不至于到非常复杂
 
 关于 functions (2),(3),(4)的奖励还没完全设定完毕，因此这些 functions 目前为团队代为执行。虽然如此，我们欢迎任何用户来执行这些 function，我们计划在未来的几个月内调整这些奖励。
 
-### 想了解更多？加入我们的社群吧！🕹️
+### 想了解更多？加入我们的社群吧！📐
 
 [Twitter](https://twitter.com/AngleProtocol) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)

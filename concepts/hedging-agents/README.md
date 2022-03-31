@@ -6,11 +6,11 @@ description: Insuring the Core module against collateral volatility.
 
 ## 🔎 TL;DR
 
-* Hedging Agents (HAs) open perpetual futures from the Core module: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
-* They are here to insure the Core module against the volatility of the collateral brought by users. With enough demand for HAs, Angle Core module could resist collateral price drops of up to 99%.
-* HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
-* They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
-* Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
+- Hedging Agents (HAs) open perpetual futures from the Core module: they can get leveraged in one transaction on the evolution of the price of a collateral with a multiplier of their choice.
+- They are here to insure the Core module against the volatility of the collateral brought by users. With enough demand for HAs, Angle Core module could resist collateral price drops of up to 99%.
+- HAs can make significant gains in case of price increase but also substantial losses when collateral price decreases.
+- They pay small transaction fees (potentially around 0.3%) when they open their position and when they close it.
+- Contrary to centralized exchanges, they do not have to pay funding rates for holding their positions.
 
 ## 🗺 Principle
 
@@ -171,5 +171,3 @@ If a HA had an initial margin of 1 wETH and a position size of 2 wETH, then with
 ### Fees To Add or Remove Margin
 
 When HAs open a perpetual, they have the opportunity to add or remove to their margin thus decreasing or increasing their leverage. As entry and exit fees depend only on the position size (or committed amount) of HAs, and these add/remove operations do not modify it, no fees are paid for such operations.
-
-![](<../../.gitbook/assets/emoji-ha (1) (6) (1) (1) (1) (9).png>)

@@ -24,14 +24,14 @@ Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
 
 ## How is Angle's Core module different from other stablecoin protocols?
 
-* Angle Core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
-* Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the Core module is still bank run resistant.
-* Because of the swaps between stablecoins and collateral allowed by the Core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
+- Angle Core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
+- Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the Core module is still bank run resistant.
+- Because of the swaps between stablecoins and collateral allowed by the Core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
 ## Besides stablecoins, what are Angle Core module other advantages?
 
-* Angle Core module can be used to get direct leverage on collateral. As a Hedging Agent in Angle Core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
-* Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle Core module, you get part of the transaction fees induced by users interacting with it, and part of the lending returns obtained by lending the reserves. If there is 150 in the Core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
+- Angle Core module can be used to get direct leverage on collateral. As a Hedging Agent in Angle Core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
+- Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle Core module, you get part of the transaction fees induced by users interacting with it, and part of the lending returns obtained by lending the reserves. If there is 150 in the Core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
 
 ## How can I use the Core module app?
 
@@ -59,10 +59,10 @@ As well as the global risks detailed [here](../global-faq.md#is-there-any-risk),
 
 ## Additional information and resources about the Core module
 
-* [Blog](https://blog.angle.money)
-* [Developers Doc](https://developers.angle.money)
-* [Core module overview](overview.md)
+- [Blog](https://blog.angle.money)
+- [Developers Doc](https://developers.angle.money)
+- [Core module overview](overview.md)
 
 {% hint style="info" %}
-💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 🕹️! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
+💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 📐! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
 {% endhint %}

@@ -11,7 +11,7 @@ Welcome to the Angle Protocol Documentation Portal! It contains essential info a
 So grab a coffee ☕ and enjoy the read!
 
 {% hint style="success" %}
-Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 🕹️, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
+Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) �, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
 {% endhint %}
 
 {% hint style="info" %}
@@ -26,13 +26,13 @@ It can be used to issue stablecoins, called agTokens, that are pegged to a speci
 
 Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](concepts/overview.md) that was released in November 2021, and the new [Angle Borrowing module](new-module/).
 
-#### Core module
+### Core module
 
 Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg. These agents are users minting and burning the stablecoins, hedging agents covering the protocol collateral from price changes, and standard liquidity providers helping to over-collateralize the protocol.
 
 Learn more in the [core module documentation](concepts/overview.md), and start using it at [app.angle.money](https://app.angle.money).
 
-#### Borrowing module
+### Borrowing module
 
 Angle Borrowing module is based on a borrowing mechanism similar to Maker with DAI. Users deposit collateral tokens in the protocol, and can then borrow certain amounts of agTokens from these deposits. This allows them to keep exposure to their tokens deposited in the protocol, while benefitting from additional liquidity in borrowed agTokens.
 
@@ -44,7 +44,7 @@ Learn more in the new [borrowing module documentation](new-module/).
 Angle Borrowing Module should be deployed in May 2022.
 {% endhint %}
 
-#### Governance module
+### Governance module
 
 Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
@@ -58,7 +58,7 @@ You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-2
 
 If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
-## 🕹️ [Discord](https://discord.gg/3vaHCJw7Mz)
+## � [Discord](https://discord.gg/3vaHCJw7Mz)
 
 Angle is currently being developed by its Core Team and community. Any help and initiative is more than welcome!
 
@@ -76,14 +76,14 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 
 ## Other Resources
 
-* 📡 [Website](https://angle.money)
-* 🐦 [Twitter](https://twitter.com/AngleProtocol)
-* 🌳 [Medium/Blog](https://blog.angle.money)
-* 💻 [Github](https://github.com/AngleProtocol)
-* 📀 [App](https://app.angle.money)
-* 🗂️ [Analytics](https://analytics.angle.money/#/home)
-* 🗳️ [DAO App](https://dao.angle.money/#/)
-* 💬 [Governance Forum](https://gov.angle.money)
+- 📡 [Website](https://angle.money)
+- 🐦 [Twitter](https://twitter.com/AngleProtocol)
+- 🌳 [Medium/Blog](https://blog.angle.money)
+- 💻 [Github](https://github.com/AngleProtocol)
+- 📀 [App](https://app.angle.money)
+- 🗂️ [Analytics](https://analytics.angle.money/#/home)
+- 🗳️ [DAO App](https://dao.angle.money/#/)
+- 💬 [Governance Forum](https://gov.angle.money)
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
@@ -96,4 +96,4 @@ In order for your translation to appear on this doc, you need to:
 1. Make sure that your translation has been reviewed by members of your local community on Angle Discord. We will not accept any translation that has not been checked by other community members.
 2. Submit a pull request to the `angle-docs` repository and respect the formatting and conventions already in place for the `russian` section of the docs.
 
-![Join Angle Playground!](.gitbook/assets/angle\_multi\_back.jpg)
+![Join Angle Playground!](.gitbook/assets/angle_multi_back.jpg)
