@@ -47,6 +47,7 @@
   * [🎳 Liquidations](borrowing-module/vaults/liquidations.md)
   * [🤝 Whitelisting and volatile assets](borrowing-module/vaults/whitelisting-and-volatile-assets.md)
   * [🛩 Token Reactors](borrowing-module/vaults/token-reactor.md)
+  * [🗡 Vaults Settlement](/borrowing-module/vaults/settlement.md)
 * [⚡️ Flash Loans](borrowing-module/flash-loans.md)
 * [📚 Glossary](borrowing-module/glossary.md)
 
