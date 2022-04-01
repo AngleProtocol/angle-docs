@@ -4,7 +4,7 @@ description: Settlement - Stopping all operations for a specific vault type
 
 # Vault Settlement
 
-As in the Core module, the Borrowing module has a settlement mechanism to stop unsustainable vault types and pay back users. Its goal is to ensure that agTokens issued through this module are **always backed by collateral**. 
+As in the Core module, the Borrowing module has a settlement mechanism to stop unsustainable vault types and pay back users. Its goal is to ensure that agTokens issued through this module are **always backed by collateral**. It does so by letting users swap their tokens against collateral at oracle value. 
 
 ## Idea
 The vault settlement should be used only in extreme cases, for example when vaults from a specific [`VaultManager`](/borrowing-module/glossary.md) contract start to be under-collateralized and liquidator stop liquidating unhealthy positions. 
