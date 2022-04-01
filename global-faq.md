@@ -8,7 +8,7 @@ description: The go-to source for all frequently asked questions about Angle Pro
 
 Angle Protocol is a scalable, efficient, and over-collateralized stablecoin protocol. It could be used to issue virtually any type of stablecoins. The protocol is launching a Euro stablecoin, the agEUR, followed by other stablecoins in the near future, like or agCHF or agJPY.
 
-Angle relies on two modules to issue stablecoins: the [Angle Core module](/concepts/overview.md), and the new [Angle Borrowing module](/new-module/README.md).
+Angle relies on two modules to issue stablecoins: the [Angle Core module](/core-module/overview.md), and the new [Angle Borrowing module](/borrowing-module/README.md).
 
 ## Have smart contracts been audited?
 
@@ -20,7 +20,7 @@ Angle Borrowing module smart contracts will be audited and the audits will be sh
 
 Angle Protocol can be used to issue virtually any type of stablecoins, provided that there is an oracle for it. The intial goal is to create Forex stablecoins with sufficient liquidity. To this extent, we want to focus on only a few different stablecoins at first, beginning with a EUR-pegged one.
 
-Today, agEUR can be minted from USD stablecoins. We are currently focused on developing the market for agEUR and expanding the protocol, before venturing into other stablecoins. One of these developments is the upcoming [Borrowing module](/new-module/README.md).
+Today, agEUR can be minted from USD stablecoins. We are currently focused on developing the market for agEUR and expanding the protocol, before venturing into other stablecoins. One of these developments is the upcoming [Borrowing module](/borrowing-module/README.md).
 
 ## When will new stablecoins be launched?
 
