@@ -39,16 +39,34 @@ It was preferred to get inspiration from Yearn rather than using Yearn directly 
 
 ## 💹 Debt Ratio
 
-For each strategy associated to a collateral, it is possible to compute a debt ratio that corresponds to the ratio between what has been lent and the total amount of collateral in the pool \(what's kept in reserves + what has been lent across all strategies\). Each strategy has its target debt ratio. Below this debt ratio, keepers can call the `harvest` function to give more collateral to the strategy and above this debt ratio, collateral can be withdrawn from the strategy and hence from the corresponding lending platforms.
+For each strategy associated to a collateral, it is possible to compute a debt ratio that corresponds to the ratio between what has been lent and the total amount of collateral in the pool (what's kept in reserves + what has been lent across all strategies). Each strategy has its target debt ratio. Below this debt ratio, keepers can call the `harvest` function to give more collateral to the strategy and above this debt ratio, collateral can be withdrawn from the strategy and hence from the corresponding lending platforms.
 
 {% hint style="info" %}
 Keepers cannot choose the amount they lend or withdraw from lending platforms: this is automatically computed using the strategy's target debt ratio at each call to `harvest.`
 {% endhint %}
 
-## ✖️ Back To The Multiplier Effect For SLPs
+## ✖️ Multiplier Effect For SLPs
 
 Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital. More info in the SLP page below.
 
 {% content-ref url="standard-liquidity-providers/README.md" %}
 [standard-liquidity-providers/README.md](standard-liquidity-providers/README.md#%E2%9C%96-multiplier-effect)
 {% endcontent-ref %}
+
+## 🤓 Strategies details
+
+### Base strategy
+
+The first strategies used in the Angle Core module have been forked from Yearn. They compare Aave and Compound markets, and deposit funds in both protocols in order to maximize the global yield. 
+
+### Folding strategies
+
+Angle Core module now also relies on more advanced types of strategies that use **folding**. The idea behind folding is to lend capital, borrow from it and then re-supply the borrowed assets in order to profit from governance tokens rewards which can offset the borrowing cost. 
+
+Usually, folding strategies in DeFi simply target a specific leverage for which teams are confident enough, and know they can make an additional profit. However this does not guarantee a profit in all cases, can be sub-optimal, and most of all requires human intervention and monitoring.
+
+**Angle folding strategy automatically compute the optimal quantity of assets to borrow and re-supply on-chain to maximize its yield.**
+
+This makes it both more efficient that other folding strategies, and a clear improvement compared to the base strategy. 
+
+Folding has been implemented in a strategy lending USDC on Aave. You can follow the current state of strategies for the different collaterals at [analytics.angle.money](https://analytics.angle.money/#/USDC/EUR).  
