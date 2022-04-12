@@ -2,13 +2,13 @@
 description: Fees and Revenue in Angle Borrowing Module
 ---
 
-# 💵 Fees and Revenue
+# 💵 Fees and revenue
 
 ## 🔎 TL;DR
 
-- Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stanlecoins, from liquidations and possibly from flash-loans
-- If some vaults are liquidated too late, the protocol could also accrue a bad debt
-- Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
+* Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stanlecoins, from liquidations and possibly from flash-loans
+* If some vaults are liquidated too late, the protocol could also accrue a bad debt
+* Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
 
 ## Fees
 
@@ -16,16 +16,16 @@ description: Fees and Revenue in Angle Borrowing Module
 
 At the top level, two types of fees can be charged to users borrowing agTokens:
 
-- A minting fee
-- A stability fee
+* A minting fee
+* A stability fee
 
 Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
 
 Collecting these fees creates revenue for the protocol, which serves multiple purposes:
 
-- Accumulating reserves for riskier assets in case positions get under-collateralized
-- Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
-- Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
+* Accumulating reserves for riskier assets in case positions get under-collateralized
+* Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
+* Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
 ### Minting Fee
 
@@ -55,7 +55,7 @@ It's important to keep in mind that this fee can be changed by governance, and c
 
 ### Liquidation Surcharge
 
-In the event of a [liquidation](../liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
+In the event of a [liquidation](../../new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
 
 ### Putting this all together
 

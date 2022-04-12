@@ -6,7 +6,7 @@
 * [⚒ Developers](https://developers.angle.money)
 * [📖 Whitepapers](whitepapers.md)
 * [📒 Glossary](global-glossary.md)
-* [🧑🎓 Guides](guides/README.md)
+* [🎓 Guides](guides/README.md)
   * [🚶 First Steps in Crypto](guides/newbie.md)
   * [🇪🇺 Get agEUR](guides/getAgEUR.md)
   * [📔 App Guides](guides/app-guides/README.md)
@@ -47,7 +47,7 @@
   * [🎳 Liquidations](borrowing-module/vaults/liquidations.md)
   * [🤝 Whitelisting and volatile assets](borrowing-module/vaults/whitelisting-and-volatile-assets.md)
   * [🛩 Token Reactors](borrowing-module/vaults/token-reactor.md)
-  * [🗡 Vaults Settlement](/borrowing-module/vaults/settlement.md)
+  * [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
 * [⚡️ Flash Loans](borrowing-module/flash-loans.md)
 * [📚 Glossary](borrowing-module/glossary.md)
 

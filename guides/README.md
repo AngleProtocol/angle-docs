@@ -2,7 +2,7 @@
 description: Angle Protocol Guides
 ---
 
-# 🧑🎓 Guides
+# 🎓 Guides
 
 This section contains all guides to interact with the Angle Protocol.
 

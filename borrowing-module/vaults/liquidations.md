@@ -4,15 +4,15 @@ description: Liquidations in Angle Borrowing Module
 
 # 🎳 Liquidations
 
-To make sure collateral is always backing agTokens issued, Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. This is determined by two similar parameters, the [collateral factor](glossary.md) or the [health factor](glossary.md).
+To make sure collateral is always backing agTokens issued, Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. This is determined by two similar parameters, the [collateral factor](../../new-module/vaults/glossary.md) or the [health factor](../../new-module/vaults/glossary.md).
 
 As we will see in the [Variable liquidations amount](liquidations.md#variable-liquidations-amount), liquidations in Angle Borrowing module have been designed to be as much borrower friendly as possble.
 
 ## 🔎 TL;DR
 
-- Vaults with a health factor below one risk getting liquidated
-- Liquidated vaults can lose part or all their collateral
-- Angle has special liquidations features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a discount booster for veANGLE holders which makes the overall Borrowing module more borrower friendly
+* Vaults with a health factor below one risk getting liquidated
+* Liquidated vaults can lose part or all their collateral
+* Angle has special liquidations features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a discount booster for veANGLE holders which makes the overall Borrowing module more borrower friendly
 
 ## How liquidations work
 
@@ -36,7 +36,7 @@ This means that users will either lose their collateral completely, but won't ha
 
 From a liquidator perspective, there is **no capital requirement when liquidating Angle Vaults**. Liquidator receive the collateral of the vault first, before having to repay the collateral.
 
-![Vault before liquidation](../../.gitbook/assets/Vault%20before%20a%20liquidation.png)
+![Vault before liquidation](<../../.gitbook/assets/Vault before a liquidation.png>)
 
 ## Details about liquidations within Angle
 
@@ -48,7 +48,7 @@ This is a way for the protocol to grow reserves especially from collaterals that
 
 ### Variable Liquidations Amount
 
-In Angle Borrow module, **the amount of debt to repay during a liquidation is dynamic** and computed such that after the liquidation, the liquidated vault ends up in a level of “health” defined by a target parameter: the [target health factor](glossary.md). This is determined by the following equation:
+In Angle Borrow module, **the amount of debt to repay during a liquidation is dynamic** and computed such that after the liquidation, the liquidated vault ends up in a level of “health” defined by a target parameter: the [target health factor](../../new-module/vaults/glossary.md). This is determined by the following equation:
 
 $$
 HF_{post}(x_{max}) = \frac{(c - \frac{x}{1-e})\times CF }{d-x(1-s)} = \texttt{Target Health Factor}
@@ -56,13 +56,13 @@ $$
 
 With:
 
-- `x` as the amount of stablecoin debt to repay
-- `c` as the collateral's value in stablecoin
-- `d` as the amount of stablecoin debt of the vault
-- `e` as the liquidation discount
-- `s` as the liquidation surcharge
+* `x` as the amount of stablecoin debt to repay
+* `c` as the collateral's value in stablecoin
+* `d` as the amount of stablecoin debt of the vault
+* `e` as the liquidation discount
+* `s` as the liquidation surcharge
 
-In some conditions, the variables at liquidation are such that $HF_{post}(x_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
+In some conditions, the variables at liquidation are such that $HF\_{post}(x\_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
 
 In practice, full liquidations should be extremely occasional and most vaults should get less than 50% of their position liquidated. This allows them to keep as much collateral in their vault as possible, and makes this system much more borrower friendly than existing alternatives.
 
@@ -114,12 +114,12 @@ $$
 
 Let's say that the protocol has the following parameters for a given :
 
-- `CF` = 2/3, as the collateral factor
-- `c` = 120, as the collateral value expressed in stablecoin
-- `d` = 90, as the debt value or stablecoins borrowed
-- `s` = 2%, as the liquidation surcharge
-- `e` = 10%, as the liquidation discount
-- `x`, as the amount of stablecoins repaid by the liquidator
+* `CF` = 2/3, as the collateral factor
+* `c` = 120, as the collateral value expressed in stablecoin
+* `d` = 90, as the debt value or stablecoins borrowed
+* `s` = 2%, as the liquidation surcharge
+* `e` = 10%, as the liquidation discount
+* `x`, as the amount of stablecoins repaid by the liquidator
 
 At this point, the vault has a Health Factor of:
 
@@ -133,7 +133,7 @@ $$
 HF_{post}(x) = \frac{c_{post}\times CF }{d_{post}} = \frac{(c - \frac{x}{1-e})\times CF }{d-x(1-s)} = \texttt{target health factor}
 $$
 
-Let's say that the Target Health Factor is equal to 1.25, such that we get an amount to repay `x = 67` after solving the equation $$ HF_{post}(x) = \texttt{Target Health Factor}$$. We can decompose each component of the vault, and we get:
+Let's say that the Target Health Factor is equal to 1.25, such that we get an amount to repay `x = 67` after solving the equation $$HF_{post}(x) = \texttt{Target Health Factor}$$. We can decompose each component of the vault, and we get:
 
 $$
 c_{post} = 120 - \frac{67}{1-0.10} ≈ 120 - 74,5 ≈ 45,5
@@ -143,11 +143,11 @@ $$
 d_{post} = 90 - 67(1-0.02) = 90 - 66 = 24
 $$
 
-In this example, the liquidator repays 67 of stablecoin, and gets back ~74,5 of collateral.
+In this example, the liquidator repays 67 of stablecoin, and gets back \~74,5 of collateral.
 
-![Vault before liquidation](../../.gitbook/assets/Vault%20before%20a%20liquidation.png)
+![Vault before liquidation](<../../.gitbook/assets/Vault before a liquidation.png>)
 
-![Angle vault after liquidation](../../.gitbook/assets/Vault%20post%20liquidation.png)
+![Angle vault after liquidation](<../../.gitbook/assets/Vault post liquidation.png>)
 
 ## Developers doc
 

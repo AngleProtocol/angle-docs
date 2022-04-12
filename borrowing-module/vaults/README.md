@@ -10,11 +10,11 @@ The core mechanism of this module relies on a vault system. Users can deposit co
 
 Angle Borrowing module vault-based system lets you:
 
-- Borrow agTokens from tokens deposited as collateral in the protocol
-- Leverage collateral exposure in one transaction
-- Transfer your debt between vaults to avoid liquidation
-- Perform different actions on your vault in a single transaction and in a capital-efficient manner
-- Take self-repaying loans
+* Borrow agTokens from tokens deposited as collateral in the protocol
+* Leverage collateral exposure in one transaction
+* Transfer your debt between vaults to avoid liquidation
+* Perform different actions on your vault in a single transaction and in a capital-efficient manner
+* Take self-repaying loans
 
 ## Main features
 
@@ -66,14 +66,14 @@ Governance could vote to accept any collateral that can easily be liquidated on 
 
 Vaults are defined by a specific set of information:
 
-- A collateral token that is deposited
-- A debt token that is borrowed (the stablecoin)
-- And a set of parameters:
-  - [Collateral factor](../../glossary.md)
-  - [Minting fee](../fees.md#minting-fee)
-  - [Stability fee](../fees.md#stability-fee)
-  - [Liquidation surcharge](../fees.md#liquidation-surcharge)
-  - [Dust amount](./#dust-amount)
+* A collateral token that is deposited
+* A debt token that is borrowed (the stablecoin)
+* And a set of parameters:
+  * [Collateral factor](../../glossary.md)
+  * [Minting fee](../../new-module/fees.md#minting-fee)
+  * [Stability fee](../../new-module/fees.md#stability-fee)
+  * [Liquidation surcharge](../../new-module/fees.md#liquidation-surcharge)
+  * [Dust amount](./#dust-amount)
 
 ### Collateral Ratio
 
