@@ -22,8 +22,6 @@ Borrowed stablecoins are fully backed by the borrowers' deposits in the lending 
 
 ## Angle AMOs on lending markets
 
-As you can see, AMOs can be a great way to help expand agTokens. Doing these operations on robust and battle-tested lending markets also ensures that the stablecoins ending up in the open market are backed by collateral. 
-
 Angle governance already approved two proposals to perform these operations and mint 1M agEUR to deposit on [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3) (Polygon) and [Euler](https://app.euler.finance/market/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8) (mainnet). 
 
 You can find the two governance votes on Snapshot: 
