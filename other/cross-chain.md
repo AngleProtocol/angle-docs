@@ -2,7 +2,7 @@
 description: Use Angle Protocol tokens on different chains!
 ---
 
-# ⛓ Cross-Chain Angle and agEUR
+# ⛓ Cross-Chain ANGLE and agEUR
 
 Angle Protocol is deployed on Ethereum mainnet, but its corresponding tokens and stablecoins are meant to be bridged on other layers and sidechains.
 

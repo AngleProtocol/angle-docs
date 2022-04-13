@@ -47,7 +47,7 @@
   * [🎳 Liquidations](borrowing-module/vaults/liquidations.md)
   * [🤝 Whitelisting and volatile assets](borrowing-module/vaults/whitelisting-and-volatile-assets.md)
   * [🛩 Token Reactors](borrowing-module/vaults/token-reactor.md)
-  * [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
+  * [🗡 Vaults Settlement](/borrowing-module/vaults/settlement.md)
 * [⚡️ Flash Loans](borrowing-module/flash-loans.md)
 * [📚 Glossary](borrowing-module/glossary.md)
 
@@ -64,9 +64,10 @@
   * [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 * [💂 Angle Guardian](governance/guardian.md)
 
-## L2/Sidechains
+## Other
 
-* [⛓ Cross-Chain ANGLE and agEUR](sidechains/README.md)
+* [⛓ Cross-Chain ANGLE and agEUR](/other/cross-chain.md)
+* [⚙️ Angle AMOs](/other/amo.md)
 
 ## Resources
 
