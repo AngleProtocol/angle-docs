@@ -69,10 +69,10 @@ Vaults are defined by a specific set of information:
 * A collateral token that is deposited
 * A debt token that is borrowed (the stablecoin)
 * And a set of parameters:
-  * [Collateral factor](../../glossary.md)
-  * [Minting fee](../../new-module/fees.md#minting-fee)
-  * [Stability fee](../../new-module/fees.md#stability-fee)
-  * [Liquidation surcharge](../../new-module/fees.md#liquidation-surcharge)
+  * [Collateral factor](../../global-glossary.md)
+  * [Minting fee](fees.md#minting-fee)
+  * [Stability fee](fees.md#stability-fee)
+  * [Liquidation surcharge](fees.md#liquidation-surcharge)
   * [Dust amount](./#dust-amount)
 
 ### Collateral Ratio
