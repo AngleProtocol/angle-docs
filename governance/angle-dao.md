@@ -45,6 +45,19 @@ Finalized votes are then implemented by a [multi-sig](https://etherscan.io/addre
 A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for.
 {% endhint %}
 
+### The Multi-Sig
+Angle Governance is represented by a 4-of-6 Gnosis multi-sig, whose role is to enforce votes from veANGLE holders. Once a vote has passed on Snapshot, the multi-sig executes it in a separate transaction, making it resistant to on-chain governance attacks. 
+
+It is composed of 6 person, three team members and three "public" crypto person, and requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are: 
+- Pablo Veyrat: [@pablo_veyrat](https://twitter.com/pablo_veyrat)
+- Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
+- Picodes: [@thePicodes](https://twitter.com/thePicodes)
+- Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
+- Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
+- [0xMaki](https://twitter.com/0xMaki)
+
+Multi-sig address: [0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8)
+
 #### Delegating voting power
 
 Not all veANGLE holders feel the need to get involved in governance and vote on every proposal. While this is to be expected, it is better for the protocol that voting power remains in the hands of people interested, concerned, and involved in the future of the protocol. To that end, users have the possibility to **delegate** their voting power to other community members.
