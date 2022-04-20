@@ -69,7 +69,7 @@ Vaults are defined by a specific set of information:
 * A collateral token that is deposited
 * A debt token that is borrowed (the stablecoin)
 * And a set of parameters:
-  * [Collateral factor](../../global-glossary.md)
+  * [Collateral factor](../glossary.md)
   * [Minting fee](fees.md#minting-fee)
   * [Stability fee](fees.md#stability-fee)
   * [Liquidation surcharge](fees.md#liquidation-surcharge)
