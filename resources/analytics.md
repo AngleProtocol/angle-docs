@@ -4,15 +4,17 @@ description: List of different analytics sources about Angle
 
 # 📊 Angle analytics 
 
-Getting insights about a protocol can be very challenging without a dedicated and up-to-date analytics. This is why we built one from the start with most of the important information users could need about Angle. 
+Angle has a dedicated official analytics, to provide users with the most important information needed about the protocol. 
 
-## Main protocol analytics
+## Official Angle Analytics
 
-The official Angle analytics is available at [analytics.angle.money](https://analytics.angle.money/). General data about the protocol, and specific information about governance, each smart contract modules, and the different stablecoins can be found there. 
+The official Angle analytics is available at [analytics.angle.money](https://analytics.angle.money/). General data about the protocol, specific information about governance, smart contract modules, and the different stablecoins can be found there. 
 
-## Community Dune dashboards
+## Angle community Dune dashboards
 
-Some community members have also built dedicated Dune dashboards: 
+Amazing community members have also built dedicated Dune dashboards about Angle! You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information. 
+
+Here are the dashboards created by the community: 
 - [Angle Dashboard](https://dune.com/SebVentures/Angle-Dashboard) from SebVentures, with general information about the protocol. 
 - [veANGLE](https://dune.com/tuta/veANGLE-data) from tuta, with specific information about veANGLE. 
 - [Angle Gauges Votes](https://dune.com/tuta/Angle-Gauges-Votes) from tuta, with specific information about votes on Angle gauges and ANGLE distribution. 
