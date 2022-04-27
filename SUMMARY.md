@@ -74,6 +74,7 @@
 * [🔐 Audits](resources/audits/README.md)
 * [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 * [🖥 Code & Smart Contracts](resources/code/README.md)
+* [📊 Angle Analytics](/resources/analytics.md)
 * [🖼 Branding](resources/branding/README.md)
 * [⭐ Popularization](resources/popularization/README.md)
 * [🌎 International](resources/international/README.md)
