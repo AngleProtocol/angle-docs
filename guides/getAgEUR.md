@@ -57,7 +57,7 @@ Swapping agEUR back to another token on Angle is a similar process than buying a
 ![Burning agEUR](../.gitbook/assets/burn-agEUR-DAI.png)
 
 {% hint style="info" %}
-If you use a token not supported as collateral in the protocol, it will be swappged against one of the supported collateral to mint the desired agTokens. 
+Tokens can be swappged against one of the supported collateral to mint the desired agTokens if the source token is not supported as collateral in Angle, or if it is cheaper to do so. 
 {% endhint %}
 
 
