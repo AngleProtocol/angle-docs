@@ -48,6 +48,7 @@ $$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
 - USDC: 0.625%
 - FEI: 0.625%
 - FRAX: 0.625%
+- ETH: 6.25%
 
 **Margin Ratio Formula**
 In Angle, the margin ratio is computed as:

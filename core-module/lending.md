@@ -72,5 +72,10 @@ This makes it both more efficient that other folding strategies, and a clear imp
 As of April 2022, a single folding strategy for USDC on Aave has been implemented.
 
 {% hint style="info" %}
-The state of the strategies used for different collateral types can be tracked on [Angle Analytics](https://analytics.angle.money).
+The state of the strategies used for different collateral types can be tracked on the [Angle Analytics](https://analytics.angle.money).
 {% endhint %}
+
+### stETH strategy
+
+The strategy used for ETH is the StETHAcc strategy from Yearn. It compares rates for stETH between Lido and the Curve stETH/ETH pool, and earn the stETH native yield. More complex ETH strategies will be developed in the future. The contract can be found [here](https://github.com/AngleProtocol/angle-core/blob/main/contracts/strategies/StrategyStETHAcc.sol).
+

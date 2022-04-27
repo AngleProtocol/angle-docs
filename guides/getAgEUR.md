@@ -39,7 +39,7 @@ To interact with Angle protocol, you will need to send an approval transaction o
 1. Go to [app.angle.money](https://app.angle.money/#/user/mint).
 2. Make sure that you have ETH to pay for gas fees, as well as one of the tokens accepted as collateral.
 3. Select the collateral you want to send, and the stablecoin you want to mint/receive.
-   - Supported collaterals: DAI, USDC, FEI, FRAX
+   - Supported collaterals: ETH, DAI, USDC, FEI, FRAX
    - Available agTokens: agEUR
 4. Approve your collateral.
 5. Mint your stablecoins against your tokens.

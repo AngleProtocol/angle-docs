@@ -24,7 +24,7 @@ The protocol distributes interest in the form of tokens native to Angle, beginni
 
 In practice, the redistribution of interest to veANGLE token holder is currently at 50%. Here is how it is happening:
 
-* 50% of all interest generated are converted to USDC. For instance, interest accumulated under the form of FEI, FRAX and DAI are swapped to USDC.
+* 50% of all interest generated are converted to USDC. For instance, interest accumulated under the form of FEI, FRAX, DAI, and ETH are swapped to USDC.
 * The USDC are deposited into the protocol against sanUSDC\_EUR.
 * The sanUSDC\_EUR are then redeemable by veANGLE holders according to the distribution detailed below.
 

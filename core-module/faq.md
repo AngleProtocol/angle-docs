@@ -20,7 +20,7 @@ Yes, Angle Core module smart contracts have been audited by Chainsecurity and Si
 
 ## What collateral are accepted by Angle Core module?
 
-Currently, USDC, DAI, FRAX, and FEI can be used to mint agEUR.
+Currently, USDC, DAI, FRAX, FEI, and ETH/wETH can be used to mint agEUR.
 
 ## How is Angle's Core module different from other stablecoin protocols?
 
