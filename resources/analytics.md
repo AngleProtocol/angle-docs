@@ -4,11 +4,11 @@ description: List of different analytics sources about Angle
 
 # 📊 Angle analytics 
 
-Angle has a dedicated official analytics, to provide users with the most important information needed about the protocol. 
+Angle has a dedicated analytics providing users with the most important information about the protocol. Additionally, community members have built useful Dune dashboards to see specific aspects. 
 
-## Official Angle Analytics
+## Angle Protocol Analytics
 
-The official Angle analytics is available at [analytics.angle.money](https://analytics.angle.money/). General data about the protocol, specific information about governance, smart contract modules, and the different stablecoins can be found there. 
+Angle analytics is available at [analytics.angle.money](https://analytics.angle.money/). General data about the protocol, specific information about governance, smart contract modules, and the different stablecoins can be found there. 
 
 ## Angle community Dune dashboards
 
