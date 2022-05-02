@@ -63,13 +63,13 @@ For a given stablecoin-collateral pair, it is the sum of the product between the
 
 This amount is updated whenever a HA position is opened, closed, or liquidated.
 
-This amount should always remain inferior to the target amount HAs should hedge \(as specified [above](faq-ha.md#how-is-the-collateral-to-cover-by-has-computed)\). Above this amount hedged, HAs are no longer allowed to open perpetual positions. Additionally, if HAs hedge significantly more than the target hedge amount, then keepers can force-close some positions.
+This amount should always remain inferior to the target amount HAs should hedge (as specified [above](faq-ha.md#how-is-the-collateral-to-cover-by-has-computed)). Above this amount hedged, HAs are no longer allowed to open perpetual positions. Additionally, if HAs hedge significantly more than the target hedge amount, then keepers can force-close some positions.
 
 ## What is exactly implied by hedging ratio?
 
 The hedging ratio refers to the portion of the amount to hedge by Hedging Agents that is actually hedged.
 
-If one user mints 2000 agEUR for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agEUR is 1800 agEUR of wETH. If one HA enters when wETH is worth 1000 EUR, brings 2 wETH and decides to commit to the variation of 0.8 wETH \(this HA has a leverage of x1.4\), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
+If one user mints 2000 agEUR for 1 wETH, and the target hedging ratio is set to 90%, then the amount HAs should hedge for agEUR is 1800 agEUR of wETH. If one HA enters when wETH is worth 1000 EUR, brings 2 wETH and decides to commit to the variation of 0.8 wETH (this HA has a leverage of x1.4), then 800 out of the 1800 wETH in stablecoin value are hedged: the hedging ratio is 44.44%.
 
 ## What happens if there are too many HAs with respect to the amount to hedge from the Core module?
 

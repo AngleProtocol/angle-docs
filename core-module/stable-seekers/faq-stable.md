@@ -16,7 +16,7 @@ First, agEUR is backed by the collateral that was used to mint it. Then, if this
 
 Angle Core module can be used as a decentralized exchange where there is no slippage for swapping.
 
-For example, if Angle's agEUR is backed by wETH and wBTC (at the moment Angle is only backed by USDC, DAI, FEI and FRAX), a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agEUR, and then use these agEUR to redeem wBTC.
+For example, if Angle's agEUR is backed by wETH and USDC, a user wishing to swap wETH against wBTC with no slippage can choose to come to Angle, swap wETH against agEUR, and then use these agEUR to redeem wBTC.
 
 ## What happens if I want a collateral that is not present in sufficient quantity against my agEUR?
 
