@@ -13,7 +13,7 @@ If you are new to crypto, follow our [guide for new crypto users](./newbie.md). 
 
 There are multiple ways to buy agEUR:
 
-1. With your tokens directly from the [Angle App](https://app.angle.money/)
+1. With your tokens directly from the [Angle App](https://app.angle.money/) or on a DEX ([Uniswap](https://app.uniswap.org), [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR), ...)
 2. With your credit card or bank transfer by using one of our **on-ramp partners**
 
 ## Buying agEUR from Angle
@@ -31,13 +31,15 @@ To interact with Angle, you will need to approve (transaction) or give permissio
 Then, make sure you have ETH to pay for gas fees, as well as one of the accepted tokens, and follow these steps:
 1. Go to [app.angle.money](https://app.angle.money/#/user/mint).
 2. Select the token you want to spend, and the stablecoin you want to receive.
-   - Supported tokens: ETH, DAI, USDC, FEI, FRAX, WBTC, AAVE
+   - Supported collaterals*: ETH, DAI, USDC, FEI, FRAX
    - Available agTokens: agEUR
 3. Enter the amount of tokens you want to exchange. 
 4. Approve your tokens.
 5. Buy stablecoins against your tokens.
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
+
+**any token can be used. They will be swapped to one of the native collaterals.*
 
 ![Minting agEUR](../.gitbook/assets/mint-usdc-agEUR.png)
 
@@ -64,7 +66,7 @@ Tokens can be swappged against one of the supported collateral to mint the desir
 ## Buying agEUR with credit card or bank transfer
 
 **List of partners:**
-- [Mt. Pelerin](https://www.mtpelerin.com/): **buy and sell** agEUR by card or bank transfer
+- [Mt Pelerin](https://www.mtpelerin.com/): **buy and sell** agEUR by card or bank transfer
 - [Transak](https://transak.com/): **buy** agEUR by card or transfer
 - [Wert.io](https://widget.wert.io/01FPZ4G1VMZ67MGC83NADPB0F8/redirect/?commodity=agEUR&commodities=agEUR,agEUR%3Aethereum): **buy** agEUR by card or transfer
 
@@ -74,13 +76,13 @@ Angle is working with on-ramp partners to provide users the opportunity to buy a
 
 If you are not familiar with Ethereum, you can create a wallet with [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io). Once you have an address to send tokens to, you can go through one of these partners and look for agEUR in the list of available tokens. 
 
-AgEUR can then be bought by paying through credit card or bank transfer. You can choose to receive it on the Ethereum or Polygon network. Note that fees might be high for low amounts due to Ethereum transaction costs. 
+agEUR can then be bought by paying through credit card or bank transfer. You can choose to receive it on the Ethereum or Polygon network. Note that fees might be high for low amounts due to Ethereum transaction costs. 
 
 Once received, you can use agEUR to buy other tokens or earn yield on lending markets. 
 
 ### From wallet to bank
 
-If you want to send your agEUR from your wallet as EUR in your bank account, you can do so by using [Mt Pelerin](https://www.mtpelerin.com/). The swiss based company allow user to send cryptocurrency and receive the equivalent directly in their bank account. 
+If you want to send your agEUR from your wallet as EUR in your bank account, you can do so by using [Mt Pelerin](https://www.mtpelerin.com/). The Swiss based company allow user to send cryptocurrency and receive the equivalent directly in their bank account. 
 
 {% hint style="info" %}
 All these partners will ask users to enter personal information above a certain amount. 

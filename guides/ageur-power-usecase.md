@@ -2,9 +2,11 @@
 
 ![Untitled](/.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
 
-Thanks to its powerful partners and integrations, agEUR can now be used to pay and create invoices, and agEUR can be easily transferred to your home bank account. All of this from almost anywhere in the world, on Ethereum or Polygon!
+Thanks to its powerful partners and integrations, agEUR can be used to pay and create invoices, and agEUR can be easily transferred to your home bank account. All of this from almost anywhere in the world, on Ethereum or Polygon!
 
-This can be very useful on two sides: 1) for companies or DAOs wanting to pay their contributors in crypto, and 2) for contributors happy to be paid in crypto but who still need fiat in a bank account for their everyday lives. For example, some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate. This is all possible with agEUR today: anyone can start invoicing and getting paid in agEUR, and transfer them directly to EUR in their bank account!
+This can be very useful on two sides: 1) for companies or DAOs wanting to pay their contributors in crypto, and 2) for contributors happy to be paid in crypto but who still need fiat in a bank account for their everyday lives. 
+
+For example, some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate. This is all possible with agEUR: anyone can invoice and get paid in agEUR, and transfer them directly to EUR in their bank account!
 
 Here, we try to show how companies, DAOs, and their contributors can leverage agEUR and Angle’s partners  Request, Mt Pelerin, and Superfluid to do so quickly and in a compliant way. 
 
@@ -26,17 +28,17 @@ The invoice will look like that 👇
 
 ### Crypto Company / DAO side: pay contributor with agEUR from any token
 
-On the crypto company side, once they received the invoice they can just send the required amount of agEUR to the specified address. If they don’t own agEUR yet, they can go through Angle’s app at [app.angle.money](http://app.angle.money), and add the invoicer address as recipient. Then, they can select **any token they hold**, and use the expert mode to make sure the minimum amount received is that of the invoice.
+On the company side, once they receive the invoice they can just send the required amount of agEUR to the specified address. If they don’t own agEUR yet, they can go through Angle’s app at [app.angle.money](http://app.angle.money), and add the invoicer address as recipient. Then, they can select **any token they hold**, and use the expert mode to make sure the minimum amount received is that of the invoice.
 
 ![Angle agEUR from any token](/.gitbook/assets/angle-token-to-ageur.png)
 
-**In one on-chain transaction, a company / DAO is able to pay their contributors with any token, almost instantly, and at very low fees.** 
+**In one on-chain transaction, any company or DAO can pay their contributors with any token, almost instantly, and at very low fees.** 
 
 ## Withdrawing the agEUR received to a bank account with Mt Pelerin
 
 - [Mt Pelerin](https://www.mtpelerin.com/sell-crypto)
 
-Now that the contributors have received their payment from the DAO / company, they can simply withdraw the agEUR from their wallet to EUR in their bank account in one on-chain transaction by using Mt Pelerin. Above a certain amount, users will need to go through a classic KYC process on Mt Pelerin’s mobile application. 
+After the contributors have received their payment from the DAO / company, they can simply withdraw the agEUR from their wallet to EUR in their bank account in one on-chain transaction by using Mt Pelerin. Above a certain amount, users will need to go through a classic KYC process on Mt Pelerin’s mobile application. 
 
 After they are all setup, people will be able to send their cryptos back to their bank account quickly and easily, at the cost and speed of one on-chain transaction. Obviously, users can also keep their agEUR and invest in the different yield opportunities available. 
 
@@ -56,7 +58,7 @@ That should be enough to help many companies and DAOs to pay their contributors,
 
 ## 💸 Go further by streaming those payments with Superfluid 💸
 
-Superfluid allows user to **stream tokens on Polygon and xDAI**. Thanks to Angle’s agEUR integration, users can receive their payments not as a one-time transaction, but through **a payment stream** using Superfluid. This will allow them to get paid continuously, and not just once at the end of each month. 
+Superfluid allows user to **stream tokens on Polygon and xDAI**. Thanks to Angle’s agEUR integration, users can receive their payments not as a one-time transactions, but through **a payment streams** using Superfluid. This allows them to get paid continuously, and not just once at the end of each month. 
 
 To do so, the payer will have to wrap their agEUR into agEURx. Once they want to withdraw the received agEURx, they can just unwrap them, and use Mt Pelerin to send EUR back to their bank account, or find a good yield opportunity on Polygon. 
 
