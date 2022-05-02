@@ -50,7 +50,7 @@ You now have agEUR, a stablecoin that mirrors the value of the EUR!
 If you want to exchange your agEUR back to another token, you have a few options:
 
 - Swap them against another token directly on [Angle](https://app.angle.money/#/user/burn) or a decentralized exchange like [Uniswap](https://app.uniswap.org). 
-- Send money back directly to your bank account through our off-ramp parner Mt. Pelerin. 
+- Send money back directly to your bank account through our off-ramp parner Mt Pelerin. 
 
 Swapping agEUR back to another token on Angle is a similar process than buying agEUR.
 
