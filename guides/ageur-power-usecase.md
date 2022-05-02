@@ -16,7 +16,7 @@ Here, we try to show how companies, DAOs, and their contributors can leverage ag
 
 - [Request](https://app.request.finance/)
 
-Request lets users create and send custom invoices to their clients. Users can denominate their invoice in crypto or fiat, and ask to be paid in crypto or fiat. For example, a german or french resident working for an international DAO could label their invoice in EUR, but ask to be paid in agEUR. 
+Request lets users create and send custom invoices to their clients. Users can denominate their invoice in crypto or fiat, and ask to be paid in crypto or fiat. For example, a German or French resident working for an international DAO could label their invoice in EUR, but ask to be paid in agEUR. 
 
 To do that, the person creating the invoice has to specify the wallet address that they want to receive the funds on. 
 

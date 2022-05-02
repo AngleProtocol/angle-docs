@@ -73,7 +73,7 @@ As of April 2022, a single folding strategy for USDC on Aave has been implemente
 
 ### stETH strategy
 
-The strategy used for ETH is the StETHAcc strategy from Yearn. It buys stETH from Lido or Curve stETH/ETH pool depending on where it's cheaper, and then earns the stETH yield. stETH is exchanged to ETH when needed through the Curve pool.
+The strategy used for ETH is the StETHAcc strategy forked from Yearn [here](https://github.com/Grandthrax/yearn-steth-acc/blob/master/contracts/Strategy.sol). It buys stETH from Lido or Curve stETH/ETH pool depending on where it's cheaper, and then earns the stETH yield. stETH is exchanged to ETH when needed through the Curve pool.
 
 More complex ETH strategies will be developed in the future. The contract can be found [here](https://github.com/AngleProtocol/angle-core/blob/main/contracts/strategies/StrategyStETHAcc.sol).
 
