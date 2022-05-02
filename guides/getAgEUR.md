@@ -19,7 +19,7 @@ There are multiple ways to buy agEUR:
 
 Anyone with tokens in their wallet can use the [Angle App](https://app.angle.money) to get agEUR.
 
-The token can also be bought from multiple **decentralized exchanges** like Uniswap or DEX aggregators with deep liquidity. It is also available on multiple chains besides Ethereum (Solana, Fantom, Polygon).
+The token can also be bought from multiple **decentralized exchanges** like Uniswap or DEX aggregators. It is also available on multiple chains besides Ethereum like Solana, Fantom, Polygon with deep liquidity.
 
 ### Approving tokens
 
