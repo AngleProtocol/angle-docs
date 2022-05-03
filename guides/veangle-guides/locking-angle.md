@@ -38,7 +38,7 @@ Once the lock has been created, to extend the lock expiration or add tokens, jus
 
 ### Expired lock
 
-Once a lock is expired, users need to execute a transaction to get their ANGLE token back from the lock. There will be a `Withdraw ANGLE` button on the [DAO App veANGLE](https://dao.angle.money/#/veANGLE) page, allowing you to get back your previously locked ANGLE tokens. 
+Once a lock is expired, users need to execute a transaction to get their ANGLE token back from the lock. In this situation, there is a `Withdraw ANGLE` button on the [DAO App veANGLE](https://dao.angle.money/#/veANGLE) page, allowing you to get back your previously locked ANGLE tokens. 
 
 ## Claiming interest
 
