@@ -28,6 +28,6 @@ We can also imagine the case of a DAO with governance tokens reserves. In this c
 
 Expanding on this idea, Angle Borrow module could also be used to create Tokens Reactors. Read more in the page below 👇:
 
-{% content-ref url="../../angle-borrowing-module/token-reactor.md" %}
-[token-reactor.md](../../angle-borrowing-module/token-reactor.md)
+{% content-ref url="token-reactor.md" %}
+[token-reactor.md](token-reactor.md)
 {% endcontent-ref %}
