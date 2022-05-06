@@ -1,5 +1,5 @@
 ---
-description: agEUR is a payment currency!
+description: Using agEUR as a payment currency
 ---
 
 # 💸 Pay and get paid with agEUR

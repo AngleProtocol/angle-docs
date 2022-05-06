@@ -20,7 +20,9 @@ Another benefit is that it allows the protocol to earn a yield on these deposite
 Borrowed stablecoins are fully backed by the borrowers' deposits in the lending market. 
 {% endhint %}
 
-## Angle AMOs on lending markets
+## Angle current AMOs
+
+### Lending markets
 
 Angle governance already approved two proposals to perform these operations and mint 1M agEUR to deposit on [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3) (Polygon) and [Euler](https://app.euler.finance/market/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8) (mainnet). 
 
@@ -30,4 +32,8 @@ You can find the two governance votes on Snapshot:
 
 
 
+### Liquidity as a service
 
+Another opportunity with algorithmic market operations is to loan liquidity for a pre-determined amount of time to be deposited in a pool and returned with an interest rate. This mechanism, handled through Ondo smart contracts, is presented in [this](https://gov.angle.money/t/proposal-angle-ondo-liquidity-as-a-service-program/320) governance discussion.
+
+The first liquidity as a service operation has been approved with Paladin as detailed [here](https://gov.angle.money/t/liquidity-as-a-service-partnership-with-paladin/322), to provide 500,000 agEUR as liquidity to PAL through Ondo contracts. 

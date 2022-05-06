@@ -70,8 +70,9 @@ Vaults are defined by a specific set of information:
 * A debt token that is borrowed (the stablecoin)
 * And a set of parameters:
   * [Collateral factor](../glossary.md)
-  * [Minting fee](fees.md#minting-fee)
+  * [Mint fee](fees.md#minting-fee)
   * [Stability fee](fees.md#stability-fee)
+  * [Repay fee](fees.md#repaying-fee)
   * [Liquidation surcharge](fees.md#liquidation-surcharge)
   * [Dust amount](./#dust-amount)
 
@@ -110,6 +111,10 @@ Thanks to the isolation of positions, one could become under a risk of liquidati
 In this case, users are able to perform a debt transfer, meaning that they will transfer part of their debt from one of their vault to another, without actually transferring stablecoins. Debt transfer is only possible between vaults related to the same stablecoin, but can be done with vaults linked to different collateral types.
 
 A debt transfer operation increases the health ratio of the first vault, as it has less debt, and decreases that of the second. It allows users to rebalance their debt and collateral ratio between the different vaults they own in an efficient manner, as the transaction just involves an accounting operation.
+
+### Interacting with multiple vaults at the same time
+
+A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction by using a router. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another. 
 
 ### Dust Amount
 
