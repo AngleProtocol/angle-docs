@@ -111,6 +111,10 @@ In this case, users are able to perform a debt transfer, meaning that they will 
 
 A debt transfer operation increases the health ratio of the first vault, as it has less debt, and decreases that of the second. It allows users to rebalance their debt and collateral ratio between the different vaults they own in an efficient manner, as the transaction just involves an accounting operation.
 
+### Interacting with multiple vaults at the same time
+
+A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another. 
+
 ### Dust Amount
 
 To make sure the protocol doesn't accumulate bad debt, the protocol needs to enforce a minimum amount of agTokens to be borrowed. This is required to make sure that each position has enough debt so that it's always worth to liquidate it.
