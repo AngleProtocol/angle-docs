@@ -54,7 +54,7 @@ $$
 
 It's important to keep in mind that this fee can be changed by governance, and could also potentially be set to 0.
 
-### Repaying Fee
+### Repay Fee
 
 Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee. 
 
