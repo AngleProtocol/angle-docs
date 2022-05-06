@@ -113,7 +113,7 @@ A debt transfer operation increases the health ratio of the first vault, as it h
 
 ### Interacting with multiple vaults at the same time
 
-A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another. 
+A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction by using a router. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another. 
 
 ### Dust Amount
 
