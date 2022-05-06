@@ -22,7 +22,7 @@ agEUR is a supported asset on Gnosis Safe and the Angle App integrates with Gnos
 
 ## Getting agEUR in your treasury
 
-agEUR can be minted directly from Angle at app.angle.money, or bought from a DEX or DEX aggregator. If you are looking to buy an important amount of agEUR, the best place would be directly on Angle where there is no slippage. 
+agEUR can be minted directly from Angle at [app.angle.money](https://app.angle/money/), or bought from a DEX, a DEX aggregator, or from one of our [on-ramp partners](/guides/getAgEUR.md#buying-ageur-with-credit-card-or-bank-transfer). If you are looking to buy an important amount of agEUR, the best place would be directly on Angle where there is no slippage. 
 
 You can find more details in the [Get agEUR page](/guides/getAgEUR.md) of this documentation. 
 
