@@ -6,9 +6,9 @@ description: Fees and Revenue in Angle Borrowing Module
 
 ## 🔎 TL;DR
 
-* Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations and possibly from flash-loans
-* If some vaults are liquidated too late, the protocol could also accrue a bad debt
-* Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
+- Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations and possibly from flash-loans
+- If some vaults are liquidated too late, the protocol could also accrue a bad debt
+- Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
 
 ## Fees
 
@@ -16,17 +16,17 @@ description: Fees and Revenue in Angle Borrowing Module
 
 At the top level, three different fees can be charged to users borrowing agTokens:
 
-* A mint fee
-* A stability fee
-* A repaying fee
+- A mint fee
+- A stability fee
+- A repaying fee
 
 Note that some of these fees can be set to 0. Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
 
 Collecting these fees creates revenue for the protocol, which serves multiple purposes:
 
-* Accumulating reserves for riskier assets in case positions get under-collateralized
-* Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
-* Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
+- Accumulating reserves for riskier assets in case positions get under-collateralized
+- Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
+- Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
 ### Mint Fee
 
@@ -56,14 +56,13 @@ It's important to keep in mind that this fee can be changed by governance, and c
 
 ### Repay Fee
 
-Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee. 
+Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee.
 
-As for the mint fee, the repay fee could be set to 0.
+As for the mint fee, the repay fee should be set to 0 for all vaults.
 
 ### Liquidation Surcharge
 
 In the event of a [liquidation](../../new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
-
 
 ### Putting this all together
 

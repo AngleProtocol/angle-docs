@@ -70,7 +70,7 @@ For more insight on liquidations, check out [this page](./liquidations.md).
 
 Governance could vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset could be used, meaning users could take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral: Angle Borrowing module hence opens the way to self-repaying loans.
 
-## Additional details
+## Additional Features and Details
 
 Vaults are defined by a specific set of information:
 
@@ -122,7 +122,9 @@ A debt transfer operation increases the health ratio of the first vault, as it h
 
 ### Interacting with multiple vaults at the same time
 
-A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction by using a router. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another.
+Angle is one of the first protocols to implement a permit function on a NFT/ERC721 contract to grant or revoke approval to an address for all the vaults of a contract with a gasless permit signature.
+
+This allows users to interact with multiple vaults from different collaterals in just one transaction using a router contract. In this situation, by just granting approval with a signature to a router contract, they can for instance repay the debt from all their vaults at once, or perform multiple swap/wrapping transactions (e.g. from ETH to wstETH) before adding collateral to a vault.
 
 ### Dust Amount
 
