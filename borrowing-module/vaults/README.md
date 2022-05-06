@@ -10,11 +10,11 @@ The core mechanism of this module relies on a vault system. Users can deposit co
 
 Angle Borrowing module vault-based system lets you:
 
-* Borrow agTokens from tokens deposited as collateral in the protocol
-* Leverage collateral exposure in one transaction
-* Transfer your debt between vaults to avoid liquidation
-* Perform different actions on your vault in a single transaction and in a capital-efficient manner
-* Take self-repaying loans
+- Borrow agTokens from tokens deposited as collateral in the protocol
+- Leverage collateral exposure in one transaction
+- Transfer your debt between vaults to avoid liquidation
+- Perform different actions on your vault in a single transaction and in a capital-efficient manner
+- Take self-repaying loans
 
 ## Main features
 
@@ -22,11 +22,11 @@ Angle Borrowing module vault-based system lets you:
 
 The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as [**collateral**](../glossary.md) into a `VaultManager` contract. When doing so, they can choose to borrow a certain amount of agTokens against their collateral. The agTokens borrowed are minted and deposited into their wallets, for them to use however they want. For instance, one may want to borrow stablecoins to profit from stablecoins yield, while keeping exposure to their collateral.
 
-Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases too much, the health factor will go below 1 and the vault can get [**liquidated**](liquidations.md).
+Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
 
 ![Angle Vaults](../../.gitbook/assets/Vault.png)
 
-#### Composable actions
+### Composable actions
 
 With an opened vault, there are many different actions that can be performed beyond borrowing stablecoins: adding collateral, removing collateral from it, repaying the agToken debt. All these actions can be combined with one another in a single transaction.
 
@@ -58,23 +58,31 @@ When users deposit collateral to open a vault, they can choose the Leverage feat
 Leveraging collateral exposure is a very useful feature for users wanting to safely increase exposure to their collateral token on chain. It is however reserved to more advanced users as it increases liquidation risks.
 {% endhint %}
 
+### Optimized Liquidations
+
+Liquidations in this borrowing system are designed to protect borrowers, making sure they're less affected than what they would be in other protocols by such events. This is possible thanks to the special liquidation features introduced by Angle including variable liquidation amounts, dynamic discount for liquidators based on Dutch auctions.
+
+{% hint style="info" %}
+For more insight on liquidations, check out [this page](./liquidations.md).
+{% endhint %}
+
 ### Self-repaying loans
 
 Governance could vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset could be used, meaning users could take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral: Angle Borrowing module hence opens the way to self-repaying loans.
 
-## Additional details
+## Additional Features and Details
 
 Vaults are defined by a specific set of information:
 
-* A collateral token that is deposited
-* A debt token that is borrowed (the stablecoin)
-* And a set of parameters:
-  * [Collateral factor](../glossary.md)
-  * [Mint fee](fees.md#minting-fee)
-  * [Stability fee](fees.md#stability-fee)
-  * [Repay fee](fees.md#repaying-fee)
-  * [Liquidation surcharge](fees.md#liquidation-surcharge)
-  * [Dust amount](./#dust-amount)
+- A collateral token that is deposited
+- A debt token that is borrowed (the stablecoin)
+- And a set of parameters:
+  - [Collateral factor](../glossary.md)
+  - [Mint fee](fees.md#minting-fee)
+  - [Stability fee](fees.md#stability-fee)
+  - [Repay fee](fees.md#repaying-fee)
+  - [Liquidation surcharge](fees.md#liquidation-surcharge)
+  - [Dust amount](./#dust-amount)
 
 ### Collateral Ratio
 
@@ -86,7 +94,7 @@ $$
 
 The higher the collateral ratio, the "safer" the vault, as the price decline of the collateral needed to get liquidated and lose the collateral is much bigger.
 
-Additionnally, each vault type has its own **collateral factor** parameter. It dictates the minimum ratio between the value of stablecoins borrowed and the value of collateral deposited. If this ratio drops below the CF, the vault risk being liquidated.
+Additionnally, each vault type has its own **collateral factor** (CF) parameter. It dictates the minimum collateral ratio allowed for vaults of this type. If this ratio drops below this quantity defined by the CF (1/CF more precisely), the vault risks being liquidated.
 
 For example, if the CF of a vault type is at 2/3, or 150% of min collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 agEUR need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
 
@@ -98,7 +106,7 @@ There is one different smart contract per collateral type in Angle Borrowing mod
 
 For instance, we could imagine for the same agToken ETH as a collateral with a minimum collateral ratio of 150% and a 1% interest rate on borrows and ETH with a minimum collateral ratio of 120% and an interest rate of 3%.
 
-#### Isolated positions
+#### Isolated positions & NFTs
 
 Each `VaultManager` contract follows the standard of NFT contracts. As such, each vault position is represented by a NFT. This makes them isolated and transferrable. Additionally, this means that a position of an address in a vault is totally separated from a position of the same address in another vault, within the same `VaultManager` contract or within another contract.
 
@@ -114,7 +122,9 @@ A debt transfer operation increases the health ratio of the first vault, as it h
 
 ### Interacting with multiple vaults at the same time
 
-A permit function has been implemented in the vaults, allowing users to interact with multiple vaults from different collaterals in one transaction by using a router. For example, users could repay the debt from all their vaults at once, or borrow from one while repaying debt from another. 
+Angle is one of the first protocols to implement a permit function on a NFT/ERC721 contract to grant or revoke approval to an address for all the vaults of a contract with a gasless permit signature.
+
+This allows users to interact with multiple vaults from different collaterals in just one transaction using a router contract. In this situation, by just granting approval with a signature to a router contract, they can for instance repay the debt from all their vaults at once, or perform multiple swap/wrapping transactions (e.g. from ETH to wstETH) before adding collateral to a vault.
 
 ### Dust Amount
 

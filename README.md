@@ -24,7 +24,7 @@ Angle is a decentralized stablecoin protocol composed of smart contracts mostly 
 
 It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to. For example, the agEUR is the EUR-pegged stablecoin issued through Angle Protocol.
 
-Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](core-module/overview.md) that was released in November 2021, and the new [Angle Borrowing module](borrowing-module/README.md).
+Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](core-module/overview.md) that was released in November 2021, and the upcoming [Angle Borrowing module](borrowing-module/README.md).
 
 ### Core module
 
