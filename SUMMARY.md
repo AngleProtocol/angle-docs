@@ -2,27 +2,6 @@
 
 ## Overview
 
-<<<<<<< HEAD
-* [Angle Documentation Portal](README.md)
-* [⚒ Developers](https://developers.angle.money)
-* [📖 Whitepapers](whitepapers.md)
-* [📒 Glossary](global-glossary.md)
-* [🎓 Guides](guides/README.md)
-  * [🚶 First Steps in Crypto](guides/newbie.md)
-  * [🇪🇺 Get agEUR](guides/getAgEUR.md)
-  * [💸 Pay and get paid with agEUR](guides/ageur-power-usecase.md)
-  * [🏦 agEUR as a treasury asset](guides/ageur-power-usecase.md)
-  * [📔 App Guides](guides/app-guides/README.md)
-    * [Opening & Managing Positions](guides/app-guides/ha-positions.md)
-    * [Deposit Tokens for Yield](guides/app-guides/slp-pools.md)
-    * [App FAQ](guides/app-guides/app-faq.md)
-    * [Formulas](guides/app-guides/formulas.md)
-  * [📗 DAO App Guides](guides/veangle-guides/README.md)
-    * [Locking ANGLE](guides/veangle-guides/locking-angle.md)
-    * [Voting on Gauges](guides/veangle-guides/voting-gauges.md)
-    * [Earning ANGLE](guides/veangle-guides/incentives.md)
-  * [🧪 Rinkeby Guide](guides/rinkeby.md)
-=======
 - [Angle Documentation Portal](README.md)
 - [⚒ Developers](https://developers.angle.money)
 - [📖 Whitepapers](whitepapers.md)
@@ -31,6 +10,7 @@
   - [🚶 First Steps in Crypto](guides/newbie.md)
   - [🇪🇺 Get agEUR](guides/getAgEUR.md)
   - [💸 Pay and get paid with agEUR](guides/ageur-power-usecase.md)
+  - [🏦 agEUR as a treasury asset](guides/ageur-power-usecase.md)
   - [📔 App Guides](guides/app-guides/README.md)
     - [Opening & Managing Positions](guides/app-guides/ha-positions.md)
     - [Deposit Tokens for Yield](guides/app-guides/slp-pools.md)
@@ -41,7 +21,6 @@
     - [Voting on Gauges](guides/veangle-guides/voting-gauges.md)
     - [Earning ANGLE](guides/veangle-guides/incentives.md)
   - [🧪 Rinkeby Guide](guides/rinkeby.md)
->>>>>>> f7b377f (reworking many pages of the doc to add more clarity)
 
 ## Angle Core Module
 
