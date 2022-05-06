@@ -4,7 +4,7 @@ description: Using agEUR as a treasury asset for your DAO or company
 
 # agEUR as a treasury asset
 
-As we described [here](/guides/ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. In this guis, we show how they can benefit from using agEUR as a treasury asset. 
+As we described [here](/guides/ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. In this guide, we show how they can benefit from using agEUR as a treasury asset. 
 
 Angle’s agEUR can also be used by companies and DAOs as a treasury asset to diversify holdings and earn yield on top of EUR. 
 
