@@ -6,7 +6,7 @@ description: Fees and Revenue in Angle Borrowing Module
 
 ## 🔎 TL;DR
 
-* Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stanlecoins, from liquidations and possibly from flash-loans
+* Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations and possibly from flash-loans
 * If some vaults are liquidated too late, the protocol could also accrue a bad debt
 * Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
 
@@ -14,12 +14,13 @@ description: Fees and Revenue in Angle Borrowing Module
 
 ### Rationale
 
-At the top level, two types of fees can be charged to users borrowing agTokens:
+At the top level, three different fees can be charged to users borrowing agTokens:
 
-* A minting fee
+* A mint fee
 * A stability fee
+* A repaying fee
 
-Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
+Note that some of these fees can be set to 0. Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
 
 Collecting these fees creates revenue for the protocol, which serves multiple purposes:
 
@@ -27,11 +28,11 @@ Collecting these fees creates revenue for the protocol, which serves multiple pu
 * Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
 * Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
-### Minting Fee
+### Mint Fee
 
-When users open a vault, they deposit collateral and can mint agTokens depending on the collateral ratio of the vault. At this point, they could be charged a minting fee that would increase their debt. This fee is set by governance, and will most likely be set to 0 at the beginning.
+When users open a vault, they deposit collateral and can mint agTokens depending on the collateral ratio of the vault. At this point, they could be charged a mint fee that would increase their debt. This fee is set by governance, and will most likely be set to 0 at the beginning.
 
-As an example, if the minting fee is 1%, after minting 100 agTokens users would find themselves with 101 agTokens of debt.
+As an example, if the mint fee is 1%, after minting 100 agTokens users would find themselves with 101 agTokens of debt.
 
 ### Stability Fee
 
@@ -53,9 +54,16 @@ $$
 
 It's important to keep in mind that this fee can be changed by governance, and could also potentially be set to 0.
 
+### Repaying Fee
+
+Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee. 
+
+As for the mint fee, the repay fee could be set to 0.
+
 ### Liquidation Surcharge
 
 In the event of a [liquidation](../../new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
+
 
 ### Putting this all together
 
@@ -63,7 +71,7 @@ If we try to consolidate all of this, we see that the fee structure in this modu
 
 This debt increase through fees happen at three moments:
 
-1. When minting agTokens if there is a **minting fee** (which is optional)
+1. When minting agTokens if there is a **mint fee** (which is optional)
 2. During the life of the vault if agTokens is borrowed, through the **stability fee**
 3. When a partial liquidation happens, through the **liquidation surcharge**
 
