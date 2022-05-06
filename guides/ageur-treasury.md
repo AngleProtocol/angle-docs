@@ -1,0 +1,51 @@
+---
+description: Using agEUR as a treasury asset for your DAO or company
+---
+
+# agEUR as a treasury asset
+
+As we described [here](/guides/ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. But there is more!
+
+Angle’s agEUR can also be used as a treasury asset to diversify holdings and earn yield on top of EUR. 
+
+Most DAOs or companies with crypto treasuries hold a mix of BTC, ETH, and USD stablecoins. With agEUR, they have a way to diversify those reserves into one of the biggest fiat currency, through a decentralized stablecoin that has deep on-chain liquidity and is integrated with the best DeFi protocols.
+
+Holding agEUR in your treasury allows you to:
+
+- Diversify holdings
+- Earn yield on EUR
+- Keep enough capital to pay your european contributors, while enjoying yield on top of it.
+
+{% hint style="info" %}
+agEUR is available on Gnosis Safe, so you can hold some conveniently through your multi-sig.
+{% endhint %}
+
+## Getting agEUR in your treasury
+
+agEUR can be minted directly from Angle at app.angle.money, or bought from a DEX or DEX aggregator. If you are looking to buy an important amount of agEUR, the best place would be directly on Angle where there is no slippage. 
+
+You can find more details in the [Get agEUR page](/guides/getAgEUR.md) of this documentation. 
+
+## Earning yield on your agEUR
+
+Once you hold agEUR, there are multiple ways to earn yield on top of it. 
+
+### Deposit on Euler
+
+[Euler](https://www.euler.finance/) is a lending market with a well researched risk framework and improved liquidations. 
+
+Yield for agEUR deposits on Euler is currently ranging between 2% and 3%. Users can just deposit their tokens on [app.euler.finance](https://app.euler.finance/), and they will start earning interest. 
+
+### Deposit on Curve and stake on Convex
+
+*For more advanced users*
+
+Another option is to deposit agEUR in the [Curve 3EUR](https://curve.fi/factory/66/deposit) pool (agEUR+EURs+EURt), and then deposit the Curve LP tokens on [Convex](https://www.convexfinance.com/stake) for CVX and CRV rewards. 
+
+This currently yields around 5%. 
+
+## Paying contributor with agEUR
+
+Companies with agEUR in their treasury can also pay very easily their contributors in a transparent and compliant way. In just two on-chain transactions, their contributors can receive EUR in their bank account. 
+
+All the steps are detailed on the [agEUR Power Use Case](/guides/ageur-power-usecase.md) page.
