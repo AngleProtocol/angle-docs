@@ -11,7 +11,6 @@
   * [🇪🇺 Get agEUR](guides/getAgEUR.md)
   * [💸 Pay and get paid with agEUR](guides/ageur-power-usecase.md)
   * [🏦 agEUR as a treasury asset](guides/ageur-power-usecase.md)
-
   * [📔 App Guides](guides/app-guides/README.md)
     * [Opening & Managing Positions](guides/app-guides/ha-positions.md)
     * [Deposit Tokens for Yield](guides/app-guides/slp-pools.md)
