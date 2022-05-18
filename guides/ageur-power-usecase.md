@@ -63,7 +63,7 @@ agEUR can be used to pay and get paid from any crypto to a bank account in only 
 * **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
 * **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
 
-![agEUR power use case](<../.gitbook/assets/agEUR power use case.png>)
+![agEUR power use case](../.gitbook/assets/getting-paid-ageur.jpg)
 
 ## 💸 Go further by streaming those payments with Superfluid&#x20;
 

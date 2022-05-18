@@ -24,7 +24,7 @@ The main feature of vaults is the ability to **borrow** Angle stablecoins. A vau
 
 Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
 
-![Angle Vaults](../../.gitbook/assets/Vault.png)
+![Angle Vaults](../../.gitbook/assets/Angle-Vaults.jpg)
 
 ### Composable actions
 
@@ -42,7 +42,7 @@ An application of this is that users can repay their debt without any capital re
 
 At some point, users may want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users can just get back the remaining collateral after the debt has been fully paid back.
 
-![Capital Efficient Debt Repayment](../../.gitbook/assets/Debt-repayment.png)
+![Capital Efficient Debt Repayment](../../.gitbook/assets/capital-efficient-debt-repayment.jpg)
 
 On a similar note, it is this capital-efficient design that allows liquidators to participate in liquidations without bringing any stablecoin from their pocket. More is explained [here](liquidations.md).
 
@@ -52,7 +52,7 @@ Users can also take advantage of Angle Borrowing module capital-efficiency featu
 
 When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. What the protocol does is that it mints the necessary quantity of agTokens, swaps it against the desired collateral, and deposits it back into the vault.
 
-![Angle Leverage exposure](../../.gitbook/assets/Leverage.png)
+![Angle Leverage exposure](../../.gitbook/assets/Leverage-example.jpg)
 
 {% hint style="info" %}
 Leveraging collateral exposure is a very useful feature for users wanting to safely increase exposure to their collateral token on chain. It is however reserved to more advanced users as it increases liquidation risks.

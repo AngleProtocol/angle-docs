@@ -12,7 +12,7 @@ They are a type of loans that allow to borrow and repay tokens in one transactio
 
 The main use case for flash loans is arbitrage between pools, which usually helps rebalancing liquidity over the ecosystem.
 
-![Flash loans explained](../.gitbook/assets/Flash-loans.png)
+![Flash loans explained](../.gitbook/assets/flash-loans-explained.jpg)
 
 ## Flash loans with agTokens
 

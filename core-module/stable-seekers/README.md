@@ -41,7 +41,7 @@ Let’s say that 1 agEUR trades at a price above 1€. The incentive is to mint 
 
 If 1 agEUR trades at a price below 1€, the incentive is to buy agEUR on the market for less than 1€ and get 1€ worth of collateral by swapping the agEUR bought using Angle. This increases the price closer to 1€.
 
-![Angle Peg Dynamics](../../.gitbook/assets/peg.jpg)
+![Angle Peg Dynamics](../../.gitbook/assets/peg-dynamics.jpg)
 
 ### Deviations From Peg
 
