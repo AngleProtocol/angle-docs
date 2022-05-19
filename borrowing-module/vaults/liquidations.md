@@ -38,7 +38,7 @@ This means that users will either lose their collateral completely (but won't ha
 
 From a liquidator perspective, there is **no capital requirement when liquidating Angle Vaults**. Liquidator receive the collateral of the vault first, before having to repay the collateral, which means they can atomically swap the collateral received at a discount to stablecoins to repay the debt they are liquidating.
 
-![Vault before liquidation](<../../.gitbook/assets/Vault before a liquidation.png>)
+![Vault before liquidation](../../.gitbook/assets/vault-before-liquidation.jpg)
 
 ## Details about liquidations within Angle
 
@@ -153,9 +153,9 @@ $$
 
 In this example, the liquidator repays 67 of stablecoin, and gets back \~74,5 of collateral (effectively getting a discount)
 
-![Vault before liquidation](<../../.gitbook/assets/Vault before a liquidation.png>)
+![Vault before liquidation](../../.gitbook/assets/vault-before-liquidation.jpg)
 
-![Angle vault after liquidation](<../../.gitbook/assets/Vault post liquidation.png>)
+![Vault after liquidation](../../.gitbook/assets/vault-after-liquidation.jpg)
 
 ## Developers doc
 
