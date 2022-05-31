@@ -50,7 +50,7 @@ agEUR is also available on Polygon, where it can be deposited on Aave lending ma
 
 #### LP on incentivized agEUR/token pools
 
-Some agEUR pools are incentivized with ANGLE token rewards and can yield interesting APRs, like agEUR/ETH at . 30%, or agEUR/USDC at \~10%.
+Some agEUR pools are incentivized with ANGLE token rewards and can yield interesting APRs, like agEUR/ETH at 30%, or agEUR/USDC at \~10%.
 
 More generally, all ANGLE-related yield opportunities can be accessed through the [DAO App incentives](https://dao.angle.money/#/stake) page.
 

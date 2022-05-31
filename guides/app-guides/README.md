@@ -24,5 +24,5 @@ We have written a guide to help people get agEUR through minting and burning fro
 {% endhint %}
 
 {% hint style="info" %}
-You can also play with the app on the Rinkeby testnet at [rinkeby.angle.money](https://rinkeby.angle.money) by following our guide [here](../resources/rinkeby-testnet/).
+You can also play with the app on the Rinkeby testnet at [rinkeby.angle.money](https://rinkeby.angle.money) by following our guide [here](/guides/rinkeby.md).
 {% endhint %}

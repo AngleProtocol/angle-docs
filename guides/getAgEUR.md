@@ -12,18 +12,18 @@ If you are new to crypto, follow our [guide for new crypto users](newbie.md). Th
 
 There are multiple ways to buy agEUR:
 
-1. With your tokens directly from the [Angle App](https://app.angle.money) or on a DEX ([Uniswap](https://app.uniswap.org), [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR), ...)
+1. With **any** tokens directly from the [Angle App](https://app.angle.money) or on a DEX ([Uniswap](https://app.uniswap.org), [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR), ...)
 2. With your credit card or bank transfer by using one of our **on-ramp partners**
 
 ## Buying agEUR from Angle
 
-Anyone with tokens in their wallet can use the [Angle App](https://app.angle.money) to get agEUR.
+Angle recently introduced a new feature allowing users to buy agEUR (and ANGLE) with any token! Anyone with any tokens in their wallet can now use the [Angle App](https://app.angle.money) to get agEUR.
 
-The token can also be bought from multiple **decentralized exchanges** like Uniswap or DEX aggregators. It is also available on multiple chains besides Ethereum like Solana, Fantom, Polygon with deep liquidity.
+The token is also available on multiple chains besides Ethereum like Solana, Fantom, Polygon with deep liquidity.
 
 ### Approving tokens
 
-To interact with Angle, you will need to approve (transaction) or give permissions (signature) for the tokens you want to spend. You can learn more about approving tokens [here](app-faq/#why-do-i-need-to-approve-the-same-token-multiple-times).
+To interact with Angle, you will need to approve (transaction, which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/app-guides/app-faq.md).
 
 ![Approving tokens](../.gitbook/assets/approving-tokens.png)
 
@@ -31,17 +31,15 @@ To interact with Angle, you will need to approve (transaction) or give permissio
 
 Then, make sure you have ETH to pay for gas fees, as well as one of the accepted tokens, and follow these steps:
 
-1. Go to [app.angle.money](https://app.angle.money/#/user/mint).
-2. Select the token you want to spend, and the stablecoin you want to receive.
-   * Supported collaterals\*: ETH, DAI, USDC, FEI, FRAX
+1. Go to [app.angle.money](https://app.angle.money/#/swap).
+2. Select the token you want to spend, and the stablecoin you want to receive. If your token in not in the collaterals list, it will be swapped using 1inch to the cheapest collateral available. 
+   * Supported collaterals: ETH, DAI, USDC, FEI, FRAX
    * Available agTokens: agEUR
 3. Enter the amount of tokens you want to exchange.
 4. Approve your tokens.
-5. Buy stablecoins against your tokens.
+5. Confirm the transaction to buy agEUR.
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
-
-\*_any token can be used. They will be swapped to one of the native collaterals._
 
 ![Minting agEUR](../.gitbook/assets/mint-usdc-agEUR.png)
 
@@ -49,7 +47,7 @@ You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
 If you want to exchange your agEUR back to another token, you have a few options:
 
-* Swap them against another token directly on [Angle](https://app.angle.money/#/user/burn) or a decentralized exchange like [Uniswap](https://app.uniswap.org).
+* Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a decentralized exchange like [Uniswap](https://app.uniswap.org).
 * Send money back directly to your bank account through our off-ramp partner Mt Pelerin.
 
 Swapping agEUR back to another token on Angle is a similar process than buying agEUR.
