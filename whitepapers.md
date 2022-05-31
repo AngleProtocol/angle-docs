@@ -7,7 +7,7 @@ description: Whitepaper linked to the Angle Protocol
 This page gathers the whitepapers for the different modules and products linked to the Angle Protocol.
 
 {% hint style="success" %}
-If there is anything unclear or out of date or feel like you have feedback on the protocol, please do not hesitate to let us know on Angle community [Discord server](https://discord.gg/67WSSZqBG6) 🕹️. This is the place where we collectively play, exchange, improve, and help build the best protocol possible!
+If there is anything unclear or out of date or feel like you have feedback on the protocol, please do not hesitate to let us know on Angle community [Discord server](https://discord.gg/67WSSZqBG6) 📐. This is the place where we collectively play, exchange, improve, and help build the best protocol possible!
 {% endhint %}
 
 ## Angle Core Module

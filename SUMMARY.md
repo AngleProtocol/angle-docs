@@ -113,7 +113,7 @@
 - [🗃 Analytics](https://analytics.angle.money)
 - [🗳 DAO App](https://dao.angle.money/#/)
 - [⚒ Developers Doc](https://developers.angle.money)
-- [🕹 Discord](https://discord.gg/67WSSZqBG6)
+- [📐 Discord](https://discord.gg/67WSSZqBG6)
 - [🐦 Twitter](https://twitter.com/AngleProtocol)
 - [🌳 Medium](https://blog.angle.money)
 - [💻 Github](https://github.com/AngleProtocol)

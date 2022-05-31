@@ -14,8 +14,8 @@ Even though the deployed contracts are public by nature, we felt normal to follo
 
 A deeper dive into the contracts code is available in the developers documentation at [developers.angle.money](https://developers.angle.money).
 
-* [Contracts code](https://github.com/AngleProtocol/angle-core)
-* [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
+- [Contracts code](https://github.com/AngleProtocol/angle-core)
+- [Interfaces code](https://github.com/AngleProtocol/angle-interfaces)
 
 ## SDK
 
@@ -25,7 +25,7 @@ To help people build applications on top of the protocol and its set of smart co
 
 We hope this will empower people to build new types of applications and user interfaces we haven't thought about to interact with the protocol.
 
-* [SDK Code](https://github.com/AngleProtocol/angle-sdk)
+- [SDK Code](https://github.com/AngleProtocol/angle-sdk)
 
 ## Contribution Guidelines
 
