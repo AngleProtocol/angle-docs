@@ -11,7 +11,7 @@ Welcome to the Angle Protocol Documentation Portal! It contains essential info a
 So grab a coffee ☕ and enjoy the read!
 
 {% hint style="success" %}
-Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 🕹️, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
+Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 📐, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
 {% endhint %}
 
 {% hint style="info" %}
@@ -58,7 +58,7 @@ You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-2
 
 If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
-## 🕹️ [Discord](https://discord.gg/3vaHCJw7Mz)
+## 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
 Angle is currently being developed by its Core Team and community. Any help and initiative is more than welcome!
 
@@ -76,14 +76,14 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 
 ## Other Resources
 
-* 📡 [Website](https://angle.money)
-* 🐦 [Twitter](https://twitter.com/AngleProtocol)
-* 🌳 [Medium/Blog](https://blog.angle.money)
-* 💻 [Github](https://github.com/AngleProtocol)
-* 📀 [App](https://app.angle.money)
-* 🗂️ [Analytics](https://analytics.angle.money/#/home)
-* 🗳️ [DAO App](https://dao.angle.money/#/)
-* 💬 [Governance Forum](https://gov.angle.money)
+- 📡 [Website](https://angle.money)
+- 🐦 [Twitter](https://twitter.com/AngleProtocol)
+- 🌳 [Medium/Blog](https://blog.angle.money)
+- 💻 [Github](https://github.com/AngleProtocol)
+- 📀 [App](https://app.angle.money)
+- 🗂️ [Analytics](https://analytics.angle.money/#/home)
+- 🗳️ [DAO App](https://dao.angle.money/#/)
+- 💬 [Governance Forum](https://gov.angle.money)
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
