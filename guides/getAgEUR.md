@@ -37,7 +37,7 @@ Then, make sure you have ETH to pay for gas fees, as well as one of the accepted
    * Available agTokens: agEUR
 3. Enter the amount of tokens you want to exchange.
 4. Approve your tokens.
-5. Confirm the transaction to buy agTokens.
+5. Confirm the transaction to buy agEUR.
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
