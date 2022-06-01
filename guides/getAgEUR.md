@@ -12,8 +12,10 @@ If you are new to crypto, follow our [guide for new crypto users](newbie.md). Th
 
 There are multiple ways to buy agEUR:
 
-1. With **any** tokens directly from the [Angle App](https://app.angle.money) or on a DEX ([Uniswap](https://app.uniswap.org), [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR), ...)
+1. With **any*** tokens directly from the [Angle App](https://app.angle.money) or on a DEX ([Uniswap](https://app.uniswap.org), [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR), ...)
 2. With your credit card or bank transfer by using one of our **on-ramp partners**
+
+*_coming soon_
 
 ## Buying agEUR from Angle
 
@@ -25,7 +27,7 @@ The token is also available on multiple chains besides Ethereum like Solana, Fan
 
 To interact with Angle, you will need to approve (transaction, which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/app-guides/app-faq.md).
 
-![Approving tokens](../.gitbook/assets/approving-tokens.png)
+![Approving tokens](../.gitbook/assets/token-approval.png)
 
 ### Buying agEUR
 
@@ -41,7 +43,7 @@ Then, make sure you have ETH to pay for gas fees, as well as one of the accepted
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
-![Minting agEUR](../.gitbook/assets/mint-usdc-agEUR.png)
+![Minting agEUR](../.gitbook/assets/buy-dai-ageur.png)
 
 ### Selling agEUR
 
@@ -56,7 +58,7 @@ Swapping agEUR back to another token on Angle is a similar process than buying a
 2. Select how much agEUR you want to burn and the token you want to receive in exchange.
 3. Click on `Burn` and confirm the transaction in your wallet. This will exchange your agEUR for the tokens you selected.
 
-![Burning agEUR](../.gitbook/assets/burn-agEUR-DAI.png)
+![Burning agEUR](../.gitbook/assets/sell-agEUR-DAI.png)
 
 {% hint style="info" %}
 Tokens can be swappged against one of the supported collateral to mint the desired agTokens if the source token is not supported as collateral in Angle, or if it is cheaper to do so.
