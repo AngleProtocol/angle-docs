@@ -36,7 +36,7 @@ In general, the less SLPs there are, the more a single SLP, for a similar amount
 
 For the interest on lending, there is an even more interesting multiplier effect for SLPs.
 
-![Multiplier Effect for SLPs](../../.gitbook/assets/multipliereffect.jpg)
+![Multiplier Effect for SLPs](../../.gitbook/assets/Strategies_SLP_multiplier_effect.jpg)
 
 Let's assume that 80% of the Core module's reserves are lent to Compound with a 10% APY and that 50% of the interest are given to SLPs. By directly lending their 500,000 USDC to this strategy, SLPs would earn 500K \* 10% = 50K USDC per year.
 

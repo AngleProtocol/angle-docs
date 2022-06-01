@@ -27,4 +27,4 @@ By bringing 100 of additional collateral, SLPs would earn yield on 80% x 250 = 2
 
 In that case, the Core module would be collateralized at 250%.
 
-![Collateral Ratio Estimation](../../.gitbook/assets/collatratio.jpg)
+![Collateral Ratio Estimation](../../.gitbook/assets/Collateral_ratio.jpg)
