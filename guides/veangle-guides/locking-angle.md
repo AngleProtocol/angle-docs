@@ -48,7 +48,7 @@ These interest can be claimed with a transaction initiated by clicking on the `C
 
 ### Claim interest and Stake
 
-This will claim the sanUSDC\_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check you staked sanUSDC\_EUR in the DAO App [Incentives page](https://app.angle.money/#/earn).
+This will claim the sanUSDC\_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check you staked sanUSDC\_EUR in the App [Lock page](https://app.angle.money/#/lock).
 
 ### Claim interest and Mint agEUR
 

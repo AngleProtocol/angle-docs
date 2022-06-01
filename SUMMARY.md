@@ -16,7 +16,7 @@
     - [Deposit Tokens for Yield](guides/app-guides/slp-pools.md)
     - [App FAQ](guides/app-guides/app-faq.md)
     - [Formulas](guides/app-guides/formulas.md)
-  - [📗 DAO App Guides](guides/veangle-guides/README.md)
+  - [📗 veANGLE Guides](guides/veangle-guides/README.md)
     - [Locking ANGLE](guides/veangle-guides/locking-angle.md)
     - [Voting on Gauges](guides/veangle-guides/voting-gauges.md)
     - [Earning ANGLE](guides/veangle-guides/incentives.md)
@@ -111,7 +111,6 @@
 
 - [📀 App](https://app.angle.money)
 - [🗃 Analytics](https://analytics.angle.money)
-- [🗳 DAO App](https://dao.angle.money/#/)
 - [⚒ Developers Doc](https://developers.angle.money)
 - [📐 Discord](https://discord.gg/67WSSZqBG6)
 - [🐦 Twitter](https://twitter.com/AngleProtocol)
