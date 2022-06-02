@@ -4,11 +4,13 @@ description: Earning ANGLE rewards
 
 # Earning ANGLE
 
-To earn ANGLE distributed as part of the weekly emissions, users can deposit sanTokens, open long positions on the protocol with Perps, or deposit LP (liquidity providers) tokens.
+ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem.
 
-You can find all the available pools in the [Earn page](https://app.angle.money/#/earn) of the App.
+To take advantage of that, you can among other things [deposit sanTokens](https://app.angle.money/#/deposit), [open long positions](https://app.angle.money/#/perpetuals) on the protocol, or deposit LP (liquidity providers) tokens.
 
-After staking your tokens, you will begin accumulating ANGLE tokens.
+You can find all the available pools and farms in the [Earn page](https://app.angle.money/#/earn) of the app.
+
+After staking your tokens or taking any action that gives you the rights to these tokens (like opening a perpetual), you will begin automatically accumulating ANGLE tokens.
 
 ## Claiming ANGLE
 
@@ -18,8 +20,8 @@ You have multiple options when claiming your ANGLE tokens:
   - **`Claim ANGLE`**: this will claim your ANGLE rewards from all the selected gauges in one transaction.
   - **`Claim and Lock ANGLE`**: this will claim your ANGLE rewards from all the selected gauges in one transaction **and** lock them into your existing ANGLE lock. This will increase your veANGLE balance and won't affect your lock expiration date. _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE_ [_here_](https://app.angle.money/#/lock)_._&#x20;
 
-![](../../.gitbook/assets/claim-rewards-modal.png)
+![Claim rewards modal](../../.gitbook/assets/claim-rewards-modal.png)
 
-- Claim from a specific gauge by clicking on the `✨Claim` button in the modal below the input:
+- Claim from a specific gauge by clicking on the `Claim` button in the modal below the input:
 
-![](../../.gitbook/assets/claim-rewards-from-pool.png)
+![Claim button](../../.gitbook/assets/claim-rewards-from-pool.png)
