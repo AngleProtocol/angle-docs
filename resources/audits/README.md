@@ -8,7 +8,7 @@ Angle Protocol has undergone many different audits for its smart contracts and m
 
 ## Chainsecurity April 2022 - May 2022
 
-Audot report of the borrowing module of the Angle protocol performed by Chainsecurity between April and May 2022.
+Audit report of the borrowing module of the Angle protocol performed by Chainsecurity between April and May 2022.
 
 {% file src="../../.gitbook/assets/chainsecurity-spring22.pdf" %}
 Chainsecurity Spring 2022 Audit Report
