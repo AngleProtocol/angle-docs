@@ -4,22 +4,22 @@ description: Using agEUR as a payment currency
 
 # 💸 Pay and get paid with agEUR
 
-Thanks to its powerful partners and integrations, agEUR can be used to pay and create invoices, as well as to transfer fiat to your home bank account.&#x20;
+Thanks to its partners and integrations, agEUR can be used to pay and create invoices, as well as to transfer fiat to your home bank account.
 
 All of this from almost anywhere in the world, on Ethereum or Polygon!
 
 ![Untitled](../.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
 
-Some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate.&#x20;
+Some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate.
 
 agEUR can be a solution to such issues: anyone can invoice and get paid in agEUR, and transfer them directly to EUR or another fiat currency in their bank account!
 
-More specifically, an agEUR integration can serve different type of users:
+More specifically, an agEUR integration can serve different types of users:
 
 1. Companies or DAOs wanting to pay their contributors in crypto
 2. Contributors happy to be paid in crypto but who still need fiat in a bank account for their everyday lives
 
-Here, we try to show how companies, DAOs, and their contributors can leverage agEUR and Angle’s partners Request, Mt Pelerin, as well as Superfluid to handle salaries and payments quickly and in a compliant way.
+In this guide, we try to show how companies, DAOs, and their contributors can leverage agEUR and Angle’s partners Request, Mt Pelerin, as well as Superfluid to handle salaries and payments quickly and in a compliant way.
 
 ## Invoicing in agEUR with Request
 
@@ -47,7 +47,7 @@ Then, they can select **any token they hold**, and use the expert mode to make s
 
 ## Withdrawing the agEUR received to a bank account with Mt Pelerin
 
-Once the contributors have received their payment from the DAO / company, they can simply withdraw the agEUR from their wallet to EUR in their bank account in one on-chain transaction by using [Mt Pelerin](https://www.mtpelerin.com/sell-crypto).&#x20;
+Once the contributors have received their payment from the DAO / company, they can simply withdraw the agEUR from their wallet to EUR in their bank account in one on-chain transaction by using [Mt Pelerin](https://www.mtpelerin.com/sell-crypto).
 
 Mt Pelerin allows anyone to send their cryptos back to their bank account quickly and easily, at the cost and speed of one transaction. Above a certain amount, a KYC on Mt Pelerin’s mobile application may however be needed.
 
@@ -59,9 +59,9 @@ Obviously, users can also keep their agEUR and invest it to take advantage of th
 
 agEUR can be used to pay and get paid from any crypto to a bank account in only two on-chain transactions! Specifically, it is designed to allow:
 
-* **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
-* **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
-* **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
+- **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
+- **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
+- **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
 
 ![agEUR power use case](../.gitbook/assets/getting-paid-ageur.jpg)
 

@@ -22,7 +22,3 @@ In particular, you will learn how to play with the app and more particularly to:
 {% hint style="info" %}
 We have written a guide to help people get agEUR through minting and burning from the Core app available [here](../getAgEUR.md)
 {% endhint %}
-
-{% hint style="info" %}
-You can also play with the app on the Rinkeby testnet at [rinkeby.angle.money](https://rinkeby.angle.money) by following our guide [here](/guides/rinkeby.md).
-{% endhint %}

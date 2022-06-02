@@ -20,7 +20,6 @@
     - [Locking ANGLE](guides/veangle-guides/locking-angle.md)
     - [Voting on Gauges](guides/veangle-guides/voting-gauges.md)
     - [Earning ANGLE](guides/veangle-guides/incentives.md)
-  - [🧪 Rinkeby Guide](guides/rinkeby.md)
 
 ## Angle Core Module
 
