@@ -37,11 +37,11 @@ Request invoices then look like that 👇
 
 ### Crypto Company / DAO side: pay contributor with agEUR from any token
 
-On the company side, once they receive the invoice they can just send the required amount of agEUR to the specified address. If they don’t own agEUR yet, they can go through Angle’s app at [app.angle.money](http://app.angle.money), and add the invoicer address as recipient.&#x20;
+On the company side, once they receive the invoice they can just send the required amount of agEUR to the specified address. If they don’t own agEUR yet, they can go through Angle’s app at [app.angle.money](http://app.angle.money), and add the invoicer address as recipient.
 
 Then, they can select **any token they hold**, and use the expert mode to make sure the minimum amount received is that of the invoice.
 
-![Angle agEUR from any token](../.gitbook/assets/angle-token-to-ageur.png)
+![Angle agEUR from any token](../.gitbook/assets/send-to-recipient.png)
 
 **In one on-chain transaction, any company or DAO can pay their contributors with any token, almost instantly, and at very low fees.**
 

@@ -10,17 +10,17 @@ Before locking ANGLE, make sure you read all the details about veANGLE and locki
 
 ## Locking ANGLE
 
-ANGLE tokens can be locked at [dao.angle.money](https://dao.angle.money).
+ANGLE tokens can be locked at [app.angle.money](https://app.angle.money/#/lock).
 
 Before locking, remember that only one lock per address can be created. Once an address initiates a lock, it can either increase the lock expiration, or add tokens to the lock.
 
-![ANGLE locking screen](../../.gitbook/assets/angle-locking-screen.png)
+![ANGLE locking screen](../../.gitbook/assets/angle-lockscreen.png)
 
 ### Creating the lock
 
 To create a lock, head over to the bottom right corner of the screen. There, an expiration date and quantity of tokens need to be specified. Then, two transactions are needed, first to approve the contract and then to create the lock with the specified amount of tokens.
 
-![Locking veANGLE](../../.gitbook/assets/locking-veangle.png)
+![Locking veANGLE](../../.gitbook/assets/locking-angle.png)
 
 ### Locking ANGLE before staking
 
@@ -28,17 +28,17 @@ One particularity of the gauge system is that the staking contracts can’t fetc
 
 In practice, this means that it’s better to lock ANGLE into veANGLE **before staking** in order for the boost to be applied directly. If not, clamining a tiny amount of rewards **after** staking will be needed to apply the boost.
 
-To compute the balance of veANGLE needed to get the max boost on rewards depending on the quantity of tokens staked, there is a calculator at [dao.angle.money](https://dao.angle.money).
+To compute the balance of veANGLE needed to get the max boost on rewards depending on the quantity of tokens staked, there is a calculator at [app.angle.money](https://app.angle.money/#/lock).
 
 ### Increasing the lock or adding tokens
 
 Once the lock has been created, to extend the lock expiration or add tokens, just click on one of the two buttons and choose a new expiration date (up to 4 years from now) or a quantity of tokens to add.
 
-![Increasing or adding tokens to lock](../../.gitbook/assets/claim-interest.png)
+![Modifying lock](../../.gitbook/assets/modify-lock.png)
 
 ### Expired lock
 
-Once a lock is expired, users need to execute a transaction to get their ANGLE token back from the lock. In this situation, there is a `Withdraw ANGLE` button on the [DAO App veANGLE](https://dao.angle.money/#/veANGLE) page, allowing you to get back your previously locked ANGLE tokens. 
+Once a lock is expired, users need to execute a transaction to get their ANGLE token back from the lock. In this situation, there is a `Withdraw ANGLE` button on the main [Angle App](https://app.angle.money/#/lock) page, allowing you to get back your previously locked ANGLE tokens. 
 
 ## Claiming interest
 
@@ -48,10 +48,10 @@ These interest can be claimed with a transaction initiated by clicking on the `C
 
 ### Claim interest and Stake
 
-This will claim the sanUSDC\_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check you staked sanUSDC\_EUR in the DAO App [Incentives page](https://dao.angle.money/#/).
+This will claim the sanUSDC\_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check you staked sanUSDC\_EUR in the App [Lock page](https://app.angle.money/#/lock).
 
 ### Claim interest and Mint agEUR
 
 This will claim the sanUSDC\_EUR and use them to mint agEUR in the protocol. You will end up receiving agEUR in your wallet. The **fees** and **minimum amount of agEUR received** are displayed in the Show mint info toggle.
 
-![Claim interest modal](../../.gitbook/assets/claim-interest-modal.png)
+![Claim interest modal](../../.gitbook/assets/claim-interest.png)

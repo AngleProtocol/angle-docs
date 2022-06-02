@@ -132,11 +132,11 @@ Here we explain in a more imaged way how the Core module can always have enough 
 
 If HAs have a 6x leverage and back all the collateral in the Core module that was used to issue stablecoins:
 
-![](../../.gitbook/assets/h13.jpg)
+![](../../.gitbook/assets/ha-example-initial-situation.jpg)
 
-![](../../.gitbook/assets/ha2.jpg)
+![](../../.gitbook/assets/HA_example_Price_increase.jpg)
 
-![](../../.gitbook/assets/ha1.jpg)
+![](../../.gitbook/assets/HA_example_Price_decrease.jpg)
 
 ## 🪙 Transaction Fees
 
@@ -156,7 +156,7 @@ The entry transaction fees for HAs is an upfront cost paid when HAs open a posit
 
 The higher the hedging ratio, the more expensive it gets to be an HA. Conversely, HAs should be incentivized to enter positions to help hedge the Core module when the hedging ratio is low: transaction fees would be lower in this case.
 
-![](../../.gitbook/assets/haentry.jpg)
+![](../../.gitbook/assets/Opening_fee.jpg)
 
 Let' say a HA comes to the Core module with 1 wETH and opens a 2 wETH poisition (hedging the Core module against the changes in price of these 2 wETH). If the transaction fees are 0.3%, then the contracts consider that the HA has a margin of (1 - (0.003 x 2)) = 0,994 wETH for a position of 2 wETH.
 
@@ -164,7 +164,7 @@ Let' say a HA comes to the Core module with 1 wETH and opens a 2 wETH poisition 
 
 Exit fees are paid by HAs when they close their perpetuals. The more collateral is hedged by HAs, the less expensive it is to exit the Core module. When the hedging ratio is low, HAs should be discouraged to exit with higher transaction fees.
 
-![](../../.gitbook/assets/haexit.jpg)
+![](../../.gitbook/assets/Closing_fee.jpg)
 
 If a HA had an initial margin of 1 wETH and a position size of 2 wETH, then with 0.3% transaction fees, they will get in wETH the current value of their perpetual according to the cash out formula above minus 0.3% of 2 wETH (the amount hedged at the opening).
 

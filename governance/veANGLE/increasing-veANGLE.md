@@ -58,7 +58,7 @@ Bob had originally locked 90 ANGLE for four years like Carol. One year later, he
 
 However, other external factors, such as the total veANGLE supply or the pool liquidity might have changed. It could be that updating his boost will actually decrease it (see the [boost page details](boost.md#🖋️-details)).
 
-Because of that, Bob should actually use the calculator from the [DAO App](https://dao.angle.money) to make sure that he would meet the necessary veANGLE balance he needs for his deposit to increase his boost as he wants to.
+Because of that, Bob should actually use the calculator from the [App](https://app.angle.money/#/lock) to make sure that he would meet the necessary veANGLE balance he needs for his deposit to increase his boost as he wants to.
 
 #### Conclusion
 

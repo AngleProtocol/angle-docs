@@ -66,6 +66,6 @@ By doing this, delegators keep their tokens but transfer **all** their voting po
 
 ### Voting on rewards distribution
 
-Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens on-chain and can be done through the gauge page of the [dao app](https://dao.angle.money). Users can allocate weights to the different pools they want rewards to be distributed to.
+Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens on-chain and can be done through the gauge page of the [app](https://app.angle.money/#/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
 
 More info on the details of this process in the [Gauges](veANGLE/gauges.md) page.

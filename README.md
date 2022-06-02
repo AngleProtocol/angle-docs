@@ -82,7 +82,6 @@ All the protocol's smart contracts have been audited by Chainsecurity and Sigma 
 - 💻 [Github](https://github.com/AngleProtocol)
 - 📀 [App](https://app.angle.money)
 - 🗂️ [Analytics](https://analytics.angle.money/#/home)
-- 🗳️ [DAO App](https://dao.angle.money/#/)
 - 💬 [Governance Forum](https://gov.angle.money)
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)

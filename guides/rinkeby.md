@@ -28,5 +28,5 @@ In case our faucet is down, you can also follow [this](https://teller.gitbook.io
 {% endhint %}
 
 {% hint style="info" %}
-On mainnet, you can access the app at [app.angle.money](https://app.angle.money)
+On mainnet, you can access the app at [app.angle.money](https://app.angle.money).
 {% endhint %}

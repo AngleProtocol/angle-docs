@@ -10,7 +10,7 @@ description: How protocol interest are redistributed to veANGLE owners
 * Until the Angle Governance upgrade, the interest generated were redistributed to SLPs as profit, and to the protocol as surplus/reserve.
 * Now, they are also shared to veANGLE holders as an incentive for taking part in the governance of the protocol.
 
-![Angle Interests Redistribution](../../.gitbook/assets/angle-interests-redistribution.png)
+![Angle Interests Redistribution](../../.gitbook/assets/Interest_distribution.jpg)
 
 ## 💝 Interest redistribution
 

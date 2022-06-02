@@ -6,9 +6,9 @@ description: How to open, modify or close perpetual positions on Angle app
 
 Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long positions, betting that the USD will increase in value against the EUR.
 
-You can read more about this mechanism [here](../../core-module/hedging-agents/).
+You can read more about this mechanism [here](/core-module/hedging-agents/README.md).
 
-![Perpetuals page](../../.gitbook/assets/open-perpetuals-card.png)
+![Perpetuals page](../../.gitbook/assets/perpetual-cards.png)
 
 ## Opening a position
 
@@ -24,10 +24,10 @@ If this is the first time opening a position on this collateral/stablecoin pair,
 {% endhint %}
 
 {% hint style="warning" %}
-Be careful when opening a position, updating and closing is locked for an hour. More info [here](app-faq.md).
+Be careful when opening a position, updating and closing is locked for an hour. More info [here](/guides/app-guides/app-faq.md).
 {% endhint %}
 
-![Perpetuals page](../../.gitbook/assets/opening-perpetual.png)
+![Perpetuals page](../../.gitbook/assets/open-perpetual.png)
 
 ## Updating a position
 
@@ -37,22 +37,23 @@ If you have open positions, you might want to add or remove margin to some of th
 2. Enter an amount of collateral to add or remove from your position, or change its leverage. You can remove collateral up to reaching the max leverage allowed for the pair of the position. This max leverage can vary from x10 to x100 depending on the pair.
 3. You will find current and updated info about your position.
 4. Then, just confirm the transaction and it will send/withdraw the amount of collateral that was specified.
-5. After the transaction is confirmed, you can go back to the Positions page to see your updated position.
+
+![Add USDC perp](../../.gitbook/assets/add-usdc-perp.png)
 
 ## Closing a position
 
-1. To close a position, click on the `Close` button of the positions you would like to close.
-2. You can then check your position's opening and current prices, as well as the amount of collateral and potential ANGLE rewards you are going to receive upon closing.
+1. To close a position, simply click on the `Close` button of the positions you would like to close.
+2. You can check your position's opening and current prices, as well as the amount of collateral and potential ANGLE rewards you are going to receive upon closing directly in the position card. 
 3. Click on the `Close` button to confirm the transaction and receive your cash out amount (margin ± PnL) and potential ANGLE rewards.
 
 {% hint style="info" %}
 When opening or closing a position, there is an expert mode to protect for important slippage in price or fees.
 {% endhint %}
 
-![Closing Perpetual](../../.gitbook/assets/closing-perpetual.png)
+![Close perp](../../.gitbook/assets/close-perp.png)
 
 ## Claiming ANGLE rewards
 
-If you have an open position on Angle, it will automatically accrue ANGLE token rewards. You can see how much you can claim by clicking on the `Details` button at the bottom of the position, and claim your tokens by clicking on the `Claim` button as shown in the screenshot below.
+If you have an open position on Angle, it will automatically accrue ANGLE token rewards. You can claim your tokens by clicking on the purple `Claim` button at the bottom of each card, or claim ANGLE from all your perps in one transaction from the button on the right.
 
-![HA ANGLE rewards](../../.gitbook/assets/ha-angle-rewards.png)
+![Claim all perp](../../.gitbook/assets/claim-all-perp.png)
