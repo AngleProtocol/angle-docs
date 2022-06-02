@@ -9,9 +9,9 @@ The veANGLE upgrade introduced various new features to the token, including **lo
 You can access all the veANGLE features from the [Angle App](https://app.angle.money/#/lock).
 
 {% content-ref url="locking-angle.md" %}
-[locking-angle.md](locking-angle.md#locking-angle)
+[locking-angle.md](locking-angle.md)
 {% endcontent-ref %}
 
 {% content-ref url="voting-gauges.md" %}
-[voting-gauges.md](voting-gauges.md#voting-on-gauges)
+[voting-gauges.md](voting-gauges.md)
 {% endcontent-ref %}

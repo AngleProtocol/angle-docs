@@ -4,7 +4,7 @@ description: Using agEUR as a treasury asset for your DAO or company
 
 # 🏦 agEUR as a treasury asset
 
-As described [here](ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. In this guide, we show how they can benefit from using agEUR as a treasury asset.
+As described [in this guide](ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. Here, we show how they can benefit from using agEUR as a treasury asset.
 
 Angle’s agEUR can also be used by companies and DAOs as a treasury asset to diversify holdings and earn yield on top of EUR.
 
@@ -12,9 +12,9 @@ Most DAOs or companies with crypto treasuries hold a mix of BTC, ETH, and USD st
 
 Holding agEUR in a treasury allows to:
 
-* Diversify holdings
-* Earn yield on EUR
-* Keep enough capital to pay your European contributors, while avoiding negative bank interest on it
+- Diversify holdings
+- Earn yield on EUR
+- Keep enough capital to pay your European contributors, while avoiding negative bank interest on it
 
 {% hint style="info" %}
 agEUR is a supported asset on Gnosis Safe and the Angle App integrates with Gnosis as well.
