@@ -6,7 +6,7 @@ description: Angle Protocol Guides
 
 This section contains all guides to interact with the Angle Protocol.
 
-Here are some preliminary guides to onboard you to DeFi and to agEUR, Angle's first stablecoin:
+You will notably find some preliminary guides to get onboarded to DeFi and to agEUR, Angle's first stablecoin.
 
 {% content-ref url="newbie.md" %}
 [newbie.md](newbie.md)
