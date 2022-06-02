@@ -19,7 +19,7 @@ Lending a fraction of the reserves to other lending platforms is part of what ma
 
 The distribution of interest between SLPs, veANGLE holders, and reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
 
-![](../.gitbook/assets/Docs-Strategies_flow.jpg)
+![](../.gitbook/assets/strategies-flow.jpg)
 
 ## 🎨 Design
 

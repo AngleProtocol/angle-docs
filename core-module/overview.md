@@ -17,7 +17,7 @@ The Angle Core module relies on three types of agents which all benefit from it 
 * **Hedging Agents (HAs):** they get leveraged positions with the multiple of their choice on a pair collateral/stablecoin in the form of perpetual futures. By doing so, they insure the Core module against the volatility of the collateral. On the one hand, if the price of the collateral they contribute to increases with respect to the value of the stablecoin, they can make leveraged capital gains, but on the other hand if the price decreases, they can lose a portion of the collateral they initially brought.
 * **Standard Liquidity Providers (SLPs):** they lend money to the Core module and in return get part of the transaction fees induced by stable seekers minting and burning, as well as part of the returns made from lending some of the reserves to lending protocols (like Compound or Aave). They serve as the insurance of the insurance that is made up of HAs. They may face a small slippage when they exit if the Core module is not well collateralized.
 
-![Angle's Stakeholders](../.gitbook/assets/Docs-Core_agents_mechanisms.jpg)
+![Angle's Stakeholders](../.gitbook/assets/core-agents-mechanism.jpg)
 
 ## Generalization to Multiple Stable Assets
 

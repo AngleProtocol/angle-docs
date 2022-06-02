@@ -132,7 +132,7 @@ Here we explain in a more imaged way how the Core module can always have enough 
 
 If HAs have a 6x leverage and back all the collateral in the Core module that was used to issue stablecoins:
 
-![](../../.gitbook/assets/HA_example_Initial_situation.jpg)
+![](../../.gitbook/assets/ha-example-initial-situation.jpg)
 
 ![](../../.gitbook/assets/HA_example_Price_increase.jpg)
 
