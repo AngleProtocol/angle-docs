@@ -1,7 +1,6 @@
 ---
 description: >-
-  Angle is a capital-efficient, over-collateralized and liquid decentralized
-  stablecoin protocol.
+  Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol.
 ---
 
 # Angle Documentation Portal
@@ -10,69 +9,76 @@ Welcome to the Angle Protocol Documentation Portal! It contains essential info a
 
 So grab a coffee ☕ and enjoy the read!
 
-{% hint style="success" %}
-Please join the discussion on the Angle Community [Discord Server](https://discord.gg/67WSSZqBG6) 📐, our community is looking forward to helping you use Angle, improve the protocol or even build on top of it!
-{% endhint %}
+## 🏅 Introduction to Angle
 
-{% hint style="info" %}
-📅 Angle Protocol has been live on the Ethereum mainnet since the 3rd of November 2021 🍁.
-{% endhint %}
+Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain. The protocol was launched in November 2021 and you can start using it at [app.angle.money](https://app.angle.money).
 
-## Introduction to Angle
+It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to.
 
-Angle is a decentralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain.
+Angle has started with agEUR, a Euro (EUR - €) stablecoin on Ethereum mainnet.
 
-It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to. For example, the agEUR is the EUR-pegged stablecoin issued through Angle Protocol.
+On top of its stablecoin product, Angle protocol also offers to its users ways to:
 
-Angle has two modules, or set of smart contracts, from which agTokens can be issued or minted: the original [Angle Core module](core-module/overview.md) that was released in November 2021, and the upcoming [Angle Borrowing module](borrowing-module/).
+- Trade perpetual futures
+- Earn yield from strategies
+- Get leverage on a wide range of assets
+
+The protocol consists of several different modules, or set of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral will soon be released. The protocol is also engaged into Algorithmic Market Operations (AMOs) where agTokens are invested in protocols for Angle to get a yield on.
 
 ### Core module
 
-Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg. These agents are users minting and burning the stablecoins, hedging agents covering the protocol collateral from price changes, and standard liquidity providers helping to over-collateralize the protocol.
+Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/README.md) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/README.md) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/README.md) helping to over-collateralize the protocol in exchange for yield.
 
-Learn more in the [core module documentation](core-module/overview.md), and start using it at [app.angle.money](https://app.angle.money).
+Learn more in the [Core module documentation](core-module/overview.md), and start using it at [app.angle.money](https://app.angle.money).
 
 ### Borrowing module
 
-Angle Borrowing module is based on a borrowing mechanism similar to Maker with DAI. Users deposit collateral tokens in the protocol, and can then borrow certain amounts of agTokens from these deposits. This allows them to keep exposure to their tokens deposited in the protocol, while benefitting from additional liquidity in borrowed agTokens.
+The Borrowing module of the protocol allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
-This module was designed to improve over Maker, Abracadabra, Liquity, and even Euler, Aave and Compound models to allow for capital-efficient interactions with the protocol, to facilitate direct leverage, to optimize borrowers experience and improve liquidation mechanisms.
+Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Abracadabra](https://abracadabra.money), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it efficient. Among other things:
 
-Learn more in the new [borrowing module documentation](borrowing-module/).
+- All operations are designed to be capital efficient
+- The borrowing experience is optimized with notably an improved liquidation engine which allows liquidated addresses to face minimal losses compared with what they can experience in more traditional models.
 
-{% hint style="info" %}
-Angle Borrowing Module should be deployed in May 2022.
-{% endhint %}
+Learn more in the new [Borrowing module documentation](borrowing-module/).
 
-### Governance module
+### Other Aspects
+
+Angle is not limited to these key components. It is notably involved in algorithmic market operations where agTokens are invested directly by Angle in other protocols.
 
 Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
 ## 🛣️ Roadmap
 
-Angle Protocol could be used to issue any stablecoin. and has started on mainnet with agEUR, a Euro stablecoin. Besides creating the first liquid and decentralized Euro stablecoin, the goal of Angle is to create stablecoins for other types of assets.
+Beyond creating the first liquid and decentralized Euro stablecoin on Ethereum, the main goal of Angle is to create a money layer for DeFi. Angle will not only expand to multiple blockchains or open networks, it will also seek to launch stablecoins for other types of assets.
 
 You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-220m-tvl-6475711f458b) from March 3rd 2022 to learn more.
-
-## ⭐ [Popularization](resources/popularization/)
-
-If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
 ## 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
 Angle is currently being developed by its Core Team and community. Any help and initiative is more than welcome!
 
-There is a large number of ways to build decentralized stablecoins, and we, at Angle, see the stablecoin space as a large playground where we explore ways to make a cool, sustainable and robust design.
+There are a large number of ways to build decentralized stablecoins. We, at Angle, see the stablecoin space and DeFi more broadly as a large playground where we explore ways to invent cool, sustainable and robust primitives.
 
 Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
+{% hint style="success" %}
+📐 If there is anything unclear in this docs or out of date or if you feel like you have feedback on the protocol, this Discord is the best place to let us know!
+{% endhint %}
+
 ## ⚒️ [Developers Doc](https://developers.angle.money)
 
-Angle has a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
+Angle is an open protocol on which anyone can permissionlessly build or suggest improvements. The protocol relies on an open-source codebase available [on Github](https://github.com/AngleProtocol).
+
+To make things more intelligible, we have a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it. Check it out if you want to understand how the protocol's smart contracts are organized.
 
 {% hint style="info" %}
-All the protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](https://github.com/AngleProtocol/angle-core/tree/main/audits).
+The protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/audits/README.md).
 {% endhint %}
+
+## ⭐ [Popularization](resources/popularization/)
+
+If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
 
 ## Other Resources
 

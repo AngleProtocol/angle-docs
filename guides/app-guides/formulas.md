@@ -1,10 +1,10 @@
 ---
-description: List of formulas used in the Angle protocol and at app.angle.money
+description: List of formulas at on app.angle.money
 ---
 
 # Formulas
 
-## Perpetuals (HA)
+## Trade Perpetuals (Hedging Agents)
 
 ### Margin
 
@@ -20,26 +20,26 @@ In Angle, **leverage** is computed as:
 
 $$\texttt{leverage} = \frac{\texttt{(margin + position Size)}}{\texttt{margin}}$$
 
-**Example**
+#### Example
 
 - Margin: 10,000 DAI
 - Position size: 100,000 DAI
 
 $$\texttt{leverage} = \frac{1 + 10}{1} = 11 $$
 
-### Cash Out Amount
+### Cash-out Amount
 
-The Cash Out Amount represents the amount you should receive in your wallet after closing the perpetual:
+The Cash-out amount represents the amount you should receive in your wallet after closing the perpetual:
 
-$$\texttt{cash out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee} $$
+$$\texttt{cash-out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee} $$
 
 With $$\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$$
 
-### PnL
+### Profit & Loss (or PnL)
 
 The PnL displayed on the app represents the gain or loss you would make if closing the position. It is computed **net** of fees.
 
-$$ \texttt{PnL} = \texttt{cash out amount - initial margin} $$
+$$ \texttt{PnL} = \texttt{cash-out amount - initial margin} $$
 $$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
 
 ### Maintenance Margins
@@ -81,14 +81,11 @@ $$
 
 $$ APR = 2.08 = 208\% $$
 
-## Depositing Liquidity (SLP)
-
-_In the Yield page of the app_
-_Both the Slippage and SlippageFee can vary depending on the collateral/stablecoin pair._
+## Deposit / SLP
 
 ### Slippage
 
-SLP can face a slippage when withdrawing funds depending on the collateral ratio of the pool they are withdrawing from. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
+In the `Deposit / SLP` page of the app, users may face a slippage when they exit from their position and sell their sanTokens. It depends on specific parameters for the collateral of interest and on the collateral ratio of the stablecoin in the Core module. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
 
 $$
 \texttt{amnt received} = \texttt{amnt withdrawn} \times{(1 - \texttt{slippage})}

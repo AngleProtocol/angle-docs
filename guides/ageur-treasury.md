@@ -58,4 +58,4 @@ More generally, all ANGLE-related yield opportunities can be accessed through th
 
 Companies with agEUR in their treasury can also pay very easily their contributors in a transparent and compliant way. In just two on-chain transactions, their contributors can receive EUR in their bank account.
 
-All the steps are detailed on the [agEUR Power Use Case](ageur-power-usecase.md) page.
+All the steps are detailed on [this guide](ageur-power-usecase.md).

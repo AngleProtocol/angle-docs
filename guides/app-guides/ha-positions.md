@@ -14,11 +14,10 @@ You can read more about this mechanism [here](/core-module/hedging-agents/README
 
 1. To open a long position on Angle, head to [app.angle.money](https://app.angle.money/#/perpetuals) and select a collateral you want to long.
 2. Then, select the amount of collateral you want to send to the protocol as margin for your position. Positions in Angle work similarly than isolated-margin exchanges, where margin is separated between positions.
-3. Now, you can choose your leverage. This will determine your position size that is to say the amount of underlying tokens you will be exposed to. NB: leverage in Angle is computed as $$\frac{\texttt{margin + position size}}{\texttt{margin}}$$
+3. Now, you can choose your leverage. This will determine your position size that is to say the amount of underlying tokens you will be exposed to. Leverage in Angle is computed as $$\frac{\texttt{margin + position size}}{\texttt{margin}}$$
 4. The collateral/stablecoin exchange rate and transaction fees are displayed. Note that the net initial margin of your position will be your initial margin input minus fees. You'll also see the amount of ANGLE rewards you'll get with your position.
 5. If this is the first time opening a position on this collateral/stablecoin pair, you will need to approve your tokens with a transaction or a signature first.
 6. Once that is good, clicking the `Open perpetual` button will prompt you to confirm the transaction. The margin will be sent to the protocol and the leveraged position will be opened.
-7. While it is opened, your position will automatically accrue ANGLE rewards.
 
 For more advanced users, there is an expert mode which can be used to protect yourself against changing oracle or fees conditions in the environment.
 
@@ -26,11 +25,14 @@ For more advanced users, there is an expert mode which can be used to protect yo
 Be careful when opening a position, updating and closing is locked for an hour. More info [here](/guides/app-guides/app-faq.md).
 {% endhint %}
 
+While your position is open, depending on the asset you are longing, it may automatically accrue ANGLE rewards.
+In all cases, once your perp is open, you own a leveraged position, meaning you can make leveraged gains if the price of the collateral you are longing increases with respect to that of the asset the stablecoin is pegged to, and leveraged losses if the price decreases.
+
 ![Perpetuals page](../../.gitbook/assets/open-perpetual.png)
 
 ## Updating a position
 
-If you have open positions, you might want to add or remove margin to some of them. Doing so will update your leverage and change your liquidation price. There is no fee for updating the margin of a position.
+If you have open positions, you might want to add or remove margin to some of them to increase your leverage or protect yourself from a potential liquidation. There is no fee for updating the margin of a position.
 
 1. On the HA positions page, click on the `Modify Position` button.
 2. Enter an amount of collateral to add or remove from your position, or change its leverage. You can remove collateral up to reaching the max leverage allowed for the pair of the position. This max leverage can vary from x10 to x100 depending on the pair.

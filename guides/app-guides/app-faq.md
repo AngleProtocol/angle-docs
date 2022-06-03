@@ -1,8 +1,6 @@
 # App FAQ
 
-## General
-
-## agTokens Users
+## Swap Page - agTokens Users
 
 ### Why can't I burn my stablecoins?
 
@@ -13,7 +11,7 @@ There might by two rare cases in which users are unable to burn agTokens:
 
 In both cases, users can always burn the agTokens against another collateral.
 
-## Hedging Agents
+## Trade Perpetuals Page - Hedging Agents
 
 ### Why can't I open a new position?
 
@@ -37,10 +35,10 @@ The protocol has a target hedge ratio, and a limit hedge ratio \(higher than the
 
 In the case there is not enough funds in a pool Hedging Agents are withdrawing from, they first get the collateral present in the pool, and then receive an amount of sanTokens for the remaining value of collateral they should get. They can then sell those sanTokens whenever the pools have more funds, after a call to `harvest()` for instance.
 
-## Standard Liquidity Providers
+## Deposit / SLP Page
 
 ### Why can't I withdraw my collateral?
 
-If SLPs want to withdraw more funds than what is immediately available in their pool (due to funds being lent out), their transactions will get reverted. To prevent this from happening, we display an alert preventing them from making the transaction.
+If Standard Liquidity Providerss want to withdraw more funds than what is immediately available in their pool (due to funds being lent out), their transactions will get reverted. To prevent this from happening, we display an alert preventing them from making the transaction.
 
 They should wait for the next `harvest()` call from strategies, which should send funds back to the pool. This call can be directly made from the Angle app.

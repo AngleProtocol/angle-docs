@@ -6,13 +6,13 @@ description: Using agEUR as a payment currency
 
 Thanks to its partners and integrations, agEUR can be used to pay and create invoices, as well as to transfer fiat to your home bank account.
 
-All of this from almost anywhere in the world, on Ethereum or Polygon!
+This can be done from almost anywhere in the world, on Ethereum or Polygon!
 
-![Untitled](../.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
+![Pay and get paid with agEUR](../.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
 
 Some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate.
 
-agEUR can be a solution to such issues: anyone can invoice and get paid in agEUR, and transfer them directly to EUR or another fiat currency in their bank account!
+agEUR can be a solution to such issues: anyone can invoice and get paid in agEUR, and transfer them directly to EUR or another fiat currency in their bank account.
 
 More specifically, an agEUR integration can serve different types of users:
 
@@ -49,7 +49,9 @@ Then, they can select **any token they hold**, and use the expert mode to make s
 
 Once the contributors have received their payment from the DAO / company, they can simply withdraw the agEUR from their wallet to EUR in their bank account in one on-chain transaction by using [Mt Pelerin](https://www.mtpelerin.com/sell-crypto).
 
-Mt Pelerin allows anyone to send their cryptos back to their bank account quickly and easily, at the cost and speed of one transaction. Above a certain amount, a KYC on Mt Pelerin’s mobile application may however be needed.
+Mt Pelerin allows anyone to send their cryptos back to their bank account quickly and easily, at the cost and speed of one transaction. If you're a first time user selling less than 500 agEUR, you will not pay any fees in the process.
+
+Above a certain amount, a KYC on Mt Pelerin’s mobile application may however be needed.
 
 Obviously, users can also keep their agEUR and invest it to take advantage of the different yield opportunities available with it.
 

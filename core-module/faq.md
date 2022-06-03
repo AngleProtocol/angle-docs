@@ -20,7 +20,7 @@ Yes, Angle Core module smart contracts have been audited by Chainsecurity and Si
 
 ## What collateral are accepted by Angle Core module?
 
-Currently, USDC, DAI, FRAX, FEI, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens, and they will be swapped against one of these collaterals. 
+Currently, USDC, DAI, FRAX, FEI, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens, and they will be swapped against one of these collaterals.
 
 ## How is Angle's Core module different from other stablecoin protocols?
 
@@ -55,7 +55,7 @@ The code of the smart contracts is open source and has been be formally verified
 
 ## Is there any risk specific to the Core module?
 
-As well as the global risks detailed [here](../global-faq.md#is-there-any-risk), the Core module relies on hedging agents covering its reserves, and SLPs over-collateralizing it. If the Core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time.
+On top of the smart contract risks, the Core module relies on hedging agents covering its reserves, and SLPs over-collateralizing it. If the Core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time.
 
 ## Additional information and resources about the Core module
 
