@@ -23,15 +23,13 @@ On top of its stablecoin product, Angle protocol also offers to its users ways t
 - Earn yield from strategies
 - Get leverage on a wide range of assets
 
-The protocol consists of several different modules, or set of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral will soon be released. The protocol is also engaged into Algorithmic Market Operations (AMOs) where agTokens are invested in protocols for Angle to get a yield on.
+Precisely speaking, the protocol consists of several different modules, or set of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral will soon be released. The protocol is also engaged into Algorithmic Market Operations (AMOs) where agTokens are invested in protocols for Angle to get a yield on.
 
-### Core module
+### [Core module](core-module/overview.md)
 
 Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/README.md) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/README.md) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/README.md) helping to over-collateralize the protocol in exchange for yield.
 
-Learn more in the [Core module documentation](core-module/overview.md), and start using it at [app.angle.money](https://app.angle.money).
-
-### Borrowing module
+### [Borrowing module](borrowing-module/)
 
 The Borrowing module of the protocol allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
@@ -40,11 +38,9 @@ Inspired from more traditional borrowing protocols (like [Maker](https://makerda
 - All operations are designed to be capital efficient
 - The borrowing experience is optimized with notably an improved liquidation engine which allows liquidated addresses to face minimal losses compared with what they can experience in more traditional models.
 
-Learn more in the new [Borrowing module documentation](borrowing-module/).
-
 ### Other Aspects
 
-Angle is not limited to these key components. It is notably involved in algorithmic market operations where agTokens are invested directly by Angle in other protocols.
+Angle is not limited to these key components. It is notably involved in [Algorithmic Market Operations](other/amo.md) where agTokens are invested directly by Angle in other protocols.
 
 Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
 
