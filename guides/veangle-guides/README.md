@@ -11,9 +11,17 @@ In the following pages, we detail how to benefit from each of the veANGLE featur
 You can access all the veANGLE features from the [Angle App](https://app.angle.money/#/lock).
 
 {% content-ref url="locking-angle.md" %}
-[locking-angle.md](locking-angle.md)
+[Locking ANGLE](locking-angle.md)
 {% endcontent-ref %}
 
 {% content-ref url="voting-gauges.md" %}
-[voting-gauges.md](voting-gauges.md)
+[Voting on gauges](voting-gauges.md)
+{% endcontent-ref %}
+
+{% content-ref url="incentives.md" %}
+[Earning ANGLE](incentives.md)
+{% endcontent-ref %}
+
+{% content-ref url="voting-offchain.md" %}
+[Voting on Snapshot](voting-offchain.md)
 {% endcontent-ref %}
