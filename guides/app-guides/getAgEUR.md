@@ -46,11 +46,11 @@ You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
 agEUR is supported by a wide range of on-ramp partners which make it accessible from a simple credit card or bank transfer:
 
-- [Mt Pelerin](https://www.mtpelerin.com): **buy and sell** agEUR by card or bank transfer
-- [Transak](https://transak.com): **buy** agEUR by card or transfer
-- [Wert.io](https://widget.wert.io/01FPZ4G1VMZ67MGC83NADPB0F8/redirect/?commodity=agEUR&commodities=agEUR,agEUR%3Aethereum): **buy** agEUR by card
+- Mt Pelerin
+- Transak
+- Wert.io
 
-The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
+All of them are accessible from the main Angle interface on the [On-ramp / off-ramp](https://app.angle.money/#/ramp) page. The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
 
 These providers usually let you receive the agEUR on the Ethereum or Polygon network. You might face high fees for low amounts due to Ethereum transaction costs.
 
