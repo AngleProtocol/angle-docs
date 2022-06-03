@@ -4,8 +4,6 @@ description: Angle App - User guides for protocol interactions
 
 # 📔 App Guides
 
-## Protocol features
-
 This section contains guides to interact through [app.angle.money](https://app.angle.money) with the main features of the different modules of the Angle protocol.
 
 In particular, you will learn how to play with the app and more particularly to:
@@ -44,7 +42,7 @@ Everything related to ANGLE & veANGLE can be found in the ANGLE section.
 
 Users can **lock** ANGLE to get veANGLE, vote on rewards distribution (**gauge** tab), stake their funds to **earn** ANGLE tokens, and **buy** ANGLE with any tokens directly from the same UI!
 
-More details about these use cases can be found in the guides above. 
+More details about these use cases can be found in the guides above. For governance-related guides, head over to the [Governance guides](/guides/veangle-guides/README.md). 
 
 
 ![New app UI](../../.gitbook/assets/new-app-ui.png)
