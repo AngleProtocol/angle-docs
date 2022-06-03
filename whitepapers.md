@@ -1,10 +1,14 @@
 ---
-description: Whitepapers linked to the Angle Protocol
+description: Whitepapers of the Angle Protocol
 ---
 
 # 📖 Whitepapers
 
 This page gathers the whitepapers for the different modules and products linked to the Angle Protocol.
+
+{% hint style="info" %}
+You may find translations of these whitepapers in the [international](resources/international/README.md) section of this docs.
+{% endhint %}
 
 ## Angle Core Module
 
@@ -23,21 +27,3 @@ The whitepaper is a static document explaining the concept and inspiration for t
 The following is a whitepaper for the Borrowing Module of the Angle Protocol.
 
 {% file src=".gitbook/assets/Angle Borrowing Module Whitepaper.pdf" %}
-
-## Translations
-
-### Angle Core Module Translations
-
-Some contributors translated the whitepaper of the Angle Core Module in their home language. These contributions have not been thoroughly verified by the whole community so they are to be considered as unofficial documents.
-
-#### Russian 🇷🇺
-
-{% file src=".gitbook/assets/Angle_Whitepaper_Russian.pdf" %}
-Angle Whitepaper in Russian
-{% endfile %}
-
-#### Vietnamese 🇻🇳
-
-{% file src=".gitbook/assets/Whitepaper_AngleProtocol_Vietnamese.pdf" %}
-Angle Whitepaper in Vietnamese
-{% endfile %}

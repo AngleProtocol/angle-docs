@@ -37,7 +37,7 @@ More formal proposals are then dicussed in our governance forum at [gov.angle.mo
 
 ### General proposals
 
-After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. After the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol.
+After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. Since the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/veangle-guides/voting-offchain.md) to other addresses.
 
 Finalized votes are then implemented by a [multi-sig](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8) composed of core team and community members.
 
@@ -46,9 +46,11 @@ A signature from the multi-sig is required to enforce the outcomes of the Snapsh
 {% endhint %}
 
 ### The Multi-Sig
-Angle Governance is represented by a 4-of-6 Gnosis multi-sig, whose role is to enforce votes from veANGLE holders. Once a vote has passed on Snapshot, the multi-sig executes it in a separate transaction, making it resistant to on-chain governance attacks. 
 
-It is composed of 6 person, three team members and three "public" crypto person, and requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are: 
+Angle Governance is represented by a 4-of-6 Gnosis multi-sig, whose role is to enforce votes from veANGLE holders. Once a vote has passed on Snapshot, the multi-sig executes it in a separate transaction, making it resistant to on-chain governance attacks.
+
+It is composed of 6 person, three team members and three "public" crypto person, and requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are:
+
 - Pablo Veyrat: [@pablo_veyrat](https://twitter.com/pablo_veyrat)
 - Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
 - Picodes: [@thePicodes](https://twitter.com/thePicodes)
