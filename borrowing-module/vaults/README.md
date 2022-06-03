@@ -13,7 +13,7 @@ Angle Borrowing module vault-based system lets you:
 - Borrow agTokens from tokens deposited as collateral in the protocol
 - Leverage collateral exposure in one transaction
 - Transfer your debt between vaults to avoid liquidation
-- Perform different actions on your vault in a single transaction and in a capital-efficient manner
+- Perform different actions on your vault in a single transaction and in a capital efficient manner
 - Take self-repaying loans
 
 ## Main features
@@ -34,7 +34,7 @@ With an opened vault, there are many different actions that can be performed bey
 For more details on how to combine transactions in a modular way with the protocol, you can check [this page](https://developers.angle.money/borrowing-module-contracts/smart-contract-docs/vaultmanager) of our developers documentation.
 {% endhint %}
 
-The advantage of this design is that it enables capital-efficient interactions with Angle vaults.
+The advantage of this design is that it enables capital efficient interactions with Angle vaults.
 
 ### Capital-efficient debt repayment
 
@@ -44,7 +44,7 @@ At some point, users may want to close their debt towards the protocol. Instead 
 
 ![Capital Efficient Debt Repayment](../../.gitbook/assets/capital-efficient-debt-repayment.jpg)
 
-On a similar note, it is this capital-efficient design that allows liquidators to participate in liquidations without bringing any stablecoin from their pocket. More is explained [here](liquidations.md).
+On a similar note, it is this capital efficient design that allows liquidators to participate in liquidations without bringing any stablecoin from their pocket. More is explained [here](liquidations.md).
 
 ### Leveraging collateral exposure
 

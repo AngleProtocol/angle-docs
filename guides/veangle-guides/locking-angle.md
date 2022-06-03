@@ -18,7 +18,7 @@ You can get ANGLE tokens by buying them from any other crypto-asset on [this pag
 
 ANGLE tokens can be locked at [app.angle.money](https://app.angle.money/#/lock).
 
-![ANGLE locking screen](../../.gitbook/assets/angle-lockscreen.png)
+![ANGLE locking screen](../../.gitbook/assets/angle-lockscreen2.png)
 
 ### Creating the lock
 

@@ -2,7 +2,7 @@
 description: How to mint and burn agTokens using Angle app or other providers
 ---
 
-# 🇪🇺 Get agEUR
+# 💶 Get agEUR
 
 agEUR is a **EUR-pegged stablecoin**, meaning that it's built to mirror the value of the EUR. The objective behind stablecoins is to create tokens that hold their value against some tangible references, like central bank currencies, and make them available on decentralized and open blockchains such as Ethereum.
 
@@ -22,13 +22,13 @@ There are different places on which you can buy agEUR on-chain. You can do it:
 - Directly with the Angle Protocol through the [Angle App](https://app.angle.money) on the Ethereum blockchain.
 - From DEXes on Ethereum or on other chains like Solana, Fantom, Polygon. agEUR exists with deep liquidity on many decentralized exchanges of different chains. Best solution at the moment on Ethereum mainnet remains to use [Uniswap](https://app.uniswap.org) or an aggregator like [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR).
 
-Angle App is built to minimize cost for acquiring agEUR (and ANGLE) with any token but it is possible that there are temporarily better prices to get it from other tokens on decentralized exchanges.
+Angle App is built to minimize cost for acquiring agEUR (and ANGLE) with any token but it is possible that there are temporarily better prices to get it from other tokens on DEXes.
 
 Here we'll breakdown the process of buying agEUR on the [Angle App](https://app.angle.money).
 
 ### On Angle
 
-Before anything, to buy agEUR on Angle (it works the same on decentralized exchanges), you need ETH in your wallet to pay for your network gas fees. You also need to have in your wallet the token you want to use to get agEUR. ETH is notably one of these.
+Before anything, to buy agEUR on Angle (and on any DEX), you need ETH in your wallet to pay for your network gas fees. You also need to have in your wallet the token you want to use to get agEUR. ETH is notably one of these.
 
 Then:
 
@@ -62,7 +62,7 @@ Note that these partners may ask users to enter personal information above a cer
 
 If you want to exchange your agEUR back to another token, you have a few options:
 
-- Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a decentralized exchange like [Uniswap](https://app.uniswap.org).
+- Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a DEX like [Uniswap](https://app.uniswap.org).
 - Send money back directly to your bank account through our off-ramp partner Mt Pelerin.
 
 ### On the Angle App
@@ -70,14 +70,16 @@ If you want to exchange your agEUR back to another token, you have a few options
 Swapping agEUR back to another token on Angle is a similar process than buying agEUR.
 
 1. Go to [app.angle.money](https://app.angle.money/#/swap),
-2. Select how much agEUR you want to burn and the token you want to receive in exchange.
-3. Click on `Burn` and confirm the transaction in your wallet. This will exchange your agEUR for the tokens you selected.
+2. Select agEUR as the `from` token for the swap and the token you want to receive in exchange.
+3. Click on `Swap` and confirm the transaction in your wallet. This will exchange your agEUR for the tokens you selected. Note that you do not need an approval to perform this operation.
 
 ![Burning agEUR](../.gitbook/assets/sell-agEUR-for-DAI.png)
 
 ### With Mt Pelerin
 
 If you want to send your agEUR from your wallet as EUR in your bank account, you can do so by using [Mt Pelerin](https://www.mtpelerin.com). The Swiss based company allows users to send cryptocurrency and receive the equivalent directly in their bank account.
+
+There are no fees on Mt Pelerin for first time users selling less than 500 agEUR, and no KYC is needed for less than \$1k of volume a day.
 
 ## Links and resources
 

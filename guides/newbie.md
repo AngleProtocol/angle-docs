@@ -16,13 +16,17 @@ A wallet can be used to generate addresses to receive funds, and send transactio
 
 If you want to learn more about seed phrase or wallets, you can dive into [Metamask user guides](https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-Guide-Secret-Recovery-Phrase-password-and-private-keys).
 
-Now that we know what a wallet is, let's create a wallet :point\_down:
+Now that we know what a wallet is, let's create a wallet :point_down:
 
 ## 🦊 Creating a wallet with Metamask
 
 Metamask is a wallet that works as a browser extension. You can follow [these steps](https://metamask.zendesk.com/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install it.
 
 When it's done, Metamask will prompt you to "Import a wallet" or "Create a wallet". Click on **Create a wallet** and follow the steps. Don't forget to keep the secret recovery phrase (seed phrase) very safe: ideally not on your phone or computer.
+
+{% hint style="info" %}
+Metamask is just a wallet among others, there are many different wallet options available, like [Ledger](https://www.ledger.com), [Brave](https://brave.com/wallet/), ...
+{% endhint %}
 
 ## Next steps
 

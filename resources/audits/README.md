@@ -4,7 +4,7 @@ description: Results and reports of Angle Protocol audit engagements
 
 # 🔐 Audits
 
-Angle Protocol has undergone many different audits for its smart contracts and modules.
+Angle Protocol has undergone several audits for its smart contracts and modules.
 
 ## Chainsecurity April 2022 - May 2022
 
