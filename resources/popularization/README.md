@@ -28,14 +28,14 @@ What is Angle Protocol?
 Angle Introduction Article
 {% endembed %}
 
-- _Details: A more thorough article to get a clearer overview of the Angle Protocol and its different stakeholders_
-- _DeFi Expertise Required: 2/5_
+- _Details: A more thorough article to get a clearer overview of the Angle Protocol Core module and its different stakeholders_
+- _DeFi Expertise: 2/5_
 - _Recommended If: You want to go deep in the subject, understand the vision behind the project and how it tries to achieve it_
 
 ## Angle Explains Threads
 
 - _Details: regular threads about Angle or DeFi subjects related to the protocol. The goal is to give more insights to the Angle and wider crypto communities about those topics._
-- _DeFi Expertise Required: 2/5 to 4/5_
+- _DeFi Expertise: 2/5 to 4/5_
 - _Recommended if you want to dive deeper into various topics concerning Angle, DeFi, and stablecoins._
 
 **Threads**:
@@ -47,5 +47,5 @@ Angle Introduction Article
 Quizzes: [Part 1](https://docs.google.com/forms/d/e/1FAIpQLSddUD8rNRBNvPHJN15DvPT9Lbglu5-M_iGQU_PGD4wchvHnLg/viewform?usp=sf_link), [Part 2](https://docs.google.com/forms/d/e/1FAIpQLScK7dZtSHQUg3zEoLFP27-2M92Bpl6AUOiOi-WEc62gkvaPcw/viewform?usp=sf_link), [Part 3](https://docs.google.com/forms/d/e/1FAIpQLSe7z5ZFgsokkFLIl4zhcjhY5LrnJ_gfbzAytWHKnFguQY7HFw/viewform?usp=sf_link)
 
 - _Details: These quizzes will help you test your knowledge and understanding of the Angle Protocol_
-- _DeFi Expertise Required: From 2/5 to 4/5 (quizzes are increasing in difficulty)_
+- _DeFi Expertise: From 2/5 to 4/5 (quizzes are increasing in difficulty)_
 - _Recommended If: You had fun reading the docs and other documents about the protocol and want to check how much you have learned_
