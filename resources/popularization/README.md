@@ -28,14 +28,17 @@ What is Angle Protocol?
 Angle Introduction Article
 {% endembed %}
 
-- _Details: A more thorough article to get a clear and thorough overview of the Angle Protocol and its different stakeholders_
+- _Details: A more thorough article to get a clearer overview of the Angle Protocol and its different stakeholders_
 - _DeFi Expertise Required: 2/5_
 - _Recommended If: You want to go deep in the subject, understand the vision behind the project and how it tries to achieve it_
 
 ## Angle Explains Threads
 
-Angle is publishing regular threads about Angle or DeFi subjects related to the protocol. The goal is to give more insights to the Angle and wider crypto communities about those topics. You can find those threads here: 
+- _Details: regular threads about Angle or DeFi subjects related to the protocol. The goal is to give more insights to the Angle and wider crypto communities about those topics._
+- _DeFi Expertise Required: 2/5 to 4/5_
+- _Recommended if you want to dive deeper into various topics concerning Angle, DeFi, and stablecoins._
 
+**Threads**:
 - June 5th 2022: [veTokens and Liquid Lockers, Part 1](https://twitter.com/AngleProtocol/status/1533416014033059841)
 - May 29th 2022: [Inflation-resistant stablecoins](https://twitter.com/AngleProtocol/status/1530864272456163329)
 
