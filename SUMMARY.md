@@ -9,7 +9,7 @@
 - [🎓 Guides](guides/README.md)
   - [🚶 First Steps in Crypto](guides/newbie.md)
   - [💶 Get agEUR](guides/getAgEUR.md)
-  - [🧩  Use cases](/guides/use-cases/ageur-power-usecase.md)
+  - [🧩  Use cases](/guides/use-cases/README.md)
     - [💸 Pay and get paid with agEUR](/guides/use-cases/ageur-power-usecase.md)
     - [🏦 agEUR as a treasury asset](/guides/use-cases/ageur-treasury.md)
   - [📔 App Guides - Protocol features](guides/app-guides/README.md)
