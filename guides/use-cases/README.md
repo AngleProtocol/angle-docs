@@ -2,9 +2,9 @@
 description: Use Cases
 ---
 
-# 🧩 Use Cases
+# 🧩 Use cases
 
-This section contains guides showcasing the different use cases possible with Angle and agEUR. These guides are intended both for individuals and DAOs. 
+This section contains guides showcasing the different use cases possible with Angle and agEUR. These guides are intended for individuals, traditional companies and DAOs.
 
 {% content-ref url="ageur-treasury.md" %}
 [ageur-treasury.md](ageur-treasury.md)
