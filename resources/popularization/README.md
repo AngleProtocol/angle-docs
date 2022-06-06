@@ -1,7 +1,5 @@
 ---
-description: >-
-  Content and elements designed to make Angle Protocol and DeFi more accessible
-  to everyone
+description: Content and elements designed to make Angle Protocol and DeFi more accessible to everyone
 ---
 
 # ⭐ Popularization
@@ -33,6 +31,13 @@ Angle Introduction Article
 - _Details: A more thorough article to get a clear and thorough overview of the Angle Protocol and its different stakeholders_
 - _DeFi Expertise Required: 2/5_
 - _Recommended If: You want to go deep in the subject, understand the vision behind the project and how it tries to achieve it_
+
+## Angle Explains Threads
+
+Angle is publishing regular threads about Angle or DeFi subjects related to the protocol. The goal is to give more insights to the Angle and wider crypto communities about those topics. You can find those threads here: 
+
+- June 5th 2022: [veTokens and Liquid Lockers, Part 1](https://twitter.com/AngleProtocol/status/1533416014033059841)
+- May 29th 2022: [Inflation-resistant stablecoins](https://twitter.com/AngleProtocol/status/1530864272456163329)
 
 ## 🧑‍🏫 Angle Knowledge Quizzes
 
