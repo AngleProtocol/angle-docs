@@ -61,11 +61,11 @@ The structure of the mint transaction fees differs from that of the burn transac
 
 - Minting: The concept is that the higher the coverage ratio, the more the Core module is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
 
-![](../../.gitbook/assets/Minting_fee.jpg)
+![Minting Fee for Users](../../.gitbook/assets/Minting_fee.jpg)
 
 - Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the Core module is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
 
-![](../../.gitbook/assets/burning-fee.jpg)
+![Burning Fee for Users](../../.gitbook/assets/burning-fee.jpg)
 
 {% hint style="info" %}
 The exact amount and values of these transaction fees are still to be determined. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.

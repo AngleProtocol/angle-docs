@@ -6,19 +6,11 @@ description: Angle Borrowing Module Overview
 
 ## Introduction
 
-Angle Borrowing Module goal is to help **expand the Angle Protocol** through another minting mechanism for Angle stablecoins. It is based on a **debt mechanism**, similar to those used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
+Angle Borrowing Module goal was introduced after the Core module of the protocol as a way to help **expand the Angle Protocol** through another minting mechanism for Angle stablecoins.
 
-The main advantages of having this Borrowing module next to the main Core module are:
+This module works hand in hand with the Core module and agTokens, like agEUR, are fully interoperable between both modules.
 
-- No need for hedging agents to cover the protocol
-- Easier to add new collaterals
-- Users can keep exposure to their collateral tokens while using agEUR
-
-These advantages help **further expand Angle and its agTokens**, both in terms of the stablecoins issued, their volume, and the chains and networks where they can be issued & redeemed. It has been designed to work hand in hand with the current one, and strenghten the Angle Protocol. AgTokens, like agEUR, are fully interoperable between both modules.
-
-{% hint style="info" %}
-Angle Borrowing Module has not yet been deployed and will soon be open-sourced. It should be live by the end of May 2022.
-{% endhint %}
+It is based on a **debt mechanism**, similar to the one used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 
 ## Main Features
 
@@ -49,3 +41,7 @@ The Reactor mode allows users or DAOs to deposit volatile tokens in specific vau
 {% hint style="info" %}
 DAOs could leverage Angle token Reactors of the Angle Protocol to make a revenue out of their otherwise idle treasury assets. Learn more about it [here](../angle-borrowing-module/token-reactor.md).
 {% endhint %}
+
+## Audits
+
+The smart contracts of the Borrowing module have been audited by Chainsecurity. The code and audits have been published in [our dedicated repository](https://github.com/AngleProtocol/angle-borrow). They can also be accessed in the [Audits section](../resources/audits/) of this docs.

@@ -123,7 +123,7 @@ $$\texttt{address C: }\frac{2180}{250 + 10080 + 2180} = 17.42\%$$
 
 #### Remarks
 
-As expected from the formula, LPs owning a bigger share of the pool need to hold a bigger share of the veANGLE supply to significantly increase their boost. Similarly, the smaller the share of the pool owned initially, the bigger the increase in rewards will be.
+As expected from the formula, LPs owning a bigger share of the pool need to hold a bigger share of the veANGLE supply to significantly increase their boost. Similarly, the smaller the share of the pool owned initially, the bigger the increase in rewards.
 
 Due to all the variables in the boost calculation, it is very tricky to do so manually and users should refer to our calculator on the DAO page.
 
@@ -133,7 +133,7 @@ Implementation details are such that a user's veANGLE balance used to calculate 
 
 On the one hand, after locking tokens, users need to call the **deposit, withdraw (with amount > 0), or user_checkpoint() functions** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 
-On the other hand, as the voting power decreases with time, the liquidity gauge will keep considering the original, higher veANGLE balance than what users actually have, giving them a higher boost than they should. Therefore, it's at their advantage to apply a boost and do no further actions until they vote-lock more tokens.
+On the other hand, as the voting power decreases with time, the liquidity gauge keeps considering the original, higher veANGLE balance than what users actually have, giving them a higher boost than they should. Therefore, it's at their advantage to apply a boost and do no further actions until they vote-lock more tokens.
 
 However, once the vote-lock expires, everyone can “kick” users by creating a checkpoint for that address and, essentially, resetting their actual voting power and boost.
 

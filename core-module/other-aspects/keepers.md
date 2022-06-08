@@ -6,8 +6,8 @@ description: Helping the protocol achieve its desired outcome
 
 ## 🔎 TL;DR
 
-* Keepers help the protocol perform some tasks which cannot be performed automatically.
-* Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
+- Keepers help the protocol perform some tasks which cannot be performed automatically.
+- Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
 
 ## 💡 Rationale
 
@@ -17,7 +17,7 @@ Angle needs multiple types of keepers to get involved. Angle Core Team developpe
 
 ## ⚖️ Arbitrage Keepers
 
-Tokens issued by the protocol will be tradable on exchanges and therefore have a market price. [To make the price of these tokens stable](../../concepts/other-aspects/stable-seekers/#stability), the protocol relies on arbitrageurs which will have profitable opportunities whenever the market prices of the tokens deviate from peg.
+Tokens issued by the protocol are tradable on exchanges and therefore have a market price. [To make the price of these tokens stable](../../concepts/other-aspects/stable-seekers/#stability), the protocol relies on arbitrageurs which have profitable opportunities whenever the market prices of the tokens deviate from peg.
 
 ## Keepers for Transaction Fees and Slippage
 
@@ -39,7 +39,7 @@ Governance is able to vote to set additional rewards in the form of governance t
 
 ## 🛡️ Keepers for [Hedging Agents](../../concepts/other-aspects/hedging-agents/)
 
-As explained[ in the Hedging Agents' part](../../concepts/other-aspects/hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs hedging is too important compared to what has been brought by users, then some positions need to be closed.
+As explained [in the Hedging Agents' part](../../concepts/other-aspects/hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs hedging is too important compared to what has been brought by users, then some positions need to be closed.
 
 The same goes [for the liquidation of HAs](../../concepts/other-aspects/hedging-agents/#price-decrease-scenario): if the position of an HA is inferior to its maintenance margin, this position should be liquidated.
 

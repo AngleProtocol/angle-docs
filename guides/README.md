@@ -37,5 +37,5 @@ The following pages contain user guides for all of these use cases:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-The app presented in our guides has been developed by the Angle Core Team. Anyone is welcome to build its app on top of Angle. We will make sure to promote and list any serious front interface of the protocol.
+The app presented in our guides has been developed by the Angle Core Team. Anyone is welcome to build its app on top of Angle. We are making sure to promote and list any serious front interface of the protocol.
 {% endhint %}

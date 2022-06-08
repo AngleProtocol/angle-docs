@@ -12,7 +12,7 @@ This could serve different use cases.
 
 ### For specific collateral types
 
-The whitelisting of addresses could be used to deploy specific collateral types (like real-world assets for example). In this case, governance may need to keep tight control on who can borrow to avoid exploits.
+The whitelisting of addresses can be used to deploy specific collateral types (like real-world assets for example). In this case, governance may need to keep tight control on who can borrow to avoid exploits.
 
 ### For specific entities
 
@@ -26,7 +26,7 @@ We can also imagine the case of a DAO with governance tokens reserves. In this c
 
 ## Token Reactors
 
-Expanding on this idea, Angle Borrow module could also be used to create Tokens Reactors. Read more in the page below 👇
+Expanding on this idea, Angle Borrow module can also be used to create Tokens Reactors. Read more in the page below 👇
 
 {% content-ref url="token-reactor.md" %}
 [token-reactor.md](token-reactor.md)

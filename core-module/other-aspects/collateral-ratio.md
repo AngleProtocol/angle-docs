@@ -6,8 +6,8 @@ description: Angle is over-collateralized
 
 ## 🔎 TL;DR
 
-* Thanks to its two types of liquidity providers (HAs and SLPs), Angle Core module is over-collateralized.
-* Due to the Core module structure, the exact level of over-collateralization that will be reached is still hard to determine.
+- Thanks to its two types of liquidity providers (HAs and SLPs), Angle Core module is over-collateralized.
+- Due to the Core module structure, the exact level of over-collateralization that will be reached is still hard to determine. Live collateral ratio of the Core module can be checked on the [Analytics](https://analytics.angle.money)
 
 ## 📐 Collateral Ratio Structure
 
