@@ -8,10 +8,10 @@ description: >-
 
 ## 🔎 TL;DR
 
-* Angle Core module earns interest on the reserves it holds by lending it to other platforms.
-* To do so, it relies on strategies which decide how much and in which protocols reserves should be placed.
-* This mechanism is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
-* Strategies are what enable the Core module to offer higher yield to SLPs than what they would get by lending directly to other protocol.
+- Angle Core module earns interest on the reserves it holds by lending it to other platforms.
+- To do so, it relies on strategies which decide how much and in which protocols reserves should be placed.
+- This mechanism is modular: there can be multiple strategies for a single collateral, each interacting with multiple platforms.
+- Strategies are what enable the Core module to offer higher yield to SLPs than what they would get by lending directly to other protocol.
 
 ## 💡 Rationale
 
@@ -75,8 +75,8 @@ As of April 2022, a single folding strategy for USDC on Aave has been implemente
 
 The strategy used for ETH is the StETHAcc strategy forked from Yearn [here](https://github.com/Grandthrax/yearn-steth-acc/blob/master/contracts/Strategy.sol). It buys stETH from Lido or Curve stETH/ETH pool depending on where it's cheaper, and then earns the stETH yield. stETH is exchanged to ETH when needed through the Curve pool.
 
-More complex ETH strategies will be developed in the future. The contract can be found [here](https://github.com/AngleProtocol/angle-core/blob/main/contracts/strategies/StrategyStETHAcc.sol).
+The contract can be found [here](https://github.com/AngleProtocol/angle-core/blob/main/contracts/strategies/StrategyStETHAcc.sol).
 
 {% hint style="info" %}
-The state of the strategies used for different collateral types can be tracked on the [Angle Analytics](https://analytics.angle.money).
+The state of the strategies used for different collateral types can be tracked on the [Angle Analytics](https://analytics.angle.money), or on the [developers documentation](https://developers.angle.money/overview/smart-contracts/mainnet-contracts).
 {% endhint %}

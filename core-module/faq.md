@@ -6,7 +6,7 @@ description: The go-to source for all frequently asked questions about Angle Cor
 
 ## What is Angle Core module?
 
-Angle Core module is an efficient, over-collateralized, and liquid decentralized stablecoin protocol. It could be used to issue virtually any type of stablecoins.
+Angle Core module is a set of smart contracts of the Angle Protocol designed to allow the issuance of stablecoins called agTokens in an efficient and over-collateralized way.
 
 ## How does Angle Core module work?
 
@@ -41,7 +41,7 @@ To interact with the app, you need an Ethereum wallet like Metamask, some ETH to
 
 ## What are the costs?
 
-Angle core module has dynamic fees. For stable seekers minting and burning fees vary around 0.3%, meaning that with 1 ETH worth 1000€, a stable seeker can get 997 agEUR. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependency on the collateral ratio of the Core module.
+Angle Core module has dynamic fees. For stable seekers minting and burning fees vary around 0.3%, meaning that with 1 ETH worth 1000€, a stable seeker can get 997 agEUR. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependency on the collateral ratio of the Core module.
 
 For Hedging Agents getting perpetual futures from the Core module, there are some fees induced at position opening and closing. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees vary around 0.3% as well.
 
@@ -51,7 +51,7 @@ You can see the specific fees implemented in detail in Angle's [analytics](https
 
 The funds of Angle Core module are stored in smart contracts. There is one smart contract for each collateral/stablecoin pair, such that funds are distributed amongst multiple contracts. A portion of the funds is transferred to strategies responsible for earning yield. These strategies transfer some funds to other protocols like Compound or Aave.
 
-The code of the smart contracts is open source and has been be formally verified and audited by third party auditors.
+The code of the smart contracts is open source and has been audited by third party auditors.
 
 ## Is there any risk specific to the Core module?
 

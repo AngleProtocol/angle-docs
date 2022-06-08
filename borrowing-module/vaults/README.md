@@ -68,7 +68,7 @@ For more insight on liquidations, check out [this page](./liquidations.md).
 
 ### Self-repaying loans
 
-Governance could vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset could be used, meaning users could take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral: Angle Borrowing module hence opens the way to self-repaying loans.
+Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset could be used, meaning users could take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral: Angle Borrowing module hence opens the way to self-repaying loans.
 
 ## Additional Features and Details
 
@@ -116,7 +116,7 @@ One vault liquidation has no impact on the others.
 
 Thanks to the isolation of positions, one could become under a risk of liquidation, while the other has plenty collateral and a much higher collateral ratio.
 
-In this case, users are able to perform a debt transfer, meaning that they will transfer part of their debt from one of their vault to another, without actually transferring stablecoins. Debt transfer is only possible between vaults related to the same stablecoin, but can be done with vaults linked to different collateral types.
+In this case, users are able to perform a debt transfer, meaning that they can transfer part of their debt from one of their vault to another, without actually transferring stablecoins. Debt transfer is only possible between vaults related to the same stablecoin, but can be done with vaults linked to different collateral types.
 
 A debt transfer operation increases the health ratio of the first vault, as it has less debt, and decreases that of the second. It allows users to rebalance their debt and collateral ratio between the different vaults they own in an efficient manner, as the transaction just involves an accounting operation.
 
@@ -140,7 +140,7 @@ Angle Borrowing module only relies on two types of keepers: liquidators, which e
 
 #### Oracle
 
-Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely on on-chain data. For the case of WStETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of WStETH.
+Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely on on-chain data. For the case of wstETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of wstETH.
 
 ## Next
 

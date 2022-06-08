@@ -20,7 +20,7 @@ Other stakeholders of the Angle ecosystem (like UniV3 or Curve LPs on Ethereum m
 
 ## 💐 Token Distribution
 
-The distribution of governance tokens between the different staking contracts (called gauges) happens through weekly votes from veANGLE token holders. They assign specific weights to the different gauges, and the sum of their votes will dictate the next rewards distribution.
+The distribution of governance tokens between the different staking contracts (called gauges) happens through weekly votes from veANGLE token holders. They assign specific weights to the different gauges (more below), and the sum of their votes dictates the next rewards distribution.
 
 400,000,000 ANGLE (40% of the total supply) is being distributed through staking. The amount being distributed are divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the distribution by 1.50 every year.
 
@@ -32,7 +32,7 @@ We built some simulations to evaluate how supply evolves over time, you can take
 
 Each staking contract receiving rewards has a dedicated gauge. Gauges are used so that veANGLE holders can dedicate their voting powers to influence the distribution of ANGLE rewards between the different staking contracts.
 
-veANGLE holders assign specific weights of their voting power to the different gauges, and the sum of all the veANGLE assigned to each gauge by all holders will determine the quantity of rewards to be distributed. Once weights are allocated, they are reverberated in the following weeks without users having to do anything except if they want to change it.
+veANGLE holders assign specific weights of their voting power to the different gauges, and the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once weights are allocated, they are reverberated in the following weeks without users having to do anything except if they want to change it.
 
 {% hint style="info" %}
 The rewards weight allocation can change each week depending on the changes in voting power allocated. The process is detailed [here](../../governance/veANGLE/gauges.md).

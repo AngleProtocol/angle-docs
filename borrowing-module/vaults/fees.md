@@ -18,7 +18,7 @@ At the top level, three different fees can be charged to users borrowing agToken
 
 - A mint fee
 - A stability fee
-- A repaying fee
+- A repay fee
 
 Note that some of these fees can be set to 0. Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
 
@@ -28,11 +28,17 @@ Collecting these fees creates revenue for the protocol, which serves multiple pu
 - Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
 - Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
+{% hint style="info" %}
+The state of the fees taken for each type of vault can be checked directly on the [Angle App](https://app.angle.money) or on the [Analytics](https://analytics.angle.money) of the protocol.
+{% endhint %}
+
 ### Mint Fee
 
-When users open a vault, they deposit collateral and can mint agTokens depending on the collateral ratio of the vault. At this point, they could be charged a mint fee that would increase their debt. This fee is set by governance, and will most likely be set to 0 at the beginning.
+When users open a vault, they deposit collateral and can mint agTokens depending on the collateral ratio of the vault. At this point, they could be charged a mint fee that would increase their debt.
 
-As an example, if the mint fee is 1%, after minting 100 agTokens users would find themselves with 101 agTokens of debt.
+For example, if the mint fee is 1%, after minting 100 agTokens users would find themselves with 101 agTokens of debt.
+
+This fee is set by governance, and it is most often set to 0, meaning it is an option available for governance.
 
 ### Stability Fee
 
@@ -58,21 +64,24 @@ It's important to keep in mind that this fee can be changed by governance, and c
 
 Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee.
 
-As for the mint fee, the repay fee should be set to 0 for all vaults.
+As for the mint fee, the repay fee is most often set to 0, and you should check the [analytics](https://analytics.angle.money) to check whether there has been updates.
 
 ### Liquidation Surcharge
 
 In the event of a [liquidation](../../new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
 
+Its value is usually around 2%.
+
 ### Putting this all together
 
-If we try to consolidate all of this, we see that the fee structure in this module is not very complex. Basically, users pay three types of fees to the protocol in the form of an increase of their debt that will need to be paid back or collateralized.
+In summary, users pay three types of fees to the protocol in the form of an increase of their debt that will need to be paid back or collateralized.
 
-This debt increase through fees happen at three moments:
+This debt increase through fees happen at four moments:
 
 1. When minting agTokens if there is a **mint fee** (which is optional)
 2. During the life of the vault if agTokens is borrowed, through the **stability fee**
-3. When a partial liquidation happens, through the **liquidation surcharge**
+3. When repaying an agToken debt if there is a **repay fee** (optional as well)
+4. When a liquidation happens, through the **liquidation surcharge**
 
 ## Bad debt
 
@@ -86,4 +95,4 @@ All the revenue and bad debt from this module are gathered in `Treasury` contrac
 
 Interestingly, stablecoins are minted when revenue is accrued. The reason for this is that if there is only one borrower borrowing 100 stablecoins at a 1% interest rate, then after a year this borrower needs to repay 101 stablecoins. But if only 100 stablecoins have been issued, there's no way for this borrower to repay its debt: as such when accruing revenue from `VaultManager` contracts, the protocol mints stablecoins. The logic is that these stablecoins should in some way end up in the market for vault owners to buy them and repay their debt.
 
-If there is no bad debt, surplus accumulated is split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers again are then in charge of pushing the surplus to a `surplusManager` address, that should distribute them to veANGLE holders as interest later.
+If there is no bad debt, surplus accumulated is split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers again are then in charge of pushing the share of the surplus going to governance to a `surplusManager` address, that should distribute them to veANGLE holders as interest, or to other agEUR holders.

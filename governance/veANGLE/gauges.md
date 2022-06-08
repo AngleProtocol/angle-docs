@@ -21,7 +21,7 @@ This allows veANGLE holders, who are the most long term users of the protocol, t
 
 ## ↔️ Incentives alinement
 
-Interestingly, the gauge system lowers the influence of LPs selling off their ANGLE rewards since those LPs will not have veANGLE to continue voting for the gauge they are providing liquidity to.
+Interestingly, the gauge system lowers the influence of LPs selling off their ANGLE rewards since those LPs do not necessarily have veANGLE to continue voting for the gauge they are providing liquidity to.
 
 This system strongly favors LP who continually lock their rewards into veANGLE to increase their pool's gauge weight. Essentially, and like mentioned in [Frax docs](https://docs.frax.finance/vefxs/gauge), Angle gauges align incentives of veANGLE holders so that the most long term oriented holders control where ANGLE emissions are distributed.
 

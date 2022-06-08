@@ -34,7 +34,7 @@ Once you hold agEUR, there are multiple ways to earn yield on top of it.
 
 [Euler](https://www.euler.finance) is a lending market with a well researched risk framework and improved liquidations.
 
-Yield for agEUR deposits on Euler is currently ranging between 2% and 3%. Tokens can just be deposited on [app.euler.finance](https://app.euler.finance), and they will start earning interest.
+Yield for agEUR deposits on Euler is currently ranging between 2% and 3%. Tokens can just be deposited on [app.euler.finance](https://app.euler.finance), and they will immediately start earning interest.
 
 ### Deposit on Curve and stake on Convex
 

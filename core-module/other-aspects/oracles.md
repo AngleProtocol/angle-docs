@@ -15,10 +15,6 @@ Angle Protocol lets people swap their collateral against the protocol's native s
 
 For instance, if EUR and CHF stablecoins are supported, and if, for each of these, wETH and wBTC are used as collateral, then the protocol needs to be able to have the following oracle feeds: wBTC/EUR, wBTC/CHF, wETH/EUR, wETH/CHF.
 
-{% hint style="info" %}
-In the beginning, the agEUR stablecoin will not accept wETH and wBTC. This is just for the purpose of this example.
-{% endhint %}
-
 ## 🎨 Angle's Oracle Design
 
 Angle uses a combination of Chainlink and Uniswap V3 TWAP oracles with a 10 minutes time window. The idea is that whenever there is a need for an oracle value, the protocol chooses between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
@@ -27,7 +23,7 @@ For instance, for a mint transaction using collateral, Angle keeps the lowest va
 
 For some pairs, there may not be the direct feeds on Chainlink or pools on Uniswap to compute the price. The protocol should thus work with circuits of pairs to decompose the computation of the price: ETH/USD and then USD/EUR for a ETH/EUR feed.
 
-On Uniswap, Angle will always consider that 1 USDC is worth 1 USD.
+On Uniswap, Angle always considers that 1 USDC is worth 1 USD.
 
 ## 🔀 Combining Uniswap and Chainlink Feeds
 

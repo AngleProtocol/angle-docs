@@ -10,7 +10,7 @@ veANGLE holders can create votes and vote on [Snapshot](https://snapshot.org/#/a
 
 1. Go to the Angle Protocol [Snapshot](https://snapshot.org/#/anglegovernance.eth)
 2. Connect yourself with your wallet that owns your veANGLE tokens
-3. Choose the open proposals and then simply vote for the option of your choice. You can only vote on proposals that were created after your veANGLE balance got non null. And if your veANGLE balance increased during the span of a vote, then Snapshot will consider that your balance is the one you had right before the start of the vote.
+3. Choose the open proposals and then simply vote for the option of your choice. You can only vote on proposals that were created after your veANGLE balance got non null. And if your veANGLE balance increased during the span of a vote, then Snapshot considers that your balance is the one you had right before the start of the vote.
 
 ## Delegating voting power
 

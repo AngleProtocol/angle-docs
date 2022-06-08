@@ -115,9 +115,9 @@ Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-
 
 There is no minimal leverage, meaning you can come as a HA in the Core module, bring 2 wETH and open a position of only 0.001 wETH \(thus hedging only that amount\).
 
-There is a maximum leverage though. This parameter will depend on the volatility of the pairs.
+There is a maximum leverage though. This parameter depends on the volatility of the pairs.
 
-For instance, for a perpetual on the pair wETH/EUR, the maximum leverage allowed will be x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
+For instance, for a perpetual on the pair wETH/EUR, the maximum leverage allowed is x10. For perpetuals on forex pairs like USDC/EUR, the maximum leverage is set at x100.
 
 ## Are there slippage protections for HAs?
 

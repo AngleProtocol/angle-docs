@@ -23,7 +23,9 @@ On top of its stablecoin product, Angle protocol also offers to its users ways t
 - Earn yield from strategies
 - Get leverage on a wide range of assets
 
-Precisely speaking, the protocol consists of several different modules, or set of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral will soon be released. The protocol is also engaged into Algorithmic Market Operations (AMOs) where agTokens are invested in protocols for Angle to get a yield on.
+Precisely speaking, the protocol consists of several different modules, or set of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
+
+The protocol is also engaged into Algorithmic Market Operations (AMOs) where agTokens are invested in protocols for Angle to get a yield on.
 
 ### [Core module](core-module/overview.md)
 
@@ -90,7 +92,7 @@ If you want to get easier to access or less technical documents about the protoc
 
 This documentation portal is the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
 
-The Angle Protocol has been designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://blog.angle.money) in its home language.
+The Angle Protocol is designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://blog.angle.money) in its home language.
 
 In order for your translation to appear on this doc, you need to:
 

@@ -65,7 +65,7 @@ These tokens are subject to a **3 years linear vesting**, to make sure that the 
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
-In order to reduce the exposure of the funds potentially at risk in this contrat (this contract has been forked from Maker's `DssVest`), not all the 18% of the tokens that have to be distributed to the team + early backers + advisors have been initially put in the [Vesting contract](https://etherscan.io/address/0x43365213237ab259c707bc2cbc3e07d123ae2ad5). The `AngleMaster` multisig will regularly transfer tokens to this contract based on what's leftover in it.
+In order to reduce the exposure of the funds potentially at risk in this contrat (this contract has been forked from Maker's `DssVest`), not all the 18% of the tokens that have to be distributed to the team + early backers + advisors have been initially put in the [Vesting contract](https://etherscan.io/address/0x43365213237ab259c707bc2cbc3e07d123ae2ad5). The `AngleMaster` multisig regularly transfers tokens to this contract based on what's leftover in it.
 
 For more details on the tokenomics, this article adds some details:
 

@@ -6,8 +6,8 @@ description: Helping the protocol achieve its desired outcome
 
 ## 🔎 TL;DR
 
-* Keepers help the protocol perform some tasks which cannot be performed automatically.
-* Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
+- Keepers help the protocol perform some tasks which cannot be performed automatically.
+- Angle needs keepers to arbitrage the stablecoins issued, to maintain the lending strategies, to monitor Hedging Agents' positions, to distribute staking rewards, and to update transaction fees parameters.
 
 ## 💡 Rationale
 
@@ -17,7 +17,7 @@ Angle needs multiple types of keepers to get involved. Angle Core Team developpe
 
 ## ⚖️ Arbitrage Keepers
 
-Tokens issued by the protocol will be tradable on exchanges and therefore have a market price. [To make the price of these tokens stable](../../concepts/other-aspects/stable-seekers/#stability), the protocol relies on arbitrageurs which will have profitable opportunities whenever the market prices of the tokens deviate from peg.
+Tokens issued by the protocol are tradable on exchanges and therefore have a market price. [To make the price of these tokens stable](../../concepts/other-aspects/stable-seekers/#stability), the protocol relies on arbitrageurs which have profitable opportunities whenever the market prices of the tokens deviate from peg.
 
 ## Keepers for Transaction Fees and Slippage
 
