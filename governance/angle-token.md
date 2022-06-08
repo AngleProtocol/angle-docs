@@ -10,7 +10,7 @@ ANGLE's total initial supply is 1 billion and there is no planned token inflatio
 
 The only address with minting capability is the Angle DAO Timelock.
 
-Since January 2022, ANGLE's tokenomics has been upgraded and the ability to lock ANGLE into veANGLE, similarly than with CRV/veCRV or FXS/veFXS, has been introduced. More info about veANGLE can be found [here](veANGLE/).
+ANGLE's tokenomics was upgraded in January 2022 with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
 
 ## 🧬 Tokenomics
 

@@ -41,3 +41,7 @@ The Reactor mode allows users or DAOs to deposit volatile tokens in specific vau
 {% hint style="info" %}
 DAOs could leverage Angle token Reactors of the Angle Protocol to make a revenue out of their otherwise idle treasury assets. Learn more about it [here](../angle-borrowing-module/token-reactor.md).
 {% endhint %}
+
+## Audits
+
+The smart contracts of the Borrowing module have been audited by Chainsecurity. The code and audits have been published in [our dedicated repository](https://github.com/AngleProtocol/angle-borrow). They can also be accessed in the [Audits section](../resources/audits/) of this docs.

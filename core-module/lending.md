@@ -19,11 +19,11 @@ Lending a fraction of the reserves to other lending platforms is part of what ma
 
 The distribution of interest between SLPs, veANGLE holders, and reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
 
-![](../.gitbook/assets/angle-strategies-flow.jpg)
+![Angle Strategies Flow](../.gitbook/assets/angle-strategies-flow.jpg)
 
 ## 🎨 Design
 
-The design of that has been heavily inspired by what [Yearn](https://yearn.finance) does. Angle Core module relies on strategies, that themselves use Lender's contracts interacting with lending and other yield farming protocols.
+The design of that is inspired by what [Yearn](https://yearn.finance) does. Angle Core module relies on strategies, that themselves use Lender's contracts interacting with lending and other yield farming protocols.
 
 Just like on Yearn, new strategies to get some yield on the Core module's collateral can be added along the way by governance votes. Each strategy can also support multiple lending platforms or protocols.
 
@@ -68,8 +68,6 @@ Usually, folding strategies in DeFi simply target a specific leverage for which 
 **Angle folding strategy automatically compute the optimal quantity of assets to borrow and re-supply on-chain to maximize its yield.**
 
 This makes it both more efficient that other folding strategies, and a clear improvement compared to the base strategy.
-
-As of April 2022, a single folding strategy for USDC on Aave has been implemented.
 
 ### stETH strategy
 

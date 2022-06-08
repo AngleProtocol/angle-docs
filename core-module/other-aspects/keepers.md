@@ -39,7 +39,7 @@ Governance is able to vote to set additional rewards in the form of governance t
 
 ## 🛡️ Keepers for [Hedging Agents](../../concepts/other-aspects/hedging-agents/)
 
-As explained[ in the Hedging Agents' part](../../concepts/other-aspects/hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs hedging is too important compared to what has been brought by users, then some positions need to be closed.
+As explained [in the Hedging Agents' part](../../concepts/other-aspects/hedging-agents/faq-ha.md#what-happens-if-there-are-too-many-has-with-respect-to-the-amount-to-cover-from-the-protocol), if HAs hedging is too important compared to what has been brought by users, then some positions need to be closed.
 
 The same goes [for the liquidation of HAs](../../concepts/other-aspects/hedging-agents/#price-decrease-scenario): if the position of an HA is inferior to its maintenance margin, this position should be liquidated.
 
