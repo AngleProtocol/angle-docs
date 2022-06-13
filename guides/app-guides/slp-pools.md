@@ -34,4 +34,8 @@ In all cases, after depositing or depositing and staking, you'll be owning sanTo
 1. To withdraw your funds, if you have staked your sanTokens in the gauge contract, you will need to unstake them [on this page](https://app.angle.money/#/earn) first. If you have not, then there's nothing you need to do.
 2. Then, just click on the `Withdraw` button of the card corresponding to the token you want to unstake, and input the number of tokens you want to withdraw. The transaction will convert your sanTokens to the tokens you have staked, and you'll automatically get all the fees you have accrued as you were a SLP.
 
+{% hint style="info" %}
+It's possible that all collateral is invested in yield [strategies](/core-module/lending.md). In this case, the strategies need to be harvested to free up some liquidity. This function is permissionless, so you can do it yourself or wait for someone else to do it. A button to harvest will show up on the screen.  
+{% endhint %}
+
 ![Withdraw SLP](../../.gitbook/assets/withdraw-slp.png)
