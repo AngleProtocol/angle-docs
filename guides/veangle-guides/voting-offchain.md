@@ -2,7 +2,7 @@
 description: How to participate to governance votes on Snapshot with veANGLE tokens
 ---
 
-# ⚡ Voting on Snapshot
+# Voting on Snapshot
 
 veANGLE holders can create votes and vote on [Snapshot](https://snapshot.org/#/anglegovernance.eth) on existing governance votes.
 
