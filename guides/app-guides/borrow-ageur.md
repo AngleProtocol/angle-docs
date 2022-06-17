@@ -4,11 +4,19 @@ description: How to borrow agEUR from the Angle App
 
 # Borrowing agEUR 
 
-The [Angle Borrowing module](/borrowing-module/README.md) introduced new features to Angle and agEUR. You can now borrow agEUR or get leverage on your crypto directly from the [Angle App](https://app.angle.money/#/borrow). 
+The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR or get leverage on your crypto directly from the [Angle App](https://app.angle.money/#/borrow). 
 
-## Add collateral and Borrow agEUR
+Essentially, you can deposit your crypto into what is called a vault, to get a stablecoins loan in exchange. If the value of the crypto you deposited goes below a certain amount compared to the value of your loan, you can get [liquidated](/borrowing-module/vaults/liquidations.md). 
 
-To borrow agEUR, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you will be able to borrow up to a certain amount of stablecoins from the amount deposited.  
+![Vaults lists](../../.gitbook/assets/vaults-list2.png)
+
+{% hint style="info" %}
+You have the possibility to use ETH and stETH instead of wETH and wstETH. In this case, transactions will require two permit or approval transactions. 
+{% endhint %}
+
+## Add collateral and borrow agEUR
+
+To borrow agEUR, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you are able to borrow up to a certain amount of stablecoins from the amount deposited.  
 
 For example, wETH LTV is at 84% meaning that if you deposit 1,000 € worth of wETH, you can borrow up to 840 agEUR from this vault. 
 
@@ -22,44 +30,50 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 A summary of the changes on your vault and wallet will be displayed on the right. 
 5.  Add the actions to go to the next step. You will find a summary of your transaction. You can then click on `Send` to send your transaction. 
 
+![Add/borrow agEUR](../../.gitbook/assets/add-borrow.png)
+![Confirm tx borrow agEUR](../../.gitbook/assets/confirm-tx-borrow.png)
+
 {% hint style="info" %}
 There is a minimum amount to borrow of 10,000 agEUR to limit the risk of having small bad debts that are not repaid by users nor liquidators. 
 {% endhint %}
 
 
-## Repay debt and withdraw collateral
+## Repay debt and remove collateral
 
-Once a vault is created, you can repay part of your debt up to the dust amount. 
+Once a vault is created, you can repay part of your debt up to the dust amount. You can also withdraw some collateral up to the minimum LTV. 
 
-You can also withdraw some collateral up to the minimum LTV. 
-
+{% hint style="info" %}
 If you want to repay all your debt and withdraw all your collateral, you can directly [close your vault](#close-vault).
+{% endhint %}
 
-Here are the step to Repay debt or Remove collateral: 
+When repaying your debt, you have two options: use your vault collateral, or use your debt token. If you choose to repay your debt with your vault collateral, the tokens will be swapped to debt tokens on your behalf and used to repay your debt.  
+
+For example here, the user is using his collateral (wETH) to repay 1,000 agEUR of debt, and removing 0.2 wETH from the vault. 
+
+![Repay and withdraw](../../.gitbook/assets/repay-w-collat-withdraw.png)
+
+
+Here are the steps to Repay debt or Remove collateral: 
 1. Select your vault you want to modify (make sure you select the correct ID)
 2. Select the `Repay/Remove` action
 3. Enter the amount of collateral you want to remove in the first input. 
-4. Enter the amount of stablecoins debt you want to repay in the second input. 
-A summary of the changes on your vault and wallet will be displayed on the right. 
-5.  Add the actions to go to the next step. You will find a summary of your transaction. You can then click on `Send` to send your transaction. 
+4. Enter the amount of stablecoins debt you want to repay in the second input. A summary of the changes on your vault and wallet will be displayed on the right. 
+5.  Add the actions to go to the next step. You can then click on `Send` to send your transaction. 
 
-{% hint style="info" %}
-There is a minimum amount of debt to keep (dust amount) of 10,000 agEUR to limit the risk of having small bad debts that are not repaid by users nor liquidators. 
-{% endhint %}
 
-{% hint style="info" %}
-Depending on how much debt you are going to repay, you can only withdraw a limited amount of collateral so that your vault remains below the maximum LTV. 
-{% endhint %}
 
 ## Close vault
 
-If you want to repay all your debt and remove all your collateral, you can directly use the Close feature. This will repay all your debt and send you the remaining collateral. 
+If you want to repay all your debt and remove all your collateral, you can directly use the Close feature. This repays all your debt and sends you the remaining collateral. 
 
 With Angle, you don't need to bring debt token to repay your debt. By leaving the `Use collateral only` option checked, the protocol will swap your collateral tokens to agEUR to repay your debt and send you the remaining funds. 
 
 If you have agEUR in your wallet and prefer to use those, you can check the `Use agEUR` option. In this case, the protocol will use all the agEUR in your wallet to repay your debt, and some of your collateral if needed. Then, you will receive the remaining funds back in your wallet. 
 
 To close your vault, you only need to verify the information and click on `Add step` to go to the next section, and validate the transaction. 
+
+![Close vault](../../.gitbook/assets/close-vault.png)
+
 
 ## Take debt from another vault
 
@@ -75,5 +89,9 @@ To take debt from a vault:
 5. Check all the information about the change of the concerned vaults, add the step and confirm the transaction. 
 
 {% hint style="info" %}
-This will increase the liquidation price of the vault you add debt, so make sure to double check your liquidation price before executing the transaction. 
+This will increase the liquidation price of the vault you add debt to, so make sure to double check your liquidation price before executing the transaction. 
 {% endhint %}
+
+![Take debt from](../../.gitbook/assets/take-debt-from.png)
+
+
