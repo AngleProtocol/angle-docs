@@ -29,8 +29,8 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 4. Enter the amount of stablecoins you want to borrow in the second input. 
 A summary of the changes on your vault and wallet will be displayed on the right. 
 5.  Add the actions to go to the next step. You will find a summary of your transaction. 
-6.  Click on `Approve` to approve to be used by the protocol through a permit signature or an approval transaction. 
-7. (optional) If using non-wrapped tokens, approve the router contract to interact with your vault to do the transaction. 
+6.  Click on `Approve` to approve the tokens to be used by the protocol through a permit signature or an approval transaction. 
+7. (optional) If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction.
 8.  Finally, click on `Send` to send your transaction. 
 
 ![Add/borrow agEUR](../../.gitbook/assets/add-borrow.png)

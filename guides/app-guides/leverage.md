@@ -20,7 +20,7 @@ Here are the steps to get leverage with Angle:
 3. Input the amount of additional exposure you want on the collateral token, or choose your leverage from the slider.
 4. Make sure to double check the summary on the screen and click on `Add step` to move on to the final section. 
 5. Approve your tokens to be used by the protocol through a permit signature or an approval transaction. 
-6. (optional) If using non-wrapped tokens, approve the router contract to interact with your vault to do the transaction. 
+7. (optional) If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction.
 7. Finally, send the transaction to be executed. 
 
 {% hint style="info" %}
