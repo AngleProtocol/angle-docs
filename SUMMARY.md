@@ -12,6 +12,7 @@
     - [💸 Pay and get paid with agEUR](/guides/use-cases/ageur-power-usecase.md)
     - [🏦 agEUR as a treasury asset](/guides/use-cases/ageur-treasury.md)
   - [📔 App Guides - Protocol features](guides/app-guides/README.md)
+    - [Buy agEUR](/guides/app-guides/getageur.md)
     - [Borrow agEUR](/guides/app-guides/borrow-ageur.md)
     - [Leverage with agEUR](/guides/app-guides/leverage.md)
     - [Opening & Managing Positions](guides/app-guides/ha-positions.md)
