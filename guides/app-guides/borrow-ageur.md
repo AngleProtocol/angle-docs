@@ -11,10 +11,12 @@ Essentially, you can deposit your crypto into what is called a vault, to get a s
 ![Vaults lists](../../.gitbook/assets/vaults-list2.png)
 
 {% hint style="info" %}
-You have the possibility to use ETH and stETH instead of wETH and wstETH. In this case, transactions will require two permit or approval transactions. 
+You have the possibility to use ETH and stETH instead of wETH and wstETH. In this case, transactions will require two permit or approval transactions: one to approve the wrapping of your tokens by the router contract, and another one for the actual transaction. 
 {% endhint %}
 
-## Add collateral and borrow agEUR
+## Actions
+
+### Add collateral and borrow agEUR
 
 To borrow agEUR, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you are able to borrow up to a certain amount of stablecoins from the amount deposited.  
 
@@ -29,6 +31,7 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 4. Enter the amount of stablecoins you want to borrow in the second input. 
 A summary of the changes on your vault and wallet will be displayed on the right. 
 5.  Add the actions to go to the next step. You will find a summary of your transaction. You can then click on `Send` to send your transaction. 
+You will need to approve your tokens first, and do it twice when using ETH or stETH. 
 
 ![Add/borrow agEUR](../../.gitbook/assets/add-borrow.png)
 ![Confirm tx borrow agEUR](../../.gitbook/assets/confirm-tx-borrow.png)
@@ -38,7 +41,7 @@ There is a minimum amount to borrow of 10,000 agEUR to limit the risk of having 
 {% endhint %}
 
 
-## Repay debt and remove collateral
+### Repay debt and remove collateral
 
 Once a vault is created, you can repay part of your debt up to the dust amount. You can also withdraw some collateral up to the minimum LTV. 
 
@@ -61,10 +64,9 @@ Here are the steps to Repay debt or Remove collateral:
 5.  Add the actions to go to the next step. You can then click on `Send` to send your transaction. 
 
 
+### Close vault
 
-## Close vault
-
-If you want to repay all your debt and remove all your collateral, you can directly use the Close feature. This repays all your debt and sends you the remaining collateral. 
+If you want to repay all your debt and remove all your collateral, you can directly use the `Close` feature. This repays all your debt and sends you the remaining collateral. 
 
 With Angle, you don't need to bring debt token to repay your debt. By leaving the `Use collateral only` option checked, the protocol will swap your collateral tokens to agEUR to repay your debt and send you the remaining funds. 
 
@@ -74,8 +76,11 @@ To close your vault, you only need to verify the information and click on `Add s
 
 ![Close vault](../../.gitbook/assets/close-vault.png)
 
+{% hint style="info" %}
+It might be that you want to repay your debt or closing your vault by using agEUR, but don't have enough in your wallet. In this case, if you select the `Use agEUR` option, the contract will use all the agEUR in you wallet, and the remaining debt will be repaid by swapping the required amount of collateral into agEUR. 
+{% endhint %}
 
-## Take debt from another vault
+### Take debt from another vault
 
 Another feature available with the Angle Borrowing module is to transfer the debt from one vault to another. 
 
@@ -94,4 +99,14 @@ This will increase the liquidation price of the vault you add debt to, so make s
 
 ![Take debt from](../../.gitbook/assets/take-debt-from.png)
 
+
+## Slippage details
+
+When using collateral to repay your debt or closing a vault, the protocol will swap collateral tokens into debt tokens (ETH to agEUR for example). It uses 1inch, a DEX aggregator, to get the best prices possible. 
+
+Depending on the size of the swap and on available liquidity on-chain, there can be slippage. In this case, you will have a slippage input to specify the maximum amount of price slippage you want to tolerate during your swap. 
+
+This applies when:
+- [Repaying debt](#repay-debt-and-remove-collateral)
+- [Closing vault](#close-vault)
 
