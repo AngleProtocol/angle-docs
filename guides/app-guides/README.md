@@ -22,9 +22,18 @@ The new Angle App contains all the features related to the protocol in one place
 
 Under the **Swap** tab, users can buy or sell agEUR from multiple tokens.
 
-{% content-ref url="../../overview/guides/app-guides/getageur.md" %}
-[getageur.md](../../overview/guides/app-guides/getageur.md)
+{% content-ref url="/guides/app-guides/getageur.md" %}
+[getageur.md](/guides/app-guides/getageur.md)
 {% endcontent-ref %}
+
+{% content-ref url="borrow-ageur.md" %}
+[borrow-ageur.md](borrow-ageur.md)
+{% endcontent-ref %}
+
+{% content-ref url="leverage.md" %}
+[leverage.md](leverage.md)
+{% endcontent-ref %}
+
 
 In the **Borrow / leverage** one, they can deposit collateral to be allowed to borrow agEUR on top of their deposit. They can also use this mechanism to get leverage on the token they deposited directly within the Angle app in one transaction.
 
