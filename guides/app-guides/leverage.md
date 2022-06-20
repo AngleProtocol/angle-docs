@@ -18,7 +18,10 @@ Here are the steps to get leverage with Angle:
 1. Select your vault and the `Leverage` action. 
 2. Input the amount of collateral that you want to deposit
 3. Input the amount of additional exposure you want on the collateral token, or choose your leverage from the slider.
-4. Make sure to double check the summary on the screen, and click on `Add step` to move on to the final section and finalize the transaction. 
+4. Make sure to double check the summary on the screen and click on `Add step` to move on to the final section. 
+5. Approve your tokens to be used by the protocol through a permit signature or an approval transaction. 
+6. (optional) If using non-wrapped tokens, approve the router contract to interact with your vault to do the transaction. 
+7. Finally, send the transaction to be executed. 
 
 {% hint style="info" %}
 You have the possibility to use ETH and stETH instead of wETH and wstETH. In this case, transactions will require two permit or approval: one to approve the wrapping of your tokens by the router contract, and another one for the actual transaction. 
@@ -26,7 +29,7 @@ You have the possibility to use ETH and stETH instead of wETH and wstETH. In thi
 
 ### Slippage
 
-When leveraging with Angle, the protocol will borrow stablecoins from your vault to swap them to the collateral token you want to leverage on. It uses 1inch to swap tokens to get the best prices possible. 
+When leveraging with Angle, the protocol borrows stablecoins from your vault to swap them to the collateral token you want to leverage on. It uses 1inch to swap tokens to get the best prices possible. 
 
 Depending on the size of the swap and available liquidity on-chain, there might be slippage. In this case, you will find a slippage input to specify the maximum amount of price slippage you want to tolerate during your swap. 
 
