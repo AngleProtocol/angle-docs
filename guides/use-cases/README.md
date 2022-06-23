@@ -20,7 +20,7 @@ This section contains guides showcasing different use cases possible with Angle 
 
 ## Use agEUR with a debit card
 
-AgEUR can now be used to top up the Mover debit card and pay with EUR for goods and services! Here is a guide on how to send agEUR to your Mover card: [How to top up Mover debit card with agEUR tokens?](https://faq.viamover.com/angle-protocol/how-to-top-up-mover-debit-card-with-ageur-tokens). You can also watch [this video](https://www.loom.com/share/4665303a1c8b49c9bd76ec1a72acb984). 
+agEUR is integrated with Mover, allowing to top-up their debit card using agEUR and spend EUR in real life! Check out [this guide](https://faq.viamover.com/angle-protocol/how-to-top-up-mover-debit-card-with-ageur-tokens) to learn how to send agEUR to your Mover card. 
 
 If you don't know what Mover is, you can learn more in [their FAQ](https://faq.viamover.com/what-does-mover-do). 
 

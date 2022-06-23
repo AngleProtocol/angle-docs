@@ -64,6 +64,7 @@ If you want to exchange your agEUR back to another token, you have a few options
 
 - Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a DEX like [Uniswap](https://app.uniswap.org).
 - Send money back directly to your bank account through our off-ramp partner Mt Pelerin.
+- Spend it through [Mover](https://faq.viamover.com/what-does-mover-do) crypto debit card
 
 ### On the Angle App
 
@@ -80,6 +81,13 @@ Swapping agEUR back to another token on Angle is a similar process than buying a
 If you want to send your agEUR from your wallet as EUR in your bank account, you can do so by using [Mt Pelerin](https://www.mtpelerin.com). The Swiss based company allows users to send cryptocurrency and receive the equivalent directly in their bank account.
 
 There are no fees on Mt Pelerin for first time users selling less than 500 agEUR, and no KYC is needed for less than \$1k of volume a day.
+
+### By spending it through Mover debit card
+
+agEUR is integrated with Mover which allows to top-up their debit card using agEUR. This exchanges them to EUR and make them instantly available in real life! 
+
+Check out [this guide](https://faq.viamover.com/angle-protocol/how-to-top-up-mover-debit-card-with-ageur-tokens) to learn how to send agEUR to your Mover card. 
+
 
 ## Links and resources
 
