@@ -40,7 +40,7 @@ Then:
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
-![Minting agEUR](../.gitbook/assets/buy-dai-ageur.png)
+![Minting agEUR](../../.gitbook/assets/buy-dai-ageur.png)
 
 ## Buying agEUR with credit card or bank transfer
 
@@ -74,7 +74,7 @@ Swapping agEUR back to another token on Angle is a similar process than buying a
 2. Select agEUR as the `from` token for the swap and the token you want to receive in exchange.
 3. Click on `Swap` and confirm the transaction in your wallet. This will exchange your agEUR for the tokens you selected. Note that you do not need an approval to perform this operation.
 
-![Burning agEUR](../.gitbook/assets/sell-agEUR-for-DAI.png)
+![Burning agEUR](../../.gitbook/assets/sell-agEUR-for-DAI.png)
 
 ### With Mt Pelerin
 
