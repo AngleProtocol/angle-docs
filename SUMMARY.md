@@ -70,7 +70,10 @@
 
 ## Other Aspects
 
-* [⛓ Cross-Chain ANGLE and agEUR](other/cross-chain.md)
+* [⛓ Angle cross-chain](other/cross-chain/README.md)
+  * [LayerZero setup](other/cross-chain/layer-zero-setup.md)
+  * [Borrowing Module on different chains](other/cross-chain/borrowing-module-cross.md)
+  * [Old Multichain setup](other/cross-chain/old-setup.md)
 * [⚙️ Algorithmic Market Operations](other/amo.md)
 * [⚡️ Flash Loans](other/flash-loans.md)
 
