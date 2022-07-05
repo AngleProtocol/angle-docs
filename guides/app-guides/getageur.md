@@ -19,7 +19,7 @@ There are multiple ways to buy agEUR:
 
 There are different places on which you can buy agEUR on-chain. You can do it:
 
-- Directly with the Angle Protocol through the [Angle App](https://app.angle.money) on the Ethereum blockchain.
+- Directly with the Angle Protocol through the [Angle App](https://app.angle.money).
 - From DEXes on Ethereum or on other chains like Solana, Fantom, Polygon. agEUR exists with deep liquidity on many decentralized exchanges of different chains. Best solution at the moment on Ethereum mainnet remains to use [Uniswap](https://app.uniswap.org) or an aggregator like [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR).
 
 Angle App is built to minimize cost for acquiring agEUR (and ANGLE) with any token but it is possible that there are temporarily better prices to get it from other tokens on DEXes.

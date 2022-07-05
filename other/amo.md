@@ -39,7 +39,7 @@ Lending AMOs correspond to the example described above where the protocol mints 
 Angle supports so far several different lending AMOs on different chains
 
 - On [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3) on Polygon: 1m agEUR are invested in this AMO
-- On [Euler](https://app.euler.finance/market/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8) on Ethereum mainnet with 1m agEUR invested as well
+- On [Euler](https://app.euler.finance/market/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8) on Ethereum mainnet with ~3.6m agEUR invested as well.
 
 ### Liquidity as a service
 

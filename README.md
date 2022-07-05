@@ -11,11 +11,11 @@ So grab a coffee ☕ and enjoy the read!
 
 ## 🏅 Introduction to Angle
 
-Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol composed of smart contracts mostly deployed on the Ethereum blockchain. The protocol was launched in November 2021 and you can start using it at [app.angle.money](https://app.angle.money).
+Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol composed of smart contracts running on open blockchains. The protocol was launched in November 2021 and you can start using it at [app.angle.money](https://app.angle.money).
 
 It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to.
 
-Angle has started with agEUR, a Euro (EUR - €) stablecoin on Ethereum mainnet.
+Angle has started with agEUR, a Euro (EUR - €) stablecoin.
 
 On top of its stablecoin product, Angle protocol also offers to its users ways to:
 
@@ -29,11 +29,11 @@ The protocol is also engaged into Algorithmic Market Operations (AMOs) where agT
 
 ### [Core module](core-module/overview.md)
 
-Angle Core module relies on three types of agents, that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/README.md) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/README.md) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/README.md) helping to over-collateralize the protocol in exchange for yield.
+Angle Core module is deployed on Ethereum mainnet. It relies on three types of agents that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/README.md) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/README.md) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/README.md) helping to over-collateralize the protocol in exchange for yield.
 
 ### [Borrowing module](borrowing-module/)
 
-The Borrowing module of the protocol allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
+Angle Borrowing module is deployed on multiple EVM compatible networks, including Ethereum mainnet, sidechains like Polygon and layer 2s like Optimism. It allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
 Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Abracadabra](https://abracadabra.money), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it efficient. Among other things:
 
@@ -44,11 +44,11 @@ Inspired from more traditional borrowing protocols (like [Maker](https://makerda
 
 Angle is not limited to these key components. It is notably involved in [Algorithmic Market Operations](other/amo.md) where agTokens are invested directly by Angle in other protocols.
 
-Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol.
+Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol, accessible on Ethereum mainnet.
 
 ## 🛣️ Roadmap
 
-Beyond creating the first liquid and decentralized Euro stablecoin on Ethereum, the main goal of Angle is to create a money layer for DeFi. Angle will not only expand to multiple blockchains or open networks, it will also seek to launch stablecoins for other types of assets.
+Beyond creating the first liquid and decentralized Euro stablecoin, the main goal of Angle is to create a money layer for DeFi. Angle will not only expand to multiple blockchains or open networks, it will also seek to launch stablecoins for other types of assets.
 
 You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-220m-tvl-6475711f458b) from March 3rd 2022 to learn more.
 

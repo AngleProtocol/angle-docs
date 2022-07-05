@@ -8,7 +8,7 @@ description: Angle Borrowing Module Overview
 
 Angle Borrowing Module goal was introduced after the Core module of the protocol as a way to help **expand the Angle Protocol** through another minting mechanism for Angle stablecoins.
 
-This module works hand in hand with the Core module and agTokens, like agEUR, are fully interoperable between both modules.
+This module works hand in hand with the Core module and agTokens, like agEUR, are fully interoperable between both modules. It is available natively on Ethereum mainnet and on other EVM compatible networks like Polygon or Optimism. 
 
 It is based on a **debt mechanism**, similar to the one used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 

@@ -1,12 +1,12 @@
 ---
-description: Old Angle cross-chain setup with Multichain
+description: Angle Multichain setup for bridging
 ---
 
-# Angle old cross-chain setup
+# Angle Multichain setup
 
-Angle originally relied on Multichain to bridge tokens. Here is the bridge setup for agEUR and ANGLE before July 2022 and the implementation of LayerZero contracts. 
+The first bridging solution adopted by Angle to bridge tokens was Multichain. Here is the bridge setup for agEUR and ANGLE when using Multichain. 
 
-## 🌉 Bridge Solutions
+## Bridge Solutions
 
 | Chain         | Bridge                                                                 | agEUR  | ANGLE         |
 | ------------- | ---------------------------------------------------------------------- | ------ | ------------- |

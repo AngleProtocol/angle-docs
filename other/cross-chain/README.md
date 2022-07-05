@@ -4,11 +4,11 @@ description: Use Angle on different chains and layers
 
 # ⛓ Angle cross-chain infrastructure
 
-## Deploying on different networks
+## Angle on different networks
 
 Angle Protocol is composed of two set of smart contracts: the Core module, and the Borrowing module. 
 
-While the Core module is only deployed on Ethereum mainnet, the Borrowing module can be deployed easily on other chains and layer 2s. This allows for native minting of agEUR on these other chains. 
+While the Core module is only deployed on Ethereum mainnet, the Borrowing module is also deployed on other chains and layer 2s. This allows for native minting of agEUR on these other networks. 
 
 {% page-ref page="borrowing-module-cross.md" %}
 
@@ -21,7 +21,9 @@ AgEUR can be bridged between different networks using our new LayerZero infrastr
 
 {% page-ref page="layer-zero-setup.md" %}
 
-{% page-ref page="old-setup.md" %}
+{% page-ref page="multichain-setup.md" %}
+
+Angle bridges and cross-chain setup and trade-offs have been detailed in [this governance post](https://gov.angle.money/t/angle-bridge-and-cross-chain-setup/389). If any information is unclear, don't hesitate to comment it!  
 
 
 {% hint style="info" %}
