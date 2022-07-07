@@ -18,7 +18,7 @@ Bridges are what allow agEUR and the ANGLE token to be available on different ne
 
 AgEUR and ANGLE can be bridged between networks using Angle's infrastructure, compatible with multiple bridge solutions. Bridging agEUR is available natively on the [Angle App](https://app.angle.money/#/bridges).
 
-![lz bridge infra user](../../.gitbook/assets/bridge-infra-user.png)
+![lz bridge infra user](../../.gitbook/assets/bridge-infra-user.jpg)
 
 ### Angle bridge infrastructure details
 

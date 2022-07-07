@@ -70,7 +70,7 @@
 
 ## Other Aspects
 
-- [⛓ Angle cross-chain](other/cross-chain/README.md)
+- [⛓ Angle Cross-Chain Setup](other/cross-chain/README.md)
   - [LayerZero setup](other/cross-chain/layer-zero-setup.md)
   - [Borrowing Module on different chains](other/cross-chain/borrowing-module-cross.md)
 - [⚙️ Algorithmic Market Operations](other/amo.md)
