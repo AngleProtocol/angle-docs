@@ -37,7 +37,7 @@ Currently, USDC, DAI, FRAX, FEI, and ETH/wETH can be used to mint agEUR. Users c
 
 In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by the Angle Core Team at [app.angle.money](https://app.angle.money), or through any other app developed by another team. Note that the app is hosted publicly on IPFS, and not on private servers.
 
-To interact with the app, you need an Ethereum wallet like Metamask, some ETH to pay for transaction fees, and the base asset you would like to swap, deposit or get leveraged on. Once you have these things, you can either swap your assets for stablecoins, open a leveraged position, or simply deposit it and accumulate interests.
+To interact with the app, you need a wallet like Metamask, some ETH to pay for transaction fees, and the base asset you would like to swap, deposit or get leveraged on. Once you have these things, you can either swap your assets for stablecoins, open a leveraged position, or simply deposit it and accumulate interests.
 
 ## What are the costs?
 

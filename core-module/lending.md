@@ -29,7 +29,7 @@ Just like on Yearn, new strategies to get some yield on the Core module's collat
 
 Each collateral for each stablecoin has its set of strategies to get some yield on it. For instance, for a agEUR stablecoin backed by USDC and DAI, we may have for the USDC collateral a single strategy trying to always optimize to get the best APY between Compound and Aave, and for the DAI stablecoin two strategies, one that just consists in lending to Compound and one that consists in optimizing between Aave and Euler.
 
-Since gas cost is quite high in Ethereum, users minting and burning, SLPs depositing and withdrawing, as well as HAs opening and closing positions never interact directly with strategy contracts. When they send or withdraw collateral to Angle Core module, their collateral goes or is taken from its reserves, and it is not directly lent or withdrawn from strategies.
+Since gas cost is quite high on Ethereum, users minting and burning, SLPs depositing and withdrawing, as well as HAs opening and closing positions never interact directly with strategy contracts. When they send or withdraw collateral to Angle Core module, their collateral goes or is taken from its reserves, and it is not directly lent or withdrawn from strategies.
 
 The way collateral is lent or withdrawn from strategies and their corresponding lending platforms is through keepers calling the `harvest`function to withdraw or lend collateral to strategies.
 

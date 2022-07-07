@@ -22,7 +22,7 @@ We have also written guides on how you can leverage agEUR as a DAO, a company or
 [use-cases](use-cases/)
 {% endcontent-ref %}
 
-The Angle Protocol is currently available to anyone on the Ethereum mainnet, and can be accessed through our app hosted at [app.angle.money](https://app.angle.money/).
+The Angle Protocol is currently available to anyone on different EVM compatible networks, and can be accessed through our app hosted at [app.angle.money](https://app.angle.money/).
 
 From there, users can mint and burn stablecoins, open perpetuals, get yield by depositing collateral, borrow stablecoins, get leverage, lock ANGLE tokens, vote for gauge weights, or simply stake their Angle associated tokens to earn yield.
 
