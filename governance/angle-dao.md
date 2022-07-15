@@ -6,9 +6,9 @@ description: The Decentralized Autonomous Organization driving Angle Protocol
 
 ## 🔎 TL;DR
 
-* Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
-* Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
-* The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
+- Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
+- Since the tokenomics upgrade to the veANGLE model, the Angle DAO is controlled by veANGLE holders through snapshot votes executed by a multi-sig composed of core team and community members.
+- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -18,14 +18,14 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-* Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
-* Grant/revoke roles
-* Deploy new stablecoins
-* Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
-* Deploy/revoke collateral types
-* Vote for [gauge rewards weights](veANGLE/gauges.md)
-* Upgrade oracles and other contracts throughout the system
-* Deploy the surplus of the protocol
+- Tune fee parameters for, among other things, users minting and burning, for Hedging Agents opening and closing their perpetuals, for the slippage of Standard Liquidity Providers, for the fraction of the fees that go to Standard Liquidity Providers, ...
+- Grant/revoke roles
+- Deploy new stablecoins
+- Deploy/revoke new strategies to get yield and choose in which proportions to distribute this yield to SLPs
+- Deploy/revoke collateral types
+- Vote for [gauge rewards weights](veANGLE/gauges.md)
+- Upgrade oracles and other contracts throughout the system
+- Deploy the surplus of the protocol
 
 ## 🗣 Discussions and debates
 
@@ -41,6 +41,8 @@ After proposals have been properly discussed, they can be voted on through a [Sn
 
 Finalized votes are then implemented by a [multi-sig](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8) composed of core team and community members.
 
+Angle Protocol is available on different EVM compatible chains. There is one multisig per chain, each with the same signers detailed below. The addresses of the multisigs on the other networks on can be found [here](https://developers.angle.money/overview/smart-contracts).
+
 {% hint style="warning" %}
 A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for. Having a multisig enforcing proposals is hence tantamount to having a `Timelock` contract for the protocol that can prevent the enforcement of malicious governance proposals.&#x20;
 {% endhint %}
@@ -51,14 +53,14 @@ Angle Governance is represented by a 4-of-6 Gnosis multi-sig, whose role is to e
 
 It is composed of 6 person, three team members and three "public" crypto person, and requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are:
 
-* Pablo Veyrat: [@pablo\_veyrat](https://twitter.com/pablo\_veyrat)
-* Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
-* Picodes: [@thePicodes](https://twitter.com/thePicodes)
-* Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
-* Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
-* [0xMaki](https://twitter.com/0xMaki)
+- Pablo Veyrat: [@pablo_veyrat](https://twitter.com/pablo_veyrat)
+- Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
+- Picodes: [@thePicodes](https://twitter.com/thePicodes)
+- Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
+- Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
+- [0xMaki](https://twitter.com/0xMaki)
 
-Multi-sig address: [0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8)
+Multi-sig address on mainnet: [0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8)
 
 #### Delegating voting power
 

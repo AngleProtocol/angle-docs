@@ -36,6 +36,7 @@ Some bridges, like LayerZero, are integrated natively with agEUR meaning that us
 | ------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | Polygon       | [LayerZero](https://app.angle.com/#/bridge), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
 | Optimism      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
+| Arbitrum      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
 | Avalanche     | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | BSC           | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
