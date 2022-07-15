@@ -41,6 +41,8 @@ After proposals have been properly discussed, they can be voted on through a [Sn
 
 Finalized votes are then implemented by a [multi-sig](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8) composed of core team and community members.
 
+Angle Protocol is available on different EVM compatible chains. There is one multisig per chain, each with the same signers detailed below. The addresses of the multisigs on the other networks on can be found [here](https://developers.angle.money/overview/smart-contracts).
+
 {% hint style="warning" %}
 A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for. Having a multisig enforcing proposals is hence tantamount to having a `Timelock` contract for the protocol that can prevent the enforcement of malicious governance proposals.&#x20;
 {% endhint %}
@@ -59,8 +61,6 @@ It is composed of 6 person, three team members and three "public" crypto person,
 - [0xMaki](https://twitter.com/0xMaki)
 
 Multi-sig address on mainnet: [0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8](https://etherscan.io/address/0xdC4e6DFe07EFCa50a197DF15D9200883eF4Eb1c8)
-
-There is one multisig per chain, each with the same signers. Their addresses on the other networks on can be found [here](https://developers.angle.money/overview/smart-contracts). 
 
 #### Delegating voting power
 

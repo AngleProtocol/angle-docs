@@ -34,6 +34,6 @@ Everything has been designed to limit a guardian's ability to impact the protoco
 
 ## Status
 
-This role is currently held by [a 2/4 Gnosis Multisig](https://etherscan.io/address/0x0C2553e4B9dFA9f83b1A6D3EAB96c4bAaB42d430) controlled by Core Team members of the protocol (the same as in the Governor multisig plus [teddav](https://twitter.com/0xteddav)).
+On Mainnet, this role is currently held by [a 2/4 Gnosis Multisig](https://etherscan.io/address/0x0C2553e4B9dFA9f83b1A6D3EAB96c4bAaB42d430) controlled by Core Team members of the protocol (the same as in the Governor multisig plus [teddav](https://twitter.com/0xteddav)).
 
 There is one multisig per chain, each with the same signers. Their addresses on the other networks on can be found [here](https://developers.angle.money/overview/smart-contracts).
