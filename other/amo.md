@@ -50,3 +50,13 @@ Risks for the protocol are reduced because it is expected that the partner DAO i
 So far, Angle has worked with Ondo to offer such services, as presented in [this](https://gov.angle.money/t/proposal-angle-ondo-liquidity-as-a-service-program/320) governance discussion.
 
 The first liquidity as a service operation has been approved with Paladin as detailed [here](https://gov.angle.money/t/liquidity-as-a-service-partnership-with-paladin/322), to provide 500,000 agEUR as liquidity to PAL through Ondo contracts.
+
+### Protocol-owned Liquidity
+
+Angle is using some of its governance surplus in USDC coupled with an agEUR AMO to provide liquidity on Optimism and Arbitrum agEUR/USDC pools.
+
+One pool on each of the two networks has been seeded with 200,000 USDC from the surplus, and 200,000 agEUR minted through AMOs, for a total of 400,000 new agEUR coming from AMOs.
+
+The 400,000 USDC represent less than 5% of the surplus. The 400,000 agEUR minted are backed by these USDC that are used to issue them. If the value of the USD came to decrease, a portion of the agEUR issued through AMO would be released “unbacked” on the market. In this case, the protocol could settle the debt by buying agEUR on the market with some of the surplus or liquidity provided. Given the size of the pool, this risk could be easily absorbed by the protocol.
+
+More details can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
