@@ -53,10 +53,11 @@ The first liquidity as a service operation has been approved with Paladin as det
 
 ### Protocol-owned Liquidity
 
-Angle is using some of its governance surplus in USDC coupled with an agEUR AMO to provide liquidity on Optimism and Arbitrum agEUR/USDC pools.
+Angle also started to use AMOs to seed some pools with agEUR liquidity. The idea is to use some of the protocol reserves and match it with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
 
-One pool on each of the two networks has been seeded with 200,000 USDC from the surplus, and 200,000 agEUR minted through AMOs, for a total of 400,000 new agEUR coming from AMOs.
+#### Current Protocol AMO LP positions
 
-The 400,000 USDC represent less than 5% of the surplus. The 400,000 agEUR minted are backed by these USDC that are used to issue them. If the value of the USD came to decrease, a portion of the agEUR issued through AMO would be released “unbacked” on the market. In this case, the protocol could settle the debt by buying agEUR on the market with some of the surplus or liquidity provided. Given the size of the pool, this risk could be easily absorbed by the protocol.
+- Optimism: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
+- Arbitrum: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from protocol surplus and a corresponding amount of agEUR at mint.
 
-More details can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
+More details on the pros and cons these AMOs can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
