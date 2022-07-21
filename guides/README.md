@@ -13,7 +13,7 @@ You will also find some preliminary guides to get onboarded to DeFi and to agEUR
 {% endcontent-ref %}
 
 {% content-ref url="../overview/guides/app-guides/getageur.md" %}
-[getageur.md](../overview/guides/app-guides/getageur.md)
+[getageur.md](/guides/app-guides/getageur.md)
 {% endcontent-ref %}
 
 We have also written guides on how you can leverage agEUR as a DAO, a company or an individual
