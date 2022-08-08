@@ -10,6 +10,10 @@ Angle Protocol is composed of two set of smart contracts: the Core module, and t
 
 While the Core module is only deployed on Ethereum mainnet, the Borrowing module is also deployed on other chains and layer 2s. This allows for native minting of agEUR on these other networks.
 
+{% hint style="info" %}
+Smart contract addresses associated to the Borrowing module on different chains can be found [here](https://developers.angle.money/overview/smart-contracts).
+{% endhint %}
+
 ## 🌉 Bridging between networks
 
 Bridges are what allow agEUR and the ANGLE token to be available on different networks. At the top level, the bridges for agEUR (and ANGLE) all do the same thing: they burn (or lock) tokens on the origin network, and mint new tokens on the destination network. When bridging back tokens from the destination chain, tokens are burnt (or locked) there and minted (or released) from the smart contract on the origin chain.
