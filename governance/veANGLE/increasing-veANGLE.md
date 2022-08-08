@@ -4,7 +4,7 @@ description: Details about adding ANGLE to your lock
 
 # 🔓 Increasing your veANGLE balance
 
-There are two ways to increase an address balance of veANGLE:
+There are two ways to increase a veANGLE balance:
 
 - extend the lock expiration date
 - add ANGLE to the lock

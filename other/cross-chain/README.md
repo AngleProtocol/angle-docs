@@ -10,9 +10,7 @@ Angle Protocol is composed of two set of smart contracts: the Core module, and t
 
 While the Core module is only deployed on Ethereum mainnet, the Borrowing module is also deployed on other chains and layer 2s. This allows for native minting of agEUR on these other networks.
 
-{% page-ref page="borrowing-module-cross.md" %}
-
-## Bridging between networks
+## 🌉 Bridging between networks
 
 Bridges are what allow agEUR and the ANGLE token to be available on different networks. At the top level, the bridges for agEUR (and ANGLE) all do the same thing: they burn (or lock) tokens on the origin network, and mint new tokens on the destination network. When bridging back tokens from the destination chain, tokens are burnt (or locked) there and minted (or released) from the smart contract on the origin chain.
 
@@ -26,11 +24,17 @@ Usually, bridges work by minting their own version of the tokens being bridged. 
 
 To limit the risk associated with each bridge, a total and hourly cap on the quantity of each token that can be bridged to & from specific networks has been implemented.
 
-Some bridges, like LayerZero, are integrated natively with agEUR meaning that users should not see the intermediary bridge token and directly receive canonical agEUR.
+### About LayerZero
 
-{% page-ref page="layer-zero-setup.md" %}
+Some bridges, like [LayerZero](https://layerzero.network/), are integrated natively with agEUR meaning that users should not see the intermediary bridge token and directly receive canonical agEUR in one transaction.
 
-## Bridge Solutions
+LayerZero is by the way the solution that is used under the hood for bridging on the Angle App.
+
+With LayerZero, bridging transactions can revert on the origin chains when the amount to be bridged is above the limit that can currently be bridged. In this case, users can directly get their tokens back.
+
+On the destination chains, transactions involving LayerZero cannot revert. While the Angle App prevents users from bridging in the case where bridge limits are attained, users interacting programatically with the bridge contracts in such situations can still get their tokens back on the destination chain by interacting with the "bridge" (non-official) LayerZero token contract.
+
+### Bridge Solutions
 
 | Chain         | agEUR                                                                                                       | ANGLE                                                          |
 | ------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |

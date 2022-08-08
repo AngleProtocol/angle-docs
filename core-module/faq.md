@@ -56,13 +56,3 @@ The code of the smart contracts is open source and has been audited by third par
 ## Is there any risk specific to the Core module?
 
 On top of the smart contract risks, the Core module relies on hedging agents covering its reserves, and SLPs over-collateralizing it. If the Core module is not covered or over-collateralized enough, it could be under the risk of not having enough collateral to back the stablecoins issued. However, even in this situation a failure of the protocol is unlikely as it would require all stablecoin holders to want to burn at the same time.
-
-## Additional information and resources about the Core module
-
-- [Blog](https://blog.angle.money)
-- [Developers Doc](https://developers.angle.money)
-- [Core module overview](overview.md)
-
-{% hint style="info" %}
-💬 **Notice:** If you still have questions, please do not hesitate to join our [Angle Community Discord Server](https://discord.gg/67WSSZqBG6) 📐! The Angle team and community members are always happy to help you understand how Angle works and help you answer any questions you may have.
-{% endhint %}

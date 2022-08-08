@@ -4,15 +4,11 @@ description: Common questions about getting and exchanging the Protocol's stable
 
 # FAQ - Stable Seekers and Holders
 
-## Which stablecoins can be minted on Angle?
-
-For now, Angle only supports agEUR. The team and community are focused on developing the protocol around one stablecoin first, before potentially moving to others.
-
 ## What is agEUR backed by?
 
-First, agEUR is backed by the collateral that was used to mint it. Then, if this collateral is volatile, HA can open positions on the collateral stored in the Core module to protect it from changes in collateral/agEUR exchange rate. In case this is not enough, SLPs come to over-collateralize the Core module.
+First, agEUR minted through the Core module is backed by the collateral that was used to mint it. Then, if this collateral is volatile, HA can open positions on the collateral stored in the Core module to protect it from changes in collateral/agEUR exchange rate. In case this is not enough, SLPs come to over-collateralize the Core module.
 
-## Could I use the  Angle Core module as a decentralized exchange?
+## Could I use the Angle Core module as a decentralized exchange?
 
 Angle Core module can be used as a decentralized exchange where there is no slippage for swapping.
 

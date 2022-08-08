@@ -43,7 +43,7 @@ When increasing the veANGLE balance by locking more tokens or extending a lock, 
 
 ## ANGLE Issuance Rate
 
-The rate of emission of ANGLE tokens remains unchanged. For details about the ANGLE emission rate, please refer to [this page](/governance/staking.md).
+The rate of emission of ANGLE tokens remains unchanged. For details about the ANGLE emission rate, please refer to [this page](/governance/angle-token.md).
 
 Essentially, the weekly decrease factor of 1.007827 of the ANGLE emissions is guaranteed on-chain.
 
@@ -59,7 +59,7 @@ The idea with Angle gauges is to incentivize different types of liquidity pools 
 - sanTokens
 - Perpetuals
 - Liquidity pools on exchanges (like on Curve, on Uniswap)
-- Liquidity pools on other chains (like agEUR/USDC on Quickswap on Polygon for instance)
+- Liquidity pools on other chains (like agEUR/USDC on Uniswap on Polygon for instance)
 
 The gauge system can also be used to incentivize different things than staking contracts. For instance, incentives for Convex voters on Curve can be linked to a gauge (in fact an EOA or a multisig) where veANGLE owners decide to send some rewards, and the multisig would be responsible for placing the incentives on Votium.
 
@@ -72,7 +72,7 @@ Given that a wide range of contracts can be considered Angle protocol gauges, th
 - Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, whether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
 
 {% hint style="info" %}
-It has been planned that gauge of type strictly greater than 2 would be for gauges on other networks. No such gauge exists for the moment, and gauges that are not on Ethereum mainnet are currently all of type 2.
+Available gauges of the protocol and their type can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges).
 {% endhint %}
 
 ### Gauge type weight

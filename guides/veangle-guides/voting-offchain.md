@@ -25,4 +25,4 @@ To create a proposal on Snapshot:
 1. Make sure that you have opened a discussion on [Angle governance forum](https://gov.angle.money) that it has been seen and commented by other community members.
 2. Also make sure that you got feedback on the fact that your proposal is technically and easily implementable.
 3. You then need to get at least 1000 veANGLE tokens on the wallet responsible for the proposal
-4. When that is good, you can then create your proposal [on this page](https://snapshot.org/#/anglegovernance.eth). Choose a voting period at least superior to 3 days.
+4. When that is good, you can then create your proposal [on this page](https://snapshot.org/#/anglegovernance.eth). It's normal if you don't have a choice on the voting period and voting type.

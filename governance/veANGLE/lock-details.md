@@ -63,5 +63,3 @@ $$
 Like in Curve and Frax systems, smart contracts & DAOs require whitelisting by governance to lock ANGLE for veANGLE. Only externally owned accounts (EOA) can directly call the veANGLE stake locking function.
 
 In order to have your protocol or DAO ownn veANGLE, you can begin the governance process with the ANGLE community in the [governance forum](https://gov.angle.money) by submitting a whitelisting proposal.
-
-Stake DAO submitted a proposal to whitelist one of their smart contract and create a liquid ANGLE locker with specific features. Read more on their [governance forum post](https://gov.angle.money/t/aip-4-strategic-partnership-with-stake-dao/251?u=tuta).
