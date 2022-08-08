@@ -39,6 +39,7 @@ Angle Introduction Article
 - _Recommended if you want to dive deeper into various topics concerning Angle, DeFi, and stablecoins._
 
 **Threads**:
+
 - July 3rd 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [The importance of liquidity](https://twitter.com/AngleProtocol/status/1543555158445096963)
 - June 26th 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [The role of liquidations in DeFi](https://twitter.com/AngleProtocol/status/1540996226715361280)
 - June 19th 2022: [Algorithmic Market Operations, or AMOs](https://twitter.com/AngleProtocol/status/1538433834454290432)

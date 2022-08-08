@@ -6,7 +6,7 @@ description: Locked ANGLE that provides multiple benefits
 
 ## Background
 
-veANGLE stands for "voting-escrowed" ANGLE, and is the new governance token of the Angle Protocol.
+veANGLE stands for "voting-escrowed" ANGLE, and is the governance token of the Angle Protocol.
 
 It is a vesting and yield system based off of Curve’s veCRV and Frax's veFXS mechanisms. The key property of veANGLE, beyond being a governance token, is that it is non-transferable and it does not trade on liquid markets.
 
@@ -29,18 +29,13 @@ Beyond **voting** on governance proposals and gauge weights, veANGLE is useful i
 
 ## 😎 veANGLE Benefits for the protocol
 
-The veANGLE system is modular and all-purpose. In the future, it can evolve in many different ways like by earning additional yield in new places/features, or be treated as a governance token bond rate of sorts.
+The veANGLE system is modular and all-purpose. In the future, it could gain additional utility by like being eligible to the yield generated through other Angle protocol features.
 
-It is designed to benefit the ANGLE system as a whole by:
+As of now, it is designed to benefit the ANGLE system as a whole by:
 
 - Allocating voting power to long-term holders of ANGLE through veANGLE
 - Incentivizing farmers to stake (or lock, both are used equivalently) ANGLE
 - Creating a bond-like utility for ANGLE and create a benchmark APR rate for staked ANGLE
-
-For more details on the benefits of the veANGLE model and its design, you can refer to the articles of the ANGLE Upgrade Series published on Angle's [blog](https://blog.angle.money):
-
-- [Part 1: Introducing locked ANGLE tokens and their advantages for the protocol](https://blog.angle.money/angle-upgrade-series-part-1-introducing-locked-angle-tokens-and-their-advantages-for-the-protocol-cd4340f7654a)
-- [Part 2: Incentives for veANGLE holders](https://blog.angle.money/angle-upgrade-series-part-2-incentives-for-veangle-holders-9c43051b9a0)
 
 ## Next ➡️
 

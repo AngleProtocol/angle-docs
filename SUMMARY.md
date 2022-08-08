@@ -51,7 +51,6 @@
   - [💵 Fees and revenue](borrowing-module/vaults/fees.md)
   - [🎳 Liquidations](borrowing-module/vaults/liquidations.md)
   - [🤝 Whitelisting and volatile assets](borrowing-module/vaults/whitelisting-and-volatile-assets.md)
-  - [🛩 Token Reactors](borrowing-module/vaults/token-reactor.md)
   - [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
 - [📚 Glossary](borrowing-module/glossary.md)
 
@@ -59,7 +58,6 @@
 
 - [🗳 Angle DAO](governance/angle-dao.md)
 - [🚀 ANGLE Token](governance/angle-token.md)
-- [🎁 Staking - Earning ANGLE](governance/staking.md)
 - [♠ veANGLE](governance/veANGLE/README.md)
   - [🔒 Lock Details](governance/veANGLE/lock-details.md)
   - [🗳 Gauges](governance/veANGLE/gauges.md)
@@ -71,8 +69,6 @@
 ## Other Aspects
 
 - [⛓ Angle Cross-Chain Setup](other/cross-chain/README.md)
-  - [LayerZero setup](other/cross-chain/layer-zero-setup.md)
-  - [Borrowing Module on different chains](other/cross-chain/borrowing-module-cross.md)
 - [⚙️ Algorithmic Market Operations](other/amo.md)
 - [⚡️ Flash Loans](other/flash-loans.md)
 
@@ -105,9 +101,6 @@
     - [Angle プロトコルの紹介](resources/international/japanese/angle-intro-japanese.md)
   - [🇻🇳 Vietnamese - tiếng-việt](resources/international/vietnamese/README.md)
     - [Whitepaper](resources/international/vietnamese/whitepaper.md)
-- [👵 Deprecated Docs](resources/deprecated/README.md)
-  - [Bonding Curve](resources/deprecated/bonding-curve.md)
-  - [Reward Weights](resources/deprecated/reward-weights.md)
 
 ## Ecosystem
 

@@ -144,4 +144,4 @@ Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely o
 
 ## Next
 
-The next sections will dive in more details into some aspects of the vaults, such as [fees](fees.md), [liquidations](liquidations.md), the [whitelisting](whitelisting-and-volatile-assets.md) of specific addresses, and [token reactors](../../angle-borrowing-module/token-reactor.md).
+The next sections will dive in more details into some aspects of the vaults, such as [fees](fees.md), [liquidations](liquidations.md) and the [whitelisting](whitelisting-and-volatile-assets.md) of specific addresses.

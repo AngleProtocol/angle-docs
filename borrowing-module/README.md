@@ -6,15 +6,17 @@ description: Angle Borrowing Module Overview
 
 ## Introduction
 
-Angle Borrowing Module goal was introduced after the Core module of the protocol as a way to help **expand the Angle Protocol** through another minting mechanism for Angle stablecoins.
+Angle Borrowing Module is another minting mechanism for Angle stablecoins.
 
-This module works hand in hand with the Core module and agTokens, like agEUR, are fully interoperable between both modules. It is available natively on Ethereum mainnet and on other EVM compatible networks like Polygon or Optimism. 
+This module works hand in hand with the Core module and agTokens, like agEUR, are fully interoperable between both modules. It is available natively on Ethereum mainnet and on other EVM compatible networks like Polygon or Optimism.
 
 It is based on a **debt mechanism**, similar to the one used by Maker with DAI, or Abracadbra with MIM. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 
-## Main Features
+{% hint style="info" %}
+Smart contract addresses associated to the Borrowing module on different chains can be found [here](https://developers.angle.money/overview/smart-contracts).
+{% endhint %}
 
-### 🏦 Vaults
+## 🏦 Main Features
 
 **Borrowing agTokens from collateral deposit:** With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allow them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
 
@@ -32,15 +34,19 @@ It is based on a **debt mechanism**, similar to the one used by Maker with DAI, 
 [This section](vaults/) presents in greater details vaults in Angle Borrowing Module.
 {% endhint %}
 
-### 🛩 Token Reactors
+## Cross-chain Compatibility
 
-Angle Borrowing module also introduces Token Reactors to allow DAOs and DeFi users to earn a native yield on top of volatile tokens.
+As mentionned above, **the Borrowing module can scale to a wide range of different networks**.
 
-The Reactor mode allows users or DAOs to deposit volatile tokens in specific vaults to earn yield on their deposits. This is made possible by minting agTokens that are invested directly in pre-defined strategies earning yield while maintaining a healthy collateral ratio on the agEUR loan.
+This can allow governance to deploy it on networks like layer 2s where transactions are more affordable than on the Ethereum mainnet. On these networks, it is possible to open smaller vaults and borrow less agEUR, thus making Angle accessible to a wider range of potential users.
 
-{% hint style="info" %}
-DAOs could leverage Angle token Reactors of the Angle Protocol to make a revenue out of their otherwise idle treasury assets. Learn more about it [here](../angle-borrowing-module/token-reactor.md).
-{% endhint %}
+At the same time, it is also possible to reduce liquidation penalties on these networks (smaller transactions costs for liquidators) which enable to play with Angle in even more borrower-friendly environments.
+
+Though the differents networks are becoming more connected with each other thanks to bridges, they are still distinct environments. Available liquidity and liquidators are not the same in all those networks, and there are some potential risks with having the same protocol deployed on multiple chains.
+
+The main risk in having the Borrowing module on multiple networks is that liquidations don't behave properly. With less liquidity, there is more slippage and liquidations can be less profitable, increasing the risk that they don't happen.
+
+To prevent this, each instance of the Borrowing module relies on different parameters chosen by governance. For instance, one parameter that is often tuned from one place to another is the amount of agEUR that can be issued on a network: this allows to make sure that liquidations remain profitable on a network based on the available liquidity.
 
 ## Audits
 
