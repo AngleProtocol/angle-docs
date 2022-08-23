@@ -18,7 +18,7 @@ The ANGLE token is the backbone of the Angle Protocol allowing it to be governed
 
 The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution was broken down as follows:
 
-![ANGLE Distribution](../.gitbook/assets/allocation.png)
+![ANGLE Distribution](../.gitbook/assets/angle-token-allocation.jpg)
 
 ### 🪐 Liquidity Mining
 
@@ -26,7 +26,7 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 The amount of ANGLE distributed is divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
-![ANGLE issuance schedule](../.gitbook/assets/liquidity-mining-schedule.png)
+![ANGLE issuance schedule](../.gitbook/assets/liquidity-incentives-distribution.jpg)
 
 #### Eligible gauges
 
