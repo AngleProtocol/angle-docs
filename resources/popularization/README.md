@@ -40,6 +40,12 @@ Angle Introduction Article
 
 **Threads**:
 
+- August 14th 2022, by [@pablo_veyrat](https://twitter.com/pablo_veyrat): [Borrowing rates proportional to collateralization](https://twitter.com/pablo_veyrat/status/1558713346647539712)
+- August 7th 2022, by [@pablo_veyrat](https://twitter.com/pablo_veyrat): [Compounding interest rates](https://twitter.com/pablo_veyrat/status/1556194000645881856)
+- July 31st 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [Heading to the rollups world](https://twitter.com/AngleProtocol/status/1553773651731914752)
+- July 24th 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [DeFi protocol revenues](https://twitter.com/thecryptogus/status/1551150215935172608)
+- July 17th 2022, by [@thePicodes](https://twitter.com/thePicodes): [AMMs and explaining where LPs APRs come from with a tool](https://twitter.com/thePicodes/status/1548590467067088903)
+- July 10th 2022, by [@0xteddav](https://twitter.com/0xteddav): [Playing with Yul/Assembly](https://twitter.com/0xteddav/status/1546065402819649536)
 - July 3rd 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [The importance of liquidity](https://twitter.com/AngleProtocol/status/1543555158445096963)
 - June 26th 2022, by [@thecryptogus](https://twitter.com/thecryptogus): [The role of liquidations in DeFi](https://twitter.com/AngleProtocol/status/1540996226715361280)
 - June 19th 2022: [Algorithmic Market Operations, or AMOs](https://twitter.com/AngleProtocol/status/1538433834454290432)
