@@ -19,7 +19,7 @@ You can access all the veANGLE features from the [Angle App](https://app.angle.m
 {% endcontent-ref %}
 
 {% content-ref url="incentives.md" %}
-[Earn ANGLE](incentives.md)
+[Earn](incentives.md)
 {% endcontent-ref %}
 
 {% content-ref url="voting-offchain.md" %}

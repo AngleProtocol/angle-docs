@@ -4,12 +4,12 @@ description: How to participate to governance votes on Snapshot with veANGLE tok
 
 # Voting on Snapshot
 
-veANGLE holders can create votes and vote on [Snapshot](https://snapshot.org/#/anglegovernance.eth) on existing governance votes.
+veANGLE holders can create votes and vote on [Snapshot](https://snapshot.org/#/anglegovernance.eth) on existing governance votes. The Angle App also features [a page](https://app.angle.money/#/vote) allowing users to vote on the same Snapshot votes.
 
 ## Voting on proposals
 
-1. Go to the Angle Protocol [Snapshot](https://snapshot.org/#/anglegovernance.eth)
-2. Connect yourself with your wallet that owns your veANGLE tokens
+1. Go to the Angle Protocol [Snapshot space](https://snapshot.org/#/anglegovernance.eth) or on the [Voting page](https://app.angle.money/#/vote) of the Angle app.
+2. Connect the wallet that owns your veANGLE tokens
 3. Choose the open proposals and then simply vote for the option of your choice. You can only vote on proposals that were created after your veANGLE balance got non null. And if your veANGLE balance increased during the span of a vote, then Snapshot considers that your balance is the one you had right before the start of the vote.
 
 ## Delegating voting power

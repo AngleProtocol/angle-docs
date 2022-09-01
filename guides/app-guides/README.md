@@ -15,7 +15,7 @@ You will learn how to play with the app and more particularly to:
 
 ## UI tour
 
-The new Angle App contains all the features related to the protocol in one place. All the necessary pages can be accessed from the sidebar on the left. It contains three main sections: **agTokens**, **Protocol**, and **ANGLE**. External partners can also be found in the **More** section, and everything you need to know about the protocol is under **Info** at the bottom.
+The Angle App contains most of the features related to the protocol. Pages can be accessed from the sidebar on the left under three main sections: **agTokens**, **Protocol**, and **ANGLE**. External partners can also be found in the **More** section, and everything you need to know about the protocol is under **Info** at the bottom.
 
 ### agTokens
 
