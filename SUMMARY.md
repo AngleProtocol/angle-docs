@@ -24,8 +24,8 @@
   - [📗 Governance Guides](guides/veangle-guides/README.md)
     - [Lock](guides/veangle-guides/locking-angle.md)
     - [Gauges](guides/veangle-guides/voting-gauges.md)
-    - [Earn ANGLE](guides/veangle-guides/incentives.md)
-    - [Vote on Snapshot](guides/veangle-guides/voting-offchain.md)
+    - [Earn](guides/veangle-guides/incentives.md)
+    - [Vote](guides/veangle-guides/voting-offchain.md)
 
 ## Angle Core Module
 
