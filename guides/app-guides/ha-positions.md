@@ -4,16 +4,18 @@ description: How to open, modify or close perpetual positions on Angle app
 
 # Opening & Managing Positions
 
-Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long positions, betting that the USD will increase in value against the EUR.
+Angle lets you open long collateral/stablecoin leverage positions. This means that if the protocol's Core module accepts USDC as collateral, and can issue agEUR, users can open USDC/agEUR long perpetual positions, betting that the USD will increase in value against the EUR.
 
 You can read more about this mechanism [here](/core-module/hedging-agents/README.md).
+
+All of this can be done directly from the [Trade Perpetuals page](https://app.angle.money/#/perpetuals) of the Angle App.
 
 ![Perpetuals page](../../.gitbook/assets/perpetual-cards.png)
 
 ## Opening a position
 
-1. To open a long position on Angle, head to [app.angle.money](https://app.angle.money/#/perpetuals) and select a collateral you want to long.
-2. Then, select the amount of collateral you want to send to the protocol as margin for your position. Positions in Angle work similarly than isolated-margin exchanges, where margin is separated between positions.
+1. To open a long position on Angle, head to the [Trade Perpetuals page](https://app.angle.money/#/perpetuals) of the app and select a collateral you want to long.
+2. Select the amount of collateral you want to send to the protocol as margin for your position. Positions in Angle work similarly than isolated-margin exchanges, where margin is separated between positions.
 3. Now, you can choose your leverage. This will determine your position size that is to say the amount of underlying tokens you will be exposed to. Leverage in Angle is computed as $$\frac{\texttt{margin + position size}}{\texttt{margin}}$$
 4. The collateral/stablecoin exchange rate and transaction fees are displayed. Note that the net initial margin of your position will be your initial margin input minus fees. You'll also see the amount of ANGLE rewards you'll get with your position.
 5. If this is the first time opening a position on this collateral/stablecoin pair, you will need to approve your tokens with a transaction or a signature first.

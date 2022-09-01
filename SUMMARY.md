@@ -7,23 +7,25 @@
 - [📖 Whitepapers](whitepapers.md)
 - [📒 Glossary](global-glossary.md)
 - [🎓 Guides](guides/README.md)
+
   - [🚶 First Steps in Crypto](guides/newbie.md)
   - [🧩 Use cases](/guides/use-cases/README.md)
     - [💸 Pay and get paid with agEUR](/guides/use-cases/ageur-power-usecase.md)
     - [🏦 agEUR as a treasury asset](/guides/use-cases/ageur-treasury.md)
-  - [📔 App Guides - Protocol features](guides/app-guides/README.md)
-    - [Buy agEUR](/guides/app-guides/getageur.md)
-    - [Borrow agEUR](/guides/app-guides/borrow-ageur.md)
-    - [Leverage with agEUR](/guides/app-guides/leverage.md)
-    - [Opening & Managing Positions](guides/app-guides/ha-positions.md)
-    - [Deposit Tokens for Yield](guides/app-guides/slp-pools.md)
-    - [App FAQ](guides/app-guides/app-faq.md)
+  - [📔 App Guides](guides/app-guides/README.md)
+
+    - [Swap - Buy agEUR](/guides/app-guides/getageur.md)
+    - [Borrow / Leverage](/guides/app-guides/borrow-ageur.md)
+    - [Deposit / SLP](guides/app-guides/slp-pools.md)
+    - [Trade Perpetuals](guides/app-guides/ha-positions.md)
+    - [FAQ](guides/app-guides/app-faq.md)
     - [Formulas](guides/app-guides/formulas.md)
+
   - [📗 Governance Guides](guides/veangle-guides/README.md)
-    - [Locking ANGLE](guides/veangle-guides/locking-angle.md)
-    - [Voting on Gauges](guides/veangle-guides/voting-gauges.md)
-    - [Earning ANGLE](guides/veangle-guides/incentives.md)
-    - [Voting on Snapshot](guides/veangle-guides/voting-offchain.md)
+    - [Lock](guides/veangle-guides/locking-angle.md)
+    - [Gauges](guides/veangle-guides/voting-gauges.md)
+    - [Earn ANGLE](guides/veangle-guides/incentives.md)
+    - [Vote on Snapshot](guides/veangle-guides/voting-offchain.md)
 
 ## Angle Core Module
 

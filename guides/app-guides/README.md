@@ -1,18 +1,17 @@
 ---
-description: Angle App - User guides for protocol interactions
+description: Angle App Guides
 ---
 
-# 📔 App Guides - Protocol features
+# 📔 App Guides
 
 This section contains guides to interact through [app.angle.money](https://app.angle.money) with the main features of the different modules of the Angle protocol.
 
-In particular, you will learn how to play with the app and more particularly to:
+You will learn how to play with the app and more particularly to:
 
-- Buy and sell agEUR
-- Open, modify, and close a perpetual position
-- Deposit collateral into the protocol to get yield in the form of sanTokens
-- Borrow stablecoins from the Borrowing module
-- Get leverage through the Borrowing module
+- Buy and sell agEUR: `Swap`
+- Borrow agEUR or get leverage on the crypto assets of your choice using the Borrowing module: `Borrow / Leverage`
+- Open, modify, and close a perpetual position: `Trade Perpetuals`
+- Deposit collateral into the protocol to get yield in the form of sanTokens: `Deposit / SLP`
 
 ## UI tour
 
@@ -23,29 +22,25 @@ The new Angle App contains all the features related to the protocol in one place
 Under the **Swap** tab, you can buy or sell agEUR from multiple tokens.
 
 {% content-ref url="/guides/app-guides/getageur.md" %}
-[getageur.md](/guides/app-guides/getageur.md)
+[Swap Page - Get agEUR](/guides/app-guides/getageur.md)
 {% endcontent-ref %}
+
+In the **Borrow / Leverage** one, you can deposit collateral to be allowed to borrow agEUR on top of your deposits. You can also use this mechanism to get leverage on the tokens deposited directly within the Angle app in one transaction.
 
 {% content-ref url="borrow-ageur.md" %}
-[borrow-ageur.md](borrow-ageur.md)
+[Borrow / Leverage](borrow-ageur.md)
 {% endcontent-ref %}
-
-{% content-ref url="leverage.md" %}
-[leverage.md](leverage.md)
-{% endcontent-ref %}
-
-In the **Borrow / leverage** one, you can deposit collateral to be allowed to borrow agEUR on top of their deposit. You can also use this mechanism to get leverage on the token they deposited directly within the Angle app in one transaction.
 
 ### Protocol
 
 In the protocol section, you can **deposit** tokens to earn yield, and **trade** perpetuals on forex or crypto.
 
 {% content-ref url="slp-pools.md" %}
-[slp-pools.md](slp-pools.md)
+[Deposit / SLP](slp-pools.md)
 {% endcontent-ref %}
 
 {% content-ref url="ha-positions.md" %}
-[ha-positions.md](ha-positions.md)
+[Trade Perpetuals](ha-positions.md)
 {% endcontent-ref %}
 
 ### ANGLE

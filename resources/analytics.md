@@ -21,4 +21,8 @@ Here are the dashboards created by the community:
 - [Angle Gauges Votes](https://dune.com/tuta/Angle-Gauges-Votes) from tuta, with specific information about votes on Angle gauges and ANGLE distribution.
 - [Angle Knowledge NFT](https://dune.com/0xroll/Angle-Protocol-Knowledge-NFT) from OxRoll, with data about the NFT distributed to users that completed the Angle Knowledge quizz.
 
+## Angle Integrations
+
+Angle related products are integrated in multiple places in DeFi. A complete list of all agEUR integrations can be found on our Discord [here](https://discord.com/channels/835066439891157012/907535810067304458/907537277939482636).
+
 If you think about more data that would be useful to display about Angle or are planning to build a dashboard about the protocol, feel free to reach out in our [Discord](https://discord.gg/bwHQTMsf)!

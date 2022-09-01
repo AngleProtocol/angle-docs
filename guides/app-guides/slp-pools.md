@@ -15,7 +15,7 @@ For instance, you can only add DAI to get sanDAI_EUR, and the `EUR` here is just
 You can read more about this in the [SLP page](../../core-module/standard-liquidity-providers/).
 {% endhint %}
 
-Deposit tokens in the Angle protocol to earn yield can be done from [this page](https://app.angle.money/#/deposit).
+Depositing tokens in the Angle protocol to earn yield can be done from the [Deposit / SLP page](https://app.angle.money/#/deposit).
 
 ## Deposit
 
