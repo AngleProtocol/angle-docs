@@ -1,4 +1,4 @@
-# App FAQ
+# FAQ
 
 ## Swap Page - agTokens Users
 
