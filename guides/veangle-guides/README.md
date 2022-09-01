@@ -23,5 +23,5 @@ You can access all the veANGLE features from the [Angle App](https://app.angle.m
 {% endcontent-ref %}
 
 {% content-ref url="voting-offchain.md" %}
-[Vote on Snapshot](voting-offchain.md)
+[Vote](voting-offchain.md)
 {% endcontent-ref %}

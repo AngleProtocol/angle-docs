@@ -14,7 +14,7 @@ If you are new to DeFi, you may also want to check out [this onboarding guide](.
 You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/#/buy) of our app.
 {% endhint %}
 
-ANGLE tokens can be locked on the [Lock Page](https://app.angle.money/#/lock) of the Angle app.
+ANGLE tokens can be locked on the [Lock page](https://app.angle.money/#/lock) of the Angle app.
 
 ![ANGLE locking screen](../../.gitbook/assets/angle-lockscreen2.png)
 

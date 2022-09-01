@@ -22,7 +22,7 @@ The Angle App contains most of the features related to the protocol. Pages can b
 Under the **Swap** tab, you can buy or sell agEUR from multiple tokens.
 
 {% content-ref url="/guides/app-guides/getageur.md" %}
-[Swap Page - Get agEUR](/guides/app-guides/getageur.md)
+[Swap - Get agEUR](/guides/app-guides/getageur.md)
 {% endcontent-ref %}
 
 In the **Borrow / Leverage** one, you can deposit collateral to be allowed to borrow agEUR on top of your deposits. You can also use this mechanism to get leverage on the tokens deposited directly within the Angle app in one transaction.
@@ -51,4 +51,4 @@ You can **lock** ANGLE to get veANGLE, vote on rewards distribution (**gauge** t
 
 Governance-related guides can be found in the [Governance guides](../veangle-guides/).
 
-![New app UI](../../.gitbook/assets/new-app-ui.png)
+![Angle app UI](../../.gitbook/assets/new-app-ui.png)

@@ -12,7 +12,7 @@ If you are new to crypto, follow first our [guide for new crypto users](newbie.m
 
 There are multiple ways to buy agEUR:
 
-1. With any crypto-tokens directly from the [Swap Page](https://app.angle.money/#/swap) of the Angle app or on a decentralized exchange (DEX)
+1. With any crypto-tokens directly from the [Swap page](https://app.angle.money/#/swap) of the Angle app or on a decentralized exchange (DEX)
 2. With your credit card or bank transfer by using one of our **on-ramp partners**
 
 ## Buying agEUR on-chain
