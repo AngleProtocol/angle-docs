@@ -25,6 +25,7 @@
     - [Lock](guides/veangle-guides/locking-angle.md)
     - [Gauges](guides/veangle-guides/voting-gauges.md)
     - [Earn](guides/veangle-guides/incentives.md)
+    - [Buy ANGLE](guides/veangle-guides/buy-angle.md)
     - [Vote](guides/veangle-guides/voting-offchain.md)
 
 ## Angle Core Module
