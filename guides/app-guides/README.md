@@ -52,3 +52,41 @@ You can **lock** ANGLE to get veANGLE, vote on rewards distribution (**gauge** t
 Governance-related guides can be found in the [Governance guides](../veangle-guides/).
 
 ![Angle app UI](../../.gitbook/assets/new-app-ui.png)
+
+### App Menu and Settings
+
+On the top-left corner, there is an app menu with different features and settings. In the general menu, you can **choose** your **network** and the **currency** denominating the values you see on the app. By clicking on the eye icon to the right of your address, you can activate the transaction simulator mode detailed below.
+
+Just below that, there is a `Settings` button. Among those settings, you can choose:
+
+- A default slippage for your transactions
+- To have unlimited or limited approvals
+- To use permit signatures instead of approval transactions when possible
+- To impersonate an address
+  ![Settings](../../.gitbook/assets/settings.png)
+
+#### Impersonator guide
+
+The Angle app lets people impersonate other addresses, and see what the person controlling this address would on the app.
+
+It allows contributors to debug user issues, and users to preview the UI/UX or someone else's positions.
+
+Here are the steps to impersonate another address:
+
+1. Connect your wallet.
+2. Click on `Settings` in the top left corner.
+3. At the bottom of the Settings section, there is an eye icon with an input to the right. Enter any address, and the connection will change.
+   ![Impersonator](../../.gitbook/assets/impersonator.png)
+   ![Impersonator connected](../../.gitbook/assets/impersonator-connected-2.png)
+4. You can now navigate the app as if you were controlling this address.
+   ![Impersonator vaults](../../.gitbook/assets/impersonator-vault.png)
+
+Obviously, it is not possible to confirm any transaction while connected on the app through an external address. However, they will be simulated them with Tenderly!
+
+#### Transaction simulator with Tenderly
+
+In the App menu, you can see an eye to the right of your address. When lighted, you won't be prompted to confirm the transactions, but you will be redirected on Tenderly where they will be simulated and you will see a summary.
+
+This is very useful for users looking to test the app without actually passing transactions. It also helps users make sure that they are not getting scammed and the transactions happen as they should.
+
+When impersonating another address, the simulation mode is active by default. [Here](https://dashboard.tenderly.co/public/angle/app/simulator/11a6bfca-e5bf-4928-bc34-a02aacf74921) is an example of the Tenderly simulator output when trying to close vault #6 of address `0x5004...`.
