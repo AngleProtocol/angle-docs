@@ -4,7 +4,7 @@ description: How to impersonate an address on app.angle.money
 
 # 🕵️‍♂️ Impersonate any address
 
-All mainnet Ethereum addresses and transactions are public. Thanks to this, the Angle app lets people impersonate any address, and see what the person controlling the address would on the app.
+Everything happening on the Ethereum mainnet is public. Thanks to this, the Angle app can let people impersonate any address, and see what the person controlling this address would on the app.
 
 It allows contributors to debug user issues, and users to preview the UI/UX or someone else's positions.
 
