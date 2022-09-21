@@ -10,7 +10,11 @@ To take advantage of that, you can among other things [deposit sanTokens](https:
 
 The [Earn page](https://app.angle.money/#/earn) of the app lists all the pools and farms where it is possible to earn ANGLE tokens. It's also in this page that you can stake some tokens to start automatically accumulating ANGLE rewards.
 
-There are some actions which automatically grant you the right to ANGLE tokens without having to stake (like opening a perpetual or becoming a Uni-V3 LP): these are also listed in this page.
+There are some actions which automatically grant you the right to ANGLE tokens without having to stake (like opening a perpetual or becoming a Uniswap V3 Liquidity Provider): these are also listed in this page.
+
+{% hint style="info" %}
+For more details on how Uniswap V3 Liquidity Providers can be rewarded with ANGLE tokens, check [this guide](./univ3-lp.md).
+{% endhint %}
 
 More generally, the [Earn page](https://app.angle.money/#/earn) lists all Angle-related yield opportunities, not necessarily involving the ANGLE token.
 
