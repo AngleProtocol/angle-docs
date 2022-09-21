@@ -6,7 +6,11 @@ description: Details on Angle UniV3 incentive mechanism for LPs
 
 Angle implemented a specific mechanism to reward UniV3 liquidity providers according to their added value to the protocol. Basically, it allows to reward LPs more granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in more complex ways that benefit from all Uniswap V3 possibilities.
 
-You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1). Here, we will detail how the incentives are split and how you can provide liquidity on pools to earn ANGLE rewards.
+{% hint style="info" %}
+You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1).
+{% endhint %}
+
+Here, we will detail how the incentives are split and how you can provide liquidity on Angle Uniswap V3 pools to earn ANGLE rewards.
 
 ## Incentives distribution
 
@@ -16,11 +20,11 @@ Every week, the distribution of incentives going to each pool is voted by veANGL
 
 ### Uniswap V3 pools
 
-Then, for each Uniswap V3 pools, a specific formula is applied to each swap to see who was providing liquidity and how much. Then, at the end of the week, the numbers are computed by an [off-chain script](https://gist.github.com/Picodes/0b738ec92f7bd72ec6e77ffdf5d1c5e2) to form a specific distribution of rewards within each pool.
+Then, for each Uniswap V3 pools, a specific formula is applied to each swap to see who was providing liquidity and how much. Then, at the end of the week, the specific distribution of rewards within each pool is computed by an [off-chain script](https://gist.github.com/Picodes/0b738ec92f7bd72ec6e77ffdf5d1c5e2).
 
 The merkle root (i.e. summary) of the distribution is then uploaded on-chain once every week, and every LP can claim their ANGLE rewards.
 
-One big difference is that LPs can now provide liquidity on any range they want, and any Uniswap liquidity manager can be integrated.
+One big difference with the previous incentives mechanism relying on wrapped UniswapV3 positions into ERC20 is that LPs can now provide liquidity on any range they want, and any Uniswap liquidity manager can be integrated.
 
 For example, a tight range will virtually provide more liquidity and earn more fees and ANGLE rewards. However, it has more chance to become out-of-range and suffer from [impermanent loss](https://www.youtube.com/watch?v=8XJ1MSTEuU0).
 
@@ -44,7 +48,7 @@ $$
 
 ### Providing liquidity
 
-As a LP, you can provide liquidity directly on Uniswap V3, or with any of the integrated Uniswap position manager.
+As a LP, you can provide liquidity directly on [Uniswap V3](https://app.uniswap.org/#/add/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8/500?maxPrice=1.000562), or with any of the integrated Uniswap position manager.
 
 Currently, we have integrated [Arrakis](https://www.arrakis.finance/) and [Gamma](https://www.gamma.xyz/).
 
@@ -54,13 +58,21 @@ For example, Arrakis manages liquidity passively, and agEUR/USDC has some times 
 
 ### FAQ
 
+#### How can I be eligible for the ANGLE rewards?
+
+By providing liquidity on any of the Angle Uniswap V3 pools incentivized on the app [Earn](https://app.angle.money/#/earn) page, either directly through [Uniswap](https://app.uniswap.org/#/add/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8/500?maxPrice=1.000562), or through Arrakis or Gamma.
+
+#### What do I need to do if I was previously staking?
+
+If you were previously staking through Arrakis/Gelato, you are still earning ANGLE rewards if the Arrakis position ([agEUR-USDC](https://beta.arrakis.finance/vaults/1/0xEDECB43233549c51CC3268b5dE840239787AD56c) example) is on-range.
+
 #### Is out-of-range liquidity being incentivized?
 
 No. Only in-range liquidity used during swaps is being accounted for to receive incentives.
 
 #### When can I claim my ANGLE rewards?
 
-ANGLE rewards from the past week can be claimed once per week, every Thursday.
+ANGLE rewards from the past week can be claimed once per week, every Thursday. Rewards accumulate if you don't claim them.
 
 #### Where can I claim my rewards?
 
