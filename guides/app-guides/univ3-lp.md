@@ -50,7 +50,7 @@ Currently, we have integrated [Arrakis](https://www.arrakis.finance/) and [Gamma
 
 When you are going through a liquidity manager, make sure to understand how they manage your liquidity, and if the positions are in-range. If they are not, you will not be earning ANGLE rewards.
 
-For example, Arrakis manages liquidity passively, and agEUR/USDC has some times been out-of-range. Gamma does an active liquidity management, and rebalances the ranges regularly.
+For example, Arrakis manages liquidity passively, and agEUR/USDC has some times been out-of-range. Gamma does an active liquidity management, and rebalances the ranges regularly. You can find more information on the Gamma's side [here](https://twitter.com/GammaStrategies/status/1571865274076352512?s=20&t=PtrXjbL4ViqYiUgC85q-Zg).
 
 ### FAQ
 
