@@ -16,6 +16,7 @@
 
     - [Swap - Buy agEUR](/guides/app-guides/getageur.md)
     - [Borrow / Leverage](/guides/app-guides/borrow-ageur.md)
+    - [UniV3 incentives in Angle](/guides/app-guides/univ3-lp.md)
     - [Deposit / SLP](guides/app-guides/slp-pools.md)
     - [Trade Perpetuals](guides/app-guides/ha-positions.md)
     - [FAQ](guides/app-guides/app-faq.md)
