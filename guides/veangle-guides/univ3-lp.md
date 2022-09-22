@@ -2,7 +2,7 @@
 description: Details on Angle Uniswap V3 incentive mechanism for LPs
 ---
 
-# UniV3 LP incentives in Angle
+# 🦄 Incentives for Uniswap V3 Liquidity Providers
 
 Angle implemented a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs) according to their added value to the protocol. Basically, it allows to reward LPs more granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in more complex ways that benefit from all Uniswap V3 possibilities.
 
