@@ -25,7 +25,7 @@
     - [Lock](guides/veangle-guides/locking-angle.md)
     - [Gauges](guides/veangle-guides/voting-gauges.md)
     - [Earn](guides/veangle-guides/incentives.md)
-      - [UniV3 incentives in Angle](/guides/veangle-guides/univ3-lp.md)
+      - [🦄 Uniswap V3 Incentives](/guides/veangle-guides/univ3-lp.md)
     - [Buy ANGLE](guides/veangle-guides/buy-angle.md)
     - [Vote](guides/veangle-guides/voting-offchain.md)
 
