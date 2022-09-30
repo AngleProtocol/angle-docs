@@ -38,7 +38,7 @@ For the most up-to-date info on Angle AMOs managed by the governance multisig, y
 
 ### Curve AMO
 
-This AMO is the only one that is so far automatically and trustlessly managed by smart contracts. It consists in minting agEUR in the Curve agEUR-EUROC when there are more agEUR than EUROC and burning agEUR from the pool when there are more EUROC than agEUR.
+This AMO is the only one that is so far automatically and trustlessly managed by smart contracts. It consists in minting agEUR in the Curve agEUR-EUROC when there are more EUROC than agEUR and burning agEUR from the pool when there are more agEUR than EUROC.
 
 This AMO acts as a sort of price stability module for the protocol, as detailed in [this governance proposal](https://gov.angle.money/t/aip-27-deploy-amo-on-the-curve-ageur-euroc-pool/473).
 
