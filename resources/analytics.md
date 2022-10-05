@@ -14,12 +14,9 @@ Angle analytics is available at [analytics.angle.money](https://analytics.angle.
 
 Amazing community members have also built dedicated Dune dashboards about Angle! You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information.
 
-Here are the dashboards created by the community:
+All the Angle related Dune dashboards have been grouped in one [Angle Main Dashboard](https://dune.com/tuta/angle-master-dashboard).
 
-- [Angle Dashboard](https://dune.com/SebVentures/Angle-Dashboard) from SebVentures, with general information about the protocol.
-- [veANGLE](https://dune.com/tuta/veANGLE-data) from tuta, with specific information about veANGLE.
-- [Angle Gauges Votes](https://dune.com/tuta/Angle-Gauges-Votes) from tuta, with specific information about votes on Angle gauges and ANGLE distribution.
-- [Angle Knowledge NFT](https://dune.com/0xroll/Angle-Protocol-Knowledge-NFT) from OxRoll, with data about the NFT distributed to users that completed the Angle Knowledge quizz.
+If you build an Angle dashboard yourself, drop a message on Discord and we will add it there.
 
 ## Angle Integrations
 
