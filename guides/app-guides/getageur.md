@@ -33,7 +33,7 @@ Before anything, to buy agEUR on Angle (and on any DEX), you need ETH in your wa
 Then:
 
 1. Go to the [Swap page](https://app.angle.money/#/swap) of the Angle app.
-2. Select the token you want to spend to buy agEUR. You can also copy any token address you like. If your token is not in the collaterals list, it will be swapped using 1inch to the cheapest collateral available. Supported collaterals for the moment are ETH, DAI, USDC, FEI, FRAX
+2. Select the token you want to spend to buy agEUR. You can also copy any token address you like. If your token is not in the collaterals list, it will be swapped using 1inch to the cheapest collateral available. Supported collaterals for the moment are ETH, DAI, USDC, FRAX
 3. Enter the amount of tokens you want to exchange or to buy
 4. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/app-guides/app-faq.md).
 5. Once the permission has been signed or the approval transaction has been executed, you can confirm the transaction to buy agEUR.

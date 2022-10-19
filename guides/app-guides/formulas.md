@@ -46,7 +46,6 @@ $$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
 
 - DAI: 0.625%
 - USDC: 0.625%
-- FEI: 0.625%
 - FRAX: 0.625%
 - ETH: 6.25%
 
