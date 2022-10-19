@@ -42,7 +42,7 @@ When increasing the veANGLE balance by locking more tokens or extending a lock, 
 {% endhint %}
 
 {% hint style="info" %}
-Note that gauges can be "killed" after having been whitelisted. This requires a DAO vote. Rewards that are voted for killed gauges are simply not issued, which means veANGLE voting for killed gauges are not actually providing useful votes.
+Note that gauges can be "killed" after having been whitelisted. This requires a DAO vote. Rewards that are voted for killed gauges are simply not issued, which means veANGLE tokens voting for a gauge that has been removed are not actually providing useful votes.
 {% endhint %}
 
 ## ANGLE Issuance Rate

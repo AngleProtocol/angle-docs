@@ -37,7 +37,7 @@ On the 19th of October 2022, [it was voted](https://snapshot.org/#/anglegovernan
 Contracts where ANGLE inflation is routed need to be whitelisted by the Angle DAO through a governance vote. Usually, these are specific contracts where users must put their liquidity (LP tokens, sanTokens, agEUR, ...) if they want to get access to the ANGLE emissions.
 
 {% hint style="info" %}
-Available gauges of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges). Note that whitelisted contracts can be killed which means that a contract can stop receiving ANGLE rewards if voted by Angle DAO.
+Available gauges of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges). Note that whitelisted contracts can be killed which means that a contract can stop receiving ANGLE rewards if voted by Angle DAO. In this case, accumulated ANGLE rewards can still be claimed after the gauge has been removed.
 {% endhint %}
 
 In the case of perpetuals and if perpetuals are rewarded with ANGLE tokens, Hedging Agents do not need to stake any token on a contract and they're rewarded automatically as they have an open position.
