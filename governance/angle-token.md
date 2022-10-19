@@ -29,7 +29,7 @@ The amount of ANGLE distributed is divided by 1.5^(1/52) = 1.007827 every week, 
 ![ANGLE issuance schedule](../.gitbook/assets/liquidity-incentives-distribution.jpg)
 
 {% hint style="info" %}
-On the 19th of October 2022, [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. Decrease factor week over week remains the same.
+On the 19th of October 2022, [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
 {% endhint %}
 
 #### Eligible gauges
