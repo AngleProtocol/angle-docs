@@ -23,13 +23,13 @@ The protocol distributes interest in the form of tokens native to Angle, beginni
 
 In practice, the redistribution of interest to veANGLE token holder is currently at 50%. Here is how it is happening:
 
-- 50% of all interest generated are converted to USDC. For instance, interest accumulated under the form of FEI, FRAX, DAI, and ETH are swapped to USDC.
+- 50% of all interest generated are converted to USDC.
 - The USDC are deposited into the protocol against sanUSDC_EUR.
 - The sanUSDC_EUR are then redeemable by veANGLE holders according to the distribution detailed below.
 
 ### ⏲️ Timeline
 
-Fees are going to be distributed weekly. The proportional amount of fees that each user is to receive is calculated based on their veANGLE balance relative to the total veANGLE supply.
+Fees are distributed weekly. The proportional amount of fees that each user is to receive is calculated based on their veANGLE balance relative to the total veANGLE supply.
 
 This amount is calculated at the start of the week. The actual distribution occurs at the end of the week based on the fees that were collected. As such, users that create a new vote-lock should expect to receive their first fee payout at the end of the following epoch week.
 
@@ -41,6 +41,6 @@ As mentionned above, all profits of the protocol are converted into USDC before 
 
 The protocol has implemented its own process and smart contracts to handle the conversion: this is handled on a per-coin basis.
 
-What has been implemented so far is conversions using a mix of 1Inch, UniswapV3, UniswapV2, and Sushi swaps.
+So far the system implements conversions using a mix of 1Inch, UniswapV3, UniswapV2, and Sushi swaps.
 
 Such swaps can only be performed by trusted addresses as it could lead people to front-run the protocol for swaps and plan for elaborate sandwich attacks.

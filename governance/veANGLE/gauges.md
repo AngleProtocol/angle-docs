@@ -41,9 +41,15 @@ When updating gauge weights and putting more weight on one gauge with respect to
 When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power. More info on the [Increasing veANGLE balance page](increasing-veANGLE.md).
 {% endhint %}
 
+{% hint style="info" %}
+Note that gauges can be "killed" after having been whitelisted. This requires a DAO vote. Rewards that are voted for killed gauges are simply not issued, which means veANGLE tokens voting for a gauge that has been removed are not actually providing useful votes.
+{% endhint %}
+
 ## ANGLE Issuance Rate
 
-The rate of emission of ANGLE tokens remains unchanged. For details about the ANGLE emission rate, please refer to [this page](/governance/angle-token.md).
+{% hint style="info" %}
+For details about the ANGLE emission rate, please refer to [this page](/governance/angle-token.md).
+{% endhint %}
 
 Essentially, the weekly decrease factor of 1.007827 of the ANGLE emissions is guaranteed on-chain.
 
@@ -53,13 +59,13 @@ veANGLE stakers can therefore feel confident staking the maximum duration of 4 y
 
 ## Gauge Types
 
-The idea with Angle gauges is to incentivize different types of liquidity pools useful to the protocol:
+The idea with Angle gauges is to incentivize different types of liquidity pools that can be useful to the protocol:
 
 - agEUR liquidity and markets
 - sanTokens
-- Perpetuals
 - Liquidity pools on exchanges (like on Curve, on Uniswap)
 - Liquidity pools on other chains (like agEUR/USDC on Uniswap on Polygon for instance)
+- Perpetuals (if needed)
 
 The gauge system can also be used to incentivize different things than staking contracts. For instance, incentives for Convex voters on Curve can be linked to a gauge (in fact an EOA or a multisig) where veANGLE owners decide to send some rewards, and the multisig would be responsible for placing the incentives on Votium.
 

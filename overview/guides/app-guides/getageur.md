@@ -19,8 +19,8 @@ There are multiple ways to buy agEUR:
 
 There are different places on which you can buy agEUR on-chain. You can do it:
 
-* Directly with the Angle Protocol through the [Angle App](https://app.angle.money) on the Ethereum blockchain.
-* From DEXes on Ethereum or on other chains like Solana, Fantom, Polygon. agEUR exists with deep liquidity on many decentralized exchanges of different chains. Best solution at the moment on Ethereum mainnet remains to use [Uniswap](https://app.uniswap.org) or an aggregator like [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR).
+- Directly with the Angle Protocol through the [Angle App](https://app.angle.money) on the Ethereum blockchain.
+- From DEXes on Ethereum or on other chains like Solana, Fantom, Polygon. agEUR exists with deep liquidity on many decentralized exchanges of different chains. Best solution at the moment on Ethereum mainnet remains to use [Uniswap](https://app.uniswap.org) or an aggregator like [1inch](https://app.1inch.io/#/1/swap/ETH/agEUR).
 
 Angle App is built to minimize cost for acquiring agEUR (and ANGLE) with any token but it is possible that there are temporarily better prices to get it from other tokens on DEXes.
 
@@ -33,7 +33,7 @@ Before anything, to buy agEUR on Angle (and on any DEX), you need ETH in your wa
 Then:
 
 1. Go to [app.angle.money](https://app.angle.money/#/swap).
-2. Select the token you want to spend to buy agEUR. If your token in not in the collaterals list, it will be swapped using 1inch to the cheapest collateral available. Supported collaterals for the moment are ETH, DAI, USDC, FEI, FRAX
+2. Select the token you want to spend to buy agEUR. If your token in not in the collaterals list, it will be swapped using 1inch to the cheapest collateral available. Supported collaterals for the moment are ETH, DAI, USDC, FRAX
 3. Enter the amount of tokens you want to exchange or to buy
 4. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](../../../guides/app-guides/app-faq.md).
 5. Once the permission has been signed or the approval transaction has been executed, you can confirm the transaction to buy agEUR.
@@ -46,9 +46,9 @@ You now have agEUR, a stablecoin that mirrors the value of the EUR!
 
 agEUR is supported by a wide range of on-ramp partners which make it accessible from a simple credit card or bank transfer:
 
-* Mt Pelerin
-* Transak
-* Wert.io
+- Mt Pelerin
+- Transak
+- Wert.io
 
 All of them are accessible from the main Angle interface on the [On-ramp / off-ramp](https://app.angle.money/#/ramp) page. The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
 
@@ -62,8 +62,8 @@ Note that these partners may ask users to enter personal information above a cer
 
 If you want to exchange your agEUR back to another token, you have a few options:
 
-* Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a DEX like [Uniswap](https://app.uniswap.org).
-* Send money back directly to your bank account through our off-ramp partner Mt Pelerin.
+- Swap them against another token directly on [Angle](https://app.angle.money/#/swap) or a DEX like [Uniswap](https://app.uniswap.org).
+- Send money back directly to your bank account through our off-ramp partner Mt Pelerin.
 
 ### On the Angle App
 
@@ -79,17 +79,17 @@ Swapping agEUR back to another token on Angle is a similar process than buying a
 
 If you want to send your agEUR from your wallet as EUR in your bank account, you can do so by using [Mt Pelerin](https://www.mtpelerin.com). The Swiss based company allows users to send cryptocurrency and receive the equivalent directly in their bank account.
 
-There are no fees on Mt Pelerin for first time users selling less than 500 agEUR, and no KYC is needed for less than $1k of volume a day.
+There are no fees on Mt Pelerin for first time users selling less than 500 agEUR, and no KYC is needed for less than \$1k of volume a day.
 
 ## Links and resources
 
 For more information on agEUR, check out these resources:
 
-* [agEUR value proposition article](https://blog.angle.money/angles-value-proposition-for-stablecoin-holders-68ee9a72d80b?source=collection\_home---4------17-----------------------)
-* [Angle agEUR Analytics](https://analytics.angle.money/#/agEUR)
-* [Coingecko - Market Info](https://www.coingecko.com/fr/pi%C3%A8ces/ageur)
-* [Dune Analytics Dashboard](https://dune.xyz/SebVentures/Angle-Dashboard)
-* [agEUR on Etherscan](https://etherscan.io/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8)
+- [agEUR value proposition article](https://blog.angle.money/angles-value-proposition-for-stablecoin-holders-68ee9a72d80b?source=collection_home---4------17-----------------------)
+- [Angle agEUR Analytics](https://analytics.angle.money/#/agEUR)
+- [Coingecko - Market Info](https://www.coingecko.com/fr/pi%C3%A8ces/ageur)
+- [Dune Analytics Dashboard](https://dune.xyz/SebVentures/Angle-Dashboard)
+- [agEUR on Etherscan](https://etherscan.io/token/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8)
 
 {% hint style="info" %}
 A complete list of all agEUR integrations can be found on our Discord [here](https://discord.com/channels/835066439891157012/907535810067304458/907537277939482636).
