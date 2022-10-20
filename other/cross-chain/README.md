@@ -45,9 +45,9 @@ On the destination chains, transactions involving LayerZero cannot revert. While
 | Polygon       | [LayerZero](https://app.angle.com/#/bridge), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
 | Optimism      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
 | Arbitrum      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
-| Avalanche     | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
+| Avalanche     | [LayerZero](https://app.angle.com/#/bridge)                                                                 | [Multichain Bridge](https://app.multichain.org/#/router)       |
+| BSC           | [LayerZero](https://app.angle.com/#/bridge)                                                                 | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| BSC           | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                    | ❌                                                             |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                        | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
