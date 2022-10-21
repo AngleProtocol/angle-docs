@@ -31,7 +31,7 @@ In particular, it can make the following changes:
 
 For the DAO to be governed efficiently, the community needs to be able to discuss the different ways forwards and the improvements being proposed. This happens on our [Discord](https://discord.com/invite/5Af6xum9bc), where there is a dedicated **improvement-proposals** section.
 
-More formal proposals are then dicussed in our governance forum at [gov.angle.money](https://gov.angle.money)
+More formal proposals are then discussed in our governance forum at [gov.angle.money](https://gov.angle.money)
 
 ## 🗳 Voting
 
@@ -62,7 +62,7 @@ On each of the chain on which Angle protocol is deployed, the protocol's multisi
 
 Not all veANGLE holders feel the need to get involved in governance and vote on every proposal. While this is to be expected, it is better for the protocol that voting power remains in the hands of people interested, concerned, and involved in the future of the protocol. To that end, users have the possibility to **delegate** their voting power to other community members.
 
-By doing this, delegators keep their tokens but transfer **all** their voting power to its delegate. Though delegating only a part of voting power is not possible, delegations can be removed at anytime. Users can delegate their veANGLE tokens at [snapshot.org/delegate](https://snapshot.org/#/delegate), by ticking "Limit delegation to a specific space" and specifying `anglegovernance.eth` as space name.
+By doing this, delegators keep their tokens but transfer **all** their voting power to its delegate. Though delegating only a part of voting power is not possible, delegations can be removed at any time. Users can delegate their veANGLE tokens at [snapshot.org/delegate](https://snapshot.org/#/delegate), by ticking "Limit delegation to a specific space" and specifying `anglegovernance.eth` as space name.
 
 ### Voting on rewards distribution
 
