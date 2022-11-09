@@ -2,7 +2,7 @@
 description: How to borrow agEUR from the Angle App
 ---
 
-# Borrowing and Getting Leverage with agEUR
+# Borrowing agEUR
 
 The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR from crypto collateral **on different chains**.
 
@@ -42,7 +42,7 @@ Once a vault is created, you can repay part of your debt up to the dust amount, 
 
 When repaying your debt, you have two options: use your vault collateral, or use your debt token. If you choose to repay your debt with your vault collateral, the tokens will be swapped to debt tokens on your behalf and used to repay your debt.
 
-For example here, the user is using his collateral (wETH) to repay 1,000 agEUR of debt, and removing 0.2 wETH from the vault.
+Here for example, wETH will be swapped into 1 agEUR to repay part of the vault's debt. 0.01 wETH of the vault's collateral will also be withdrawn.
 
 ![Repay and withdraw](/.gitbook/assets/repay-with-collat.png)
 
