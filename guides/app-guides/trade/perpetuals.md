@@ -24,7 +24,7 @@ All of this can be done directly from the [Perpetuals page](https://app.angle.mo
 For more advanced users, there is an expert mode which can be used to protect yourself against changing oracle or fees conditions in the environment.
 
 {% hint style="warning" %}
-Be careful when opening a perpetual, updating and closing is locked for an hour. More info [here](/guides/app-guides/app-faq.md).
+Be careful when opening a perpetual, updating and closing is locked for an hour. More info [here](/guides/other/app-faq.md).
 {% endhint %}
 
 In all cases, once your perp is open, you own a leveraged position, meaning you can make leveraged gains if the price of the collateral you are longing increases with respect to that of the asset the stablecoin is pegged to, and leveraged losses if the price decreases.

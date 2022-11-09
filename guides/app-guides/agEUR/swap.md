@@ -18,7 +18,7 @@ Here are the steps to buy agEUR from
 2. Select the token you want to buy agEUR with. You can also copy any token's address you like.
 3. Enter the amounts you want.
 4. The app will automatically fetch the best rates for you in the background thanks to the 1inch integration.
-5. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/app-guides/app-faq.md).
+5. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/other/app-faq.md).
 6. Once the permission has been signed or the approval transaction has been executed, you can confirm the transaction to buy agEUR.
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
