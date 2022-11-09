@@ -32,13 +32,9 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 
 ![Add/borrow agEUR](/.gitbook/assets/add-borrow.png)
 
-{% hint style="info" %}
-Depending on the chain, there may be a minimum amount to borrow of agEUR. On Ethereum mainnet, this amount is 10,000 agEUR. This is to limit the risk of having small bad debts that are not repaid by users nor liquidators.
-{% endhint %}
-
 ## Repay your debt or close your vault.
 
-Once a vault is created, you can repay part of your debt up to the dust amount, or close it completely. You can also withdraw some collateral up to the minimum LTV.
+Once a vault is created, you can repay part of your debt or close it completely. You can also withdraw some collateral up to the minimum LTV.
 
 When repaying your debt, you have two options: use your vault collateral, or use your debt token. If you choose to repay your debt with your vault collateral, the tokens will be swapped to debt tokens on your behalf and used to repay your debt.
 

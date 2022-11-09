@@ -28,3 +28,7 @@ You can refresh the rates by clicking on the circled arrow on the top right of t
 {% endhint %}
 
 ![Minting agEUR](/.gitbook/assets/swap-agEUR.png)
+
+## Selling agEUR
+
+Selling agEUR through the Swap page works exactly in the opposite way. Click on the arrow between the two inputs to put agEUR as `From` token. You can then select the token you want to swap agEUR for, enter an amount and confirm your transaction.
