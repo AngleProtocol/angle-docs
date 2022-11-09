@@ -12,7 +12,7 @@ You will also find some preliminary guides to get onboarded to DeFi and to agEUR
 [newbie.md](newbie.md)
 {% endcontent-ref %}
 
-{% content-ref url="app-guides/getageur.md" %}
+{% content-ref url="/guides/app-guides/agEUR/swap.md" %}
 [getageur.md](/guides/app-guides/agEUR/swap.md)
 {% endcontent-ref %}
 

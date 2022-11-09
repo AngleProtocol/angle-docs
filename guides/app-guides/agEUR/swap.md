@@ -2,7 +2,7 @@
 description: How to mint and burn agTokens using Angle app or other providers
 ---
 
-# 💶 Swap agEUR
+# 💶 Swap - Buy agEUR
 
 agEUR is a **EUR-pegged stablecoin**, meaning that it's built to mirror the value of the EUR. The objective behind stablecoins is to create tokens that hold their value against some tangible references, like central bank currencies, and make them available on decentralized and open blockchains such as Ethereum.
 
