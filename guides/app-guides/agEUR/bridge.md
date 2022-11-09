@@ -4,7 +4,7 @@ description: How to bridge agEUR to different network using the Angle App
 
 # Bridging agEUR with the Angle App
 
-Angle allows to bridge agEUR to many EVM-compatible networks. All information can be found in [this](../../../other/cross-chain/README.md) page.
+Angle allows to bridge agEUR to many EVM-compatible networks. More information can be found in [this](../../../other/cross-chain/README.md) page.
 
 We recently deployed our own implementation of LayerZero which can be used on the [Bridge page](https://app.angle.money/#/bridge) of the app. Follow this guide to learn how.
 
