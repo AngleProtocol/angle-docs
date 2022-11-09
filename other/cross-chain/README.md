@@ -22,6 +22,10 @@ AgEUR and ANGLE can be bridged between networks using Angle's infrastructure, co
 
 ![lz bridge infra user](../../.gitbook/assets/bridge-infra-user.jpg)
 
+{% hint style="info" %}
+When bridging to a network, you need enough gas token on the origin chain to pay for bridge transactions **both on the origin and destination chains**. For example, if you bridge from Polygon to Ethereum mainnet where tx fees are higher, you will need more MATIC than usual on Polygon to pay for the transactions.
+{% endhint %}
+
 ### Angle bridge infrastructure details
 
 Usually, bridges work by minting their own version of the tokens being bridged. To compensate, Angle allows approved bridges versions of agEUR to be swapped 1:1 to a canonical ("official") version of agEUR on every chain.
