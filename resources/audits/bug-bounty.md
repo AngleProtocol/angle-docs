@@ -4,18 +4,18 @@ description: Community Engagement Incentives
 
 # 🐛 Bug Bounty
 
-## Program Overview
-
 At Angle, we consider the security of our systems a top priority. But even putting top priority status and maximum effort, there is still possibility that vulnerabilities can exist.
 
-We have therefore setup a bug bounty program with the help of Immunefi. The Angle Protocol bug bounty program is focused around our smart contracts with a primary interest in the prevention of:
+To help mitigate this risk we have put in place two bug bounty programs, with Immunefi and Hats.finance. In general, Angle Protocol bug bounty programs are focused around our smart contracts with a primary interest in the prevention of:
 
 - Thefts and freezing of principal of any amount
 - Thefts and freezing of unclaimed yield of any amount
 - Theft of governance funds
 - Governance activity disruption
 
-## All bug submissions must go through Immunefi's bug submission process
+## Immunefi Bug Bounty Overview
+
+All bug submissions must go through Immunefi's bug submission process
 
 The Angle bug bounty page can be viewed at the link below:
 
@@ -48,3 +48,15 @@ Payouts are handled by our Core Team team directly and are denominated in USD. H
 ### Assets in Scope
 
 The smart contracts in scope for this bounty are detailed in the [Angle bug bounty page on Immunefi](https://immunefi.com/bounty/angleprotocol/). They can be found on the [Core repo of the protocol](https://github.com/AngleProtocol/angle-core). However, only those in the Assets in Scope table are considered as in-scope of the bug bounty program.
+
+## Hats.finance Bug Bounty Overview
+
+[Hats.finance](https://hats.finance/) is a permissionless bug bounty solution. Every DAO token holder can deposit tokens in a vault, which will be used to pay potential white hat hackers that find vulnerabilities in any contracts in scope. Users depositing governance tokens can withdraw them with a 7 days delay.
+
+### Contracts in scope
+
+All Angle related contracts fall into the scope of Hats.finance bug bounty. These contracts can be found in the [developers documentation](https://developers.angle.money/overview/smart-contracts), or on Hats.finance [Angle bounty section](https://app.hats.finance/vaults).
+
+### Submitting a vulnerability
+
+Vulnerabilities can be submitted from [this page](https://app.hats.finance/vulnerability). Severity is decided by the committee according to the descriptions listed in the [Angle bounty section](https://app.hats.finance/vaults). The bounty is a share of the tokens deposited in the vault, depending on the severity of the bug.
