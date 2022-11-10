@@ -33,5 +33,5 @@ The following section contains user guides for all of these use cases:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-The app presented in our guides has been developed by the Angle Core Team. Anyone is welcome to build its app on top of Angle. We are making sure to promote and list any serious front interface of the protocol.
+The app presented here is developed by Angle Labs, Inc., a company contributing to the protocol. Anyone is welcome to build its app on top of Angle, and we'll make sure to promote and list any serious front interface of the protocol in this docs.
 {% endhint %}

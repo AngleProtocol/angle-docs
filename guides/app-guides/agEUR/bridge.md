@@ -1,8 +1,8 @@
 ---
-description: How to bridge agEUR and ANGLE to different network using the Angle App
+description: How to bridge agEUR and ANGLE to different network with the Angle App
 ---
 
-# Bridging Angle tokens with the Angle App
+# 🌉 Bridging Angle tokens
 
 Angle allows to bridge agEUR and ANGLE to many EVM-compatible networks. More information can be found in [this](../../../other/cross-chain/README.md) page.
 

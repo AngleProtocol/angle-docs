@@ -1,5 +1,5 @@
 ---
-description: Guide to lock ANGLE and get veANGLE
+description: 🔒 Guide to lock ANGLE and get veANGLE
 ---
 
 # Lock ANGLE into veANGLE
@@ -11,7 +11,7 @@ Before locking ANGLE, make sure you read all the details about veANGLE and locki
 If you are new to DeFi, you may also want to check out [this onboarding guide](../newbie.md) we have made. Most important thing to have in mind is that to get veANGLE, you need ANGLE in your wallet as well as ETH to pay for the Ethereum network transaction fees.
 
 {% hint style="info" %}
-You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/#/buy) of the Angle app.
+You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/#/buy) of the app.
 {% endhint %}
 
 ANGLE tokens can be locked on the [Lock page](https://app.angle.money/#/lock).

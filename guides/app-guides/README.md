@@ -4,7 +4,7 @@ description: Angle App Guides
 
 # 📔 App Guides
 
-This section contains guides to interact with the protocol through [app.angle.money](https://app.angle.money).
+This section contains guides to interact with the protocol through the [app](https://app.angle.money) developed by Angle Labs, Inc.
 
 You will learn how to play with the app and more particularly to:
 
@@ -15,7 +15,7 @@ You will learn how to play with the app and more particularly to:
 
 ## UI tour
 
-The Angle App contains most of the features related to the protocol. Pages can be accessed from the sidebar on the left under three main sections: **agEUR**, **Trade**, **Earn**, and **ANGLE**.
+This app contains most of the features related to the protocol. Pages can be accessed from the sidebar on the left under three main sections: **agEUR**, **Trade**, **Earn**, and **ANGLE**.
 
 Audits and smart contract insurance partners can also be found in the **Safety** section. Everything you need to know about the protocol can be found under the **Learn** section at the bottom.
 
@@ -32,7 +32,7 @@ Just below that, there is a `Settings` button. Among those settings, you can cho
 
 #### Impersonator guide
 
-The Angle app lets people impersonate other addresses, and see what the person controlling this address would on the app.
+[app.angle.money](https://app.angle.money) lets people impersonate other addresses, and see what the person controlling this address would on the app.
 
 It allows contributors to debug user issues, and users to preview the UI/UX or someone else's positions.
 
@@ -41,8 +41,9 @@ Here are the steps to impersonate another address:
 1. Connect your wallet.
 2. Click on `Settings` in the top left corner.
 3. At the bottom of the Settings section, there is an eye icon with an input to the right. Enter any address, and the connection will change.
-   ![Impersonator](/.gitbook/assets/impersonator.png)
 4. You can now navigate the app as if you were controlling this address.
+
+![Impersonator](/.gitbook/assets/impersonator.png)
 
 Obviously, it is not possible to confirm any transaction while connected on the app through an external address. However, they will be simulated them with Tenderly!
 

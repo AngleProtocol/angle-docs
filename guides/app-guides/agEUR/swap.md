@@ -1,25 +1,26 @@
 ---
-description: How to mint and burn agTokens using Angle app or other providers
+description: How to get agEUR using the Angle app
 ---
 
-# 💶 Swap - Buy agEUR
+# 💱 Swap - Buy agEUR
 
-agEUR is a **EUR-pegged stablecoin**, meaning that it's built to mirror the value of the EUR. The objective behind stablecoins is to create tokens that hold their value against some tangible references, like central bank currencies, and make them available on decentralized and open blockchains such as Ethereum.
+agEUR is a **EUR-pegged stablecoin**, meaning that it's built to mirror the value of the EUR.
 
-If you are new to crypto, follow our [guide for new crypto users](newbie.md) first. Otherwise, keep reading here to see how you can get agEUR directly from Angle. If you want to buy agEUR with credit card or bank transfer, you can refer to this guide.
+If you are new to crypto, follow our [guide for new crypto users](../../newbie.md) first. Otherwise, keep reading here to see how you can get agEUR directly from Angle. If you want to buy agEUR with credit card or bank transfer, you can refer to [this guide](./on-ramp-off-ramp.md).
 
-## Buying agEUR from the Angle App
+## Buying agEUR
 
-The Angle App Swap page integrates 1inch and Angle's native mint & burn mechanism to provide the best agEUR rates.
+The app Swap page integrates 1inch and Angle's native mint & burn mechanism (on Ethereum) to provide the best agEUR rates.
 
-Here are the steps to buy agEUR from
+Here are the steps to buy agEUR from Angle:
 
-1. Go to the [Swap page](https://app.angle.money/#/swap) of the Angle app.
-2. Select the token you want to buy agEUR with. You can also copy any token's address you like.
-3. Enter the amounts you want.
-4. The app will automatically fetch the best rates for you in the background thanks to the 1inch integration.
-5. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/other/app-faq.md).
-6. Once the permission has been signed or the approval transaction has been executed, you can confirm the transaction to buy agEUR.
+1. Go to the [Swap page](https://app.angle.money/#/swap) of the app.
+2. Select network on which you want to get agEUR. Currently, Ethereum, Optimism, Arbitrum and Polygon are supported.
+3. Select the token you want to buy agEUR with. You can also copy any token's address you like.
+4. Enter the amounts you want.
+5. The app will automatically fetch the best rates for you in the background thanks to the 1inch integration.
+6. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol. You can learn more about approving tokens [here](/guides/other/app-faq.md).
+7. Once the permission has been signed or the approval transaction has been executed, you can confirm the transaction to buy agEUR.
 
 You now have agEUR, a stablecoin that mirrors the value of the EUR!
 

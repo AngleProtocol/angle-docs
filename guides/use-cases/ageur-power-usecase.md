@@ -6,7 +6,7 @@ description: Using agEUR as a payment currency
 
 Thanks to its partners and integrations, agEUR can be used to pay and create invoices, as well as to transfer fiat to your home bank account.
 
-This can be done from almost anywhere in the world, on Ethereum or Polygon!
+This can be done from almost anywhere in the world, on Ethereum or Polygon.
 
 ![Pay and get paid with agEUR](../../.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
 
@@ -61,9 +61,9 @@ Obviously, users can also keep their agEUR and invest it to take advantage of th
 
 agEUR can be used to pay and get paid from any crypto to a bank account in only two on-chain transactions! Specifically, it is designed to allow:
 
-* **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
-* **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
-* **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
+- **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
+- **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
+- **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
 
 ![agEUR power use case](../../.gitbook/assets/getting-paid-ageur.jpg)
 

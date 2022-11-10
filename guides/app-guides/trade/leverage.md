@@ -22,9 +22,9 @@ After the operation, this vault has 2,000 OP tokens as collateral and ~881 agEUR
 
 ![Leverage with OP](/.gitbook/assets/leverage-OP.png)
 
-## Repay your debt or close your vault.
+## Repay your debt or close your vault
 
-Once a vault is created, you can repay part of your debt up to the dust amount, or close it completely. You can also withdraw some collateral up to the minimum LTV.
+Once a vault is created, you can repay part of your debt or close it completely. You can also withdraw some collateral up to the minimum LTV.
 
 When repaying your debt, you have two options: use your vault collateral, or use your debt token. If you choose to repay your debt with your vault collateral, the tokens will be swapped to debt tokens on your behalf and used to repay your debt.
 

@@ -13,22 +13,18 @@
     - [💸 Pay and get paid with agEUR](/guides/use-cases/ageur-power-usecase.md)
     - [🏦 agEUR as a treasury asset](/guides/use-cases/ageur-treasury.md)
   - [📔 App Guides](guides/app-guides/README.md)
-    - agEUR
-      - [Swap](/guides/app-guides/agEUR/swap.md)
-      - [Borrow](/guides/app-guides/agEUR/borrow.md)
-      - [Bridge](/guides/app-guides/agEUR/bridge.md)
-      - [On-ramp & off-ramp](guides/app-guides/agEUR/on-ramp-off-ramp.md)
-    - Trade
-      - [Leverage](/guides/app-guides/trade/leverage.md)
-      - [Perpetuals](/guides/app-guides/trade/perpetuals.md)
-    - [Earn](/guides/app-guides/earn/staking.md)
-      - [UniV3 incentives mechanism](/guides/app-guides/earn/staking/univ3-lp.md)
-    - ANGLE
-      - [Buy](/guides/app-guides/ANGLE/buy.md)
-      - [Lock](/guides/app-guides/ANGLE/lock.md)
-      - [Gauges](/guides/app-guides/ANGLE/gauges-voting.md)
-      - [Vote](/guides/app-guides/ANGLE/snapshot-votes.md)
-  - Other
+    - [💱 Swap](/guides/app-guides/agEUR/swap.md)
+    - [Borrow](/guides/app-guides/agEUR/borrow.md)
+    - [🌉 Bridge](/guides/app-guides/agEUR/bridge.md)
+    - [💳 On-ramp & off-ramp](guides/app-guides/agEUR/on-ramp-off-ramp.md)
+    - [Leverage](/guides/app-guides/trade/leverage.md)
+    - [🛡 Perpetuals](/guides/app-guides/trade/perpetuals.md)
+    - [🍀 Staking](/guides/app-guides/earn/staking.md)
+      - [🦄 Uniswap V3 incentivization mechanism](/guides/app-guides/earn/staking/univ3-lp.md)
+    - [Buy](/guides/app-guides/ANGLE/buy.md)
+    - [🔒 Lock](/guides/app-guides/ANGLE/lock.md)
+    - [Gauges](/guides/app-guides/ANGLE/gauges-voting.md)
+    - [Vote](/guides/app-guides/ANGLE/snapshot-votes.md)
     - [App Formulas](/guides/other/formulas.md)
 
 ## Angle Core Module
@@ -84,7 +80,6 @@
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [📊 Angle Analytics](resources/analytics.md)
 - [🖼 Branding](resources/branding/README.md)
-- [⭐ Popularization](resources/popularization/README.md)
 - [🌎 International](resources/international/README.md)
   - [🇷🇺 Russian - русский](resources/international/russian/README.md)
     - [Whitepaper](resources/international/russian/ru-whitepaper.md)

@@ -29,7 +29,7 @@ Collecting these fees creates revenue for the protocol, which serves multiple pu
 - Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
 {% hint style="info" %}
-The state of the fees taken for each type of vault can be checked directly on the [Angle App](https://app.angle.money) or on the [Analytics](https://analytics.angle.money) of the protocol.
+The state of the fees taken for each type of vault can be checked directly on the [Analytics](https://analytics.angle.money) of the protocol.
 {% endhint %}
 
 ### Mint Fee

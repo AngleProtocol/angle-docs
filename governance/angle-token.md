@@ -88,7 +88,7 @@ Tokens from this pocket are stored in the `AngleMaster` multisig. Note that 1 of
 
 These tokens are subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
 
-- 18% to the Angle Core Team
+- 18% to Angle Core Team
 - 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.

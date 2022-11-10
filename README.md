@@ -50,13 +50,9 @@ Angle also relies on a [Governance module](governance/angle-dao.md) to manage th
 
 Beyond creating the first liquid and decentralized Euro stablecoin, the main goal of Angle is to create a money layer for DeFi. Angle will not only expand to multiple blockchains or open networks, it will also seek to launch stablecoins for other types of assets.
 
-You can read our [Roadmap blog post](https://blog.angle.money/expanding-beyond-220m-tvl-6475711f458b) from March 3rd 2022 to learn more.
-
 ## 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
-Angle is currently being developed by its Core Team and community. Any help and initiative is more than welcome!
-
-There are a large number of ways to build decentralized stablecoins. We, at Angle, see the stablecoin space and DeFi more broadly as a large playground where we explore ways to invent cool, sustainable and robust primitives.
+Angle is currently being developed by its Core Team and community.
 
 Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
@@ -90,7 +86,9 @@ If you want to get easier to access or less technical documents about the protoc
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
-This documentation portal is the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
+This documentation portal is maintained by Angle Labs Inc., a company which, among other things, contributes to the Angle Protocol.
+
+This doc is built to be the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
 
 The Angle Protocol is designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://blog.angle.money) in its home language.
 
