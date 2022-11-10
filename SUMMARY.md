@@ -29,7 +29,6 @@
       - [Gauges](/guides/app-guides/ANGLE/gauges-voting.md)
       - [Vote](/guides/app-guides/ANGLE/snapshot-votes.md)
   - Other
-    - [App FAQ](/guides/other/app-faq.md)
     - [App Formulas](/guides/other/formulas.md)
 
 ## Angle Core Module
