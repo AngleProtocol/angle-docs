@@ -2,7 +2,7 @@
 description: List of different analytics sources about Angle
 ---
 
-# 📊 Angle analytics
+# 📊 Angle Analytics
 
 Angle is a decentralized protocol. This means that all reserves controlled by the protocol are transparent and can be monitored in real-time.
 
