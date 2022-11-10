@@ -18,7 +18,7 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 Bridges are what allow agEUR and ANGLE to be available on different networks. At the top level, the bridges for agEUR and ANGLE all do the same thing: they burn (or lock) tokens on the origin network, and mint new tokens on the destination network. When bridging back tokens from the destination chain, tokens are burnt (or locked) there and minted (or released) from the smart contract on the origin chain.
 
-AgEUR and ANGLE can be bridged between networks using Angle's infrastructure, compatible with multiple bridge solutions. Bridging these tokens is available natively on the [Angle App](https://app.angle.money/#/bridges).
+AgEUR and ANGLE can be bridged between networks using Angle's infrastructure, compatible with multiple bridge solutions. Bridging these tokens is available natively on this [Angle App](https://app.angle.money/#/bridges).
 
 ![lz bridge infra user](../../.gitbook/assets/bridge-infra-user.jpg)
 
@@ -34,7 +34,6 @@ To limit the risk associated with each bridge, a total and hourly cap on the qua
 
 ### About LayerZero
 
-
 Some bridges, like [LayerZero](https://layerzero.network/), are integrated natively with agEUR and ANGLE meaning that users should not see the intermediary bridge token and directly receive canonical agEUR (or ANGLE) in one transaction.
 
 LayerZero is by the way the solution that is used under the hood for bridging on the Angle App.
@@ -44,7 +43,6 @@ With LayerZero, bridging transactions can revert on the origin chains when the a
 On the destination chains, transactions involving LayerZero cannot revert. While the Angle App prevents users from bridging in the case where bridge limits are attained, users interacting programatically with the bridge contracts in such situations can still get their tokens back on the destination chain by interacting with the "bridge" (non-official) LayerZero token contract.
 
 ### Bridge Solutions
-
 
 | Chain         | agEUR                                                                                                        | ANGLE                                                          |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |

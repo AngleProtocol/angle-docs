@@ -1,14 +1,16 @@
 ---
-description: Earning rewards with Angle
+description: Earning rewards with Angle and becoming a Standard Liquidity Provider
 ---
 
-# Earning ANGLE and other rewards
+# 🍀 Earning ANGLE and other rewards
 
 ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem.
 
 The [Earn page](https://app.angle.money/#/earn) of the app lists all the pools and farms where it is possible to earn ANGLE tokens, and more generally any other yield opportunities linked to Angle.
 
 This is also where you can deposit tokens accepted as collateral in the Core module to act as an [SLP](/core-module/standard-liquidity-providers/README.md).
+
+The protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools. This page is where Liquidity Providers can track opportunities and claim their rewards.
 
 {% hint style="info" %}
 For more details on how Uniswap V3 Liquidity Providers can be rewarded with ANGLE tokens, check [this guide](/guides/other/univ3-lp.md).

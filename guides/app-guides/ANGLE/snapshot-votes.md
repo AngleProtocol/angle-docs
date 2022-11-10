@@ -1,8 +1,8 @@
 ---
-description: How to participate to governance votes on Snapshot with veANGLE tokens
+description: How to participate to governance votes with veANGLE tokens
 ---
 
-# Voting on Snapshot
+# Voting on Angle Governance proposals
 
 veANGLE holders can create votes and vote on [Snapshot](https://snapshot.org/#/anglegovernance.eth) on existing governance votes. The Angle App also features [a page](https://app.angle.money/#/vote) allowing users to vote on the same Snapshot votes.
 
