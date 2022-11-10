@@ -24,13 +24,13 @@ AgEUR and ANGLE can be bridged between networks using Angle's infrastructure, co
 
 ### Angle bridge infrastructure details
 
-Usually, bridges work by minting their own version of the tokens being bridged. To compensate, Angle allows approved bridges versions of agEUR to be swapped 1:1 to a canonical ("official") version of agEUR on every chain. It works the same for the ANGLE token.
+Usually, bridges work by minting their own version of the tokens being bridged. To compensate, Angle allows approved bridged versions of agEUR and ANGLE to be swapped 1:1 to a canonical ("official") version of agEUR (or ANGLE) on every chain.
 
 To limit the risk associated with each bridge, a total and hourly cap on the quantity of each token that can be bridged to & from specific networks has been implemented.
 
 ### About LayerZero
 
-Some bridges, like [LayerZero](https://layerzero.network/), are integrated natively with agEUR (or ANGLE) meaning that users should not see the intermediary bridge token and directly receive canonical agEUR (or ANGLE) in one transaction.
+Some bridges, like [LayerZero](https://layerzero.network/), are integrated natively with agEUR and ANGLE meaning that users should not see the intermediary bridge token and directly receive canonical agEUR (or ANGLE) in one transaction.
 
 LayerZero is by the way the solution that is used under the hood for bridging on the Angle App.
 
