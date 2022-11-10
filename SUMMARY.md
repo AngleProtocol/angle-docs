@@ -13,21 +13,23 @@
     - [💸 Pay and get paid with agEUR](/guides/use-cases/ageur-power-usecase.md)
     - [🏦 agEUR as a treasury asset](/guides/use-cases/ageur-treasury.md)
   - [📔 App Guides](guides/app-guides/README.md)
-
-    - [Swap - Buy agEUR](/guides/app-guides/getageur.md)
-    - [Borrow / Leverage](/guides/app-guides/borrow-ageur.md)
-    - [Deposit / SLP](guides/app-guides/slp-pools.md)
-    - [Trade Perpetuals](guides/app-guides/ha-positions.md)
-    - [FAQ](guides/app-guides/app-faq.md)
-    - [Formulas](guides/app-guides/formulas.md)
-
-  - [📗 Governance Guides](guides/veangle-guides/README.md)
-    - [Lock](guides/veangle-guides/locking-angle.md)
-    - [Gauges](guides/veangle-guides/voting-gauges.md)
-    - [Earn](guides/veangle-guides/incentives.md)
-      - [🦄 Uniswap V3 Incentives](/guides/veangle-guides/univ3-lp.md)
-    - [Buy ANGLE](guides/veangle-guides/buy-angle.md)
-    - [Vote](guides/veangle-guides/voting-offchain.md)
+    - agEUR
+      - [Swap](/guides/app-guides/agEUR/swap.md)
+      - [Borrow](/guides/app-guides/agEUR/borrow.md)
+      - [Bridge](/guides/app-guides/agEUR/bridge.md)
+      - [On-ramp & off-ramp](guides/app-guides/agEUR/on-ramp-off-ramp.md)
+    - Trade
+      - [Leverage](/guides/app-guides/trade/leverage.md)
+      - [Perpetuals](/guides/app-guides/trade/perpetuals.md)
+    - [Earn](/guides/app-guides/earn/staking.md)
+      - [UniV3 incentives mechanism](/guides/app-guides/earn/staking/univ3-lp.md)
+    - ANGLE
+      - [Buy](/guides/app-guides/ANGLE/buy.md)
+      - [Lock](/guides/app-guides/ANGLE/lock.md)
+      - [Gauges](/guides/app-guides/ANGLE/gauges-voting.md)
+      - [Vote](/guides/app-guides/ANGLE/snapshot-votes.md)
+  - Other
+    - [App Formulas](/guides/other/formulas.md)
 
 ## Angle Core Module
 

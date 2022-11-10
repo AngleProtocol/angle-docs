@@ -37,7 +37,7 @@ More formal proposals are then discussed in our governance forum at [gov.angle.m
 
 ### General proposals
 
-After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. Since the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/veangle-guides/voting-offchain.md) to other addresses.
+After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote. Since the tokenomics upgrade of January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](/guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
 
 Finalized votes are then implemented by a multi-sig composed of core team and community members. The fact that a multisig needs to implement transaction makes Angle governance system immune to on-chain governance attacks.
 

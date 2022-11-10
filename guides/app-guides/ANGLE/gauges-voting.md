@@ -28,7 +28,7 @@ Counterpart is that if your veANGLE balance increases, you will have to allocate
 
 For instance, if you had used 100% of your 100k veANGLE voting power and your veANGLE balance is now 200k, you need to vote again for the gauges you were voting for to have this taken into consideration.
 
-![Gauges voting screen](../../.gitbook/assets/voting-screen.png)
+![Gauges voting screen](/.gitbook/assets/voting-screen.png)
 
 ## Changing weights
 
@@ -36,4 +36,4 @@ Votes on a specific gauge can only be changed after 10 days. On top of that, if 
 
 To change the fraction of the voting power you are allocating to a gauge, click on the `Change` button in the line corresponding to that gauge in the `My Votes` table, enter the new fraction of your voting power you want to allocate and then submit your vote.
 
-![Changing gauge vote](../../.gitbook/assets/change-gauge-vote.png)
+![Changing gauge vote](/.gitbook/assets/change-gauge-vote.png)
