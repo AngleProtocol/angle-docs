@@ -4,9 +4,29 @@ description: List of formulas at on app.angle.money
 
 # Formulas
 
-## Trade Perpetuals (Hedging Agents)
+## Borrowing module
 
-### Margin
+### Loan-to-value - LTV
+
+This is the value of the vault debt compared to that of the collateral.
+
+$$
+\texttt{LTV} = \frac{\texttt{debt}}{\texttt{collateral}}
+$$
+
+### Health Factor - HF
+
+This is an indication of the health of the vault. Below 1, it can get liquidated.
+
+$$
+\texttt{HF} = \frac{1}{\texttt{LTV}} \times {\texttt{max. LTV}}
+$$
+
+## Core module
+
+### Trade Perpetuals (Hedging Agents)
+
+#### Margin
 
 The margin displayed on your position is computed net of opening fees, i.e.
 
@@ -14,20 +34,20 @@ $$
 \texttt{margin} = \texttt{initial margin - position size} \times \texttt{opening fees}
 $$
 
-### Leverage
+#### Leverage
 
 In Angle, **leverage** is computed as:
 
 $$\texttt{leverage} = \frac{\texttt{(margin + position Size)}}{\texttt{margin}}$$
 
-#### Example
+##### Example
 
 - Margin: 10,000 DAI
 - Position size: 100,000 DAI
 
 $$\texttt{leverage} = \frac{1 + 10}{1} = 11 $$
 
-### Cash-out Amount
+#### Cash-out Amount
 
 The Cash-out amount represents the amount you should receive in your wallet after closing the perpetual:
 
@@ -35,14 +55,14 @@ $$\texttt{cash-out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee
 
 With $$\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$$
 
-### Profit & Loss (or PnL)
+#### Profit & Loss (or PnL)
 
 The PnL displayed on the app represents the gain or loss you would make if closing the position. It is computed **net** of fees.
 
 $$ \texttt{PnL} = \texttt{cash-out amount - initial margin} $$
 $$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
 
-### Maintenance Margins
+#### Maintenance Margins
 
 - DAI: 0.625%
 - USDC: 0.625%
@@ -56,7 +76,7 @@ $$
 \texttt{margin ratio} = \frac{\texttt{cash out amount}}{\texttt{position size}}
 $$
 
-### Est. APR on open positions
+#### Est. APR on open positions
 
 _In perpetuals/open position page of the app_
 
@@ -80,9 +100,9 @@ $$
 
 $$ APR = 2.08 = 208\% $$
 
-## Deposit / SLP
+### Deposit / SLP
 
-### Slippage
+#### Slippage
 
 In the `Deposit / SLP` page of the app, users may face a slippage when they exit from their position and sell their sanTokens. It depends on specific parameters for the collateral of interest and on the collateral ratio of the stablecoin in the Core module. This is put in place to incentivize them to stay in the protocol while it gets re-collateralized.
 
@@ -92,7 +112,7 @@ $$
 
 The current slippage for SLP can be consulted in the [analytics](https://analytics.angle.money/) by selecting a pool and looking at _Slippage_ in the _Fee Info > SLP_ section.
 
-### Slippage on Fees for SLP
+#### Slippage on Fees for SLP
 
 When the protocol gets close to be under-collateralized, it progressively keeps a bigger portion of the fees usually going to SLPs to grow the suplus and be able to pay back stable holders. Note that this doesn't impact the initial deposits of SLPs nor the fees earned up until the start of the slippageFee.
 
