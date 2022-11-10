@@ -41,8 +41,9 @@ Here are the steps to impersonate another address:
 1. Connect your wallet.
 2. Click on `Settings` in the top left corner.
 3. At the bottom of the Settings section, there is an eye icon with an input to the right. Enter any address, and the connection will change.
-   ![Impersonator](/.gitbook/assets/impersonator.png)
 4. You can now navigate the app as if you were controlling this address.
+
+![Impersonator](/.gitbook/assets/impersonator.png)
 
 Obviously, it is not possible to confirm any transaction while connected on the app through an external address. However, they will be simulated them with Tenderly!
 

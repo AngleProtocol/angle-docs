@@ -28,8 +28,8 @@
       - [Lock](/guides/app-guides/ANGLE/lock.md)
       - [Gauges](/guides/app-guides/ANGLE/gauges-voting.md)
       - [Vote](/guides/app-guides/ANGLE/snapshot-votes.md)
-  - Other
-    - [App Formulas](/guides/other/formulas.md)
+    - Other
+      - [App Formulas](/guides/other/formulas.md)
 
 ## Angle Core Module
 

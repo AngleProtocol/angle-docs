@@ -22,7 +22,7 @@ You can borrow agEUR in the same transaction that you deposit collateral to your
 
 Here are the steps to follow to deposit collateral and borrow agTokens:
 
-1. Go to the `Borrow` section of the [Angle App](https://app.angle.money/#/borrow)
+1. Go to the `Borrow` section of the [Angle App](https://app.angle.money/#/borrow) and choose the network on which you want to borrow
 2. Select the type of vault to create, defined by the collateral and stablecoin token
 3. Enter the amount of collateral you want to deposit in the first input.
 4. Enter the amount of stablecoins you want to borrow in the second input.
@@ -32,7 +32,7 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 
 ![Add/borrow agEUR](/.gitbook/assets/add-borrow.png)
 
-## Repay your debt or close your vault.
+## Repay your debt or close your vault
 
 Once a vault is created, you can repay part of your debt or close it completely. You can also withdraw some collateral up to the minimum LTV.
 

@@ -12,7 +12,9 @@ agEUR is supported by a wide range of on-ramp partners which make it accessible 
 - Transak
 - Wert.io
 
-All of them are accessible from the main Angle interface on the [On-ramp / off-ramp](https://app.angle.money/#/ramp) page. The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
+All of them are accessible from the main Angle interface on the [On-ramp / off-ramp](https://app.angle.money/#/ramp) page.
+
+The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
 
 These providers usually let you receive the agEUR on the Ethereum or Polygon network. You might face high fees for low amounts due to Ethereum transaction costs.
 
