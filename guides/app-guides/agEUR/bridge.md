@@ -1,18 +1,18 @@
 ---
-description: How to bridge agEUR to different network using the Angle App
+description: How to bridge agEUR and ANGLE to different network using the Angle App
 ---
 
-# Bridging agEUR with the Angle App
+# Bridging Angle tokens with the Angle App
 
-Angle allows to bridge agEUR to many EVM-compatible networks. More information can be found in [this](../../../other/cross-chain/README.md) page.
+Angle allows to bridge agEUR and ANGLE to many EVM-compatible networks. More information can be found in [this](../../../other/cross-chain/README.md) page.
 
 We deployed our own implementation of LayerZero which can be used on the [Bridge page](https://app.angle.money/#/bridge) of the app. Follow this guide to learn how.
 
-## How to bridge agEUR using LayerZero implementation
+## How to bridge Angle tokens using LayerZero implementation
 
 ![Bridge app page](../../../.gitbook/assets/bridge.png)
 
-To bridge agEUR from a network to another, you simply need to enter the amount you want to send, and select the destination network.
+To bridge agEUR or ANGLE from a network to another, you simply need to select the token you want to bridge, enter the amount, and select the destination network.
 
 There are two other aspects users need to be careful about:
 
