@@ -44,18 +44,18 @@ On the destination chains, transactions involving LayerZero cannot revert. While
 
 ### Bridge Solutions
 
-| Chain         | agEUR                                                                                                       | ANGLE                                                          |
-| ------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Polygon       | [LayerZero](https://app.angle.com/#/bridge), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
-| Optimism      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
-| Arbitrum      | [LayerZero](https://app.angle.com/#/bridge)                                                                 | ❌                                                             |
-| Avalanche     | [LayerZero](https://app.angle.com/#/bridge)                                                                 | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| BSC           | [LayerZero](https://app.angle.com/#/bridge)                                                                 | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                    | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                    | ❌                                                             |
-| NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                        | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
-| Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                           | [Wormhole](https://wormholebridge.com/#/transfer)              |
+| Chain         | agEUR                                                                                                        | ANGLE                                                          |
+| ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| Polygon       | [LayerZero](https://app.angle.com/#/bridges), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
+| Optimism      | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
+| Arbitrum      | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
+| Avalanche     | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
+| BSC           | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
+| Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
+| Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
+| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                             |
+| NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
+| Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
 
 _**Multichain Router**: token can be bridged **between** chains with Router support for this token. **Multichain Bridge**: token can be bridged only from Ethereum mainnet to the specified chain, and not between chains._
 
