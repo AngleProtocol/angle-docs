@@ -2,7 +2,7 @@
 description: How to vote for gauges and influence ANGLE emissions
 ---
 
-# Voting on Gauges
+# 🧪 Voting on Gauges
 
 One key feature of veANGLE is its voting power to influence the distribution of token emissions as rewards across pools.
 

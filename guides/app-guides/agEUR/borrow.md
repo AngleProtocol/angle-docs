@@ -2,7 +2,7 @@
 description: How to borrow agEUR from the Angle App
 ---
 
-# Borrowing agEUR
+# 🏦 Borrowing agEUR
 
 The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR from crypto collateral **on different chains**.
 
