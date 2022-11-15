@@ -2,7 +2,7 @@
 description: Guide to buy ANGLE with the Angle App
 ---
 
-# Buying ANGLE
+# 💰 Buying ANGLE
 
 ANGLE tokens can be bought directly from the Angle App with any tokens.
 

@@ -1,8 +1,8 @@
 ---
-description: 🛡 How to open, modify or close perpetual positions with the Angle App
+description: How to open, modify or close perpetual positions with the Angle App
 ---
 
-# Opening & Managing Perpetuals
+# 🛡 Opening & Managing Perpetuals
 
 Angle lets you open long collateral/stablecoin leverage perpetuals. This means that if the protocol's Core module accepts USDC as collateral, and can issue agEUR, users can open long USDC/agEUR perpetuals, betting that the USD will increase in value against the EUR.
 

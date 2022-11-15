@@ -39,7 +39,7 @@ One big difference with incentives mechanisms relying on wrapping Uniswap V3 pos
 
 For example, a tight range will virtually provide more liquidity and earn more fees and ANGLE rewards. However, it has more chance to become out-of-range and suffer from [impermanent loss](https://www.youtube.com/watch?v=8XJ1MSTEuU0).
 
-![UniV3 LP on Angle](./../../.gitbook/assets/uniV3-lp.png)
+![UniV3 LP on Angle](/.gitbook/assets/uniV3-lp.png)
 
 ### Providing liquidity
 

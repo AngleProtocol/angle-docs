@@ -1,8 +1,8 @@
 ---
-description: 💳 How to buy agEUR using a credit card or a bank transfer
+description: How to buy agEUR using a credit card or a bank transfer
 ---
 
-# Using on & off ramp services for agEUR
+# 💳 Using on & off ramp services for agEUR
 
 ## Buying agEUR with credit card or bank transfer
 
