@@ -70,10 +70,6 @@ To make things more intelligible, we have a technical doc for developers and use
 The protocol's smart contracts have been audited by Chainsecurity and Sigma Prime. You can find the audit reports [here](resources/audits/README.md).
 {% endhint %}
 
-## ⭐ [Popularization](resources/popularization/)
-
-If you want to get easier to access or less technical documents about the protocol, you should take a look at this section.
-
 ## Other Resources
 
 - 📡 [Website](https://angle.money)
