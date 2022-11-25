@@ -76,6 +76,11 @@
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
+## Side Products
+
+- [Side Products Overview](side-products/README.md)
+- [Merkl](side-products/merkl.md)
+
 ## Resources
 
 - [🔐 Audits](resources/audits/README.md)
@@ -83,6 +88,7 @@
 - [📊 Angle Analytics](resources/analytics.md)
 - [🖼 Branding](resources/branding/README.md)
 - [🌎 International](resources/international/README.md)
+
   - [🇷🇺 Russian - русский](resources/international/russian/README.md)
     - [Whitepaper](resources/international/russian/ru-whitepaper.md)
     - [Angle FAQ](resources/international/russian/faq.md)
