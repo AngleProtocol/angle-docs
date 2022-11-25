@@ -1,8 +1,8 @@
 # Side products
 
-Angle Labs launched and is currently developing Angle Protocol.
+Angle Labs launched and is currently maintaining Angle Protocol.
 
-While doing so, it develops products that are helpful to Angle. Often, these can also bring value to other protocols and their users. This section of the documentation is made to present these side products built by Angle Labs.
+Some products developed for the Angle Protocol can also bring value to other protocols and their users. This section of the documentation is made to present these side products built by Angle Labs.
 
 ## Merkl
 

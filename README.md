@@ -94,4 +94,4 @@ In order for your translation to appear on this doc, you need to:
 
 Angle Labs launched and is currently maintaining Angle Protocol.
 
-Some products developed for the Angle Protocol can also bring value to other protocols and their users. This section of the documentation is made to present these side products built by Angle Labs.
+Some products developed for the Angle Protocol can also bring value to the wider DeFi userbase. As such, some of them are being released as standalone products so that anyone can benefit from them. This section of the documentation is made to present these side products built by Angle Labs.
