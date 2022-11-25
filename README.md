@@ -51,7 +51,7 @@ Angle is not limited to these key components. It has notably a complex [bridge i
 
 Angle is a decentralized protocol governed by [a DAO](governance/angle-dao.md) encapsulating all holders of a governance token called veANGLE. Holders of the token have voting powers to propose and make changes to the underlying code of the Angle Protocol.
 
-## Other Protocol Resources
+## Resources
 
 ### 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
@@ -91,7 +91,5 @@ In order for your translation to appear on this doc, you need to:
 2. Submit a pull request to the `angle-docs` repository and respect the formatting and conventions already in place for the `russian` section of the docs.
 
 ## [Side Products](side-products/README.md)
-
-Angle Labs launched and is currently maintaining Angle Protocol.
 
 Some products developed for the Angle Protocol can also bring value to the wider DeFi userbase. As such, some of them are being released as standalone products so that anyone can benefit from them. This section of the documentation is made to present these side products built by Angle Labs.

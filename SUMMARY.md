@@ -78,8 +78,7 @@
 
 ## Side Products
 
-- [Side Products Overview](side-products/README.md)
-- [Merkl](side-products/merkl.md)
+- [🌲 Merkl](side-products/merkl.md)
 
 ## Resources
 
