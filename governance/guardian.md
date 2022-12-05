@@ -28,7 +28,7 @@ Address of the Guardian multisig across different chains can be found [here](htt
 In clear terms, the guardian can:
 
 - Pause and unpause some contracts functionalities
-- Update rapidly some parameters like users minting and burning fees, or the debt ratio for a lending strategy
+- Update rapidly some parameters like users minting and burning fees, or the debt ratio for a lending strategy, or the debt ceiling for an asset in the borrowing module
 
 {% hint style="info" %}
 Everything has been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system. For instance, a guardian cannot modify references to an oracle contract and hence manipulate prices at its advantage.
