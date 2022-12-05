@@ -8,7 +8,7 @@ description: The ANGLE governance token for Angle DAO
 
 ANGLE's total initial supply is 1 billion and there is no planned token inflation.
 
-The only address with minting capability is the Angle DAO Multisig.
+The only address with minting capability is the Angle Governor Multisig.
 
 ANGLE's tokenomics was upgraded in January 2022 with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
 
@@ -82,7 +82,7 @@ This multisig is a 2/3 Gnosis multisig controlled by distinct Core Team members 
 
 12% of the initial ANGLE are held by the Core Team in a multi-sig. These tokens are available for distribution to the Community as grants or bug bounties, to strategic partners like exchanges for listing, but also to the most active and helpful community members as well as to advisors helping the protocol grow.
 
-Tokens from this pocket are stored in the `AngleMaster` multisig. Note that 1 of these 12% of tokens have been lent to Wintermute, our partner in charge of market making in centralized exchanges.
+Tokens from this pocket are stored in the `AngleMaster` multisig.
 
 ### Core team and early backers
 

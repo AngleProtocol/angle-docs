@@ -19,7 +19,7 @@ The share of interest redistributed to veANGLE holders is currently at 50%, and 
 
 ### Redistribution
 
-The protocol distributes interest in the form of tokens native to Angle, beginning with sanUSDC_EUR.
+The protocol distributes interest in the form of sanUSDC_EUR.
 
 In practice, the redistribution of interest to veANGLE token holder is currently at 50%. Here is how it is happening:
 
