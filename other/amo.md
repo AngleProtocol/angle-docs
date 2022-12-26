@@ -2,9 +2,9 @@
 
 ## ⁉️ About Algorithmic Market Operations (AMOs)
 
-Algorithmic market operations (or AMOs) are operations performed by contracts to mint or burn stablecoins without collateral immediately backing these stablecoins. The idea is that stablecoins minted by AMOs are still controlled by the protocol, and if other people start controlling these stablecoins, then this new supply should be properly backed in one way or another.
+Algorithmic market operations (or AMOs), also referred to as direct deposit modules, are operations performed by contracts to mint or burn stablecoins without collateral immediately backing these stablecoins. The idea is that stablecoins minted by AMOs are still controlled by the protocol, and if other people start controlling these stablecoins, then this new supply should be properly backed in one way or another.
 
-AMOs are thought not to affect the peg of the stablecoin.
+AMOs are conceived not to affect the peg of the stablecoin.
 
 ### Example
 
@@ -60,7 +60,7 @@ Angle supports so far several different lending AMOs on different chains:
 
 Another type of AMO is called liquidity as a service. It consists in lending for a pre-determined agTokens to be deposited in a pool and returned with an interest rate. It can be leveraged by any DAO which is looking to create cheap liquidity for its token.
 
-Risks for the protocol are reduced because it is expected that the partner DAO is taking the impermanent loss in this case.
+Risks for the protocol are reduced because the partner DAO is taking the impermanent loss in this case.
 
 So far, Angle has worked with Ondo to offer such services, as presented in [this](https://gov.angle.money/t/proposal-angle-ondo-liquidity-as-a-service-program/320) governance discussion.
 
@@ -76,6 +76,7 @@ Angle also started to use AMOs to seed some pools with agEUR liquidity. The idea
 
 - Optimism: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
 - Arbitrum: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from protocol surplus and a corresponding amount of agEUR at mint.
-- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint
+- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint.
+- Avalanche: Trader Joe 50/50 agEUR/USDC pool, seeded with 100k USDC from the protocol surplus and a corresponding amount of agEUR at mint.
 
 More details on the pros and cons these AMOs can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).

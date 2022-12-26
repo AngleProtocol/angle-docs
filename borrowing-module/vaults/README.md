@@ -66,9 +66,11 @@ Liquidations in this borrowing system are designed to protect borrowers, making 
 For more insight on liquidations, check out [this page](./liquidations.md).
 {% endhint %}
 
-### Self-repaying loans
+### Leveraged-yield & Self-repaying loans
 
-Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset could be used, meaning users could take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral: Angle Borrowing module hence opens the way to self-repaying loans.
+Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used, meaning users can take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral.
+
+Support for yield-bearing tokens as collateral makes the Borrowing module a good place to earn leveraged yields. If the borrowing cost is 0.5% and if a collateral with an APR of 3% is used as a collateral in the Borrowing module, a 4x leverage can increase the effective APR (assuming collateral price remains constant) earned to up 10.5%.
 
 ## Additional Features and Details
 
@@ -82,7 +84,7 @@ Vaults are defined by a specific set of information:
   - [Stability fee](fees.md#stability-fee)
   - [Repay fee](fees.md#repaying-fee)
   - [Liquidation surcharge](fees.md#liquidation-surcharge)
-  - [Dust amount](./#dust-amount)
+  - [Dust amounts](./#dust-amounts)
 
 ### Collateral Ratio
 
@@ -126,11 +128,13 @@ Angle is one of the first protocols to implement a permit function on a NFT/ERC7
 
 This allows users to interact with multiple vaults from different collaterals in just one transaction using a router contract. In this situation, by just granting approval with a signature to a router contract, they can for instance repay the debt from all their vaults at once, or perform multiple swap/wrapping transactions (e.g. from ETH to wstETH) before adding collateral to a vault.
 
-### Dust Amount
+### Dust Amounts
 
-To make sure the protocol doesn't accumulate bad debt, the protocol needs to enforce a minimum amount of agTokens to be borrowed. This is required to make sure that each position has enough debt so that it's always worth to liquidate it.
+To make sure the protocol doesn't accumulate bad debt, the protocol has the possibility to enforce a minimum amount of agTokens to be borrowed. This can be used as a protection to make sure that each position has enough debt so that it's always worth to liquidate it.
 
 It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
+
+On top of the parameter for the minimum amount that can be borrowed, the protocol introduces a minimum amount of debt from which liquidators can repay the whole debt of a position. As described in the [liquidation](liquidations.md) section, liquidators cannot always repay the full debt of a position when repaying it, except when the debt of this position is below a certain threshold specified for each collateral asset.
 
 ### Keepers & Oracle
 

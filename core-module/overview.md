@@ -19,20 +19,6 @@ The Angle Core module relies on three types of agents which all benefit from it 
 
 ![Angle's Stakeholders](../.gitbook/assets/core-agents-mechanism.jpg)
 
-## Generalization to Multiple Stable Assets
-
-Angle Core module design can be used to issue multiple stablecoins, provided that there is an oracle for that. Angle could for instance build a token which market value is designed to remain equal to the temperature in New York City. The protocol has started with the agEUR (Euro stablecoin), and the idea is to follow with stablecoins pegged to other currencies like agGBP, or agCHF.
-
-{% hint style="info" %}
-Smart contract addresses associated to agEUR can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts).
-{% endhint %}
-
-The idea is that each stablecoin is independent from other stablecoins in the Core module, meaning that the collateral pools are different in all cases. Being a Hedging Agent for the collateral DAI used to back Angle's agEUR implies nothing about being a Hedging Agent on the pool DAI/agCHF. The same goes for standard liquidity providers. You can be a standard liquidity provider for just the agEUR stablecoin, but not for the agCHF stablecoin.
-
-![Core module collateral pools are different from one stablecoin to another](../.gitbook/assets/Docs-split_of_funds_in_the_protocol.jpg)
-
-Although this is unlikely to happen, if the stable EUR fails for some reason, it implies nothing for the stable CHF.
-
 ## Next ➡️
 
 In the following pages, we will dive a bit more in-depth in the specificities of each stakeholder of Angle Core module, and explain in more detail how some essential bricks work.

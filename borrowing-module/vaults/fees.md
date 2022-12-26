@@ -6,7 +6,7 @@ description: Fees and Revenue in Angle Borrowing Module
 
 ## 🔎 TL;DR
 
-- Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations and possibly from flash-loans
+- Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations
 - If some vaults are liquidated too late, the protocol could also accrue a bad debt
 - Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
 
@@ -20,7 +20,7 @@ At the top level, three different fees can be charged to users borrowing agToken
 - A stability fee
 - A repay fee
 
-Note that some of these fees can be set to 0. Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
+Note that some (or all) of these fees can be set to 0. Additionally, a fee called liquidation surcharge is captured by the protocol when liquidators send stablecoins to pay back vaults debt.
 
 Collecting these fees creates revenue for the protocol, which serves multiple purposes:
 
@@ -70,17 +70,17 @@ As for the mint fee, the repay fee is most often set to 0, and you should check 
 
 In the event of a [liquidation](../../new-module/liquidations.md), the protocol captures a fee called the liquidation surcharge. This is taken from the amount of stablecoins sent by the liquidators to pay back the debt of the vault.
 
-Its value is usually around 2%.
+Its value is usually set around 2%.
 
 ### Putting this all together
 
-In summary, users pay three types of fees to the protocol in the form of an increase of their debt that will need to be paid back or collateralized.
+In summary, users may pay fees to the protocol in the form of an increase of their debt that will need to be paid back or collateralized.
 
-This debt increase through fees happen at four moments:
+This debt increase through fees happen at four (optional) moments:
 
-1. When minting agTokens if there is a **mint fee** (which is optional)
+1. When minting agTokens if there is a **mint fee**
 2. During the life of the vault if agTokens is borrowed, through the **stability fee**
-3. When repaying an agToken debt if there is a **repay fee** (optional as well)
+3. When repaying an agToken debt if there is a **repay fee**
 4. When a liquidation happens, through the **liquidation surcharge**
 
 ## Bad debt

@@ -47,7 +47,7 @@ Keepers cannot choose the amount they lend or withdraw from lending platforms: t
 
 ## ✖️ Multiplier Effect For SLPs
 
-Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allow them to get potentially higher yield than if they were farming only with their capital. More info in the SLP page below.
+Thanks to the lending strategies, SLPs get rewards not only from their capital, but also from that of Users and HAs. This allows them to get potentially higher yield than if they were farming only with their capital. More info in the SLP page below.
 
 {% content-ref url="standard-liquidity-providers/" %}
 [standard-liquidity-providers](standard-liquidity-providers/)
@@ -57,7 +57,7 @@ Thanks to the lending strategies, SLPs get rewards not only from their capital, 
 
 ### Base strategy
 
-The first strategy implemented simply consists in optimizing lending between Compound and Aave in order to maximize the global APY.
+The first strategy implemented simply consists in optimizing lending between Compound, Aave and Euler in order to maximize the global APY.
 
 ### Folding strategies
 

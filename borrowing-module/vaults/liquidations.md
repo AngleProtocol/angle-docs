@@ -12,7 +12,7 @@ Liquidations in this Borrowing module are designed to be as much borrower friend
 
 ## 🔎 TL;DR
 
-- Vaults with a health factor below one risk getting liquidated
+- Vaults with a health factor below 1 risk getting liquidated
 - Liquidated vaults can lose part or all of their collateral. Owners of such vaults however get to keep the stablecoins they borrowed
 - Angle comes with its unique set of liquidation features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a discount booster for veANGLE holders which make this system overall more borrower friendly than alternatives.
 
@@ -68,6 +68,12 @@ In some conditions, the variables at liquidation are such that $HF\_{post}(x\_{m
 
 In practice, full liquidations should be extremely occasional and most vaults should get less than 50% of their position liquidated. This allows them to keep as much collateral in their vault as possible, and make liquidations in Angle Borrowing module less harmful to borrowers than elsewhere in the industry.
 
+Liquidators do not have to repay the maximum amount that the protocol allows them to. The `x` variable described above is a maximum amount that liquidators can repay, and in the absence of dust amounts, liquidators can choose to repay any amount between 0 and `x`. Should a liquidator decide not to repay everything that's available, a position may face several successive liquidations.
+
+{% hint style="info" %}
+If the debt of a liquidated vault is below what is called the `dustLiquidation` threshold set by governance for the collateral asset, liquidators must liquidate the full debt of the vault.
+{% endhint %}
+
 ### Dynamic Discount
 
 To incentivize liquidations, the protocol lets liquidators buy the available collateral at a **discount**, meaning that they get back more collateral than the amount of stablecoins they brought.
@@ -110,14 +116,6 @@ Liquidators can liquidate vaults without bringing in any capital. When liquidati
 
 This decreases **a lot** the barriers to entry for potential liquidators and makes it more competitive, which is ultimately better for borrowers.
 
-### Amount of debt to repay
-
-The amount of stablecoins debt `x` to be repaid by the liquidator is determined by the Target Health Factor parameter such that:
-
-$$
-HF_{post}(x) = \texttt{target health factor}
-$$
-
 ## Example
 
 Let's say that the protocol has the following parameters for a given :
@@ -151,7 +149,7 @@ $$
 d_{post} = 90 - 67(1-0.02) = 90 - 66 = 24
 $$
 
-In this example, the liquidator repays 67 of stablecoin, and gets back \~74,5 of collateral (effectively getting a discount)
+In this example, the liquidator can choose to repay up to 67 of stablecoin, and get back up to \~74,5 of collateral (effectively getting a discount).
 
 ![Vault before liquidation](../../.gitbook/assets/vault-before-liquidation.jpg)
 

@@ -6,8 +6,8 @@ description: How the Core module behaves in case of distress
 
 ## 🔎 TL;DR
 
-* Angle Core module is mostly at risk when a sudden collateral price decrease is combined with a severe drop in demand for leverage by Hedging Agents.
-* The Core module has the safety modules and incentives to be able to resist and maintain peg even in extreme market conditions.
+- Angle Core module is mostly at risk when a sudden collateral price decrease is combined with a severe drop in demand for leverage by Hedging Agents.
+- The Core module has the safety modules and incentives to be able to resist and maintain peg even in extreme market conditions.
 
 ## ⚡ Angle Core module's Risks
 
@@ -37,7 +37,7 @@ While everything that can be done with this surplus is still to be determined (l
 
 ## 🍀 Standard Liquidity Providers Insurance of the Insurance
 
-If the incentives put in place do not attract enough HAs to fully insure the Core module against the volatility of the collateral and if there is not enough surplus accumulated, it can rely on the collateral brought by Standard Liquidity Providers to ensure full convertibility of the stablecoins. There is an equilibrium threshold to expect with Standard Liquidity Providers (SLPs). Indeed, the fewer SLPs there are, the more interesting it becomes to be a SLP because of the [multiplier effect](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect) that is spread among SLPs.
+If the incentives put in place do not attract enough HAs to fully insure the Core module against the volatility of the collateral and if there is not enough surplus accumulated, it can rely on the collateral brought by Standard Liquidity Providers to ensure full convertibility of the stablecoins. There is an equilibrium threshold at stake with Standard Liquidity Providers (SLPs). Indeed, the fewer SLPs there are, the more interesting it becomes to be a SLP because of the [multiplier effect](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect) that is spread among SLPs.
 
 To prevent the cascading effect that could be induced if SLPs all exit the Core module, a slippage is introduced to discourage SLPs from exiting when the collateral ratio is too low: this is a way to make sure that there will always be SLPs in the Core module. Note here that HAs are never affected by exit restrictions: they can find incentives to enter at any point in time thus bringing extra-liquidity, regardless of whether there has been a price drop or not.
 
@@ -71,8 +71,11 @@ The following page explains how in details this collateral settlement process wo
 
 ## 📜 Stablecoins Independence
 
-The Core module's stablecoins are independent from one another, meaning that if one stablecoin fails, other stablecoins will not be impacted. The collateral pools related to each stablecoin are different and separated from one another, and the contracts behind have different addresses.
+Angle Core module design can be used to issue multiple stablecoins. If there were multiple stablecoins (like agEUR and agCHF), they would be entirely independent from one another within the Core module.
+This means that if one of them failed, other stablecoins would not be impacted. The reason for this is that collateral pools related to each stablecoin would be different and separated from one another.
 
-![Division of pools and collaterals](broken-reference)
+Being a Hedging Agent for the collateral DAI used to back Angle's agEUR implies nothing about being a Hedging Agent on the pool DAI/agCHF. The same goes for standard liquidity providers. You can be a standard liquidity provider for just the agEUR stablecoin, but not for the agCHF stablecoin.
+
+![Core module collateral pools are different from one stablecoin to another](../../.gitbook/assets/Docs-split_of_funds_in_the_protocol.jpg)
 
 In case of a security breach, to trigger the emergency shutdown at the level of the Core module, all collateral for all stablecoins should be settled.

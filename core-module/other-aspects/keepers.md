@@ -23,7 +23,7 @@ Tokens issued by the protocol are tradable on exchanges and therefore have a mar
 
 Keepers are also the agents helping [the yield strategies](/core-module/lending.md) function effectively and integrate smoothly with the protocol. It is possible that, at a given moment a too important proportion of collateral, is being lent to a strategy. In this case, keepers are the ones adjusting the debt ratio of the strategy making sure that there are always enough reserves held in the protocol to pay users, SLPs, or HAs who would want to exit the protocol.
 
-The adjustments are done within the defined target debt ratio of each strategy. SLPs willing to get as much returns as possible, or governance token holders acting for the good of the protocol are the ones expected to call the functions readjusting the debt ratio.
+The adjustments are done within the defined target debt ratio of each strategy. SLPs willing to get as much returns as possible, or governance token holders acting for the good of the protocol are the ones usually calling the functions readjusting the debt ratio.
 
 Governance is able to vote to set additional rewards in the form of governance tokens to the keepers calling the `harvest` function for each strategy.
 

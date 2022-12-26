@@ -35,7 +35,7 @@ Angle Core module is deployed on Ethereum mainnet. It relies on three types of a
 
 Angle Borrowing module is deployed on multiple EVM compatible networks, including Ethereum mainnet, sidechains like Polygon and layer 2s like Optimism. It allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
-Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Abracadabra](https://abracadabra.money), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it efficient. Among other things:
+Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it efficient. Among other things:
 
 - All operations are designed to be capital efficient
 - The borrowing experience is optimized with notably an improved liquidation engine which allows liquidated addresses to face minimal losses compared with what they can experience in more traditional models.

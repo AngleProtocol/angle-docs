@@ -11,7 +11,7 @@ description: Angle is over-collateralized
 
 ## 📐 Collateral Ratio Structure
 
-Angle Core module is over-collateralized but capital efficient. Yet contrary to Maker's DAI, the module has no target collateral ratio. The way governance can influence the collateral ratio is through the structure of the slippage for SLPs, of the transaction fees taken from users minting and burning stablecoins or from HAs joining or exiting the Core module.
+Angle Core module is over-collateralized but capital efficient. There is however no target collateral ratio with this module. The way governance can influence the collateral ratio is through the structure of the slippage for SLPs, of the transaction fees taken from users minting and burning stablecoins or from HAs joining or exiting the Core module.
 
 The Core module's collateral ratio depends on the yield targeted by Standard Liquidity Providers and on the average leverage chosen by Hedging Agents.
 
@@ -27,4 +27,4 @@ By bringing 100 of additional collateral, SLPs would earn yield on 80% x 250 = 2
 
 In that case, the Core module would be collateralized at 250%.
 
-![Collateral Ratio Estimation](../../.gitbook/assets/Collateral_ratio.jpg)
+![Collateral Ratio Estimation](../../.gitbook/assets/Collateral_Ratio.jpg)

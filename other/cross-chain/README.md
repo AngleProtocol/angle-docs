@@ -6,7 +6,7 @@ description: Use Angle on different chains and layers
 
 ## Angle on different networks
 
-Angle Protocol is composed of two set of smart contracts: the Core module, and the Borrowing module.
+Angle Protocol is composed of two main sets of smart contracts: the Core module, and the Borrowing module.
 
 While the Core module is only deployed on Ethereum mainnet, the Borrowing module is also deployed on other chains and layer 2s. This allows for native minting of agEUR on these other networks.
 
