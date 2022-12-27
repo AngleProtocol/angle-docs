@@ -6,7 +6,7 @@ description: Common questions about SLPs
 
 ## How do SLPs earn their interest?
 
-When contributing to a collateral pool as a Standard Liquidity Provider, a SLP receive a token that we call **sanToken**, marking her belonging in the pool, just like a lender on Compound would receive a cToken. For instance, a SLP bringing USDC to the Core module for the agEUR coin would receive sanUSDC_EUR tokens based on the current exchange rate between the sanTokens and USDC.
+When contributing to a collateral pool as a Standard Liquidity Provider, SLPs receive a token that we call **sanToken**, marking their belonging in the pool, just like a lender on Compound would receive a cToken. For instance, a SLP bringing USDC to the Core module for the agEUR coin would receive sanUSDC_EUR tokens based on the current exchange rate between the sanTokens and USDC.
 
 By minting sanTokens, SLPs earn interest through the sanToken's exchange rate (sanRate), which increases in value relative to the underlying asset \(USDC in the example\) as transaction fees and interest accrue to that pool.
 
@@ -52,6 +52,6 @@ Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, an
 
 ## What's the advantage of being a SLP on Angle Core module rather than going to other platforms that offer automatic yield like Aave or Compound?
 
-SLPs in Angle Core module enjoy an increased yield through the [multiplier effect](README.md#%E2%9C%96-multiplier-effect). Because Angle's  Core module reserves are lent to other protocols, among which some funds are not from SLPs, SLPs can get more yield than what they would get on Compound or Aave because they receive yield on collateral they did not bring initially.
+SLPs in Angle Core module enjoy an increased yield through the [multiplier effect](README.md#%E2%9C%96-multiplier-effect). Because Angle's Core module reserves are lent to other protocols, among which some funds are not from SLPs, SLPs can get more yield than what they would get on Compound or Aave because they receive yield on collateral they did not bring initially.
 
 For instance if there is 150 of collateral in the Core module, among which 50 comes from SLPs, SLPs are entitled to get yield on the 50 they brought, but also on the 100 of collateral that was brought by users and hedging agents.

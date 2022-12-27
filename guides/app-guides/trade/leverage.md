@@ -6,7 +6,7 @@ description: How to get leverage on crypto with Angle Borrowing module
 
 The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR from crypto collateral **on different chains** and use it to **leverage your exposure to your collateral**.
 
-When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to leverage your exposition in the same transaction. Follow this guide to learn how.
+When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to leverage your exposition in the same transaction.
 
 ## Add collateral & get leverage
 

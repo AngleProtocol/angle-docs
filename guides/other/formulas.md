@@ -1,5 +1,5 @@
 ---
-description: List of formulas at stake when interacting with app.angle.money
+description: Formulas at stake when interacting with app.angle.money
 ---
 
 # Formulas

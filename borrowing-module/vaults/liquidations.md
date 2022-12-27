@@ -8,7 +8,7 @@ Liquidation is the mechanism by which external actors repay the debt of borrower
 
 Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. A liquidation situation for a vault depends on its [health factor](../../new-module/vaults/glossary.md) which depends on the [collateral factor](../../new-module/vaults/glossary.md) of the corresponding vault.
 
-Liquidations in this Borrowing module are designed to be as much borrower friendly as possible, and to drastically improve over similar designs in relative protocols.
+Liquidations in this Borrowing module are designed to be the most borrower friendly in the DeFi space.
 
 ## 🔎 TL;DR
 

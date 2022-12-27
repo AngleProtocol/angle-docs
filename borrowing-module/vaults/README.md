@@ -4,7 +4,7 @@ description: Angle Borrowing Module agTokens Vaults
 
 # 🏦 Vaults
 
-The core mechanism of this module relies on a vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction.
+The core mechanism of this module relies on a vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to use or spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction.
 
 ## 🔎 TL;DR
 
@@ -14,7 +14,7 @@ Angle Borrowing module vault-based system lets you:
 - Leverage collateral exposure in one transaction
 - Transfer your debt between vaults to avoid liquidation
 - Perform different actions on your vault in a single transaction and in a capital efficient manner
-- Take self-repaying loans
+- Take self-repaying loans or earn a leveraged yield
 
 ## Main features
 
@@ -34,7 +34,7 @@ With an opened vault, there are many different actions that can be performed bey
 For more details on how to combine transactions in a modular way with the protocol, you can check [this page](https://developers.angle.money/borrowing-module-contracts/smart-contract-docs/vaultmanager) of our developers documentation.
 {% endhint %}
 
-The advantage of this design is that it enables capital efficient interactions with Angle vaults.
+This design enables capital efficient interactions with Angle vaults.
 
 ### Capital-efficient debt repayment
 
@@ -66,11 +66,15 @@ Liquidations in this borrowing system are designed to protect borrowers, making 
 For more insight on liquidations, check out [this page](./liquidations.md).
 {% endhint %}
 
-### Leveraged-yield & Self-repaying loans
+### Leveraged yield & Self-repaying loans
 
-Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used, meaning users can take loans with an interest rate smaller than what they are earning thanks to their yield-bearing asset in collateral.
+Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used, meaning users can take loans with an interest rate smaller than what they are earning from their yield-bearing asset in collateral.
 
-Support for yield-bearing tokens as collateral makes the Borrowing module a good place to earn leveraged yields. If the borrowing cost is 0.5% and if a collateral with an APR of 3% is used as a collateral in the Borrowing module, a 4x leverage can increase the effective APR (assuming collateral price remains constant) earned to up 10.5%.
+The Borrowing module is made such that if an asset accumulates external rewards (like staked Curve LP tokens earning CRV), there is no opportunity cost from using this asset as a collateral for an agToken loan, as users can still earn the same amount of rewards they'd be earning if they hadn't put their asset in Angle Borrowing module.
+
+Support for yield-bearing tokens as collateral thus makes the Borrowing module a good place to earn leveraged yields. If the borrowing cost is 0.5% and if a collateral with an APR of 3% is used, a 4x leverage can increase the effective APR (assuming collateral price remains constant) earned to up 10.5%.
+
+![Leveraged Yield](../../.gitbook/assets/leveraged-yield.png)
 
 ## Additional Features and Details
 
@@ -78,7 +82,7 @@ Vaults are defined by a specific set of information:
 
 - A collateral token that is deposited
 - A debt token that is borrowed (the stablecoin)
-- And a set of parameters:
+- And the following parameters:
   - [Collateral factor](../glossary.md)
   - [Mint fee](fees.md#minting-fee)
   - [Stability fee](fees.md#stability-fee)
@@ -86,7 +90,7 @@ Vaults are defined by a specific set of information:
   - [Liquidation surcharge](fees.md#liquidation-surcharge)
   - [Dust amounts](./#dust-amounts)
 
-### Collateral Ratio
+### Collateral Ratio & Collateral Factor
 
 The most defining parameter of a vault is its **Collateral Ratio**. It defines the ratio between the collateral's value in stablecoin, and the value of the stablecoins borrowed.
 
@@ -132,9 +136,9 @@ This allows users to interact with multiple vaults from different collaterals in
 
 To make sure the protocol doesn't accumulate bad debt, the protocol has the possibility to enforce a minimum amount of agTokens to be borrowed. This can be used as a protection to make sure that each position has enough debt so that it's always worth to liquidate it.
 
-It's important to keep in mind that these debt-based models similar to Maker rely heavily on [liquidations](liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low so that it doesn't even cover gas cost, and is not profitable anymore. In that case, the protocol would be left holding under-collateralized positions.
+It's important to keep in mind that this debt-based module relies heavily on [liquidations](liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low with respect to the gas costs, and liquidating is not profitable anymore. In that case, the protocol would be left with under-collateralized positions.
 
-On top of the parameter for the minimum amount that can be borrowed, the protocol introduces a minimum amount of debt from which liquidators can repay the whole debt of a position. As described in the [liquidation](liquidations.md) section, liquidators cannot always repay the full debt of a position when repaying it, except when the debt of this position is below a certain threshold specified for each collateral asset.
+On top of the parameter for the minimum amount that can be borrowed, the protocol introduces a minimum amount of debt from which liquidators need to repay the whole debt of a position. As described in the [liquidation](liquidations.md) section, liquidators cannot always repay the full debt of a position when liquidating a position, except when the debt of this position is below a certain threshold specified for each collateral asset.
 
 ### Keepers & Oracle
 

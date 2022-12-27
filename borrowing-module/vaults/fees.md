@@ -76,7 +76,7 @@ Its value is usually set around 2%.
 
 In summary, users may pay fees to the protocol in the form of an increase of their debt that will need to be paid back or collateralized.
 
-This debt increase through fees happen at four (optional) moments:
+This debt increase through fees may happen at four (optional) moments:
 
 1. When minting agTokens if there is a **mint fee**
 2. During the life of the vault if agTokens is borrowed, through the **stability fee**

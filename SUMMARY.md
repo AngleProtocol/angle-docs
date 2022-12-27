@@ -56,6 +56,12 @@
   - [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
 - [📚 Glossary](borrowing-module/glossary.md)
 
+## Side Modules
+
+- [🌉 Angle Cross-Chain Setup](other/cross-chain.md)
+- [⚙️ Algorithmic Market Operations](other/amo.md)
+- [⚡️ Flash Loans](other/flash-loans.md)
+
 ## Governance
 
 - [🗳 Angle DAO](governance/angle-dao.md)
@@ -67,12 +73,6 @@
   - [📈 Interest](governance/veangle/interest.md)
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
-
-## Other Aspects
-
-- [⛓ Angle Cross-Chain Setup](other/cross-chain/README.md)
-- [⚙️ Algorithmic Market Operations](other/amo.md)
-- [⚡️ Flash Loans](other/flash-loans.md)
 
 ## Resources
 

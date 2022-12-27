@@ -4,9 +4,7 @@ description: Angle Protocol Guides
 
 # 🎓 Guides
 
-This section contains guides to interact with the Angle Protocol.
-
-You will also find some preliminary guides to get onboarded to DeFi and to agEUR, Angle's EUR stablecoin.
+In this section, you will find some preliminary guides to get onboarded to DeFi and to agEUR, Angle's EUR stablecoin.
 
 {% content-ref url="newbie.md" %}
 [newbie.md](newbie.md)
@@ -15,8 +13,6 @@ You will also find some preliminary guides to get onboarded to DeFi and to agEUR
 {% content-ref url="/guides/app-guides/agEUR/swap.md" %}
 [swap.md](/guides/app-guides/agEUR/swap.md)
 {% endcontent-ref %}
-
-We have also written guides on how you can leverage agEUR as a DAO, a company or an individual
 
 {% content-ref url="/guides/use-cases/README.md" %}
 [use-cases](/guides/use-cases/README.md)

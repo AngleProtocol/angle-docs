@@ -4,22 +4,15 @@ description: Using agEUR as a payment currency
 
 # 💸 Pay and get paid with agEUR
 
-Thanks to its partners and integrations, agEUR can be used to pay and create invoices, as well as to transfer fiat to your home bank account.
+agEUR can be used to pay and get paid from any crypto to a bank account in only two on-chain transactions. Specifically, it is designed to allow:
 
-This can be done from almost anywhere in the world, on Ethereum or Polygon.
+- **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
+- **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
+- **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
 
-![Pay and get paid with agEUR](../../.gitbook/assets/angle-borrowmodulewp-announcement-light.png)
+![Pay and get paid with agEUR](../../.gitbook/assets/getting-paid-ageur.jpg)
 
-Some DAOs might not have a bank account, or just prefer to pay their contributors in crypto. However, these contributors usually need a proper proof of payment (invoice) and a way to transfer those funds to their bank account easily, without taking care of the exchange rate.
-
-agEUR can be a solution to such issues: anyone can invoice and get paid in agEUR, and transfer them directly to EUR or another fiat currency in their bank account.
-
-More specifically, an agEUR integration can serve different types of users:
-
-1. Companies or DAOs wanting to pay their contributors in crypto
-2. Contributors happy to be paid in crypto but who still need fiat in a bank account for their everyday lives
-
-In this guide, we try to show how companies, DAOs, and their contributors can leverage agEUR and Angle’s partners Request, Mt Pelerin, as well as Superfluid to handle salaries and payments quickly and in a compliant way.
+In this guide, we show how companies, DAOs, and their contributors can leverage agEUR and Angle’s partners Request, Mt Pelerin, as well as Superfluid to handle salaries and payments quickly and in a compliant way.
 
 ## Invoicing in agEUR with Request
 
@@ -29,7 +22,7 @@ In this guide, we try to show how companies, DAOs, and their contributors can le
 
 To do that, the person creating the invoice has to specify the wallet address that they want to receive the funds on.
 
-![request create invoice](../../.gitbook/assets/request-create-invoice.png)
+![Request create invoice](../../.gitbook/assets/request-create-invoice.png)
 
 Request invoices then look like that 👇
 
@@ -57,21 +50,11 @@ Obviously, users can also keep their agEUR and invest it to take advantage of th
 
 ![Mt Pelerin off-ramp](../../.gitbook/assets/mtpelerin-offramp.png)
 
-## Angle + Request + Mt Pelerin: New payment solution for people in crypto
+## 💸 Streaming payments with Superfluid
 
-agEUR can be used to pay and get paid from any crypto to a bank account in only two on-chain transactions! Specifically, it is designed to allow:
+agEUR is integrated with [Superfluid](https://www.superfluid.finance/home) which means it can be used to facilitate the administration of payments by companies. Specifically, with Superfluid, companies do not need to create new transfer transactions every month.
 
-- **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
-- **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
-- **Contributors** to **transfer agEUR** **to EUR in their bank account** to cover the cost of their everyday lives!
-
-![agEUR power use case](../../.gitbook/assets/getting-paid-ageur.jpg)
-
-## 💸 Go further by streaming those payments with Superfluid
-
-Thanks to its [Superfluid](https://www.superfluid.finance/home) integration, agEUR can also be used further to facilitate the administration of payments by companies. Specifically, it avoids them the need to create new transfer transactions every month.
-
-Superfluid indeed allows people to **stream tokens on Polygon:** with Superfluid, users can receive their agEUR payments not as a one-time transactions, but through **a payment stream**. They can get paid continuously, and not just once at the end of each month.
+Superfluid indeed allows people to **stream tokens on Polygon:** with Superfluid, users can get paid continuously, and not just once at the end of each month.
 
 To do so, payers just have to wrap their agEUR into agEURx. To withdraw the received agEURx, users simply need to unwrap them on their side.
 

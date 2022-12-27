@@ -16,7 +16,7 @@ All of them are accessible from the main Angle interface on the [On-ramp / off-r
 
 The only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
 
-These providers usually let you receive the agEUR on the Ethereum or Polygon network. You might face high fees for low amounts due to Ethereum transaction costs.
+These providers usually let you receive the agEUR on the Ethereum or Polygon network.
 
 {% hint style="info" %}
 Note that these partners may ask users to enter personal information above a certain amount.

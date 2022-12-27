@@ -10,7 +10,7 @@ The [Earn page](https://app.angle.money/#/earn) of the app lists all the pools a
 
 This is also where you can deposit tokens accepted as collateral in the Core module to act as an [SLP](/core-module/standard-liquidity-providers/README.md).
 
-The protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools. This page is where Liquidity Providers can track opportunities and claim their rewards.
+The protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools. This page is where Uniswap Liquidity Providers can track opportunities and claim their rewards.
 
 {% hint style="info" %}
 For more details on how Uniswap V3 Liquidity Providers can be rewarded with ANGLE tokens, check [this guide](/guides/other/univ3-lp.md).
@@ -22,7 +22,7 @@ In the Earn page, tokens can be deposited to earn yield and over-collateralize a
 
 When on the Earn page, click on the SanTokens anchor and select your pool. Then, you can deposit, stake, or withdraw your funds by selecting the token you want to use.
 
-![deposit and stake sanTokens](/.gitbook/assets/sanTokens-earn.png)
+![Deposit and stake sanTokens](/.gitbook/assets/sanTokens-earn.png)
 
 ## Claiming ANGLE tokens
 

@@ -1,12 +1,10 @@
 ---
-description: Using agEUR as a treasury asset for your DAO or company
+description: Use agEUR as a treasury asset for your DAO or company
 ---
 
 # 🏦 agEUR as a treasury asset
 
-As described [in this guide](ageur-power-usecase.md), agEUR can be used by companies and DAOs to pay their contributors. Here, we show how they can benefit from using agEUR as a treasury asset.
-
-Angle’s agEUR can also be used by companies and DAOs as a treasury asset to diversify holdings and earn yield on top of EUR.
+Angle’s agEUR can be used by companies and DAOs as a treasury asset to diversify holdings and earn a EUR yield.
 
 Most DAOs or companies with crypto treasuries hold a mix of BTC, ETH, and USD stablecoins. With agEUR, they have a way to diversify those reserves into one of the biggest fiat currency, through a decentralized stablecoin that has deep on-chain liquidity and is integrated with the best DeFi protocols.
 
@@ -22,7 +20,7 @@ agEUR is a supported asset on Gnosis Safe and the Angle App integrates with Gnos
 
 ## Getting agEUR in your treasury
 
-agEUR can be minted directly from Angle at [app.angle.money](https://app.angle/money/), or bought from a DEX, a DEX aggregator, or from one of our [on-ramp partners](/guides/app-guides/agEUR/on-ramp-off-ramp.md). If you are looking to buy an important amount of agEUR, the best place would be directly on Angle where there is no slippage.
+agEUR can be minted directly from Angle at [app.angle.money](https://app.angle/money/), or bought from a DEX, a DEX aggregator, or from one of our [on-ramp partners](/guides/app-guides/agEUR/on-ramp-off-ramp.md). If you are looking to buy an important amount of agEUR, the best place would be on 1inch which integrates Angle slippage-less transactions as well as other agEUR liquidity pools.
 
 You can find more details in the [App Guides](/guides/app-guides/README.md) of this documentation.
 
@@ -38,9 +36,9 @@ Yield for agEUR deposits on Euler is currently ranging between 2% and 3%. Tokens
 
 ### Deposit on Curve and stake on Convex
 
-Another option is to deposit agEUR in the [Curve 3EUR](https://curve.fi/factory/66/deposit) pool (agEUR+EURs+EURt), and then deposit the Curve LP tokens on [Convex](https://www.convexfinance.com/stake) for CVX and CRV rewards.
+Another option is to deposit agEUR in the [Curve 3EUR](https://curve.fi/factory/66/deposit) pool (agEUR+EURs+EURt) or in the [Curve agEUR-EUROC pool](https://classic.curve.fi/factory/164), and then deposit the Curve LP tokens on [Convex](https://www.convexfinance.com/stake) for CVX and CRV rewards.
 
-This opportunity usually generates higher yield but it is reserved for more advanced users.
+These opportunities usually generate higher yields but are reserved for more advanced users.
 
 ### Other yield opportunities
 
@@ -54,7 +52,7 @@ Some agEUR pools are incentivized with ANGLE token rewards and can yield interes
 
 More generally, all ANGLE-related yield opportunities can be accessed through the [App Earn](https://app.angle.money/#/earn) page.
 
-## Paying contributor with agEUR
+## Paying contributors with agEUR
 
 Companies with agEUR in their treasury can also pay very easily their contributors in a transparent and compliant way. In just two on-chain transactions, their contributors can receive EUR in their bank account.
 
