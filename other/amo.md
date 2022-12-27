@@ -12,7 +12,7 @@ These minted stablecoins can then be borrowed by people having a sufficient amou
 
 ## Angle AMOs
 
-While we described above an example of a lending AMO, the Angle Protocol supports different types of AMOs. Each AMO is previously proposed on Angle governance forum and voted [on Snapshot](https://snapshot.org/#/anglegovernance.eth) before being put in production.
+While we described above an example of a lending AMO, the Angle Protocol supports different types of AMOs. Before being put in production, each AMO needs to be proposed on Angle governance forum and voted [on Snapshot](https://snapshot.org/#/anglegovernance.eth).
 
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](/governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
@@ -67,14 +67,10 @@ More details on the pros and cons these AMOs can be found on [this governance po
 
 ## Implications of AMOs
 
-Algorithmic market operations on a lending market like in the example above have several effects among which an expansion of the agTokens supply and a lowering of the deposit and borrow APYs in the affected lending market.
+By making agTokens more easily accessible on some protocols, AMOs widen the user base of the protocol. They can also be an interesting source of revenue for the protocol (from lending yield or transaction fees).
 
-While this widens the potential user base for borrowers of agTokens, this also reduces the opportunities for agToken lenders and depositors. Note though that in the process, the Angle protocol makes a revenue on the lending yield.
+It's important to note though that AMOs are not completely neutral on the protocols on which they are taking place. On a lending market for instance, having an AMO reduces both the deposit and borrow APYs hence reducing yield opportunities for lenders while making it easier for borrowers.
 
-In this specific AMO, borrowed stablecoins are over-collateralized by the borrowers' deposits in the lending market, and as such agTokens remain fully backed.
+Another issue as well is that having AMOs on a protocol (like Aave or Euler) means that the risk of Angle becomes to some extent the risk of the underlying protocol. If Angle lends 1m agEUR on Aave and Aave gets hacked, then the Angle protocol also makes a loss.
 
-One issue here, and it's common to almost all AMOs is that, the risk of the agTokens in circulation also becomes the risk of the underlying protocols used (in the example Euler or Aave). If the lending market is Aave and Aave gets hacked, then the Angle protocol also makes a loss.
-
-On top of that, if too many agTokens end up being in circulation through this medium there may not be enough reserves in Angle Core module to maintain convertibility between stablecoins and collateral if everyone comes to burn the stablecoins.
-
-As such, AMOs are a powerful tool to expand agTokens use cases in DeFi as well as protocol revenue, but they do not come without any risk, and every new AMO type should be carefully calibered by Angle governance to eliminate systemic risk.
+As such, AMOs are a powerful tool to expand agTokens use cases in DeFi as well as protocol revenue, but they do not come without any risk, and every new AMO type should be carefully calibered by Angle governance to control systemic risk.
