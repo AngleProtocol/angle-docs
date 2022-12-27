@@ -8,9 +8,9 @@ The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR 
 
 Essentially, you can deposit your crypto into a vault, to get a stablecoins loan in exchange. If the value of the crypto you deposited goes below a certain amount compared to the value of your loan, you can get [liquidated](/borrowing-module/vaults/liquidations.md).
 
-When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to get leverage. You can learn more about the mechanism [here](/borrowing-module/vaults/README.md#leveraging-collateral-exposure), and follow our guide here.
+When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to get leverage. Learn more about the mechanism [here](/borrowing-module/vaults/README.md#leveraging-collateral-exposure).
 
-In this guide, we will look at how to **borrow agEUR** from collateral deposit.
+In this guide, we will look at how to **borrow agEUR** from a collateral deposit.
 
 ## Add Collateral & Borrow agEUR
 
@@ -30,7 +30,7 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 5. Click on the bottom right button to `Approve` and `Send` your transaction.
 6. (optional) If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction.
 
-![Add/borrow agEUR](/.gitbook/assets/add-borrow.png)
+![Add/Borrow agEUR](/.gitbook/assets/add-borrow.png)
 
 ## Repay your debt or close your vault
 

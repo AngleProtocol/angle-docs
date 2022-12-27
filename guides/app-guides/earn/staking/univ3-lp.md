@@ -4,7 +4,7 @@ description: Details on Angle Uniswap V3 incentivization mechanism for LPs
 
 # 🦄 Incentives for Uniswap V3 Liquidity Providers
 
-Angle implemented a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs) according to their added value to the protocol. Basically, it allows to reward LPs more granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in more complex ways that benefit from all Uniswap V3 possibilities.
+Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs) according to their added value to the protocol. Basically, it allows to reward LPs more granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in more complex ways that benefit from all Uniswap V3 possibilities.
 
 {% hint style="info" %}
 You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1).
@@ -22,7 +22,7 @@ Incentives going to Uniswap V3 pools are split between Uniswap Liquidity Provide
 
 Practically speaking, the reward computation script looks into each Uniswap V3 pool directly and sees at each swap which addresses held the pool's liquidity as well as the amount agEUR in their position. It then computes computes a reward for each address with in-range liquidity based on the following parameters:
 
-1. The share of fees earned by the LP, telling us the virtual liquidity provided
+1. The share of fees earned by this address, telling us the virtual liquidity provided
 2. The share of agEUR they hold compared to the total pool size
 3. The share of the other token they hold compared to the total pool size
 
@@ -35,7 +35,7 @@ $$
 \texttt{(agEUR in the position / agEUR in the pool)}+ 0.2 \times \texttt{(other token in the position / other token in the pool)}] \times \texttt{veANGLE boost}
 $$
 
-One big difference with incentives mechanisms relying on wrapping Uniswap V3 positions into ERC20 is that LPs can now provide liquidity on any range they want, and any Uniswap liquidity manager can be integrated.
+One big difference with incentives mechanisms relying on wrapping Uniswap V3 positions into ERC20 is that with this mechanism LPs can provide liquidity on any range they want, and any Uniswap liquidity manager can be integrated.
 
 For example, a tight range will virtually provide more liquidity and earn more fees and ANGLE rewards. However, it has more chance to become out-of-range and suffer from [impermanent loss](https://www.youtube.com/watch?v=8XJ1MSTEuU0).
 
@@ -45,7 +45,7 @@ For example, a tight range will virtually provide more liquidity and earn more f
 
 As a LP, you can provide liquidity directly on [Uniswap V3](https://app.uniswap.org/#/add/), or with any of the integrated Uniswap position manager.
 
-Currently, we have integrated [Arrakis](https://www.arrakis.finance/) and [Gamma](https://www.gamma.xyz/), which means that if you deposit liquidity on Uniswap through Arrakis or Gamma, the reward computation script will automatically detect that you are involved in the Uniswap V3 pool.
+Currently, the protocol has integrated [Arrakis](https://www.arrakis.finance/) and [Gamma](https://www.gamma.xyz/), which means that if you deposit liquidity on Uniswap through Arrakis or Gamma, the reward computation script will automatically detect that you are involved in the Uniswap V3 pool.
 
 When you are going through a liquidity manager, make sure to understand how they manage your liquidity, and if the positions are in-range. If they are not, you will not be earning ANGLE rewards.
 

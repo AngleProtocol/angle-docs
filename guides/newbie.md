@@ -16,7 +16,7 @@ A wallet can be used to generate addresses to receive funds, and send transactio
 
 If you want to learn more about seed phrase or wallets, you can dive into [Metamask user guides](https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-Guide-Secret-Recovery-Phrase-password-and-private-keys).
 
-Now that we know what a wallet is, let's create a wallet :point\_down:
+Now that we know what a wallet is, let's create a wallet :point_down:
 
 ## 🦊 Creating a wallet with Metamask
 
@@ -40,4 +40,4 @@ If you have an account at a centralized exchange, you can also buy ETH from ther
 
 ### Follow our Angle guides
 
-Once you have ETH in your wallet, you can follow our Angle guides to see how to use the protocol! You can start by this guide explaining [how to get agEUR](broken-reference).
+Once you have ETH in your wallet, you can follow our Angle guides to see how to use the protocol!

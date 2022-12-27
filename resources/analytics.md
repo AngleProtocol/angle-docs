@@ -15,7 +15,7 @@ General data about the protocol, specific information about governance, smart co
 
 ## Angle Community Dune Dashboards
 
-Amazing community members have also built dedicated Dune dashboards about Angle! You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information.
+Some community members have also built dedicated Dune dashboards about Angle. You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information.
 
 All the Angle related Dune dashboards have been grouped in one [Angle Main Dashboard](https://dune.com/tuta/angle-master-dashboard).
 
@@ -27,6 +27,6 @@ Angle works as a set of smart contracts, and the best way to track the state of 
 
 ## Angle Integrations
 
-Angle related products are integrated in multiple places in DeFi. A complete list of all agEUR integrations can be found on our Discord [here](https://discord.com/channels/835066439891157012/907535810067304458/907537277939482636).
+Angle related products are integrated in multiple places in DeFi. A non-exhaistive list of agEUR and Angle integrations can be found [here](../links.md).
 
 If you think about more data that would be useful to display about Angle or are planning to build a dashboard about the protocol, feel free to reach out in our [Discord](https://discord.gg/bwHQTMsf)!

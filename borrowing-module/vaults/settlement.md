@@ -6,7 +6,7 @@ description: Settlement - Stopping all operations for a specific vault type
 
 As in the Core module, the Borrowing module has a **settlement mechanism** to protect the protocol against potential attacks, and quickly stop unsustainable operations.
 
-It has been designed as a last resort to protect agTokens holders, and make sure they can redeem their stablecoins at a 1:1 rate against collateral even under an emergency situation. This reinforce the insurance that agTokens are **always backed by collateral**.
+It has been designed as a last resort to protect agTokens holders, and make sure they can redeem their stablecoins at a 1:1 rate against collateral even under an emergency situation. This reinforces the insurance that agTokens are **always backed by collateral** and can be redeemed.
 
 ## Mechanism
 
@@ -31,7 +31,3 @@ More precisely, after step 1:
 - If the value of the leftover collateral is greater than the debt: then users can only redeem the corresponding value of collateral with their stablecoins, and leftover collateral will be left under the control of governance. Given that the module is made to be well over-collateralized, we expect that settlement situations, if they are triggered, will lead to this second scenario.
 
 The stablecoins transferred to the contract to redeem collateral are later burned to erase debts.
-
-### Reinforcing trust in the protocol
-
-The settlement processes of Angle Borrowing and Core modules are here to help ensure the redeemability of agTokens under all conditions.

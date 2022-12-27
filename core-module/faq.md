@@ -6,7 +6,7 @@ description: The go-to source for all frequently asked questions about Angle Cor
 
 ## What is Angle Core module?
 
-Angle Core module is a set of smart contracts of the Angle Protocol designed to allow the issuance of stablecoins called agTokens in an efficient and over-collateralized way.
+Angle Core module is a set of smart contracts of the Angle Protocol designed to facilitate the issuance of stablecoins called agTokens in an efficient and over-collateralized way.
 
 ## How does Angle Core module work?
 
@@ -20,7 +20,7 @@ Yes, Angle Core module smart contracts have been audited by Chainsecurity and Si
 
 ## What collateral are accepted by Angle Core module?
 
-Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens, and they will be swapped against one of these collaterals.
+Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens on the Angle App, and they will be swapped against one of these collaterals.
 
 ## How is Angle's Core module different from other stablecoin protocols?
 
@@ -28,16 +28,10 @@ Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can st
 - Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the Core module is still bank run resistant.
 - Because of the swaps between stablecoins and collateral allowed by the Core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
 
-## Besides stablecoins, what are Angle Core module other advantages?
+## Besides stablecoins, what else does the Angle Core module offer?
 
 - Angle Core module can be used to get direct leverage on collateral. As a Hedging Agent in Angle Core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
 - Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle Core module, you get part of the transaction fees induced by users interacting with it, and part of the lending returns obtained by lending the reserves. If there is 150 in the Core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
-
-## How can I use the Core module app?
-
-In order to use the app, you can either interact directly with the smart contracts on the blockchain, through the front developped by Angle Labs, Inc. at [app.angle.money](https://app.angle.money), or through any other app developed by another team. Note that the app is hosted publicly on IPFS, and not on private servers.
-
-To interact with the app, you need a wallet like Metamask, some ETH to pay for transaction fees, and the base asset you would like to swap, deposit or get leveraged on. Once you have these things, you can either swap your assets for stablecoins, open a leveraged position, or simply deposit it and accumulate interests.
 
 ## What are the costs?
 

@@ -7,7 +7,7 @@ description: Insuring the insurance (Hedging Agents)
 ## 🔎 TL;DR
 
 - Standard Liquidity Providers (SLPs) deposit collateral in Angle Core module against sanTokens, yield-bearing tokens that automatically accrue interest and fees.
-- Angle is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
+- Angle Core Module is a marketplace between people who want volatility and people who want stability, SLPs serve as the buffer between these two kinds of people when they are not perfectly balanced.
 - SLPs get transaction fees from users minting and burning as well as yield from reserves being lent. The Core module can guarantee them higher yield than what they would get on other lending platforms.
 - They may face a small slippage when they exit if the Core module is not enough collateralized.
 

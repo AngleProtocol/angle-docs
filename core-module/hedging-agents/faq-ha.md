@@ -103,10 +103,6 @@ In the Core module, positions are represented by NFTs: they can be transferred f
 
 To reduce the risk of front-running with the oracle, after perpetual creation, a HA cannot exit or remove collateral from the position within the hour that follows.
 
-{% hint style="info" %}
-This is a parameter that can be modified by Angle governance.
-{% endhint %}
-
 ## Is there a maintenance margin like in centralized exchanges?
 
 Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.

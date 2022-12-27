@@ -31,7 +31,7 @@ For some pairs, Uniswap V3 pools may not be sufficient. For instance, for a wETH
 
 In this case, the protocol uses an only-Chainlink feed \(wETH/USD then USD/EUR\) and a feed made up of Uniswap for the part wETH/USD and Chainlink for the part USD/EUR, compares both feeds and chooses the one that is most at its advantage.
 
-## 🚁 Front-Running Risk and How We Prevent it
+## 🚁 Preventing Front-Running
 
 Given that Angle lets people swap their collateral against stablecoins with no slippage, and given on-chain oracle latency \(especially Chainlink\), there can be a front-running risk.
 

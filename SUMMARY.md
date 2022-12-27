@@ -6,6 +6,7 @@
 - [⚒ Developers](https://developers.angle.money)
 - [📖 Whitepapers](whitepapers.md)
 - [📒 Glossary](global-glossary.md)
+- [🔗 Quick Links](links.md)
 - [🎓 Guides](guides/README.md)
 
   - [🚶 First Steps in Crypto](guides/newbie.md)
@@ -56,6 +57,12 @@
   - [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
 - [📚 Glossary](borrowing-module/glossary.md)
 
+## Side Modules
+
+- [🌉 Angle Cross-Chain Setup](other/cross-chain.md)
+- [⚙️ Algorithmic Market Operations](other/amo.md)
+- [⚡️ Flash Loans](other/flash-loans.md)
+
 ## Governance
 
 - [🗳 Angle DAO](governance/angle-dao.md)
@@ -67,12 +74,6 @@
   - [📈 Interest](governance/veangle/interest.md)
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
-
-## Other Aspects
-
-- [⛓ Angle Cross-Chain Setup](other/cross-chain/README.md)
-- [⚙️ Algorithmic Market Operations](other/amo.md)
-- [⚡️ Flash Loans](other/flash-loans.md)
 
 ## Resources
 
@@ -104,14 +105,3 @@
     - [Whitepaper](resources/international/vietnamese/whitepaper.md)
   - [🇹🇷 Turkish](/resources/international/turkish/README.md)
   - [Spanish](/resources/international/spanish/README.md)
-
-## Ecosystem
-
-- [📀 App](https://app.angle.money)
-- [🗃 Analytics](https://analytics.angle.money)
-- [⚒ Developers Doc](https://developers.angle.money)
-- [📐 Discord](https://discord.gg/67WSSZqBG6)
-- [🐦 Twitter](https://twitter.com/AngleProtocol)
-- [🌳 Medium](https://blog.angle.money)
-- [💻 Github](https://github.com/AngleProtocol)
-- [💬 Governance Forum](https://gov.angle.money)

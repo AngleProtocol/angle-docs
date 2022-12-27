@@ -1,12 +1,4 @@
----
-description: Spanish Documents and Articles about Angle
----
-
-# Spanish Translations
-
-## Disclaimer
-
-This section contains community-translated articles and documents about the Angle protocol in Spanish.
+# 🇪🇸 Spanish Documents and Articles about Angle
 
 ## Translations
 

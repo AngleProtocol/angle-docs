@@ -1,14 +1,4 @@
----
-description: Chinese Documents and Articles about Angle
----
-
 # 🇨🇳 Chinese Documents and Articles about Angle
-
-## Disclaimer
-
-This section contains community-translated articles and documents about the Angle protocol in Chinese.
-
-## Translations
 
 {% page-ref page="angle-content.md" %}
 

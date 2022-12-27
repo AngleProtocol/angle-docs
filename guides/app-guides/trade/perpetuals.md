@@ -8,8 +8,6 @@ Angle lets you open long collateral/stablecoin leverage perpetuals. This means t
 
 You can read more about this mechanism [here](/core-module/hedging-agents/README.md).
 
-All of this can be done directly from the [Perpetuals page](https://app.angle.money/#/perpetuals) of the app.
-
 ![Perpetuals page](/.gitbook/assets/perpetual-cards.png)
 
 ## Opening a position

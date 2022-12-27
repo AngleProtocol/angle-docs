@@ -1,10 +1,8 @@
 ---
-description: Use Cases
+description: Use cases of Angle and agEUR for individuals, companies and DAOs
 ---
 
 # 🧩 Use cases
-
-This section contains guides showcasing different use cases possible with Angle and agEUR. These guides are intended for individuals, companies, and DAOs.
 
 ## Use agEUR as a treasury asset
 

@@ -1,34 +1,18 @@
 # ⚙️ Angle Algorithmic Market Operations
 
-## ⁉️ About Algorithmic Market Operations (AMOs)
+Algorithmic market operations (or AMOs), also referred to as direct deposit modules, are operations performed by contracts to mint or burn stablecoins without collateral immediately backing these stablecoins. The idea is that stablecoins minted by AMOs are still controlled by the protocol, and if other people start controlling these stablecoins, then this new supply should be properly backed in one way or another.
 
-Algorithmic market operations (or AMOs) are operations performed by contracts to mint or burn stablecoins without collateral immediately backing these stablecoins. The idea is that stablecoins minted by AMOs are still controlled by the protocol, and if other people start controlling these stablecoins, then this new supply should be properly backed in one way or another.
+AMOs are conceived not to affect the peg of the stablecoin.
 
-AMOs are thought not to affect the peg of the stablecoin.
-
-### Example
+## Example
 
 Algorithmic market operations are perfectly suited for lending markets. In this case, the way an AMO would look like is that a contract mints an amount of stablecoins (using no collateral and hence not interacting with the protocol's Core or Borrowing module) and deposits them on a lending market such as Aave or Euler.
 
 These minted stablecoins can then be borrowed by people having a sufficient amount of backing collateral in the lending protocol. It is only when they're borrowed that the minted stablecoins can really be considered to be on the open market. At this point, they are backed by the collateral deposited in the lending protocol by the borrowers. As such, the agTokens originally minted by the protocol's contract and deposited in the lending market are over-collateralized when being released in the market.
 
-### Implications of AMOs
-
-Algorithmic market operations on a lending market like in the example above have several effects among which an expansion of the agTokens supply and a lowering of the deposit and borrow APYs in the affected lending market.
-
-While this widens the potential user base for borrowers of agTokens, this also reduces the opportunities for agToken lenders and depositors. Note though that in the process, the Angle protocol makes a revenue on the lending yield.
-
-In this specific AMO, borrowed stablecoins are over-collateralized by the borrowers' deposits in the lending market, and as such agTokens remain fully backed.
-
-One issue here, and it's common to almost all AMOs is that, the risk of the agTokens in circulation also becomes the risk of the underlying protocols used (in the example Euler or Aave). If the lending market is Aave and Aave gets hacked, then the Angle protocol also makes a loss.
-
-On top of that, if too many agTokens end up being in circulation through this medium there may not be enough reserves in Angle Core module to maintain convertibility between stablecoins and collateral if everyone comes to burn the stablecoins.
-
-As such, AMOs are a powerful tool to expand agTokens use cases in DeFi as well as protocol revenue, but they do not come without any risk, and every new AMO type should be carefully calibered by Angle governance to eliminate systemic risk.
-
 ## Angle AMOs
 
-While we described above an example of a lending AMO, the Angle Protocol supports different types of AMOs. Each AMO is previously proposed on Angle governance forum and voted [on Snapshot](https://snapshot.org/#/anglegovernance.eth) before being put in production.
+While we described above an example of a lending AMO, the Angle Protocol supports different types of AMOs. Before being put in production, each AMO needs to be proposed on Angle governance forum and voted [on Snapshot](https://snapshot.org/#/anglegovernance.eth).
 
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](/governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
@@ -60,7 +44,7 @@ Angle supports so far several different lending AMOs on different chains:
 
 Another type of AMO is called liquidity as a service. It consists in lending for a pre-determined agTokens to be deposited in a pool and returned with an interest rate. It can be leveraged by any DAO which is looking to create cheap liquidity for its token.
 
-Risks for the protocol are reduced because it is expected that the partner DAO is taking the impermanent loss in this case.
+Risks for the protocol are reduced because the partner DAO is taking the impermanent loss in this case.
 
 So far, Angle has worked with Ondo to offer such services, as presented in [this](https://gov.angle.money/t/proposal-angle-ondo-liquidity-as-a-service-program/320) governance discussion.
 
@@ -70,12 +54,23 @@ The first liquidity as a service operation has been approved with Paladin as det
 
 ### Protocol-owned Liquidity
 
-Angle also started to use AMOs to seed some pools with agEUR liquidity. The idea is to use some of the protocol reserves and match it with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
+Angle also used AMOs to seed some pools with agEUR liquidity. The idea is to match some of the protocol's reserves it with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
 
 #### Current Protocol LP AMO Positions
 
 - Optimism: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
 - Arbitrum: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from protocol surplus and a corresponding amount of agEUR at mint.
-- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint
+- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint.
+- Avalanche: Trader Joe 50/50 agEUR/USDC pool, seeded with 100k USDC from the protocol surplus and a corresponding amount of agEUR at mint.
 
 More details on the pros and cons these AMOs can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
+
+## Implications of AMOs
+
+By making agTokens more easily accessible on some protocols, AMOs widen the user base of the protocol. They can also be an interesting source of revenue for the protocol (from lending yield or transaction fees).
+
+It's important to note though that AMOs are not completely neutral on the protocols on which they are taking place. On a lending market for instance, having an AMO reduces both the deposit and borrow APYs hence reducing yield opportunities for lenders while making it easier for borrowers.
+
+Another issue as well is that having AMOs on a protocol (like Aave or Euler) means that the risk of Angle becomes to some extent the risk of the underlying protocol. If Angle lends 1m agEUR on Aave and Aave gets hacked, then the Angle protocol also makes a loss.
+
+As such, AMOs are a powerful tool to expand agTokens use cases in DeFi as well as protocol revenue, but they do not come without any risk, and every new AMO type should be carefully calibered by Angle governance to control systemic risk.
