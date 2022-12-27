@@ -4,19 +4,14 @@ description: Community Engagement Incentives
 
 # 🐛 Bug Bounty
 
-At Angle, we consider the security of our systems a top priority. But even putting top priority status and maximum effort, there is still possibility that vulnerabilities can exist.
+The security of the smart contracts of the Angle Protocol is a top priority. But even putting top priority status and maximum effort, there is still possibility that vulnerabilities can exist.
 
-To help mitigate this risk we have put in place two bug bounty programs, with Immunefi and Hats.finance. In general, Angle bug bounty programs are focused around the protocol's smart contracts with a primary interest in the prevention of:
+To help mitigate this risk, two bug bounty programs, with Immunefi and Hats.finance, have been put in place. Angle bug bounty programs are focused around the protocol's smart contracts with a primary interest in the prevention of:
 
 - Thefts and freezing of principal of any amount
 - Thefts and freezing of unclaimed yield of any amount
 - Theft of governance funds
 - Governance activity disruption
-
-The protocol has two bounties opened so far:
-
-- one with Immunefi
-- one with Hats.finance
 
 ## Immunefi Bug Bounty Overview
 
@@ -52,7 +47,7 @@ The smart contracts in scope for this bounty are detailed in the [Angle bug boun
 
 ## Hats.finance Bug Bounty Overview
 
-[Hats.finance](https://hats.finance/) is a permissionless bug bounty solution. Every DAO token holder can deposit tokens in a vault, which will be used to pay potential white hat hackers that find vulnerabilities in any contracts in scope. Users depositing governance tokens can withdraw them with a 7 days delay.
+[Hats.finance](https://hats.finance/) is a permissionless bug bounty solution. Every DAO token holder can deposit tokens in a vault, which will be used to pay potential white hat hackers that find vulnerabilities in the contracts in scope. Users depositing governance tokens can withdraw them with a 7 days delay.
 
 ### Contracts in scope
 

@@ -1,12 +1,4 @@
----
-description: Russian Documents and Articles about Angle
----
-
-# 🇷🇺 Russian Translations
-
-## Disclaimer
-
-This section contains community-translated articles and documents about the Angle protocol in Russian.
+# 🇷🇺 Russian Documents and Articles about Angle
 
 ## Translations
 

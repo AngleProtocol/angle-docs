@@ -17,7 +17,7 @@ It can be used to issue stablecoins, called agTokens, that are pegged to a speci
 
 Angle has started with agEUR, a Euro (EUR - €) stablecoin.
 
-On top of its stablecoin product, Angle protocol also offers to its users ways to:
+On top of its stablecoin product, Angle Protocol also offers to its users ways to:
 
 - Trade perpetual futures
 - Earn yield from strategies
@@ -42,9 +42,11 @@ Inspired from more traditional borrowing protocols (like [Maker](https://makerda
 
 ### Other Aspects
 
-Angle is not limited to these key components. It is notably involved in [Direct Deposit Modules](other/amo.md) that invest agTokens directly in other protocols.
+Angle is not limited to these key components. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of agTokens.
 
-Angle also relies on a [Governance module](governance/angle-dao.md) to manage the protocol, accessible on Ethereum mainnet.
+### 🗳 Governance
+
+Angle is a decentralized protocol governed by [a DAO](governance/angle-dao.md) encapsulating all holders of a governance token called veANGLE. Holders of the token have voting powers to propose and make changes to the underlying code of the Angle Protocol.
 
 ## 🛣️ Roadmap
 
@@ -52,13 +54,9 @@ Beyond creating the first liquid and decentralized Euro stablecoin, the main goa
 
 ## 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
-Angle is currently being developed by its Core Team and community.
+While Angle was initially created by a team of developers at a company called Angle Labs, Inc, it is progressively decentralising and receives contributions from the external developer community as well as ongoing contributions from Angle Labs.
 
-Angle community Discord server is where we collectively organize ourselves to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
-
-{% hint style="success" %}
-📐 If there is anything unclear in this docs or out of date or if you feel like you have feedback on the protocol, this Discord is the best place to let us know!
-{% endhint %}
+Angle community Discord server is where the community collectively organizes itself to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 
 ## ⚒️ [Developers Doc](https://developers.angle.money)
 
@@ -70,21 +68,9 @@ There is a technical doc for developers and users to understand how Angle protoc
 The protocol's smart contracts have undergone several audits by Chainsecurity and Sigma Prime. You can find the different audit reports [here](resources/audits/README.md).
 {% endhint %}
 
-## Other Resources
-
-- 📡 [Website](https://angle.money)
-- 🐦 [Twitter](https://twitter.com/AngleProtocol)
-- 🌳 [Medium/Blog](https://blog.angle.money)
-- 💻 [Github](https://github.com/AngleProtocol)
-- 📀 [App](https://app.angle.money)
-- 🗂️ [Analytics](https://analytics.angle.money/#/home)
-- 💬 [Governance Forum](https://gov.angle.money)
-
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
-This documentation portal is maintained by Angle Labs Inc., a company which, among other things, contributes to the Angle Protocol.
-
-This doc is built to be the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
+This documentation portal is maintained by Angle Labs, Inc. It is built to be the up-to-date source of truth for Angle Protocol functionality and production contracts. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
 
 The Angle Protocol is designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://angle.money/#/blog) in its home language.
 

@@ -2,11 +2,7 @@
 description: Turkish Documents and Articles about Angle
 ---
 
-# 🇹🇷 Turkish Translations
-
-## Disclaimer
-
-This section contains community-translated articles and documents about the Angle protocol in Turkish.
+# 🇹🇷 Turkish Documents and Articles about Angle
 
 ## Translations
 
