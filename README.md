@@ -1,13 +1,9 @@
 ---
 description: >-
-  Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol.
+  Welcome to the Angle Protocol Documentation Portal!
 ---
 
 # Angle Documentation Portal
-
-Welcome to the Angle Protocol Documentation Portal! It contains essential info and key links to understand the fundamentals of the Angle protocol.
-
-So grab a coffee ☕ and enjoy the read!
 
 ## 🏅 Introduction to Angle
 
@@ -17,13 +13,13 @@ It can be used to issue stablecoins, called agTokens, that are pegged to a speci
 
 Angle has started with agEUR, a Euro (EUR - €) stablecoin.
 
-On top of its stablecoin product, Angle Protocol also offers to its users ways to:
+On top of its stablecoin product, Angle Protocol also offers ways to:
 
 - Trade perpetual futures
 - Earn yield from strategies
 - Get leverage on a wide range of assets
 
-Precisely speaking, the protocol consists of several different modules, or sets of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
+The protocol consists of several different modules, or sets of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
 
 The protocol is also engaged into Algorithmic Market Operations (AMOs), or Direct Deposit Modules, where agTokens are invested in protocols for Angle to get a yield on.
 
@@ -62,7 +58,7 @@ Angle community Discord server is where the community collectively organizes its
 
 Angle is an open protocol on which anyone can permissionlessly build or suggest improvements. The protocol relies on an open-source codebase available [on Github](https://github.com/AngleProtocol).
 
-There is a technical doc for developers and users to understand how Angle protocol works under the hood and how to build on top of it.
+There is a technical doc for developers and advanced users to understand how Angle protocol works under the hood and how to build on top of it.
 
 {% hint style="info" %}
 The protocol's smart contracts have undergone several audits by Chainsecurity and Sigma Prime. You can find the different audit reports [here](resources/audits/README.md).
