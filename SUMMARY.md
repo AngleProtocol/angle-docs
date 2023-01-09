@@ -104,4 +104,4 @@
   - [🇻🇳 Vietnamese - tiếng-việt](resources/international/vietnamese/README.md)
     - [Whitepaper](resources/international/vietnamese/whitepaper.md)
   - [🇹🇷 Turkish](/resources/international/turkish/README.md)
-  - [Spanish](/resources/international/spanish/README.md)
+  - [🇪🇸 Spanish](/resources/international/spanish/README.md)

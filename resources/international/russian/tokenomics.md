@@ -31,7 +31,7 @@ Angle Protocol был создан для того, чтобы сделать д
 
 40% для сообщества через программу Angle по майнингу ликвидности (Liquidity Mining)
 20% для казначейства DAO (DAO Treasury)
-18% основной команде Angle (Core Team)
+18% основной команде Angle (Angle Labs Team)
 12% текущим и будущим стратегическим партнерам Angle (Strategic Partners), на гранты, консультантам проекта и ценным членам сообщества
 10% ранним инвесторам (Early Backers)
 ![](../../.gitbook/assets/token-distribution.png)

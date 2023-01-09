@@ -58,7 +58,7 @@ Precisely speaking, veANGLE holders assign specific weights of their voting powe
 The rewards weight allocation can change each week depending on the changes in voting power allocated. The process is detailed [here](../../governance/veANGLE/gauges.md).
 {% endhint %}
 
-5% of the ANGLE's weekly emissions are still controlled by the Core Team to be allocated without any vote by veANGLE holders. Idea is that the Core team can use this allocation for short-term programs used to bootstrap liquidity in some particular places that do not have to be whitelisted.
+5% of the ANGLE's weekly emissions are still controlled by Angle Labs to be allocated without any vote by veANGLE holders. Idea is that Angle Labs can use this allocation for short-term programs used to bootstrap liquidity in some particular places that do not have to be whitelisted.
 
 {% hint style="info" %}
 [This document](https://docs.google.com/spreadsheets/d/1fxTBGEnOnzvpdBaeiDzy1j-g5-s75IhGPU8aOdu786g/edit?usp=sharing) summarizes where these 5% of the weekly ANGLE emissions are deployed.
@@ -74,21 +74,21 @@ This Treasury can be used to build protocol reserves through different incentive
 
 ANGLE tokens from the DAO Treasury are stored on the governance multisig.
 
-2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by the Angle Core Team (called the `AngleMaster`) to get more flexibility when it comes to implementing programs like Olympus Pro.
+2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by Angle Labs (called the `AngleMaster`) to get more flexibility when it comes to implementing programs like Olympus Pro.
 
-This multisig is a 2/3 Gnosis multisig controlled by distinct Core Team members of the protocol (the 3 co-founders of the project).
+This multisig is a 2/3 Gnosis multisig controlled by the 3 co-founders of Angle Labs.
 
 ### Grants and Partnerships
 
-12% of the initial ANGLE are held by the Core Team in a multi-sig. These tokens are available for distribution to the Community as grants or bug bounties, to strategic partners like exchanges for listing, but also to the most active and helpful community members as well as to advisors helping the protocol grow.
+12% of the initial ANGLE are held by Angle Labs in a multi-sig. These tokens are available for distribution to the Community as grants or bug bounties, to strategic partners like exchanges for listing, but also to the most active and helpful community members as well as to advisors helping the protocol grow.
 
 Tokens from this pocket are stored in the `AngleMaster` multisig.
 
-### Core team and early backers
+### Angle Labs team and early backers
 
-These tokens are subject to a **3 years linear vesting**, to make sure that the core team and early backers remain fully committed to the protocol and the community.
+These tokens are subject to a **linear vesting of 3 years (starting October 2021)**.
 
-- 18% to Angle Core Team
+- 18% to Angle Labs team members
 - 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.

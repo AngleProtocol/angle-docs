@@ -10,10 +10,6 @@ In this section, you will find some preliminary guides to get onboarded to DeFi 
 [newbie.md](newbie.md)
 {% endcontent-ref %}
 
-{% content-ref url="/guides/app-guides/agEUR/swap.md" %}
-[swap.md](/guides/app-guides/agEUR/swap.md)
-{% endcontent-ref %}
-
 {% content-ref url="/guides/use-cases/README.md" %}
 [use-cases](/guides/use-cases/README.md)
 {% endcontent-ref %}
