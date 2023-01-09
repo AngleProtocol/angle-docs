@@ -16,7 +16,7 @@ veANGLE can be obtained by locking ANGLE from 1 week to up to 4 years. A smaller
 
 As mentionned above, veANGLE is the token used for voting for governance proposals and ANGLE emissions through gauge weights in the Angle protocol. As such, veANGLE holders are shaping the future of the protocol.
 
-Votes for governance proposals happen on [Snapshot](https://snapshot.org/#/anglegovernance.eth), and are then executed by a multi-sig. This multi-sig is composed of a mix of core team members and external people, including public figures to increase accountability. For more details on the governance multisig, you can check [this page](../angle-dao.md#the-multi-sig).
+Votes for governance proposals happen on [Snapshot](https://snapshot.org/#/anglegovernance.eth), and are then executed by a multi-sig. This multi-sig is composed of a mix of Angle Labs team members and external people, including public figures to increase accountability. For more details on the governance multisig, you can check [this page](../angle-dao.md#the-multi-sig).
 
 {% hint style="info" %}
 Votes for gauge weights are however taking place on-chain. For more details on gauges, please refer to [this page](gauges.md).

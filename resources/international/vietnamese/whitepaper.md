@@ -12,7 +12,7 @@ description: Angle Whitepaper Vietnamese translation
 
 Vietnamese translation of the whitepaper of the Core module of Angle.
 
-This translation has **not** been verified by the core team, but only by other Vietnamese community members. As such, some information might be incorrect.
+This translation has **not** been verified by the Angle Labs team, but only by other Vietnamese community members. As such, some information might be incorrect.
 
 {% file src="../../.gitbook/assets/Whitepaper_AngleProtocol_Vietnamese.pdf" %}
 Angle Whitepaper in Vietnamese

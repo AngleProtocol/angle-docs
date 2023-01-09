@@ -13,7 +13,7 @@ description: Helping the protocol achieve its desired outcome
 
 Keepers are external incentivized actors that help the protocol work smoothly. Since EVM-compatible blockchains are inherently passive, there is a need for external input from people telling the protocol to perform a certain action at a given moment.
 
-Angle needs multiple types of keepers to get involved. Angle Labs, Inc. developped bots to help keepers achieve some of their operations.
+Angle needs multiple types of keepers to get involved, and creating a keeper on top of the protocol can be done permissionlessly without any governance approval.
 
 ## ⚖️ Arbitrage Keepers
 
