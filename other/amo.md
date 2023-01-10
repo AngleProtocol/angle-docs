@@ -17,7 +17,7 @@ While we described above an example of a lending AMO, the Angle Protocol support
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](/governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
 {% hint style="info" %}
-For the most up-to-date info on Angle AMOs managed by the governance multisig, you can check [this document](https://docs.google.com/spreadsheets/d/1RM2wvtGT1B8sGZ5NbKFry-DJMTgZBNvJYE963xZqL7A/edit?usp=sharing).
+For the **most up-to-date info** on Angle AMOs managed by the governance multisig, you can check [this document](https://docs.google.com/spreadsheets/d/1RM2wvtGT1B8sGZ5NbKFry-DJMTgZBNvJYE963xZqL7A/edit?usp=sharing).
 {% endhint %}
 
 ### Curve AMO
@@ -58,9 +58,9 @@ Angle also used AMOs to seed some pools with agEUR liquidity. The idea is to mat
 
 #### Current Protocol LP AMO Positions
 
-- Optimism: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
-- Arbitrum: Uniswap 50/50 agEUR/USDC pool, seeded with 200K USDC from protocol surplus and a corresponding amount of agEUR at mint.
-- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint.
+- Optimism: Velodrome volatile 50/50 agEUR/USDC pool, seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
+- Arbitrum: KyberSwap 50/50 agEUR/USDC pool, seeded with 300k USDC from protocol surplus and a corresponding amount of agEUR at mint.
+- Ethereum: Curve 50/50 agEUR/EUROC pool, seeded with 200K USDC from the protocol and then swapped to EUROC, and a corresponding amount of agEUR at mint. The AMO beyond the seeding is handled programatically by the contracts [listed here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#algorithmic-market-operations).
 - Avalanche: Trader Joe 50/50 agEUR/USDC pool, seeded with 100k USDC from the protocol surplus and a corresponding amount of agEUR at mint.
 
 More details on the pros and cons these AMOs can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
