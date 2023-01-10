@@ -49,7 +49,11 @@ Using these allow you to get paid while borrowing agEUR. Opening a vault with yi
 
 In the case of yield-bearing asset, the tokens sent to the protocol will be swapped to the underlyings of the yield-bearing asset, and deposited in the platform they earn yield from. For example, in the case of Curve LP tokens, the underlyings will be deposited on Curve, the LP tokens obtained will be staked on Convex, and this will be used as collateral for a vault.
 
-To check out all these steps, click on the `Transaction Details` on the right side of the screen. The following example will deposit 20 FRAX in the Curve FRAX/USDC pool, stake the LP tokens on Stake DAO, deposit them as collateral in the vault and borrow 10 agEUR from it.
+{% hint style="info" %}
+To check out all these steps, click on the `Transaction Details` on the right side of the screen.
+{% endhint %}
+
+The following example will deposit 20 FRAX in the Curve FRAX/USDC pool, stake the LP tokens on Stake DAO, deposit them as collateral in the vault and borrow 10 agEUR from it.
 
 ![Add/Borrow agEUR](/.gitbook/assets/borrow-lp.png)
 
