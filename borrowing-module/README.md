@@ -20,15 +20,16 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 **Borrowing agTokens from collateral deposit:** With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allows them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
 
-**Capital-efficient interactions:** Borrowing stablecoins from deposited collateral, liquidating a vault, repaying a debt and getting collateral back: all of this can be done in just one transaction and without any capital commitment thanks to the protocol built-in swap features.
+**Leveraged-yield and self-repaying loans:** Any yield-bearing token can be accepted as a collateral. Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral. They can also swap their borrowed stablecoins for more of the yield-bearing token enabling them to boost the yield they are earning.
 
 **Leveraging collateral exposure:** Users can also leverage their collateral token exposure through vaults, to get on-chain leverage up to x10 depending on the parameters set by governance.
+
+**Capital-efficient interactions:** Borrowing stablecoins from deposited collateral, liquidating a vault, repaying a debt and getting collateral back: all of this can be done in just one transaction and without any capital commitment thanks to the protocol built-in swap features.
 
 **Optimized liquidations amounts and discounts:** Angle liquidation system is conceived as an improvement over more traditional liquidation mechanism (like on Aave, Compound, Maker). It allows for variable liquidations amounts meaning that during a liquidation the fraction of the debt that can be repaid is not fixed. On top of that, discounts given to liqudiators are based on a Dutch auction mechanism which minimizes the discount liquidators get while making sure they can still be profitable. This protects borrowers getting liquidated and lets them keep a maximum amount of collateral in their vaults.
 
 **Improved position management:** Users can easily transfer their debt from one position to another without having to actually transfer collateral between these positions. All positions in this system are composable NFTs.
 
-**Leveraged-yield and self-repaying loans:** Any yield-bearing token can be accepted as a collateral. Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral. They can also swap their borrowed stablecoins for more of the yield-bearing token enabling them to boost the yield they are earning.
 
 {% hint style="info" %}
 [This section](vaults/) presents in greater details vaults in Angle Borrowing Module.

@@ -12,9 +12,9 @@ Angle Borrowing module vault-based system lets you:
 
 - Borrow agTokens from tokens deposited as collateral in the protocol
 - Leverage collateral exposure in one transaction
+- Take out self-repaying loans or earn a leveraged yield
 - Transfer your debt between vaults to avoid liquidation
 - Perform different actions on your vault in a single transaction and in a capital efficient manner
-- Take self-repaying loans or earn a leveraged yield
 
 ## Main features
 
@@ -25,6 +25,32 @@ The main feature of vaults is the ability to **borrow** Angle stablecoins. A vau
 Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
 
 ![Angle Vaults](../../.gitbook/assets/Angle-Vaults.jpg)
+
+### Leveraging collateral exposure
+
+Users can also take advantage of Angle Borrowing module capital-efficiency features to borrow agTokens to **leverage their collateral exposure** in one transaction.
+
+When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. What the protocol does is that it mints the necessary quantity of agTokens, swaps it against the desired collateral, and deposits it back into the vault.
+
+![Angle Leverage exposure](../../.gitbook/assets/Leverage-example.jpg)
+
+{% hint style="info" %}
+Leveraging collateral exposure is a very useful feature for users wanting to safely increase exposure to their collateral token on chain. It is however reserved to more advanced users as it increases liquidation risks.
+{% endhint %}
+
+### Leveraged yield & Self-repaying loans
+
+Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used to borrow agTokens. It means that users can take out loans with an interest rate cost smaller than what they are earning from their yield-bearing collateral asset.
+
+The Borrowing module is built such that there is no opportunity cost to deposit yield-bearing assets into it. Any external rewards earned by collateral assets (like staked Curve LP tokens earning CRV) can be claimed from Angle UI. Users earn the same rewards, or more, than what they'd be earning if they hadn't put their asset in Angle.
+
+Support for yield-bearing tokens as collateral thus makes Angle Borrowing module a good place to earn a **leveraged yield on these assets**. If the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
+
+![Leveraged Yield](../../.gitbook/assets/leveraged-yield.png)
+
+{% hint style="info" %}
+Make sure to understand how the concerned tokens work and their associated risks before using them as collateral. More info about the risks in our blog post about [Leveraged yield in DeFi](https://www.angle.money/#/blog/learn/angle-explains-leveraged-yield-in-defi).
+{% endhint %}
 
 ### Composable actions
 
@@ -46,18 +72,6 @@ At some point, users may want to close their debt towards the protocol. Instead 
 
 On a similar note, it is this capital efficient design that allows liquidators to participate in liquidations without bringing any stablecoin from their pocket. More is explained [here](liquidations.md).
 
-### Leveraging collateral exposure
-
-Users can also take advantage of Angle Borrowing module capital-efficiency features to borrow agTokens to **leverage their collateral exposure** in one transaction.
-
-When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. What the protocol does is that it mints the necessary quantity of agTokens, swaps it against the desired collateral, and deposits it back into the vault.
-
-![Angle Leverage exposure](../../.gitbook/assets/Leverage-example.jpg)
-
-{% hint style="info" %}
-Leveraging collateral exposure is a very useful feature for users wanting to safely increase exposure to their collateral token on chain. It is however reserved to more advanced users as it increases liquidation risks.
-{% endhint %}
-
 ### Optimized Liquidations
 
 Liquidations in this borrowing system are designed to protect borrowers, making sure they're less affected than what they would be in other protocols by such events. This is possible thanks to the special liquidation features introduced by Angle including variable liquidation amounts, dynamic discount for liquidators based on Dutch auctions.
@@ -65,16 +79,6 @@ Liquidations in this borrowing system are designed to protect borrowers, making 
 {% hint style="info" %}
 For more insight on liquidations, check out [this page](./liquidations.md).
 {% endhint %}
-
-### Leveraged yield & Self-repaying loans
-
-Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used, meaning users can take loans with an interest rate smaller than what they are earning from their yield-bearing asset in collateral.
-
-The Borrowing module is made such that if an asset accumulates external rewards (like staked Curve LP tokens earning CRV), there is no opportunity cost from using this asset as a collateral for an agToken loan, as users can still earn the same amount of rewards they'd be earning if they hadn't put their asset in Angle Borrowing module.
-
-Support for yield-bearing tokens as collateral thus makes the Borrowing module a good place to earn leveraged yields. If the borrowing cost is 0.5% and if a collateral with an APR of 3% is used, a 4x leverage can increase the effective APR (assuming collateral price remains constant) earned to up 10.5%.
-
-![Leveraged Yield](../../.gitbook/assets/leveraged-yield.png)
 
 ## Additional Features and Details
 
