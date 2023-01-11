@@ -38,7 +38,7 @@ Angle supports so far several different lending AMOs on different chains:
 
 - On [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3) on Polygon: 1m agEUR are invested in this AMO
 - On [Euler](https://app.euler.finance/market/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8) on Ethereum mainnet with ~3.6m agEUR invested as well.
-- On [Atlendis](https://app.atlendis.io/pools/0x712a20869e4630d50c37ba0dde9918676224f819b47e8e76eb46ab223056146a/deposit) on Polygon with, as of September 2022, 200k agEUR invested in the AMO.
+- On [Atlendis](https://app.atlendis.io/pools/0x712a20869e4630d50c37ba0dde9918676224f819b47e8e76eb46ab223056146a/deposit) on Polygon with, as of January 2023, 1,000,000 agEUR invested in the AMO.
 
 ### Liquidity as a service
 

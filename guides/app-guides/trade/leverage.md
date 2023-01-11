@@ -39,7 +39,7 @@ To open a vault with yield-bearing assets as collateral, you can follow the same
 
 Once a vault is created, you can repay part of your debt or close it completely. You can also withdraw some collateral up to the minimum LTV.
 
-When repaying your debt, you can either use your vault collateral balance, your wallet balance, or a mix of both. If you choose to repay your debt with your vault collateral, the tokens will be swapped to debt tokens on your behalf and used to repay your debt.
+When repaying your debt, you can either use your vault collateral balance, your wallet balance, or a mix of both. If you choose to repay your debt with your vault collateral, the tokens are swapped to debt tokens on your behalf and used to repay your debt.
 
 Here are the steps to Repay debt, withdraw collateral, or close your vault:
 
@@ -51,12 +51,12 @@ Here are the steps to Repay debt, withdraw collateral, or close your vault:
 6. Enter the amount of debt token from your wallet balance you want to use to repay your debt.
 7. Click on `Send` to confirm the transaction.
 
-For example, in the following screenshot, 0.01 wETH will be swapped into ~12.45 agEUR to repay part of the vault's debt, and 10 agEUR from the wallet will be used to repay some of the remaining agEUR debt.
+For example, in the following screenshot, 0.01 wETH are swapped to ~12.45 agEUR to repay part of the vault's debt, and 10 agEUR from the wallet is used to repay some of the remaining agEUR debt.
 
 ![Repay and withdraw](/.gitbook/assets/repay2.png)
 
 {% hint style="info" %}
-A summary of the changes on your vault and wallet will be displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
+A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
 {% endhint %}
 
 ## Monitoring your positions
