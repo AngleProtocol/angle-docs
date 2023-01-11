@@ -31,7 +31,9 @@ Some vaults accept yield-bearing tokens as collateral. The borrowing power of th
 
 For example, if the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
 
-To open a vault with yield-bearing assets as collateral, you can follow the same steps described above after selecting a vault with a return displayed in a blug tag.
+To open a vault with yield-bearing assets as collateral, you can follow the same steps described above after selecting a vault with a return displayed in a blue tag.
+
+All external rewards accumulated by the vault's staked collateral can be [claimed](#claiming-your-rewards) directly from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens.
 
 ![Leverage with LUSD](/.gitbook/assets/leverage-yield.png)
 
@@ -61,6 +63,12 @@ A summary of the changes on your vault and wallet is displayed on the right. You
 
 ## Monitoring your positions
 
-After opening vaults, you can monitor their health on the main Leverage page.
+You can monitor your vaults' health from the main Borrow page.
 
 ![Vaults list](../../../.gitbook/assets/vaults-list.png)
+
+## Claiming your rewards
+
+As mentioned previously, staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can claim all your vaults collateral rewards directly from the Angle App in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
+
+![CLaim vaults rewards](../../../.gitbook/assets/claim-vault-rewards.png)

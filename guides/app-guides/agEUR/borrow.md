@@ -49,6 +49,8 @@ Using these allow you to get paid while borrowing agEUR. Opening a vault with yi
 
 In the case of yield-bearing asset, the tokens sent to the protocol are swapped to the underlyings of the yield-bearing asset, and deposited in the platform they earn yield from. For example, in the case of Curve LP tokens, the underlyings are deposited on Curve, the LP tokens obtained staked on Convex, and used as collateral for a vault.
 
+All external rewards accumulated by the vault's staked collateral can be [claimed](#claiming-your-rewards) directly from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens.
+
 {% hint style="info" %}
 To check out all these steps, click on the `Transaction Details` on the right side of the screen.
 {% endhint %}
@@ -83,6 +85,12 @@ A summary of the changes on your vault and wallet is displayed on the right. You
 
 ## Monitoring your positions
 
-After opening vaults, you can monitor their health on the main Borrow page.
+You can monitor your vaults' health from the main Borrow page.
 
 ![Vaults list](../../../.gitbook/assets/vaults-list.png)
+
+## Claiming your rewards
+
+As mentioned previously, staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can claim all your vaults collateral rewards directly from the Angle App in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
+
+![CLaim vaults rewards](../../../.gitbook/assets/claim-vault-rewards.png)
