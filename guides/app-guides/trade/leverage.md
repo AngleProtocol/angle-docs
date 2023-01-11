@@ -16,7 +16,7 @@ Here are the steps to leverage your collateral exposure:
 2. Select the type of vault to create, defined by the collateral and stablecoin token.
 3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will be swapped to the latter.
 4. Enter the amount of additional exposure of collateral you want in the second input.
-5. Click on the bottom right button to `Approve` and `Send` your transaction.
+5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
 6. _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
 
 In this example, a user deposits 20 FRAX in an LUSD vault, and ask for 40 LUSD of additional exposure. In the background, the 20 FRAX are swapped to LUSD and enough agEUR to buy 40 LUSD tokens are borrowed from the vault and swapped to LUSD. The user USD exposure goes from 20 to 60.

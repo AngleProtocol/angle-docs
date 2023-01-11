@@ -28,9 +28,9 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault
 2. Select the type of vault to create, defined by the collateral and stablecoin token
-3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will be swapped to the latter.
+3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of stablecoins you want to borrow in the second input.
-5. Click on the bottom right button to `Approve` and `Send` your transaction.
+5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
 6. (optional) If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction.
 
 In the below example, 200 DAI are swapped to wETH to be deposited as collateral in the vault, and 50 agEUR are borrowed.
