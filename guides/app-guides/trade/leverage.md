@@ -12,16 +12,16 @@ When borrowing agEUR, you can directly swap the borrowed agEUR into more of the 
 
 Here are the steps to leverage your collateral exposure:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault
+1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault.
 2. Select the type of vault to create, defined by the collateral and stablecoin token.
-3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will be swapped to the latter.
+3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of additional exposure of collateral you want in the second input.
 5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
-6. _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
+   _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
 
 In this example, a user deposits 20 FRAX in an LUSD vault, and ask for 40 LUSD of additional exposure. In the background, the 20 FRAX are swapped to LUSD and enough agEUR to buy 40 LUSD tokens are borrowed from the vault and swapped to LUSD. The user USD exposure goes from 20 to 60.
 
-After the operation, this vault has 60 LUSD as collateral and ~38.23 agEUR of debt.
+After the operation, this vault would have 60 LUSD as collateral and ~38.23 agEUR of debt.
 
 ![Leverage with LUSD](/.gitbook/assets/leverage-lusd.png)
 
@@ -51,7 +51,7 @@ Here are the steps to Repay debt, withdraw collateral, or close your vault:
 4. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
 5. Enter the amount collateral you want to use to repay your debt in the bottom left input.
 6. Enter the amount of debt token from your wallet balance you want to use to repay your debt.
-7. Click on `Send` to confirm the transaction.
+7. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
 
 For example, in the following screenshot, 0.01 wETH are swapped to ~12.45 agEUR to repay part of the vault's debt, and 10 agEUR from the wallet is used to repay some of the remaining agEUR debt.
 
@@ -69,6 +69,6 @@ You can monitor your vaults' health from the main Borrow page.
 
 ## Claiming your rewards
 
-As mentioned previously, staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can claim all your vaults collateral rewards directly from the Angle App in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
+As mentioned previously, staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can **claim all your vaults collateral rewards** directly **from the Angle App** in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
 
 ![CLaim vaults rewards](../../../.gitbook/assets/claim-vault-rewards.png)
