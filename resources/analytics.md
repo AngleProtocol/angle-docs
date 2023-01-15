@@ -6,7 +6,7 @@ description: List of different analytics sources about Angle
 
 Angle is a decentralized protocol. This means that all reserves controlled by the protocol are transparent and can be monitored in real-time.
 
-A a lot of resources have been built to help people easily understand and track what’s going on in the protocol.
+A lot of resources have been built to help people easily understand and track what’s going on in the protocol.
 
 ## Angle User-Friendly Analytics
 
@@ -27,6 +27,6 @@ Angle works as a set of smart contracts, and the best way to track the state of 
 
 ## Angle Integrations
 
-Angle related products are integrated in multiple places in DeFi. A non-exhaistive list of agEUR and Angle integrations can be found [here](../links.md).
+Angle related products are integrated in multiple places in DeFi. A non-exhaustive list of agEUR and Angle integrations can be found [here](../links.md).
 
 If you think about more data that would be useful to display about Angle or are planning to build a dashboard about the protocol, feel free to reach out in our [Discord](https://discord.gg/bwHQTMsf)!
