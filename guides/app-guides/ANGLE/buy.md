@@ -26,4 +26,4 @@ The 1inch integration on this page is a tailored integration for the specific AN
 
 When buying ANGLE on the app, you can set the maximal slippage (price impact) you want to tolerate. This is the maximum price change you are willing to accept between the price displayed at the beginning of the transaction, and the actual price at which the transaction is executed.
 
-If the price moves too much before your transaction happens compared to your slippage, the transaction will revert and you will get bak your funds.
+If the price moves too much before your transaction happens compared to your slippage, the transaction will revert and you will get back your funds.

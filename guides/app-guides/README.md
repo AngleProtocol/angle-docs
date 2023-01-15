@@ -41,12 +41,12 @@ Here are the steps to impersonate another address:
 
 ![Impersonator](/.gitbook/assets/impersonator.png)
 
-Obviously, it is not possible to confirm any transaction while connected on the app through an external address. However, you can simulate transactions from other addresses with Tenderly directly on the app.
+Obviously, it is not possible to confirm any transaction while connected to the app through an external address. However, you can simulate transactions from other addresses with Tenderly directly on the app.
 
 #### Transaction simulator with Tenderly
 
-In the App menu, you can see an eye to the right of your address. When lighted, you won't be prompted to confirm the transactions, but you will be redirected on Tenderly where they will be simulated and you will see a summary.
+In the App menu, you can see an eye to the right of your address. When lighted, you won't be prompted to confirm the transactions, but you will be redirected to Tenderly where they will be simulated and you will see a summary.
 
-This can be very useful if you're looking to test the app without actually passing transactions. It can helps you make sure that you are not getting scammed and that transactions are happening as they should.
+This can be very useful if you're looking to test the app without actually passing transactions. It can help you make sure that you are not getting scammed and that transactions are happening as they should.
 
 When impersonating another address, the simulation mode is active by default.
