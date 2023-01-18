@@ -1,13 +1,14 @@
 ---
-description: >-
-  Welcome to the Angle Protocol Documentation Portal!
+description: Welcome to the Angle Protocol Documentation Portal!
 ---
 
 # Angle Documentation Portal
 
 ## 🏅 Introduction to Angle
 
-Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol composed of smart contracts running on open blockchains. The protocol was launched in November 2021 and you can use it at [app.angle.money](https://app.angle.money).
+Angle is a decentralized, capital efficient and over-collateralized stablecoin protocol composed of smart contracts running on open blockchains. It was launched in November 2021 and you can use it at [app.angle.money](https://app.angle.money).
+
+{% embed url="https://www.youtube.com/embed/DDoY_CUrd7M" %}
 
 It can be used to issue stablecoins, called agTokens, that are pegged to a specific value. This means that these tokens are designed to mirror the value of the asset they are pegged to.
 
@@ -15,9 +16,9 @@ Angle has started with agEUR, a Euro (EUR - €) stablecoin.
 
 On top of its stablecoin product, Angle Protocol also offers ways to:
 
-- Trade perpetual futures
-- Earn yield from strategies
-- Get leverage on a wide range of assets
+* Trade perpetual futures
+* Earn yield from strategies
+* Get leverage on a wide range of assets
 
 The protocol consists of several different modules, or sets of smart contracts, from which agTokens can be issued or minted. While Angle was launched with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
 
@@ -25,7 +26,7 @@ The protocol is also engaged into Algorithmic Market Operations (AMOs), or Direc
 
 ### [Core module](core-module/overview.md)
 
-Angle Core module is deployed on Ethereum mainnet and is used for agEUR. It relies on three types of agents that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/README.md) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/README.md) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/README.md) helping to over-collateralize the protocol in exchange for yield.
+Angle Core module is deployed on Ethereum mainnet and is used for agEUR. It relies on three types of agents that form a balanced ecosystem maintaining agTokens' peg (or stability). These agents are [users](core-module/stable-seekers/) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/) helping to over-collateralize the protocol in exchange for yield.
 
 ### [Borrowing module](borrowing-module/)
 
@@ -33,8 +34,8 @@ Angle Borrowing module is deployed on multiple EVM compatible networks, includin
 
 Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it efficient. Among other things:
 
-- All operations are designed to be capital efficient
-- The borrowing experience is optimized with notably an improved liquidation engine which allows liquidated addresses to face minimal losses compared with what they can experience in more traditional models.
+* All operations are designed to be capital efficient
+* The borrowing experience is optimized with notably an improved liquidation engine which allows liquidated addresses to face minimal losses compared with what they can experience in more traditional models.
 
 ### Other Aspects
 
@@ -61,7 +62,7 @@ Angle is an open protocol on which anyone can permissionlessly build or suggest 
 There is a technical doc for developers and advanced users to understand how Angle protocol works under the hood and how to build on top of it.
 
 {% hint style="info" %}
-The protocol's smart contracts have undergone several audits by Chainsecurity and Sigma Prime. You can find the different audit reports [here](resources/audits/README.md).
+The protocol's smart contracts have undergone several audits by Chainsecurity and Sigma Prime. You can find the different audit reports [here](resources/audits/).
 {% endhint %}
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
