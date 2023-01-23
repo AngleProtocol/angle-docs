@@ -4,7 +4,7 @@ description: Use Angle on different chains and layers
 
 # 🌉 Angle Cross-Chain Infrastructure
 
-Angle Protocol is composed of two main sets of smart contracts: the Core and the Borrowing modules. While the Core module is only deployed on Ethereum mainnet, the Borrowing module is also deployed on other chains and layer 2s. Angle is hence a cross-chain protocol that allows the native issuance of agTokens on different chains.
+Angle is a cross-chain protocol that allows the native issuance of its stablecoins (also called agTokens) on different chains.
 
 To make sure that agTokens can easily be bridged from one chain to another and that the UX for interacting with the protocol remains smooth while keeping high security standards, the protocol relies on a custom bridge infrastructure.
 
@@ -14,8 +14,8 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 ## 🔎 TL;DR
 
-- The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per sidechain.
-- Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a given chain.
+- The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
+- Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
 - The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
 - So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
 
@@ -23,9 +23,9 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 ### Single Token Representation per Chain
 
-Bridges are what allow to bring agEUR and ANGLE from one network to another. Usually, bridges work by minting their own version of the token they bridge. What they do in practice is that they burn (or lock) tokens on the origin network and mint new tokens on the destination network.
+Bridges are what allow to bring a token from one network to another. Usually, they work by burning (or locking) tokens on an origin network and minting their own version of the token they bridge on a destination network.
 
-There can therefore be as many representations for a single token as there are bridges that support it. What protocols usually do to make sure that people only use a single standard for a token across a chain is that they create liquidity pools for people to swap between bridged representations of a token to the official one.
+There can be as many representations for a single token as there are bridges that support it. What protocols usually do to make sure that people only use a single standard for a token across a chain is that they create liquidity pools for people to swap between bridged representations of a token to the official one.
 
 This comes with the disadvantage of increasing fees and slippage for people bridging on top of fragmenting token liquidity through different standards.
 
@@ -39,11 +39,11 @@ Any bridge solution can technically be whitelisted to mint the canonical represe
 
 ### Bridge Limits
 
-This system comes however at greater risks for the protocol, as if a whitelisted bridge got exploited by a hacker, the hacker could mint itself an infinite amount of bridge tokens to get the canonical token on the associated chains.
+This system comes however at greater risks for the protocol. If a whitelisted bridge got exploited by a hacker, the hacker could mint itself an infinite amount of bridge tokens to get the canonical token on the associated chains.
 
 To limit the risk associated with each bridge, a total and hourly cap on the quantity of each token that can be bridged to & from specific networks can be specified directly in the smart contracts of each token.
 
-This means that for instance on some chains, it's not possible to bridge more than 10k agEUR per hour and 1m agEUR overall using LayerZero. This guarantees that in case of a bridge hack, the exposure of the protocol would remain limited to what can be bridged for a couple of hours and losses would be relatively small.
+For instance, it's not possible to bridge on some chains more than 10k agEUR per hour and 1m agEUR overall using LayerZero. This guarantees that in case of a bridge hack, the exposure of the protocol would remain limited to what can be bridged for a couple of hours.
 
 Limits can be set by Angle governance for each chain, for each token and for each bridge solution relatively to the amount of the given token circulating on the chain.
 
