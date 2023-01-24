@@ -6,7 +6,7 @@ description: How to buy agEUR using a credit card or a bank transfer
 
 ## Buying agEUR with credit card or bank transfer
 
-agEUR is supported by a wide range of on-ramp partners which make it accessible from a simple credit card payment or bank transfer. Our on/off-ramp partners include:
+agEUR is supported by a wide range of on-ramp providers which make it accessible from a simple credit card payment or bank transfer. Supported on/off-ramp solutions include:
 
 - Mt Pelerin
 - Transak
@@ -30,3 +30,4 @@ If you want to spend agEUR or get EUR back to your bank account, you have a few 
 
 - Send money back directly to your bank account through one of our off-ramp partners listed above.
 - Spend it through [Mover](https://faq.viamover.com/what-does-mover-do) or [Fizen](https://fizen.io/) crypto debit cards
+- Swap your agEUR to a token which can be cheaply off-ramped (like EURe) as described [in this guide](../../use-cases/ageur-power-usecase.md#withdrawing-ageur-to-a-bank-account)
