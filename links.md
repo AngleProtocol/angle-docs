@@ -62,13 +62,15 @@ description: Quick access to everything you need to know about Angle
 
 ### Custody
 
-- [Anchorage](https://www.anchorage.com/)
-- [Fireblocks](https://fireblocks.com)
+- [Anchorage](https://www.anchorage.com/): ANGLE
+- [Fireblocks](https://fireblocks.com): agEUR (Ethereum, Polygon)
+- [DFNS](https://www.dfns.co): agEUR (Ethereum, Polygon)
 
 ### Safety Reviews
 
 - [DeFiSafety](https://www.defisafety.com/app/pqrs/482)
 - [CryptoRisks Team](https://cryptorisks.substack.com/p/ageur-angle-protocol)
+- [Exponential DeFi](https://exponential.fi/protocols/9c12131c-0c5e-4e5e-8c75-4059e021a529)
 
 ### Pricing
 
@@ -79,6 +81,7 @@ description: Quick access to everything you need to know about Angle
 
 - [Chainlink agEUR/USD Feed - Polygon](https://polygonscan.com/address/0x9b88d07B2354eF5f4579690356818e07371c7BeD)
 - [Superfluid](https://app.superfluid.finance)
+- [LlamaPay](https://llamapay.io)
 
 ### Yield
 
