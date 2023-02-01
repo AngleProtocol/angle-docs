@@ -157,4 +157,4 @@ Keepers 是一个比较困难去理解的概念，但它不至于到非常复杂
 
 ### 想了解更多？加入我们的社群吧！📐
 
-[Twitter](https://twitter.com/AngleProtocol) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)
+[Twitter](https://twitter.com/AngleDevs) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)

@@ -60,4 +60,4 @@ Super tokens 是在 Superfluid 机制里所封装（wrap）的代币，以赋予
 
 ## 想了解更多？加入我们的社群吧！📐
 
-[Twitter](https://twitter.com/AngleProtocol) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)
+[Twitter](https://twitter.com/AngleDevs) | [Discord](https://discord.gg/9EKFec2MBm) | [Docs](https://docs.angle.money/)
