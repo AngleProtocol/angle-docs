@@ -56,9 +56,9 @@ description: Quick access to everything you need to know about Angle
 
 ### On/off-ramp
 
-- [Wert](https://widget.wert.io/default/widget/?commodity=agEUR&blockchain=Ethereum)
-- [Transak](https://transak.com/)
+- [Transak](https://global.transak.com/?apiKey=19f99004-7aee-40ff-93c6-7676a2c002ed&networks=ethereum,polygon&defaultCryptoCurrency=agEUR&cryptoCurrencyList=agEUR&productsAvailed=BUY,SELL)
 - [Mt Pelerin](https://www.mtpelerin.com/sell-crypto)
+- [Wert](https://widget.wert.io/default/widget/?commodity=agEUR&blockchain=Ethereum)
 
 ### Custody
 
