@@ -115,6 +115,7 @@ description: Quick access to everything you need to know about Angle
 - [Uniwap V3 agEUR - FRAX](https://info.uniswap.org/#/pools/0x8ce5796ef6b0c5918025bcf4f9ca908201b030b3)
 - [Sushiswap ANGLE - ETH](https://analytics.sushi.com/pairs/0xfb55af0ef0dcdec92bd3752e7a9237dfefb8acc0)
 - [Sushiswap agEUR - ANGLE](https://analytics.sushi.com/pairs/0x1f4c763bde1d4832b3ea0640e66da00b98831355)
+- [Uniswap V3 agEUR - EUROe (0.01%)](https://info.uniswap.org/#/pools/0x820802Fa8a99901F52e39acD21177b0BE6EE2974)
 - [Uniswap V3 agEUR - USDC (0.05%)](https://info.uniswap.org/#/pools/0x7ed3f364668cd2b9449a8660974a26a092c64849)
 - [Uniswap V3 agEUR - ETH (0.3%)](https://info.uniswap.org/#/pools/0x9496d107a4b90c7d18c703e8685167f90ac273b0)
 - [Arrakis / Gelato agEUR - USDC (0.01%)](https://beta.arrakis.finance/#/vaults/0xEDECB43233549c51CC3268b5dE840239787AD56c)
