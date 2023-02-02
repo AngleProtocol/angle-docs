@@ -6,7 +6,7 @@ description: Use Angle on different chains and layers
 
 Angle is a cross-chain protocol that allows the native issuance of its stablecoins (also called agTokens) on different chains.
 
-To make sure that agTokens can easily be bridged from one chain to another and that the UX for interacting with the protocol remains smooth while keeping high security standards, the protocol relies on a custom bridge infrastructure.
+To make sure that Angle stablecoins can easily be bridged from one chain to another and that the UX for interacting with the protocol remains smooth while keeping high security standards, the protocol relies on a custom bridge infrastructure.
 
 {% hint style="info" %}
 Angle related contract addresses across different chains and L2s can be found [here](https://developers.angle.money/overview/smart-contracts).

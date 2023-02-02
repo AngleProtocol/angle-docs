@@ -101,7 +101,5 @@
   - [🇯🇵 Japanese - 日本語](resources/international/japanese/README.md)
     - [Angle FAQ](resources/international/japanese/faq.md)
     - [Angle プロトコルの紹介](resources/international/japanese/angle-intro-japanese.md)
-  - [🇻🇳 Vietnamese - tiếng-việt](resources/international/vietnamese/README.md)
-    - [Whitepaper](resources/international/vietnamese/whitepaper.md)
   - [🇹🇷 Turkish](/resources/international/turkish/README.md)
   - [🇪🇸 Spanish](/resources/international/spanish/README.md)

@@ -8,16 +8,15 @@ description: Giving the protocol access to price feeds
 
 - Angle combines Uniswap V3 Time Weighted Average Price \(TWAP\) using a 10 minutes time window with Chainlink oracles to provide price feeds for each collateral/stablecoin pair.
 - If Uniswap's value differs from that of Chainlink, the protocol chooses the value which is most at its advantage.
+- Angle Core Module may be paused for the 2 blocks following each oracle update to allow whitelisted arbitrageurs to arb agEUR and share profits with the protocol
 
 ## 🔮 Angle's Need for Oracles
 
 Angle Protocol lets people swap their collateral against the protocol's native stablecoins \(minting\). It also allows Hedging Agents to take leveraged long positions through perpetual futures on a collateral/stablecoin pair. The protocol needs to be able to access price feeds for all the supported collateral/stablecoin pairs: it does so using oracles.
 
-For instance, if EUR and CHF stablecoins are supported, and if, for each of these, wETH and wBTC are used as collateral, then the protocol needs to be able to have the following oracle feeds: wBTC/EUR, wBTC/CHF, wETH/EUR, wETH/CHF.
-
 ## 🎨 Angle's Oracle Design
 
-Angle uses a combination of Chainlink and Uniswap V3 TWAP oracles with a 10 minutes time window. The idea is that whenever there is a need for an oracle value, the protocol chooses between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
+Angle uses a combination of Chainlink and Uniswap V3 TWAP oracles with a 10 minutes time window. Whenever there is a need for an oracle value, the protocol chooses between the output of the Uniswap feed and the Chainlink feed that is most at the advantage of the protocol.
 
 For instance, for a mint transaction using collateral, Angle keeps the lowest value between Chainlink and Uniswap. But for a burn transaction, the protocol keeps the highest one. If Uniswap's feed price for 1 wETH is 1000€ and if Chainlink's feed price is 990 €. Then, a user could get 990 agEUR with 1 wETH, and 1 wETH from 1000 agEUR.
 
@@ -47,6 +46,20 @@ The fact that both Uniswap and Chainlink oracles are used allows to take a sprea
 A high spread between Chainlink and Uniswap value is equivalent to taking more important transaction fees. This is likely to happen in case of high volatility of the collateral, and thus in situations where frontrunning risk is higher.
 {% endhint %}
 
+## Automatic Pausing and agEUR Arbitrage Profit Sharing
+
+On a similar note to front-running, since agEUR can be minted at oracle value, after each oracle update, the value of agEUR through the Core module may not be the same as its value on other liquidity pools: Angle may be right, but it is wrong with respect to others. This opens the protocol to some arbitrages which can lose funds out of this.
+
+If at t0, 1 agEUR = 1 USDC, both on Chainlink and on a Uniswap V3 agEUR-USDC pool. At t1, Chainlink updates its oracle price and the Core Module considers that 1 agEUR = 1.01 USDC. At this point, there is a moment when the Uniswap V3 pool is still priced at 1 agEUR = 1 USDC and the following arbitrage opportunity is available: 1 agEUR → 1.01 USDC (Core module), 1.01 USDC → 1.01 agEUR (Uniswap pool) resulting in a 1% profit.
+
+The Core Module implements a solution to mitigate this issue: it consists in restricting access to the Core module (mint and burn) to only certain whitelisted addresses during the two blocks (24s) that follow an oracle update. This essentially “offers” these whitelisted addresses the arbitrage opportunity, in return for a share of their profits to be redirected to the protocol.
+
+In practice, oracle contracts of the Core module are paused for the two blocks that follow each update of the EURUSD feed, unless the transaction origin is a whitelisted address. A DAO-controlled [registry contract](https://etherscan.io/address/0xc48B15492A4c4F48808576f6fCbC6dea9388E942) is responsible for containing the whitelist.
+
+{% hint style="info" %}
+For more details on this MEV-mitigation solution at the oracle level, check out [this article](https://www.angle.money/#/blog/announcements/taking-profits-back-from-mev-bots).
+{% endhint %}
+
 ## ✊ Flash Loans Resistance
 
-The oracle values taken by Angle are not manipulable within a block. UniswapV3 TWAP are constant in a given block, and Chainlink values, given the decentralized nature of the system, cannot be manipulated. To this extent, it is going to be impossible with a flash loan, in a single block, to manipulate the price and make profits using Angle.
+The oracle values taken by Angle Core Module are not manipulable within a block. UniswapV3 TWAP are constant in a given block, and Chainlink values, given the decentralized nature of the system, cannot be manipulated. To this extent, it is impossible with a flash loan, in a single block, to manipulate the price and make profits using Angle.

@@ -18,6 +18,10 @@ Angle Core module is a set of smart contracts of the Angle Protocol designed to 
 
 Yes, Angle Core module smart contracts have been audited by Chainsecurity and Sigma Prime. The code and audits have been published in [our repository](https://github.com/AngleProtocol/angle-core). They can also be accessed in the [Audits section](../resources/audits/) of this docs.
 
+## What stablecoins are supported by Angle Core module?
+
+While the principle of the Core module could work for any stablecoin, it is for the moment only used for agEUR, Angle's Euro stablecoin. agEUR issued by the Core Module is interoperable with the agEUR from the other protocol's modules.
+
 ## What collateral are accepted by Angle Core module?
 
 Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens on the Angle App, and they will be swapped against one of these collaterals.

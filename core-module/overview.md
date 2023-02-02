@@ -4,10 +4,15 @@ description: The Core Concepts of Angle Core module
 
 # 🔭 Angle Core Module Overview
 
-## 🔎 TL;DR
+Angle Core Module relies on three groups of stakeholders: stable seekers and holders, Hedging Agents and Standard Liquidity Providers.
 
-- It relies on three groups of stakeholders: stable seekers and holders, Hedging Agents and Standard Liquidity Providers.
-- It can be used to issue multiple stablecoins, each with its own separate pools of backing collateral.
+{% hint style="info" %}
+While the Angle Core module is currently only used for agEUR, it could be generalized to other stablecoins. To this extent, the concepts here are not described for agEUR specifically, but for a stablecoin in general.
+{% endhint %}
+
+{% hint style="info" %}
+Smart contract addresses associated to the Core module for agEUR can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts).
+{% endhint %}
 
 ## Three Groups of Stakeholders
 

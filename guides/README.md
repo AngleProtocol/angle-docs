@@ -4,7 +4,7 @@ description: Angle Protocol Guides
 
 # 🎓 Guides
 
-In this section, you will find some preliminary guides to get onboarded to DeFi and to agEUR, Angle's EUR stablecoin.
+In this section, you will find some preliminary guides to get onboarded to DeFi and to the different functionalities of the Angle Protocol.
 
 {% content-ref url="newbie.md" %}
 [newbie.md](newbie.md)
@@ -25,5 +25,5 @@ The following section contains user guides for all of these use cases:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-The app presented here is developed by Angle Labs, Inc., a company contributing to the protocol. Anyone is welcome to build its app on top of Angle, and we'll make sure to promote and list any serious front interface of the protocol in this docs.
+The app presented here is developed by Angle Labs, Inc., a company contributing to the protocol. Anyone is welcome to build its app on top of Angle, and we'll make sure to promote any serious front interface of the protocol in this docs.
 {% endhint %}

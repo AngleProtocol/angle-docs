@@ -16,9 +16,9 @@ The protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools.
 For more details on how Uniswap V3 Liquidity Providers can be rewarded with ANGLE tokens, check [this guide](/guides/other/univ3-lp.md).
 {% endhint %}
 
-## Deposit, stake, or withdraw tokens as an SLP
+## Deposit, stake, or withdraw tokens as a SLP
 
-In the Earn page, tokens can be deposited to earn yield and over-collateralize agEUR. These funds are invested into DeFi strategies, and can be staked to earn additional ANGLE rewards.
+In the Earn page, tokens can be deposited to earn yield and over-collateralize agEUR through its Core module. These funds are invested into DeFi strategies, and can be staked to earn additional ANGLE rewards.
 
 When on the Earn page, click on the SanTokens anchor and select your pool. Then, you can deposit, stake, or withdraw your funds by selecting the token you want to use.
 

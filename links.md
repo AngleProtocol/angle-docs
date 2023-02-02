@@ -83,7 +83,7 @@ description: Quick access to everything you need to know about Angle
 - [Superfluid](https://app.superfluid.finance)
 - [LlamaPay](https://llamapay.io)
 
-### Yield
+### Yield - agEUR
 
 #### Ethereum
 
@@ -99,7 +99,7 @@ description: Quick access to everything you need to know about Angle
 - [Hundred Finance](https://hundred.finance/)
 - [Atlendis](https://app.atlendis.io/pools/0x712a20869e4630d50c37ba0dde9918676224f819b47e8e76eb46ab223056146a/deposit)
 
-### DEX
+### DEX - agEUR
 
 #### On Ethereum
 
