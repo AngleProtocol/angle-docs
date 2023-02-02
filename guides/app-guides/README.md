@@ -7,7 +7,7 @@ description: Find out how to use the Angle Protocol through the interface at htt
 In this section, you will learn how to play with the [app](https://app.angle.money) developed by Angle Labs, Inc. and more particularly to:
 
 - [Swap](/guides/app-guides/agEUR/swap.md), [borrow](/guides/app-guides/agEUR/borrow.md), [bridge](/guides/app-guides/agEUR/bridge.md), and [buy agEUR from credit card](agEUR/on-ramp-off-ramp.md)
-- Get [leverage](/guides/app-guides/trade/leverage.md) on your collateral from agEUR debt, or trade on-chain forex with EURUSD [Perpetuals](trade/perpetuals.md).
+- Get [leverage](/guides/app-guides/trade/leverage.md) on your collateral from stablecoin debt, or trade on-chain forex with EURUSD [Perpetuals](trade/perpetuals.md).
 - Invest in yield strategies and [stake your funds](earn/staking.md) to earn ANGLE tokens or other incentives.
 - [Buy ANGLE](ANGLE/buy.md) at the lowest price, [lock](ANGLE/lock.md) them to earn yield and [vote on rewards distribution](ANGLE/gauges-voting.md) and [governance proposals](ANGLE/snapshot-votes.md).
 

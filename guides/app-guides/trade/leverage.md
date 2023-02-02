@@ -2,18 +2,18 @@
 description: How to get leverage on crypto with Angle Borrowing module
 ---
 
-# ⚖️ Get leverage on crypto through agEUR debt
+# ⚖️ Get leverage on crypto through stablecoin debt
 
-The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR from crypto collateral **on different chains** and use it to **leverage your exposure to your collateral**.
+The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow Angle from crypto collateral **on different chains** and use it to **leverage your exposure to your collateral**.
 
-When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to leverage your exposition in the same transaction.
+When borrowing a stablecoin like agEUR, you can directly swap the borrowed stablecoin into more of the token originally used as collateral to leverage your exposition in the same transaction.
 
 ## Add collateral & get leverage
 
 Here are the steps to leverage your collateral exposure:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault.
-2. Select the type of vault to create, defined by the collateral and stablecoin token.
+2. Select the type of vault to create, defined by the collateral and stablecoin token. Note that depending on the collateral/stablecoin pair you choose, your price exposure may completely vary: like getting leverage using the ETH-agEUR pair is different from using the ETH-agGOLD pair: in one case you are short EUR, in the other case you are short GOLD.
 3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of additional exposure of collateral you want in the second input.
 5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
@@ -27,7 +27,7 @@ After the operation, this vault would have 60 LUSD as collateral and ~38.23 agEU
 
 ## Leverage your yield
 
-Some vaults accept yield-bearing tokens as collateral. The borrowing power of these vaults can be used to borrow agEUR and swap it for more of the yield-bearing tokens, effectively multiplying your returns.
+Some vaults accept yield-bearing tokens as collateral. The borrowing power of these vaults can be used to borrow Angle stablecoins and swap it for more of the yield-bearing tokens, effectively multiplying your returns.
 
 For example, if the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
 

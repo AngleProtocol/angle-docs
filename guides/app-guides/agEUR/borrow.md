@@ -1,26 +1,28 @@
 ---
-description: How to borrow agEUR from the Angle App
+description: How to borrow Angle stablecoins from the Angle App
 ---
 
 # 🏦 Borrow
 
-The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow agEUR from crypto collateral **on different chains**.
+The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow Angle stablecoins like agEUR from crypto collateral **on different chains**.
 
 Essentially, you open a vault with a specific token as collateral, and can get a stablecoin loan in exchange. If the value of the vault collateral goes below a certain amount compared to the value of your loan, you can get [liquidated](/borrowing-module/vaults/liquidations.md).
 
-When opening a vault, you can deposit any token and it will be automatically swapped into the selected vault collateral. When borrowing agEUR, you can directly swap the borrowed agEUR into more of the token originally used as collateral to get leverage. All of this is done in the same transaction.
+When opening a vault, you can deposit any token and it will be automatically swapped into the selected vault collateral. When borrowing a stablecoin, you can directly swap the borrowed stablecoin into more of the token originally used as collateral to get leverage. All of this is done in the same transaction.
 
 Learn more about the mechanisms [here](/borrowing-module/vaults/README.md#leveraging-collateral-exposure).
 
-In this guide, we look at how to **borrow agEUR** from a collateral deposit.
+{% hint style="info" %}
+The borrowing page functionalities are the same whether you're coming it to it for agEUR or another stablecoin. In this guide, we specifically look at agEUR borrowing use cases, but anything that is true for agEUR holds for others.
+{% endhint %}
 
-## Add Collateral & Borrow agEUR
+## Add Collateral & Borrow
 
-To borrow agEUR, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you are able to borrow up to a certain amount of stablecoins from the amount deposited.
+To borrow an Angle stablecoin, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you are able to borrow up to a certain amount of stablecoins from the amount deposited.
 
-For example, wETH LTV at 84% on Optimism means that if you deposit 1,000 € worth of wETH on Optimism, you can borrow up to 840 agEUR from this vault.
+For example, wETH LTV at 84% on Optimism for agEUR means that if you deposit 1,000 € worth of wETH on Optimism, you can borrow up to 840 agEUR from this vault.
 
-You can deposit any token you want in the app, and it will be swapped to the collateral token of the selected vault. You can also borrow agEUR in the same transaction that you deposit collateral to your vault. Once a vault is created, it is possible to deposit more collateral without borrowing more stablecoins, and the other way around.
+You can deposit any token you want in the app, and it will be swapped to the collateral token of the selected vault. You can also borrow a stablecoin in the same transaction that you deposit collateral to your vault. Once a vault is created, it is possible to deposit more collateral without borrowing more stablecoins, and the other way around.
 
 Here are the steps to follow to deposit collateral and borrow agTokens:
 
@@ -39,15 +41,15 @@ In the below example, 200 DAI are swapped to ~0.15 wETH to be deposited as colla
 A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
 {% endhint %}
 
-## Using a yield-bearing asset as collateral to borrow agEUR
+## Using a yield-bearing asset as collateral to borrow
 
 Some vaults have collateral tokens that earn a return for holders, like staked Curve LP tokens.
 
-Using these allow you to get paid while borrowing agEUR. Opening a vault with yield-bearing assets is similar, but one feature becomes much more valuable: the ability to deposit any token.
+Using these allow you to get paid while borrowing a stablecoin. Opening a vault with yield-bearing assets is similar, but one feature becomes much more valuable: the ability to deposit any token.
 
 In the case of yield-bearing assets, the tokens sent are swapped to the underlyings of the yield-bearing asset, and deposited in the platform they earn yield from. For example, in the case of Curve LP tokens, the underlyings are deposited on Curve, the LP tokens obtained staked on Convex, and used as collateral in a vault.
 
-All external rewards accumulated by the vault's staked collateral can be [claimed](#claiming-your-rewards) directly from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens and borrow agEUR.
+All external rewards accumulated by the vault's staked collateral can be [claimed](#claiming-your-rewards) from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens and borrow stablecoins from it.
 
 {% hint style="info" %}
 To check out all these steps, click on the `Transaction Details` on the right side of the screen.
@@ -89,6 +91,6 @@ You can monitor your vaults' health from the main Borrow page.
 
 ## Claiming your rewards
 
-As mentioned previously, staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can **claim all your vaults collateral rewards** directly **from the Angle App** in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
+Staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can **claim all your vaults collateral rewards** directly **from the Angle App** in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
 
 ![CLaim vaults rewards](../../../.gitbook/assets/claim-vault-rewards.png)

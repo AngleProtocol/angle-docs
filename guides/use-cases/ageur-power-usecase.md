@@ -24,10 +24,6 @@ A German or French resident working for an international DAO could for instance 
 
 ![Request create invoice](../../.gitbook/assets/request-create-invoice.png)
 
-Request invoices then look like that 👇
-
-![Request invoice](../../.gitbook/assets/request-invoice.png)
-
 ### Crypto Company / DAO side: pay contributor with agEUR from any token
 
 As a company, once you receive an invoice, you just have to send the required amount of agEUR to the specified address.

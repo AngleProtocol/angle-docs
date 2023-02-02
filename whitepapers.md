@@ -1,12 +1,10 @@
 ---
-description: Whitepapers of the Angle Protocol
+description: Whitepapers for the different modules and products of the Angle Protocol
 ---
 
 # 📖 Whitepapers
 
-This page gathers the whitepapers for the different modules and products linked to the Angle Protocol.
-
-Whitepapers are static documents explaining the concepts and inspiration behind the first versions of the modules of the protocol. The up-to-date source of truth for each module functionality is this documentation guide.
+Whitepapers are static documents explaining the concepts and inspiration behind the first versions of the modules of the protocol. The up-to-date source of truth for each module and product functionality is this documentation guide.
 
 {% hint style="info" %}
 You may find translations of these whitepapers in the [international](resources/international/README.md) section of this docs.

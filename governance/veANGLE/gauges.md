@@ -61,7 +61,7 @@ veANGLE stakers can therefore feel confident staking the maximum duration of 4 y
 
 The idea with Angle gauges is to incentivize different types of liquidity pools that can be useful to the protocol:
 
-- agEUR liquidity and markets
+- Angle stablecoins liquidity and markets
 - sanTokens
 - Liquidity pools on exchanges (like on Curve, on Uniswap)
 - Liquidity pools on other chains (like agEUR/USDC on Uniswap on Polygon for instance)
@@ -69,7 +69,7 @@ The idea with Angle gauges is to incentivize different types of liquidity pools 
 
 The gauge system can also be used to incentivize different things than staking contracts. For instance, incentives for Convex voters on Curve can be linked to a gauge (in fact an EOA or a multisig) where veANGLE owners decide to send some rewards, and the multisig would be responsible for placing the incentives on Votium.
 
-Overall, there is no restriction on which pools or pairs can have a gauge other than that they should pass the gauge governance vote. The idea is however that all gauges should have a link with the agEUR or the Angle protocol, as the governance token of the protocol is being distributed as incentive.
+Overall, there is no restriction on which pools or pairs can have a gauge other than that they should pass the gauge governance vote. The idea is however that all gauges should have a link with an Angle Protocol stablecoin (like agEUR) or the Angle protocol more generally, as the governance token of the protocol is being distributed as incentive.
 
 Given that a wide range of contracts can be considered Angle protocol gauges, the system distinguishes several gauge types:
 

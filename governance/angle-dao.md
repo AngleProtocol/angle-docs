@@ -25,6 +25,7 @@ In particular, it can make the following changes:
 - Upgrade oracles and other contracts throughout the system
 - Deploy the surplus of the protocol
 - Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
+- Launch new Angle Protocol products
 
 ## 🗣 Discussions and debates
 

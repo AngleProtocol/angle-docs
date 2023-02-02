@@ -14,7 +14,6 @@ Languages with translated content:
 
 - Russian
 - Chinese
-- Vietnamese
 - Japanese
 - Turkish
 - Spanish
@@ -27,10 +26,8 @@ If you spot a translation error please let us know on [Discord](https://discord.
 
 ## 🇨🇳 [Chinese](chinese/README.md)
 
-## 🇻🇳 [Vietnamese](vietnamese/README.md)
-
 ## 🇯🇵 [Japanese](japanese/README.md)
 
 ## 🇹🇷 [Turkish](turkish/README.md)
 
-## [Spanish](spanish/README.md)
+## 🇪🇸 [Spanish](spanish/README.md)

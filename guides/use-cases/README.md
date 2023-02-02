@@ -1,5 +1,5 @@
 ---
-description: Use cases of Angle and agEUR for individuals, companies and DAOs
+description: Use cases of Angle and its stablecoins for individuals, companies and DAOs
 ---
 
 # 🧩 Use cases

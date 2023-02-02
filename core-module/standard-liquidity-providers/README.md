@@ -48,7 +48,7 @@ This multiplier effect becomes less interesting the more SLPs bring collateral t
 
 ## 🥅 Slippage
 
-When the collateral ratio is too small, in order to guarantee that any owner of agEUR is able to redeem collateral with agEUR, SLPs can face a slippage when they exit.
+When the collateral ratio is too small, in order to guarantee that any stablecoin owner is able to redeem collateral with its stablecoin, SLPs can face a slippage when they exit.
 
 For instance if the slippage is 10%, then a SLP willing to get 100 of collateral back will only get back 90, and the 10 of collateral difference will never be recovered.
 

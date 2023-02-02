@@ -1,7 +1,5 @@
 # 🇷🇺 Russian Documents and Articles about Angle
 
-## Translations
-
 {% page-ref page="angle-introduction-article.md" %}
 
 {% page-ref page="faq.md" %}

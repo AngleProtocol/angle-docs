@@ -1,5 +1,5 @@
 ---
-description: How to bridge agEUR and ANGLE to different network with the Angle App
+description: How to bridge agEUR and ANGLE to different networks with the Angle App
 ---
 
 # 🌉 Bridging Angle tokens
