@@ -83,13 +83,15 @@ description: Quick access to everything you need to know about Angle
 - [Superfluid](https://app.superfluid.finance)
 - [LlamaPay](https://llamapay.io)
 
-### Yield - agEUR
+### Yield
 
 #### Ethereum
 
 - [Euler](https://app.euler.finance/)
-- [Yearn](https://yearn.finance/#/vault/0x5AB64C599FcC59f0f2726A300b03166A395578Da)
+- [Yearn 3EUR Vault](https://yearn.finance/vaults/1/0x82c83ddA32DB09F63F9A59A129278f3fdC3EeE67)
+- [Yearn agEUR-EUROC Vault](https://yearn.finance/vaults/1/0x321d570790fd2f109Fe4e55aa419Adf2fce0c842)
 - [StakeDAO](https://app.stakedao.org/0x9b8308742A0Faefbd7d39F7073eA07a328551eD4/strategies)
+- [Olympus Pro ANGLE Bonds](https://etherscan.io/address/0x476afb11a5105155f6b590d11d865280e3ef02b3)
 
 #### Polygon
 
@@ -99,7 +101,7 @@ description: Quick access to everything you need to know about Angle
 - [Hundred Finance](https://hundred.finance/)
 - [Atlendis](https://app.atlendis.io/pools/0x712a20869e4630d50c37ba0dde9918676224f819b47e8e76eb46ab223056146a/deposit)
 
-### DEX - agEUR
+### DEX
 
 #### On Ethereum
 
