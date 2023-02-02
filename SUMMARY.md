@@ -7,6 +7,7 @@
 - [📖 Whitepapers](whitepapers.md)
 - [📒 Glossary](global-glossary.md)
 - [🔗 Quick Links](links.md)
+- [🖼 Stablecoins](stablecoins.md)
 - [🎓 Guides](guides/README.md)
 
   - [🚶 First Steps in Crypto](guides/newbie.md)
