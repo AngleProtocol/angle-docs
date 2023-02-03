@@ -32,7 +32,7 @@ Angle 协议的目标是要让 DeFi 更广泛地被使用，所以我们要创�
 
 Angle 协议：是一款被设计成超额抵押和加速资本运转的去中心化稳定币协议，它可以被用来发行任何类型的稳定币。它能实现稳定资产与抵押物之间，利用其在预言机的价格进行完整的兑换（你能够用 1 个抵押物的价值来兑换 1 个等值的稳定币）。如今已经发布了 agEUR，一个设计健全以及流动性佳的欧元稳定币。
 
-[Angle App](https://app.angle.money/#/perpetuals) | [Twitter](https://twitter.com/AngleDevs) | [Discord](https://discord.gg/bsfZjvgx2s)
+[Angle App](https://app.angle.money/#/perpetuals) | [Twitter](https://twitter.com/AngleProtocol) | [Discord](https://discord.gg/bsfZjvgx2s)
 
 ### 关于 Superfluid
 

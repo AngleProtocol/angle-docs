@@ -22,7 +22,7 @@ description: Quick access to everything you need to know about Angle
 
 ## Social
 
-- 🐦 [Twitter](https://twitter.com/AngleDevs)
+- 🐦 [Twitter](https://twitter.com/AngleProtocol)
 - 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 - 📠 [Telegram](https://t.me/AngleAnnouncements)
 
