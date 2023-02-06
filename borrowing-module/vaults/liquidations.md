@@ -14,7 +14,7 @@ Liquidations in this Borrowing module are designed to be the most borrower frien
 
 - Vaults with a health factor below 1 risk getting liquidated
 - Liquidated vaults can lose part or all of their collateral. Owners of such vaults however get to keep the stablecoins they borrowed
-- Angle comes with its unique set of liquidation features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a discount booster for veANGLE holders which make this system overall more borrower friendly than alternatives.
+- Angle comes with its unique set of liquidation features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a potential discount booster for veANGLE holders which overall make this system more borrower friendly than alternatives.
 
 ## How liquidations work
 
