@@ -78,7 +78,12 @@
 
 ## Side Products
 
-- [🌲 Merkl](side-products/merkl.md)
+- [🥨 Merkl](side-products/merkl/README.md)
+  - [⛓ Integration Helpers](side-products/merkl/helpers.md)
+  - [🧑‍💻 Contracts Addresses](side-products/merkl/contracts.md)
+  - [🌊 Liquidity Provider Guide](side-products/merkl/lp-guide.md)
+  - [💰 Incentivizor Guide](side-products/merkl/incentivizor-guide.md)
+    - [Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
 
 ## Resources
 
