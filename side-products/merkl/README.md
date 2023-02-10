@@ -12,10 +12,8 @@ Incentivizors enjoy **a full flexibility** on how they distribute their incentiv
 
 Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. For the list of chains and AMMs supported by Merkl (along with other info for each chain), check out [this page](./helpers.md).
 
-Getting rewarded incurs no risk of funds or other smart contract interactions for LPs, and they can retain the custody of their liquidity while still receiving rewards. They can customize their positions to maximize their earnings from fees and incentives, enjoying all possibilities enabled by concentrated liquidity type of AMMs.
-Merkl is compatible with liquidity position managers like [Gamma](https://app.gamma.xyz) or [Arrakis](https://www.arrakis.finance). This means that it's possible to provide liquidity via Gamma on a pool and to be rewarded without taking any further action (no need to stake the Gamma or Arrakis token).
-
-The list of liquidity position managers supported for each AMM and chain can be found on [this page](./helpers.md).
+Getting rewarded incurs no risk of funds and requires no specific smart contract interactions for LPs: they can retain the custody of their liquidity while still receiving rewards. They can also customize their positions to maximize their earnings from fees and incentives, enjoying all possibilities enabled by concentrated liquidity type of AMMs.
+Merkl is compatible with [liquidity position managers](./helpers.md) like [Gamma](https://app.gamma.xyz) or [Arrakis](https://www.arrakis.finance). This means that it's possible to provide liquidity via Gamma on a pool and to be rewarded without taking any further action (no need to stake the Gamma or Arrakis token).
 
 Merkl has a low maintenance fee applied to incentives. Excluding gas when claiming rewards, there is no cost to use the platform for Liquidity Providers.
 
@@ -23,15 +21,17 @@ Merkl has a low maintenance fee applied to incentives. Excluding gas when claimi
 
 ## Mechanism
 
-Merkl is based on an off-chain script that looks on a given chain into the on-chain data for the pools that are incentivized and computes rewards for all the stakeholders of these pools during the period for which the script is ran. Based on this, the script aggregates all reward distribution data in a Merkle tree, then compressed into a Merkle root pushed on-chain to allow LPs to claim their rewards.
+Merkl is based on an off-chain script that looks on a given chain into the on-chain data for the pools that are incentivized and computes rewards for all the stakeholders of these pools. Based on this, the script aggregates all reward distribution data in a Merkle tree, then compressed into a Merkle root pushed on-chain to allow LPs to claim their rewards.
+
+The script is ran regularly and for specific periods of time each time. This means that every time the script is ran, it only looks at the on-chain data related specifically to this period of time.
 
 ### Customizable Incentivization Formula
 
-Precisely speaking, for a given pool with two tokens (A and B), the script looks into the swaps that took place on the pool and computes a reward score for each position according to:
+Precisely speaking, for a given pool with two tokens (A and B), the script looks into the swaps that took place on the pool during the period for which it is ran and computes a reward score for each position according to:
 
-- the fees earned by the position, which represent the liquidity of the position used by the pool
-- the share of token A held by the position
-- the share of token B held by the position
+- the fees earned by the position during the period, which represent the liquidity of the position used by the pool
+- the share of token A held by the position during swaps on the pool
+- the share of token B held by the position during swaps on the pool
 
 A different weight, chosen by the incentivizor, is attributed to each parameter. On top of that, incentivizors can further customize the distribution of the rewards for the pool by optionally allowing addresses which hold a specific token (veANGLE for example) to earn boosted rewards.
 
@@ -40,6 +40,24 @@ The exact distribution formula for a position in such a pool during a time perio
 $$
 [w_{\texttt{fees}} \times \frac{\texttt{fees earned by the position}}{\texttt{fees earned by the pool}}+ w_{\texttt{A}} \times \frac{\texttt{A in position}}{\texttt{A in pool}}+ w_{\texttt{B}} \times \frac{\texttt{B in position}}{\texttt{B in pool}} ] \times \texttt{optional gov token boost}
 $$
+
+{% hint style="info" %}
+For big pools with a lot of swaps, the script may not look at data from all the swaps that occured during the given time period, but only sample the biggest of them.
+{% endhint %}
+
+### Liquidity Position Managers
+
+As detailed in the introduction, Merkl is compatible with liquidity position managers actively maintaining positions for LPs on concentrated liquidity AMMs. The way the script works for such managers (or wrappers) is that it does not differentiate managers from other "normal" addresses when first computing rewards: it just splits at the end the rewards going to the position manager address proportionally between all its users.
+
+With this, users indirectly providing liquidity through position managers can still claim their rewards directly from Merkl contracts.
+
+While this is complex to do with traditional staking contracts, with Merkl, incentivizors can add any supported liquidity position manager to their distributions. The system is off-chain which means it can be customized and new types of position managers can easily be supported by the system. For instance, it'd be possible to directly reward users of protocols that already use position manager tokens on other contracts (like as a collateral to borrow).
+
+{% hint style="info" %}
+The list of liquidity position managers supported for each AMM and chain can be found on [this page](./helpers.md). If you want to add support for a type of liquidity position manager that is not supported or directly reward the underlying users of a smart contract that indirectly controls AMM liquidity, drop a message on the Merkl channel of the [Angle Discord server](https://discord.gg/ByFYzSUt).
+{% endhint %}
+
+Overall, if you're an incentivizor, having LPs go through manager contracts choosing a range and rebalancing positions on behalf of their users may in the end improve the pool's liquidity and how they are maintained over time. It may also make providing liquidity and getting rewarded for it more accessible.
 
 ### Distribution Epochs
 
@@ -55,11 +73,13 @@ As the script on which Merkl is based aggregates all the pools on all the suppor
 
 In addition, as the system relies on a single Merkle root to handle distribution per chain, liquidity providers can claim all their token rewards (from potentially different pools on virtually many concentrated-liquidity AMMs) in just one transaction.
 
+Note that the script is compatible with multiple incentivizors incentivizing (with potentially different parameters) LPs of the same pool. If you are only providing liquidity on a single pool, when claiming your rewards, you will claim from all the incentivizors who incentivized the pool.
+
 There is no need for liquidity providers to claim rewards at every epoch. Every Merkle Tree update takes into account the previous state of the reward tree and just adds new rewards on top (which is then reflected in the published Merkle root). Unclaimed rewards for an epoch can be claimed at any time in the future, along with all the rewards distributed in between.
 
 ### Dispute Periods
 
-The script computing rewards and updating the reward Merkle root on-chain is ran by Angle Labs. It relies on an open source codebase available [here](TODO.com).
+The script computing rewards and updating the reward Merkle root on-chain is ran by Angle Labs. It relies on an open source codebase available [here](https://github.com/AngleProtocol/merkl-calculator).
 
 Merkle roots pushed on-chain may be based on off-chain computations, any stakeholder in the ecosystem may fetch on-chain data to run the script and verify the results sent.
 
@@ -73,7 +93,7 @@ Dispute token, amount, and length can be obtained by directly querying the contr
 
 Merkl is free to use for liquidity providers claiming rewards. There is a maintenance fee of 3% applied to incentives that are sent by incentivizors.
 
-This fee can be waived for pools which contain some specific whitelisted tokens. In particular, there is no fee for incentives sent to reward pools which have agEUR or another Angle Protocol stablecoin in it.
+This fee can be waived for pools which contain some specific approved tokens. In particular, there are no fees for incentives sent to reward pools which have agEUR or another Angle Protocol stablecoin in it.
 
 ## Resources
 
@@ -92,6 +112,7 @@ If you simply want to use Merkl, check out these guides to [make the best of Mer
 - [Merkl App](https://merkl.angle.money)
 - [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
 - [Smart contracts addresses](helpers.md#smart-contracts)
-- [Script repository](TODO.md)
-- [Merkle Tree lists](TODO.md)
+- [Script repository](https://github.com/AngleProtocol/merkl-calculator)
+- [Merkle Tree lists](https://github.com/AngleProtocol/merkl-rewards)
+- [Merkl Subgraph](https://github.com/AngleProtocol/merkl-rewards)
 - [Disclaimer for incentivizors](incentivizor-tc.md)
