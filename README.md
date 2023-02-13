@@ -73,6 +73,10 @@ Some products developed for the Angle Protocol can also bring value to the wider
 
 This is notably the case of [Merkl](./side-products/merkl/README.md.md), an incentivization framework for Uniswap V3 liquidity ran by Angle Labs.
 
+## 🖼 Branding
+
+If you're writing an article, creating designs and animations about Angle, check out this [assets repository](https://github.com/AngleProtocol/angle-assets) with all the visual elements about the Angle brand, including logos, icons and images.
+
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
 This documentation portal is maintained by Angle Labs, Inc. It is built to be the up-to-date source of truth for Angle Protocol production contracts and for Angle Labs products. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.

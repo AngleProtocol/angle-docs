@@ -90,7 +90,6 @@
 - [🔐 Audits](resources/audits/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [📊 Angle Analytics](resources/analytics.md)
-- [🖼 Branding](resources/branding/README.md)
 - [🌎 International](resources/international/README.md)
 
   - [🇷🇺 Russian - русский](resources/international/russian/README.md)
