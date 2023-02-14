@@ -17,7 +17,7 @@ Merkl is compatible with [liquidity position managers](./helpers.md) like [Gamma
 
 Merkl has a low maintenance fee applied to incentives. Excluding gas when claiming rewards, there is no cost to use the platform for Liquidity Providers.
 
-![Merkl by Angle Labs](/.gitbook/assets/merkl-sharing-visual.jpg)
+![Merkl by Angle Labs](/.gitbook/assets/angle-merkl-sharing-visual.png)
 
 ## Mechanism
 
