@@ -6,14 +6,14 @@ description: Which stablecoins are live for Angle, for which chain and with whic
 
 | Features                     | agEUR | agGOLD |
 | ---------------------------- | ----- | ------ |
-| Core Module - Ethereum       | ✅    | 𐄂      |
+| Core Module - Ethereum       | ✅    | ❌     |
 | Borrowing Module - Ethereum  | ✅    | ✅     |
-| Borrowing Module - Polygon   | ✅    | 𐄂      |
-| Borrowing Module - Optimism  | ✅    | 𐄂      |
-| Borrowing Module - Arbitrum  | ✅    | 𐄂      |
-| Borrowing Module - Avalanche | ✅    | 𐄂      |
+| Borrowing Module - Polygon   | ✅    | ❌     |
+| Borrowing Module - Optimism  | ✅    | ❌     |
+| Borrowing Module - Arbitrum  | ✅    | ❌     |
+| Borrowing Module - Avalanche | ✅    | ❌     |
 | Flash Loans                  | ✅    | ✅     |
-| Bridge Setup with LayerZero  | ✅    | 𐄂      |
+| Bridge Setup with LayerZero  | ✅    | ❌     |
 | AMO - Curve Ethereum         | ✅    | ✅     |
 
 {% hint style="success" %}
