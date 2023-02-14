@@ -46,7 +46,7 @@ Finalized votes are then implemented by a multi-sig composed of community member
 Angle Protocol is available on different EVM compatible chains. There is one multisig per chain, each with the same signers detailed below. The addresses of the multisigs on all the different networks supported by Angle can be found [here](https://developers.angle.money/overview/smart-contracts).
 
 {% hint style="warning" %}
-A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will vote in-line with what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for. Having a multisig enforcing proposals is hence tantamount to having a `Timelock` contract for the protocol that can prevent the enforcement of malicious governance proposals.
+A signature from the multi-sig is required to enforce the outcomes of the Snapshot votes. In almost all cases, it will implement what is voted by veANGLE holders. However, proposals considered to be clear open attacks against the protocol will not be signed for. Having a multisig enforcing proposals is hence tantamount to having a `Timelock` contract for the protocol that can prevent the enforcement of malicious governance proposals.
 {% endhint %}
 
 ### Governance Multi-Sig Signers
