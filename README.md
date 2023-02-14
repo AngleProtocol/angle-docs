@@ -22,16 +22,12 @@ The protocol consists of several different modules, or sets of smart contracts, 
 
 The protocol is also engaged into [Direct Deposit Modules](other/amo.md), also called Algorithmic Market Operations (AMOs), allowing it to boostrap liquidity for agTokens in other protocols.
 
-### Stablecoins
+### [Stablecoins](./stablecoins.md)
 
 Angle is so far behind two stablecoins:
 
 - agEUR: pegged to the value of the Euro - €.
 - agGOLD: pegged to the value of 1 Troy ounce of Gold (1 oz t = 0.031kg).
-
-{% hint style="info" %}
-Not all modules are activated for all Angle stablecoins. [This page](./stablecoins.md) summarizes what is available for which stablecoin.
-{% endhint %}
 
 ### [Core module](core-module/overview.md)
 
