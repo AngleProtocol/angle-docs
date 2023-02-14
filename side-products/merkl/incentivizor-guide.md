@@ -14,7 +14,7 @@ Regardless of the method you are using, before depositing an incentive, make sur
 [incentivizor-tc.md](incentivizor-tc.md)
 {% endcontent-ref %}
 
-## On [merkl.angle.money](https://merkl.angle.money)
+## 💻 On [merkl.angle.money](https://merkl.angle.money)
 
 You just need to fill the address of the pool you want to incentivize, the address of the reward token and the amount of rewards to send over the chosen duration of the distribution.
 
