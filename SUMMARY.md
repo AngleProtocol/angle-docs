@@ -76,13 +76,22 @@
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
+## Side Products
+
+- [🥨 Merkl](side-products/merkl/README.md)
+  - [⛓ Integration Helpers](side-products/merkl/helpers.md)
+  - [🌊 Liquidity Provider Guide](side-products/merkl/lp-guide.md)
+  - [💰 Incentivizor Guide](side-products/merkl/incentivizor-guide.md)
+    - [✍️ Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
+  - [📒 Integration Guide](side-products/merkl/integration-guide.md)
+
 ## Resources
 
 - [🔐 Audits](resources/audits/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [📊 Angle Analytics](resources/analytics.md)
-- [🖼 Branding](resources/branding/README.md)
 - [🌎 International](resources/international/README.md)
+
   - [🇷🇺 Russian - русский](resources/international/russian/README.md)
     - [Whitepaper](resources/international/russian/ru-whitepaper.md)
     - [Angle FAQ](resources/international/russian/faq.md)
