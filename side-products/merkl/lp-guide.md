@@ -1,10 +1,10 @@
 ---
-description: Guide for liquidity providers
+description: Guide for Liquidity Providers on concentrated liquidity AMMs to enjoy Merkl
 ---
 
 # 🌊 Liquidity Provider Guide
 
-As a liquidity provider, Merkl lets you customize your position to optimize your returns on AMMs like Uniswap V3 according to how incentivizors set up the distribution formula for the pool you're on.
+As a Liquidity Provider, Merkl lets you customize your position to optimize your returns on AMMs like Uniswap V3 according to how incentivizors set up the distribution formula for the pool you're on.
 
 All pools using Merkl are listed at [merkl.angle.money](https://merkl.angle.money). There are links to the pools and to the supported liquidity managers for you to deposit your funds. [merkl.angle.money](https://merkl.angle.money) may not be the only place where to find Merkl pools and there may be solutions relying on Merkl under the hood on other dApps.
 
@@ -20,7 +20,7 @@ For example, a tight range will virtually provide more liquidity and earn more f
 Once you have provided liquidity, no additional steps are required to start receiving your rewards, and you will be able to claim them directly from the Merkl page, or from any other app which integrates Merkl. In particular, you will not need to stake your tokens anywhere else.
 If you were providing liquidity on a pool (directly on the AMM or through a liquidity positon manager) before the incentive was created on Merkl, you will also be eligible to claim your rewards when they are posted.
 
-Rewards for liquidity providers on Merkl do not increase block by block, but are posted at [a frequency](./helpers.md#🔗-supported-amms-and-chains) which depends on the chain.
+Rewards for Liquidity Providers on Merkl do not increase block by block, but are posted at [a frequency](./helpers.md#🔗-supported-amms-and-chains) which depends on the chain.
 
 {% hint style="info" %}
 Note that rewards can be claimed to your address from any other address. If you are integrating Merkl as a smart contract and don't want rewards to be claimed on your behalf, you can call the `toggleOnlyOperatorCanClaim` function on the `Distributor` contract (address [here](./helpers.md#🧑‍💻-smart-contracts)).

@@ -82,7 +82,7 @@
   - [⛓ Integration Helpers](side-products/merkl/helpers.md)
   - [🌊 Liquidity Provider Guide](side-products/merkl/lp-guide.md)
   - [💰 Incentivizor Guide](side-products/merkl/incentivizor-guide.md)
-    - [✍️ Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
+    - [🖋 Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
   - [📒 Integration Guide](side-products/merkl/integration-guide.md)
 
 ## Resources
