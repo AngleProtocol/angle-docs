@@ -9,7 +9,7 @@ description: Helpers to use and integrate Merkl
 | Supported AMMs & Chains | Epoch Time | Supported Liquidity Managers |
 | ----------------------- | ---------- | ---------------------------- |
 | UniswapV3 - Ethereum    | 24 hours   | Gamma, Arrakis               |
-| UniswapV3 - Polygon     | 8 hours    | Gamma, Arrakis               |
+| UniswapV3 - Polygon     | 24 hours   | Gamma, Arrakis               |
 | UniswapV3 - Optimism    | 24 hours   | Gamma, Arrakis               |
 | UniswapV3 - Arbitrum    | 24 hours   | Gamma, Arrakis               |
 
