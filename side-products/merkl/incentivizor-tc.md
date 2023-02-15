@@ -2,7 +2,7 @@
 description: Please be aware of the following before depositing an incentive on Merkl
 ---
 
-# 🖋 Merkl Incentivizor Disclaimer
+# 🖋 Incentivizor Disclaimer
 
 1. If you are specifying an invalid pool address or a pool from an AMM that is not marked as supported, your rewards will not be taken into account and you will not be able to recover them.
 2. If you are adding a liquidity position manager address corresponding to a solution that is not supported by Merkl, it will not be taken into account by the script.

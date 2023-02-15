@@ -41,6 +41,10 @@ In the below example, 200 DAI are swapped to ~0.15 wETH to be deposited as colla
 A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
 {% endhint %}
 
+Note that once a vault is opened, you can monitor its health and status from the main Borrow page. From there, you can also choose to add collateral or borrow more from it. To do this just click on the `Add / Borrow` button of your opened vault.
+
+![Vaults list](../../../.gitbook/assets/vaults-list.png)
+
 ## Using a yield-bearing asset as collateral to borrow
 
 Some vaults have collateral tokens that earn a return for holders, like staked Curve LP tokens.
@@ -49,7 +53,7 @@ Using these allow you to get paid while borrowing a stablecoin. Opening a vault 
 
 In the case of yield-bearing assets, the tokens sent are swapped to the underlyings of the yield-bearing asset, and deposited in the platform they earn yield from. For example, in the case of Curve LP tokens, the underlyings are deposited on Curve, the LP tokens obtained staked on Convex, and used as collateral in a vault.
 
-All external rewards accumulated by the vault's staked collateral can be [claimed](#claiming-your-rewards) from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens and borrow stablecoins from it.
+All external rewards accumulated by the vault's staked collateral can be [claimed](#claim-your-rewards) from the Angle app in one transaction, such that there is **no opportunity cost to use Angle** to stake tokens and borrow stablecoins from it.
 
 {% hint style="info" %}
 To check out all these steps, click on the `Transaction Details` on the right side of the screen.
@@ -68,7 +72,7 @@ When repaying your debt, you can either use your vault collateral balance, your 
 Here are the steps to Repay debt, withdraw collateral, or close your vault:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow)
-2. Click on the `Repay` button on your vault.
+2. Click on the `Remove / Repay` button on your vault.
 3. Tick the box above the inputs if you want to repay all your debt and close your vault. You will get all the remaining collateral.
 4. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
 5. Enter the amount collateral you want to use to repay your debt in the bottom left input.
@@ -83,13 +87,25 @@ For example, in the following screenshot, 0.01 wETH is swapped into ~12.45 agEUR
 A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
 {% endhint %}
 
-## Monitoring your positions
+## Transfer debt between two positions
 
-You can monitor your vaults' health from the main Borrow page.
+Angle Borrowing module enables you to transfer your stablecoin debt between two of your vaults on the same chain but with potentially different collateral assets.
 
-![Vaults list](../../../.gitbook/assets/vaults-list.png)
+If one of your vault has a health factor of 1.05 (and is therefore close from liquidation), and if the stablecoin of the vault is agEUR, you may want to transfer the agEUR debt of this vault to that of another vault you control which has a higher health factor.
 
-## Claiming your rewards
+This operation does not involve any collateral transfer and is very efficient gas-wise: it's thus a way to cheaply avoid liquidations.
+
+Here are the steps to transfer debt between two vaults:
+
+1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow)
+2. Click on the `Transfer` button on the vault for which you want to increase the stablecoin debt
+3. Pick the vault from which you want to take debt: the vault you select at this step is the vault which debt is going to be decreased
+4. Enter the amount of stablecoin debt you want to transfer to your vault
+5. Click on the bottom right button to send your transaction. You should see a summary of the evolution of the health factors of the two concerned vaults before launching the transaction.
+
+![Transfer Debt](/.gitbook/assets/transfer-debt-screen.png)
+
+## Claim your rewards
 
 Staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can **claim all your vaults collateral rewards** directly **from the Angle App** in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.
 
