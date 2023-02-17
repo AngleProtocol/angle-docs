@@ -27,3 +27,5 @@ If liquidity positions manager need to be included in the distribution, check wh
 Then, you can customize any any of the distribution formula parameters can be customized. When this is done, the app will prompt you to sign the disclaimer message (if it has not already been done), and then to post the transaction sending the tokens to the distribution contract!
 
 Any address holding a position or position manager token will be able to claim their rewards at the end of each epoch according to how they provided liquidity on the pool.
+
+![Merkl Script](/.gitbook/assets/docs-merkl-for-distributors.png)
