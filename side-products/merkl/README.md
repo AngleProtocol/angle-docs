@@ -12,6 +12,8 @@ In essence, Merkl is a platform where Liquidity Providers (LPs) on Uniswap V3 an
 
 Incentivizors enjoy **a full flexibility** on how they distribute their incentives: they can choose to reward more heavily LPs who bring more liquidity of one token, or they may prefer to better reward LPs who have set tight ranges and are hence earning more transaction fees from their position. They can also select whether they want to incentivize out of range liquidity or whether they want some holders of a specific token to earn boosted rewards.
 
+![Merkl Improvements](/.gitbook/assets/improve-reward-mechanism.png)
+
 {% hint style="info" %}
 Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. For the list of chains and AMMs supported by Merkl (along with other info for each chain), check out [this page](./helpers.md).
 {% endhint %}
@@ -27,6 +29,8 @@ Merkl has a low maintenance fee applied to incentives. Excluding gas when claimi
 Merkl is based on an off-chain script that looks on a given chain into the on-chain data for the pools that are incentivized and computes rewards for all the stakeholders of these pools. Based on this, the script aggregates all reward distribution data in a Merkle tree, then compressed into a Merkle root pushed on-chain to allow LPs to claim their rewards.
 
 The script is ran regularly and for specific periods of time each time. This means that every time the script is ran, it only looks at the on-chain data related specifically to this period of time.
+
+![Merkl Script](/.gitbook/assets/docs-merkl-script.png)
 
 ### 💪 Customizable Incentivization Formula
 
@@ -47,8 +51,6 @@ $$
 {% hint style="info" %}
 For big pools with a lot of swaps, the script may not look at data from all the swaps that occured during the given time period, but only sample the biggest of them.
 {% endhint %}
-
-![Merkl Improvements](/.gitbook/assets/merkl-reward-mechanism.png)
 
 ### 🧳 Liquidity Position Managers
 

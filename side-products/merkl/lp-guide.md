@@ -20,6 +20,8 @@ For example, a tight range will virtually provide more liquidity and earn more f
 Once you have provided liquidity, no additional steps are required to start receiving your rewards, and you will be able to claim them directly from the Merkl page, or from any other app which integrates Merkl. In particular, you will not need to stake your tokens anywhere else.
 If you were providing liquidity on a pool (directly on the AMM or through a liquidity positon manager) before the incentive was created on Merkl, you will also be eligible to claim your rewards when they are posted.
 
+![Merkl Script](/.gitbook/assets/docs-merkl-for-lps.png)
+
 Rewards for Liquidity Providers on Merkl do not increase block by block, but are posted at [a frequency](./helpers.md#🔗-supported-amms-and-chains) which depends on the chain.
 
 {% hint style="info" %}
