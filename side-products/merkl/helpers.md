@@ -39,5 +39,5 @@ When depositing a reward, incentivizors should specify the addresses of the liqu
 | 2            | [Gamma](https://app.gamma.xyz)         |
 
 {% hint style="info" %}
-While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between position managers and wrapper types.
+While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between position managers and their types.
 {% endhint %}
