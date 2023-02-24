@@ -66,6 +66,8 @@ The list of liquidity position managers supported for each AMM and chain can be 
 
 Overall, if you're an incentivizor, having LPs go through manager contracts choosing a range and rebalancing positions on behalf of their users may in the end improve the pool's liquidity and how they are maintained over time. It may also make providing liquidity and getting rewarded for it more accessible.
 
+Note as well that if there is a liquidity manager or another smart contract which is susceptible to hold some of the LP tokens of the pool you are incentivizing and if this contract is not natively supported by the script system then it will be eligible to rewards like any other liquidity provider. If the contract is not able to deal with token rewards (by like forwarding them to another address distributing it to underlying stakeholders), then these rewards may be lost.
+
 ### ⏳ Distribution Epochs
 
 The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 8 hours to 3 days.
