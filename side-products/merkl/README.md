@@ -119,9 +119,12 @@ If you simply want to use Merkl, check out these guides to [make the best of Mer
 ### 🔗 Links
 
 - [Merkl App](https://merkl.angle.money)
-- [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
 - [Smart contracts addresses](helpers.md#smart-contracts)
-- [Script repository](https://github.com/AngleProtocol/merkl-calculator)
-- [Merkle Tree lists](https://github.com/AngleProtocol/merkl-rewards)
-- [Merkl Subgraph](https://github.com/AngleProtocol/merkl-subgraph)
 - [Disclaimer for incentivizors](incentivizor-tc.md)
+<!---
+
+* [Script repository](https://github.com/AngleProtocol/merkl-calculator)
+* [Merkle Tree lists](https://github.com/AngleProtocol/merkl-rewards)
+* [Merkl Subgraph](https://github.com/AngleProtocol/merkl-subgraph)
+* [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
+  -->
