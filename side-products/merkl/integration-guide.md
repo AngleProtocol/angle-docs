@@ -120,10 +120,11 @@ async function main() {
     uniV3Pool: pool,
     // Address of the reward token (must be whitelisted)
     rewardToken: rewardToken.address,
-    // Addresses of the wrappers (like Gamma) that support the pool
+    // Addresses to exclude from the distribution (or optionally addresses of the wrappers that are not automatically detected
+    // by the script)
     positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
-    // Type of the wrappers (2=Gamma)
-    wrapperTypes: [2],
+    // Type of the wrappers (3=blacklisted addresses)
+    wrapperTypes: [3],
     // Amount of tokens to send for the WHOLE distribution
     amount: parseEther('350'),
     // Proportion of rewards that'll be split among LPs which brought token0 in the pool during the time

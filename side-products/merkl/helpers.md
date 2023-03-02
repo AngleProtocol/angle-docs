@@ -30,15 +30,21 @@ Both contracts are managed through a `CoreMerkl` contract by a management multis
 Addresses of the `Distributor` and `DistributionCreator` contracts are the same across all chains.
 {% endhint %}
 
-## 🐋 Liquidity Position Managers Mapping
+## 🐋 Types and Specific Script Behavior
 
-When depositing a reward, incentivizors should specify the addresses of the liquidity managers (or wrappers) they want to support as well as their type (is it an Arrakis contract or a Gamma contract?). Types (referred to in the code as wrapper types) are `uint32` numbers that each correspond to one specific liquidity position manager. Types are the same across the different chains on which Merkl is deployed.
+When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution.
+While Gamma or Arrakis are automatically caught up by the script (and so you do not need to expressely specify them when creating a distribution), addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
 
-| Wrapper Type | Position Manager                       |
-| ------------ | -------------------------------------- |
-| 0            | [Arrakis](https://www.arrakis.finance) |
-| 2            | [Gamma](https://app.gamma.xyz)         |
+Overall, when creating a distribution, you may tell the script to apply a specific set of rules to some addresses by specifying for these addresses a predefined type.
+
+Types are `uint32` numbers and they are the same across the different chains on which Merkl is deployed.
+
+| Type | Rules                                  |
+| ---- | -------------------------------------- |
+| 0    | [Arrakis](https://www.arrakis.finance) |
+| 2    | [Gamma](https://app.gamma.xyz)         |
+| 3    | Blacklist                              |
 
 {% hint style="info" %}
-While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between position managers and their types.
+While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between types and how the script should handle them.
 {% endhint %}

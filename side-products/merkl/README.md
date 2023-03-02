@@ -20,7 +20,7 @@ Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. 
 
 Getting rewarded incurs **no risk of funds** and requires no specific smart contract interactions for LPs: they can retain the custody of their liquidity while still receiving rewards. They can also customize their positions to maximize their earnings from fees and incentives, enjoying all possibilities enabled by concentrated liquidity type of AMMs.
 
-Merkl is compatible with [liquidity position managers](./helpers.md) like [Gamma](https://app.gamma.xyz) or [Arrakis](https://www.arrakis.finance). This means that it's possible to provide liquidity via Gamma on a pool and to be rewarded without taking any further action (no need to stake the Gamma or Arrakis token).
+Merkl is compatible with [liquidity position managers](./helpers.md) like [Gamma](https://app.gamma.xyz) or [Arrakis](https://www.arrakis.finance). This means that it's possible to provide liquidity via Gamma on a pool and to be rewarded without taking any further action (no need to stake the Gamma or Arrakis token). As such, in the case where there are no other liquidity providers on a pool, using Merkl to incentivize a pool is perfectly equivalent to incentivizing an Arrakis or a Gamma token through a staking contract.
 
 Merkl has a low maintenance fee applied to incentives. Excluding gas when claiming rewards, there is no cost to use the platform for Liquidity Providers.
 
@@ -40,7 +40,7 @@ Precisely speaking, for a given pool with two tokens (A and B), the script looks
 - the share of token A held by the position during swaps on the pool
 - the share of token B held by the position during swaps on the pool
 
-A different weight, chosen by the incentivizor, is attributed to each parameter. On top of that, incentivizors can further customize the distribution of the rewards for the pool by optionally allowing addresses which hold a specific token (veANGLE for example) to earn boosted rewards.
+A different weight, chosen by the incentivizor, is attributed to each parameter. On top of that, incentivizors can further customize the distribution of the rewards for the pool by optionally allowing addresses which hold a specific token (veANGLE or veCRV for example) to earn boosted rewards.
 
 The exact distribution formula for a position in such a pool during a time period is as follows:
 
@@ -56,17 +56,17 @@ For big pools with a lot of swaps, the script may not look at data from all the 
 
 As detailed in the introduction, Merkl is compatible with liquidity position managers actively maintaining positions for LPs on concentrated liquidity AMMs. The way the script works for such managers (or wrappers) is that it does not differentiate managers from other "normal" addresses when first computing rewards: it just splits at the end the rewards going to the position manager address proportionally between all its users.
 
-With this, users indirectly providing liquidity through position managers can still claim their rewards directly from Merkl contracts.
+With Merkl, if you incentivize a pool that is compatible with one of the liquidity managers supported by the system, it will most of the time be automatically detected by the script and users indirectly providing liquidity through one such position manager will be able to directly claim their rewards from Merkl contracts.
 
-While this is complex to do with traditional staking contracts, with Merkl, incentivizors can add any supported liquidity position manager to their distributions. The system is off-chain which means it can be customized and new types of position managers can easily be supported by the system. For instance, it'd be possible to directly reward users of protocols that already use position manager tokens on other contracts (like as a collateral to borrow).
+As the system is off-chain, new types of position managers can easily be added into the system. For instance, it'd be possible to directly reward users of protocols that already use position manager tokens on other contracts (like as a collateral to borrow).
 
 {% hint style="info" %}
 The list of liquidity position managers supported for each AMM and chain can be found on [this page](./helpers.md). If you want to add support for a type of liquidity position manager that is not supported or directly reward the underlying users of a smart contract that indirectly controls AMM liquidity, drop a message on the Merkl channel of the [Angle Discord server](https://discord.gg/ByFYzSUt).
 {% endhint %}
 
-Overall, if you're an incentivizor, having LPs go through manager contracts choosing a range and rebalancing positions on behalf of their users may in the end improve the pool's liquidity and how they are maintained over time. It may also make providing liquidity and getting rewarded for it more accessible.
+Note as well that if there is a liquidity manager or another smart contract which is susceptible to hold some of the LP tokens of the pool you are incentivizing and if this contract is not natively supported by the system then it will be eligible to rewards like any other liquidity provider. If the contract is not able to deal with token rewards (by like forwarding them to another address distributing it to underlying stakeholders), then these rewards may be lost. If rewards sent through Merkl remain unclaimed for a period of more than 1 year (notably because they would go to addresses that cannot claim or deal with them), we reserve the right to recover them and redistribute part of it.
 
-Note as well that if there is a liquidity manager or another smart contract which is susceptible to hold some of the LP tokens of the pool you are incentivizing and if this contract is not natively supported by the script system then it will be eligible to rewards like any other liquidity provider. If the contract is not able to deal with token rewards (by like forwarding them to another address distributing it to underlying stakeholders), then these rewards may be lost.
+To avoid this kind of situation, the Merkl system lets you blacklist addresses which should be excluded from the reward distribution. If 100 of rewards are distributed, and 10 would have to go to a smart contract of a lending protocol that accepts for instance Gamma tokens as a collateral, and if this type of contract is not yet natively supported by the system, then blacklisting this smart contract allows you to split the 10 of rewards that will normally go to the contract between all the other liquidity providers.
 
 ### ⏳ Distribution Epochs
 
@@ -112,7 +112,7 @@ Merkl is a solution any DAO or protocol can use to incentivize liquidity, and an
 
 Pools using Merkl are all listed at [merkl.angle.money](https://merkl.angle.money). Incentives on pools can also be deposited from there.
 
-It's important to note though that the system for depositing incentives and claiming rewards **can be integrated on any dApp**. [This guide](integration-guide.md) explains how to list the liquidity pools of your choice on your dApp and how to build claim transactions for your users.
+The system for depositing incentives and claiming rewards **can be easily integrated on any dApp**. [This guide](integration-guide.md) explains among other things how to list the liquidity pools of your choice on your dApp and how to build claim transactions for your users.
 
 If you simply want to use Merkl, check out these guides to [make the best of Merkl as a liquidity provider](lp-guide.md) or to [distribute incentives](incentivizor-guide.md) with the system.
 
