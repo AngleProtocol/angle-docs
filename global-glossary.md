@@ -1,5 +1,7 @@
 ---
 description: A list of words and terms relating to the Angle Protocol
+cover: .gitbook/assets/glossary-cover.jpg
+coverY: 0
 ---
 
 # 📒 Glossary

@@ -2,7 +2,7 @@
 description: Formulas at stake when interacting with app.angle.money
 ---
 
-# Formulas
+# 🧮 App Formulas
 
 ## Borrow
 
@@ -40,16 +40,16 @@ $$\texttt{leverage} = \frac{\texttt{(margin + position Size)}}{\texttt{margin}}$
 
 #### Example
 
-- Margin: 10,000 DAI
-- Position size: 100,000 DAI
+* Margin: 10,000 DAI
+* Position size: 100,000 DAI
 
-$$\texttt{leverage} = \frac{1 + 10}{1} = 11 $$
+$$\texttt{leverage} = \frac{1 + 10}{1} = 11$$
 
 ### Cash-out Amount
 
 The Cash-out amount represents the amount you should receive in your wallet after closing the perpetual:
 
-$$\texttt{cash-out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee} $$
+$$\texttt{cash-out amount} = \texttt{margin} \pm \texttt{gross PnL - closing fee}$$
 
 With $$\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialPrice}}{\texttt{currentPrice}})$$
 
@@ -57,18 +57,16 @@ With $$\texttt{grossPnL} = \texttt{position size}\times(1-\frac{\texttt{initialP
 
 The PnL displayed on the app represents the gain or loss you would make if closing the position. It is computed **net** of fees.
 
-$$ \texttt{PnL} = \texttt{cash-out amount - initial margin} $$
-$$ \texttt{PnL} = \texttt{gross PnL - closing fee} $$
+$$\texttt{PnL} = \texttt{cash-out amount - initial margin}$$ $$\texttt{PnL} = \texttt{gross PnL - closing fee}$$
 
 ### Maintenance Margins
 
-- DAI: 0.625%
-- USDC: 0.625%
-- FRAX: 0.625%
-- ETH: 6.25%
+* DAI: 0.625%
+* USDC: 0.625%
+* FRAX: 0.625%
+* ETH: 6.25%
 
-**Margin Ratio Formula**
-In Angle, the margin ratio is computed as:
+**Margin Ratio Formula** In Angle, the margin ratio is computed as:
 
 $$
 \texttt{margin ratio} = \frac{\texttt{cash out amount}}{\texttt{position size}}

@@ -4,15 +4,9 @@ description: Angle Protocol Guides
 
 # 🎓 Guides
 
-In this section, you will find some preliminary guides to get onboarded to DeFi and to the different functionalities of the Angle Protocol.
+**In this section, you will find some preliminary guides to get onboarded to DeFi and to the different functionalities of the Angle Protocol.**
 
-{% content-ref url="newbie.md" %}
-[newbie.md](newbie.md)
-{% endcontent-ref %}
-
-{% content-ref url="/guides/use-cases/README.md" %}
-[use-cases](/guides/use-cases/README.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>First Steps in Crypto</strong></td><td></td><td></td><td><a href="../.gitbook/assets/docs-first-steps.jpg">docs-first-steps.jpg</a></td><td><a href="newbie.md">newbie.md</a></td></tr><tr><td><strong>Uses Cases</strong></td><td></td><td></td><td><a href="../.gitbook/assets/docs-Use-cases.jpg">docs-Use-cases.jpg</a></td><td><a href="use-cases/">use-cases</a></td></tr></tbody></table>
 
 The Angle Protocol is currently available to anyone on different EVM compatible networks, and can be accessed through an app hosted at [app.angle.money](https://app.angle.money/).
 
@@ -20,8 +14,8 @@ From there, users can mint and burn stablecoins, open perpetuals, get yield by d
 
 The following section contains user guides for all of these use cases:
 
-{% content-ref url="/guides/app-guides/README.md" %}
-[app-guides](/guides/app-guides/README.md)
+{% content-ref url="app-guides/" %}
+[app-guides](app-guides/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
