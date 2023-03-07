@@ -36,9 +36,9 @@ The script is ran regularly and for specific periods of time each time. This mea
 
 Precisely speaking, for a given pool with two tokens (A and B), the script looks into the swaps that took place on the pool during the period for which it is ran and computes a reward score for each position according to:
 
-* the fees earned by the position during the period, which represent the liquidity of the position used by the pool
-* the share of token A held by the position during swaps on the pool
-* the share of token B held by the position during swaps on the pool
+- the fees earned by the position during the period, which represent the liquidity of the position used by the pool
+- the share of token A held by the position during swaps on the pool
+- the share of token B held by the position during swaps on the pool
 
 A different weight, chosen by the incentivizor, is attributed to each parameter. On top of that, incentivizors can further customize the distribution of the rewards for the pool by optionally allowing addresses which hold a specific token (veANGLE or veCRV for example) to earn boosted rewards.
 
@@ -70,7 +70,7 @@ To avoid this kind of situation, the Merkl system lets you blacklist addresses w
 
 ### ⏳ Distribution Epochs
 
-The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 8 hours to 3 days.
+The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 2 hours to 3 days.
 
 {% hint style="info" %}
 Find out the epoch length for each chain [here](helpers.md).
@@ -118,6 +118,7 @@ If you simply want to use Merkl, check out these guides to [make the best of Mer
 
 ### 🔗 Links
 
-* [Merkl App](https://merkl.angle.money)
-* [Smart contracts addresses](helpers.md#smart-contracts)
-* [Disclaimer for incentivizors](incentivizor-tc.md)
+- [Merkl App](https://merkl.angle.money)
+- [Smart contracts addresses](helpers.md#smart-contracts)
+- [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
+- [Disclaimer for incentivizors](incentivizor-tc.md)
