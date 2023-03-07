@@ -70,7 +70,7 @@ To avoid this kind of situation, the Merkl system lets you blacklist addresses w
 
 ### ⏳ Distribution Epochs
 
-The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 8 hours to 3 days.
+The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 2 hours to 3 days.
 
 {% hint style="info" %}
 Find out the epoch length for each chain [here](helpers.md).
