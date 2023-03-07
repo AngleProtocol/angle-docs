@@ -1,5 +1,7 @@
 ---
 description: Community Engagement Incentives
+cover: ../../.gitbook/assets/Angle-bug-bounty.jpg
+coverY: 0
 ---
 
 # 🐛 Bug Bounty
@@ -8,10 +10,10 @@ The security of the smart contracts of the Angle Protocol is a top priority. But
 
 To help mitigate this risk, two bug bounty programs, with Immunefi and Hats.finance, have been put in place. Angle bug bounty programs are focused around the protocol's smart contracts with a primary interest in the prevention of:
 
-- Thefts and freezing of principal of any amount
-- Thefts and freezing of unclaimed yield of any amount
-- Theft of governance funds
-- Governance activity disruption
+* Thefts and freezing of principal of any amount
+* Thefts and freezing of unclaimed yield of any amount
+* Theft of governance funds
+* Governance activity disruption
 
 ## Immunefi Bug Bounty Overview
 
@@ -25,11 +27,11 @@ When a hacker hits the "Submit bug report" button, they will be sent to [bugs.im
 
 Rewards of this bounty are distributed according to the impact of the vulnerability based on the [Immunefi Vulnerability Severity Classification System](https://immunefi.com/severity-updated). This is a simplified 5-level scale, with separate scales for websites/apps and smart contracts/blockchains, encompassing everything from consequence of exploitation to privilege required to likelihood of a successful exploit.
 
-| Level    |                     |
-| -------- | ------------------- |
-| Critical | up to USD \$500,000 |
-| High     | USD \$20,000        |
-| Medium   | USD \$2,500         |
+| Level    |                    |
+| -------- | ------------------ |
+| Critical | up to USD $500,000 |
+| High     | USD $20,000        |
+| Medium   | USD $2,500         |
 
 All Critical Smart Contract bug reports require a PoC and a suggestion for a fix to be eligible for a reward. All High and Medium Smart Contract bug reports require a PoC to be eligible for a reward.
 

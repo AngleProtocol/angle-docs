@@ -1,14 +1,16 @@
 ---
 description: The Decentralized Autonomous Organization driving Angle Protocol
+cover: ../.gitbook/assets/Angle-DAO-cover.jpg
+coverY: -19
 ---
 
 # 🗳 Angle DAO
 
 ## 🔎 TL;DR
 
-- Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
-- The Angle DAO is controlled by veANGLE holders through Snapshot votes executed by a multi-sig composed of community members.
-- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
+* Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
+* The Angle DAO is controlled by veANGLE holders through Snapshot votes executed by a multi-sig composed of community members.
+* The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -16,16 +18,16 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-- Tune fee parameters for, among other things, in the Core module: users minting and burning, Hedging Agents opening and closing their perpetuals, slippage of Standard Liquidity Providers, ... In the Borrowing module, the DAO can change the collateral factors or the borrowing interest rates
-- Grant/revoke roles
-- Deploy new stablecoins
-- Deploy/revoke new strategies to get yield in the Core Module and choose in which proportions to distribute this yield to SLPs
-- Deploy/revoke collateral types
-- Vote for [gauge rewards weights](veANGLE/gauges.md)
-- Upgrade oracles and other contracts throughout the system
-- Deploy the surplus of the protocol
-- Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
-- Launch new Angle Protocol products
+* Tune fee parameters for, among other things, in the Core module: users minting and burning, Hedging Agents opening and closing their perpetuals, slippage of Standard Liquidity Providers, ... In the Borrowing module, the DAO can change the collateral factors or the borrowing interest rates
+* Grant/revoke roles
+* Deploy new stablecoins
+* Deploy/revoke new strategies to get yield in the Core Module and choose in which proportions to distribute this yield to SLPs
+* Deploy/revoke collateral types
+* Vote for [gauge rewards weights](veANGLE/gauges.md)
+* Upgrade oracles and other contracts throughout the system
+* Deploy the surplus of the protocol
+* Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
+* Launch new Angle Protocol products
 
 ## 🗣 Discussions and debates
 
@@ -39,7 +41,7 @@ More formal proposals (which are closer to being implemented) are then discussed
 
 After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote.
 
-Since a tokenomics upgrade conducted in January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](/guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
+Since a tokenomics upgrade conducted in January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
 
 Finalized votes are then implemented by a multi-sig composed of community members. The fact that a multisig needs to implement transaction makes Angle governance system immune to on-chain governance attacks.
 
@@ -53,12 +55,12 @@ A signature from the multi-sig is required to enforce the outcomes of the Snapsh
 
 On each of the chain on which Angle protocol is deployed, the protocol's multisig is composed of the same 6 people (three Angle Labs team members and three "public" crypto people). It requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are:
 
-- Pablo Veyrat: [@pablo_veyrat](https://twitter.com/pablo_veyrat)
-- Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
-- Picodes: [@thePicodes](https://twitter.com/thePicodes)
-- Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
-- Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
-- [0xMaki](https://twitter.com/0xMaki)
+* Pablo Veyrat: [@pablo\_veyrat](https://twitter.com/pablo\_veyrat)
+* Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
+* Picodes: [@thePicodes](https://twitter.com/thePicodes)
+* Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
+* Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
+* [0xMaki](https://twitter.com/0xMaki)
 
 ### Voting on rewards distribution
 
