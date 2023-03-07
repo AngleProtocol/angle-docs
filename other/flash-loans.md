@@ -1,8 +1,10 @@
 ---
 description: Flash loans using agTokens
+cover: ../.gitbook/assets/Angle-Flash-loans.jpg
+coverY: 0
 ---
 
-# ⚡️ Angle Flash Loans
+# ⚡️ Flash Loans
 
 Some of the Angle stablecoins like agEUR offer the possibility to take free flash loans.
 

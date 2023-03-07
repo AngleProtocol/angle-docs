@@ -1,5 +1,7 @@
 ---
 description: Results and reports of Angle Protocol audit engagements
+cover: ../../.gitbook/assets/Angle-Audits.jpg
+coverY: 0
 ---
 
 # 🔐 Audits

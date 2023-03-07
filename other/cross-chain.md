@@ -1,8 +1,10 @@
 ---
 description: Use Angle on different chains and layers
+cover: ../.gitbook/assets/Angle-Cross-chain.jpg
+coverY: 0
 ---
 
-# 🌉 Angle Cross-Chain Infrastructure
+# 🌉 Angle Cross-Chain Setup
 
 Angle is a cross-chain protocol that allows the native issuance of its stablecoins (also called agTokens) on different chains.
 
@@ -14,10 +16,10 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 ## 🔎 TL;DR
 
-- The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
-- Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
-- The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
-- So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
+* The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
+* Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
+* The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
+* So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
 
 ## Angle Bridge Infrastructure Details
 
@@ -74,7 +76,7 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 | BSC           | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
 | Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                             |
+| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                              |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
 
