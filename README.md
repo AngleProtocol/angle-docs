@@ -16,9 +16,9 @@ It can be used to issue stablecoins, called agTokens, designed to mirror the val
 
 On top of its stablecoin products, Angle Protocol also offers ways to:
 
-* Trade perpetual futures
-* Earn yield from strategies
-* Get leverage on a wide range of assets
+- Trade perpetual futures
+- Earn yield from strategies
+- Get leverage on a wide range of assets
 
 The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted. While Angle launched its first stablecoin agEUR with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
 
@@ -28,8 +28,8 @@ The protocol is also engaged into [Direct Deposit Modules](other/amo.md), also c
 
 Angle is so far behind two stablecoins:
 
-* agEUR: pegged to the value of the Euro - €.
-* agGOLD: pegged to the value of 1 Troy ounce of Gold (1 oz t = 0.031kg).
+- agEUR: pegged to the value of the Euro - €.
+- agGOLD: pegged to the value of 1 Troy ounce of Gold (1 oz t = 0.031kg).
 
 ### [Core module](core-module/overview.md)
 
@@ -69,7 +69,7 @@ The protocol's smart contracts have undergone several audits by Chainsecurity an
 
 Products developed for the Angle Protocol can also bring value to the wider DeFi userbase. Some of them are being released as standalone products so that anyone can benefit from them.
 
-This is notably the case of [🥨 Merkl](side-products/merkl/README.md.md), an incentivization framework for AMMs with concentrated liquidity (like Uniswap V3) ran by Angle Labs.
+This is notably the case of [🥨 Merkl](side-products/merkl/README.md.md), an incentive framework for AMMs with concentrated liquidity (like Uniswap V3) ran by Angle Labs.
 
 ## 🖼 Branding
 
