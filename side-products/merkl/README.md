@@ -32,7 +32,7 @@ The script is ran regularly and for specific periods of time each time. This mea
 
 ![Merkl Script](../../.gitbook/assets/docs-merkl-script.png)
 
-### 💪 Customizable Incentivization Formula
+### 💪 Customizable Distribution Formula
 
 Precisely speaking, for a given pool with two tokens (A and B), the script looks into the swaps that took place on the pool during the period for which it is ran and computes a reward score for each position according to:
 

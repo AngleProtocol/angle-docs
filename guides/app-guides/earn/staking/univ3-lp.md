@@ -1,5 +1,5 @@
 ---
-description: Details on Angle Uniswap V3 incentivization mechanism for LPs
+description: Details on Angle Uniswap V3 incentive mechanism for LPs
 ---
 
 # 🦄 Incentives for Uniswap V3 Liquidity Providers
