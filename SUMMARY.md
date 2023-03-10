@@ -17,6 +17,7 @@
     - [💱 Swap](guides/app-guides/agEUR/swap.md)
     - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
     - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
+    - [⬇️ Withdraw agEUR from lz-agEUR](guides/other/withdraw-agEUR-bridge.md)
     - [💳 On-ramp & off-ramp](guides/app-guides/agEUR/on-ramp-off-ramp.md)
     - [⚖️ Leverage](guides/app-guides/trade/leverage.md)
     - [🛡 Perpetuals](guides/app-guides/trade/perpetuals.md)
