@@ -22,6 +22,8 @@ Then follow these steps:
 4. Enter the amount of lz-agEUR you want to exchange for agEUR, and your wallet address.
 5. And send the transaction!
 
+[Example of a withdraw transaction](https://optimistic.etherscan.io/tx/0x20799daf2e30ccf2ec4cf1f66b85f01273b3fc26bc786ad25d7b187eb810f721)
+
 ![Connect lz-agEUR](/.gitbook/assets/connect-lzageur.png)
 
 ![Send tx Etherscan](/.gitbook/assets/send-tx-etherscan.png)
