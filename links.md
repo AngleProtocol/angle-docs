@@ -113,6 +113,7 @@ coverY: 0
 
 * [UniswapV3 agEUR - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 * [Uniswap V3 agEUR - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
+* [Curve agEUR - EUROe](https://curve.fi/factory/273)
 * [Curve agEUR - EUROC](https://curve.fi/factory/164)
 * [Curve agEUR - EURs - EURt](https://curve.fi/factory/66)
 * [Curve agEUR - cEUR - EUROc](https://curve.fi/factory/145)
