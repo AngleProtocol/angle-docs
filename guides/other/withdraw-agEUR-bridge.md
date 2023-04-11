@@ -28,4 +28,4 @@ Then follow these steps:
 
 ![Send tx Etherscan](/.gitbook/assets/send-tx-etherscan.png)
 
-If the limits are empty, it's possible that the tx will revert. You can check the current limits on the app [bridge page](https://app.angle.money/#/bridges-agEUR).
+If the limits are still empty, you will just get the same amount of `lz-agEUR` back. You can check the current limits on the app [bridge page](https://app.angle.money/#/bridges-agEUR).
