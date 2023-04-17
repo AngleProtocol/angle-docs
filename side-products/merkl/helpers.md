@@ -8,7 +8,10 @@ description: Helpers to use and integrate Merkl
 
 | Live AMMs & Chains      | Epoch Time | Supported Liquidity Managers |
 | ----------------------- | ---------- | ---------------------------- |
+| 🦄 UniswapV3 - Ethereum | 6 hours    | Gamma, Arrakis               |
+| 🦄 UniswapV3 - Polygon  | 6 hours    | Gamma, Arrakis               |
 | 🦄 UniswapV3 - Optimism | 6 hours    | Gamma                        |
+| 🦄 UniswapV3 - Arbitrum | 6 hours    | Gamma                        |
 
 ## 🧑‍💻 Smart Contracts
 
@@ -32,7 +35,7 @@ Addresses of the `Distributor` and `DistributionCreator` contracts are the same 
 
 ## 🐋 Types and Specific Script Behavior
 
-When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution. While Gamma or Arrakis are automatically caught up by the script (and so you do not need to expressely specify them when creating a distribution), addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
+When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution. On top of that, while Gamma or Arrakis are automatically caught up by the script (and so you do not need to expressely specify them when creating a distribution), addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
 
 Overall, when creating a distribution, you may tell the script to apply a specific set of rules to some addresses by specifying for these addresses a predefined type.
 

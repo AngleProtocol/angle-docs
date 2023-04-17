@@ -1,6 +1,6 @@
 ---
 description: Angle Borrowing Module agTokens Vaults
-cover: ../../.gitbook/assets/Angle-vaults.jpg
+cover: ../../.gitbook/assets/Angle-vaults-illus.jpg
 coverY: 0
 ---
 
@@ -12,11 +12,11 @@ This module's main mechanism is its vault system. Users can deposit collateral i
 
 Angle Borrowing module vault-based system lets you:
 
-* Borrow agTokens from tokens deposited as collateral in the protocol
-* Leverage collateral exposure in one transaction
-* Take out self-repaying loans or earn a leveraged yield
-* Transfer your debt between vaults to avoid liquidation
-* Perform different actions on your vault in a single transaction and in a capital efficient manner
+- Borrow agTokens from tokens deposited as collateral in the protocol
+- Leverage collateral exposure in one transaction
+- Take out self-repaying loans or earn a leveraged yield
+- Transfer your debt between vaults to avoid liquidation
+- Perform different actions on your vault in a single transaction and in a capital efficient manner
 
 ## Main features
 
@@ -86,15 +86,15 @@ For more insight on liquidations, check out [this page](liquidations.md).
 
 Vaults are defined by a specific set of information:
 
-* A collateral token that is deposited
-* A debt token that is borrowed (the stablecoin)
-* And the following parameters:
-  * [Collateral factor](../glossary.md)
-  * [Mint fee](fees.md#minting-fee)
-  * [Stability fee](fees.md#stability-fee)
-  * [Repay fee](fees.md#repaying-fee)
-  * [Liquidation surcharge](fees.md#liquidation-surcharge)
-  * [Dust amounts](./#dust-amounts)
+- A collateral token that is deposited
+- A debt token that is borrowed (the stablecoin)
+- And the following parameters:
+  - [Collateral factor](../glossary.md)
+  - [Mint fee](fees.md#minting-fee)
+  - [Stability fee](fees.md#stability-fee)
+  - [Repay fee](fees.md#repaying-fee)
+  - [Liquidation surcharge](fees.md#liquidation-surcharge)
+  - [Dust amounts](./#dust-amounts)
 
 ### Collateral Ratio & Collateral Factor
 
