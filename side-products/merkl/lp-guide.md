@@ -2,7 +2,7 @@
 description: Guide for Liquidity Providers on concentrated liquidity AMMs to enjoy Merkl
 ---
 
-# 🌊 Liquidity Provider Guide
+# 🌊 Provide liquidity and claim through Merkl
 
 As a Liquidity Provider, Merkl lets you customize your position to optimize your returns on AMMs like Uniswap V3 according to how incentivizors set up the distribution formula for the pool you're on.
 

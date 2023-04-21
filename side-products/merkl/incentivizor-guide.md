@@ -2,7 +2,7 @@
 description: Guide for people using Merkl to incentivize pools
 ---
 
-# 💰 Incentivizor Guide
+# 💸 Distribute incentives using Merkl
 
 DAOs or individuals looking to incentivize a pool can use Merkl and customize their distribution to get the desired type of liquidity.
 
