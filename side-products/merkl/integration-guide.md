@@ -8,7 +8,7 @@ First, keep in mind that you can integrate Merkl pools in your app, but you don'
 
 Data about all Merkl incentivized pools across all supported chains can be found by calling our API endpoint: `https://api.angle.money/v1/merkl`.
 
-When calling this payload, you must specify the `chainId` address. You may also specify a \`user\` address if you want additional information related to one user (like claimable amounts, liquidity in the pools, ...)
+When calling this payload, you must specify the `chainId` address. You may also specify a `user` address if you want additional information related to one user (like claimable amounts, liquidity in the pools, ...)
 
 A typical query looks like: [`https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185`](https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185).
 
@@ -42,7 +42,6 @@ You have multiple options to do that:
 
 - Rely on Angle's API: we build the claim transaction payload for you and the associated proof, and you just call our API. This is the example shown below.
 - Build the proof yourself and join it to the transaction data from the API. You can find a Github repository below showing how to do that.
-- Build the proof yourself, write down the contract addresses in your code, and use the API for the remaining data. This helps protect your users in case the API is compromised and sends a fake contract address.
 
 {% hint style="info" %}
 In any case, if a call is made to the correct `Distributor` contract and the `token` or `amount` doesn't match the `proof`, the transaction will revert.
@@ -92,7 +91,7 @@ export const claim = async (chainId: number, signer: JsonRpcSigner) => {
 ```
 
 {% hint style="info" %}
-If you want to build the proof yourself, [this code](https://github.com/AngleProtocol/sdk/blob/288185227514ae5c5bb23f5d4b72680eb839f6cc/src/utils/merkl.ts#L15) will show you how to do that.
+If you want to build the proof yourself, [this file](https://github.com/AngleProtocol/sdk/blob/288185227514ae5c5bb23f5d4b72680eb839f6cc/src/utils/merkl.ts#L15) will show you how to do that.
 {% endhint %}
 
 ## Send rewards to pools
