@@ -40,7 +40,7 @@ Then, just select **any token your company holds**, and use the expert mode to m
 
 agEUR is supported by several off-ramp providers that enable withdrawing agEUR from your wallet to your bank account.
 
-Obviously, if you're paid in agEUR, you don't have to sell it immediately, and you can also use it to take advantage of the different yield opportunities available with it and listed [here](https://app.angle.money/#/earn).
+Obviously, if you're paid in agEUR, you don't have to sell it immediately, and you can also use it to take advantage of the different yield opportunities available with it and listed [here](https://app.angle.money/earn).
 
 ### With Mt Pelerin
 

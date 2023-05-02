@@ -76,7 +76,7 @@ If you're writing an article, creating designs and animations about Angle, check
 
 This documentation portal is maintained by Angle Labs, Inc. It is built to be the up-to-date source of truth for Angle Protocol production contracts and for Angle Labs products. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
 
-Angle is designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://angle.money/#/blog) in its home language.
+Angle is designed for an international audience. Anyone is therefore welcome to translate pages of this documentation portal or articles published in the [Angle blog](https://angle.money/blog) in its home language.
 
 In order for your translation to appear on this doc, you need to:
 

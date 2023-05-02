@@ -16,7 +16,7 @@ The app Swap page integrates 1inch (which integrates agEUR's native mint & burn 
 
 Here are the steps to buy from Angle:
 
-1. Go to the [Swap page](https://app.angle.money/#/swap) of the app.
+1. Go to the [Swap page](https://app.angle.money/swap) of the app.
 2. Select network on which you want to get the stablecoin. Currently, Ethereum, Optimism, Arbitrum, Polygon and Avalanche are supported.
 3. Select the stablecoin you want to buy
 4. Select the token you want to buy the stablecoin with. You can also copy any token's address you like.

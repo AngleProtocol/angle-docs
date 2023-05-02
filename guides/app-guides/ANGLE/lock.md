@@ -11,10 +11,10 @@ Before locking ANGLE, make sure you read all the details about veANGLE and locki
 If you are new to DeFi, you may also want to check out [this onboarding guide](../newbie.md). Most important thing to have in mind is that to get veANGLE, you need ANGLE in your wallet as well as ETH to pay for the Ethereum network transaction fees.
 
 {% hint style="info" %}
-You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/#/buy) of the app.
+You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/buy) of the app.
 {% endhint %}
 
-ANGLE tokens can be locked on the [Lock page](https://app.angle.money/#/lock).
+ANGLE tokens can be locked on the [Lock page](https://app.angle.money/lock).
 
 ![ANGLE locking screen](/.gitbook/assets/angle-lock.png)
 
@@ -49,11 +49,11 @@ One particularity of the gauge system is that the staking contracts can’t fetc
 
 In practice, this means that it’s better to lock ANGLE into veANGLE (or increase/extending your lock) **before staking** in order for the boost to be applied directly. If not, claiming a tiny amount of rewards **after** staking will be needed to apply the boost.
 
-To compute the balance of veANGLE needed to get the max boost on rewards depending on the quantity of tokens staked, there is a calculator on the [Lock page](https://app.angle.money/#/lock).
+To compute the balance of veANGLE needed to get the max boost on rewards depending on the quantity of tokens staked, there is a calculator on the [Lock page](https://app.angle.money/lock).
 
 ## Expired lock
 
-Once your lock is expired, to get your ANGLE tokens back from the lock, you need to execute a transaction. This can be done by clicking on the `Withdraw ANGLE` button that'll be visible at this time on the [lock page](https://app.angle.money/#/lock) of the app.
+Once your lock is expired, to get your ANGLE tokens back from the lock, you need to execute a transaction. This can be done by clicking on the `Withdraw ANGLE` button that'll be visible at this time on the [lock page](https://app.angle.money/lock) of the app.
 
 ## Claiming interest
 
@@ -63,7 +63,7 @@ These interests can be claimed with a transaction initiated by clicking on the `
 
 ### Claim interest and Stake
 
-This claims the sanUSDC_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check your staked sanUSDC_EUR in the App [Earn page](https://app.angle.money/#/earn).
+This claims the sanUSDC_EUR and stake them directly in the associated gauge in the same transaction to start earning ANGLE rewards. You can check your staked sanUSDC_EUR in the App [Earn page](https://app.angle.money/earn).
 
 ### Claim interest and Mint agEUR
 

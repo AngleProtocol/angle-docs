@@ -51,7 +51,7 @@ Support for yield-bearing tokens as collateral thus makes Angle Borrowing module
 ![Leveraged Yield](../../.gitbook/assets/leveraged-yield.png)
 
 {% hint style="info" %}
-Make sure to understand how the concerned tokens work and their associated risks before using them as collateral. More info about the risks in our blog post about [Leveraged yield in DeFi](https://www.angle.money/#/blog/learn/angle-explains-leveraged-yield-in-defi).
+Make sure to understand how the concerned tokens work and their associated risks before using them as collateral. More info about the risks in our blog post about [Leveraged yield in DeFi](https://www.angle.money/blog/learn/angle-explains-leveraged-yield-in-defi).
 {% endhint %}
 
 ### Composable actions

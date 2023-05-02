@@ -2,7 +2,7 @@
 description: How to bridge agEUR and ANGLE to different networks with the Angle App
 ---
 
-Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging agEUR and ANGLE](https://app.angle.money/#/bridges-agEUR) between many EVM-compatible networks.
+Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging agEUR and ANGLE](https://app.angle.money/bridges-agEUR) between many EVM-compatible networks.
 
 To bridge agEUR or ANGLE from a network to another, you simply need to select the token you want to bridge, enter the amount, and select the destination network.
 
@@ -50,7 +50,7 @@ Then follow these steps:
 
 ![Send tx Etherscan](/.gitbook/assets/send-tx-etherscan.png)
 
-If the limits are still empty, you will just get the same amount of `lz-agEUR` back. You can check the current limits on the app [bridge page](https://app.angle.money/#/bridges-agEUR).
+If the limits are still empty, you will just get the same amount of `lz-agEUR` back. You can check the current limits on the app [bridge page](https://app.angle.money/bridges-agEUR).
 
 ## Funds required to pay for bridge transaction fees
 

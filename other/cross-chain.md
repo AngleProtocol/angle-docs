@@ -16,10 +16,10 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 ## 🔎 TL;DR
 
-* The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
-* Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
-* The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
-* So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
+- The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
+- Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
+- The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
+- So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
 
 ## Angle Bridge Infrastructure Details
 
@@ -53,7 +53,7 @@ Limits can be set by Angle governance for each chain, for each token and for eac
 
 ### About LayerZero
 
-[LayerZero](https://layerzero.network/) is so far one of the only whitelisted solution to mint agTokens and the ANGLE token across a wide range of sidechains (the other solution being Polygon PoS bridge that is whitelisted just on Polygon). It is the solution that is used under the hood on the [Angle App](https://app.angle.money/#/bridges-agEUR).
+[LayerZero](https://layerzero.network/) is so far one of the only whitelisted solution to mint agTokens and the ANGLE token across a wide range of sidechains (the other solution being Polygon PoS bridge that is whitelisted just on Polygon). It is the solution that is used under the hood on the [Angle App](https://app.angle.money/bridges-agEUR).
 
 The bridge is natively integrated with the agEUR and the ANGLE tokens on the chains on which it is supported: this means that users should not see the intermediary bridge token and directly receive canonical agEUR (or ANGLE) in one transaction when using the bridge.
 
@@ -69,14 +69,14 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 
 | Chain         | agEUR                                                                                                        | ANGLE                                                          |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
-| Polygon       | [LayerZero](https://app.angle.com/#/bridges), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
-| Optimism      | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
-| Arbitrum      | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
-| Avalanche     | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
-| BSC           | [LayerZero](https://app.angle.com/#/bridges)                                                                 | [LayerZero](https://app.angle.com/#/bridges)                   |
+| Polygon       | [LayerZero](https://app.angle.money/bridges), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
+| Optimism      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
+| Arbitrum      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
+| Avalanche     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
+| BSC           | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
 | Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                              |
+| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                             |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
 

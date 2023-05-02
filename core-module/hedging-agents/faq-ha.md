@@ -30,7 +30,7 @@ There are no fees for removing or adding collateral as margin to a position.
 
 Within Angle Core module, Hedging Agents are here to cover the volatility of the collateral that was brought by users. If the amount of collateral from users is worth `x` of stablecoins and HAs already cover this amount, then new ones will not be able to enter.
 
-The ratio between what HA currently hedge and what they hedge in total can be seen in the analytics. If we take the [USDC/EUR pair](https://analytics.angle.money/#/USDC/EUR) as example, HA can't open positions anymore when the hedge ratio reaches the target hedge ratio.
+The ratio between what HA currently hedge and what they hedge in total can be seen in the analytics. If we take the [USDC/EUR pair](https://analytics.angle.money/USDC/EUR) as example, HA can't open positions anymore when the hedge ratio reaches the target hedge ratio.
 
 To put it in other words, Angle Core module can be seen as a marketplace between stability and volatility seekers. If the supply of volatility is fully taken by HAs, then the Core module cannot offer more leveraged positions \(and thus more volatility\) than what it has already offered.
 

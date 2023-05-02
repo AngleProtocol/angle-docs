@@ -16,7 +16,7 @@ This feature is only available for agEUR, and it only enables shorting the EUR (
 
 ## Opening a position
 
-1. To open a Perp on Angle, head to the [Perpetuals page](https://app.angle.money/#/perpetuals) of the app and select the collateral you want to long.
+1. To open a Perp on Angle, head to the [Perpetuals page](https://app.angle.money/perpetuals) of the app and select the collateral you want to long.
 2. Select the amount of collateral you want to send to the protocol as margin for your position. Perpetuals in Angle work similarly than isolated-margin exchanges, where margin is separated between positions.
 3. Choose your leverage. This will determine your position size that is to say the amount of underlying tokens you will be exposed to. Leverage in Angle is computed as $$\frac{\texttt{margin + position size}}{\texttt{margin}}$$
 4. The collateral/stablecoin exchange rate and transaction fees are displayed. Note that the net initial margin of your position will be your initial margin input minus fees. You'll also see the amount of ANGLE rewards you'll get with your position.

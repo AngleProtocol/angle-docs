@@ -14,7 +14,7 @@ This gauge voting feature is reserved to users which own veANGLE tokens (as well
 
 ## Allocating voting weights to gauges with veANGLE
 
-Voting for gauges happens on the [Gauges page](https://app.angle.money/#/gauge) of the app.
+Voting for gauges happens on the [Gauges page](https://app.angle.money/gauge) of the app.
 
 There, on the right side of the page, you need to select the gauges you want to allocate voting power.
 

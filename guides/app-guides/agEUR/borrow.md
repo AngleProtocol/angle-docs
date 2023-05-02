@@ -26,7 +26,7 @@ You can deposit any token you want in the app, and it will be swapped to the col
 
 Here are the steps to follow to deposit collateral and borrow agTokens:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault
 2. Select the type of vault to create, defined by the collateral and stablecoin token
 3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of stablecoins you want to borrow in the second input.
@@ -71,7 +71,7 @@ When repaying your debt, you can either use your vault collateral balance, your 
 
 Here are the steps to Repay debt, withdraw collateral, or close your vault:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow)
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow)
 2. Click on the `Remove / Repay` button on your vault.
 3. Tick the box above the inputs if you want to repay all your debt and close your vault. You will get all the remaining collateral.
 4. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
@@ -97,7 +97,7 @@ This operation does not involve any collateral transfer and is very efficient ga
 
 Here are the steps to transfer debt between two vaults:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow)
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow)
 2. Click on the `Transfer` button on the vault for which you want to increase the stablecoin debt
 3. Pick the vault from which you want to take debt: the vault you select at this step is the vault which debt is going to be decreased
 4. Enter the amount of stablecoin debt you want to transfer to your vault

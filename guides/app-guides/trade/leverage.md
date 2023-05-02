@@ -12,7 +12,7 @@ When borrowing a stablecoin like agEUR, you can directly swap the borrowed stabl
 
 Here are the steps to leverage your collateral exposure:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow) and choose the network on which you want to open your vault.
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault.
 2. Select the type of vault to create, defined by the collateral and stablecoin token. Note that depending on the collateral/stablecoin pair you choose, your price exposure may completely vary: like getting leverage using the ETH-agEUR pair is different from using the ETH-agGOLD pair: in one case you are short EUR, in the other case you are short GOLD.
 3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of additional exposure of collateral you want in the second input.
@@ -45,7 +45,7 @@ When repaying your debt, you can either use your vault collateral balance, your 
 
 Here are the steps to Repay debt, withdraw collateral, or close your vault:
 
-1. Go to the `Borrow` section of the [app](https://app.angle.money/#/borrow)
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow)
 2. Click on the `Repay` button on your vault.
 3. Tick the box above the inputs if you want to repay all your debt and close your vault. You will get all the remaining collateral.
 4. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
