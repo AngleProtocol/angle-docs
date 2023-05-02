@@ -6,7 +6,7 @@ description: Earning rewards with Angle and becoming a Standard Liquidity Provid
 
 ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem.
 
-The [Earn page](https://app.angle.money/#/earn) of the app lists all the pools and farms where it is possible to earn ANGLE tokens, and more generally any other yield opportunities linked to Angle.
+The [Earn page](https://app.angle.money/earn) of the app lists all the pools and farms where it is possible to earn ANGLE tokens, and more generally any other yield opportunities linked to Angle.
 
 This is also where you can deposit tokens accepted as collateral in the Core module to act as an [SLP](/core-module/standard-liquidity-providers/README.md).
 
@@ -30,7 +30,7 @@ You have multiple options to claiming your ANGLE tokens:
 
 - Claim from multiple gauges in **one transaction** by clicking on the `Claim Rewards` button on the right. When using this modal, you can select/unselect the gauges you want to claim rewards from and then:
   - **`Claim ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3 related ones) in one transaction.
-  - **`Claim and Lock ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3-related ones) in one transaction **and** lock them into your existing ANGLE lock. This increases your veANGLE balance and doesn't affect your lock expiration date. _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE [here](https://app.angle.money/#/lock)._
+  - **`Claim and Lock ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3-related ones) in one transaction **and** lock them into your existing ANGLE lock. This increases your veANGLE balance and doesn't affect your lock expiration date. _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE [here](https://app.angle.money/lock)._
 
 ![Claim rewards modal](/.gitbook/assets/claim-rewards-modal.png)
 

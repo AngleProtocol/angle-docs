@@ -57,7 +57,7 @@ The Core Module implements a solution to mitigate this issue: it consists in res
 In practice, oracle contracts of the Core module are paused for the two blocks that follow each update of the EURUSD feed, unless the transaction origin is a whitelisted address. A DAO-controlled [registry contract](https://etherscan.io/address/0xc48B15492A4c4F48808576f6fCbC6dea9388E942) is responsible for containing the whitelist.
 
 {% hint style="info" %}
-For more details on this MEV-mitigation solution at the oracle level, check out [this article](https://www.angle.money/#/blog/announcements/taking-profits-back-from-mev-bots).
+For more details on this MEV-mitigation solution at the oracle level, check out [this article](https://www.angle.money/blog/announcements/taking-profits-back-from-mev-bots).
 {% endhint %}
 
 ## ✊ Flash Loans Resistance

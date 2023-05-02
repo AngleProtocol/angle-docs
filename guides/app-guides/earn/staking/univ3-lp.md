@@ -14,7 +14,7 @@ In this guide, we detail how the incentives are split and how you can provide li
 
 ## Incentives distribution
 
-Every week, the distribution of incentives going to each pool is voted by veANGLE holders [here](https://app.angle.money/#/gauge).
+Every week, the distribution of incentives going to each pool is voted by veANGLE holders [here](https://app.angle.money/gauge).
 
 ### Off-chain Reward Computation Script
 
@@ -55,7 +55,7 @@ For example, Arrakis manages liquidity passively, and agEUR/USDC has some times 
 
 #### How can I be eligible for the ANGLE rewards?
 
-By providing liquidity on any of the Angle Uniswap V3 pools incentivized on the app [Earn page](https://app.angle.money/#/earn), either directly through [Uniswap](https://app.uniswap.org/#/add/), or through Arrakis or Gamma.
+By providing liquidity on any of the Angle Uniswap V3 pools incentivized on the app [Earn page](https://app.angle.money/earn), either directly through [Uniswap](https://app.uniswap.org/#/add/), or through Arrakis or Gamma.
 
 #### What do I need to do if I was previously staking?
 
@@ -71,7 +71,7 @@ ANGLE rewards from the past week can be claimed once per week, every Thursday. R
 
 #### Where can I claim my rewards?
 
-On the app [Earn page](https://app.angle.money/#/earn), or directly from the [MerkleRoot Distributor contract](https://etherscan.io/address/0x5a93D504604fB57E15b0d73733DDc86301Dde2f1).
+On the app [Earn page](https://app.angle.money/earn), or directly from the [MerkleRoot Distributor contract](https://etherscan.io/address/0x5a93D504604fB57E15b0d73733DDc86301Dde2f1).
 
 #### Why is my APR is different from what is displayed?
 

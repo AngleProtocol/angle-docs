@@ -8,9 +8,9 @@ coverY: -19
 
 ## 🔎 TL;DR
 
-* Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
-* The Angle DAO is controlled by veANGLE holders through Snapshot votes executed by a multi-sig composed of community members.
-* The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
+- Angle DAO is responsible for tuning and improving the protocol in order to make it sustainable and robust enough to become a building block of the DeFi space.
+- The Angle DAO is controlled by veANGLE holders through Snapshot votes executed by a multi-sig composed of community members.
+- The Angle DAO is also responsible for deciding where to allocate the ANGLE tokens distributed as part of the liquidity mining program.
 
 ## 🔘 Responsibilities
 
@@ -18,16 +18,16 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-* Tune fee parameters for, among other things, in the Core module: users minting and burning, Hedging Agents opening and closing their perpetuals, slippage of Standard Liquidity Providers, ... In the Borrowing module, the DAO can change the collateral factors or the borrowing interest rates
-* Grant/revoke roles
-* Deploy new stablecoins
-* Deploy/revoke new strategies to get yield in the Core Module and choose in which proportions to distribute this yield to SLPs
-* Deploy/revoke collateral types
-* Vote for [gauge rewards weights](veANGLE/gauges.md)
-* Upgrade oracles and other contracts throughout the system
-* Deploy the surplus of the protocol
-* Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
-* Launch new Angle Protocol products
+- Tune fee parameters for, among other things, in the Core module: users minting and burning, Hedging Agents opening and closing their perpetuals, slippage of Standard Liquidity Providers, ... In the Borrowing module, the DAO can change the collateral factors or the borrowing interest rates
+- Grant/revoke roles
+- Deploy new stablecoins
+- Deploy/revoke new strategies to get yield in the Core Module and choose in which proportions to distribute this yield to SLPs
+- Deploy/revoke collateral types
+- Vote for [gauge rewards weights](veANGLE/gauges.md)
+- Upgrade oracles and other contracts throughout the system
+- Deploy the surplus of the protocol
+- Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
+- Launch new Angle Protocol products
 
 ## 🗣 Discussions and debates
 
@@ -55,15 +55,15 @@ A signature from the multi-sig is required to enforce the outcomes of the Snapsh
 
 On each of the chain on which Angle protocol is deployed, the protocol's multisig is composed of the same 6 people (three Angle Labs team members and three "public" crypto people). It requires a minimum of 4 signatures to execute a transaction. The multi-sig signers are:
 
-* Pablo Veyrat: [@pablo\_veyrat](https://twitter.com/pablo\_veyrat)
-* Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
-* Picodes: [@thePicodes](https://twitter.com/thePicodes)
-* Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
-* Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
-* [0xMaki](https://twitter.com/0xMaki)
+- Pablo Veyrat: [@pablo_veyrat](https://twitter.com/pablo_veyrat)
+- Guillaume Nervo: [@GuillaumeNervo](https://twitter.com/GuillaumeNervo)
+- Picodes: [@thePicodes](https://twitter.com/thePicodes)
+- Sébastien Derivaux: [@SebVentures](https://twitter.com/SebVentures)
+- Julien Bouteloup: [@bneiluj](https://twitter.com/bneiluj)
+- [0xMaki](https://twitter.com/0xMaki)
 
 ### Voting on rewards distribution
 
-Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens on-chain and can be done through the gauge page of the [app](https://app.angle.money/#/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
+Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens on-chain and can be done through the gauge page of the [app](https://app.angle.money/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
 
 More info on the details of this process in the [Gauges](veANGLE/gauges.md) page.

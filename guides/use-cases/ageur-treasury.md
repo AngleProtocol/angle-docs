@@ -50,7 +50,7 @@ agEUR is also available on Polygon, where it can be deposited on Aave lending ma
 
 Some agEUR pools are incentivized with ANGLE token rewards and can yield interesting APRs, like agEUR/ETH at 30%, or agEUR/USDC at \~10%.
 
-More generally, all Angle and agEUR related yield opportunities can be accessed through the [App Earn](https://app.angle.money/#/earn) page.
+More generally, all Angle and agEUR related yield opportunities can be accessed through the [App Earn](https://app.angle.money/earn) page.
 
 ## Paying contributors with agEUR
 
