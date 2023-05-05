@@ -88,9 +88,7 @@ There is no need for liquidity providers to claim rewards at every epoch. Every 
 
 ### 🤺 Dispute Periods
 
-The script computing rewards and updating the reward Merkle root on-chain is ran by Angle Labs. It relies on an open source codebase available [here](https://github.com/AngleProtocol/merkl-calculator).
-
-Merkle roots pushed on-chain may be based on off-chain computations, any stakeholder in the ecosystem may fetch on-chain data to run the script and verify the results sent.
+The script computing rewards and updating the reward Merkle root on-chain is ran by Angle Labs. Merkle roots pushed on-chain may be based on off-chain computations, any stakeholder in the ecosystem may fetch on-chain data to run the script and verify the results sent.
 
 Still, to allow anyone to permissionlessly take part in the system and at the same time to reduce the system's exposure to potential hacks or failures, every new Merkle root update is followed by a dispute period which allows anyone to contest the result. A new Merkle root that aggregates reward distribution data for a chain is only effective after this dispute period.
 
