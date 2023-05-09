@@ -41,7 +41,7 @@ Then follow these steps:
 1. Click on `Write as Proxy`
 2. Connect your wallet to Etherscan by clicking on the `Connect to Web3` button.
 3. Scroll down to function `22. withdraw()`
-4. Enter the amount of lz-agEUR you want to exchange for agEUR, and your wallet address.
+4. Enter the amount of lz-agEUR you want to exchange for agEUR, and your wallet address. _The amount input needs to be in the correct decimals format: you need to multiply the amount by `10^18`. For example, to exchange `123` lz-agEUR, you need to input `123 000 000 000 000 000 000`._
 5. And send the transaction!
 
 [Example of a withdraw transaction](https://optimistic.etherscan.io/tx/0x20799daf2e30ccf2ec4cf1f66b85f01273b3fc26bc786ad25d7b187eb810f721)
