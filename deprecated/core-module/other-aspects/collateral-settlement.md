@@ -36,7 +36,7 @@ After the claim period, the contract computes the amount it has in reserves, con
 
 Each stakeholder in a category therefore gets reimbursed proportionally to their claim with a proportional ratio that depends on their category. It is hence possible that stable holders which came with governance tokens are fully reimbursed, that stable holders without governance tokens only get half of their claim and that others do not get anything back. If a category \(like LPs with governance tokens\) is not fully paid back, then the following categories \(in this case LPs without governance tokens\) won't be paid back as well.
 
-![Settlement Process](../../.gitbook/assets/settlementprocess2.jpg)
+![Settlement Process](../../../.gitbook/assets/settlementprocess2.jpg)
 
 ## 🏰 Governance Token Holders Privilege
 
@@ -44,17 +44,17 @@ The way governance tokens are handled by the process is the following: there is 
 
 For instance let's say that this ratio is 2. This means that for each governance token brought, there are 2 collateral tokens \(or stablecoins in the case of users\) that are going to be considered as part of a claim with governance tokens, meaning that this claim will be reimbursed first after the claim period. If a stable holder brings 10 governance tokens and 100 stablecoins, then with a proportional ratio of 2, the protocol will consider that there is a claim from this user of 20 stable tokens involving governance tokens and that should be reimbursed in the first tranch of reimbursement \(after this amount is converted to a collateral amount\), and that there is a second claim of 80 stablecoins that will be treated after all the claims with governance tokens have been reimbursed.
 
-![Governance Token Privilege](../../.gitbook/assets/settlementmultiplier.jpg)
+![Governance Token Privilege](../../../.gitbook/assets/settlementmultiplier.jpg)
 
 ## 🌊 Waterfall Between the Different Categories of Stakeholders
 
 At the end of the claim period, the Core module computes how much each category should get. There is an order with which each category gets reimbursed. If one category is not fully paid back, then the following ones will not get anything. This is illustrated by the following examples. Note that they illustrate situations after which the value of user claims in stablecoins has been converted to collateral:
 
-![Settlement First Scenario](../../.gitbook/assets/settlementscenario1.jpg)
+![Settlement First Scenario](../../../.gitbook/assets/settlementscenario1.jpg)
 
-![Settlement Second Scenario](../../.gitbook/assets/settlementscenario2.jpg)
+![Settlement Second Scenario](../../../.gitbook/assets/settlementscenario2.jpg)
 
-![Settlement Third Scenario](../../.gitbook/assets/settlementscenario3.jpg)
+![Settlement Third Scenario](../../../.gitbook/assets/settlementscenario3.jpg)
 
 ## 🪢 Remarks
 

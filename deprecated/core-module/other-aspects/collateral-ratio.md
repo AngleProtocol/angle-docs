@@ -6,8 +6,7 @@ description: Angle is over-collateralized
 
 ## 🔎 TL;DR
 
-- Thanks to its two types of liquidity providers (HAs and SLPs), Angle Core module is over-collateralized.
-- Due to the Core module structure, the exact level of over-collateralization that will be reached is still hard to determine.
+Thanks to its two types of liquidity providers (HAs and SLPs), Angle Core module is over-collateralized.
 
 ## 📐 Collateral Ratio Structure
 
@@ -27,4 +26,4 @@ By bringing 100 of additional collateral, SLPs would earn yield on 80% x 250 = 2
 
 In that case, the Core module would be collateralized at 250%.
 
-![Collateral Ratio Estimation](../../.gitbook/assets/Collateral_Ratio.jpg)
+![Collateral Ratio Estimation](../../../.gitbook/assets/Collateral_Ratio.jpg)

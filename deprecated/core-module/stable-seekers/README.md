@@ -41,7 +41,7 @@ Let’s say that 1 agEUR trades at a price above 1€. The incentive is to mint 
 
 If 1 agEUR trades at a price below 1€, the incentive is to buy agEUR on the market for less than 1€ and get 1€ worth of collateral by swapping the agEUR bought using Angle. This increases the price closer to 1€.
 
-![Angle Peg Dynamics](../../.gitbook/assets/peg-dynamics.jpg)
+![Angle Peg Dynamics](../../../.gitbook/assets/peg-dynamics.jpg)
 
 ### Deviations From Peg
 
@@ -61,11 +61,11 @@ The structure of the mint transaction fees differs from that of the burn transac
 
 - Minting: The concept is that the higher the coverage ratio, the more the Core module is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
 
-![Minting Fee for Users](../../.gitbook/assets/Minting_fee.jpg)
+![Minting Fee for Users](../../../.gitbook/assets/Minting_fee.jpg)
 
 - Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the Core module is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
 
-![Burning Fee for Users](../../.gitbook/assets/burning-fee.jpg)
+![Burning Fee for Users](../../../.gitbook/assets/burning-fee.jpg)
 
 Regardless of the amounts chosen, this fee structure has been made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
 

@@ -74,6 +74,6 @@ This means that if one of them failed, other stablecoins would not be impacted. 
 
 Being a Hedging Agent for the collateral DAI used to back Angle's agEUR implies nothing about being a Hedging Agent on the pool DAI/agCHF. The same goes for standard liquidity providers. You can be a standard liquidity provider for just the agEUR stablecoin, but not for the agCHF stablecoin.
 
-![Core module collateral pools are different from one stablecoin to another](../../.gitbook/assets/Docs-split_of_funds_in_the_protocol.jpg)
+![Core module collateral pools are different from one stablecoin to another](../../../.gitbook/assets/Docs-split_of_funds_in_the_protocol.jpg)
 
 In case of a security breach, to trigger the emergency shutdown at the level of the Core module, all collateral for all stablecoins should be settled.
