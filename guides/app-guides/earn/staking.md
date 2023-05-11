@@ -1,16 +1,16 @@
 ---
-description: Earning rewards with Angle and becoming a Standard Liquidity Provider
+description: Earning rewards with Angle
 ---
 
-# 🍀 Earning ANGLE and other rewards
+# 🦄 Earning ANGLE and other rewards
 
-ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem based on what is voted by veANGLE holders [here](https://app.angle.money/gauge).
+ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem based on what is voted by veANGLE holders [here](https://app.angle.money/gauge). Among other things, the protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools.
 
-The [Earn page](https://app.angle.money/earn) of the app lists all the pools and farms where it is possible to earn ANGLE tokens, and more generally any other yield opportunities linked to Angle.
+The [Earn page](https://app.angle.money/earn) of the app lists all the yield opportunities linked to Angle and displays in particular the pools and farms where it is possible to earn ANGLE tokens. It is on this page that liquidity providers on Angle gauges (including Uniswap V3 pools) can claim their ANGLE rewards.
 
-The protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools. This page is where Uniswap Liquidity Providers can track opportunities and claim their rewards.
+In this guide, we explain how to be eligible for ANGLE rewards as a UniswapV3 liquidity provider and how all LPs on gauges can claim their rewards.
 
-## 🦄 Incentives for Uniswap V3 Liquidity Providers
+## Incentives for Uniswap V3 Liquidity Providers
 
 Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs). This mechanism rewards LPs granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
 
@@ -95,7 +95,7 @@ Currently the Uniswap V3 pools that are eligible to this system are the followin
 
 ## Claiming ANGLE tokens
 
-The App Earn page leaves multiple options for claiming your ANGLE tokens:
+The App Earn page leaves multiple options for claiming your ANGLE tokens if you're involved in a gauge of the protocol:
 
 - Claim from multiple gauges in **one transaction** by clicking on the `Claim Rewards` button on the right. When using this modal, you can select/unselect the gauges you want to claim rewards from and then:
   - **`Claim ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3 related ones) in one transaction.
