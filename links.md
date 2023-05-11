@@ -151,7 +151,7 @@ coverY: 0
 
 #### On BNBChain
 
-- [PancakeSwao agEUR-USDT (0.05%)](https://pancakeswap.finance/add/0x12f31B73D812C6Bb0d735a218c086d44D5fe5f89/0x55d398326f99059fF775485246999027B3197955/500?chain=bsc&minPrice=1.088832&maxPrice=1.090771)
+- [PancakeSwap agEUR-USDT (0.05%)](https://pancakeswap.finance/add/0x12f31B73D812C6Bb0d735a218c086d44D5fe5f89/0x55d398326f99059fF775485246999027B3197955/500?chain=bsc&minPrice=1.088832&maxPrice=1.090771)
 
 #### On Avalanche
 

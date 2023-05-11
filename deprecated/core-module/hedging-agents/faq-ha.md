@@ -103,7 +103,7 @@ To reduce the risk of front-running with the oracle, after perpetual creation, a
 
 ## Is there a maintenance margin like in centralized exchanges?
 
-Yes. If the margin ratio goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.
+Yes. If the margin ratio goes below a certain threshold, your position should get liquidated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.
 
 ## Are there minimum or maximum leverage as a HA?
 

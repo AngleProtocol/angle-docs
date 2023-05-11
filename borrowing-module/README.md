@@ -12,7 +12,7 @@ It is based on a **debt mechanism**, similar to the one used by Maker with DAI. 
 
 This module is designed to be easily deployable across different EVM compatible networks and to work for any kind of stablecoin of the protocol.
 
-It is also designed to work hands in hands with the other protocol's modules: agEUR, which can be minted by the protocol's direct deposit modules is for instance fully interoperable between both modules.
+It is also designed to work hands in hands with the other protocol's modules: agEUR, which can also be minted by the protocol's direct deposit modules is for instance fully interoperable between both modules.
 
 {% hint style="info" %}
 Smart contract addresses associated to the Borrowing module on different chains and for the different stablecoins of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts).

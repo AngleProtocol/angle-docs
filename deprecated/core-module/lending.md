@@ -17,7 +17,7 @@ description: >-
 
 Lending a fraction of the reserves to other lending platforms is part of what makes the Core module attractive to Standard Liquidity Providers. By lending reserves, it can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
 
-![Angle Strategies Flow](../.gitbook/assets/angle-strategies-flow.jpg)
+![Angle Strategies Flow](../../.gitbook/assets/angle-strategies-flow.jpg)
 
 ## 🎨 Design
 
@@ -61,7 +61,7 @@ The first strategy implemented simply consisted in optimizing lending between Co
 
 Following [this governance vote](https://snapshot.org/#/anglegovernance.eth/proposal/0xb1b4d98c080ec587b2563a6aaa6f854e0a42ce6881f61bced62cf9fa8ae42898), this strategy was updated for USDC and DAI to an improved model that consists in splitting funds between the different lending platforms supported following an optimal ratio computed off-chain. This was designed to maximize the global APR earned by the strategy while keeping strategy updates permissionless: anyone can suggest an allocation of funds between lending platforms, the strategy just checks whether suggested allocations improve the current APR, and adjusts in case of.
 
-![Improved Optimizer APR Strategy](../.gitbook/assets/Optimizer-APR-Strategy-V2.jpg)
+![Improved Optimizer APR Strategy](../../.gitbook/assets/Optimizer-APR-Strategy-V2.jpg)
 
 ### Folding strategies
 
