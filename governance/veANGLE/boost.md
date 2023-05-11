@@ -6,33 +6,29 @@ description: How veANGLE can boost ANGLE rewards for LPs
 
 ## 🔎 TL;DR
 
-- Liquidity providers **staking on Angle** can boost their ANGLE rewards by holding veANGLE.
+- Liquidity providers on Angle gauges can boost their ANGLE rewards by holding veANGLE.
 - This boost can represent up to to x2.5 the base rewards an address without any veANGLE could get.
 - To compute the boost, the total veANGLE supply of an address is applied to all the contracts this address is staking on.
 
 {% hint style="warning" %}
-Boost on rewards only apply to internal staking contracts on Angle (type 0 gauges, more in the [gauge](gauges.md) page)
+Boost on rewards only apply to some specific gauges. More info on such gauges [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges).
 {% endhint %}
 
 ## 🚜 Farming Boost
 
 Holding veANGLE give users more weight when collecting certain farming rewards. A big majority of the farming rewards that are distributed directly through the protocol are eligible for veANGLE boosts.
 
-One notable exception is that of the rewards given to hedging agents taking part in Angle Perpetual contracts.
-
-Besides, external farming that are promoted by other protocols (such as Sushi Onsen) or that are available on other chains are typically not available for veANGLE boosts since they are independent of the mainnet Angle protocol itself.
-
-{% hint style="info" %}
-A user veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.
-{% endhint %}
+A user veANGLE boost does not increase the overall emission of rewards. The boost is an additive boost that is added to each farmer's yield proportional to their veANGLE balance.xz
 
 ## 🧮 Boost Computation
 
 Angle forked its staking contract model (also called liquidity gauge) from Curve which has a similar boost system.
 
-Basically, this staking contract considers that an address holding veANGLE is providing more liquidity than it really is.
+As explained [here](../../guides/app-guides/earn/staking/univ3-lp.md), not all ANGLE emissions are distributed through staking contracts: for some UniswapV3 gauges, rewards are distributed through an off-chain mechanism involving no staking contract. On these gauges, boosts apply as well and the logic with which boosts are computed in this case is similar to how this is done in the staking contracts used for other Angle gauges.
 
-In a given gauge, owning veANGLE increases a LP's share of the pool thus increasing the rewards received. As usual, LPs holding no veANGLE are considered as providing 100% of their liquidity. If an address owns enough veANGLE, the contract can consider that it brings up to 250% its original liquidity, or a x2.5 boost compared to the original 100%.
+With this in mind, how are boosts computed for Angle staking contracts? Basically, Angle staking contracts consider that an address holding veANGLE is providing more liquidity than it really is.
+
+In a given gauge, owning veANGLE increases a LP's share of the pool thus increasing the rewards received. As usual, LPs holding no veANGLE are considered as providing 100% of their liquidity. If an address owns enough veANGLE, the contract considers that it brings up to 250% its original liquidity, or a x2.5 boost compared to the original 100%.
 
 Then, this x2.5 multiplier in liquidity provided translates into a boost on rewards depending on the total liquidity provided in the pool and how it is considered by the boost calculator.
 
@@ -129,7 +125,7 @@ Due to all the variables in the boost calculation, it is very tricky to do so ma
 
 ## Boost Update
 
-Implementation details are such that a user's veANGLE balance used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that this user's boost could stay higher than it actually is with their current veANGLE balance. It has two main side effects.
+For gauges which rely on staking contracts (and not on the off-chain script to stream rewards), implementation details are such that a user's veANGLE balance used to calculate the boost is stored at the time of the last action or checkpoint within a liquidity gauge contract. This means that this user's boost could stay higher than it actually is with their current veANGLE balance. It has two main side effects.
 
 On the one hand, after locking tokens, users need to call the **deposit, withdraw (with amount > 0), or user_checkpoint() functions** from the liquidity gauge (staking contract) to apply or update their veANGLE balance and boost. It’s therefore more gas efficient to lock ANGLE before depositing liquidity into a gauge.
 

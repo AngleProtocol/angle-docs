@@ -12,12 +12,12 @@ Whitepapers are static documents explaining the concepts and inspiration behind 
 You may find translations of these whitepapers in the [international](resources/international/) section of this docs.
 {% endhint %}
 
+## Angle Borrowing Module
+
+{% file src=".gitbook/assets/Angle Borrowing Module Whitepaper.pdf" %}
+
 ## Angle Core Module
 
 {% file src=".gitbook/assets/angle-wp (1).pdf" %}
 Angle Core Module Whitepaper
 {% endfile %}
-
-## Angle Borrowing Module
-
-{% file src=".gitbook/assets/Angle Borrowing Module Whitepaper.pdf" %}

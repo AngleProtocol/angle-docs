@@ -106,7 +106,7 @@ $$
 
 The higher the collateral ratio, the "safer" the vault, as the price decline of the collateral needed to get liquidated and lose the collateral is much bigger.
 
-Additionnally, each vault type has its own **collateral factor** (CF) parameter. It dictates the minimum collateral ratio allowed for vaults of this type. If this ratio drops below this quantity defined by the CF (1/CF more precisely), the vault risks being liquidated.
+Additionally, each vault type has its own **collateral factor** (CF) parameter. It dictates the minimum collateral ratio allowed for vaults of this type. If this ratio drops below this quantity defined by the CF (1/CF more precisely), the vault risks being liquidated.
 
 For example, if the CF of a vault type is at 2/3, or 150% of min collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 agEUR need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
 

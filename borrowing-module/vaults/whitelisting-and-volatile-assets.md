@@ -8,11 +8,15 @@ description: Whitelisting addresses and volatile assets as collateral
 
 While there will be one contract per vault type handling positions, some collateral types can be made permissioned meaning that only some pre-defined addresses would be allowed to borrow from it.
 
-This could serve different use cases.
+For some other collateral assets, only some whitelisted addresses could be allowed to participate in the liquidation of unhealthy vaults.
+
+In both cases, governance can choose which addresses are whitelisted and whether to keep the whitelist or not.
+
+Having a whitelist on the addresses which can borrow agTokens and interact with the borrowing module can serve different use cases.
 
 ### For specific collateral types
 
-The whitelisting of addresses can be used to deploy specific collateral types (like real-world assets for example). In this case, governance may need to keep tight control on who can borrow to avoid exploits.
+The whitelisting of addresses who can borrow agTokens can be used to deploy specific collateral types (like real-world assets for example). In this case, governance may need to keep tight control on who can borrow to avoid exploits.
 
 ### For specific entities
 

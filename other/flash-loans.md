@@ -20,6 +20,6 @@ The main use case for flash loans is arbitrage between pools, which usually help
 
 Contrary to what is done in other lending protocols like Aave, tokens lent by the protocol during flash loans are not taken from a liquidity pool, but they are directly minted from the protocol's contracts.
 
-Flash loans offered by the protocol to are free. For each stablecoin, there is a cap on the amount that can be taken during a flash loan, this cap is controlled by governance and it could be removed so that anyone can borrow technically an infinite amount of agToken in a block.
+Flash loans offered by the protocol are free. For each stablecoin, there is a cap on the amount that can be taken during a flash loan, this cap is controlled by governance and it could be removed so that anyone can borrow technically an infinite amount of agToken in a block.
 
 More info on how to take a flash loan with Angle in our [developers documentation](https://developers.angle.money/overview/guides/flashloans).

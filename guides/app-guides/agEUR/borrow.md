@@ -105,6 +105,27 @@ Here are the steps to transfer debt between two vaults:
 
 ![Transfer Debt](/.gitbook/assets/transfer-debt-screen.png)
 
+## Monitoring your positions
+
+You can monitor your vaults' health from the main Borrow page.
+
+![Vaults list](../../../.gitbook/assets/vaults-list.png)
+
+Two of the important quantities to monitor for open vaults are:
+
+- their loan-to-value (LTV): value of vaults' debt compared to that of their collateral.
+- their health factor (HF): indicator for the health of vaults. Below 1, vaults can get liquidated.
+
+These are computed as follows:
+
+$$
+\texttt{LTV} = \frac{\texttt{debt}}{\texttt{collateral}}
+$$
+
+$$
+\texttt{HF} = \frac{1}{\texttt{LTV}} \times {\texttt{max. LTV}}
+$$
+
 ## Claim your rewards
 
 Staked tokens accumulating external rewards can be used as collateral in an Angle vault. You can **claim all your vaults collateral rewards** directly **from the Angle App** in just one transaction. To do so, click on the `Claim` button at the right of the highlighted card below.

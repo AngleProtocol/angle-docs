@@ -37,7 +37,7 @@ While everything that can be done with this surplus is still to be determined (l
 
 ## 🍀 Standard Liquidity Providers Insurance of the Insurance
 
-If the incentives put in place do not attract enough HAs to fully insure the Core module against the volatility of the collateral and if there is not enough surplus accumulated, it can rely on the collateral brought by Standard Liquidity Providers to ensure full convertibility of the stablecoins. There is an equilibrium threshold at stake with Standard Liquidity Providers (SLPs). Indeed, the fewer SLPs there are, the more interesting it becomes to be a SLP because of the [multiplier effect](https://docs.angle.money/concepts/standard-liquidity-providers#multiplier-effect) that is spread among SLPs.
+If the incentives put in place do not attract enough HAs to fully insure the Core module against the volatility of the collateral and if there is not enough surplus accumulated, it can rely on the collateral brought by Standard Liquidity Providers to ensure full convertibility of the stablecoins. There is an equilibrium threshold at stake with Standard Liquidity Providers (SLPs). Indeed, the fewer SLPs there are, the more interesting it becomes to be a SLP because of the multiplier effect that is spread among SLPs.
 
 To prevent the cascading effect that could be induced if SLPs all exit the Core module, a slippage is introduced to discourage SLPs from exiting when the collateral ratio is too low: this is a way to make sure that there will always be SLPs in the Core module. Note here that HAs are never affected by exit restrictions: they can find incentives to enter at any point in time thus bringing extra-liquidity, regardless of whether there has been a price drop or not.
 
@@ -50,8 +50,6 @@ Governance can also choose to distribute a bigger fraction of the transaction fe
 In the meantime, transaction fees for users minting and burning adjust automatically based on the hedging ratio of the Core module. This means that it is more expensive for users to mint stablecoins (thus adding collateral into the Core module) if the collateral that is already there is not hedged enough by Hedging Agents.
 
 Besides, if the collateral ratio keeps decreasing, governance can choose at its discretion to mitigate bank run scenari by increasing burn transaction fees by inducing a collateral ratio dependency.
-
-You can have a look at [Angle's analytics](https://analytics.angle.money) page to follow the different hedge and collateral ratios, and the current transaction fees.
 
 ## ⌛ Collateral Diversification and Settlement
 

@@ -4,7 +4,7 @@ description: Settlement - Stopping all operations for a specific vault type
 
 # 🗡 Vaults Settlement
 
-As in the Core module, the Borrowing module has a **settlement mechanism** to protect the protocol against potential attacks, and quickly stop unsustainable operations.
+The Borrowing module has a **settlement mechanism** to protect the protocol against potential attacks, and quickly stop unsustainable operations.
 
 It has been designed as a last resort to protect agTokens holders, and make sure they can redeem their stablecoins at a 1:1 rate against collateral even under an emergency situation. This reinforces the insurance that agTokens are **always backed by collateral** and can be redeemed.
 

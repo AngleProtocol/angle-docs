@@ -15,7 +15,7 @@ description: Getting stablecoins from collateral and conversely
 
 Angle Core module is designed to be as simple as possible from a user perspective and like USDC (or also USDT), it relies on full convertibility of collateral and stable assets, meaning users can swap collateral against stablecoins as well as stablecoins against collateral at any time.
 
-To generate a stable asset, a user just has to send a whitelisted collateral to the Core module. An oracle then determines how many stablecoins (`ERC-20`tokens) need to be minted and sent to the user. Like in an AMM swap, the collateral received by the Core module does no longer belong to the user.
+To generate a stable asset, a user just has to send a whitelisted collateral to the Core module. An oracle then determines how many stablecoins (`ERC-20` tokens) need to be minted and sent to the user. Like in an AMM swap, the collateral received by the Core module does no longer belong to the user.
 
 The same procedure works when users are willing to cash out. They just have to send their stablecoins to the Core module and specify the collateral they want in exchange. In return, they get the chosen collateral in an amount depending on the collateral price specified by the oracle and on the transaction fees. The stablecoins received by the Core module are then burnt.
 
@@ -57,7 +57,7 @@ A stablecoin is only stable relative to the value of the oracle that was chosen 
 
 Transaction fees are taken from users minting and burning. While this is a way to prevent front-running attacks (details [here](https://blog.angle.money/angle-research-series-part-2-fees-and-front-running-resistance-for-users-393e0ae14b20)), it also helps to incentivize liquidity providers contributing to Angle Core module.
 
-The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
+The structure of the mint transaction fees differs from that of the burn transaction fees. In all cases, like in a utilization curve for a lending protocol, fees depend on the coverage ratio that is the ratio between the amount covered by HAs and the amount that HAs should cover for this collateral type. The curve specifying the value of the fees as a function of the coverage ratio is called a coverage curve.
 
 - Minting: The concept is that the higher the coverage ratio, the more the Core module is able to cover the collateral from people issuing new stablecoins, and the lower the minting fees should be.
 
@@ -66,10 +66,6 @@ The structure of the mint transaction fees differs from that of the burn transac
 - Burning: The less collateral is covered by Hedging Agents, the bigger the volatility risk faced by the Core module is for this collateral type, the cheaper it is to burn and hence to decrease this risk.
 
 ![Burning Fee for Users](../../.gitbook/assets/burning-fee.jpg)
-
-{% hint style="info" %}
-The exact amount and values of these transaction fees are still to be determined. You can see the current fees situation in [Angle's analytics](https://analytics.angle.money) page.
-{% endhint %}
 
 Regardless of the amounts chosen, this fee structure has been made so that fees depend on the type of collateral used. If the collateral is volatile, and having it hedged by HAs is more important, fees can vary more importantly along the coverage curve than less volatile collaterals.
 
