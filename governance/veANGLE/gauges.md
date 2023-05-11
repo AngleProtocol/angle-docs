@@ -13,23 +13,21 @@ description: How the gauge voting system works with Angle
 
 Besides voting on governance proposals, veANGLE owners can vote for ANGLE gauge weights with their veANGLE balance. The gauge system implemented by Angle is similar to that of Frax and of Curve.
 
-Like what was done weekly on Snapshot by ANGLE holders before the Angle Governance upgrade, veANGLE holders are now be able to distribute their voting power across a single or multiple gauges on-chain.
-
-A gauge corresponds to a staking contract. By voting for a gauge, veANGLE holders increase the amount of ANGLE tokens sent to the related staking contract with respect to the others. veANGLE holders therefore vote for the gauges they think should receive more rewards.
+A gauge corresponds to a contract where incentives are sent. By voting for a gauge, veANGLE holders increase the amount of ANGLE tokens sent to the related contract with respect to the others. veANGLE holders therefore vote for the gauges they think should receive more rewards.
 
 This allows veANGLE holders, who are the most long term users of the protocol, to have complete control over the future ANGLE emissions.
 
 ## ↔️ Incentives alinement
 
-Interestingly, the gauge system lowers the influence of LPs selling off their ANGLE rewards since those LPs do not necessarily have veANGLE to continue voting for the gauge they are providing liquidity to.
+The gauge system lowers the influence of LPs selling off their ANGLE rewards since those LPs do not necessarily have veANGLE to continue voting for the gauge they are providing liquidity to.
 
-This system strongly favors LP who continually lock their rewards into veANGLE to increase their pool's gauge weight. Essentially, and like mentioned in [Frax docs](https://docs.frax.finance/vefxs/gauge), Angle gauges align incentives of veANGLE holders so that the most long term oriented holders control where ANGLE emissions are distributed.
+This system strongly favors LP who continually lock their rewards into veANGLE to increase their pool's gauge weight. Essentially, Angle gauges align incentives of veANGLE holders so that the most long term oriented holders control where ANGLE emissions are distributed.
 
 ## In Practice
 
 Gauge weights are updated weekly, every Thursday at 2am CET. This means that the ANGLE distribution rate for each pool is constant for 1 week and then updates to the new rate at this time.
 
-Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once this is done, users don't have to vote again every week except if they want to change them. Votes for a given gauge can only be changed **every 10 days**, so that each votes apply for at least two weeks.
+Users with veANGLE can allocate their voting power to the available gauges to influence the reward distribution. Then, the sum of all the veANGLE assigned to each gauge by all holders determines the quantity of rewards to be distributed. Once this is done, users don't have to vote again every week except if they want to change them. Votes for a given gauge can only be changed **every 10 days**, so that each vote applies for at least two weeks.
 
 A person can also decide not to allocate all their available voting power.
 
@@ -59,23 +57,13 @@ veANGLE stakers can therefore feel confident staking the maximum duration of 4 y
 
 ## Gauge Types
 
-The idea with Angle gauges is to incentivize different types of liquidity pools that can be useful to the protocol:
+The idea with Angle gauges is to incentivize liquidity pools for Angle stablecoins that are useful to the protocol, like pools on Curve or Uniswap.
 
-- Angle stablecoins liquidity and markets
-- sanTokens
-- Liquidity pools on exchanges (like on Curve, on Uniswap)
-- Liquidity pools on other chains (like agEUR/USDC on Uniswap on Polygon for instance)
-- Perpetuals (if needed)
-
-The gauge system can also be used to incentivize different things than staking contracts. For instance, incentives for Convex voters on Curve can be linked to a gauge (in fact an EOA or a multisig) where veANGLE owners decide to send some rewards, and the multisig would be responsible for placing the incentives on Votium.
+The gauge system can also be used to incentivize different things than just pools directly. For instance, incentives for Curve voters can be linked to a gauge for which received emissions are placed on bribing platforms like Votemarket.
 
 Overall, there is no restriction on which pools or pairs can have a gauge other than that they should pass the gauge governance vote. The idea is however that all gauges should have a link with an Angle Protocol stablecoin (like agEUR) or the Angle protocol more generally, as the governance token of the protocol is being distributed as incentive.
 
-Given that a wide range of contracts can be considered Angle protocol gauges, the system distinguishes several gauge types:
-
-- Type 0 Gauges: mainnet staking contracts internal to the Angle Protocol. LPs of these gauges can receive boosted rewards.
-- Type 1 Gauges: corresponding to Angle Perpetual staking contracts. Note that there is no boost for veANGLE holders in these contracts.
-- Type 2 Gauges: External staking contracts. This gauge type includes all staking contracts **not on Angle on Ethereum Mainnet**, whether they are on other protocols (Curve or Convex) or on other chains (Polygon or Avalanche).
+Given that a wide range of contracts can be considered Angle protocol gauges, the system distinguishes several gauge types.
 
 {% hint style="info" %}
 Available gauges of the protocol and their type can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges).

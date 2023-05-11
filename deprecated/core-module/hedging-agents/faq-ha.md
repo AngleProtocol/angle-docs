@@ -30,8 +30,6 @@ There are no fees for removing or adding collateral as margin to a position.
 
 Within Angle Core module, Hedging Agents are here to cover the volatility of the collateral that was brought by users. If the amount of collateral from users is worth `x` of stablecoins and HAs already cover this amount, then new ones will not be able to enter.
 
-The ratio between what HA currently hedge and what they hedge in total can be seen in the analytics. If we take the [USDC/EUR pair](https://analytics.angle.money/USDC/EUR) as example, HA can't open positions anymore when the hedge ratio reaches the target hedge ratio.
-
 To put it in other words, Angle Core module can be seen as a marketplace between stability and volatility seekers. If the supply of volatility is fully taken by HAs, then the Core module cannot offer more leveraged positions \(and thus more volatility\) than what it has already offered.
 
 ## How is the amount to hedge by HAs computed?
@@ -105,7 +103,7 @@ To reduce the risk of front-running with the oracle, after perpetual creation, a
 
 ## Is there a maintenance margin like in centralized exchanges?
 
-Yes. If the [margin ratio](https://docs.angle.money/concepts/hedging-agents#has-liquidations) goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.
+Yes. If the margin ratio goes below a certain threshold, your position should get liquidiated by keepers. The maintenance margin depends on the stablecoin/collateral pair concerned. For instance for wETH/EUR pair, the maintenance margin should be set at `6.25%`.
 
 ## Are there minimum or maximum leverage as a HA?
 

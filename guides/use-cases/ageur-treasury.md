@@ -20,7 +20,7 @@ agEUR is a supported asset on Gnosis Safe and the Angle App integrates with Gnos
 
 ## Getting agEUR in your treasury
 
-agEUR can be minted directly from Angle at [app.angle.money](https://app.angle/money/), or bought from a DEX, a DEX aggregator, or from one of our [on-ramp partners](/guides/app-guides/agEUR/on-ramp-off-ramp.md). If you are looking to buy an important amount of agEUR, the best place beyond Angle App would be on 1inch which also integrates Angle slippage-less transactions as well as other agEUR liquidity pools.
+agEUR can be minted directly from Angle at [app.angle.money](https://app.angle/money/), or bought from a DEX, a DEX aggregator, or from one of our [on-ramp partners](/guides/app-guides/agEUR/swap.md). If you are looking to buy an important amount of agEUR, the best place beyond Angle App would be on 1inch which also integrates Angle slippage-less transactions as well as other agEUR liquidity pools.
 
 You can find more details in the [App Guides](/guides/app-guides/README.md) of this documentation.
 
@@ -28,25 +28,17 @@ You can find more details in the [App Guides](/guides/app-guides/README.md) of t
 
 Once you hold agEUR, there are multiple ways to earn yield on top of it.
 
-### Deposit on Euler
-
-[Euler](https://www.euler.finance) is a lending market with a well researched risk framework and improved liquidations.
-
-Yield for agEUR deposits on Euler is currently ranging between 2% and 3%. Tokens can just be deposited on [app.euler.finance](https://app.euler.finance), and they will immediately start earning interest.
-
 ### Deposit on Curve and stake on Convex
 
 Another option is to deposit agEUR in the [Curve 3EUR](https://curve.fi/factory/66/deposit) pool (agEUR+EURs+EURt) or in the [Curve agEUR-EUROC pool](https://classic.curve.fi/factory/164), and then deposit the Curve LP tokens on [Convex](https://www.convexfinance.com/stake) for CVX and CRV rewards.
 
 These opportunities usually generate higher yields but are reserved for more advanced users.
 
-### Other yield opportunities
-
-#### Aave on Polygon
+### Aave on Polygon
 
 agEUR is also available on Polygon, where it can be deposited on Aave lending market to earn yield.
 
-#### LP on incentivized agEUR/token pools
+### LP on incentivized agEUR/token pools
 
 Some agEUR pools are incentivized with ANGLE token rewards and can yield interesting APRs, like agEUR/ETH at 30%, or agEUR/USDC at \~10%.
 

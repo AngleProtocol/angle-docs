@@ -9,7 +9,7 @@ coverY: 0
 ## Websites
 
 - 📡 [Website](https://angle.money) - Landing page
-- [📐](https://emojipedia.org/triangular-ruler/) [Angle App](https://app.angle.money/)
+- 📐 [Angle App](https://app.angle.money/)
 
 ## Governance
 
@@ -20,6 +20,7 @@ coverY: 0
 
 - 💻 [Github](https://github.com/AngleProtocol)
 - 🛠 [Dev Docs](https://developers.angle.money)
+- 🛠 [API](https://api.angle.money)
 - 🧾 [Smart Contract Addresses](https://developers.angle.money/overview/smart-contracts)
 
 ## Social
@@ -28,8 +29,8 @@ coverY: 0
 - 💬 [Discord](https://discord.gg/3vaHCJw7Mz)
 - 📠 [Telegram](https://t.me/AngleAnnouncements)
 - 📺 [YouTube Channel](https://www.youtube.com/@anglelabs)
-- 🎙️ [The Defi Angle Podcast](https://www.youtube.com/@anglelabs) - YouTube Channel
-- 🐦🎙️ [The Defi Angle Podcast](https://twitter.com/TheDefiAngle) - Twitter Account
+- 🎙️ [The Defi Angle Podcast - Youtube](https://www.youtube.com/@anglelabs)
+- 🐦🎙️ [The Defi Angle Podcast - Twitter](https://twitter.com/TheDefiAngle)
 - 🌳 [Linktree](https://linktr.ee/angleLabs) (to share all our links in one page)
 
 ## Contributing
@@ -93,7 +94,6 @@ coverY: 0
 
 #### Ethereum
 
-- [Euler](https://app.euler.finance/)
 - [Yearn 3EUR Vault](https://yearn.finance/vaults/1/0x82c83ddA32DB09F63F9A59A129278f3fdC3EeE67)
 - [Yearn agEUR-EUROC Vault](https://yearn.finance/vaults/1/0x321d570790fd2f109Fe4e55aa419Adf2fce0c842)
 - [StakeDAO](https://app.stakedao.org/0x9b8308742A0Faefbd7d39F7073eA07a328551eD4/strategies)
@@ -103,7 +103,6 @@ coverY: 0
 
 - [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3)
 - [Market.xyz](https://polygon.market.xyz/pool/8)
-- [Midas Capital](https://app.midascapital.xyz/137/pool/1)
 - [Hundred Finance](https://hundred.finance/)
 - [Atlendis](https://app.atlendis.io/pools/0x712a20869e4630d50c37ba0dde9918676224f819b47e8e76eb46ab223056146a/deposit)
 
@@ -149,6 +148,10 @@ coverY: 0
 
 - [Uniswap V3 agEUR-USDC](https://info.uniswap.org/#/arbitrum/pools/0xe4d9faddd9bca5d8393bee915dc56e916ab94d27)
 - [Kyberswap agEUR-USDC](https://kyberswap.com/elastic/add/0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8/40)
+
+#### On BNBChain
+
+- [PancakeSwao agEUR-USDT (0.05%)](https://pancakeswap.finance/add/0x12f31B73D812C6Bb0d735a218c086d44D5fe5f89/0x55d398326f99059fF775485246999027B3197955/500?chain=bsc&minPrice=1.088832&maxPrice=1.090771)
 
 #### On Avalanche
 

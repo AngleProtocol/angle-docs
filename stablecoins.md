@@ -6,17 +6,17 @@ coverY: 6
 
 # 🖼 Stablecoins
 
-| Features                     | agEUR | agGOLD |
-| ---------------------------- | ----- | ------ |
-| Core Module - Ethereum       | ✅     | ❌      |
-| Borrowing Module - Ethereum  | ✅     | ✅      |
-| Borrowing Module - Polygon   | ✅     | ❌      |
-| Borrowing Module - Optimism  | ✅     | ❌      |
-| Borrowing Module - Arbitrum  | ✅     | ❌      |
-| Borrowing Module - Avalanche | ✅     | ❌      |
-| Flash Loans                  | ✅     | ✅      |
-| Bridge Setup with LayerZero  | ✅     | ❌      |
-| AMO - Curve Ethereum         | ✅     | ✅      |
+| Features                     | agEUR |
+| ---------------------------- | ----- |
+| Borrowing Module - Ethereum  | ✅    |
+| Borrowing Module - Polygon   | ✅    |
+| Borrowing Module - Optimism  | ✅    |
+| Borrowing Module - Arbitrum  | ✅    |
+| Borrowing Module - Avalanche | ✅    |
+| Flash Loans                  | ✅    |
+| Bridge Setup with LayerZero  | ✅    |
+| AMO - Curve Ethereum         | ✅    |
+| Core Module - Ethereum       | ❌    |
 
 {% hint style="success" %}
 For more details about how each stablecoin cross-chain infrastructure is setup, check out [this page](other/cross-chain.md#bridge-solutions).

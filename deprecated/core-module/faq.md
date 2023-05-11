@@ -20,11 +20,7 @@ Yes, Angle Core module smart contracts have been audited by Chainsecurity and Si
 
 ## What stablecoins are supported by Angle Core module?
 
-While the principle of the Core module could work for any stablecoin, it is for the moment only used for agEUR, Angle's Euro stablecoin. agEUR issued by the Core Module is interoperable with the agEUR from the other protocol's modules.
-
-## What collateral are accepted by Angle Core module?
-
-Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can still come with any other tokens on the Angle App, and they will be swapped against one of these collaterals.
+While the principle of the Core module could work for any stablecoin, it was only used for agEUR, Angle's Euro stablecoin, before being wound down in May 2023. The collateral assets for agEUR were USDC, DAI, FRAX, and ETH/wETH.
 
 ## How is Angle's Core module different from other stablecoin protocols?
 
@@ -36,14 +32,6 @@ Currently, USDC, DAI, FRAX, and ETH/wETH can be used to mint agEUR. Users can st
 
 - Angle Core module can be used to get direct leverage on collateral. As a Hedging Agent in Angle Core module, you can come to Angle and choose to get the leverage multiplier you want on the pair collateral/stablecoin of your choice, with no funding rates.
 - Angle offers higher staking rewards than what you could get with most common lending protocols. As a Standard Liquidity Provider (SLP) of Angle Core module, you get part of the transaction fees induced by users interacting with it, and part of the lending returns obtained by lending the reserves. If there is 150 in the Core module that is lent, 50 coming from SLP, then SLPs could get yield on 150 although they just contributed to 50.
-
-## What are the costs?
-
-Angle Core module has dynamic fees. For stable seekers minting and burning fees vary around 0.3%, meaning that with 1 ETH worth 1000€, a stable seeker can get 997 agEUR. Mint and burn fees depend on how much of the collateral is covered by Hedging Agents. In some cases, mint and burn fees may also have a dependency on the collateral ratio of the Core module.
-
-For Hedging Agents getting perpetual futures from the Core module, there are some fees induced at position opening and closing. Opening and closing fees depend on how much of the collateral is already covered by Hedging Agents. Fees vary around 0.3% as well.
-
-You can see the specific fees implemented in detail in Angle's [analytics](https://analytics.angle.money).
 
 ## Where are the funds stored in the Core module, and how are they separated?
 

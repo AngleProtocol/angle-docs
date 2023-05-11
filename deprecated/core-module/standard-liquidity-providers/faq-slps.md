@@ -32,7 +32,7 @@ A few months later, the SLP decides it's time to withdraw USDC from the Core mod
 
 ## Do SLPs get all transaction fees and interest from Angle Core module?
 
-No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters, which can be changed by governance to give more or less fees and interest to SLPs. The current parameters' values can be found in [Angle Analytics](https://analytics.angle.money) on each pool's page.
+No. The portion of the fees going to SLPs are for each collateral/stablecoin pair controlled by two parameters, which can be changed by governance to give more or less fees and interest to SLPs.
 
 The interest for SLPs is taken into account after the share of interest going to veANGLE holders has been distributed. For example, if the interest for veANGLE holders is at 0.5 and the interest for SLPs at 0.6, then the share of interest going to SLPs is $0.6\times(1-0.5)=0.3$.
 

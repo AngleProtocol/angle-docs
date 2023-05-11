@@ -52,7 +52,7 @@ When the collateral ratio is too small, in order to guarantee that any stablecoi
 
 For instance if the slippage is 10%, then a SLP willing to get 100 of collateral back will only get back 90, and the 10 of collateral difference will never be recovered.
 
-The slippage factor depends on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio (120%), SLPs face no slippage. They can be consulted in the Fees section of the [analytics](https://analytics.angle.money/USDC/EUR) for each Pool.
+The slippage factor depends on the collateral ratio: the smaller the collateral ratio, the bigger the slippage for SLPs exiting. Above a certain collateral ratio (120%), SLPs face no slippage.
 
 {% hint style="info" %}
 The structure of the slippage function is updatable by the governance or the guardian.

@@ -73,7 +73,9 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 | Optimism      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
 | Arbitrum      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
 | Avalanche     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
-| BSC           | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
+| BNB Chain     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
+| Gnosis Chain  | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
+| Celo          | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
 | Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
 | Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                             |

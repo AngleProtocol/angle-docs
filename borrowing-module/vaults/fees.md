@@ -79,7 +79,7 @@ In summary, users may pay fees to the protocol in the form of an increase of the
 This debt increase through fees may happen at four (optional) moments:
 
 1. When minting agTokens if there is a **mint fee**
-2. During the life of the vault if agTokens is borrowed, through the **stability fee**
+2. During the life of the vault if agTokens are borrowed, through the **stability fee**
 3. When repaying an agToken debt if there is a **repay fee**
 4. When a liquidation happens, through the **liquidation surcharge**
 
@@ -95,4 +95,4 @@ All the revenue and bad debt from this module are gathered in `Treasury` contrac
 
 Interestingly, stablecoins are minted when revenue is accrued. The reason for this is that if there is only one borrower borrowing 100 stablecoins at a 1% interest rate, then after a year this borrower needs to repay 101 stablecoins. But if only 100 stablecoins have been issued, there's no way for this borrower to repay its debt: as such when accruing revenue from `VaultManager` contracts, the protocol mints stablecoins. The logic is that these stablecoins should in some way end up in the market for vault owners to buy them and repay their debt.
 
-If there is no bad debt, surplus accumulated is split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers again are then in charge of pushing the share of the surplus going to governance to a `surplusManager` address, that should distribute them to veANGLE holders as interest, or to other agEUR holders.
+If there is no bad debt, surplus accumulated is split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers again are then in charge of pushing the share of the surplus going to governance to a `surplusManager` address, that should take care of distributing them to veANGLE holders as interest, or to other agEUR holders.

@@ -10,9 +10,9 @@ Angle Borrowing Module is one of the minting mechanisms for Angle stablecoins.
 
 It is based on a **debt mechanism**, similar to the one used by Maker with DAI. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 
-This module, common to all Angle stablecoins, is designed to be easily deployable across different EVM compatible networks.
+This module is designed to be easily deployable across different EVM compatible networks and to work for any kind of stablecoin of the protocol.
 
-It is also designed to work hands in hands with the other protocol's modules: agEUR, which can be minted by the Core module on Ethereum is for instance fully interoperable between both modules.
+It is also designed to work hands in hands with the other protocol's modules: agEUR, which can be minted by the protocol's direct deposit modules is for instance fully interoperable between both modules.
 
 {% hint style="info" %}
 Smart contract addresses associated to the Borrowing module on different chains and for the different stablecoins of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts).
@@ -38,7 +38,7 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 ## Cross-chain Compatibility
 
-**The Borrowing module can scale to a wide range of different networks**.
+**The Borrowing module can scale to a wide range of different networks and stablecoins**.
 
 This allows governance to easily deploy it on networks like layer 2s where transactions are more affordable than on the Ethereum mainnet.
 The Borrowing module for agEUR is for instance natively deployed on Ethereum but also on Polygon, Optimism, Arbitrum and Avalanche.

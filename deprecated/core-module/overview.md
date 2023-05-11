@@ -4,10 +4,17 @@ description: The Core Concepts of Angle Core module
 
 # 🔭 Angle Core Module Overview
 
+{% hint style="info" %}
+The Core module of the protocol was wound down in May 2023. The documentation is left here as a helper for other projects who would want to leverage on the ideas of the Core module.
+If you were a [hedging agent](../core-module/hedging-agents/README.md), your position was settled at its cash-out value at the Ethereum block 16818578. You can use the guide [here](https://anglemoney.notion.site/HA-redemptions-process-e35a2b428cc84d39b8191f07a3b41940) to claim your tokens.
+If you were a Standard Liquidity Provider (SLP), you may still unstake and withdraw your funds from the Angle App. Note that the protocol yield strategies could be restarted independently of agEUR and that as such it's currently still possible to deposit in the protocol's Core module to get sanTokens. Note as well that SLPs received a portion of the profits the protocol made from the Euler hack recovery. This resulted in a 4% increase in the value of the sanTokens of the protocol.
+If you were holding agEUR minted through the Core module, there is nothing specific that you need to do. agEUR can still be minted or burnt through other means than this Core module.
+{% endhint %}
+
 Angle Core Module relies on three groups of stakeholders: stable seekers and holders, Hedging Agents and Standard Liquidity Providers.
 
 {% hint style="info" %}
-While the Angle Core module is currently only used for agEUR, it could be generalized to other stablecoins. To this extent, the concepts here are not described for agEUR specifically, but for a stablecoin in general.
+While the Angle Core module was only used for agEUR, it could have been generalized to other stablecoins. To this extent, the concepts here are not described for agEUR specifically, but for a stablecoin in general.
 {% endhint %}
 
 {% hint style="info" %}

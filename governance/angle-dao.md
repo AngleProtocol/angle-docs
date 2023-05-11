@@ -18,15 +18,14 @@ The Angle DAO is responsible for parameters tuning, deploying new stablecoins, a
 
 In particular, it can make the following changes:
 
-- Tune fee parameters for, among other things, in the Core module: users minting and burning, Hedging Agents opening and closing their perpetuals, slippage of Standard Liquidity Providers, ... In the Borrowing module, the DAO can change the collateral factors or the borrowing interest rates
+- Tune fee parameters. In the Borrowing module, the DAO can for instance change the collateral factors or the borrowing interest rates
 - Grant/revoke roles
 - Deploy new stablecoins
-- Deploy/revoke new strategies to get yield in the Core Module and choose in which proportions to distribute this yield to SLPs
-- Deploy/revoke collateral types
+- Deploy/revoke collateral types across the different modules of the protocol
 - Vote for [gauge rewards weights](veANGLE/gauges.md)
 - Upgrade oracles and other contracts throughout the system
 - Deploy the surplus of the protocol
-- Launch new Direct deposit modules (also referred to as Algorithmic Market Operations)
+- Launch new Direct deposit modules
 - Launch new Angle Protocol products
 
 ## 🗣 Discussions and debates
@@ -41,9 +40,11 @@ More formal proposals (which are closer to being implemented) are then discussed
 
 After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote.
 
-Since a tokenomics upgrade conducted in January 2022, veANGLE holders are the ones with voting power over the protocol. As such, they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
+veANGLE holders are the ones with voting power over the protocol: they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
 
-Finalized votes are then implemented by a multi-sig composed of community members. The fact that a multisig needs to implement transaction makes Angle governance system immune to on-chain governance attacks.
+Each vote requires a quorum of 10% of veANGLE holders to be considered valid.
+
+Finalized votes are then implemented by a multi-sig composed of community members. The fact that a multisig needs to implement transactions makes Angle governance system immune to on-chain governance attacks.
 
 Angle Protocol is available on different EVM compatible chains. There is one multisig per chain, each with the same signers detailed below. The addresses of the multisigs on all the different networks supported by Angle can be found [here](https://developers.angle.money/overview/smart-contracts).
 

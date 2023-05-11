@@ -116,6 +116,10 @@ Liquidators can liquidate vaults without bringing in any capital. When liquidati
 
 This decreases **a lot** the barriers to entry for potential liquidators and makes it more competitive, which is ultimately better for borrowers.
 
+### Whitelisted Liquidations
+
+For some collateral assets, liquidations may be whitelisted in the sense that only some specific addresses can be allowed to participate in the liquidation of unhealthy vaults. More on this is explained [here](whitelisting-and-volatile-assets.md).
+
 ## Example
 
 Let's say that the protocol has the following parameters for a given :

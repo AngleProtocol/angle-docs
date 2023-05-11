@@ -4,10 +4,10 @@ description: Details on Angle Uniswap V3 incentive mechanism for LPs
 
 # 🦄 Incentives for Uniswap V3 Liquidity Providers
 
-Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs) according to their added value to the protocol. Basically, it allows to reward LPs more granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in more complex ways that benefit from all Uniswap V3 possibilities.
+Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs). This mechanism rewards LPs granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
 
 {% hint style="info" %}
-You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1).
+You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1). The [Merkl product](../../../../side-products/merkl/README.md) maintained by Angle Labs is a generalization of this incentive framework for any type of pool and of reward token.
 {% endhint %}
 
 In this guide, we detail how the incentives are split and how you can provide liquidity on Angle Uniswap V3 pools to earn ANGLE rewards.
@@ -22,7 +22,7 @@ Incentives going to Uniswap V3 pools are split between Uniswap Liquidity Provide
 
 Practically speaking, the reward computation script looks into each Uniswap V3 pool directly and sees at each swap which addresses held the pool's liquidity as well as the amount agEUR in their position. It then computes computes a reward for each address with in-range liquidity based on the following parameters:
 
-1. The share of fees earned by this address, telling us the virtual liquidity provided
+1. The share of fees earned by this address, telling the virtual liquidity provided
 2. The share of agEUR they hold compared to the total pool size
 3. The share of the other token they hold compared to the total pool size
 
@@ -43,7 +43,7 @@ For example, a tight range will virtually provide more liquidity and earn more f
 
 ### Providing liquidity
 
-As a LP, you can provide liquidity directly on [Uniswap V3](https://app.uniswap.org/#/add/), or with any of the integrated Uniswap position manager.
+As a LP, you can provide liquidity directly on [Uniswap V3](https://app.uniswap.org/#/add/), or with any of the integrated Uniswap position manager. Liquidity do not need to be staked or put in any specific contract for it to be eligible to rewards.
 
 Currently, the protocol has integrated [Arrakis](https://www.arrakis.finance/) and [Gamma](https://www.gamma.xyz/), which means that if you deposit liquidity on Uniswap through Arrakis or Gamma, the reward computation script will automatically detect that you are involved in the Uniswap V3 pool.
 
@@ -55,7 +55,7 @@ For example, Arrakis manages liquidity passively, and agEUR/USDC has some times 
 
 #### How can I be eligible for the ANGLE rewards?
 
-By providing liquidity on any of the Angle Uniswap V3 pools incentivized on the app [Earn page](https://app.angle.money/earn), either directly through [Uniswap](https://app.uniswap.org/#/add/), or through Arrakis or Gamma.
+By providing liquidity on any of the Angle Uniswap V3 pools incentivized on the app [Earn page](https://app.angle.money/earn), either directly through [Uniswap](https://app.uniswap.org/#/add/), or through Arrakis or Gamma. Note that you do not need to "stake" your liquidity anywhere to be eligible for ANGLE rewards.
 
 #### What do I need to do if I was previously staking?
 

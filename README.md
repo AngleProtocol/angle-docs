@@ -14,33 +14,23 @@ Angle is a decentralized, capital efficient and over-collateralized stablecoin p
 
 It can be used to issue stablecoins, called agTokens, designed to mirror the value of an asset they are pegged to.
 
-On top of its stablecoin products, Angle Protocol also offers ways to:
-
-- Trade perpetual futures
-- Earn yield from strategies
-- Get leverage on a wide range of assets
-
-The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted. While Angle launched its first stablecoin agEUR with a single minting module (the [Core module](core-module/overview.md)), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
+The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted. While Angle launched its first stablecoin agEUR with a single minting module (the [Core module](./deprecated/core-module/overview.md) - that was wound down in May 2023), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
 
 The protocol is also engaged into [Direct Deposit Modules](other/amo.md), also called Algorithmic Market Operations (AMOs), allowing it to boostrap liquidity for agTokens in other protocols.
 
 ### [Stablecoins](stablecoins.md)
 
-Angle is so far behind only one stablecoin, agEUR, pegged to the value of the Euro - €.
-
-### [Core module](core-module/overview.md)
-
-Angle Core module is deployed on Ethereum mainnet and is used for agEUR only. It relies on three types of agents that form a balanced ecosystem maintaining agEUR's peg (or stability). These agents are [users](core-module/stable-seekers/) minting and burning the stablecoins, [Hedging Agents](core-module/hedging-agents/) covering the protocol collateral from price changes, and [Standard Liquidity Providers](core-module/standard-liquidity-providers/) helping to over-collateralize the protocol in exchange for yield.
+Angle is so far behind one stablecoin, agEUR, pegged to the value of the Euro - €.
 
 ### [Borrowing module](borrowing-module/)
 
-Angle Borrowing module can be used for all Angle stablecoins, and it is deployed on multiple EVM compatible networks beyond Ethereum (like Polygon or Optimism). It allows users to deposit collateral and borrow agTokens (debt) against this collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
+Angle Borrowing module is deployed on multiple EVM compatible networks beyond Ethereum (like Polygon or Optimism). It allows users to deposit collateral and borrow agTokens (debt) against their collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
 Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it overall more capital efficient to use and more borrower friendly.
 
 ### Other Aspects
 
-Angle is not limited to these key components. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of its stablecoins. It also natively supports [flash loans](other/flash-loans.md) for some of its stablecoins.
+Angle is not limited to this key component. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of its stablecoins. It also natively supports [flash loans](other/flash-loans.md) for some of its stablecoins.
 
 ### 🗳 Governance
 

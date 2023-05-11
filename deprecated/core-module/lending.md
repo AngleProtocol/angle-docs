@@ -17,8 +17,6 @@ description: >-
 
 Lending a fraction of the reserves to other lending platforms is part of what makes the Core module attractive to Standard Liquidity Providers. By lending reserves, it can at the same time offer interest to Standard Liquidity Providers, accumulate some reserves, and incentivize veANGLE holders.
 
-The distribution of interest between SLPs, veANGLE holders, and reserves, is dictated by two parameters that can be found in [Angle Analytics](https://analytics.angle.money). More information in the [SLPs FAQ page](standard-liquidity-providers/faq-slps.md#do-slps-get-all-transaction-fees-and-lending-returns-from-the-protocol).
-
 ![Angle Strategies Flow](../.gitbook/assets/angle-strategies-flow.jpg)
 
 ## 🎨 Design
@@ -80,7 +78,3 @@ This makes it both more efficient that other folding strategies, and a clear imp
 The strategy used for ETH is the StETHAcc strategy forked from Yearn [here](https://github.com/Grandthrax/yearn-steth-acc/blob/master/contracts/Strategy.sol). It buys stETH from Lido or Curve stETH/ETH pool depending on where it's cheaper, and then earns the stETH yield. stETH is exchanged to ETH when needed through the Curve pool.
 
 The contract can be found [here](https://github.com/AngleProtocol/angle-core/blob/main/contracts/strategies/StrategyStETHAcc.sol).
-
-{% hint style="info" %}
-The state of the strategies used for different collateral types can be tracked on the [Angle Analytics](https://analytics.angle.money), or on the [developers documentation](https://developers.angle.money/overview/smart-contracts/mainnet-contracts).
-{% endhint %}

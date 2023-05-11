@@ -147,7 +147,7 @@ Note that on Angle Core module, there is no funding rate to be paid by perpetual
 {% endhint %}
 
 {% hint style="info" %}
-The exact values of the transaction fees for HAs depend on the hedge ratio (sometimes referred to as coverage ratio) of the specific agToken/collateral pair. You can see the current fees situation in the [analytics](https://analytics.angle.money) page related to the collateral/stablecoin pool in question.
+The exact values of the transaction fees for HAs depend on the hedge ratio (sometimes referred to as coverage ratio) of the specific agToken/collateral pair.
 {% endhint %}
 
 ### Entry Transaction Fees

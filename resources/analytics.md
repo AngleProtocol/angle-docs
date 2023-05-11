@@ -6,7 +6,7 @@ coverY: 0
 
 # 📊 Angle Analytics
 
-Angle is a decentralized protocol that exists purely on-chain: all the reserves controlled by the protocol are hence transparent and can be monitored in real-time.
+Angle is a decentralized protocol that exists purely on-chain: all the reserves controlled by the protocol are transparent and can be monitored in real-time.
 
 A lot of resources have been built to help people easily understand and track what’s going on in the protocol.
 
@@ -18,7 +18,7 @@ We at Angle Labs, Inc. have developed a user-friendly analytics available at [an
 
 Some community members have also built dedicated Dune dashboards about Angle. You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information.
 
-x@All the Angle related Dune dashboards have been grouped in one [Angle Main Dashboard](https://dune.com/tuta/angle-master-dashboard).
+All the Angle related Dune dashboards have been grouped in one [Angle Main Dashboard](https://dune.com/tuta/angle-master-dashboard).
 
 If you build an Angle dashboard yourself, drop a message on Discord and we will add it there.
 

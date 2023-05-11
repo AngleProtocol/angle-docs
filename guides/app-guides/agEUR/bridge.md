@@ -2,16 +2,18 @@
 description: How to bridge agEUR and ANGLE to different networks with the Angle App
 ---
 
+# 🌉 Bridge Angle stablecoins across chains
+
 Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging agEUR and ANGLE](https://app.angle.money/bridges-agEUR) between many EVM-compatible networks.
 
-To bridge agEUR or ANGLE from a network to another, you simply need to select the token you want to bridge, enter the amount, and select the destination network.
+To bridge agEUR or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
 
 ![Bridge app page](../../../.gitbook/assets/bridge.png)
 
 There are two other aspects you need to be careful about:
 
 1. [**Bridge limits**](#bridge-limits)
-2. Having enough funds on the **origin chain** to [pay for tx fees](#funds-required-to-pay-for-bridge-transaction-fees) on the origin **and** destination chains.
+2. Having enough funds on the **origin chain** to [pay for transaction fees](#funds-required-to-pay-for-bridge-transaction-fees) on the origin **and** destination chains.
 
 **Table of contents:**
 
@@ -22,9 +24,9 @@ There are two other aspects you need to be careful about:
 
 ## Bridge limits
 
-Angle's LayerZero implementation has a total and a hourly limit. The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
+Angle's bridge system implements total and hourly limits for the amounts that can be bridged to a chain. The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
 
-If the limits are reached, you won't receive agEUR in your wallet in the destination chain. Instead, you will receive lz-agEUR tokens in your wallet that can be used to redeem canonical agEUR later, when the limits reset. Information on the current limits is displayed in the callout below the inputs.
+If the limits are reached when processing a bridge transaction, you won't receive agEUR in your wallet in the destination chain. Instead, you will receive lz-agEUR tokens in your wallet that can be used to redeem canonical agEUR later, when the limits reset. Information on the current limits is displayed in the callout below the inputs.
 
 ![Bridge app page](/.gitbook/assets/bridge-limits-info.png)
 
@@ -42,7 +44,7 @@ Then follow these steps:
 2. Connect your wallet to Etherscan by clicking on the `Connect to Web3` button.
 3. Scroll down to function `22. withdraw()`
 4. Enter the amount of lz-agEUR you want to exchange for agEUR, and your wallet address. _The amount input needs to be in the correct decimals format: you need to multiply the amount by `10^18`. For example, to exchange `123` lz-agEUR, you need to input `123000000000000000000`._
-5. And send the transaction!
+5. And send the transaction
 
 [Example of a withdraw transaction](https://optimistic.etherscan.io/tx/0x20799daf2e30ccf2ec4cf1f66b85f01273b3fc26bc786ad25d7b187eb810f721)
 
@@ -64,4 +66,4 @@ If you don't have enough funds, the transaction might revert or you could get an
 
 If you don't know wether you should have received funds in your wallet after a bridge transaction, you should check on [LayerZeroScan](https://layerzeroscan.com/) with the hash of the bridge transaction from the origin network.
 
-If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraphe about [how to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).
+If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).

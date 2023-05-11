@@ -10,7 +10,7 @@ description: Angle Protocol Guides
 
 The Angle Protocol is currently available to anyone on different EVM compatible networks, and can be accessed through an app hosted at [app.angle.money](https://app.angle.money/).
 
-From there, users can mint and burn stablecoins, open perpetuals, get yield by depositing collateral, borrow stablecoins, get leverage, lock ANGLE tokens, vote for gauge weights, or simply stake their Angle associated tokens to earn yield.
+From there, users can mint and burn stablecoins, borrow stablecoins, get leverage, lock ANGLE tokens, vote for gauge weights, or find all yield opportunities associated to Angle products.
 
 The following section contains user guides for all of these use cases:
 
