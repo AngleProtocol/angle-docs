@@ -11,21 +11,16 @@
 - [🎓 Guides](guides/README.md)
 
   - [🚶 First Steps in Crypto](guides/newbie.md)
-  - [🧩 Use cases](guides/use-cases/README.md)
-    - [💸 Pay and get paid with agEUR](guides/use-cases/ageur-power-usecase.md)
-    - [🏦 agEUR as a treasury asset](guides/use-cases/ageur-treasury.md)
-  - [📔 App Guides](guides/app-guides/README.md)
-
-    - [💱 Buy Angle Stablecoins](guides/app-guides/agEUR/swap.md)
-    - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
-    - [⚖️ Leverage](guides/app-guides/agEUR/leverage.md)
-    - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
-    - [🍀 Staking](guides/app-guides/earn/staking.md)
-      - [🦄 Uniswap V3 incentive mechanism](guides/app-guides/earn/staking/univ3-lp.md)
-    - [💰 Buy](guides/app-guides/ANGLE/buy.md)
-    - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
-    - [🧪 Gauges](guides/app-guides/ANGLE/gauges-voting.md)
-    - [🗳 Vote](guides/app-guides/ANGLE/snapshot-votes.md)
+  - [💸 Pay and get paid with agEUR](guides/use-cases/ageur-power-usecase.md)
+  - [💱 Buy Angle Stablecoins](guides/app-guides/agEUR/swap.md)
+  - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
+  - [⚖️ Leverage](guides/app-guides/agEUR/leverage.md)
+  - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
+  - [🍀 Staking and Uniswap V3 incentive mechanism](guides/app-guides/earn/staking.md)
+  - [💰 Buy](guides/app-guides/ANGLE/buy.md)
+  - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
+  - [🧪 Gauges](guides/app-guides/ANGLE/gauges-voting.md)
+  - [🗳 Vote](guides/app-guides/ANGLE/snapshot-votes.md)
 
 ## Angle Borrowing Module
 
