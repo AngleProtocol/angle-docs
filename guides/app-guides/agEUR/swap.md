@@ -66,5 +66,6 @@ Note that these partners may ask users to enter personal information above a cer
 If you want to spend agEUR or get EUR back to your bank account, you have a few options:
 
 - Send money back directly to your bank account through one of our off-ramp partners listed above.
-- Spend it through [Mover](https://faq.viamover.com/what-does-mover-do) or [Fizen](https://fizen.io/) crypto debit cards
+- Spend it with [Fizen](https://fizen.io/) crypto debit card.
+- agEUR is also integrated with [Mover](https://faq.viamover.com/what-does-mover-do), allowing anyone to top-up a debit card and spend agEUR in real life. Check out [this guide](https://faq.viamover.com/angle-protocol/how-to-top-up-mover-debit-card-with-ageur-tokens) to learn how to send agEUR to your Mover card.
 - Swap your agEUR to a token which can be cheaply off-ramped (like EURe) as described [in this guide](../../use-cases/ageur-power-usecase.md#withdrawing-ageur-to-a-bank-account)
