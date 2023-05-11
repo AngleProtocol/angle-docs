@@ -16,7 +16,7 @@
   - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
   - [⚖️ Leverage](guides/app-guides/agEUR/leverage.md)
   - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
-  - [🍀 Staking and Uniswap V3 incentive mechanism](guides/app-guides/earn/staking.md)
+  - [🦄 Staking and Uniswap V3 incentive mechanism](guides/app-guides/earn/staking.md)
   - [💰 Buy](guides/app-guides/ANGLE/buy.md)
   - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
   - [🧪 Gauges](guides/app-guides/ANGLE/gauges-voting.md)
