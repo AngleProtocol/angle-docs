@@ -52,7 +52,7 @@ $$
 d = x\times(1+r)^{t} \\ d=10,000 \times 1.02^{2} \\ d=10,404
 $$
 
-If during year 3, the interest rate `r'` is 2%, then the debt `d` owed by the user will become:
+If during year 3, the interest rate `r'` is 3%, then the debt `d` owed by the user will become:
 
 $$
 d=10,000 \times 1.02^{2} \times 1.03 \\ d=10 821.18
