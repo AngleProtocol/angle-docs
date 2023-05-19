@@ -6,12 +6,16 @@ description: Helpers to use and integrate Merkl
 
 ## 🔗 Live AMMs and Chains
 
-| Live AMMs & Chains      | Epoch Time | Supported Liquidity Managers |
-| ----------------------- | ---------- | ---------------------------- |
-| 🦄 UniswapV3 - Ethereum | 6 hours    | Gamma, Arrakis               |
-| 🦄 UniswapV3 - Polygon  | 6 hours    | Gamma, Arrakis               |
-| 🦄 UniswapV3 - Optimism | 6 hours    | Gamma                        |
-| 🦄 UniswapV3 - Arbitrum | 6 hours    | Gamma                        |
+| Live AMMs & Chains        | Epoch Time | Supported Liquidity Managers |
+| ------------------------- | ---------- | ---------------------------- |
+| 🦄 UniswapV3 - Ethereum   | 6 hours    | Gamma, Arrakis               |
+| 🦄 UniswapV3 - Polygon    | 6 hours    | Gamma, Arrakis               |
+| 🦄 UniswapV3 - Optimism   | 6 hours    | Gamma                        |
+| 🦄 UniswapV3 - Arbitrum   | 6 hours    | Gamma                        |
+| 🍣 SushiswapV3 - Ethereum | 6 hours    |                              |
+| 🍣 SushiswapV3 - Polygon  | 6 hours    |                              |
+| 🍣 SushiswapV3 - Optimism | 6 hours    |                              |
+| 🍣 SushiswapV3 - Arbitrum | 6 hours    |                              |
 
 ## 🧑‍💻 Smart Contracts
 
