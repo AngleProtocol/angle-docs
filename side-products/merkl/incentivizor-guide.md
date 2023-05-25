@@ -4,14 +4,14 @@ description: Guide for people using Merkl to incentivize pools
 
 # 💸 Distribute incentives using Merkl
 
-DAOs or individuals looking to incentivize a pool can use Merkl and customize their distribution to get the desired type of liquidity.
+DAOs or individuals looking to incentivize a pool can use Merkl to customize their distribution and get better liquidity.
 
-Incentives can be placed on [this app](https://merkl.angle.money) or directly from the [`DistributionCreator` contract](helpers.md) on the chain of your choice (check out the example script [here](integration-guide.md#send-rewards-to-pools)).
+Incentives distribution can be setup on [this app](https://merkl.angle.money) or directly from the [`DistributionCreator` contract](helpers.md) on the chain of your choice (check out the example script [here](integration-guide.md#send-rewards-to-pools)).
 
-Regardless of the method you are using, before depositing an incentive, make sure that:
+Regardless of the method you are using, before depositing any incentives, make sure that:
 
 - you have read the disclaimer for incentivizors. The `DistributionCreator` contract will require you to sign this disclaimer and post your signature on-chain.
-- The token you want to distribute has been whitelisted. More on this below.
+- The token you want to distribute has been whitelisted (more on this below)
 
 {% content-ref url="incentivizor-tc.md" %}
 [incentivizor-tc.md](incentivizor-tc.md)
@@ -29,7 +29,7 @@ Reward tokens need to be whitelisted before being used, and for whitelisted toke
 
 If some smart contract addresses need to be excluded from the distribution because they can't claim rewards, make sure to specify their addresses in the `Blacklist`.
 
-Merkl natively and automatically supports [different liquidity position managers](helpers.md) on which people can provide liquidity and still be rewarded. Note though that supported liquidity position managers (like Gamma or Arrakis) may not automatically deploy an instance on every pool, so you may want to check which of the supported liquidity position managers are technically available for your pool.
+Merkl natively and automatically supports [different liquidity position managers](helpers.md). LPs can provide liquidity there while being rewarded on Merkl. Note though that supported liquidity position managers (like Gamma or Arrakis) are not available for all pools, so you may want to check which of the supported liquidity position managers are available for your pool.
 
 Then, you can customize any of the distribution formula parameters. When this is done, the app will prompt you to sign the disclaimer message (if it has not already been done), and then to post the transaction sending the tokens to the distribution contract!
 
