@@ -37,8 +37,8 @@ The script is ran regularly for the period between when it is executed and its l
 Precisely speaking, for a given pool with two tokens (A and B), the script looks into the swaps that took place on the pool during the period for which it is ran and computes a reward score for each position according to:
 
 - the fees earned by the position during the period, which represent the liquidity of the position used by the pool
-- the share of token A held by the position during swaps on the pool compared to the total amount of token A in the pool
-- the share of token B held by the position during swaps on the pool compared to the total amount of token B in the pool
+- the amount of token A held by the position during swaps on the pool compared to the total amount of token A in the pool
+- the amount of token B held by the position during swaps on the pool compared to the total amount of token B in the pool
 
 A different weight, chosen by the incentivizor, is attributed to each parameter. On top of that, incentivizors can further customize the distribution of the rewards for the pool by optionally allowing addresses holding a specific token (veANGLE or veCRV for example) to earn boosted rewards.
 
