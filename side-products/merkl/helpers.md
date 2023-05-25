@@ -24,7 +24,7 @@ Merkl is organized around 2 main contracts on each chain on which it is availabl
 - `Distributor`: where liquidity providers claim their rewards and stakeholders contest the proposed Merkle roots
 - `DistributionCreator`: where incentivizors deposit their rewards and specify the distribution parameters they want for it
 
-Both contracts are managed through a `CoreMerkl` contract by a management multisig which notably has the power to settle disputes, to change dispute parameters, to modify fees and their recipients, and to whitelist new addresses allowed to modify Merkle roots in the `Distributor` contract.
+Both contracts are managed through a `CoreMerkl` contract managed by a multisig which has the power to settle disputes, change dispute parameters, to modify fees and their recipients, and to whitelist new addresses allowed to modify Merkle roots in the `Distributor` contract. It has no ability to alter distributions.
 
 | Chain    | Contracts                                                                                                                                                                                                                                                                                                                                                                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -39,7 +39,9 @@ Addresses of the `Distributor` and `DistributionCreator` contracts are the same 
 
 ## 🐋 Types and Specific Script Behavior
 
-When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution. On top of that, while Gamma or Arrakis are automatically caught up by the script (and so you do not need to expressely specify them when creating a distribution), addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
+When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution.
+
+On top of that, while Gamma or Arrakis are automatically detected by the script, addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
 
 Overall, when creating a distribution, you may tell the script to apply a specific set of rules to some addresses by specifying for these addresses a predefined type.
 

@@ -4,7 +4,7 @@ description: Guide to integrate Merkl in your app for your incentives distributi
 
 # 🔌 Integrate Merkl in your App
 
-First, keep in mind that you can integrate Merkl pools in your app, but you don't have to. All pools are listed on the [Merkl App](https://merkl.angle.money/), and users can claim their tokens from there. This doc will guide you through the different options to integrate Merkl in your app.
+You can integrate Merkl pools in your app but you don't have to. All pools are listed on the [Merkl App](https://merkl.angle.money/), and users can claim their tokens from there. This doc will guide you through the different options to integrate Merkl in your app.
 
 ![Merkl front integration diagram](/.gitbook/assets/docs-merkl-front-integration.jpg)
 
@@ -16,23 +16,23 @@ A typical query looks like: [`https://api.angle.money/v1/merkl?chainId=10&user=0
 
 ## Listing incentivized pools
 
-When called for a specific chain, the API returns in a `pools` object a mapping between pool addresses of this chain (like Uniswap V3 pool addresses) and for each pool details on the APRs for providing liquidity in it.
+When called for a specific chain, the API returns in a `pools` object a mapping between pool addresses of this chain (like Uniswap V3 pool addresses) and details on the APRs for providing liquidity.
 
-On the APR, note that on concentrated liquidity AMMs, because of the way the script works, two LPs with different APRs may earn drastically different returns. As such, APRs given here are average measures of the returns a LP could earn. If you are to integrate Merkl in your app, you may want to build the APR indicators tailored to your use cases.
+Note that because how concentrated liquidity AMMs and the way the script works, two LPs with different positions may earn drastically different returns. As such, APRs displayed here are average measures of the returns LPs can earn. If you are to integrate Merkl in your app, you may want to build the APR indicators tailored to your use cases.
 
-The `pools` object also has for each incentivized pool details about the different distributions that occurred on it: their start and end dates, the parameters set or the amount of incentives for each distribution.
+The `pools` object also has details about the past distributions for each incentivized pool: their start and end dates, the parameters set and the amount of incentives for each distribution.
 
-You can filter from the \`pools\` object to only display the pools of your choice (for instance pools with tokens in a subset and with an active distribution).
+You can filter from the `pools` object to only display the pools of your choice (for instance pools with tokens in a subset and with an active distribution).
 
 ## Displaying user rewards
 
-The API lets you get for a user through the `rewardsPerToken` object how much of rewards can be claimed for a specific pool.
+The `rewardsPerToken` object lets you get how much rewards of a specific token can be claimed by a user for a specific pool.
 
-This object maps each reward token to the total amount of rewards accumulated on the pool (it is also inclusive of the rewards that have already been claimed) as well as to the amount of unclaimed tokens on the pool. It also details where these tokens have been earned (Uniswap V3, Gamma, ...).
+This object maps each reward token to the total amount of rewards accumulated on the pool for a user. It includes the rewards that have already been claimed as well as to the amount of unclaimed tokens on the pool. It also details where these tokens have been earned (Uniswap V3, Gamma, ...).
 
 ## Claiming user rewards
 
-On top of displaying how much has been earned by a specific address, the API can also be used to build the payload of a claim transaction of a user which accumulated rewards.
+On top of displaying how much has been earned by a specific address, the API can also be used to build the payload of a claim transaction for a user which accumulated rewards.
 
 When called for a specific user, it returns in a `transactionData` payload with the list of `tokens` to claim, the `amounts`, and a Merkle `proof` required to claim each of them.
 
