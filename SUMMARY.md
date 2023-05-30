@@ -57,6 +57,7 @@
     - [🖋 Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
   - [🔌 Integrate Merkl in your App](side-products/merkl/integration-guide.md)
     - [⛓ Integration Helpers](side-products/merkl/helpers.md)
+    - [🖼️ Branding and integration](side-products/merkl/integration-branding.md)
   - [🌊 Provide liquidity and claim](side-products/merkl/lp-guide.md)
 
 ## Resources
