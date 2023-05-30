@@ -14,18 +14,18 @@ You may find translations of these whitepapers in the [international](resources/
 
 ## Transmuter
 
-{% file src=".gitbook/assets/Transmuter.pdf" %}
+{% file src="whitepapers/Transmuter.pdf" %}
 Transmuter Whitepaper
 {% endfile %}
 
 ## Angle Borrowing Module
 
-{% file src=".gitbook/assets/Angle Borrowing Module Whitepaper.pdf" %}
+{% file src="whitepapers/Angle Borrowing Module Whitepaper.pdf" %}
 Borrowing Module Whitepaper
 {% endfile %}
 
 ## Angle Core Module
 
-{% file src=".gitbook/assets/angle-wp (1).pdf" %}
+{% file src="whitepapers/Angle Core Module Whitepaper.pdf" %}
 Angle Core Module Whitepaper
 {% endfile %}
