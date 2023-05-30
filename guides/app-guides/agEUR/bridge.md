@@ -15,12 +15,17 @@ There are two other aspects you need to be careful about:
 1. [**Bridge limits**](#bridge-limits)
 2. Having enough funds on the **origin chain** to [pay for transaction fees](#funds-required-to-pay-for-bridge-transaction-fees) on the origin **and** destination chains.
 
+{% hint style="info" %}
+Not having enough funds on the origin chain to pay for gas is the most frequently encountered issue, and most likely the one you are facing as well. Try to buy more gas token and try the transaction again.
+{% endhint %}
+
 **Table of contents:**
 
-- [Bridge limits](#bridge-limits)
-  - [How to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
-- [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
-- [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
+- [🌉 Bridge Angle stablecoins across chains](#-bridge-angle-stablecoins-across-chains)
+  - [Bridge limits](#bridge-limits)
+    - [How to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
+  - [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
+  - [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
 
 ## Bridge limits
 
