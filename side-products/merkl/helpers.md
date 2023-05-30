@@ -17,7 +17,7 @@ description: Helpers to use and integrate Merkl
 | 🍣 SushiswapV3 - Optimism | 6 hours    |                              |
 | 🍣 SushiswapV3 - Arbitrum | 6 hours    |                              |
 
-Can't find your AMM in this list ? You can add it by following this [guide](#pre-requisites).
+Can't find your AMM in this list? You can add it by following this [guide](#pre-requisites).
 ## 🧑‍💻 Smart Contracts
 
 Merkl is organized around 2 main contracts on each chain on which it is available:
@@ -62,7 +62,7 @@ While this docs is regularly updated, [this page](https://github.com/AngleProtoc
 
 ### Pre-requisites
 
-Merkl only supports liquidity managers which use the same architecture as Gamma or Arrakis. The liquidity manager must verify the following pre-requisites :
+Merkl only supports liquidity managers which use the same architecture as Gamma or Arrakis. The liquidity manager must verify the following pre-requisites:
 
 - Use a factory contract which creates vaults and emits an event when creating them
 - Vaults issue a single ERC-20 token
@@ -73,7 +73,7 @@ Merkl only supports liquidity managers which use the same architecture as Gamma 
 
 To add support for your liquidity manager you can create a ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
 
-You will need to submit the following information for each chain/DEX pair you want to add :
+You will need to submit the following information for each chain/DEX pair you want to add:
 
 - Chain (Arbitrum, Optimism, Polygon or Ethereum)
 - DEX (UniswapV3, SushiSwapV3 or Retro)
