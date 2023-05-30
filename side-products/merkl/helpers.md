@@ -17,6 +17,7 @@ description: Helpers to use and integrate Merkl
 | 🍣 SushiswapV3 - Optimism | 6 hours    |                              |
 | 🍣 SushiswapV3 - Arbitrum | 6 hours    |                              |
 
+Can't find your AMM in this list ? You can add it by following this [guide](#pre-requisites).
 ## 🧑‍💻 Smart Contracts
 
 Merkl is organized around 2 main contracts on each chain on which it is available:
@@ -56,3 +57,27 @@ Types are `uint32` numbers and they are the same across the different chains on 
 {% hint style="info" %}
 While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between types and how the script should handle them.
 {% endhint %}
+
+## ➕ Add an AMM to Merkl
+
+### Pre-requisites
+
+Merkl only supports liquidity managers which use the same architecture as Gamma or Arrakis. The liquidity manager must verify the following pre-requisites :
+
+- Use a factory contract which creates vaults and emits an event when creating them
+- Vaults issue a single ERC-20 token
+- Vaults have a `pool()` function to get the DEX pool associated to the vault
+- All the contracts must be verified
+
+### Requesting support for a new liquidity manager
+
+To add support for your liquidity manager you can create a ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
+
+You will need to submit the following information for each chain/DEX pair you want to add :
+
+- Chain (Arbitrum, Optimism, Polygon or Ethereum)
+- DEX (UniswapV3, SushiSwapV3 or Retro)
+- Address of your factory contract (or addresses if you have multiple factories)
+- Address of one of the vaults created by each of your factory contracts
+
+If you're already part of our Discord server, you can submit a ticket [here](https://discord.com/channels/835066439891157012/1077879915493466153) (Create a tech Ticket).

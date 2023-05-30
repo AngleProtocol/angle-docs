@@ -55,7 +55,6 @@
 - [🥨 Merkl](side-products/merkl/README.md)
   - [💸 Distribute incentives](side-products/merkl/incentivizor-guide.md)
     - [🖋 Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
-  - [🏦 Distribute incentives through Liquidity Managers](side-products/merkl/liquidity-manager-guide.md)
   - [🔌 Integrate Merkl in your App](side-products/merkl/integration-guide.md)
     - [⛓ Integration Helpers](side-products/merkl/helpers.md)
   - [🌊 Provide liquidity and claim](side-products/merkl/lp-guide.md)
