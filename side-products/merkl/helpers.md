@@ -80,4 +80,4 @@ You will need to submit the following information for each chain/DEX pair you wa
 - Address of your factory contract (or addresses if you have multiple factories)
 - Address of one of the vaults created by each of your factory contracts
 
-If you're already part of our Discord server, you can submit a ticket [here](https://discord.com/channels/835066439891157012/1077879915493466153) (Create a tech Ticket).
+If you're already part of our Discord server, you can submit a ticket [here](https://discord.com/channels/835066439891157012/1077879915493466153) (Create a BD Ticket).
