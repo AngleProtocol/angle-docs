@@ -6,16 +6,17 @@ description: Helpers to use and integrate Merkl
 
 ## 🔗 Live AMMs and Chains
 
-| Live AMMs & Chains        | Epoch Time | Supported Liquidity Managers |
-| ------------------------- | ---------- | ---------------------------- |
-| 🦄 UniswapV3 - Ethereum   | 6 hours    | Gamma, Arrakis               |
-| 🦄 UniswapV3 - Polygon    | 6 hours    | Gamma, Arrakis               |
-| 🦄 UniswapV3 - Optimism   | 6 hours    | Gamma                        |
-| 🦄 UniswapV3 - Arbitrum   | 6 hours    | Gamma                        |
-| 🍣 SushiswapV3 - Ethereum | 6 hours    |                              |
-| 🍣 SushiswapV3 - Polygon  | 6 hours    |                              |
-| 🍣 SushiswapV3 - Optimism | 6 hours    |                              |
-| 🍣 SushiswapV3 - Arbitrum | 6 hours    |                              |
+| Live AMMs & Chains        | Epoch Time | Supported Liquidity Managers         |
+| ------------------------- | ---------- | ------------------------------------ |
+| 🦄 UniswapV3 - Ethereum   | 6 hours    | Gamma, Arrakis, DefiEdge, Ichi       |
+| 🦄 UniswapV3 - Polygon    | 6 hours    | Gamma, Arrakis, DefiEdge, Ichi, Steer|
+| 🦄 UniswapV3 - Optimism   | 6 hours    | Gamma, DefiEdge, Steer               |
+| 🦄 UniswapV3 - Arbitrum   | 6 hours    | Gamma, DefiEdge, Steer               |
+| 🍣 SushiswapV3 - Ethereum | 6 hours    |                                      |
+| 🍣 SushiswapV3 - Polygon  | 6 hours    | Steer                                |
+| 🍣 SushiswapV3 - Optimism | 6 hours    | Steer                                |
+| 🍣 SushiswapV3 - Arbitrum | 6 hours    | Steer                                |
+| 🪞 Retro - Polygon        | 6 hours    |                                      |
 
 ## 🧑‍💻 Smart Contracts
 
