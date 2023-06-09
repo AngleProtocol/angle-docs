@@ -9,7 +9,6 @@
 - [🔗 Quick Links](links.md)
 - [🖼 Stablecoins](stablecoins.md)
 - [🎓 Guides](guides/README.md)
-
   - [🚶 First Steps in Crypto](guides/newbie.md)
   - [💸 Pay and get paid with agEUR](guides/use-cases/ageur-power-usecase.md)
   - [💱 Buy Angle Stablecoins](guides/app-guides/agEUR/swap.md)
