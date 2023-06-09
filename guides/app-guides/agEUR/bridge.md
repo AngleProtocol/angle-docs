@@ -8,11 +8,11 @@ Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cro
 
 To bridge agEUR or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
 
-![Bridge app page](../../../.gitbook/assets/bridge.png)
+![Bridge app page](../../../.gitbook/assets/bridge2.png)
 
 There are two other aspects you need to be careful about:
 
-1. [**Bridge limits**](#bridge-limits)
+1. [**Bridge limits**](#bridge-limits), displayed below the `Bridge` button
 2. Having enough funds on the **origin chain** to [pay for transaction fees](#funds-required-to-pay-for-bridge-transaction-fees) on the origin **and** destination chains.
 
 {% hint style="info" %}
@@ -29,11 +29,19 @@ Not having enough funds on the origin chain to pay for gas is the most frequentl
 
 ## Bridge limits
 
-Angle's bridge system implements total and hourly limits for the amounts that can be bridged to a chain. The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
+Angle's bridge system implements total and hourly limits for the amounts that can be bridged to a chain.
 
-If the limits are reached when processing a bridge transaction, you won't receive agEUR in your wallet in the destination chain. Instead, you will receive lz-agEUR tokens in your wallet that can be used to redeem canonical agEUR later, when the limits reset. Information on the current limits is displayed in the callout below the inputs.
+The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
 
-![Bridge app page](/.gitbook/assets/bridge-limits-info.png)
+{% hint style="info" %}
+If the limits are reached when processing a bridge transaction, you won't receive agEUR in your wallet on the destination chain.
+
+Instead, **you will receive [lz-agEUR tokens in your wallet that can be used to redeem agEUR later](#how-to-get-back-ageur-from-lz-ageur)**, when the limits reset.
+{% endhint %}
+
+Information on the current limits are displayed in the callout below the inputs.
+
+![Bridge app page](../../../.gitbook/assets/bridge3.png)
 
 ### How to get back agEUR from lz-agEUR
 
@@ -66,6 +74,10 @@ When bridging from a network to another, you need enough gas token on the origin
 For example, if you bridge from Polygon to Ethereum mainnet, where tx fees are higher, you will need more MATIC than usual on Polygon to pay for the transactions.
 
 If you don't have enough funds, the transaction might revert or you could get an `internal JSON RPC` error.
+
+{% hint style="info" %}
+For example, with a gas price of 100 you will need ~0.03 gas token (ETH, MATIC, ...) on the origin chain to pay for the transaction.⁣
+{% endhint %}
 
 ## I'm not sure if my bridge transaction was confirmed
 
