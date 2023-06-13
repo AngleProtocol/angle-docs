@@ -12,7 +12,7 @@ In this guide, we explain how to be eligible for ANGLE rewards as a UniswapV3 li
 
 ## Incentives for Uniswap V3 Liquidity Providers
 
-Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs). This mechanism rewards LPs granularily according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
+Angle implements a specific mechanism to reward Uniswap V3 Liquidity Providers (LPs). This mechanism rewards LPs granularly according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
 
 {% hint style="info" %}
 You can find more details on the mechanism in [the original announcement](https://blog.angle.money/a-new-incentivization-mechanism-for-uniswap-v3-liquidity-8ce32fa611b1). The [Merkl product](../../../../side-products/merkl/README.md) maintained by Angle Labs is a generalization of this incentive framework for any type of pool and of reward token.
@@ -22,7 +22,7 @@ You can find more details on the mechanism in [the original announcement](https:
 
 Incentives going to Uniswap V3 pools are split between Uniswap Liquidity Providers depending on the usefulness of their liquidity (that is to say the in-range liquidity) as well as the amount of agEUR in their position. This methodology is based on an [off-chain script](https://gist.github.com/Picodes/0b738ec92f7bd72ec6e77ffdf5d1c5e2) that computes rewards for each address and updates a Merkle root (i.e summary) of the distribution on-chain once every week so that LPs can regularly claim their ANGLE rewards.
 
-Practically speaking, the reward computation script looks into each Uniswap V3 pool directly and sees at each swap which addresses held the pool's liquidity as well as the amount agEUR in their position. It then computes computes a reward for each address with in-range liquidity based on the following parameters:
+Practically speaking, the reward computation script looks into each Uniswap V3 pool directly and sees at each swap which addresses held the pool's liquidity as well as the amount agEUR in their position. It then computes a reward for each address with in-range liquidity based on the following parameters:
 
 1. The share of fees earned by this address, telling the virtual liquidity provided
 2. The share of agEUR they hold compared to the total pool size
@@ -75,7 +75,7 @@ ANGLE rewards from the past week can be claimed once per week, every Thursday. R
 
 On the app [Earn page](https://app.angle.money/earn) (more [below](#claiming-angle-tokens)), or directly from the [MerkleRoot Distributor contract](https://etherscan.io/address/0x5a93D504604fB57E15b0d73733DDc86301Dde2f1).
 
-#### Why is my APR is different from what is displayed?
+#### Why is my APR different from what is displayed?
 
 Your actual APR depends on the volume of the pool, the range you are providing liquidity on, and the price of the pool.
 
@@ -99,7 +99,7 @@ The App Earn page leaves multiple options for claiming your ANGLE tokens if you'
 
 - Claim from multiple gauges in **one transaction** by clicking on the `Claim Rewards` button on the right. When using this modal, you can select/unselect the gauges you want to claim rewards from and then:
   - **`Claim ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3 related ones) in one transaction.
-  - **`Claim and Lock ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3-related ones) in one transaction **and** lock them into your existing ANGLE lock. This increases your veANGLE balance and doesn't affect your lock expiration date. _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE [here](https://app.angle.money/lock)._
+  - **`Claim and Lock ANGLE`**: this claims your ANGLE rewards from all the selected gauges (except the UniswapV3-related ones) in one transaction **and** locks them into your existing ANGLE lock. This increases your veANGLE balance and doesn't affect your lock expiration date. _NB: this is only possible if you already have ANGLE locked. You can lock ANGLE [here](https://app.angle.money/lock)._
 
 ![Claim rewards modal](/.gitbook/assets/claim-rewards-modal.png)
 
