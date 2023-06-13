@@ -81,6 +81,6 @@ For example, with a gas price of 100 you will need ~0.03 gas token (ETH, MATIC, 
 
 ## I'm not sure if my bridge transaction was confirmed
 
-If you don't know wether you should have received funds in your wallet after a bridge transaction, you should check on [LayerZeroScan](https://layerzeroscan.com/) with the hash of the bridge transaction from the origin network.
+If you don't know whether you should have received funds in your wallet after a bridge transaction, you should check on [LayerZeroScan](https://layerzeroscan.com/) with the hash of the bridge transaction from the origin network.
 
 If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).
