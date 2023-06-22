@@ -4,12 +4,22 @@ description: Learn more about specific aspects of the Core module
 
 # 🔍 Other aspects
 
-{% page-ref page="keepers.md" %}
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-{% page-ref page="oracles.md" %}
+{% content-ref url="oracles.md" %}
+[oracles.md](oracles.md)
+{% endcontent-ref %}
 
-{% page-ref page="collateral-ratio.md" %}
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-{% page-ref page="emergency-modules.md" %}
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-{% page-ref page="collateral-settlement.md" %}
+{% content-ref url="collateral-settlement.md" %}
+[collateral-settlement.md](collateral-settlement.md)
+{% endcontent-ref %}

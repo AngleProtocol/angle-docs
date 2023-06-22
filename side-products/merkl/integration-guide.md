@@ -2,17 +2,17 @@
 description: Guide to integrate Merkl in your app for your incentives distribution
 ---
 
-# 🔌 Integrate Merkl in your App
+# 📒 Integrate Merkl in your App
 
 You can integrate Merkl pools in your app but you don't have to. All pools are listed on the [Merkl App](https://merkl.angle.money/), and users can claim their tokens from there. This doc will guide you through the different options to integrate Merkl in your app.
 
-![Merkl front integration diagram](/.gitbook/assets/docs-merkl-front-integration.jpg)
+![Merkl front integration diagram](../../.gitbook/assets/docs-merkl-front-integration.jpg)
 
 Data about all Merkl incentivized pools across all supported chains can be found by calling our API endpoint: `https://api.angle.money/v1/merkl`.
 
 When calling this payload, you must specify the `chainId` address. You may also specify a `user` address if you want additional information related to one user (like claimable amounts, liquidity in the pools, ...)
 
-A typical query looks like: [`https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185`](https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185).
+A typical query looks like: [`https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185`](https://api.angle.money/v1/merkl?chainId=10\&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185).
 
 ## Listing incentivized pools
 
@@ -42,8 +42,8 @@ The contract on which rewards should be claimed is the `Distributor` contract wh
 
 You have two options to do that:
 
-- Rely on Angle's API: we build the claim transaction payload for you and the associated proof, and you just call our API. This is the example shown below.
-- Build the proof yourself and join it to the transaction data from the API. You can find a Github repository below showing how to do that.
+* Rely on Angle's API: we build the claim transaction payload for you and the associated proof, and you just call our API. This is the example shown below.
+* Build the proof yourself and join it to the transaction data from the API. You can find a Github repository below showing how to do that.
 
 {% hint style="info" %}
 In any case, if a call is made to the correct `Distributor` contract and the `token` or `amount` doesn't match the `proof`, the transaction will revert.

@@ -2,7 +2,7 @@
 description: Guide for people using Merkl to incentivize pools
 ---
 
-# 💸 Distribute incentives using Merkl
+# 💰 Distribute incentives
 
 DAOs or individuals looking to incentivize a pool can use Merkl to customize their distribution and get better liquidity.
 
@@ -10,8 +10,8 @@ Incentives distribution can be setup on [this app](https://merkl.angle.money) or
 
 Regardless of the method you are using, before depositing any incentives, make sure that:
 
-- you have read the disclaimer for incentivizors. The `DistributionCreator` contract will require you to sign this disclaimer and post your signature on-chain.
-- The token you want to distribute has been whitelisted (more on this below)
+* you have read the disclaimer for incentivizors. The `DistributionCreator` contract will require you to sign this disclaimer and post your signature on-chain.
+* The token you want to distribute has been whitelisted (more on this below)
 
 {% content-ref url="incentivizor-tc.md" %}
 [incentivizor-tc.md](incentivizor-tc.md)
@@ -21,7 +21,7 @@ Regardless of the method you are using, before depositing any incentives, make s
 
 You just need to fill the `address` of the pool you want to incentivize, the `total amount` of tokens you want to distribute, and the beginning and end dates of the distribution.
 
-![Merkl Deposit](/.gitbook/assets/merkl-deposit.png)
+![Merkl Deposit](../../.gitbook/assets/merkl-deposit.png)
 
 {% hint style="info" %}
 Reward tokens need to be whitelisted before being used, and for whitelisted tokens, there is a minimum amount that needs to be sent for distributions to be considered valid. If the reward token you want to use has not been whitelisted, send us a message on the Merkl channel of the [Angle Discord server](https://discord.gg/ByFYzSUt).
@@ -33,6 +33,6 @@ Merkl natively and automatically supports [different liquidity position managers
 
 Then, you can customize any of the distribution formula parameters. When this is done, the app will prompt you to sign the disclaimer message (if it has not already been done), and then to post the transaction sending the tokens to the distribution contract!
 
-Any address holding a position or a position manager token will be able to claim their rewards at the end of each [epoch](./helpers.md#🔗-live-amms-and-chains) according to how they provided liquidity on the pool.
+Any address holding a position or a position manager token will be able to claim their rewards at the end of each [epoch](helpers.md#🔗-live-amms-and-chains) according to how they provided liquidity on the pool.
 
-![Merkl Script](/.gitbook/assets/docs-merkl-for-distributors.png)
+![Merkl Script](../../.gitbook/assets/docs-merkl-for-distributors.png)

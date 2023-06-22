@@ -1,5 +1,7 @@
 ---
 description: The ANGLE governance token for Angle DAO
+cover: ../.gitbook/assets/ANGLE-TOKEN-cover.jpg
+coverY: 0
 ---
 
 # 🚀 ANGLE Token
@@ -36,16 +38,16 @@ Available gauges of the protocol can be found [here](https://developers.angle.mo
 
 Some Angle gauges (type 0 gauges and some type 2 gauges) present specific features designed to favor veANGLE holders. People eligible for rewards within these gauges can earn a boost in the emissions they receive if they hold veANGLE tokens. Note that this doesn't impact the inflation rate, and only changes the rewards they receive compared to other LPs on the concerned pools.
 
-This boost can go up to x2.5 the base quantity of rewards. It also depends on the liquidity available for rewards and on the veANGLE balance of the stakers. More information about boosting can be found on the [boost](../../governance/veANGLE/boost.md) page.
+This boost can go up to x2.5 the base quantity of rewards. It also depends on the liquidity available for rewards and on the veANGLE balance of the stakers. More information about boosting can be found on the [boost](veANGLE/boost.md) page.
 
 #### Gauge Voting
 
-Every week, governance is able to adjust the distribution of ANGLE tokens between the different types of eligible stakeholders through [gauge votes](../governance/veANGLE/gauges.md).
+Every week, governance is able to adjust the distribution of ANGLE tokens between the different types of eligible stakeholders through [gauge votes](veANGLE/gauges.md).
 
 Precisely speaking, veANGLE holders assign specific weights of their voting power to the different gauges, and the sum of all the votes assigned to each gauge by veANGLE holders determines the quantity of rewards to be distributed. Once weights are allocated, they are reverberated in the following weeks without users having to do anything except if they want to change it.
 
 {% hint style="info" %}
-The rewards weight allocation can change each week depending on the changes in voting power allocated. The process is detailed [here](../../governance/veANGLE/gauges.md).
+The rewards weight allocation can change each week depending on the changes in voting power allocated. The process is detailed [here](veANGLE/gauges.md).
 {% endhint %}
 
 5% of the ANGLE's weekly emissions are still controlled by the guardian multisig signers to be allocated without any vote by veANGLE holders. Idea is that this allocation can be used for short-term programs to bootstrap liquidity in some particular places that do not have to be whitelisted.
@@ -78,8 +80,8 @@ Tokens from this pocket are stored in the `AngleMaster` multisig.
 
 These tokens are subject to a **linear vesting of 3 years (starting October 2021)**.
 
-- 18% to Angle Labs team members
-- 10% to early backers
+* 18% to Angle Labs team members
+* 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
@@ -87,6 +89,6 @@ In order to reduce the exposure of the funds potentially at risk in this contrac
 
 ## Changelog
 
-- January 2022: ANGLE's tokenomics was upgraded with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
-- October 2022: [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
-- March 2023: ANGLE emissions were paused during this period and resumed late April 2023.
+* January 2022: ANGLE's tokenomics was upgraded with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
+* October 2022: [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
+* March 2023: ANGLE emissions were paused during this period and resumed late April 2023.
