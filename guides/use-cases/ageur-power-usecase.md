@@ -32,7 +32,7 @@ If you don’t own agEUR yet, you can go through Angle app at [app.angle.money](
 
 Then, just select **any token your company holds**, and use the expert mode to make sure the minimum amount received is that of the invoice.
 
-![Angle agEUR from any token](../../.gitbook/assets/send-to-recipient.png)
+![Angle agEUR from any token](../../.gitbook/assets/send-to-recipient2.png)
 
 **In one on-chain transaction, you can pay your contributors with any token, almost instantly, and at very low fees.**
 
