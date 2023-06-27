@@ -28,6 +28,8 @@ Angle Borrowing module is deployed on multiple EVM compatible networks beyond Et
 
 Inspired from more traditional borrowing protocols (like [Maker](https://makerdao.com/en/), [Liquity](https://www.liquity.org), [Aave](https://aave.com), [Compound](https://compound.finance), ...), it comes with its set of new features and improvements which make it overall more capital efficient to use and more borrower friendly.
 
+### [Transmuter](transmuter/)
+
 ### Other Aspects
 
 Angle is not limited to this key component. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of its stablecoins. It also natively supports [flash loans](other/flash-loans.md) for some of its stablecoins.
@@ -49,7 +51,7 @@ Angle is an open protocol on which anyone can permissionlessly build or suggest 
 There is a technical doc for developers and advanced users to understand how Angle protocol works under the hood and how to build on top of it.
 
 {% hint style="info" %}
-The protocol's smart contracts have undergone several audits by Chainsecurity and Sigma Prime. You can find the different audit reports [here](resources/audits/).
+The protocol's smart contracts have undergone several audits by Chainsecurity, Sigma Prime, and Code4rena. You can find the different audit reports [here](resources/audits/).
 {% endhint %}
 
 ## 📱 Side Products
