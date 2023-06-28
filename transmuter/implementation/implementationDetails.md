@@ -2,7 +2,7 @@
 description: Implementation details for Transmuter
 ---
 
-# 👩‍💻 Implementation details for Transmuter
+# 🖥️ Implementation details for Transmuter
 
 ## 🌌 Reactive Fees & Path Independence
 

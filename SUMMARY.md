@@ -38,7 +38,7 @@
 - [🪃 Redeem](transmuter/redeem.md)
 - [🔍 Other aspects](transmuter/implementation/README.md)
   - [📄 Collateral Management and Whitelist](transmuter/implementation/collateralsManagement.md)
-  - [👩‍💻 Implementation Details](transmuter/implementation/implementationDetails.md)
+  - [🖥️ Implementation Details](transmuter/implementation/implementationDetails.md)
 
 ## Stablecoins Side Modules
 

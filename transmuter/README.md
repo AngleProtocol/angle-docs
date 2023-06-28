@@ -6,19 +6,17 @@ description: Overview of the Transmuter system
 
 ## 🔭 Introduction
 
-Transmuter is one of the main minting mechanisms for Angle stablecoins.
+Transmuter is one of the main minting mechanisms for Angle stablecoins. It is conceived as a basket of different assets which can all be used to mint or burn the stablecoin at oracle value.
 
-It is conceived as a basket of different assets (ideally denominated in the stablecoin's base currency) which can all be used to mint or burn the stablecoin at oracle value.
+It comes with automated mechanisms to maintain the exposure to each asset in the reserves within reasonable bounds. This enables the system to properly segregate and diversify the risks between the assets in its backing, and guarantees at the same time that in case of a black swan event the system does not end up over-exposed to the weakest assets of its reserves.
 
-It comes with built-in and automated mechanisms to maintain the exposure to each asset in the reserves within reasonable bounds. This enables the system to properly segregate and diversify the risks between the assets in its backing, and guarantees at the same time that in case of black swan events the system does not end up over-exposed to the weakest assets of its reserves.
-
-Transmuter supports three main user actions: **Mint, Burn and Redeem**. The mint and burn actions rely on the idea that each asset in the reserves has a target price that is used to assess whether the asset is depegging, and some conservative measure must be taken or not.
+Transmuter supports three main user actions: **Mint, Burn and Redeem**. The mint and burn actions rely on the idea that each asset in the reserves has a target price used to assess whether the asset is depegging and some conservative measure must be taken or not.
 
 Practically speaking, the three operations work as follows:
 
-- **Mint:** Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable
-- **Burn:** Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets to their respective target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
-- **Redeem:** Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
+- [**Mint:**](./mintBurn.md) Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable.
+- [**Burn:**](./mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
+- [**Redeem:**](./redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
 
 While we go deeper in the following pages about the core principles behind the Transmuter system, this schema illustrates, in the case of agEUR, how the system's main functionalities work:
 
@@ -43,15 +41,15 @@ requiring any governance intervention.
 
 **Gas-efficiency:** Thanks to a range of different optimizations, the system is able to minimize the gas needed to interact with it.
 
-**Modularity:** The system can not only accept any type of asset in the backing, its implementation is such that it can work for any type of stablecoin. On top of that, it is fully compatible with the other Angle protocol's minting modules: it works in parallel with the protocol's Borrowing module, flash-loan systems and direct deposit modules.
+**Modularity:** The system can not only accept any type of asset in the backing, its implementation is such that it can work for any type of stablecoin. On top of that, it is fully compatible with the other protocol's minting modules: it works in parallel with the Angle's Borrowing module, flash-loan systems and direct deposit modules.
 
 ## 🤝 Governance
 
 While the main functionalities of the Transmuter system can work autonomously with no governance involved, Transmuter is not a governance-free system.
 
-Within Angle, the protocol governance (and so veANGLE holders) must be involved to add new collateral assets, to adjust the fee parameters that determine the target and maximum exposures to each asset, to change the different oracle parameters, to modify the settings of the redemption curve, or to simply pause minting or burning from an asset.
+The protocol governance (and so veANGLE holders) must be involved to add new collateral assets, to adjust the fee parameters that determine the target and maximum exposures to each asset, to change the different oracle parameters, to modify the settings of the redemption curve, or to simply pause minting or burning from an asset.
 
-Governance also has the means to update Transmuter's global accounting and affect the system's collateralization ratio to reflect if a profit or a loss is made in some other place of the protocol.
+Governance also has the means to update Transmuter's global accounting and affect the system's collateralization ratio to potentially take into account a profit or a loss made in some other place of the protocol.
 
 ## 🕵️ Audits
 
@@ -59,7 +57,9 @@ The smart contracts of the Transmuter have been audited by Code4rena. The code a
 
 ## 📇 Deployments
 
-The Transmuter system is so far only deployed on Ethereum for agEUR. Related smart contract addresses can be found [here](https://developers.angle.money/overview/smart-contracts).
+{% hint style="info" %}
+Transmuter is not deployed yet. Depending on governance approval, it should be released in July 2023.
+{% endhint %}
 
 {% hint style="info" %}
 The current state of Transmuter, the accepted collateral assets, their exposures and parameters can be found in [Angle Analytics](https://analytics.angle.money).
