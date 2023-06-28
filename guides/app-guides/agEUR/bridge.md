@@ -21,11 +21,10 @@ Not having enough funds on the origin chain to pay for gas is the most frequentl
 
 **Table of contents:**
 
-- [🌉 Bridge Angle stablecoins across chains](#-bridge-angle-stablecoins-across-chains)
-  - [Bridge limits](#bridge-limits)
-    - [How to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
-  - [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
-  - [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
+- [Bridge limits](#bridge-limits)
+  - [How to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
+- [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
+- [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
 
 ## Bridge limits
 
@@ -67,13 +66,17 @@ Then follow these steps:
 
 If the limits are still empty, you will just get the same amount of `lz-agEUR` back. You can check the current limits on the app [bridge page](https://app.angle.money/bridges-agEUR).
 
+{% hint style="info" %}
+The example here is for Optimism, but it works the same on any chain where Angle Bridging system is live.
+{% endhint %}
+
 ## Funds required to pay for bridge transaction fees
 
 When bridging from a network to another, you need enough gas token on the origin chain to pay for bridge transactions **both on the origin and destination chains**.
 
-For example, if you bridge from Polygon to Ethereum mainnet, where tx fees are higher, you will need more MATIC than usual on Polygon to pay for the transactions.
+For example, if you bridge from Polygon to Ethereum mainnet, where transaction fees are higher, you will need more MATIC than usual on Polygon to pay for the transactions.
 
-If you don't have enough funds, the transaction might revert or you could get an `internal JSON RPC` error.
+If you do not have enough funds, the transaction might revert or you could get an `internal JSON RPC` error displayed on the Angle app.
 
 {% hint style="info" %}
 For example, with a gas price of 100 you will need ~0.03 gas token (ETH, MATIC, ...) on the origin chain to pay for the transaction.⁣
