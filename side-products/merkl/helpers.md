@@ -6,19 +6,19 @@ description: Helpers to use and integrate Merkl
 
 ## 🔗 Live AMMs and Chains
 
-| Live AMMs & Chains        | Epoch Time | Supported Liquidity Managers         |
-| ------------------------- | ---------- | ------------------------------------ |
-| 🦄 UniswapV3 - Ethereum   | 6 hours    | Gamma, Arrakis, DefiEdge, Ichi       |
-| 🦄 UniswapV3 - Polygon    | 6 hours    | Gamma, Arrakis, DefiEdge, Ichi, Steer|
-| 🦄 UniswapV3 - Optimism   | 6 hours    | Gamma, DefiEdge, Steer               |
-| 🦄 UniswapV3 - Arbitrum   | 6 hours    | Gamma, DefiEdge, Steer               |
-| 🍣 SushiswapV3 - Ethereum | 6 hours    |                                      |
-| 🍣 SushiswapV3 - Polygon  | 6 hours    | Steer                                |
-| 🍣 SushiswapV3 - Optimism | 6 hours    | Steer                                |
-| 🍣 SushiswapV3 - Arbitrum | 6 hours    | Steer                                |
-| 🪞 Retro - Polygon        | 6 hours    |                                      |
+| Live AMMs & Chains        | Epoch Time | Supported Liquidity Managers          |
+| ------------------------- | ---------- | ------------------------------------- |
+| 🦄 UniswapV3 - Ethereum   | 12 hours   | Gamma, Arrakis, DefiEdge, Ichi        |
+| 🦄 UniswapV3 - Polygon    | 6 hours    | Gamma, Arrakis, DefiEdge, Steer, Ichi |
+| 🦄 UniswapV3 - Optimism   | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
+| 🦄 UniswapV3 - Arbitrum   | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
+| 🍣 SushiswapV3 - Ethereum | 12 hours   |                                       |
+| 🍣 SushiswapV3 - Polygon  | 6 hours    | Gamma, Steer                          |
+| 🍣 SushiswapV3 - Optimism | 6 hours    | Gamma, Steer                          |
+| 🍣 SushiswapV3 - Arbitrum | 6 hours    | Gamma, Steer                          |
 
 Can't find your AMM in this list? You can add it by following this [guide](#pre-requisites).
+
 ## 🧑‍💻 Smart Contracts
 
 Merkl is organized around 2 main contracts on each chain on which it is available:
@@ -77,7 +77,7 @@ To add support for your liquidity manager you can create a ticket in our [Discor
 You will need to submit the following information for each chain/DEX pair you want to add:
 
 - Chain (Arbitrum, Optimism, Polygon or Ethereum)
-- DEX (UniswapV3, SushiSwapV3 or Retro)
+- DEX (UniswapV3, SushiSwapV3, ...)
 - Address of your factory contract (or addresses if you have multiple factories)
 - Address of one of the vaults created by each of your factory contracts
 
