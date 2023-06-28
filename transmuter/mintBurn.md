@@ -13,7 +13,7 @@ Practically, this is done by tracking for each asset in the backing a **target p
 The target value is then used to compute **a deviation** $$ d $$ which acts as a circuit breaker for mints and burns:
 
 $$
-\begin{equation} d = \max(1-\frac{p}{\texttt{target price}},0) \end{equation}
+d = \max(1-\frac{p}{\texttt{target price}},0)
 $$
 
 ## 🍀 Mint
@@ -21,12 +21,14 @@ $$
 The Transmuter enables minting 1 stablecoin against a specific asset $$ i $$ by bringing:
 
 $$
-\begin{equation} \max(\frac{1}{\texttt{target price}_i},\frac{1}{p_i}) = \frac{d_i}{p_i} + \frac{1}{t_i} \end{equation}
+\max(\frac{1}{\texttt{target price}_i},\frac{1}{p_i}) = \frac{d_i}{p_i} + \frac{1}{t_i}
 $$
 
 As fees apply, the exact amount to bring is in fact:
 
-$$ \begin{equation} (1+\texttt{fee})(\frac{d_i}{p_i} + \frac{1}{t_i}) \end{equation} $$
+$$
+(1+\texttt{fee})(\frac{d_i}{p_i} + \frac{1}{t_i})
+$$
 
 This guarantees that if an asset in the backing depegs then it is not profitable to mint with this asset.
 
@@ -41,7 +43,7 @@ For all assets $$i$$ in the backing, the system looks into their deviation $$d_i
 The burn price for an asset $$j$$ among $$N$$ assets is then:
 
 $$
-\begin{equation} \frac{1-\max_{i \in N} d_i}{p_j} \end{equation}
+\frac{1-\max_{i \in N} d_i}{p_j}
 $$
 
 In its normal state, the stablecoin can be burnt for any of the assets in the system at their fair value which guarantees a small slippage for burning the asset. But in case of a depeg of one of the asset in the backing, this mechanism is meant to preserve the system's exposures to all assets.
@@ -49,7 +51,7 @@ In its normal state, the stablecoin can be burnt for any of the assets in the sy
 As the stablecoin can be burnt for the same value of assets regardless of the asset it is burnt for, it disincentivizes stablecoin holders from rushing to exit towards the safest asset. In the example with agEUR, users can burn 1 agEUR and redeem an amount of $$\texttt{EUR}_A$$ equal to:
 
 $$
-\begin{equation} \frac{1-\max(d_{\texttt{EUR}_A},d_{\texttt{EUR}_B},d_{\texttt{EUR}_{\texttt{yield}}})}{p_{\texttt{EUR}_A}}\times(1-\texttt{fee}) \end{equation}
+\frac{1-\max(d_{\texttt{EUR}_A},d_{\texttt{EUR}_B},d_{\texttt{EUR}_{\texttt{yield}}})}{p_{\texttt{EUR}_A}}\times(1-\texttt{fee})
 $$
 
 Now, consider the case where $$\texttt{EUR}_A$$ depegs by 5% but not $$\texttt{EUR}_B$$ or $$\texttt{EUR}_{\texttt{yield}}$$, then people burning stablecoins can choose to get 1 $$\texttt{EUR}_A$$ worth 0.95€. They can also choose to get 0.95 $$ \texttt{EUR}_B$$ worth 0.95€, or 0.95 $$\texttt{EUR}_{\texttt{yield}}$$ worth 0.95€. In all cases, it's never profitable to burn agEUR for the assets that remain safe in the system.
@@ -64,7 +66,9 @@ While the values at which mints and burns are taking place are one way for the T
 
 Relative exposure to an asset $$i$$ is defined here as:
 
-$$ \begin{equation} \frac{\texttt{stablecoins issued using } i}{\texttt{total stablecoins issued}} \end{equation} $$
+$$
+\frac{\texttt{stablecoins issued using } i}{\texttt{total stablecoins issued}}
+$$
 
 Contrarily to the [redemption](./redeem.md) case, a mint or a burn for one asset affect the system's exposure to all its backing assets.
 
