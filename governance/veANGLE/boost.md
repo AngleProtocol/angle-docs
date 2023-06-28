@@ -49,25 +49,25 @@ $$
 The complete formula to compute the liquidity the staking contract considers provided and therefore the boost applied is:
 
 $$
-\begin{equation} \min(x_{lp} + 1.5\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}}, 2.5 \times x_{lp}) \end{equation}
+\min(x_{lp} + 1.5\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}}, 2.5 \times x_{lp})
 $$
 
 To get the max possible boost on rewards, an address needs to get 100% of its provided liquidity taken into account by the protocol. This is equivalent to having the term on the left greater or equal than the value of the liquidity provided:
 
 $$
-\begin{equation} x_{lp} + 1.5\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}} \geq 2.5 \times x_{lp} \end{equation}
+x_{lp} + 1.5\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}} \geq 2.5 \times x_{lp}
 $$
 
 $$
-\begin{equation} \cancel{1.5}\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}} \geq \cancel{1.5} \times x_{lp} \end{equation}
+\cancel{1.5}\times tot_{lp}\times \frac{x_{veANGLE}}{s_{veANGLE}} \geq \cancel{1.5} \times x_{lp}
 $$
 
 $$
-\begin{equation} \frac{x_{veANGLE}}{s_{veANGLE}} \geq \frac{x_{lp}}{tot_{lp}} \end{equation}
+\frac{x_{veANGLE}}{s_{veANGLE}} \geq \frac{x_{lp}}{tot_{lp}}
 $$
 
 $$
-\begin{equation} \texttt{Share of veANGLE supply} \geq \texttt{Share of liquidity in the pool} \end{equation}
+\texttt{Share of veANGLE supply} \geq \texttt{Share of liquidity in the pool}
 $$
 
 **An address having a higher share of the total veANGLE supply than its share of liquidity provided in the pool for which the boost is being computed is considered as having x2.5 more liquidity than an address with no veANGLE.**

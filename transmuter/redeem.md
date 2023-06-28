@@ -10,7 +10,9 @@ Transmuter enables at all times and in any circumstance users to redeem the stab
 
 A redemption operation simply consists in exchanging a portion of the stablecoins issued by the system against a portion of the reserves minus a penalty factor that depend on the overall collateral ratio of the system. The amount of what can be redeemed of an asset $$i$$ when redeeming $$\texttt{amount}$$ in the reserves is computed as:
 
-$$ \begin{equation} \frac{\texttt{amount}}{\texttt{total stablecoins issued}} \times \texttt{balance}_i \times \texttt{penalty factor} \end{equation}$$
+$$
+\frac{\texttt{amount}}{\texttt{total stablecoins issued}} \times \texttt{balance}_i \times \texttt{penalty factor}
+$$
 
 ## 🧮 Penalty Factor Computation
 
