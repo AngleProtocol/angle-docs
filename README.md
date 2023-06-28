@@ -30,7 +30,7 @@ Inspired from more traditional borrowing protocols (like [Maker](https://makerda
 
 ### [Transmuter](transmuter/)
 
-Transmuter is deployed on Ethereum. It works as a basket of different stablecoins that can be used to mint agEUR. Thanks to its dynamic fee model and its internal circuit breakers, the system is able to autonomously control the exposures to its reserve assets and guarantee that agEUR's backing is sufficiently diversified. It is on top of that a trustless system that lets anyone and at any time (including during black swan events) redeem agEUR for a portion of the assets in the backing without any prior governance intervention.
+Transmuter is deployed on Ethereum. It works as a basket of different stablecoins that can be used to mint agEUR. Thanks to its dynamic fee model and its internal circuit breakers, the system is able to autonomously control its exposures to the assets it has in reserves and guarantee that agEUR's backing is properly diversified. It is on top of that a trustless system that lets anyone and at any time (including during black swan events) redeem agEUR for a portion of the assets in the backing.
 
 It is designed as a resilient improvement over the price stability module systems of [Maker](https://makerdao.com/en/) and [FRAX](https://frax.finance/) that showed their limits during the USDC depeg situation in March 2023.
 
