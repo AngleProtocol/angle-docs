@@ -2,9 +2,9 @@
 description: How Transmuter can adjust its mechanisms for some specific collateral assets
 ---
 
-# Collateral Assets Management and Whitelist
+# 📄 Collateral Assets Management and Whitelist
 
-## Collateral Management
+## 🧩 Collateral Management
 
 While collateral assets in Transmuter remain by default idle in the contract, the system supports the possibility to plug manager contracts or strategies to generate a yield on the assets in the backing.
 
@@ -14,7 +14,7 @@ This comes with an extra composability risk if the underlying protocols in which
 
 For instance if $\texttt{EUR}_A$ is invested on Aave, the protocol will control $a\texttt{EUR}_A$. During a redemption, the protocol should send users a basket of $\texttt{EUR}_A$ and $a\texttt{EUR}_A$ based on what is invested. If Aave gets hacked, this guarantees that first users will not be getting more than the ones coming afterwards. The deviation value in the oracle for $\texttt{EUR}_A$ would also need to take into account the fact that the system does not only have $\texttt{EUR}_A$ but also $a\texttt{EUR}_A$ which decreased in value.
 
-## Collateral Whitelist
+## 🤝 Collateral Whitelist
 
 On top of managed collateral assets, Transmuter is compatible with assets for which holders may be permissionned. There is the option to make some specific collateral assets whitelisted, in the sense that only some addresses are eligible to burn for this asset or receive it during a redemption. This can typically apply to the case of security tokens which cannot be permissionlessly sent to any address.
 

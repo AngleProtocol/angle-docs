@@ -14,7 +14,7 @@ Angle is a decentralized, capital efficient and over-collateralized stablecoin p
 
 It can be used to issue stablecoins, called agTokens, designed to mirror the value of an asset they are pegged to.
 
-The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted. While Angle launched its first stablecoin agEUR with a single minting module (the [Core module](./deprecated/core-module/overview.md) - that was wound down in May 2023), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral has been introduced.
+The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted. While Angle launched its first stablecoin agEUR with a single minting module (the [Core module](./deprecated/core-module/overview.md) - that was wound down in May 2023), a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins against deposited collateral and a price stability module called [Transmuter](transmuter/README.md) have then been introduced.
 
 The protocol is also engaged into [Direct Deposit Modules](other/amo.md), also called Algorithmic Market Operations (AMOs), allowing it to boostrap liquidity for agTokens in other protocols.
 
@@ -30,6 +30,10 @@ Inspired from more traditional borrowing protocols (like [Maker](https://makerda
 
 ### [Transmuter](transmuter/)
 
+Transmuter is deployed on Ethereum. It works as a basket of different stablecoins that can be used to mint agEUR. Thanks to its dynamic fee model and its internal circuit breakers, the system is able to autonomously control the exposures to its reserve assets and guarantee that agEUR's backing is sufficiently diversified. It is on top of that a trustless system that lets anyone and at any time (including during black swan events) redeem agEUR for a portion of the assets in the backing without any prior governance intervention.
+
+It is designed as a resilient improvement over the price stability module systems of [Maker](https://makerdao.com/en/) and [FRAX](https://frax.finance/) that showed their limits during the USDC depeg situation in March 2023.
+
 ### Other Aspects
 
 Angle is not limited to this key component. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of its stablecoins. It also natively supports [flash loans](other/flash-loans.md) for some of its stablecoins.
@@ -40,7 +44,7 @@ Angle is a decentralized protocol governed by [a DAO](governance/angle-dao.md) e
 
 ## 📐 [Discord](https://discord.gg/3vaHCJw7Mz)
 
-While Angle was initially created by a team of developers at a company called Angle Labs, Inc, it is progressively decentralising and receives contributions from the external developer community as well as ongoing contributions from Angle Labs.
+While Angle was initially created by a team of developers at a company called Angle Labs, Inc, it is rapidly decentralizing and receives contributions from the external developer community as well as ongoing contributions from Angle Labs.
 
 Angle community Discord server is where the community collectively organizes itself to build the best protocol possible, help everyone understand what Angle is about, and most of all have fun playing with DeFi!
 

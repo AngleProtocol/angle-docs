@@ -2,9 +2,9 @@
 description: Implementation details for Transmuter
 ---
 
-# Implementation details for Transmuter
+# 👩‍💻 Implementation details for Transmuter
 
-## Reactive Fees & Path Independence
+## 🌌 Reactive Fees & Path Independence
 
 Fees for a specific action (mint or burn) are defined by the values they should take at certain exposures.
 
@@ -12,9 +12,9 @@ For instance, the system may be set such at exposure 0% for $\texttt{EUR}_A$ aft
 
 The Transmuter system is implemented such that in the same block (and putting gas cost considerations aside), splitting an order in multiple sub orders involving the same asset gives exactly the same output as making one single order. On top of that, it also enables people to specify when minting or burning whether they want to get an exact amount of tokens in output or to bring an exact amount of tokens in input, with both methods being purely equivalent.
 
-## Gas optimizations
+## ⛽️ Gas optimizations
 
-### Diamond proxy pattern
+### 💎 Diamond proxy pattern
 
 The Transmuter system works with external oracles to price the reserve assets. To avoid exploits, fees for each asset should be set with the oracle deviation thresholds of all other assets in mind.
 
@@ -24,7 +24,7 @@ Beyond this, the diamond proxy pattern opens some composability and flexibility 
 
 In fact, any oracle type can be supported provided that the values given for both the target price and for the current price are both non manipulable.
 
-### Smart accounting
+### 🧾 Smart accounting
 
 To track the exposure to each asset in the backing and compute the value of the adaptive fees, the system needs to store the amount of stablecoins that have been issued from each of the assets in the backing.
 
