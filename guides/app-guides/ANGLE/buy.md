@@ -16,11 +16,15 @@ description: Buy ANGLE with the Angle App from any token
 You can refresh prices by clicking on the circled arrow above the inputs.
 {% endhint %}
 
+{% hint style="info" %}
+Be careful, ANGLE has very low liquidity on other network than Ethereum and is often mispriced.
+{% endhint %}
+
 {% hint style="success" %}
 The 1inch integration on this page is a tailored integration for the specific ANGLE use case which guarantees that this page provides the best ANGLE price possible.
 {% endhint %}
 
-![Buy ANGLE](/.gitbook/assets/buy-angle.png)
+![Buy ANGLE](/.gitbook/assets/new-app-buyangle.png)
 
 ## Choosing slippage tolerance
 

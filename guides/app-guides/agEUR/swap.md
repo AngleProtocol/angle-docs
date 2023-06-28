@@ -33,7 +33,7 @@ Here are the steps to buy on-chain:
 You can refresh the rates by clicking on the circled arrow on the top right of the inputs.
 {% endhint %}
 
-![Minting agEUR](/.gitbook/assets/swap-agEUR.png)
+![Minting agEUR](/.gitbook/assets/new-app-buy.png)
 
 ### Selling on-chain
 
@@ -59,7 +59,7 @@ These providers usually let you receive the agEUR on the Ethereum or Polygon net
 Note that these partners may ask users to enter personal information above a certain amount.
 {% endhint %}
 
-![On-ramp](../../../.gitbook/assets/on-ramp.png)
+![On-ramp](../../../.gitbook/assets/new-app-ramp.png)
 
 ### Selling & spending agEUR
 
