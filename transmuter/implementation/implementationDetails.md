@@ -8,7 +8,7 @@ description: Implementation details for Transmuter
 
 Fees for a specific action (mint or burn) are defined by the values they should take at certain exposures.
 
-For instance, the system may be set such at exposure 0% for $\texttt{EUR}_A$ after a mint, mint fees must be $f=0.1\%$, at 30% $f=0.3\%$, at 32% $f=0.34\%$ and at 40% $f=100\%$.
+For instance, the system may be set such at exposure 0% for $$\texttt{EUR}_A$$ after a mint, mint fees must be $$f=0.1\%$$, at 30% $$f=0.3\%$$, at 32% $$f=0.34\%$$ and at 40% $$f=100\%$$.
 
 The Transmuter system is implemented such that in the same block (and putting gas cost considerations aside), splitting an order in multiple sub orders involving the same asset gives exactly the same output as making one single order. On top of that, it also enables people to specify when minting or burning whether they want to get an exact amount of tokens in output or to bring an exact amount of tokens in input, with both methods being purely equivalent.
 
@@ -34,6 +34,8 @@ If $$x_i$$ stablecoins are issued from asset $$i$$, then Transmuter tracks the a
 
 If someone redeems $$y$$ stablecoins out of the $$Y$$ that had been issued by the system, the $$\texttt{normalizer}$$ variable becomes: $$\texttt{normalizer}\times(1-\frac{y}{Y})$$
 
-After the $$\texttt{normalizer}$$ update, the amount of stablecoins issued from asset $i$ becomes:
+After the $$\texttt{normalizer}$$ update, the amount of stablecoins issued from asset $$i$$ becomes:
 
-$$\frac{x_i}{\texttt{normalizer}} \times \texttt{normalizer}\times(1-\frac{y}{Y}) = x_i (1-\frac{y}{Y})$$
+$$
+\frac{x_i}{\texttt{normalizer}} \times \texttt{normalizer}\times(1-\frac{y}{Y}) = x_i (1-\frac{y}{Y})
+$$
