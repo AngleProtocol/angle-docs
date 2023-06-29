@@ -1,16 +1,18 @@
 ---
 description: Minting and Burning with Transmuter
+cover: ../.gitbook/assets/Transmuter-cover.jpg
+coverY: 0
 ---
 
-# 💱 Minting and Burning with Transmuter
+# 💱 Mint and Burn
 
 ## 📈 Target Price and Deviation
 
-In the Transmuter, it is possible to mint and burn the stablecoin for any of the asset in the collateral at a variable price. On top of the current oracle value $$ p $$ of the asset, the price at which mints or burns happen also depend on whether the asset that is used is currently depegging or not.
+In the Transmuter, it is possible to mint and burn the stablecoin for any of the asset in the collateral at a variable price. On top of the current oracle value $$p$$ of the asset, the price at which mints or burns happen also depend on whether the asset that is used is currently depegging or not.
 
 Practically, this is done by tracking for each asset in the backing a **target price** denominated in the stablecoin's base currency. This target value for a collateral can be either absolute or updated relatively frequently.
 
-The target value is then used to compute **a deviation** $$ d $$ which acts as a circuit breaker for mints and burns:
+The target value is then used to compute **a deviation** $$d$$ which acts as a circuit breaker for mints and burns:
 
 $$
 d = \max(1-\frac{p}{\texttt{target price}},0)
@@ -18,7 +20,7 @@ $$
 
 ## 🍀 Mint
 
-The Transmuter enables minting 1 stablecoin against a specific asset $$ i $$ by bringing:
+The Transmuter enables minting 1 stablecoin against a specific asset $$i$$ by bringing:
 
 $$
 \max(\frac{1}{\texttt{target price}_i},\frac{1}{p_i}) = \frac{d_i}{p_i} + \frac{1}{t_i}
@@ -54,10 +56,10 @@ $$
 \frac{1-\max(d_{\texttt{EUR}_A},d_{\texttt{EUR}_B},d_{\texttt{EUR}_{\texttt{yield}}})}{p_{\texttt{EUR}_A}}\times(1-\texttt{fee})
 $$
 
-Now, consider the case where $$\texttt{EUR}_A$$ depegs by 5% but not $$\texttt{EUR}_B$$ or $$\texttt{EUR}_{\texttt{yield}}$$, then people burning stablecoins can choose to get 1 $$\texttt{EUR}_A$$ worth 0.95€. They can also choose to get 0.95 $$ \texttt{EUR}_B$$ worth 0.95€, or 0.95 $$\texttt{EUR}_{\texttt{yield}}$$ worth 0.95€. In all cases, it's never profitable to burn agEUR for the assets that remain safe in the system.
+Now, consider the case where $$\texttt{EUR}_A$$ depegs by 5% but not $$\texttt{EUR}_B$$ or $$\texttt{EUR}_{\texttt{yield}}$$, then people burning stablecoins can choose to get 1 $$\texttt{EUR}_A$$ worth 0.95€. They can also choose to get 0.95 $$\texttt{EUR}_B$$ worth 0.95€, or 0.95 $$\texttt{EUR}_{\texttt{yield}}$$ worth 0.95€. In all cases, it's never profitable to burn agEUR for the assets that remain safe in the system.
 
 {% hint style="info" %}
-As explained in [this page](./implementation/collateralsManagement.md), there can be some collateral assets for which only whitelisted addresses are eligible to burn their stablecoins for it.
+As explained in [this page](implementation/collateralsManagement.md), there can be some collateral assets for which only whitelisted addresses are eligible to burn their stablecoins for it.
 {% endhint %}
 
 ## 🏭 Exposures and Transaction Fees
@@ -70,7 +72,7 @@ $$
 \frac{\texttt{stablecoins issued using } i}{\texttt{total stablecoins issued}}
 $$
 
-Contrarily to the [redemption](./redeem.md) case, a mint or a burn for one asset affect the system's exposure to all its backing assets.
+Contrarily to the [redemption](redeem.md) case, a mint or a burn for one asset affect the system's exposure to all its backing assets.
 
 ![Impact of each Transmuter action on the exposures](../.gitbook/assets/docs-exposure.jpg)
 
@@ -82,6 +84,6 @@ For instance, mint fees can be set to a high value (100%) when the exposure is a
 
 With this, it is still possible that exposures go over the bounds where for instance mint fees reach 100%. Reason is that when you burn for an asset, you're mathematically increasing the exposures to all other assets in the system.
 
-Assume the system is targeting a 40% maximum exposure for a stablecoin $$\texttt{EUR}_A$$, and so far 33 agEUR have been issued with $$\texttt{EUR}_A$$, 33 with another stablecoin $$\texttt{EUR}_B$$ and 33 with $$\texttt{EUR}_{\texttt{yield}} $$, then someone burning 15 agEUR for $$\texttt{EUR}_{\texttt{yield}}$$ would bring the exposure to $$ \texttt{EUR}_A$$ to above 40%. It should be at this point impossible to mint agEUR with $$ \texttt{EUR}_A $$, but burning agEUR for $$\texttt{EUR}_A$$ should come at a low cost.
+Assume the system is targeting a 40% maximum exposure for a stablecoin $$\texttt{EUR}_A$$, and so far 33 agEUR have been issued with $$\texttt{EUR}_A$$, 33 with another stablecoin $$\texttt{EUR}_B$$ and 33 with $$\texttt{EUR}_{\texttt{yield}}$$, then someone burning 15 agEUR for $$\texttt{EUR}_{\texttt{yield}}$$ would bring the exposure to $$\texttt{EUR}_A$$ to above 40%. It should be at this point impossible to mint agEUR with $$\texttt{EUR}_A$$, but burning agEUR for $$\texttt{EUR}_A$$ should come at a low cost.
 
 In the Transmuter system, there can be **negative fees** to incentivize people to come with a certain asset. The system however verifies that this does not open arbitrage loops. It is impossible to set negative mint fees if these are in absolute value bigger than the positive burn fees for all the other assets in the system.

@@ -1,5 +1,7 @@
 ---
 description: Overview of the Transmuter system
+cover: ../.gitbook/assets/Transmuter-cover.jpg
+coverY: 0
 ---
 
 # ⚗️ Transmuter Overview
@@ -14,9 +16,9 @@ Transmuter supports three main user actions: **Mint, Burn and Redeem**. The mint
 
 Practically speaking, the three operations work as follows:
 
-- [**Mint:**](./mintBurn.md) Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable.
-- [**Burn:**](./mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
-- [**Redeem:**](./redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
+* [**Mint:**](mintBurn.md) Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable.
+* [**Burn:**](mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
+* [**Redeem:**](redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
 
 While we go deeper in the following pages about the core principles behind the Transmuter system, this schema illustrates, in the case of agEUR, how the system's main functionalities work:
 
@@ -30,8 +32,7 @@ Built in the aftermath of the USDC depeg as an improvement over price stability 
 
 **Resilience:** The underlying mechanisms of the Transmuter system are all fully autonomous and predictable by all types of stakeholders. In case of a black swan event, Transmuter provides reasons to bet on the stablecoin returning to its target price.
 
-**Trustlessness:** Transmuter is able to autonomously withstand unforeseen events, such as collateral depegs or hacks, without
-requiring any governance intervention.
+**Trustlessness:** Transmuter is able to autonomously withstand unforeseen events, such as collateral depegs or hacks, without requiring any governance intervention.
 
 **Fairness:** There cannot be any bank run as redemptions are thought to break sequentiality between users.
 

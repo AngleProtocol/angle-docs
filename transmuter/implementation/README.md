@@ -1,8 +1,10 @@
 ---
 description: Learn more about specific aspects of the Transmuter system
+cover: ../../.gitbook/assets/Transmuter-cover.jpg
+coverY: 117
 ---
 
-# 🔎 Transmuter Deep Dive
+# 🔍 Other aspects
 
 {% content-ref url="collateralsManagement.md" %}
 [collateralsManagement.md](collateralsManagement.md)
