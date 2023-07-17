@@ -39,7 +39,7 @@ Vulnerabilities marked as “Acknowledged”, “ Accepted Risk” or “Closed�
 
 Payouts are handled by the Angle team directly and are denominated in USD. However, payouts are done in ANGLE or USDC, with the choice of the ratio at the discretion of the team.
 
-Critical-level smart contract vulnerabilities that result in the loss of user funds will have rewards additionally capped at 10% of the funds potentially affected based on the vulnerability that was identified. These rewards are payable in USDC or in ANGLE at the discretion of the team as mentionned above. ANGLE rewards will have a vesting schedule lasting between 6-12 months with a minimum of 6 months for rewards up to USD 200 000, with an additional month added for every USD 50 000 tranche, rounded up. However, there is a minimum of USD 50 000 for Critical bug reports.
+Critical-level smart contract vulnerabilities that result in the loss of user funds will have rewards additionally capped at 10% of the funds potentially affected based on the vulnerability that was identified. These rewards are payable in USDC or in ANGLE at the discretion of the team as mentioned above. ANGLE rewards will have a vesting schedule lasting between 6-12 months with a minimum of 6 months for rewards up to USD 200 000, with an additional month added for every USD 50 000 tranche, rounded up. However, there is a minimum of USD 50 000 for Critical bug reports.
 
 Payouts are handled by Angle Labs team directly and are denominated in USD. However, payouts are done in ANGLE or USDC, with the choice of the ratio at the discretion of the team.
 

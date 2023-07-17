@@ -31,7 +31,7 @@ The available sanUSDC balance to distribute is tracked via a variable that is ca
 
 ## 💱 Swap Process
 
-As mentionned above, all profits of the protocol are converted into USDC before being deposited in the protocol as sanUSDC.
+As mentioned above, all profits of the protocol are converted into USDC before being deposited in the protocol as sanUSDC.
 
 The protocol has implemented its own process and smart contracts to handle the conversion: this is handled on a per-coin basis.
 

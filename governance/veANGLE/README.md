@@ -16,7 +16,7 @@ It is a modular and all-purpose vesting and yield system based off of Curve’s 
 
 veANGLE can be obtained by locking ANGLE from 1 week to up to 4 years. A smaller balance of veANGLE is obtained when locking for a shorter time. veANGLE balances decrease linearly with time to reflect the reduction in lock-time, approaching 0 veANGLE when lock time is about to end and ANGLE locked to be released.
 
-As mentionned above, veANGLE is the token used for [voting for governance proposals](../angle-dao.md) and ANGLE emissions through [gauge weights](gauges.md) in the Angle protocol. As such, veANGLE holders are shaping the future of the protocol.
+As mentioned above, veANGLE is the token used for [voting for governance proposals](../angle-dao.md) and ANGLE emissions through [gauge weights](gauges.md) in the Angle protocol. As such, veANGLE holders are shaping the future of the protocol.
 
 Beyond **voting** on governance proposals and gauge weights, veANGLE is useful in two main aspects:
 
