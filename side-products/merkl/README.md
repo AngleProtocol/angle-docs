@@ -49,7 +49,7 @@ $$
 $$
 
 {% hint style="info" %}
-For big pools with a lot of swaps, the script may not look at data from all the swaps that occured during the given time period, but only sample the biggest of them.
+For big pools with a lot of swaps, the script may not look at data from all the swaps that occurred during the given time period, but only sample the biggest of them.
 {% endhint %}
 
 ### 🧳 Liquidity Position Managers

@@ -23,7 +23,7 @@ Hedging Agents can enter Angle Core module with even very small leverage like x1
 
 Even if demand for perpetual futures decreases, the Core module should remain cheaper than most protocols allowing to get on-chain leverage, like Aave or Compound. In normal times, when demand for leverage is high and almost all the collateral is hedged, transaction fees are set so that it is slightly more expensive to open a position. When demand for perpetual futures drop, fees drop (following the hedging curve) and the Core module becomes much cheaper than other on-chain protocols.
 
-It should also be cheaper to get leverage with the Core module than with centralized exchanges. With Angle, traders only pay entry and exit fees: there is no funding cost. It is more cost efficient for Hedging Agents that have a long-term horizon to open positions on Angle rather than on a centralized exchange, as this funding rate ususally represents a high cost.
+It should also be cheaper to get leverage with the Core module than with centralized exchanges. With Angle, traders only pay entry and exit fees: there is no funding cost. It is more cost efficient for Hedging Agents that have a long-term horizon to open positions on Angle rather than on a centralized exchange, as this funding rate usually represents a high cost.
 
 Governance has the ability to vote to activate governance token distribution to Hedging Agents to increase incentives: HAs could be paid to get long (even with really small multipliers) using Angle Core module.
 

@@ -48,7 +48,7 @@ sanTokens are ERC-20 tokens, visible on Etherscan. Just like any other token, th
 
 ## Can I transfer or trade my SLPs position?
 
-Yes, as mentionned above sanTokens are ERC-20 tokens that can be transferred, and tradable on the open market. This means that a SLP willing to cash out could sell her sanTokens on a secondary exchange (like Uniswap) and hence get collateral without interacting with Angle Core module.
+Yes, as mentioned above sanTokens are ERC-20 tokens that can be transferred, and tradable on the open market. This means that a SLP willing to cash out could sell her sanTokens on a secondary exchange (like Uniswap) and hence get collateral without interacting with Angle Core module.
 
 ## What's the advantage of being a SLP on Angle Core module rather than going to other platforms that offer automatic yield like Aave or Compound?
 
