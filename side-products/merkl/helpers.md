@@ -16,9 +16,10 @@ description: Helpers to use and integrate Merkl
 | 🍣 SushiswapV3 - Polygon         | 6 hours    | Gamma, Steer, DefiEdge                |
 | 🍣 SushiswapV3 - Optimism        | 6 hours    | Gamma, Steer                          |
 | 🍣 SushiswapV3 - Arbitrum        | 6 hours    | Gamma, Steer, DefiEdge                |
+| 🍣 SushiswapV3 - Base            | 6 hours    |                                       |
 | 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |                                       |
 | 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |                                       |
-| 🪞 Retro - Polygon                | 6 hours    | Gamma, Ichi                           |
+| 🪞 Retro - Polygon               | 6 hours    | Gamma, Ichi                           |
 
 Can't find your AMM in this list? You can add it by following this [guide](#pre-requisites).
 
