@@ -8,6 +8,10 @@ coverY: 0
 
 Angle Protocol has undergone several audits for its smart contracts and modules.
 
+## Code4rena June 2023 - July 2023
+
+[Audit report](https://code4rena.com/reports/2023-06-angle) of the Transmuter system and of Merkl smart contracts performed by Code4rena between June and July 2023.
+
 ## Chainsecurity April 2022 - May 2022
 
 Audit report of the borrowing module of the Angle protocol performed by Chainsecurity between April and May 2022.
