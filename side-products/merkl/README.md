@@ -116,6 +116,10 @@ The system for depositing incentives and claiming rewards **can be easily integr
 
 If you simply want to use Merkl, check out these guides to [make the best of Merkl as a liquidity provider](lp-guide.md) or to [distribute incentives](incentivizor-guide.md) with the system.
 
+### Audits
+
+Merkl smart contracts have been audited by Code4rena. Find the audit reports [here](https://code4rena.com/reports/2023-06-angle).
+
 ### 🔗 Links
 
 - [Merkl App](https://merkl.angle.money)
