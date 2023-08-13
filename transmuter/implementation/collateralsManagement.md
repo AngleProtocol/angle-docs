@@ -18,14 +18,14 @@ Depending on the assets, different types of whitelists may apply and the managem
 
 ### For agEUR
 
-agEUR supports in its backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security, which can. Burning for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
+agEUR supports in its backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security. Burning for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
 
-While Angle Governance maintains its own whitelist, Transmuter is also connected to [Keyring](https://www.keyring.network) compliance solution for the whitelist. For any address that comes to the protocol, Keyring whitelist checks that:
+While Angle Governance maintains its own whitelist, Transmuter is also connected to [Keyring Network](https://www.keyring.network) compliance solution for the whitelist. For any address that comes to the protocol, Keyring dynamic whitelist checks that:
 
-- the address has already been KYC-ed by Backed
-- or that the address has been whitelisted on their platform by one of their trusted KYC providers. The whitelist is only open, according to the [US Regulation S criterion](https://www.hkex.com.hk/-/media/hkex-market/services/circulars-and-notices/participant-and-members-circulars/sehk/2011/ctmo04711e1#:~:text=Under%20Regulation%20S-,Under%20Rule%20902%20of%20Regulation%20S%20promulgated%20under%20the%20United,under%20the%20laws%20of%20the), to accredited investors that are non US Persons (that have a non-US passport and a proof of a non-US address).
+- The address has already been KYC-ed by Backed,
+- Or that the address has been whitelisted on their platform according to the Backed Admission Policy. Currently, the whitelist is only open to users that meet [US Regulation S criteria](https://www.ecfr.gov/current/title-17/chapter-II/part-230#subject-group-ECFR69201f82e35ad1c).
 
-For more details, on how to get setup and verified on Keyring you can check [this guide](TODO link to Notion page).
+For more details, on how to get setup and verified on Keyring you can check [this guide](https://keyring.notion.site/Keyring-Network-User-Guide-e297b3133d50482896a8f8b83839aacd).
 
 {% hint style="info" %}
 The detailed state of whether whitelisted collateral assets are supported for agEUR can be found in [Angle Analytics](https://analytics.angle.money).
