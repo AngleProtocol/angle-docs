@@ -16,9 +16,9 @@ Transmuter supports three main user actions: **Mint, Burn and Redeem**. The mint
 
 Practically speaking, the three operations work as follows:
 
-* [**Mint:**](mintBurn.md) Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable.
-* [**Burn:**](mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
-* [**Redeem:**](redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
+- [**Mint:**](mintBurn.md) Stablecoins can be minted at oracle value from any of the supported assets with adaptive fees provided that the deviation of the asset used with respect to its target price is reasonable.
+- [**Burn:**](mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
+- [**Redeem:**](redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
 
 While we go deeper in the following pages about the core principles behind the Transmuter system, this schema illustrates, in the case of agEUR, how the system's main functionalities work:
 
@@ -58,10 +58,4 @@ The smart contracts of the Transmuter have been audited by Code4rena. The code a
 
 ## 📇 Deployments
 
-{% hint style="info" %}
-Transmuter is not deployed yet. Depending on governance approval, it should be released in July 2023.
-{% endhint %}
-
-{% hint style="info" %}
-The current state of Transmuter, the accepted collateral assets, their exposures and parameters can be found in [Angle Analytics](https://analytics.angle.money).
-{% endhint %}
+Transmuter has been deployed for agEUR on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb).

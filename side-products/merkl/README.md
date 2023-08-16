@@ -118,7 +118,7 @@ If you simply want to use Merkl, check out these guides to [make the best of Mer
 
 ### Audits
 
-Merkl smart contracts have been audited by Code4rena. Find the audit reports [here](https://code4rena.com/reports/2023-06-angle).
+Merkl smart contracts have been audited by Code4rena. Find the audit report [here](https://code4rena.com/reports/2023-06-angle).
 
 ### 🔗 Links
 

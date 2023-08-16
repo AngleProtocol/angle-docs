@@ -11,7 +11,7 @@ AMOs are conceived not to affect the peg of the stablecoin.
 
 ## Example
 
-Algorithmic market operations are perfectly suited for lending markets. In this case, the way an AMO would look like is that a contract mints an amount of stablecoins (using no collateral and hence not interacting with any other protocol module) and deposits them on a lending market such as Aave.
+Algorithmic market operations are well suited for lending markets. In this case, the way an AMO would look like is that a contract mints an amount of stablecoins (using no collateral and hence not interacting with any other protocol module) and deposits them on a lending market such as Aave.
 
 These minted stablecoins can then be borrowed by people having a sufficient amount of backing collateral in the lending protocol. It is only when they're borrowed that the minted stablecoins can really be considered to be on the open market. At this point, they are backed by the collateral deposited in the lending protocol by the borrowers. As such, the agTokens originally minted by the protocol's contract and deposited in the lending market are over-collateralized when being released in the market.
 
@@ -22,7 +22,7 @@ While we described above an example of a lending AMO, the Angle Protocol can sup
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](../governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
 {% hint style="info" %}
-As of May 2023, the protocol only has protocol-owned liquidity AMOs live in production.
+As of July 2023, the protocol only has protocol-owned liquidity AMOs live in production.
 {% endhint %}
 
 ### Protocol-owned Liquidity

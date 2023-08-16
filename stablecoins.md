@@ -6,18 +6,15 @@ coverY: 0
 
 # 🖼 Stablecoins
 
-| Features                     | agEUR |
-| ---------------------------- | ----- |
-| Borrowing Module - Ethereum  | ✅     |
-| Borrowing Module - Polygon   | ✅     |
-| Borrowing Module - Optimism  | ✅     |
-| Borrowing Module - Arbitrum  | ✅     |
-| Borrowing Module - Avalanche | ✅     |
-| Flash Loans                  | ✅     |
-| Bridge Setup with LayerZero  | ✅     |
-| AMO - Curve Ethereum         | ✅     |
-| Core Module - Ethereum       | ❌     |
-
-{% hint style="success" %}
-For more details about how each stablecoin cross-chain infrastructure is setup, check out [this page](other/cross-chain.md#bridge-solutions).
-{% endhint %}
+| Features                                                             | agEUR |
+| -------------------------------------------------------------------- | ----- |
+| Transmuter - Ethereum                                                | ✅    |
+| Borrowing Module - Ethereum                                          | ✅    |
+| Borrowing Module - Polygon                                           | ✅    |
+| Borrowing Module - Optimism                                          | ✅    |
+| Borrowing Module - Arbitrum                                          | ✅    |
+| Borrowing Module - Avalanche                                         | ✅    |
+| Flash Loans                                                          | ✅    |
+| [Bridge Setup](other/cross-chain.md#bridge-solutions) with LayerZero | ✅    |
+| AMO - Curve Ethereum                                                 | ❌    |
+| Core Module - Ethereum                                               | ❌    |

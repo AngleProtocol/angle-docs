@@ -34,10 +34,6 @@ Transmuter is deployed on Ethereum. It works as a basket of different stablecoin
 
 It is designed as a resilient improvement over the price stability module systems of [Maker](https://makerdao.com/en/) and [FRAX](https://frax.finance/) that showed their limits during the USDC depeg situation in March 2023.
 
-{% hint style="info" %}
-Transmuter is not live yet. Depending on governance approval, it should be released in July 2023.
-{% endhint %}
-
 ### Other Aspects
 
 Angle is not limited to this key component. It has notably a complex [bridge infrastructure](other/cross-chain.md) designed to facilitate the cross-chain liquidity of its stablecoins. It also natively supports [flash loans](other/flash-loans.md) for some of its stablecoins.
