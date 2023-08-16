@@ -27,8 +27,8 @@ You can deposit any token you want in the app, and it will be swapped to the col
 Here are the steps to follow to deposit collateral and borrow agTokens:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault
-2. Select the type of vault to create, defined by the collateral and stablecoin token
-3. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
+2. Select the type of vault to create, defined by the collateral and stablecoin token and click on borrow
+3. Then, select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
 4. Enter the amount of stablecoins you want to borrow in the second input.
 5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
    _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
@@ -45,6 +45,23 @@ Note that once a vault is opened, you can monitor its health and status from the
 
 ![Vaults list](../../../.gitbook/assets/vaults-list.png)
 
+## Leverage
+
+When using the borrow section of the app, you can, in a single transaction, borrow stablecoins like agEUR and directly swap them into more of the token originally used as collateral to leverage your exposition.
+
+To do this, when selecting the type of vault to create, click on leverage. Then:
+
+1. Select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter.
+2. Enter the amount of additional exposure of collateral you want in the second input.
+3. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
+   _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
+
+In this example, a user deposits 20 FRAX in an LUSD vault, and ask for 40 LUSD of additional exposure. In the background, the 20 FRAX are swapped to LUSD and enough agEUR to buy 40 LUSD tokens are borrowed from the vault and swapped to LUSD. The user USD exposure goes from 20 to 60.
+
+After the operation, this vault would have 60 LUSD as collateral and ~38.23 agEUR of debt.
+
+![Leverage with LUSD](/.gitbook/assets/leverage-lusd.png)
+
 ## Using a yield-bearing asset as collateral to borrow
 
 Some vaults have collateral tokens that earn a return for holders, like staked Curve LP tokens.
@@ -59,7 +76,11 @@ All external rewards accumulated by the vault's staked collateral can be [claime
 To check out all these steps, click on the `Transaction Details` on the right side of the screen.
 {% endhint %}
 
-In the following example, 20 FRAX are deposited in the Curve FRAXUSDC pool, the LP tokens are staked on Stake DAO, and deposited as collateral in the vault. 10 agEUR are also borrowed from the vault
+In the following example, 20 FRAX are deposited in the Curve FRAXUSDC pool, the LP tokens are staked on Stake DAO, and deposited as collateral in the vault. 10 agEUR are also borrowed from the vault.
+
+This feature can be interesting when using the leverage functionality of the app. By getting leverage on yield bearing tokens, you can effectively enable multiply your returns.
+
+For example, if the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
 
 ![Add/Borrow agEUR](/.gitbook/assets/borrow-lp.png)
 

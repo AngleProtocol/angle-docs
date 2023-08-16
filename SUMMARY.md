@@ -13,7 +13,6 @@
   - [💸 Pay and get paid with agEUR](guides/use-cases/ageur-power-usecase.md)
   - [💱 Buy Angle Stablecoins](guides/app-guides/agEUR/swap.md)
   - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
-  - [⚖️ Leverage](guides/app-guides/agEUR/leverage.md)
   - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
   - [🍀 Staking and Uniswap V3 incentive mechanism](guides/app-guides/earn/staking.md)
   - [💰 Buy](guides/app-guides/ANGLE/buy.md)
@@ -96,7 +95,7 @@
   - [🇹🇷 Turkish](resources/international/turkish/README.md)
   - [🇪🇸 Spanish](resources/international/spanish/README.md)
 
-## Deprecated Protocol Modules
+## Deprecated
 
 - [🔭 Angle Core Module](deprecated/core-module/overview.md)
   - [💱 Stable Seekers and Holders](deprecated/core-module/stable-seekers/README.md)
