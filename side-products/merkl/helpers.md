@@ -8,7 +8,7 @@ description: Helpers to use and integrate Merkl
 
 | Live AMMs & Chains               | Epoch Time | Supported Liquidity Managers          |
 | -------------------------------- | ---------- | ------------------------------------- |
-| 🦄 UniswapV3 - Ethereum          | 12 hours   | Gamma, Arrakis, DefiEdge, Ichi        |
+| 🦄 UniswapV3 - Ethereum          | 12 hours   | Gamma, Arrakis, DefiEdge, Ichi, Range |
 | 🦄 UniswapV3 - Polygon           | 6 hours    | Gamma, Arrakis, DefiEdge, Steer, Ichi |
 | 🦄 UniswapV3 - Optimism          | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
 | 🦄 UniswapV3 - Arbitrum          | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
@@ -19,7 +19,7 @@ description: Helpers to use and integrate Merkl
 | 🍣 SushiswapV3 - Base            | 6 hours    |                                       |
 | 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |                                       |
 | 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |                                       |
-| 🪞 Retro - Polygon               | 6 hours    | Gamma, Ichi                           |
+| 🪞 Retro - Polygon               | 6 hours    | Gamma, Ichi , Steer, Range            |
 
 Can't find your AMM in this list? You can add it by following this [guide](#pre-requisites).
 
