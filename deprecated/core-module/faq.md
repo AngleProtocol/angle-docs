@@ -26,7 +26,7 @@ While the principle of the Core module could work for any stablecoin, it was onl
 
 - Angle Core module is over-collateralized but capital efficient: to issue 1 stablecoin, you only need 1 of collateral, no more.
 - Angle stablecoins' convertibility is not done at the expense of the robustness of the protocol. Thanks to its over-collateralized nature, and contrarily to most algorithmic designs, the Core module is still bank run resistant.
-- Because of the swaps between stablecoins and collateral allowed by the Core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented on-chain.
+- Because of the swaps between stablecoins and collateral allowed by the Core module, the stablecoins are highly liquid. With Angle, people could very easily get stable Euros from their crypto collateral and more generally stablecoins pegged to currencies which are not well represented onchain.
 
 ## Besides stablecoins, what else does the Angle Core module offer?
 

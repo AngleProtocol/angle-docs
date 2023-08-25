@@ -89,19 +89,6 @@ coverY: 0
 - [Superfluid](https://app.superfluid.finance)
 - [LlamaPay](https://llamapay.io)
 
-### Yield
-
-#### Ethereum
-
-- [Yearn 3EUR Vault](https://yearn.finance/vaults/1/0x82c83ddA32DB09F63F9A59A129278f3fdC3EeE67)
-- [Yearn agEUR-EUROC Vault](https://yearn.finance/vaults/1/0x321d570790fd2f109Fe4e55aa419Adf2fce0c842)
-- [Olympus Pro ANGLE Bonds](https://etherscan.io/address/0x476afb11a5105155f6b590d11d865280e3ef02b3)
-
-#### Polygon
-
-- [Aave](https://app.aave.com/reserve-overview/?underlyingAsset=0xe0b52e49357fd4daf2c15e02058dce6bc0057db4&marketName=proto_polygon_v3)
-- [Hundred Finance](https://hundred.finance/)
-
 ### DEX
 
 #### On Ethereum
@@ -156,10 +143,6 @@ coverY: 0
 #### On Celo
 
 - [Curve agEUR - cEUR](https://celo.curve.fi/factory/2)
-
-#### On Fantom
-
-- [SpookySwap agEUR - cUSD](https://info.spookyswap.finance/token/0x02a2b736f9150d36c0919f3acee8ba2a92fbbb40)
 
 #### On NEAR/Aurora
 

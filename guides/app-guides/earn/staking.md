@@ -12,7 +12,7 @@ In this guide, we explain how to be eligible for ANGLE rewards as a UniswapV3 li
 
 ## Incentives for Uniswap V3 Liquidity Providers
 
-Angle rewards Uniswap V3 Liquidity Providers (LPs) with the Merkl mechanism. This mechanism, relying on an off-chain computation script, rewards LPs granularly according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
+Angle rewards Uniswap V3 Liquidity Providers (LPs) with the Merkl mechanism. This mechanism, relying on an offchain computation script, rewards LPs granularly according to the efficiency of the liquidity they provide. In turn, they have the opportunity to provide liquidity in the way they want and can fully benefit from the flexibility offered by Uniswap V3.
 
 Currently the Uniswap V3 pools that are eligible to this system are the following:
 

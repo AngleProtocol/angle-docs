@@ -22,20 +22,18 @@ While we described above an example of a lending AMO, the Angle Protocol can sup
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](../governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
 {% hint style="info" %}
-As of July 2023, the protocol only has protocol-owned liquidity AMOs live in production.
+As of August 2023, Angle only supports a single lending AMO on Aave V3 with 100k minted agEUR and some protocol-owned liquidity AMOs.
 {% endhint %}
 
 ### Protocol-owned Liquidity
 
-Angle uses AMOs to seed some pools with agEUR liquidity. The idea is to match some of the protocol's reserves with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
+Angle uses protocol-owned liquidity AMOs to seed some pools with agEUR liquidity. The idea is to match some of the protocol's reserves with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
 
 #### Current Protocol LP AMO Positions
 
 - Optimism: Uniswap V3 agEUR/USDC pool (0.05%), seeded with 200K USDC from surplus and a corresponding amount of agEUR at mint.
 - Arbitrum: Uniswap V3 agEUR/USDC pool (0.05%), seeded with 300k USDC from protocol surplus and a corresponding amount of agEUR at mint.
 - BNB Chain: PancakeSwap V3 agEUR/USDC pool (0.05%), seeded with 150k USDT from protocol surplus and a corresponding amount of agEUR at mint.
-
-More details on the pros and cons these AMOs can be found on [this governance post](https://gov.angle.money/t/aip-14-seed-univ3-ageur-usdc-pools-on-optimism-and-arbitrum-using-protocol-surplus-and-amos/396).
 
 ## Implications of AMOs
 

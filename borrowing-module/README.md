@@ -24,7 +24,7 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 **Leveraged-yield and self-repaying loans:** Any yield-bearing token can be accepted as a collateral. Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral. They can also swap their borrowed stablecoins for more of the yield-bearing token enabling them to boost the yield they are earning.
 
-**Leveraging collateral exposure:** Users can also leverage their collateral token exposure through vaults, to get on-chain leverage up to x10 depending on the parameters set by governance.
+**Leveraging collateral exposure:** Users can also leverage their collateral token exposure through vaults, to get onchain leverage up to x10 depending on the parameters set by governance.
 
 **Capital-efficient interactions:** Borrowing stablecoins from deposited collateral, liquidating a vault, repaying a debt and getting collateral back: all of this can be done in just one transaction and without any capital commitment thanks to the protocol built-in swap features.
 

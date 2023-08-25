@@ -76,13 +76,10 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 | BNB Chain     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
 | Gnosis Chain  | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
 | Celo          | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
-| Fantom        | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Harmony       | [Multichain Router](https://app.multichain.org/#/router)                                                     | [Multichain Bridge](https://app.multichain.org/#/router)       |
-| Fuse          | [Multichain Router](https://app.multichain.org/#/router)                                                     | ❌                                                             |
+| Base          | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
+| Polygon zkEVM | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
-
-_**Multichain Router**: token can be bridged **between** chains with Router support for this token. **Multichain Bridge**: token can be bridged only from Ethereum mainnet to the specified chain, and not between chains._
 
 {% hint style="info" %}
 The Angle Bridge infrastructure described in this page only applies to the chains where LayerZero is supported. On the other chains, the canonical version of the agEUR and ANGLE are the ones of the bridge written in the table.

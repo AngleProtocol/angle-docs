@@ -32,13 +32,13 @@ In this case, the protocol uses an only-Chainlink feed \(wETH/USD then USD/EUR\)
 
 ## 🚁 Preventing Front-Running
 
-Given that Angle lets people swap their collateral against stablecoins with no slippage, and given on-chain oracle latency \(especially Chainlink\), there can be a front-running risk.
+Given that Angle lets people swap their collateral against stablecoins with no slippage, and given onchain oracle latency \(especially Chainlink\), there can be a front-running risk.
 
-If, at a point in time, the on-chain price for wETH is 1000€, but the real market price \(which is the future on-chain price\) is 1100€, then people have incentives to use EUR stablecoins to get wETH at the price of 1 wETH for 1000 EUR stablecoins on-chain, and then wait for the on-chain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
+If, at a point in time, the onchain price for wETH is 1000€, but the real market price \(which is the future onchain price\) is 1100€, then people have incentives to use EUR stablecoins to get wETH at the price of 1 wETH for 1000 EUR stablecoins onchain, and then wait for the onchain oracle price to be updated to sell instantly the wETH at a higher price. By doing so, the person takes advantage of the discrepancy in price and frontruns the protocol, draining some of the collateral of the protocol and making risk-free profit.
 
 This oracle latency is the cause of front-running risk Angle is subject to. Using a combination of Uniswap V3 time-weighted average price and Chainlink, along with transaction fees allows to mitigate this risk.
 
-Uniswap V3 active price oracles are difficult to technically front run, as you would have to front run an active market, and as a result do not expose clean, “pure profit” front running opportunities akin to those based on oracle latency. Furthermore, they have been carefully constructed to be resilient to manipulation from both flashloans and longer-window attacks. Nevertheless, TWAP allow front run in period of high volatility as they take more time to tend to the off-chain price.
+Uniswap V3 active price oracles are difficult to technically front run, as you would have to front run an active market, and as a result do not expose clean, “pure profit” front running opportunities akin to those based on oracle latency. Furthermore, they have been carefully constructed to be resilient to manipulation from both flashloans and longer-window attacks. Nevertheless, TWAP allow front run in period of high volatility as they take more time to tend to the offchain price.
 
 The fact that both Uniswap and Chainlink oracles are used allows to take a spread from the real market price that gets bigger when there are important price deviations and Chainlink values are lagging. Uniswap V3 prices are time-weighted average prices, meaning it places less emphasis on newer observations, and thus mitigates the impact of important price changes, making it less reactive to important changes in price.
 
