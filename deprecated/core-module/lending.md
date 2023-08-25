@@ -59,7 +59,7 @@ Here we describe strategies currently used for the USDC, DAI, FRAX and wETH back
 
 The first strategy implemented simply consisted in optimizing lending between Compound, Aave and Euler, and putting everything in the platform with the highest APY possible.
 
-Following [this governance vote](https://snapshot.org/#/anglegovernance.eth/proposal/0xb1b4d98c080ec587b2563a6aaa6f854e0a42ce6881f61bced62cf9fa8ae42898), this strategy was updated for USDC and DAI to an improved model that consists in splitting funds between the different lending platforms supported following an optimal ratio computed off-chain. This was designed to maximize the global APR earned by the strategy while keeping strategy updates permissionless: anyone can suggest an allocation of funds between lending platforms, the strategy just checks whether suggested allocations improve the current APR, and adjusts in case of.
+Following [this governance vote](https://snapshot.org/#/anglegovernance.eth/proposal/0xb1b4d98c080ec587b2563a6aaa6f854e0a42ce6881f61bced62cf9fa8ae42898), this strategy was updated for USDC and DAI to an improved model that consists in splitting funds between the different lending platforms supported following an optimal ratio computed offchain. This was designed to maximize the global APR earned by the strategy while keeping strategy updates permissionless: anyone can suggest an allocation of funds between lending platforms, the strategy just checks whether suggested allocations improve the current APR, and adjusts in case of.
 
 ![Improved Optimizer APR Strategy](../../.gitbook/assets/Optimizer-APR-Strategy-V2.jpg)
 
@@ -69,7 +69,7 @@ Angle Core module also relies on more advanced **folding** strategies. The idea 
 
 Usually, folding strategies in DeFi simply target a specific leverage for which teams are confident enough, and know they can make an additional profit. However this does not guarantee a profit in all cases, can be sub-optimal, and most of all requires human intervention and monitoring.
 
-**Angle folding strategy automatically compute the optimal quantity of assets to borrow and re-supply on-chain to maximize its yield.**
+**Angle folding strategy automatically compute the optimal quantity of assets to borrow and re-supply onchain to maximize its yield.**
 
 This makes it both more efficient that other folding strategies, and a clear improvement compared to the base strategy.
 

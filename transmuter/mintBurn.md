@@ -18,6 +18,10 @@ $$
 d = \max(1-\frac{p}{\texttt{target price}},0)
 $$
 
+{% hint style="info" %}
+The current oracle value and target price of an asset may be obtained through oracles. Transmuter is agnostic and can technically support any oracle solution, including [Redstone](https://redstone.finance), [Chainlink](https://chain.link) or [Pyth](https://pyth.network) oracles for instance.
+{% endhint %}
+
 ## 🍀 Mint
 
 The Transmuter enables minting 1 stablecoin against a specific asset $$i$$ by bringing:

@@ -4,7 +4,7 @@ description: Using agEUR as a payment currency
 
 # 💸 Pay and get paid with agEUR
 
-agEUR can be used to pay and get paid from any crypto to a bank account in only two on-chain transactions. Specifically, it is designed to allow:
+agEUR can be used to pay and get paid from any crypto to a bank account in only two onchain transactions. Specifically, it is designed to allow:
 
 - **Companies or DAOs** to pay their contributors through agEUR through Angle from the token that they want
 - **Contributors** to **invoice companies and get paid in agEUR** in a fully compliant way
@@ -34,7 +34,7 @@ Then, just select **any token your company holds**, and use the expert mode to m
 
 ![Angle agEUR from any token](../../.gitbook/assets/send-to-recipient2.png)
 
-**In one on-chain transaction, you can pay your contributors with any token, almost instantly, and at very low fees.**
+**In one onchain transaction, you can pay your contributors with any token, almost instantly, and at very low fees.**
 
 ## Withdrawing agEUR to a bank account
 
@@ -60,7 +60,7 @@ Above a certain amount, a KYC will be needed to sell agEUR and get EUR back to y
 
 ### Through tokens agEUR is liquid with
 
-agEUR is a liquid token that can be easily exchanged on-chain to other crypto assets which can be off-ramped or sold to fiat with little to no fees.
+agEUR is a liquid token that can be easily exchanged onchain to other crypto assets which can be off-ramped or sold to fiat with little to no fees.
 
 One easy way to get EUR in your bank account back from your agEUR is to swap them to [EURs](https://stasis.net), [EUROC](https://www.circle.com/en/), or [EURe](https://monerium.com/tokens/). These are centralized stablecoins, which even though they provide less yield opportunities than agEUR, remain simple ways to off-ramp to Euros in a bank account (provided that you have a KYC with the related entities).
 

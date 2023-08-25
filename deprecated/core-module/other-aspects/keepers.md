@@ -45,8 +45,8 @@ In all cases, the amount that can be given to keepers is capped.
 
 [The slippage](../standard-liquidity-providers/README.md#🥅-slippage) incurred by Standard Liquidity Providers depends on the collateral ratio of the protocol for the concerned stablecoin. Governance may also choose to introduce a relation between users minting and burning fees and the protocol's collateral ratio for the stablecoin.
 
-It would actually be pretty expensive to compute the collateral ratio of the protocol on-chain each time a SLP tries to withdraw. There is a need for keepers to call the function updating the transaction fees and the slippage induced in case of changes in the collateral ratio.
+It would actually be pretty expensive to compute the collateral ratio of the protocol onchain each time a SLP tries to withdraw. There is a need for keepers to call the function updating the transaction fees and the slippage induced in case of changes in the collateral ratio.
 
 {% hint style="info" %}
-No specific rewards have been set for these keepers yet. Governance may define an off-chain reward mechanism based on on-chain data.
+No specific rewards have been set for these keepers yet. Governance may define an offchain reward mechanism based on onchain data.
 {% endhint %}

@@ -8,16 +8,16 @@ If you are new to crypto, follow our [guide for new crypto users](../../newbie.m
 
 Angle stablecoins can be bought from the [swap and buy page](https://app.angle.money/swap) of the Angle app. This page leaves two main possibilities:
 
-- swap: that is to say buy or sell through an on-chain transaction
+- swap: that is to say buy or sell through an onchain transaction
 - on-ramp/off-ramp: that is to say buy or sell with a credit card or a bank transfer
 
 ## Swap
 
-The app integrates 1inch (which integrates agEUR's native mint & burn mechanism on Ethereum) to provide the best rates to buy or sell Angle stablecoins from an on-chain transaction.
+The app integrates 1inch (which integrates agEUR's native mint & burn mechanism on Ethereum) to provide the best rates to buy or sell Angle stablecoins from an onchain transaction.
 
-### Buying on-chain
+### Buying onchain
 
-Here are the steps to buy on-chain:
+Here are the steps to buy onchain:
 
 1. Go to the [Swap page](https://app.angle.money/swap) of the app.
 2. Select the `Swap` toggle
@@ -35,7 +35,7 @@ You can refresh the rates by clicking on the circled arrow on the top right of t
 
 ![Minting agEUR](/.gitbook/assets/new-app-buy.png)
 
-### Selling on-chain
+### Selling onchain
 
 Selling an Angle stablecoin through the Swap page works exactly in the opposite way. Click on the arrow between the two inputs to put the stablecoin (e.g agEUR) as `From` token. You can then select the token you want to swap the stablecoin for, enter an amount and confirm your transaction.
 

@@ -60,11 +60,10 @@
 ## Side Products
 
 - [🥨 Merkl](side-products/merkl/README.md)
-  - [💰 Distribute incentives](side-products/merkl/incentivizor-guide.md)
+  - [💰 Distribute incentives with Merkl](side-products/merkl/incentivizor-guide.md)
+    - [⛓ Distribution Utils](side-products/merkl/helpers.md)
     - [🖋 Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
   - [📒 Integrate Merkl in your App](side-products/merkl/integration-guide.md)
-    - [⛓ Integration Helpers](side-products/merkl/helpers.md)
-    - [🖼️ Branding and integration](side-products/merkl/integration-branding.md)
   - [🌊 Provide liquidity and claim](side-products/merkl/lp-guide.md)
 
 ## Resources

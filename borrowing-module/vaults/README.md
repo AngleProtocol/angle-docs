@@ -6,7 +6,7 @@ coverY: 0
 
 # 🏦 Vaults
 
-This module's main mechanism is its vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to use or spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, on-chain and in one transaction.
+This module's main mechanism is its vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to use or spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, onchain and in one transaction.
 
 ## 🔎 TL;DR
 
@@ -154,7 +154,7 @@ Angle Borrowing module only relies on two types of keepers: liquidators, which e
 
 #### Oracle
 
-Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely on on-chain data. For the case of wstETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of wstETH.
+Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely on onchain data. For the case of wstETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of wstETH.
 
 ## Next
 

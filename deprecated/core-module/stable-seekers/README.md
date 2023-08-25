@@ -50,7 +50,7 @@ Opportunities for arbitrage are however reduced when there are mint and burn tra
 Also, as specified in the 🔱 [Oracles page](../other-aspects/oracles.md) 🔱, it is possible, for some stablecoin/collateral pairs, that the mint oracle price differs from the burn transaction price in some cases. In these situations, deviations of price from peg larger than observed transaction fees may occur.
 
 {% hint style="success" %}
-A stablecoin is only stable relative to the value of the oracle that was chosen to track the price of the underlying asset. For a stablecoin/collateral pair, if the on-chain price-feed has some latency with respect to the real price feed, as the stablecoin tracks the price of the on-chain feed, the evolution of its price may slightly lag behind that of the real price feed.
+A stablecoin is only stable relative to the value of the oracle that was chosen to track the price of the underlying asset. For a stablecoin/collateral pair, if the onchain price-feed has some latency with respect to the real price feed, as the stablecoin tracks the price of the onchain feed, the evolution of its price may slightly lag behind that of the real price feed.
 {% endhint %}
 
 ## 🪙 Transaction Fees

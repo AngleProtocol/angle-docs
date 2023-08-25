@@ -6,7 +6,7 @@ coverY: 0
 
 # 📊 Angle Analytics
 
-Angle is a decentralized protocol that exists purely on-chain: all the reserves controlled by the protocol are transparent and can be monitored in real-time.
+Angle is a decentralized protocol that exists purely onchain: all the reserves controlled by the protocol are transparent and can be monitored in real-time.
 
 A lot of resources have been built to help people easily understand and track what’s going on in the protocol.
 

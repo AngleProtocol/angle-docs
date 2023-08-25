@@ -1,8 +1,8 @@
 ---
-description: Helpers to use and integrate Merkl
+description: Utils to distribute rewards with Merkl
 ---
 
-# ⛓ Integration Helpers
+# ⛓ Distribution Utils
 
 ## 🔗 Live AMMs and Chains
 
@@ -19,9 +19,11 @@ description: Helpers to use and integrate Merkl
 | 🍣 SushiswapV3 - Base            | 6 hours    |                                       |
 | 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |                                       |
 | 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |                                       |
-| 🪞 Retro - Polygon               | 6 hours    | Gamma, Ichi , Steer, Range            |
+| 🪞 Retro - Polygon                | 6 hours    | Gamma, Ichi , Steer, Range            |
 
-Can't find your AMM in this list? You can add it by following this [guide](#pre-requisites).
+{% hint style="info" %}
+Can't find your liquidity manager or AMM in this list? You can add it by following the guides below.
+{% endhint %}
 
 ## 🧑‍💻 Smart Contracts
 
@@ -45,27 +47,11 @@ Both contracts are managed through a `CoreMerkl` contract managed by a multisig 
 Addresses of the `Distributor` and `DistributionCreator` contracts are the same across all chains.
 {% endhint %}
 
-## 🐋 Types and Specific Script Behavior
+## Add a new AMM or chain to Merkl
 
-When depositing a reward, incentivizors should specify the addresses of the smart contracts they want to exclude from the distribution.
+Merkl can be expanded to any chain and any concentrated liquidity AMM that works similarly to UniswapV3. To get your AMM or chain supported on Merkl, please create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc) and fill out [this form](https://tally.so/r/3XJODP).
 
-On top of that, while Gamma or Arrakis are automatically detected by the script, addresses of other types of liquidity position managers may need to be given to the contract when creating a distribution for the script to be able to specifically deal with them.
-
-Overall, when creating a distribution, you may tell the script to apply a specific set of rules to some addresses by specifying for these addresses a predefined type.
-
-Types are `uint32` numbers and they are the same across the different chains on which Merkl is deployed.
-
-| Type | Rules                                  |
-| ---- | -------------------------------------- |
-| 0    | [Arrakis](https://www.arrakis.finance) |
-| 2    | [Gamma](https://app.gamma.xyz)         |
-| 3    | Blacklist                              |
-
-{% hint style="info" %}
-While this docs is regularly updated, [this page](https://github.com/AngleProtocol/merkl-calculator/blob/staging/src/types/index.ts) remains the most up to date source of truth for the mapping between types and how the script should handle them.
-{% endhint %}
-
-## ➕ Add an AMM to Merkl
+## ➕ Add an ALM to Merkl
 
 ### Pre-requisites
 
@@ -78,7 +64,7 @@ Merkl only supports liquidity managers which use the same architecture as Gamma 
 
 ### Requesting support for a new liquidity manager
 
-To add support for your liquidity manager you can create a ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
+To add support for your liquidity manager you can create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
 
 You will need to submit the following information for each chain/DEX pair you want to add:
 
@@ -87,4 +73,6 @@ You will need to submit the following information for each chain/DEX pair you wa
 - Address of your factory contract (or addresses if you have multiple factories)
 - Address of one of the vaults created by each of your factory contracts
 
-If you're already part of our Discord server, you can submit a ticket [here](https://discord.com/channels/835066439891157012/1077879915493466153) (Create a BD Ticket).
+## Add a new reward token to Merkl
+
+Reward tokens sent through Merkl need to be whitelisted before being used. To get your token whitelisted, please fill [this form](https://www.notion.so/anglemoney/Merkl-Token-whitelisting-form-24472cf504964fff90b1d39f50c26795) and create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).

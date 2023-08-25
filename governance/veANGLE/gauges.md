@@ -49,7 +49,7 @@ Note that gauges can be "killed" after having been whitelisted. This requires a 
 For details about the ANGLE emission rate, please refer to [this page](/governance/angle-token.md).
 {% endhint %}
 
-Essentially, the weekly decrease factor of 1.007827 of the ANGLE emissions is guaranteed on-chain.
+Essentially, the weekly decrease factor of 1.007827 of the ANGLE emissions is guaranteed onchain.
 
 With such a decreasing factor, distribution with this system is bound to continue and to remain significant for a period of over 10 years.
 

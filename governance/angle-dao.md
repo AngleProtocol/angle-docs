@@ -44,7 +44,7 @@ veANGLE holders are the ones with voting power over the protocol: they are the o
 
 Each vote requires a quorum of 10% of veANGLE holders to be considered valid.
 
-Finalized votes are then implemented by a multi-sig composed of community members. The fact that a multisig needs to implement transactions makes Angle governance system immune to on-chain governance attacks.
+Finalized votes are then implemented by a multi-sig composed of community members. The fact that a multisig needs to implement transactions makes Angle governance system immune to onchain governance attacks.
 
 Angle Protocol is available on different EVM compatible chains. There is one multisig per chain, each with the same signers detailed below. The addresses of the multisigs on all the different networks supported by Angle can be found [here](https://developers.angle.money/overview/smart-contracts).
 
@@ -65,6 +65,6 @@ On each of the chain on which Angle protocol is deployed, the protocol's multisi
 
 ### Voting on rewards distribution
 
-Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens on-chain and can be done through the gauge page of the [app](https://app.angle.money/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
+Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens onchain and can be done through the gauge page of the [app](https://app.angle.money/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
 
 More info on the details of this process in the [Gauges](veANGLE/gauges.md) page.
