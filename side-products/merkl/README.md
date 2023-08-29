@@ -125,4 +125,5 @@ Merkl smart contracts have been audited by Code4rena. Find the audit report [her
 - [Merkl App](https://merkl.angle.money)
 - [Smart contracts addresses](helpers.md#smart-contracts)
 - [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
+- [Track all rewards distributed through Merkl](https://github.com/AngleProtocol/merkl-rewards)
 - [Disclaimer for incentivizors](incentivizor-tc.md)
