@@ -96,6 +96,10 @@ export const claim = async (chainId: number, signer: JsonRpcSigner) => {
 If you want to build the proof yourself, [this file](https://github.com/AngleProtocol/sdk/blob/288185227514ae5c5bb23f5d4b72680eb839f6cc/src/utils/merkl.ts#L15) will show you how to do that.
 {% endhint %}
 
+## Tracking user rewards without the API
+
+The [merkl-rewards](https://github.com/AngleProtocol/merkl-rewards) repository contains the history of rewards given across all distributions across all pools of all supported AMMs. If you want to see which addresses earned the most from a distribution, or if the biggest LPs in the pool you're incentivizing are also active in other Merkl-incentivized pools, you may want to check this repo.
+
 ## Featuring Merkl in your app
 
 If you have integrated Merkl pools in your app, you can showcase it by showing the following logo:

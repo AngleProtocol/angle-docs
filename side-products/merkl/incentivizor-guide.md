@@ -19,7 +19,7 @@ Regardless of the method you are using, before depositing any incentives, make s
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Once created, a distribution on Merkl may take up to 1 hour to be picked up by the Merkl API and front interface.
+Once created, a distribution on Merkl may take up to 1 hour to be picked up by the Merkl API and front interface. You may track how rewards were distributed to LPs of the pool by checking the [merkl-rewards](https://github.com/AngleProtocol/merkl-rewards) repository which contains the history of rewards given across all distributions across all pools of all supported AMMs.
 {% endhint %}
 
 {% hint style="info" %}
