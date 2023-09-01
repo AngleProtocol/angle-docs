@@ -95,6 +95,7 @@ coverY: 0
 
 - [UniswapV3 agEUR - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 - [Uniswap V3 agEUR - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
+- [Uniswap V3 ANGLE - ETH (1%)](https://info.uniswap.org/#/pools/0x51c2841333fbbab53b7c2c442cc265bf16430d6d)
 - [Curve agEUR - EUROe](https://curve.fi/factory/273)
 - [Curve agEUR - EUROC](https://curve.fi/factory/164)
 - [Curve agEUR - EURs - EURt](https://curve.fi/factory/66)
@@ -109,8 +110,9 @@ coverY: 0
 - [Uniswap V3 agEUR - EUROe (0.01%)](https://info.uniswap.org/#/pools/0x820802Fa8a99901F52e39acD21177b0BE6EE2974)
 - [Uniswap V3 agEUR - USDC (0.05%)](https://info.uniswap.org/#/pools/0x7ed3f364668cd2b9449a8660974a26a092c64849)
 - [Uniswap V3 agEUR - ETH (0.3%)](https://info.uniswap.org/#/pools/0x9496d107a4b90c7d18c703e8685167f90ac273b0)
-- [Arrakis / Gelato agEUR - USDC (0.01%)](https://beta.arrakis.finance/#/vaults/0xEDECB43233549c51CC3268b5dE840239787AD56c)
-- [Arrakis / Gelato agEUR - ETH (0.05%)](https://beta.arrakis.finance/#/vaults/0x857E0B2eD0E82D5cDEB015E77ebB873C47F99575)
+- [Arrakis agEUR - USDC (0.01%)](https://beta.arrakis.finance/#/vaults/0xEDECB43233549c51CC3268b5dE840239787AD56c)
+- [Arrakis agEUR - ETH (0.05%)](https://beta.arrakis.finance/#/vaults/0x857E0B2eD0E82D5cDEB015E77ebB873C47F99575)
+- [Arrakis ANGLE - ETH (1%)](https://dashboard.arrakis.finance/?network=ethereum&vault=0xcd80b6713387e02cdd0d77d60f09fd0589ff212c)
 
 #### On Polygon
 
