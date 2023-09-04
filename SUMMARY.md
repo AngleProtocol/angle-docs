@@ -41,7 +41,7 @@
 
 ## Savings
 
-- [💸 Angle Savings system](savings/README.md)
+- [💸 Angle Savings System](savings/README.md)
 
 ## Stablecoins Side Modules
 
