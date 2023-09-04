@@ -12,7 +12,7 @@ A lot of resources have been built to help people easily understand and track wh
 
 ## Angle User-Friendly Analytics
 
-We at Angle Labs, Inc. have developed a user-friendly analytics available at [analytics.angle.money](https://analytics.angle.money/) to track in real-time the health and status of the system. General data about the protocol, specific information about governance, smart contract modules, and the different stablecoins can be found there.
+We at Angle Labs, Inc. have developed a user-friendly analytics available at [facts.angle.money](https://facts.angle.money/) to track in real-time the health and status of the system. General data about the protocol, its balance sheet, specific information about governance, smart contract modules, and the different stablecoins can be found there.
 
 ## Angle Community Dune Dashboards
 

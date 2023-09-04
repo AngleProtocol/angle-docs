@@ -39,6 +39,10 @@
   - [📄 Collateral Management and Whitelist](transmuter/implementation/collateralsManagement.md)
   - [👔 Implementation Details](transmuter/implementation/implementationDetails.md)
 
+## Savings
+
+- [💸 Angle Savings System](savings/README.md)
+
 ## Stablecoins Side Modules
 
 - [🌉 Angle Cross-Chain Setup](other/cross-chain.md)
