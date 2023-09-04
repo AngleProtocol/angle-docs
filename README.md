@@ -22,7 +22,7 @@ A generates a revenue from all these modules, and part of it is distributed thro
 
 ### [Stablecoins](stablecoins.md)
 
-Angle is so far behind one stablecoin, agEUR, pegged to the value of the Euro - €. agEUR is associated to one savings token
+Angle is so far behind one stablecoin, **agEUR**, pegged to the value of the Euro - €. agEUR holders can stake their stablecoins for **stEUR** in order to earn a native € yield.
 
 ### [Borrowing module](borrowing-module/)
 
