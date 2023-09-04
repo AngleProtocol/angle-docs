@@ -9,6 +9,7 @@ coverY: 0
 | Features                                                             | agEUR |
 | -------------------------------------------------------------------- | ----- |
 | Transmuter - Ethereum                                                | ✅    |
+| Savings - Ethereum                                                   | ✅    |
 | Borrowing Module - Ethereum                                          | ✅    |
 | Borrowing Module - Polygon                                           | ✅    |
 | Borrowing Module - Optimism                                          | ✅    |
