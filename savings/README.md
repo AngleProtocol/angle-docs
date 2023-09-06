@@ -26,7 +26,7 @@ In general, Angle Savings system is designed so that the protocol never distribu
 
 Angle Savings contracts are simple ERC4626 tokens, which means that upon staking an Angle stablecoin in a savings contract you receive a classical ERC20 token that can then be transferred, staked, lent or used in any way you want.
 
-The value of these tokens is not designed to remain pegged to their respective underlying asset, but increases over time as yield accrues to it. Angle staked tokens are yield bearing tokens and not rebasing tokens and the exchange rate between Angle stablecoins and their staked equivalent is encoded in the savings smart contract.
+The value of these tokens is not designed to remain pegged to their respective underlying asset, but increases over time as yield accrues to it. **Angle staked tokens are yield bearing and not rebasing** and the exchange rate between Angle stablecoins and their staked equivalent is encoded in the savings smart contract.
 
 While you may be able to acquire Angle staked tokens on DEXes, there is no need to, and depositing Angle stablecoins can be done **without any slippage** directly with the staking smart contract.
 
