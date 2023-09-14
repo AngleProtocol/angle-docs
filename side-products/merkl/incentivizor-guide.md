@@ -203,11 +203,13 @@ main().catch((error) => {
 
 ## From a multisig or a Gnosis Safe
 
-The Merkl app does not integrate yet with Gnosis Safe multisig to distribute rewards. The recommended method of interaction to distribute rewards with Merkl with a multisig is to use Gnosis Safe Transaction Builder.
+The recommended method of interaction to distribute rewards with Merkl with a multisig is to use Gnosis Safe Transaction Builder.
 
-### Signing the T&Cs
+### Signing the Terms & Conditions
 
-Merkl requires people depositing incentives on the system to sign once the T&Cs and post the signature onchain. Signing messages may be complex with multisigs, to this extent the Merkl `DistributionCreator` contract checking signatures verifies when a distribution is created that either the `msg.sender` or `tx.origin` of the transaction has signed the T&Cs.
+Merkl requires people depositing incentives on the system to sign once the T&Cs and post the signature onchain. However, **signing the T&Cs message is not possible with a smart contract wallet** like a Gnosis Safe.
+
+To circumvent this requirement, the Merkl `DistributionCreator` contract checking signatures verifies when a distribution is created that either the `msg.sender` or `tx.origin` of the transaction has signed the T&Cs.
 
 To this extent, when creating a distribution with a multisig, you need to have previously signed the T&Cs with an EOA and posted the signature onchain through the `sign` function of the `DistributionCreator` contract. And then, you need to execute the multisig transaction with the EOA that has posted its signature.
 
@@ -268,3 +270,14 @@ The `distribution` tuple given for the `createDistribution` function has the fol
 ```
 
 After using the payload provided in example and customizing both the approval and the parameters of the `createDistribution` transaction to fit your needs, you should be ready to execute the transaction to distribute rewards to Merkl!
+
+### If your multisig has been whitelisted
+
+It's possible that addresses are whitelisted so they do not need to post a signature onchain to be able to distribute rewards.
+If your multisig address has been whitelisted by Angle Labs, then you can directly interact with Merkl front from your Gnosis Safe.
+
+To do this, head to the Apps section of your multisig, select `My Custom Apps` and then click on `Add custom Safe App`, at which point you can enter for the `Safe App URL` the [Merkl app URL](https://merkl.angle.money/).
+
+{% hint style="info" %}
+Usually, Angle Labs will proceed to whitelisting a multisig if one of the signers of the multisig has posted a signature of the T&Cs onchain on the Merkl contract.
+{% endhint %}
