@@ -54,7 +54,7 @@ $$
 \texttt{rate} = \min(x\times \frac{\texttt{RoA}}{\texttt{Utilization}},y)
 $$
 
-For agEUR, the parameters chosen are $y=10\%$ and $x=0.9$.
+For agEUR, the parameters chosen are y=10% and x=0.9.
 
 ### Rate Updates
 
