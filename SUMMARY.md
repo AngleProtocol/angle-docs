@@ -5,6 +5,7 @@
 - [📐 Angle Documentation Portal](README.md)
 - [⚒ Developers](https://developers.angle.money)
 - [📖 Whitepapers](whitepapers.md)
+- [⚠️ Risks](risks.md)
 - [📒 Glossary](global-glossary.md)
 - [🔗 Quick Links](links.md)
 - [🖼 Stablecoins](stablecoins.md)
