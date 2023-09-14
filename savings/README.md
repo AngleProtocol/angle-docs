@@ -8,29 +8,27 @@ Angle Savings system is an addition to the Angle Protocol that allows any agToke
 
 Angle stablecoins do not automatically earn a yield, rather these must be staked in some specific contracts (potentially available on different chains) in order to start earning.
 
-{% hint style="info" %}
-For a status on where Angle savings system is live, check out [this page](../stablecoins.md).
-{% endhint %}
-
 The yield that is paid through these contracts comes from the revenue Angle Protococol is generating on its assets across its different modules:
 
 - yield-bearing collateral assets held as part of the Transmuter
 - interest rates paid by borrowers within the Borrowing module
 - transaction fees and incentives from the direct deposit deposit modules
 
-On [Angle Analytics](https://facts.angle.money), it's possible to track the return over assets of the protocol, and how much a year it's earning across each collateral asset.
+{% hint style="info" %}
+On [Angle Analytics](https://facts.angle.money), it's possible to track the return over assets of the protocol, how much a year it's earning across each collateral asset, and the current savings rate for supported stablecoins.
+{% endhint %}
 
-In general, Angle Savings system is designed so that the protocol never distributes more than what it generates.
+Angle Savings system is designed so that the protocol never distributes more than what it generates.
 
 ## Fees and Usage
 
-Angle Savings contracts are simple ERC4626 tokens, which means that upon staking an Angle stablecoin in a savings contract you receive a classical ERC20 token that can then be transferred, staked, lent or used in any way you want.
+Angle Savings contracts are simple ERC4626 contracts, which means that upon staking an Angle stablecoin in a savings contract you receive a classical ERC20 token that can then be transferred, staked, lent or used in any way you want.
 
 The value of these tokens is not designed to remain pegged to their respective underlying asset, but increases over time as yield accrues to it. **Angle staked tokens are yield bearing and not rebasing** and the exchange rate between Angle stablecoins and their staked equivalent is encoded in the savings smart contract.
 
 While you may be able to acquire Angle staked tokens on DEXes, there is no need to, and depositing Angle stablecoins can be done **without any slippage** directly with the staking smart contract.
 
-[Angle App](https://app.angle.money) is an example of frontend that supports depositing directly and with no slippage into the contract.
+[Angle App](https://app.angle.money) is an example of frontend that supports depositing directly and with no slippage into the contract, provided that you are coming with agEUR.
 
 This system comes with **no deposit or withdraw fees**. And upon depositing in it, you immediately start earning. For instance 1 agEUR deposited in a savings contract and withdrawn after a 12s block would have earned the equivalent of 12s of the yearly rate encoded in the contract.
 
