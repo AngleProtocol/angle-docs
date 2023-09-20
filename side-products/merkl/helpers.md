@@ -6,24 +6,28 @@ description: Utils to distribute rewards with Merkl
 
 ## 🔗 Live AMMs and Chains
 
-| Live AMMs & Chains               | Epoch Time | Supported Liquidity Managers          |
-| -------------------------------- | ---------- | ------------------------------------- |
-| 🦄 UniswapV3 - Ethereum          | 12 hours   | Gamma, Arrakis, DefiEdge, Ichi, Range |
-| 🦄 UniswapV3 - Polygon           | 6 hours    | Gamma, Arrakis, DefiEdge, Steer, Ichi |
-| 🦄 UniswapV3 - Optimism          | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
-| 🦄 UniswapV3 - Arbitrum          | 6 hours    | Gamma, Arrakis, DefiEdge, Steer       |
-| 🍣 SushiswapV3 - Ethereum        | 12 hours   |                                       |
-| 🍣 SushiswapV3 - Polygon         | 6 hours    | Gamma, Steer, DefiEdge                |
-| 🍣 SushiswapV3 - Optimism        | 6 hours    | Gamma, Steer                          |
-| 🍣 SushiswapV3 - Arbitrum        | 6 hours    | Gamma, Steer, DefiEdge                |
-| 🍣 SushiswapV3 - Base            | 6 hours    |                                       |
-| 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |                                       |
-| 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |                                       |
-| 🪞 Retro - Polygon                | 6 hours    | Gamma, Ichi , Steer, Range            |
+| Live AMMs & Chains               | Epoch Time |
+| -------------------------------- | ---------- |
+| 🦄 UniswapV3 - Ethereum          | 12 hours   |
+| 🦄 UniswapV3 - Polygon           | 6 hours    |
+| 🦄 UniswapV3 - Optimism          | 6 hours    |
+| 🦄 UniswapV3 - Arbitrum          | 6 hours    |
+| 🍣 SushiswapV3 - Ethereum        | 12 hours   |
+| 🍣 SushiswapV3 - Polygon         | 6 hours    |
+| 🍣 SushiswapV3 - Optimism        | 6 hours    |
+| 🍣 SushiswapV3 - Arbitrum        | 6 hours    |
+| 🍣 SushiswapV3 - Base            | 6 hours    |
+| 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |
+| 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |
+| 🪞 Retro - Polygon                | 6 hours    |
+| ⚔️ Camelot - Arbitrum            | 6 hours    |
+| 🔵 BaseSwap - Base               | 6 hours    |
 
 {% hint style="info" %}
-Can't find your liquidity manager or AMM in this list? You can add it by following the guides below.
+Can't find your AMM in this list? You can add it by following the guides below.
 {% endhint %}
+
+To find the list of supported liquidity managers for each of these chains, you can directly look into the ALMs appearing on the pools displayed on [the Merkl app](https://merkl.angle.money).
 
 ## 🧑‍💻 Smart Contracts
 
@@ -64,15 +68,8 @@ Merkl only supports liquidity managers which use the same architecture as Gamma 
 
 ### Requesting support for a new liquidity manager
 
-To add support for your liquidity manager you can create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
-
-You will need to submit the following information for each chain/DEX pair you want to add:
-
-- Chain (Arbitrum, Optimism, Polygon or Ethereum)
-- DEX (UniswapV3, SushiSwapV3, ...)
-- Address of your factory contract (or addresses if you have multiple factories)
-- Address of one of the vaults created by each of your factory contracts
+To add support for your liquidity manager you can create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc) and fill out [this form](https://tally.so/r/w4JYLr).
 
 ## Add a new reward token to Merkl
 
-Reward tokens sent through Merkl need to be whitelisted before being used. To get your token whitelisted, please fill [this form](https://www.notion.so/anglemoney/Merkl-Token-whitelisting-form-24472cf504964fff90b1d39f50c26795) and create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
+Reward tokens sent through Merkl need to be whitelisted before being used. To get your token whitelisted, please fill [this form](https://tally.so/r/3y2bqx), open a pull request with your token information [on this repo](https://github.com/AngleProtocol/angle-assets) and create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).
