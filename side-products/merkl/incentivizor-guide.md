@@ -33,18 +33,103 @@ You just need to fill the `address` of the pool you want to incentivize, the `to
 ![Merkl Deposit](../../.gitbook/assets/merkl-deposit.png)
 
 {% hint style="info" %}
-Reward tokens need to be whitelisted before being used, and for whitelisted tokens, there is a minimum amount that needs to be sent for distributions to be considered valid. If the reward token you want to use has not been whitelisted, send us a message on the Merkl channel of the [Angle Discord server](https://discord.gg/ByFYzSUt) and fill [this form](https://www.notion.so/anglemoney/Merkl-Token-whitelisting-form-24472cf504964fff90b1d39f50c26795).
+Reward tokens need to be whitelisted before being used, and for whitelisted tokens, there is a minimum amount that needs to be sent for distributions to be considered valid. If the reward token you want to use has not been whitelisted, check [our guide here](helpers.md#add-a-new-reward-token-to-merkl).
 {% endhint %}
 
 If some smart contract addresses need to be excluded from the distribution because they can't claim rewards, make sure to specify their addresses in the `Blacklist`.
 
-Merkl natively and automatically supports [different liquidity position managers](helpers.md). LPs can provide liquidity there while being rewarded on Merkl. Note though that supported liquidity position managers (like Gamma or Arrakis) are not available for all pools, so you may want to check which of the supported liquidity position managers are available for your pool.
+Merkl natively and automatically supports different liquidity position managers. LPs can provide liquidity there while being rewarded on Merkl. Note though that supported liquidity position managers (like Gamma or Arrakis) are not available for all pools, so you may want to check which of the supported liquidity position managers are available for your pool.
 
 Then, you can customize any of the distribution formula parameters. When this is done, the app will prompt you to sign the disclaimer message (if it has not already been done), and then to post the transaction sending the tokens to the distribution contract!
 
 Any address holding a position or a position manager token will be able to claim their rewards at the end of each [epoch](helpers.md#🔗-live-amms-and-chains) according to how they provided liquidity on the pool.
 
+{% hint style="info" %}
+Merkl App does not integrate well with smart contract wallets when it comes to providing signatures, so if you're using a smart contract wallet, please refer to the section below. If your address have been whitelist, check out the guide for Gnosis Safe multisig [here below](#if-your-multisig-has-been-whitelisted).
+{% endhint %}
+
 ![Merkl Script](../../.gitbook/assets/docs-merkl-for-distributors.png)
+
+## From a multisig or a Gnosis Safe
+
+The recommended method of interaction to distribute rewards with Merkl with a multisig is to use Gnosis Safe Transaction Builder.
+
+### Signing the Terms & Conditions
+
+Merkl requires people depositing incentives on the system to sign once the T&Cs and post the signature onchain. However, **signing the T&Cs message is not possible with a smart contract wallet** like a Gnosis Safe.
+
+To circumvent this requirement, the Merkl `DistributionCreator` contract checking signatures verifies when a distribution is created that either the `msg.sender` or `tx.origin` of the transaction has signed the T&Cs.
+
+To this extent, when creating a distribution with a multisig, you need to have previously signed the T&Cs with an EOA and posted the signature onchain through the `sign` function of the `DistributionCreator` contract. And then, you need to execute the multisig transaction with the EOA that has posted its signature.
+
+### Building the payload
+
+Now that the signing requirement is clear, what payload should you set in the Gnosis Safe transaction builder?
+
+Below is an example payload with two transactions:
+
+- an approval of the reward token to the Merkl `DistributionCreator` contract
+- the transaction to create the distributions with chosen parameters
+
+{% file src="../../.gitbook/assets/Merkl-Multisig-Tx-Payload.json" %}
+Merkl Multisig Payload from Gnosis Transaction Builder
+{% endfile %}
+
+The `distribution` tuple given for the `createDistribution` function has the following form:
+
+```json
+[
+  // Distribution ID: this value must be left as is and cannot be customized
+  "0x0000000000000000000000000000000000000000000000000000000000000000",
+  // Address of the pool to incentivize
+  "0xf44aCAa38be5E965c5Ddf374E7a2BA270e580684",
+  // Address of the reward token (here the OP token)
+  "0x4200000000000000000000000000000000000042",
+  // Total amount of tokens to distribute
+  "2000000000000000000000",
+  // If any, addresses to blacklist from the distribution
+  [],
+  // If there are addresses to blacklist, this array should be an array with only 3 in it and of
+  // the same length as the array above
+  [],
+  // Proportion of rewards that'll be split among LPs which brought token0 in the pool during
+  // the time of the distribution
+  3000,
+  // Proportion of rewards that'll be split among LPs which brought token1 in the pool during
+  // the time of the distribution
+  6000,
+  // Proportion of rewards that'll be split among LPs which accumulated fees during the time
+  // of the distribution
+  1000,
+  // Timestamp of the start of the distribution
+  1689811200,
+  // Number of hours for which the distribution will last once it has started
+  168,
+  // Whether out of range liquidity should be incentivized
+  0,
+  // Multiplier provided by the address boosting reward. In the case of a Curve distribution where veCRV
+  // provides a 2.5x boost, this would be equal to 25000
+  0,
+  // Address of the token which dictates who gets boosted rewards or not. This is optional
+  // and if the zero address is given no boost will be taken into account
+  "0x0000000000000000000000000000000000000000",
+  // Additional data to specify for the distribution. This value must be left as is and cannot be customized
+  "0x"
+]
+```
+
+After using the payload provided in example and customizing both the approval and the parameters of the `createDistribution` transaction to fit your needs, you should be ready to execute the transaction to distribute rewards to Merkl!
+
+### If your multisig has been whitelisted
+
+It's possible that addresses are whitelisted so they do not need to post a signature onchain to be able to distribute rewards.
+If your multisig address has been whitelisted by Angle Labs, then you can directly interact with Merkl front from your Gnosis Safe.
+
+To do this, head to the Apps section of your multisig, select `My Custom Apps` and then click on `Add custom Safe App`, at which point you can enter for the `Safe App URL` the [Merkl app URL](https://merkl.angle.money/).
+
+{% hint style="info" %}
+Usually, Angle Labs will proceed to whitelisting a multisig if one of the signers of the multisig has posted a signature of the T&Cs onchain on the Merkl contract.
+{% endhint %}
 
 ## With a custom script
 
@@ -200,84 +285,3 @@ main().catch((error) => {
   process.exit(1)
 })
 ```
-
-## From a multisig or a Gnosis Safe
-
-The recommended method of interaction to distribute rewards with Merkl with a multisig is to use Gnosis Safe Transaction Builder.
-
-### Signing the Terms & Conditions
-
-Merkl requires people depositing incentives on the system to sign once the T&Cs and post the signature onchain. However, **signing the T&Cs message is not possible with a smart contract wallet** like a Gnosis Safe.
-
-To circumvent this requirement, the Merkl `DistributionCreator` contract checking signatures verifies when a distribution is created that either the `msg.sender` or `tx.origin` of the transaction has signed the T&Cs.
-
-To this extent, when creating a distribution with a multisig, you need to have previously signed the T&Cs with an EOA and posted the signature onchain through the `sign` function of the `DistributionCreator` contract. And then, you need to execute the multisig transaction with the EOA that has posted its signature.
-
-### Building the payload
-
-Now that the signing requirement is clear, what payload should you set in the Gnosis Safe transaction builder?
-
-Below is an example payload with two transactions:
-
-- an approval of the reward token to the Merkl `DistributionCreator` contract
-- the transaction to create the distributions with chosen parameters
-
-{% file src="../../.gitbook/assets/Merkl-Multisig-Tx-Payload.json" %}
-Merkl Multisig Payload from Gnosis Transaction Builder
-{% endfile %}
-
-The `distribution` tuple given for the `createDistribution` function has the following form:
-
-```json
-[
-  // Distribution ID: this value must be left as is and cannot be customized
-  "0x0000000000000000000000000000000000000000000000000000000000000000",
-  // Address of the pool to incentivize
-  "0xf44aCAa38be5E965c5Ddf374E7a2BA270e580684",
-  // Address of the reward token (here the OP token)
-  "0x4200000000000000000000000000000000000042",
-  // Total amount of tokens to distribute
-  "2000000000000000000000",
-  // If any, addresses to blacklist from the distribution
-  [],
-  // If there are addresses to blacklist, this array should be an array with only 3 in it and of
-  // the same length as the array above
-  [],
-  // Proportion of rewards that'll be split among LPs which brought token0 in the pool during
-  // the time of the distribution
-  3000,
-  // Proportion of rewards that'll be split among LPs which brought token1 in the pool during
-  // the time of the distribution
-  6000,
-  // Proportion of rewards that'll be split among LPs which accumulated fees during the time
-  // of the distribution
-  1000,
-  // Timestamp of the start of the distribution
-  1689811200,
-  // Number of hours for which the distribution will last once it has started
-  168,
-  // Whether out of range liquidity should be incentivized
-  0,
-  // Multiplier provided by the address boosting reward. In the case of a Curve distribution where veCRV
-  // provides a 2.5x boost, this would be equal to 25000
-  0,
-  // Address of the token which dictates who gets boosted rewards or not. This is optional
-  // and if the zero address is given no boost will be taken into account
-  "0x0000000000000000000000000000000000000000",
-  // Additional data to specify for the distribution. This value must be left as is and cannot be customized
-  "0x"
-]
-```
-
-After using the payload provided in example and customizing both the approval and the parameters of the `createDistribution` transaction to fit your needs, you should be ready to execute the transaction to distribute rewards to Merkl!
-
-### If your multisig has been whitelisted
-
-It's possible that addresses are whitelisted so they do not need to post a signature onchain to be able to distribute rewards.
-If your multisig address has been whitelisted by Angle Labs, then you can directly interact with Merkl front from your Gnosis Safe.
-
-To do this, head to the Apps section of your multisig, select `My Custom Apps` and then click on `Add custom Safe App`, at which point you can enter for the `Safe App URL` the [Merkl app URL](https://merkl.angle.money/).
-
-{% hint style="info" %}
-Usually, Angle Labs will proceed to whitelisting a multisig if one of the signers of the multisig has posted a signature of the T&Cs onchain on the Merkl contract.
-{% endhint %}
