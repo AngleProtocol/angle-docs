@@ -52,6 +52,10 @@ $$
 For big pools with a lot of swaps, the script may not look at data from all the swaps that occurred during the given time period, but only sample the biggest of them.
 {% endhint %}
 
+{% hint style="info" %}
+While Merkl can incentivize any type of liquidity providers, the system comes with an anti DoS filter and only rewards addresses with more than \$20 worth of liquidity in their position.
+{% endhint %}
+
 ### 🧳 Liquidity Position Managers
 
 As detailed in the introduction, Merkl is compatible with liquidity position managers (or ALMs) actively maintaining positions for LPs on concentrated liquidity AMMs. The way the script works for such managers (or wrappers) is that it does not differentiate managers from other "normal" addresses when computing rewards. It then splits the rewards going to the position manager address proportionally between all holders of its token.
@@ -86,7 +90,7 @@ In addition, as the system relies on a single Merkle root to handle distribution
 
 Note that the script is compatible with multiple incentivizors incentivizing LPs of the same pool, potentially with different parameters. If you are providing liquidity on a pool, you will claim from all the incentivizors who incentivized the pool when claiming your rewards. In other words, **many teams can incentivize the same pool at the same time with different tokens**.
 
-There is no need for liquidity providers to claim rewards at every epoch. Every Merkle Tree update takes into account the previous state of the reward tree and just adds new rewards on top (which is then reflected in the published Merkle root). Unclaimed rewards for an epoch can be claimed at any time in the future, along with all the rewards distributed in between.
+There is no need for liquidity providers to claim rewards at every epoch. Every Merkle Tree update takes into account the previous state of the reward tree and just adds new rewards on top (which is then reflected in the published Merkle root). Unclaimed rewards for an epoch can be claimed later in the future, along with all the rewards distributed in between.
 
 ### 🤺 Dispute Periods
 
