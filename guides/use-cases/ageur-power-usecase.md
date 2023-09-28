@@ -64,7 +64,7 @@ agEUR is a liquid token that can be easily exchanged onchain to other crypto ass
 
 One easy way to get EUR in your bank account back from your agEUR is to swap them to [EURs](https://stasis.net), [EUROC](https://www.circle.com/en/), or [EURe](https://monerium.com/tokens/). These are centralized stablecoins, which even though they provide less yield opportunities than agEUR, remain simple ways to off-ramp to Euros in a bank account (provided that you have a KYC with the related entities).
 
-If you don't care for bearing transiently a change risk, you can also swap your agEUR to USDC for 0.01% on 1inch and then convert your USDC back to EUR using Circle, or a centralized exchange.
+If you don't care for bearing transiently a change risk, you can also swap your agEUR to USDC for 0.01% on an aggregator like 1inch or Odos and then convert your USDC back to EUR using Circle, or a centralized exchange.
 
 ## 💸 Streaming payments
 

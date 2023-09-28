@@ -8,7 +8,7 @@ description: Buy ANGLE with the Angle App from any token
 
 1. Go to the [buy page](https://app.angle.money/buy) of the app
 1. Choose the token you want to buy ANGLE with, or paste its address in the search bar.
-1. You will see an estimation of the quantity of ANGLE you should receive, from the DEX aggregator [1inch](https://app.1inch.io/#/1/swap/ETH/ANGLE) which compares the different options to buy ANGLE.
+1. You will see an estimation of the quantity of ANGLE you should receive, from the DEX aggregator [Odos](https://app.odos.xyz/) which compares the different options to buy ANGLE.
 1. Below, there are a number of information like the minimum amount of tokens received, the exchange rate, the price impact, and the transaction fee. There is also an `Expert Mode` toggle that lets you set your slippage tolerance (detailed below).
 1. Once everything looks fine, you will have to 1) approve your tokens and 2) send the transaction through your wallet.
 
@@ -21,7 +21,7 @@ Be careful, ANGLE has very low liquidity on other network than Ethereum and is o
 {% endhint %}
 
 {% hint style="success" %}
-The 1inch integration on this page is a tailored integration for the specific ANGLE use case which guarantees that this page provides the best ANGLE price possible.
+The Odos integration on this page is a tailored integration for the specific ANGLE use case which guarantees that this page provides the best ANGLE price possible.
 {% endhint %}
 
 ![Buy ANGLE](/.gitbook/assets/new-app-buyangle.png)
