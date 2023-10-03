@@ -28,6 +28,7 @@ coverY: 0
 
 - 🐦 [Twitter](https://twitter.com/AngleProtocol)
 - 💬 [Discord](https://discord.gg/3vaHCJw7Mz)
+  ✍️ [Blog](https://angle.money/blog)
 - 📠 [Telegram](https://t.me/AngleAnnouncements)
 - 📺 [YouTube Channel](https://www.youtube.com/@anglelabs)
 - 🎙️ [The Defi Angle Podcast - Youtube](https://www.youtube.com/@anglelabs)
@@ -38,11 +39,6 @@ coverY: 0
 
 - [Angle Contributions Program](https://gov.angle.money/t/angle-contributions-program/365)
 - [Crew3](https://angleprotocol.crew3.xyz/questboard)
-
-## Content
-
-- ✍️ [Blog](https://angle.money/blog)
-- 🌳 [Medium](https://blog.angle.money)
 
 ## Security
 
