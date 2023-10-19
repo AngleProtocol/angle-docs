@@ -8,7 +8,7 @@ As a Liquidity Provider, Merkl lets you customize your concentrated liquidity po
 
 All pools using Merkl are listed at [merkl.angle.money](https://merkl.angle.money). There are links to the pools and to the supported liquidity managers for you to deposit your funds. [merkl.angle.money](https://merkl.angle.money) may not be the only place where to find Merkl pools and there may be other protocol relying on Merkl under the hood to incentivize their liquidity.
 
-![Merkl Claim](/.gitbook/assets/merkl-claim2.png)
+{% embed url="https://www.youtube.com/embed/8tpGSHglVlc" %}
 
 To receive rewards listed on Merkl, you can provide liquidity directly one of the listed pools, or on one of the supported position / liquidity managers. If you are using a liquidity manager, be careful to understand how the liquidity manager rebalances liquidity.
 
