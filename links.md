@@ -93,9 +93,9 @@ coverY: 0
 - [UniswapV3 agEUR - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 - [Uniswap V3 agEUR - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
 - [Uniswap V3 ANGLE - ETH (1%)](https://info.uniswap.org/#/pools/0x51c2841333fbbab53b7c2c442cc265bf16430d6d)
-- [Curve agEUR - EUROe](https://curve.fi/factory/273)
 - [Curve agEUR - EUROC](https://curve.fi/factory/164)
 - [Curve agEUR - EURs - EURt](https://curve.fi/factory/66)
+- [Curve agEUR - EUROe](https://curve.fi/factory/273)
 - [Curve agEUR - cEUR - EUROc](https://curve.fi/factory/145)
 - [Curve agEUR - FRAXBP](https://curve.fi/factory-crypto/93)
 - [Curve agEUR - EURe](https://curve.fi/#/ethereum/pools/factory-v2-231/deposit)
@@ -114,16 +114,17 @@ coverY: 0
 #### On Polygon
 
 - [Uniswap V3 agEUR - USDC (0.01%)](https://info.uniswap.org/#/polygon/pools/0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80)
+- [Retro agEUR-USDC](https://polygonscan.com/address/0xc2cb03a819f785bd8eb8d628bad41cd7c1c71f4b)
 - [Quickswap agEUR - USDC](https://info.quickswap.exchange/#/pair/0x82a54e66c05fcd555adae593848a4257c9e51ad9)
 - [Quickswap agEUR - MAI](https://quickswap.exchange/#/analytics/v3/pair/0x63aefd3aefeedce0860a5ef21c1af548641620dd)
 - [Quickswap agEUR - ANGLE](https://info.quickswap.exchange/#/pair/0xbf1ac395731307e83cbf1901957ed0a4faa15a02)
-- [Dystopia agEUR - USDC](https://info.dystopia.exchange/pair/0x20945ac0eb02aed8bbf405cf6b0e56655841e447)
 - [Curve agEUR - 4EUR (jEUR, PAR, EURt, EURs)](https://polygon.curve.fi/factory/72)
 - [Curve agEUR - jEUR](https://polygon.curve.fi/factory/209)
 - [Arrakis / Gelato agEUR - USDC (0.01%)](https://polygonscan.com/address/0x1644de0A8E54626b54AC77463900FcFFD8B94542)
 
 #### On Optimism
 
+- [Uniswap V3 agEUR-USDC](https://info.uniswap.org/#/optimism/pools/0xf44acaa38be5e965c5ddf374e7a2ba270e580684)
 - [Velodrome agEUR-USDC](https://app.velodrome.finance/liquidity/manage?address=0x7866c6072b09539fc0fde82963846b80203d7beb)
 
 #### On Arbitrum
@@ -135,6 +136,10 @@ coverY: 0
 
 - [PancakeSwap agEUR-USDT (0.05%)](https://pancakeswap.finance/add/0x12f31B73D812C6Bb0d735a218c086d44D5fe5f89/0x55d398326f99059fF775485246999027B3197955/500?chain=bsc&minPrice=1.088832&maxPrice=1.090771)
 
+#### On Gnosis Chain
+
+- [Balancer agEUR-EURe](https://app.balancer.fi/#/gnosis-chain/pool/0x5c78d05b8ecf97507d1cf70646082c54faa4da95000000000000000000000030)
+
 #### On Avalanche
 
 - [Trader Joe agEUR - USDC](https://traderjoexyz.com/pool/0xAEC8318a9a59bAEb39861d10ff6C7f7bf1F96C57/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e#/)
@@ -143,19 +148,11 @@ coverY: 0
 
 - [Curve agEUR - cEUR](https://celo.curve.fi/factory/2)
 
-#### On NEAR/Aurora
-
-- [NEARPad agEUR - PAD](https://dex.nearpad.io/farm)
-
 #### On Solana
 
 - [Saber agEUR/cEUR](https://app.saber.so/#/pools/aceur_ageur/deposit)
-- [Atrix agEUR - USDC](https://app.atrix.finance/#/pools/D48wjLHcHwTfPAiTuK1DKUPKHsrYpUywJp9ZGBxbEj7b/deposit)
-- [Atrix agEUR - SOL](https://app.atrix.finance/#/pools/J9DdDdhT9m1xt6bqVnT4GtnqECJavLREPNTVsoBgPq5R/deposit)
 - [Jupiter Aggregator agEUR - USDC](https://jup.ag/swap/USDC-agEUR)
 - [Jupiter Aggregator agEUR - SOL](https://jup.ag/swap/agEUR-SOL)
-- Serum Market ID agEUR - USDC: eYJn1SMJhM6G9suhhVYtt28SbAXCswqKe6UKbq7pYLk
-- Serum Market ID SOL - agEUR: 3AVpKaaw3xhcu37iqprZWRoMkZ9EXXAcAecxzhNpaxnS
 
 #### On Tezos
 
