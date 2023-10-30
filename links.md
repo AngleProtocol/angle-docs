@@ -130,6 +130,9 @@ coverY: 0
 #### On Arbitrum
 
 - [Uniswap V3 agEUR-USDC](https://info.uniswap.org/#/arbitrum/pools/0xe4d9faddd9bca5d8393bee915dc56e916ab94d27)
+- [Camelot V3 stEUR-USDC](https://info.camelot.exchange/pair/v3/0xcc4e4c18bad7e1cc63bb98915eeb3f412939955e)
+- [Camelot V3 stEUR-ARB](https://info.camelot.exchange/pair/v3/0xcae4a98685fd488e8d2fc3780baabc7d472f9d01)
+- [Camelot V3 stEUR-wstETH](https://info.camelot.exchange/pair/v3/0x6c41a770583fc7141fbea9ac741f9015a4de6fda)
 - [Kyberswap agEUR-USDC](https://kyberswap.com/elastic/add/0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8/40)
 
 #### On BNBChain
