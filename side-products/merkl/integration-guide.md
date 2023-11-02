@@ -8,11 +8,15 @@ You can integrate Merkl pools in your app but you don't have to. All pools are l
 
 ![Merkl front integration diagram](../../.gitbook/assets/docs-merkl-front-integration.jpg)
 
-Data about all Merkl incentivized pools across all supported chains can be found by calling our API endpoint: `https://api.angle.money/v1/merkl`.
+Data about all Merkl incentivized pools across all supported chains can be found by calling our API endpoint: `https://api.angle.money/v2/merkl`.
 
-When calling this payload, you must specify the `chainId` address. You may also specify a `user` address if you want additional information related to one user (like claimable amounts, liquidity in the pools, ...)
+When calling this payload, you may specify a list of `chainIds` to query or a list of `AMMs` on which you specifically want some information. You may also specify a `user` address if you want additional information related to one user (like claimable amounts, liquidity in the pools, ...).
 
-A typical query looks like: [`https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185`](https://api.angle.money/v1/merkl?chainId=10&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185).
+A typical query looks like: [`https://api.angle.money/v2/merkl?chainIds[]=1&AMMs[]=uniswapv3&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185`](https://api.angle.money/v2/merkl?chainIds[]=1&AMMs[]=uniswapv3&user=0xfdA462548Ce04282f4B6D6619823a7C64Fdc0185).
+
+{% hint style="info" %}
+The schema and docs for the Merkl API endpoint can be found [here](https://api.angle.money/api-docs/#/Merkl/get_v2_merkl).
+{% endhint %}
 
 ## Listing incentivized pools
 
@@ -38,7 +42,7 @@ When called for a specific user, it returns in a `transactionData` payload with 
 
 _Rewards are claimable per token: meaning that if you have accumulated rewards of several tokens, you may choose to only claim your rewards of one token type, but you may also choose to claim all your token rewards at once._
 
-The contract on which rewards should be claimed is the `Distributor` contract which address can be found on [this docs](helpers.md#🧑‍💻-smart-contracts), or on the [Angle SDK](https://github.com/AngleProtocol/sdk).
+The contract on which rewards should be claimed is the `Distributor` contract which address can be found on [this docs](helpers.md#🧑‍💻-smart-contracts).
 
 You have two options to do that:
 
@@ -52,35 +56,40 @@ In any case, if a call is made to the correct `Distributor` contract and the `to
 Here is a script you may use to claim all the token rewards for a user on a chain.
 
 ```typescript
-import {
-  Distributor__factory,
-  MerklAPIData,
-  registry,
-} from '@angleprotocol/sdk'
 import { JsonRpcSigner } from '@ethersproject/providers'
+import { ethers } from 'hardhat'
 import axios from 'axios'
 
 export const claim = async (chainId: number, signer: JsonRpcSigner) => {
-  let data: MerklAPIData['transactionData']
   try {
     data = (
       await axios.get(
-        `https://api.angle.money/v1/merkl?chainId=${chainId}&user=${signer._address}`,
+        `https://api.angle.money/v2/merkl?chainIds[]=${chainId}&user=${signer._address}`,
         {
           timeout: 5000,
         },
       )
-    ).data.transactionData
+    ).data[chainId].transactionData
   } catch {
     throw 'Angle API not responding'
   }
+  // Distributor address is the same across different chains
+  const contractAddress = '0x3Ef3D8bA38EBe18DB133cEc108f4D14CE00Dd9Ae'
   const tokens = Object.keys(data).filter((k) => data[k].proof !== undefined)
   const claims = tokens.map((t) => data[t].claim)
   const proofs = tokens.map((t) => data[t].proof)
 
   const contractAddress = registry(chainId)?.Merkl?.Distributor
-  if (!contractAddress) throw 'Chain not supported'
-  const contract = Distributor__factory.connect(contractAddress, signer)
+  const distributorInterface = new ethers.utils.Interface([
+    'function claim(address[] calldata users, address[] calldata tokens, uint256[] calldata amounts, bytes32[][] calldata proofs) external',
+  ])
+
+  const contract = new ethers.Contract(
+    contractAddress,
+    distributorInterface,
+    signer,
+  )
+
   await (
     await contract.claim(
       tokens.map((t) => signer._address),
@@ -91,10 +100,6 @@ export const claim = async (chainId: number, signer: JsonRpcSigner) => {
   ).wait()
 }
 ```
-
-{% hint style="info" %}
-If you want to build the proof yourself, [this file](https://github.com/AngleProtocol/sdk/blob/288185227514ae5c5bb23f5d4b72680eb839f6cc/src/utils/merkl.ts#L15) will show you how to do that.
-{% endhint %}
 
 ## Tracking user rewards without the API
 

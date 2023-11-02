@@ -139,11 +139,9 @@ The following script shows how to create one or multiple distributions at once o
 
 ```typescript
 import {
-  ChainId,
   DistributionCreator__factory,
   Erc20__factory,
-  registry,
-} from '@angleprotocol/sdk'
+} from '@angleprotocol/public-sdk'
 import { parseEther } from 'ethers/lib/utils'
 import { ethers, web3 } from 'hardhat'
 
@@ -156,11 +154,11 @@ async function main() {
   const rewardTokenAddress = '0x84FB94595f9Aef81147cD4070a1564128A84bb7c'
   // Address of the pool
   const pool = '0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80'
-  // Chain on which distribution should be made
-  const chainId = ChainId.OPTIMISM
 
-  const distributionCreatorAddress = registry(chainId)?.Merkl
-    ?.DistributionCreator!
+  // Same address across all chains
+  const distributionCreatorAddress =
+    '0x8BB4C975Ff3c250e0ceEA271728547f3802B36Fd'
+
   const distributionCreator = DistributionCreator__factory.connect(
     distributionCreatorAddress,
     deployer,
@@ -171,7 +169,7 @@ async function main() {
     // Address of the pool to incentivize
     uniV3Pool: pool,
     // Address of the reward token (must be whitelisted)
-    rewardToken: rewardToken.address,
+    rewardToken: rewardTokenAddress,
     // Addresses to exclude from the distribution (or optionally addresses of the wrappers that are not automatically detected
     // by the script)
     positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
@@ -237,7 +235,7 @@ async function main() {
 
   const params1 = {
     uniV3Pool: pool,
-    rewardToken: rewardToken.address,
+    rewardToken: rewardTokenAddress,
     positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
     wrapperTypes: [2],
     amount: parseEther('500'),
@@ -255,7 +253,7 @@ async function main() {
 
   const params2 = {
     uniV3Pool: pool,
-    rewardToken: rewardToken.address,
+    rewardToken: rewardTokenAddress,
     positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
     wrapperTypes: [2],
     amount: parseEther('750'),
