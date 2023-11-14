@@ -26,8 +26,8 @@ If you were providing liquidity on a pool (directly on the AMM or through a liqu
 
 ![Merkl Script](/.gitbook/assets/docs-merkl-for-lps.png)
 
-Rewards for Liquidity Providers on Merkl do not increase block by block, but can be claimed at [a frequency](./helpers.md#🔗-live-amms-and-chains) which depends on the chain.
+Rewards for Liquidity Providers on Merkl do not increase block by block, but can be claimed at [a frequency](./supported-chains-amms.md) which depends on the chain.
 
 {% hint style="info" %}
-Note that rewards can be claimed to your address by any other address. If you are integrating Merkl as a smart contract and don't want rewards to be claimed on your behalf, you can call the `toggleOnlyOperatorCanClaim` function on the `Distributor` contract (address [here](./helpers.md#🧑‍💻-smart-contracts)).
+Note that rewards can be claimed to your address by any other address. If you are integrating Merkl as a smart contract and don't want rewards to be claimed on your behalf, you can call the `toggleOnlyOperatorCanClaim` function on the `Distributor` contract (address [here](./smart-contracts.md)).
 {% endhint %}

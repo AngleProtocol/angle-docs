@@ -70,7 +70,7 @@ The protocol's smart contracts have undergone several audits by Chainsecurity, S
 
 Products developed for the Angle Protocol can also bring value to the wider DeFi userbase. Some of them are being released as standalone products so that anyone can benefit from them.
 
-This is notably the case of [🥨 Merkl](side-products/merkl/README.md.md), an incentive framework for AMMs with concentrated liquidity (like Uniswap V3) ran by Angle Labs.
+This is notably the case of [🥨 Merkl](merkl/introduction.md), an incentive framework for AMMs with concentrated liquidity (like Uniswap V3) ran by Angle Labs.
 
 ## 🖼 Branding
 

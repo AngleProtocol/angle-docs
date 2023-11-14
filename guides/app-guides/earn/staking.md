@@ -4,7 +4,7 @@ description: Earning rewards with Angle
 
 # 🍀 Staking and Uniswap V3 incentive mechanism
 
-ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem based on what is voted by veANGLE holders [here](https://app.angle.money/gauge). Among other things, the protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools through [the Merkl system](../../../side-products/merkl/).
+ANGLE tokens are issued every week and distributed to different stakeholders of the Angle ecosystem based on what is voted by veANGLE holders [here](https://app.angle.money/gauge). Among other things, the protocol incentivizes Uniswap V3 Liquidity Providers of some specific pools through [the Merkl system](../../../merkl/).
 
 The [Earn page](https://app.angle.money/earn) of the app lists all the yield opportunities linked to Angle and displays in particular the pools and farms where it is possible to earn ANGLE tokens. It is on this page that liquidity providers on Angle gauges (excluding Uniswap V3 pools) can claim their ANGLE rewards.
 
@@ -30,7 +30,7 @@ Some important things to note on Merkl:
 - only in-range liquidity is rewarded with incentives.
 
 {% hint style="info" %}
-You can find more details on the mechanism in [the Merkl section](../../../side-products/merkl/) of the documentation
+You can find more details on the mechanism in [the Merkl section](../../../merkl/) of the documentation
 {% endhint %}
 
 ## Claiming ANGLE tokens

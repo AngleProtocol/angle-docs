@@ -42,7 +42,7 @@ When called for a specific user, it returns in a `transactionData` payload with 
 
 _Rewards are claimable per token: meaning that if you have accumulated rewards of several tokens, you may choose to only claim your rewards of one token type, but you may also choose to claim all your token rewards at once._
 
-The contract on which rewards should be claimed is the `Distributor` contract which address can be found on [this docs](helpers.md#🧑‍💻-smart-contracts).
+The contract on which rewards should be claimed is the `Distributor` contract which address can be found on [this docs](./supported-chains-amms.md).
 
 You have two options to do that:
 
@@ -56,9 +56,9 @@ In any case, if a call is made to the correct `Distributor` contract and the `to
 Here is a script you may use to claim all the token rewards for a user on a chain.
 
 ```typescript
-import { JsonRpcSigner } from '@ethersproject/providers'
-import { ethers } from 'hardhat'
-import axios from 'axios'
+import { JsonRpcSigner } from "@ethersproject/providers";
+import { ethers } from "hardhat";
+import axios from "axios";
 
 export const claim = async (chainId: number, signer: JsonRpcSigner) => {
   try {
@@ -67,43 +67,43 @@ export const claim = async (chainId: number, signer: JsonRpcSigner) => {
         `https://api.angle.money/v2/merkl?chainIds[]=${chainId}&user=${signer._address}`,
         {
           timeout: 5000,
-        },
+        }
       )
-    ).data[chainId].transactionData
+    ).data[chainId].transactionData;
   } catch {
-    throw 'Angle API not responding'
+    throw "Angle API not responding";
   }
   // Distributor address is the same across different chains
-  const contractAddress = '0x3Ef3D8bA38EBe18DB133cEc108f4D14CE00Dd9Ae'
-  const tokens = Object.keys(data).filter((k) => data[k].proof !== undefined)
-  const claims = tokens.map((t) => data[t].claim)
-  const proofs = tokens.map((t) => data[t].proof)
+  const contractAddress = "0x3Ef3D8bA38EBe18DB133cEc108f4D14CE00Dd9Ae";
+  const tokens = Object.keys(data).filter((k) => data[k].proof !== undefined);
+  const claims = tokens.map((t) => data[t].claim);
+  const proofs = tokens.map((t) => data[t].proof);
 
-  const contractAddress = registry(chainId)?.Merkl?.Distributor
+  const contractAddress = registry(chainId)?.Merkl?.Distributor;
   const distributorInterface = new ethers.utils.Interface([
-    'function claim(address[] calldata users, address[] calldata tokens, uint256[] calldata amounts, bytes32[][] calldata proofs) external',
-  ])
+    "function claim(address[] calldata users, address[] calldata tokens, uint256[] calldata amounts, bytes32[][] calldata proofs) external",
+  ]);
 
   const contract = new ethers.Contract(
     contractAddress,
     distributorInterface,
-    signer,
-  )
+    signer
+  );
 
   await (
     await contract.claim(
       tokens.map((t) => signer._address),
       tokens,
       claims,
-      proofs as string[][],
+      proofs as string[][]
     )
-  ).wait()
-}
+  ).wait();
+};
 ```
 
 ## Tracking user rewards without the API
 
-The [merkl-rewards](https://github.com/AngleProtocol/merkl-rewards) repository contains the history of rewards given across all distributions across all pools of all supported AMMs. If you want to see which addresses earned the most from a distribution, or if the biggest LPs in the pool you're incentivizing are also active in other Merkl-incentivized pools, you may want to check this repo.
+The [merkl-rewards](https://merkl-rewards.angle.money/) website contains the history of rewards given across all distributions across all pools of all supported AMMs. If you want to see which addresses earned the most from a distribution, or if the biggest LPs in the pool you're incentivizing are also active in other Merkl-incentivized pools, you may want to check this repo.
 
 ## Featuring Merkl in your app
 
