@@ -63,6 +63,13 @@
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
+## Resources
+
+- [🔐 Audits](resources/audits/README.md)
+- [🐛 Bug Bounty](resources/audits/bug-bounty.md)
+- [📊 Angle Analytics](resources/analytics.md)
+-
+
 ## Merkl
 
 - [🥨 Introduction](merkl/introduction.md)
@@ -72,12 +79,6 @@
 - [🌊 Provide liquidity and claim](merkl/lp-guide.md)
 - [⛓ Supported Chains and AMMs](merkl/supported-chains-amms.md)
 - [⛓ Smart Contracts Addresses](merkl/smart-contracts.md)
-
-## Resources
-
-- [🔐 Audits](resources/audits/README.md)
-- [🐛 Bug Bounty](resources/audits/bug-bounty.md)
-- [📊 Angle Analytics](resources/analytics.md)
 
 ## Deprecated
 
