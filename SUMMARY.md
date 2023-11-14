@@ -63,14 +63,15 @@
   - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
-## Side Products
+## Merkl
 
-- [🥨 Merkl](side-products/merkl/README.md)
-  - [💰 Distribute incentives with Merkl](side-products/merkl/incentivizor-guide.md)
-    - [⛓ Distribution Utils](side-products/merkl/helpers.md)
-    - [🖋 Incentivizor Disclaimer](side-products/merkl/incentivizor-tc.md)
-  - [📒 Integrate Merkl in your App](side-products/merkl/integration-guide.md)
-  - [🌊 Provide liquidity and claim](side-products/merkl/lp-guide.md)
+- [🥨 Introduction](merkl/introduction.md)
+- [🖋 T&Cs](merkl/incentivizor-tc.md)
+- [💰 Create a campaign](merkl/incentivizor-guide.md)
+- [📒 Integrate Merkl in your App](merkl/integration-guide.md)
+- [🌊 Provide liquidity and claim](merkl/lp-guide.md)
+- [⛓ Supported Chains and AMMs](merkl/supported-chains-amms.md)
+- [⛓ Smart Contracts Addresses](merkl/smart-contracts.md)
 
 ## Resources
 

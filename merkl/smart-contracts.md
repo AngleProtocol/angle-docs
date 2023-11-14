@@ -1,35 +1,6 @@
 ---
-description: Utils to distribute rewards with Merkl
+description: Addresses of Merkl smart contracts
 ---
-
-# ⛓ Distribution Utils
-
-## 🔗 Live AMMs and Chains
-
-| Live AMMs & Chains               | Epoch Time |
-| -------------------------------- | ---------- |
-| 🦄 UniswapV3 - Ethereum          | 12 hours   |
-| 🦄 UniswapV3 - Polygon           | 6 hours    |
-| 🦄 UniswapV3 - Optimism          | 6 hours    |
-| 🦄 UniswapV3 - Arbitrum          | 6 hours    |
-| 🍣 SushiswapV3 - Ethereum        | 12 hours   |
-| 🍣 SushiswapV3 - Polygon         | 6 hours    |
-| 🍣 SushiswapV3 - Optimism        | 6 hours    |
-| 🍣 SushiswapV3 - Arbitrum        | 6 hours    |
-| 🍣 SushiswapV3 - Base            | 6 hours    |
-| 🥞 PancakeSwapV3 - Ethereum      | 12 hours   |
-| 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours   |
-| 🪞 Retro - Polygon                | 6 hours    |
-| ⚔️ Camelot - Arbitrum            | 6 hours    |
-| 🔵 BaseSwap - Base               | 6 hours    |
-
-{% hint style="info" %}
-Can't find your AMM in this list? You can add it by following the guides below.
-{% endhint %}
-
-To find the list of supported liquidity managers for each of these chains, you can directly look into the ALMs appearing on the pools displayed on [the Merkl app](https://merkl.angle.money).
-
-## 🧑‍💻 Smart Contracts
 
 Merkl is organized around 2 main contracts on each chain on which it is available:
 
@@ -53,26 +24,3 @@ Both contracts are managed through a `CoreMerkl` contract managed by a multisig 
 {% hint style="info" %}
 Addresses of the `Distributor` and `DistributionCreator` contracts are the same across all chains.
 {% endhint %}
-
-## Add a new AMM or chain to Merkl
-
-Merkl can be expanded to any chain and any concentrated liquidity AMM that works similarly to UniswapV3. To get your AMM or chain supported on Merkl, please create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc) and fill out [this form](https://tally.so/r/3XJODP).
-
-## ➕ Add an ALM to Merkl
-
-### Pre-requisites
-
-Merkl only supports liquidity managers which use the same architecture as Gamma or Arrakis. The liquidity manager must verify the following pre-requisites:
-
-- Use a factory contract which creates vaults and emits an event when creating them
-- Vaults issue a single ERC-20 token
-- Vaults have a `pool()` function to get the DEX pool associated to the vault
-- All the contracts must be verified
-
-### Requesting support for a new liquidity manager
-
-To add support for your liquidity manager you can create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc) and fill out [this form](https://tally.so/r/w4JYLr).
-
-## Add a new reward token to Merkl
-
-Reward tokens sent through Merkl need to be whitelisted before being used. To get your token whitelisted, please fill [this form](https://tally.so/r/3y2bqx), open a pull request with your token information [on this repo](https://github.com/AngleProtocol/angle-assets) and create a BD ticket in our [Discord](https://discord.com/invite/5Af6xum9bc).

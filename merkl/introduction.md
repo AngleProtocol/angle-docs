@@ -21,12 +21,12 @@ Merkl is compatible with liquidity position managers (also referred to as ALMs) 
 Merkl has a low maintenance fee applied to incentives distributed. Excluding gas when claiming rewards, there is no cost to use the platform for Liquidity Providers.
 
 {% hint style="info" %}
-Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. For the list of chains and AMMs supported by Merkl (along with other info for each chain), check out [this page](helpers.md).
+Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. For the list of chains and AMMs supported by Merkl (along with other info for each chain), check out [this page](./supported-chains-amms.md).
 {% endhint %}
 
 ## ⚙️ Mechanism
 
-Merkl is based on an offchain script that looks at the onchain data of the incentivized pools. It then computes the rewards for all LPs of these pools according to the preferences of the incentivizor. Based on this, the script aggregates all reward distribution data in a Merkle tree, then compressed it into a Merkle root and pushes onchain to allow LPs to claim their rewards.
+Merkl is based on an offchain script that looks at the onchain data of the incentivized pools. It then computes the rewards for all LPs of these pools according to the preferences of the incentivizor. Based on this, the script aggregates all campaigns data in a Merkle tree, then compressed it into a Merkle root and pushes onchain to allow LPs to claim their rewards.
 
 The script is ran regularly for the period between when it is executed and its last execution. Every time the script is ran, it only looks at the onchain data related specifically to this period of time.
 
@@ -79,7 +79,7 @@ To avoid this kind of situation, the Merkl system lets you blacklist addresses w
 The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 2 hours to 3 days.
 
 {% hint style="info" %}
-You can find the epoch length for each chain [here](helpers.md).
+You can find the epoch length for each chain [here](./supported-chains-amms.md).
 {% endhint %}
 
 The length of an epoch is also the de facto amount of time between two reward distributions. For instance, if epoch length is 1 day for Ethereum, then Uniswap V3 LPs can claim new rewards at most every day on Merkl.
@@ -129,8 +129,8 @@ Merkl smart contracts have been audited by Code4rena. Find the audit report [her
 ### 🔗 Links
 
 - [Merkl App](https://merkl.angle.money)
-- [Smart contracts addresses](helpers.md#smart-contracts)
+- [Terms & Conditions](incentivizor-tc.md)
+- [Smart contracts addresses](./smart-contracts.md)
 - [Smart contracts code](https://github.com/AngleProtocol/merkl-contracts)
 - [Track all rewards distributed through Merkl](https://github.com/AngleProtocol/merkl-rewards)
-- [Disclaimer for incentivizors](incentivizor-tc.md)
 - [Open-source dispute bot](https://github.com/AngleProtocol/merkl-dispute)
