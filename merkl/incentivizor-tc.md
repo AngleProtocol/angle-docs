@@ -2,7 +2,7 @@
 description: Please be aware of the following before depositing an incentive on Merkl
 ---
 
-# 🖋 T&Cs
+# 🖋 Merkl Terms & Conditions
 
 1. Merkl is experimental software provided as is, use it at your own discretion. There may notably be delays in the onchain Merkle root updates and there may be flaws in the script (or engine) or in the infrastructure used to update results onchain. In that regard, everyone can permissionlessly dispute the rewards which are posted onchain, and when creating a distribution, you are responsible for checking the results and eventually dispute them.
 2. If you are specifying an invalid pool address or a pool from an AMM that is not marked as supported, your rewards will not be taken into account and you will not be able to recover them.
