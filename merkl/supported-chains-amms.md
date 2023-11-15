@@ -2,6 +2,8 @@
 description: AMMs and Chains integrated within Merkl
 ---
 
+# ⛓ Merkl Supported Chains and AMMs
+
 | Live AMMs & Chains               | Epoch Duration |
 | -------------------------------- | -------------- |
 | 🦄 UniswapV3 - Ethereum          | 12 hours       |
@@ -15,7 +17,7 @@ description: AMMs and Chains integrated within Merkl
 | 🍣 SushiswapV3 - Base            | 6 hours        |
 | 🥞 PancakeSwapV3 - Ethereum      | 12 hours       |
 | 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours       |
-| 🪞 Retro - Polygon               | 6 hours        |
+| 🪞 Retro - Polygon                | 6 hours        |
 | ⚔️ Camelot - Arbitrum            | 6 hours        |
 | 🔵 BaseSwap - Base               | 6 hours        |
 
