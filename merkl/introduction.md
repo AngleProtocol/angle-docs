@@ -72,7 +72,7 @@ The list of liquidity position managers supported for each AMM and chain can be 
 
 If there is a liquidity manager or another smart contract not natively supported by Merkl that holds LP tokens of the pool you are incentivizing, it will be eligible to rewards like any other liquidity provider. If the contract is not able to deal with token rewards (by forwarding them to another address distributing it to underlying stakeholders for example), then these rewards may be lost. If rewards sent through Merkl remain unclaimed for a period of more than 1 year, we reserve the right to recover them.
 
-To avoid this kind of situation, the Merkl system lets you blacklist addresses which should be excluded from the reward distribution. If 10 tokens of a distribution should go to a blacklisted LP address, they will be split between the other LPs.
+To avoid this kind of situation, the Merkl system lets you blacklist addresses which should be excluded from the reward distribution. If 10 tokens of a distribution should go to a blacklisted LP address, they will be split between the other LPs. If one address is blacklisted, shares owned by any contract or EOA will not be eligible to incentives coming from this blacklisted address.
 
 ### ⏳ Distribution Epochs
 
