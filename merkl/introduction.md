@@ -74,6 +74,8 @@ If there is a liquidity manager or another smart contract not natively supported
 
 To avoid this kind of situation, the Merkl system lets you blacklist addresses which should be excluded from the reward distribution. If 10 tokens of a distribution should go to a blacklisted LP address, they will be split between the other LPs.
 
+If one contract is blacklisted, then addresses (whether they are EOAs or other contracts) associated to this contract will not be eligible to rewards. If for instance a liquidity management solution is blacklisted, then people who deposited in this liquidity management solution will not be able to receive rewards from the management solution. These secondary holders may still receive rewards if they provide liquidity through other means of the pool.
+
 ### ⏳ Distribution Epochs
 
 The time periods (also called epochs) over which the script is ran for all the pools of a chain vary depending on the chain. Epoch lengths basically range between 2 hours to 3 days.
