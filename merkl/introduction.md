@@ -74,7 +74,13 @@ If there is a liquidity manager or another smart contract not natively supported
 
 To avoid this kind of situation, the Merkl system lets you blacklist addresses which should be excluded from the reward distribution. If 10 tokens of a distribution should go to a blacklisted LP address, they will be split between the other LPs.
 
-If one contract is blacklisted, then addresses (whether they are EOAs or other contracts) associated to this contract will not be eligible to rewards. If for instance a liquidity management solution is blacklisted, then people who deposited in this liquidity management solution will not be able to receive rewards from the management solution. These secondary holders may still receive rewards if they provide liquidity through other means of the pool.
+If one contract is blacklisted, then addresses (EOAs or other contracts) associated to this contract will not be eligible to rewards. If for instance the address of a liquidity management solution is blacklisted, then people who deposited in this liquidity management solution will not be able to receive rewards from it. These secondary holders may still receive rewards if they provide liquidity to the pool through other means (directly or with a liquidity manager).
+
+#### Whitelisted distributions
+
+While it's possible to blacklist some addresses, Merkl also enables to whitelist specific addresses for specific distributions, meaning only these addresses or their associated addresses are going to be eligible to receive rewards from it.
+
+If the address of liquidity management solution is whitelisted within Merkl, then only the addresses which provided liquidity through this liquidity management solution will be eligible to the rewards of the distribution.
 
 ### ⏳ Distribution Epochs
 
