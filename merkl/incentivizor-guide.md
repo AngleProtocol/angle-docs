@@ -141,29 +141,29 @@ The following script shows how to create one or multiple distributions at once o
 import {
   DistributionCreator__factory,
   Erc20__factory,
-} from "@angleprotocol/public-sdk";
-import { parseEther } from "ethers/lib/utils";
-import { ethers, web3 } from "hardhat";
+} from '@angleprotocol/public-sdk'
+import { parseEther } from 'ethers/lib/utils'
+import { ethers, web3 } from 'hardhat'
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
-  const ZERO_ADDRESS = ethers.constants.AddressZero;
-  const MAX_UINT256 = ethers.constants.MaxUint256;
+  const [deployer] = await ethers.getSigners()
+  const ZERO_ADDRESS = ethers.constants.AddressZero
+  const MAX_UINT256 = ethers.constants.MaxUint256
 
   // Address of the reward token to sned
-  const rewardTokenAddress = "0x84FB94595f9Aef81147cD4070a1564128A84bb7c";
+  const rewardTokenAddress = '0x84FB94595f9Aef81147cD4070a1564128A84bb7c'
   // Address of the pool
-  const pool = "0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80";
+  const pool = '0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80'
 
   // Same address across all chains
   const distributionCreatorAddress =
-    "0x8BB4C975Ff3c250e0ceEA271728547f3802B36Fd";
+    '0x8BB4C975Ff3c250e0ceEA271728547f3802B36Fd'
 
   const distributionCreator = DistributionCreator__factory.connect(
     distributionCreatorAddress,
-    deployer
-  );
-  const rewardToken = Erc20__factory.connect(rewardTokenAddress, deployer);
+    deployer,
+  )
+  const rewardToken = Erc20__factory.connect(rewardTokenAddress, deployer)
 
   const params = {
     // Address of the pool to incentivize
@@ -172,11 +172,11 @@ async function main() {
     rewardToken: rewardTokenAddress,
     // Addresses to exclude from the distribution (or optionally addresses of the wrappers that are not automatically detected
     // by the script)
-    positionWrappers: ["0xa29193Af0816D43cF44A3745755BF5f5e2f4F170"],
-    // Type of the wrappers (3=blacklisted addresses)
+    positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
+    // Type of the wrappers (3=blacklisted addresses, 0=whitelisted addresses)
     wrapperTypes: [3],
-    // Amount of tokens to send for the WHOLE distribution
-    amount: parseEther("350"),
+    // Amount of tokens to send for the WHOLE distribution. The amount distributed per hour is `amount/numEpoch`
+    amount: parseEther('350'),
     // Proportion of rewards that'll be split among LPs which brought token0 in the pool during the time
     // of the distribution
     propToken0: 4000,
@@ -188,7 +188,7 @@ async function main() {
     propFees: 4000,
     // Whether out of range liquidity should be incentivized
     isOutOfRangeIncentivized: 0,
-    // Timestamp of the start of the distribution
+    // Timestamp of the start of the distribution (in block.timestamp units)
     epochStart: 1676649600,
     // Number of hours for which the distribution will last once it has started
     numEpoch: 500,
@@ -196,20 +196,21 @@ async function main() {
     // provides a 2.5x boost, this would be equal to 25000
     boostedReward: 0,
     // Address of the token which dictates who gets boosted rewards or not. This is optional
-    // and if the zero address is given no boost will be taken into account
+    // and if the zero address is given no boost will be taken into account. In the case of Curve, this address
+    // would for instance be the veBoostProxy address, or in other cases the veToken address.
     boostingAddress: ZERO_ADDRESS,
     // These two parameters are useless when creating a distribution, you may specify here whatever you like
-    rewardId: web3.utils.soliditySha3("europtimism") as string,
-    additionalData: web3.utils.soliditySha3("europtimism") as string,
-  };
+    rewardId: web3.utils.soliditySha3('europtimism') as string,
+    additionalData: web3.utils.soliditySha3('europtimism') as string,
+  }
 
   // Comment if you've already approved the contract with `rewardToken`
-  console.log("Approving");
+  console.log('Approving')
   await (
     await rewardToken
       .connect(deployer)
       .approve(distributionCreator.address, MAX_UINT256)
-  ).wait();
+  ).wait()
 
   /*
   Before depositing a reward, you must make sure that:
@@ -218,27 +219,27 @@ async function main() {
   2. You have read the T&C before signing them
   */
 
-  console.log("Signing the T&C");
-  const message = await distributionCreator.message();
-  console.log(message);
-  const signature = await deployer.signMessage(message);
+  console.log('Signing the T&C')
+  const message = await distributionCreator.message()
+  console.log(message)
+  const signature = await deployer.signMessage(message)
 
-  console.log("Depositing reward...");
+  console.log('Depositing reward...')
   await (
     await distributionCreator
       .connect(deployer)
       .signAndCreateDistribution(params, signature)
-  ).wait();
-  console.log("...Deposited reward ✅");
+  ).wait()
+  console.log('...Deposited reward ✅')
 
   // Now if you want to create multiple distributions at once, you may also do it as well
 
   const params1 = {
     uniV3Pool: pool,
     rewardToken: rewardTokenAddress,
-    positionWrappers: ["0xa29193Af0816D43cF44A3745755BF5f5e2f4F170"],
+    positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
     wrapperTypes: [2],
-    amount: parseEther("500"),
+    amount: parseEther('500'),
     propToken0: 4000,
     propToken1: 2000,
     propFees: 4000,
@@ -247,16 +248,16 @@ async function main() {
     numEpoch: 500,
     boostedReward: 0,
     boostingAddress: ZERO_ADDRESS,
-    rewardId: "0x",
-    additionalData: "0x",
-  };
+    rewardId: '0x',
+    additionalData: '0x',
+  }
 
   const params2 = {
     uniV3Pool: pool,
     rewardToken: rewardTokenAddress,
-    positionWrappers: ["0xa29193Af0816D43cF44A3745755BF5f5e2f4F170"],
+    positionWrappers: ['0xa29193Af0816D43cF44A3745755BF5f5e2f4F170'],
     wrapperTypes: [2],
-    amount: parseEther("750"),
+    amount: parseEther('750'),
     propToken0: 4000,
     propToken1: 2000,
     propFees: 4000,
@@ -265,21 +266,21 @@ async function main() {
     numEpoch: 500,
     boostedReward: 0,
     boostingAddress: ZERO_ADDRESS,
-    rewardId: "0x",
-    additionalData: "0x",
-  };
+    rewardId: '0x',
+    additionalData: '0x',
+  }
 
-  console.log("Depositing multiple rewards at once...");
+  console.log('Depositing multiple rewards at once...')
   await (
     await distributionCreator
       .connect(deployer)
       .createDistributions([params1, params2])
-  ).wait();
-  console.log("...Deposited rewards ✅");
+  ).wait()
+  console.log('...Deposited rewards ✅')
 }
 
 main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+  console.error(error)
+  process.exit(1)
+})
 ```
