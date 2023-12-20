@@ -40,7 +40,7 @@ More formal proposals (which are closer to being implemented) are then discussed
 
 After proposals have been properly discussed, they can be voted on through a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) vote.
 
-veANGLE holders are the ones with voting power over the protocol: they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to [delegate their voting power](../guides/app-guides/ANGLE/snapshot-votes.md) to other addresses.
+veANGLE holders are the ones with voting power over the protocol: they are the ones voting to approve and implement or dismiss a proposal concerning the Angle Protocol. If they don't want to participate in Snapshot all votes, they have the opportunity to delegate their voting power to other addresses.
 
 Each vote requires a quorum of 10% of veANGLE holders to be considered valid.
 

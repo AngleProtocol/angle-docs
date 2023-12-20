@@ -24,7 +24,7 @@ A user veANGLE boost does not increase the overall emission of rewards. The boos
 
 Angle forked its staking contract model (also called liquidity gauge) from Curve which has a similar boost system.
 
-As explained [here](../../guides/app-guides/earn/staking.md), not all ANGLE emissions are distributed through staking contracts: for some UniswapV3 gauges, rewards are distributed through an offchain mechanism involving no staking contract. On these gauges, boosts apply as well and the logic with which boosts are computed in this case is similar to how this is done in the staking contracts used for other Angle gauges.
+Not all ANGLE emissions are distributed through staking contracts: for some UniswapV3 gauges, rewards are distributed through an offchain mechanism involving no staking contract. On these gauges, boosts apply as well and the logic with which boosts are computed in this case is similar to how this is done in the staking contracts used for other Angle gauges.
 
 With this in mind, how are boosts computed for Angle staking contracts? Basically, Angle staking contracts consider that an address holding veANGLE is providing more liquidity than it really is.
 

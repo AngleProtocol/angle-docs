@@ -8,8 +8,6 @@ ANGLE holders can lock their tokens between 1 week and 4 years to obtain veANGLE
 
 Before locking ANGLE, make sure you read all the details about veANGLE and locking [here](../../governance/veANGLE/). Remember that the veANGLE tokens you'll get are non-transferable (you won't be able to sell it) and that you will not be able to get back your ANGLE tokens during the period for which you have locked them.
 
-If you are new to DeFi, you may also want to check out [this onboarding guide](../newbie.md). Most important thing to have in mind is that to get veANGLE, you need ANGLE in your wallet as well as ETH to pay for the Ethereum network transaction fees.
-
 {% hint style="info" %}
 You can get ANGLE tokens by buying them from any other crypto-asset on [this page](https://app.angle.money/buy) of the app.
 {% endhint %}

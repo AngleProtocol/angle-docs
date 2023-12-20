@@ -8,8 +8,9 @@ coverY: 0
 
 ## Websites
 
-- 📡 [Website](https://angle.money) - Landing page
+- 📡 [Website](https://angle.money)
 - 📐 [Angle App](https://app.angle.money/)
+- 📊 [Analytics](https://analytics.angle.money)
 - 🥨 [Merkl App](https://merkl.angle.money/)
 
 ## Governance
@@ -24,32 +25,18 @@ coverY: 0
 - 🛠 [API](https://api.angle.money)
 - 🧾 [Smart Contract Addresses](https://developers.angle.money/overview/smart-contracts)
 
-## Social
-
-- 🐦 [Twitter](https://twitter.com/AngleProtocol)
-- 💬 [Discord](https://discord.gg/3vaHCJw7Mz)
-  ✍️ [Blog](https://angle.money/blog)
-- 📠 [Telegram](https://t.me/AngleAnnouncements)
-- 📺 [YouTube Channel](https://www.youtube.com/@anglelabs)
-- 🎙️ [The Defi Angle Podcast - Youtube](https://www.youtube.com/@anglelabs)
-- 🐦🎙️ [The Defi Angle Podcast - Twitter](https://twitter.com/TheDefiAngle)
-- 🌳 [Linktree](https://linktr.ee/angleLabs) (to share all our links in one page)
-
-## Contributing
-
-- [Angle Contributions Program](https://gov.angle.money/t/angle-contributions-program/365)
-- [Crew3](https://angleprotocol.crew3.xyz/questboard)
-
 ## Security
 
 - [Audits](resources/audits/)
 - [Immunefi](https://immunefi.com/bounty/angleprotocol/)
 - [Hats.finance](https://app.hats.finance/vaults)
 
-## Analytics
+## Social
 
-- 🗂️ [Analytics](https://analytics.angle.money/home)
-- [Dune Dashboard](https://dune.com/tuta/angle-master-dashboard)
+- 🐦 [Twitter](https://twitter.com/AngleProtocol)
+- 💬 [Discord](https://discord.gg/3vaHCJw7Mz)
+  ✍️ [Blog](https://angle.money/blog)
+- 📺 [YouTube Channel](https://www.youtube.com/@anglelabs)
 
 ## Integrations
 
@@ -60,8 +47,11 @@ coverY: 0
 
 ### On/off-ramp
 
+- [Unblock](https://angle.getunblock.com/)
+- [Holyheld](https://holyheld.com/)
 - [Transak](https://global.transak.com/?apiKey=19f99004-7aee-40ff-93c6-7676a2c002ed&networks=ethereum,polygon&defaultCryptoCurrency=agEUR&cryptoCurrencyList=agEUR&productsAvailed=BUY,SELL)
 - [Mt Pelerin](https://www.mtpelerin.com/sell-crypto)
+- [Spendit](https://spendit.finance/ageur)
 
 ### Custody
 
@@ -82,6 +72,7 @@ coverY: 0
 
 ### Tooling
 
+- [Chainlink agEUR/EUR Feed - Ethereum](https://etherscan.io/address/0xb4d5289C58CE36080b0748B47F859D8F50dFAACb)
 - [Chainlink agEUR/USD Feed - Polygon](https://polygonscan.com/address/0x9b88d07B2354eF5f4579690356818e07371c7BeD)
 - [Superfluid](https://app.superfluid.finance)
 - [LlamaPay](https://llamapay.io)

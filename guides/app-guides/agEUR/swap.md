@@ -4,8 +4,6 @@ description: How to get Angle stablecoins using the Angle app
 
 # 💱 Buy Angle stablecoins
 
-If you are new to crypto, follow our [guide for new crypto users](../../newbie.md) first. Otherwise, keep reading here to see how you can get agEUR directly from Angle.
-
 Angle stablecoins can be bought from the [swap and buy page](https://app.angle.money/swap) of the Angle app. This page leaves two main possibilities:
 
 - swap: that is to say buy or sell through an onchain transaction
@@ -45,27 +43,10 @@ agEUR is supported by a wide range of on-ramp and off-ramp providers which make 
 
 Supported on/off-ramp solutions include:
 
+- Holyheld
+- Unblock
 - Mt Pelerin
 - Transak
 - Wert.io
 
-### Buying agEUR with credit card or bank transfer
-
-To buy agEUR with a credit card or a bank transfer, the only thing you need beyond a credit card is a wallet (like [Ledger](https://www.ledger.com) or [Metamask](https://metamask.io)) to receive the agEUR the on-ramp provider will send you.
-
-These providers usually let you receive the agEUR on the Ethereum or Polygon network.
-
-{% hint style="info" %}
-Note that these partners may ask users to enter personal information above a certain amount.
-{% endhint %}
-
 ![On-ramp](../../../.gitbook/assets/new-app-ramp.png)
-
-### Selling & spending agEUR
-
-If you want to spend agEUR or get EUR back to your bank account, you have a few options:
-
-- Send money back directly to your bank account through one of our off-ramp partners listed above.
-- Spend it with [Fizen](https://fizen.io/) crypto debit card.
-- agEUR is also integrated with [Mover](https://faq.viamover.com/what-does-mover-do), allowing anyone to top-up a debit card and spend agEUR in real life. Check out [this guide](https://faq.viamover.com/angle-protocol/how-to-top-up-mover-debit-card-with-ageur-tokens) to learn how to send agEUR to your Mover card.
-- Swap your agEUR to a token which can be cheaply off-ramped (like EURe) as described [in this guide](../../use-cases/ageur-power-usecase.md#withdrawing-ageur-to-a-bank-account)

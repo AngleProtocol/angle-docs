@@ -6,21 +6,15 @@
 - [⚒ Developers](https://developers.angle.money)
 - [📖 Whitepapers](whitepapers.md)
 - [⚠️ Risks](risks.md)
-- [📒 Glossary](global-glossary.md)
 - [🔗 Quick Links](links.md)
 - [🖼 Stablecoins](stablecoins.md)
 - [🎓 Guides](guides/README.md)
-  - [🚶 First Steps in Crypto](guides/newbie.md)
-  - [💸 Pay and get paid with agEUR](guides/use-cases/ageur-power-usecase.md)
   - [💱 Buy agEUR](guides/app-guides/agEUR/swap.md)
   - [💰 Get stEUR](guides/app-guides/agEUR/stEUR.md)
   - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
   - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
-  - [🍀 Staking and Uniswap V3 incentive mechanism](guides/app-guides/earn/staking.md)
-  - [💰 Buy](guides/app-guides/ANGLE/buy.md)
+  - [💰 Buy ANGLE](guides/app-guides/ANGLE/buy.md)
   - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
-  - [🧪 Gauges](guides/app-guides/ANGLE/gauges-voting.md)
-  - [🗳 Vote](guides/app-guides/ANGLE/snapshot-votes.md)
 
 ## Angle Borrowing Module
 
@@ -68,7 +62,7 @@
 - [🔐 Audits](resources/audits/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [📊 Angle Analytics](resources/analytics.md)
--
+- [📒 Glossary](global-glossary.md)
 
 ## Merkl
 
