@@ -14,8 +14,5 @@ coverY: 0
 | Borrowing Module - Polygon                                           | ✅    |
 | Borrowing Module - Optimism                                          | ✅    |
 | Borrowing Module - Arbitrum                                          | ✅    |
-| Borrowing Module - Avalanche                                         | ✅    |
 | Flash Loans                                                          | ✅    |
 | [Bridge Setup](other/cross-chain.md#bridge-solutions) with LayerZero | ✅    |
-| AMO - Curve Ethereum                                                 | ❌    |
-| Core Module - Ethereum                                               | ❌    |

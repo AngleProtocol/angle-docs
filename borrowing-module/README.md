@@ -10,9 +10,9 @@ Angle Borrowing Module is one of the minting mechanisms for Angle stablecoins.
 
 It is based on a **debt mechanism**, similar to the one used by Maker with DAI. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
 
-This module is designed to be easily deployable across different EVM compatible networks and to work for any kind of stablecoin of the protocol.
+This module can be deployed across different EVM compatible networks and work for any kind of stablecoin of the protocol.
 
-It is also designed to work hands in hands with the other protocol's modules: agEUR, which can also be minted by the protocol's direct deposit modules is for instance fully interoperable between both modules.
+It is also designed to work hands in hands with the other protocol's modules: agEUR, which can also be minted by the protocol's Transmuter module is for instance fully interoperable between both modules.
 
 {% hint style="info" %}
 Smart contract addresses associated to the Borrowing module on different chains and for the different stablecoins of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts).
@@ -45,7 +45,7 @@ The Borrowing module for agEUR is for instance natively deployed on Ethereum but
 
 While the different networks on which the Borrowing module may be deployed for a stablecoin are necessarily inter-connected thanks to bridges, they remain distinct environments. Available liquidity and liquidators are not the same across two different chains, and there are some potential risks with having the same protocol deployed on multiple chains.
 
-The main risk in having the Borrowing module on multiple networks is that liquidations may not behave properly. With less liquidity, there is more slippage and liquidations can be less profitable, increasing the risk that they don't happen.
+The main risk of having the Borrowing module on multiple networks is that liquidations may not behave properly. With less liquidity, there is more slippage and liquidations can be less profitable, increasing the risk that they don't happen.
 
 To prevent this, each instance of the Borrowing module relies on different parameters chosen by governance. For instance, for a same collateral asset on two chains, there may be different amount of agEUR that can be issued on each network: this allows to make sure that liquidations remain profitable on a network based on the available liquidity.
 
