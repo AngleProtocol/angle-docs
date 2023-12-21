@@ -67,20 +67,12 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 
 ## Bridge Solutions
 
+The Angle Bridge infrastructure described in this page only applies to the chains where LayerZero is supported. On the other chains, the canonical version of the agEUR and ANGLE are the ones written down below:
+
 | Chain         | agEUR                                                                                                        | ANGLE                                                          |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | Polygon       | [LayerZero](https://app.angle.money/bridges), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
-| Optimism      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
-| Arbitrum      | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
-| Avalanche     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
-| BNB Chain     | [LayerZero](https://app.angle.money/bridges)                                                                 | [LayerZero](https://app.angle.money/bridges)                   |
-| Gnosis Chain  | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
-| Celo          | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
-| Base          | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
-| Polygon zkEVM | [LayerZero](https://app.angle.money/bridges)                                                                 | ❌                                                             |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
 
-{% hint style="info" %}
-The Angle Bridge infrastructure described in this page only applies to the chains where LayerZero is supported. On the other chains, the canonical version of the agEUR and ANGLE are the ones of the bridge written in the table.
-{% endhint %}
+On Polygon PoS, the canonical representation of the ANGLE token is that of the [Polygon PoS bridge](https://wallet.polygon.technology/bridge). On this chain as well, beyond LayerZero, it's also possible to bridge agEUR using [Polygon PoS bridge](https://wallet.polygon.technology/bridge) solution.

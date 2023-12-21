@@ -17,7 +17,7 @@ These minted stablecoins can then be borrowed by people having a sufficient amou
 
 ## Angle AMOs
 
-While we described above an example of a lending AMO, the Angle Protocol can support different types of AMOs. Before being put in production, each AMO needs to be proposed on Angle governance forum and voted [on Snapshot](https://snapshot.org/#/anglegovernance.eth).
+While we described above an example of a lending AMO, the Angle Protocol can support different types of AMOs. Before being put in production, each AMO needs to be proposed on Angle governance forum and voted.
 
 Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](../governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
 
@@ -27,7 +27,7 @@ As of August 2023, Angle only supports a single lending AMO on Aave V3 with 100k
 
 ### Protocol-owned Liquidity
 
-Angle uses protocol-owned liquidity AMOs to seed some pools with agEUR liquidity. The idea is to match some of the protocol's reserves with agEUR minted from AMOs to provide liquidity. This has many benefits for Angle, among which bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
+Angle uses protocol-owned liquidity AMOs to seed some pools with agEUR liquidity. The idea is to match some of the protocol's reserves with agEUR minted from AMOs to provide liquidity. This helps bootstrapping agEUR liquidity without relying on individual LPs from the start. The size and balances of these AMOs need to be monitored to make sure that the potential loss or bad debt from providing liquidity is never too big for the protocol.
 
 #### Current Protocol LP AMO Positions
 

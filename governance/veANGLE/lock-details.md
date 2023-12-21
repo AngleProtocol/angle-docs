@@ -12,7 +12,7 @@ The first thing to keep in mind when locking ANGLE into veANGLE is that veANGLE 
 
 ### Single lock per address
 
-On a similar page, it should be noted that each account can only have a single lock duration meaning that a single address cannot lock certain ANGLE tokens for 2 years then another set of ANGLE tokens for 3 years etc. All ANGLE per account must have a uniform lock time.
+On a similar page, each account can only have a single lock duration meaning that a single address cannot lock certain ANGLE tokens for 2 years then another set of ANGLE tokens for 3 years etc. All ANGLE per account must have a uniform lock time.
 
 ### Unallocated voting power when increasing lock
 
@@ -58,8 +58,35 @@ $$
 Q_{\texttt{veANGLE}} = \frac{900}{1460} \times 12 = 7.3973
 $$
 
+## Increasing a veANGLE balance
+
+While a veANGLE balance automatically decays over time, there are two ways to increase a veANGLE balance and hereby increase voting power, boost or potential interest received:
+
+- extend the lock expiration date
+- add ANGLE to the lock
+
+When increasing the veANGLE balance of an address, its voting power increases accordingly. However, if the address had previously allocated voting power for gauges, you will have to vote again to have your new voting power taken into account.
+
+**Let’s look at it from an example**:
+
+Let’s say that Carol locks 90 ANGLE for 4 years, giving her a balance of 90 veANGLE, and allocates 50% of her votes to Gauge A. This will take into account 45 veANGLE to allocate to Gauge A.
+
+A year later, Carol’s veANGLE balance will have decreased by 25% as the lock expiration gets closer. She will have 0.75 x 90 = 67.5 veANGLE. The voting power allocated to Gauge A is currently 33.75 veANGLE.
+
+Now, Carol decides to push back her lock’s expiration to 4 years again, giving her her original balance of 90 veANGLE back. She also adds 10 ANGLE to the lock, such that she has a 100 veANGLE balance.
+
+Her voting power is now 100 veANGLE. **However,** only 33.75 of her total veANGLE balance is currently allocated to Gauge A. She needs to re-apply her votes for the balance increase to take effect.
+
+If she wants to put 50% of her 100 veANGLE balance on Gauge A, she needs to do another voting transaction, allocating 50% to Gauge A. This new voting tx will take into account the new 100 veANGLE balance, and allocate half to this gauge.
+
+If she had allocated all her voting power on multiple gauges, she would have to re-apply all of these votes with the new weights she wants to allocate.
+
+{% hint style="info" %}
+Votes on each gauge can be changed only every 10 days.
+{% endhint %}
+
 ## 🤍 veANGLE Governance Whitelisting
 
-Like in Curve and Frax systems, smart contracts & DAOs require whitelisting by governance to lock ANGLE for veANGLE. Only externally owned accounts (EOA) can directly call the veANGLE stake locking function.
+Smart contracts & DAOs require whitelisting by governance to lock ANGLE for veANGLE. Only externally owned accounts (EOA) can directly call the veANGLE stake locking function.
 
-In order to have your protocol or DAO ownn veANGLE, you can begin the governance process with the ANGLE community in the [governance forum](https://gov.angle.money) by submitting a whitelisting proposal.
+In order to have your protocol or DAO own veANGLE, you can begin the governance process with the ANGLE community in the [governance forum](https://gov.angle.money) by submitting a whitelisting proposal.

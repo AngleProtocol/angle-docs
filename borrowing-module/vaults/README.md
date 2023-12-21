@@ -36,37 +36,27 @@ When users deposit collateral to open a vault, they can choose the Leverage feat
 
 ![Angle Leverage exposure](../../.gitbook/assets/Leverage-example.jpg)
 
-{% hint style="info" %}
-Leveraging collateral exposure is a very useful feature for users wanting to safely increase exposure to their collateral token on chain. It is however reserved to more advanced users as it increases liquidation risks.
-{% endhint %}
-
 ### Leveraged yield & Self-repaying loans
 
 Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used to borrow agTokens. It means that users can take out loans with an interest rate cost smaller than what they are earning from their yield-bearing collateral asset.
 
 The Borrowing module is built such that there is no opportunity cost to deposit yield-bearing assets into it. Any external rewards earned by collateral assets (like staked Curve LP tokens earning CRV) can be claimed from Angle UI. Users earn the same rewards, or more, than what they'd be earning if they hadn't put their asset in Angle.
 
-Support for yield-bearing tokens as collateral thus makes Angle Borrowing module a good place to earn a **leveraged yield on these assets**. If the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
+Support for yield-bearing tokens as collateral thus makes Angle Borrowing module a place to earn a **leveraged yield on these assets**. If the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
 
 ![Leveraged Yield](../../.gitbook/assets/leveraged-yield.png)
 
-{% hint style="info" %}
-Make sure to understand how the concerned tokens work and their associated risks before using them as collateral. More info about the risks in our blog post about [Leveraged yield in DeFi](https://www.angle.money/blog/learn/angle-explains-leveraged-yield-in-defi).
-{% endhint %}
-
 ### Composable actions
 
-With an opened vault, there are many different actions that can be performed beyond borrowing stablecoins: adding collateral, removing collateral from it, repaying the agToken debt. All these actions can be combined with one another in a single transaction.
+With an opened vault, there are many different actions that can be performed beyond borrowing stablecoins: adding collateral, removing collateral from it, repaying the agToken debt. All these actions can be combined with one another in a single transaction, which notably allows for capital efficient interactions with Angle vaults.
 
 {% hint style="info" %}
 For more details on how to combine transactions in a modular way with the protocol, you can check [this page](https://developers.angle.money/borrowing-module-contracts/smart-contract-docs/vaultmanager) of our developers documentation.
 {% endhint %}
 
-This design enables capital efficient interactions with Angle vaults.
-
 ### Capital-efficient debt repayment
 
-An application of this is that users can repay their debt without any capital requirement.
+Angle Borrowing module is designed so that users can repay their debt without any capital requirement.
 
 At some point, users may want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users can just get back the remaining collateral after the debt has been fully paid back.
 
@@ -134,7 +124,7 @@ A debt transfer operation increases the health ratio of the first vault, as it h
 
 ### Interacting with multiple vaults at the same time
 
-Angle is one of the first protocols to implement a permit function on a NFT/ERC721 contract to grant or revoke approval to an address for all the vaults of a contract with a gasless permit signature.
+Angle implements a permit function on its contracts, which allows granting or revoking approval to an address for all the vaults of a contract with a gasless permit signature.
 
 This allows users to interact with multiple vaults from different collaterals in just one transaction using a router contract. In this situation, by just granting approval with a signature to a router contract, they can for instance repay the debt from all their vaults at once, or perform multiple swap/wrapping transactions (e.g. from ETH to wstETH) before adding collateral to a vault.
 
@@ -154,8 +144,8 @@ Angle Borrowing module only relies on two types of keepers: liquidators, which e
 
 #### Oracle
 
-Angle Borrowing module uses Chainlink price feeds, and may sometimes also rely on onchain data. For the case of wstETH for example, the protocol needs to call some functions of the StETH contract besides the Chainlink feeds to get the EUR price of wstETH.
+Angle Borrowing module uses Chainlink and Redstone price feeds, and may sometimes also rely on onchain data. For the case of wstETH for example, the protocol needs to call some functions of the stETH contract besides the Chainlink or Redstone feeds to get the EUR price of wstETH.
 
 ## Next
 
-The next sections will dive in more details into some aspects of the vaults, such as [fees](fees.md), [liquidations](liquidations.md) and the [whitelisting](whitelisting-and-volatile-assets.md) of specific addresses.
+The next sections will dive in more details into some aspects of the vaults, such as [fees](fees.md) and [liquidations](liquidations.md).

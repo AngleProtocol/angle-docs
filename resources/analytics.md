@@ -26,8 +26,6 @@ If you think about more data that would be useful to display about Angle or are 
 
 ## Angle Community Dune Dashboards
 
-Some community members have also built dedicated Dune dashboards about Angle. You can find complementary information about what is going on in the protocol. However, note that some data might be inaccurate or outdated, and you should always make sure to double-check the information.
+Some community members have built [dedicated Dune dashboards](https://dune.com/SebVentures/Angle-Dashboard) about Angle where you can find complementary information about what is going on in the protocol.
 
-Some of the Angle related Dune dashboards have been grouped in one [Angle Main Dashboard](https://dune.com/tuta/angle-master-dashboard).
-
-If you build an Angle dashboard yourself, drop a message on Discord and we will add it there.
+If you build an Angle dashboard yourself, drop a message on Discord and we will list it here.
