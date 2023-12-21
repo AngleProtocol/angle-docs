@@ -41,12 +41,4 @@ Selling an Angle stablecoin through the Swap page works exactly in the opposite 
 
 agEUR is supported by a wide range of on-ramp and off-ramp providers which make it accessible from a simple credit card payment or bank transfer. All of these are listed in the Buy toggle of the [swap and buy page](https://app.angle.money/swap).
 
-Supported on/off-ramp solutions include:
-
-- Holyheld
-- Unblock
-- Mt Pelerin
-- Transak
-- Wert.io
-
 ![On-ramp](../../../.gitbook/assets/new-app-ramp.png)

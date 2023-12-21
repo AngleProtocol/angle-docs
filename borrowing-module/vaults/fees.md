@@ -8,7 +8,7 @@ description: Fees and Revenue in Angle Borrowing Module
 
 - Angle Borrowing module makes revenue (in stablecoins) from the users borrowing its stablecoins, from liquidations
 - If some vaults are liquidated too late, the protocol could also accrue a bad debt
-- Surplus and bad debt are pooled across all existing `VaultManager` contracts, and a portion of the protocol revenue is distributed to veANGLE holders.
+- Surplus and bad debt are pooled across all existing `VaultManager` contracts
 
 ## Fees
 
@@ -94,5 +94,3 @@ In the case where the protocol accrues too much bad debt, there is a settlement 
 All the revenue and bad debt from this module are gathered in `Treasury` contracts. The protocol relies on keepers to fetch revenue from all `VaultManager` contracts.
 
 Interestingly, stablecoins are minted when revenue is accrued. The reason for this is that if there is only one borrower borrowing 100 stablecoins at a 1% interest rate, then after a year this borrower needs to repay 101 stablecoins. But if only 100 stablecoins have been issued, there's no way for this borrower to repay its debt: as such when accruing revenue from `VaultManager` contracts, the protocol mints stablecoins. The logic is that these stablecoins should in some way end up in the market for vault owners to buy them and repay their debt.
-
-If there is no bad debt, surplus accumulated is split between a reserve and the Governance according to a parameter that can be set by Governance. Keepers again are then in charge of pushing the share of the surplus going to governance to a `surplusManager` address, that should take care of distributing them to veANGLE holders as interest, or to other agEUR holders.

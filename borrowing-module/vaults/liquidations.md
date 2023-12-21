@@ -64,7 +64,7 @@ With:
 - `e` as the liquidation discount
 - `s` as the liquidation surcharge
 
-In some conditions, the variables at liquidation are such that $HF\_{post}(x\_{max})$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
+In some conditions, the variables at liquidation are such that $$HF\_{post}(x\_{max})$$ is a decreasing function of `x`: the health factor can't be put back at a healthy value. In this case, liquidators are able to liquidate all of a position’s collateral to avoid leaving an amount of debt that is too small to repay. In such situation, it is possible that some of the debt is left unpaid. This will be pooled across contracts and accounted for as bad debt, to make sure no surplus is distributed until this debt is erased.
 
 In practice, full liquidations should be extremely occasional and most vaults should get less than 50% of their position liquidated. This allows them to keep as much collateral in their vault as possible, and make liquidations in Angle Borrowing module less harmful to borrowers than elsewhere in the industry.
 
@@ -107,7 +107,7 @@ $$
 Where `f` is a piecewise linear increasing function of the veANGLE balance, capped by a certain amount.
 
 {% hint style="info" %}
-This feature may not always be activated, and governance has the choice to set it or not.
+This feature has never been activated so far.
 {% endhint %}
 
 ### No Capital Requirements
@@ -118,7 +118,9 @@ This decreases **a lot** the barriers to entry for potential liquidators and mak
 
 ### Whitelisted Liquidations
 
-For some collateral assets, liquidations may be whitelisted in the sense that only some specific addresses can be allowed to participate in the liquidation of unhealthy vaults. More on this is explained [here](whitelisting-and-volatile-assets.md).
+For some collateral assets, liquidations may be whitelisted in the sense that only some specific addresses can be allowed to participate in the liquidation of unhealthy vaults.
+
+This is typically the case of some real-world asset vaults of the protocol where only addresses selected by governance are allowed to liquidate.
 
 ## Example
 

@@ -5,16 +5,8 @@
 - [📐 Angle Documentation Portal](README.md)
 - [⚒ Developers](https://developers.angle.money)
 - [📖 Whitepapers](whitepapers.md)
-- [⚠️ Risks](risks.md)
-- [🔗 Quick Links](links.md)
 - [🖼 Stablecoins](stablecoins.md)
-- [🎓 Guides](guides/README.md)
-  - [💱 Buy agEUR](guides/app-guides/agEUR/swap.md)
-  - [💰 Get stEUR](guides/app-guides/agEUR/stEUR.md)
-  - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
-  - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
-  - [💰 Buy ANGLE](guides/app-guides/ANGLE/buy.md)
-  - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
+- [⚠️ Risks](risks.md)
 
 ## Angle Borrowing Module
 
@@ -22,7 +14,6 @@
 - [🏦 Vaults](borrowing-module/vaults/README.md)
   - [💵 Fees and revenue](borrowing-module/vaults/fees.md)
   - [🎳 Liquidations](borrowing-module/vaults/liquidations.md)
-  - [🤝 Whitelisting and volatile assets](borrowing-module/vaults/whitelisting-and-volatile-assets.md)
   - [🗡 Vaults Settlement](borrowing-module/vaults/settlement.md)
 - [📚 Glossary](borrowing-module/glossary.md)
 
@@ -53,8 +44,6 @@
   - [🔒 Lock Details](governance/veANGLE/lock-details.md)
   - [🗳 Gauges](governance/veANGLE/gauges.md)
   - [💥 Boost](governance/veANGLE/boost.md)
-  - [📈 Interest](governance/veangle/interest.md)
-  - [🔓 Increasing your veANGLE balance](governance/veANGLE/increasing-veANGLE.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
 ## Resources
@@ -62,7 +51,15 @@
 - [🔐 Audits](resources/audits/README.md)
 - [🐛 Bug Bounty](resources/audits/bug-bounty.md)
 - [📊 Angle Analytics](resources/analytics.md)
+- [🔗 Quick Links](links.md)
 - [📒 Glossary](global-glossary.md)
+- [🎓 Guides](guides/README.md)
+  - [💱 Buy agEUR](guides/app-guides/agEUR/swap.md)
+  - [💰 Get stEUR](guides/app-guides/agEUR/stEUR.md)
+  - [🏦 Borrow](guides/app-guides/agEUR/borrow.md)
+  - [🌉 Bridge](guides/app-guides/agEUR/bridge.md)
+  - [💰 Buy ANGLE](guides/app-guides/ANGLE/buy.md)
+  - [🔒 Lock](guides/app-guides/ANGLE/lock.md)
 
 ## Merkl
 

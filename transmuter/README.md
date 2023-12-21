@@ -20,15 +20,13 @@ Practically speaking, the three operations work as follows:
 - [**Burn:**](mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
 - [**Redeem:**](redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
 
-While we go deeper in the following pages about the core principles behind the Transmuter system, this schema illustrates, in the case of agEUR, how the system's main functionalities work:
-
 ![Transmuter Global Mechanism for agEUR](../.gitbook/assets/docs-Transmuter-global-mechanism.jpg)
 
 ## 🏦 Main Properties
 
 Built in the aftermath of the USDC depeg as an improvement over price stability modules for stablecoin protoocols, the Transmuter system is designed with the following key properties:
 
-**Scalability:** Angle Transmuter enables minting and burning with limited fees from a wide range of assets. Its mechanisms work similarly with $1m TVL as with $1bn TVL
+**Scalability:** Angle Transmuter enables minting and burning with limited fees from a wide range of assets. Its mechanisms work similarly with $1m TVL as with $1bn TVL.
 
 **Resilience:** The underlying mechanisms of the Transmuter system are all fully autonomous and predictable by all types of stakeholders. In case of a black swan event, Transmuter provides reasons to bet on the stablecoin returning to its target price.
 

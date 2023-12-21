@@ -11,7 +11,7 @@ description: How the gauge voting system works with Angle
 
 ## ✍️ Gauge Voting Principle
 
-Besides voting on governance proposals, veANGLE owners can vote for ANGLE gauge weights with their veANGLE balance. The gauge system implemented by Angle is similar to that of Frax and of Curve.
+Besides voting on governance proposals, veANGLE owners can vote for ANGLE gauge weights with their veANGLE balance. The gauge system implemented by Angle is similar to that of Curve among others.
 
 A gauge corresponds to a contract where incentives are sent. By voting for a gauge, veANGLE holders increase the amount of ANGLE tokens sent to the related contract with respect to the others. veANGLE holders therefore vote for the gauges they think should receive more rewards.
 
@@ -36,7 +36,7 @@ When updating gauge weights and putting more weight on one gauge with respect to
 {% endhint %}
 
 {% hint style="info" %}
-When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power. More info on the [Increasing veANGLE balance page](increasing-veANGLE.md).
+When increasing the veANGLE balance by locking more tokens or extending a lock, this new veANGLE balance is not taken into account in the current vote allocation. Be careful to apply this new voting power. More info [here](./lock-details.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -68,16 +68,3 @@ Given that a wide range of contracts can be considered Angle protocol gauges, th
 {% hint style="info" %}
 Available gauges of the protocol and their type can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges).
 {% endhint %}
-
-### Gauge type weight
-
-Each gauge type has its own weight, which can be set to shift the distribution of rewards in favor of one or another type of gauges. At the moment, the weights are all set equally so it has no impact. Governance can vote to change these gauge type weights.
-
-**Example**
-Assuming an inflation rate $$r$$ changing with every epoch (1 week), a gauge weight $$w_g$$ and a gauge type weight $$w_t$$, then the stream of inflation going to a gauge is:
-
-$$
-r' = w_g \times w_t \times r
-$$
-
-Every week, depending on gauge votes, the weight $$w_g$$ can change. Governance can also vote to update the weight $$w_t$$.

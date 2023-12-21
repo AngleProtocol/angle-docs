@@ -16,7 +16,7 @@ The only address with minting capability is the Angle Governor Multisig.
 
 The ANGLE token is the backbone of the Angle Protocol allowing it to be governed in a fully decentralized way.
 
-The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution was broken down as follows:
+The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution is broken down as follows:
 
 ![ANGLE Distribution](../.gitbook/assets/angle-token-allocation.jpg)
 
@@ -36,9 +36,9 @@ Contracts and places where ANGLE inflation is routed need to be whitelisted by t
 Available gauges of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts/mainnet-contracts#gauges). Note that whitelisted contracts can be killed which means that a contract can stop receiving ANGLE rewards if voted by Angle DAO. In this case, accumulated ANGLE rewards can still be claimed after the gauge has been removed.
 {% endhint %}
 
-Some Angle gauges (type 0 gauges and some type 2 gauges) present specific features designed to favor veANGLE holders. People eligible for rewards within these gauges can earn a boost in the emissions they receive if they hold veANGLE tokens. Note that this doesn't impact the inflation rate, and only changes the rewards they receive compared to other LPs on the concerned pools.
+Some Angle gauges present specific features designed to favor veANGLE holders. People eligible for rewards within these gauges can earn a boost in the emissions they receive if they hold veANGLE tokens. Note that this doesn't impact the inflation rate, and only changes the rewards they receive compared to other LPs on the concerned pools.
 
-This boost can go up to x2.5 the base quantity of rewards. It also depends on the liquidity available for rewards and on the veANGLE balance of the stakers. More information about boosting can be found on the [boost](veANGLE/boost.md) page.
+This boost can go up to x2.5 the base quantity of rewards. It also depends on the liquidity available for rewards and on the veANGLE balance of the other participants in the gauge. More information about boosting can be found on the [boost](veANGLE/boost.md) page.
 
 #### Gauge Voting
 
@@ -62,13 +62,11 @@ Leftover tokens meant to be distributed by this medium are stored on the [`Angle
 
 20% of the tokens are controlled by the DAO Treasury: the DAO is able to vote for how and where to allocate these tokens.
 
-This Treasury can be used to build protocol reserves through different incentives like DAO-to-DAO swaps, or more, and to increase incentives through specific rewards programs.
+This Treasury can be used to build protocol reserves through different incentives and to increase incentives through specific rewards programs.
 
 ANGLE tokens from the DAO Treasury are stored on the governance multisig.
 
-2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by the guardian multisig signer (called the `AngleMaster`) to get more flexibility when it comes to implementing programs like Olympus Pro.
-
-This multisig is a 2/3 Gnosis multisig controlled by the 3 co-founders of the protocol.
+2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by the guardian multisig signer (called the `AngleMaster`) to get more flexibility when it comes to implementing liquidity programs. This multisig is a 2/3 Gnosis multisig controlled by the 3 co-founders of the protocol.
 
 ### Grants and Partnerships
 
@@ -80,8 +78,8 @@ Tokens from this pocket are stored in the `AngleMaster` multisig.
 
 These tokens are subject to a **linear vesting of 3 years (starting October 2021)**.
 
-* 18% to Angle Labs team members
-* 10% to early backers
+- 18% to Angle Labs team members
+- 10% to early backers
 
 With this vesting schedule, liquidity distributed through liquidity mining to the Community is guaranteed to be bigger than that going to team and early backers.
 
@@ -89,6 +87,6 @@ In order to reduce the exposure of the funds potentially at risk in this contrac
 
 ## Changelog
 
-* January 2022: ANGLE's tokenomics was upgraded with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
-* October 2022: [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
-* March 2023: ANGLE emissions were paused during this period and resumed late April 2023.
+- January 2022: ANGLE's tokenomics was upgraded with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
+- October 2022: [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
+- March 2023: ANGLE emissions were paused during this period and resumed late April 2023.

@@ -35,7 +35,7 @@ Rewards of this bounty are distributed according to the impact of the vulnerabil
 
 All Critical Smart Contract bug reports require a PoC and a suggestion for a fix to be eligible for a reward. All High and Medium Smart Contract bug reports require a PoC to be eligible for a reward.
 
-Vulnerabilities marked as “Acknowledged”, “ Accepted Risk” or “Closed” in the [Chainsecurity security review](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report.pdf) from July 2021, in the [Sigma Prime security review](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report.pdf) from July 2021 and in the Chainsecurity security reviews from December 2021 and April 2022 are not eligible for a reward.
+Vulnerabilities marked as “Acknowledged”, “ Accepted Risk” or “Closed” in the [Chainsecurity security review](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report.pdf) from July 2021, in the [Sigma Prime security review](https://github.com/AngleProtocol/angle-core/blob/main/audits/Chainsecurity%20Audit%20Report.pdf) from July 2021, in the Chainsecurity security reviews from December 2021 and April 2022 and in the Code4rena audit from June 2023 are not eligible for a reward.
 
 Payouts are handled by the Angle team directly and are denominated in USD. However, payouts are done in ANGLE or USDC, with the choice of the ratio at the discretion of the team.
 
@@ -45,7 +45,7 @@ Payouts are handled by Angle Labs team directly and are denominated in USD. Howe
 
 ### Assets in Scope
 
-The smart contracts in scope for this bounty are detailed in the [Angle bug bounty page on Immunefi](https://immunefi.com/bounty/angleprotocol/). They can be found on the [Core repo of the protocol](https://github.com/AngleProtocol/angle-core). However, only those in the Assets in Scope table are considered as in-scope of the bug bounty program.
+The smart contracts in scope for this bounty are detailed in the [Angle bug bounty page on Immunefi](https://immunefi.com/bounty/angleprotocol/). They can be found in the various [Solidity repos of the protocol](https://github.com/AngleProtocol/). However, only those in the Assets in Scope table are considered as in-scope of the bug bounty program.
 
 ## Hats.finance Bug Bounty Overview
 
