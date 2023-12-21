@@ -19,7 +19,7 @@ These minted stablecoins can then be borrowed by people having a sufficient amou
 
 While we described above an example of a lending AMO, the Angle Protocol can support different types of AMOs. Before being put in production, each AMO needs to be proposed on Angle governance forum and voted.
 
-Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance multisig](../governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts.
+Management of AMOs across different chains differs depending on their type. Some of them are managed by [the governance or guardian multisig](../governance/angle-dao.md#🗳-voting) on the corresponding chain. Others are managed fully automatically via trustless smart contracts or directly via the Timelock of the protocol on the corresponding chain.
 
 {% hint style="info" %}
 As of August 2023, Angle only supports a single lending AMO on Aave V3 with 100k minted agEUR and some protocol-owned liquidity AMOs.

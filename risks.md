@@ -47,9 +47,7 @@ The protocol, in [its borrowing module](./borrowing-module/README.md), comes wit
 
 ## Governance Risk
 
-Angle is a decentralized protocol controlled by a DAO. A manipulation of the governance systems of the protocol, a wrongdoing from a majority of [the governance multisig signers](./governance/angle-dao.md#governance-multi-sig-signers) or a majority attack could lead the protocol to lose a portion if not all its funds.
-
-The distribution of the voting tokens is already well decentralized, and the governance multisig signers have been chosen based on their reputation and what they have to lose in the industry, but there is so far no irrevocable mechanism in place to limit this risk. Note that there are [some ongoing discussions](https://gov.angle.money/t/angle-roadmap-to-a-fully-onchain-governance-system/736/11) to fully change the governance systems of the protocol. It would not reduce the governance risk to zero though.
+Angle is a decentralized protocol controlled by a DAO. A manipulation of the governance systems of the protocol, a majority attack not caught up by the protocol emergency multisig could lead the protocol to lose a portion if not all its funds.
 
 ## Failure of the underlying mechanisms
 

@@ -8,7 +8,7 @@
 - [🖼 Stablecoins](stablecoins.md)
 - [⚠️ Risks](risks.md)
 
-## Angle Borrowing Module
+## Borrowing Module
 
 - [🔭 Borrowing Module Overview](borrowing-module/README.md)
 - [🏦 Vaults](borrowing-module/vaults/README.md)
@@ -30,13 +30,13 @@
 
 - [💸 Angle Savings System](savings/README.md)
 
-## Stablecoins Side Modules
+## Side Modules
 
 - [🌉 Angle Cross-Chain Setup](other/cross-chain.md)
 - [⚙️ Algorithmic Market Operations](other/amo.md)
 - [⚡️ Flash Loans](other/flash-loans.md)
 
-## Protocol Governance
+## Governance
 
 - [🗳 Angle DAO](governance/angle-dao.md)
 - [🚀 ANGLE Token](governance/angle-token.md)
