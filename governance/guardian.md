@@ -13,10 +13,7 @@ description: The Guardian to take rapid decisions in a crisis
 
 The Guardian role is a privileged role granted to some addresses on every chain where the protocol is deployed. All the privileges of the guardian are also available to the governor addresses (e.g. the `Timelock` addresses) of the Angle Protocol.
 
-This guardian role is currently held on every chain by:
-
-- the [4/6 emergency multisig](./angle-dao.md#canceller-role-and-emergency-multisig) of the protocol
-- a 2/3 Gnosis Multisig controlled by the same Angle Labs team members as those in the emergency multisig (the 3 co-founders of the project).
+This guardian role is currently held on every chain by a 2/3 Gnosis Multisig controlled by the same Angle Labs team members as those [in the emergency multisig](<(./angle-dao.md#canceller-role-and-emergency-multisig)>) (the 3 co-founders of the project).
 
 If a guardian role with specific rights is needed, it is because there could be some situations in the protocol which are time sensitive. In case there is a flaw in one of the contracts where an attacker can systematically make a profit, we should be able to pause the necessary parts of the contract without having to wait for the end of a governance vote for its execution.
 

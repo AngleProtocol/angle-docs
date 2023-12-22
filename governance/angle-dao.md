@@ -48,7 +48,7 @@ All governance contract addresses can be found [here](https://developers.angle.m
 
 Before involving any onchain action, the first step in any governance process is getting a proposal out to be debated.
 
-Governance proposals and improvements are first discussed on our [Discord](https://discord.com/invite/5Af6xum9bc), where there is a dedicated **proposals** section.
+Governance proposals and improvements are usually first discussed on our [Discord](https://discord.com/invite/5Af6xum9bc), where there is a dedicated **proposals** section.
 
 More formal proposals (which are closer to being implemented) are then discussed in our governance forum at [gov.angle.money](https://gov.angle.money).
 
@@ -57,6 +57,10 @@ More formal proposals (which are closer to being implemented) are then discussed
 Once proposals have been discussed, they can be voted on Angle voting module. This module is deployed on Ethereum and is based largely on [OpenZeppelin Governor Bravo contracts](https://docs.openzeppelin.com/contracts/4.x/governance#proposal_lifecycle) that Compound or Uniswap rely on among others.
 
 Practically speaking, through this system, anyone with enough voting power can submit a proposal to Angle governance smart contracts, under the form of onchain code. For any submitted proposal, there is a delay before it goes into effect. Once this delay is passed, veANGLE holders or their delegates can vote on the submitted code.
+
+{% hint style="warning" %}
+There is no front interface available to submit proposal. The [angle-governance](https://github.com/AngleProtocol/angle-governance) repository comes with prepared scripts and helpers to facilitate the submission of proposals onchain.
+{% endhint %}
 
 If a majority of veANGLE holders vote in favor of a proposal, and if the amount of voters with respect to the total supply of veANGLE at the start of the vote is big enough, proposals can then be pushed to the execution module of the protocol. If there is no majority of support or no quorum for the proposal, then it is simply cancelled and cannot lead to any onchain modification of the protocol's state.
 
@@ -79,7 +83,7 @@ Note that due to how the veANGLE contract works, if you have delegated voting po
 Angle voting module comes with several add-ons with respect to the base `GovernorBravo` implementation from Compound or Uniswap
 
 - **Fractional voting:** Angle Governance makes use of [ScopeLift’s fractional voting](https://github.com/ScopeLift/flexible-voting/blob/master/src/GovernorCountingFractional.sol). This allows for users to split their voting power between for/against/abstain. It also allows smart contracts/custodians to pass through the voting power to liquidity providers based on their relative LP stake.
-- **Short-circuits:** It may be the case that the voting period is too short if a majority of veANGLE holders have already expressed their votes. Angle governance system enables votes to finish before the end if an oustanding majority of voters.
+- **Short-circuit:** It may be the case that the voting period is too short if a majority of veANGLE holders have already expressed their votes. Angle governance system enables votes to finish before the end if an oustanding majority of voters voted in favor.
 - **Preventing late quorum:** If someone votes on a proposal and causes it to reach quorum right before the end of the voting period, then voting period can be extended for a period
 - **Relative quorums:** quorums are expressed as fractions of the total veANGLE voting power
 
