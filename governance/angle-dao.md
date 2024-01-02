@@ -38,7 +38,7 @@ This system is split between two main modules:
 - a decision module: that is to say a voting mechanism
 - an execution module capable of either bridging decisions to the chains the protocol is deployed on or simply executing these decisions on the chain where they are taken
 
-![Angle Governance Overview](/.gitbook/assets/angle-DAO.png)
+![Angle Governance Overview](/.gitbook/assets/governance-voting-module.jpg)
 
 {% hint style="warning" %}
 All governance contract addresses can be found [here](https://developers.angle.money/overview/smart-contracts). The code for these smart contracts is available [here](https://github.com/AngleProtocol/angle-governance) and it is possible to interact with Angle voting module directly from the Angle App [here](https://app.angle.money).
