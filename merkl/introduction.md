@@ -26,7 +26,7 @@ Merkl accepts incentives of any ERC-20 token on any pool of the supported AMMs. 
 
 ## ⚙️ Mechanism
 
-Merkl is based on an offchain script that looks at the onchain data of the incentivized pools. It then computes the rewards for all LPs of these pools according to the preferences of the incentivizor. Based on this, the script aggregates all campaigns data in a Merkle tree, then compressed it into a Merkle root and pushes onchain to allow LPs to claim their rewards.
+Merkl is based on an offchain script that looks at the onchain data of the incentivized pools. It then computes the rewards for all LPs of these pools according to the preferences of the incentivizor. Based on this, the script aggregates all campaigns data in a Merkle tree, then compresses it into a Merkle root and pushes onchain to allow LPs to claim their rewards.
 
 The script is ran regularly for the period between when it is executed and its last execution. Every time the script is ran, it only looks at the onchain data related specifically to this period of time.
 
