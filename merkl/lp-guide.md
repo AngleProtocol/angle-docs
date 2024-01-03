@@ -10,7 +10,7 @@ All pools using Merkl are listed at [merkl.angle.money](https://merkl.angle.mone
 
 {% embed url="https://www.youtube.com/embed/8tpGSHglVlc" %}
 
-To receive rewards listed on Merkl, you can provide liquidity directly one of the listed pools, or on one of the supported position / liquidity managers. If you are using a liquidity manager, be careful to understand how the liquidity manager rebalances liquidity.
+To receive rewards listed on Merkl, you can provide liquidity directly to one of the listed pools, or to one of the supported position / liquidity managers. If you are using a liquidity manager, be careful to understand how the liquidity manager rebalances liquidity.
 
 Merkl comes with an anti DoS filter which means that positions with less than \$20 of liquidity are not eligible for incentives.
 
