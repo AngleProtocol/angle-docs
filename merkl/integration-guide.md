@@ -32,7 +32,7 @@ You can filter from the `pools` object to only display the pools of your choice 
 
 The `rewardsPerToken` object lets you get how much rewards of a specific token can be claimed by a user for a specific pool.
 
-This object maps each reward token to the total amount of rewards accumulated on the pool for a user. It includes the rewards that have already been claimed as well as to the amount of unclaimed tokens on the pool. It also details where these tokens have been earned (Uniswap V3, Gamma, ...).
+This object maps each reward token to the total amount of rewards accumulated on the pool for a user. It includes the rewards that have already been claimed as well as the amount of unclaimed tokens on the pool. It also details where these tokens have been earned (Uniswap V3, Gamma, ...).
 
 ## Claiming user rewards
 
