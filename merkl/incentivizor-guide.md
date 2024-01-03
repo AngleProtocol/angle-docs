@@ -45,7 +45,7 @@ Then, you can customize any of the campaign formula parameters. When this is don
 Any address holding a position or a position manager token will be able to claim their rewards at the end of each [epoch](./supported-chains-amms.md) according to how they provided liquidity on the pool.
 
 {% hint style="info" %}
-Merkl App does not integrate well with smart contract wallets when it comes to providing signatures, so if you're using a smart contract wallet, please refer to the section below. If your address have been whitelist, check out the guide for Gnosis Safe multisig [here below](#if-your-multisig-has-been-whitelisted).
+Merkl App does not integrate well with smart contract wallets when it comes to providing signatures, so if you're using a smart contract wallet, please refer to the section below. If your address has been whitelisted, check out the guide for Gnosis Safe multisig [here below](#if-your-multisig-has-been-whitelisted).
 {% endhint %}
 
 ![Merkl Script](../../.gitbook/assets/docs-merkl-for-distributors.png)
@@ -150,7 +150,7 @@ async function main() {
   const ZERO_ADDRESS = ethers.constants.AddressZero
   const MAX_UINT256 = ethers.constants.MaxUint256
 
-  // Address of the reward token to sned
+  // Address of the reward token to send
   const rewardTokenAddress = '0x84FB94595f9Aef81147cD4070a1564128A84bb7c'
   // Address of the pool
   const pool = '0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80'
