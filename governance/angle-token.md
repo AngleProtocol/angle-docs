@@ -64,7 +64,7 @@ Leftover tokens meant to be distributed by this medium are stored on the [`Angle
 
 This Treasury can be used to build protocol reserves through different incentives and to increase incentives through specific rewards programs.
 
-ANGLE tokens from the DAO Treasury are stored on the governance multisig.
+ANGLE tokens from the DAO Treasury are stored on the Timelock contract on mainnet.
 
 2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by the guardian multisig signer (called the `AngleMaster`) to get more flexibility when it comes to implementing liquidity programs. This multisig is a 2/3 Gnosis multisig controlled by the 3 co-founders of the protocol.
 

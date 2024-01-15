@@ -45,9 +45,9 @@ For agEUR, the parameters chosen are y=10% and x=0.9.
 
 ### Rate Updates
 
-The rate schedule above cannot be implemented automatically in a non manipulative way, and Angle relies on its governance multisig to enforce it.
+The rate schedule above cannot be implemented automatically in a non manipulative way, and Angle relies on its governance to enforce it.
 
-While only the governance multisig can set the maximum rate (`y`) value, the guardian multisig can update the rate of the savings contract under the following conditions:
+While only governance addresses can set the maximum rate (`y`) value, the guardian multisig can update the rate of the savings contract under the following conditions:
 
 - last rate update was at least 7 days ago
 - or, the current rate is too high and causing the protocol to lose money based on the current utilization of the savings contract. Formally the condition for the guardian multisig to intervene in this case writes:
