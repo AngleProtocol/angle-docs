@@ -76,6 +76,8 @@ export const claim = async (chainId: number, signer: JsonRpcSigner) => {
   // Distributor address is the same across different chains
   const contractAddress = "0x3Ef3D8bA38EBe18DB133cEc108f4D14CE00Dd9Ae";
   const tokens = Object.keys(data).filter((k) => data[k].proof !== undefined);
+
+  // TODO Eventually change the array above to claim only for your token
   const claims = tokens.map((t) => data[t].claim);
   const proofs = tokens.map((t) => data[t].proof);
 
