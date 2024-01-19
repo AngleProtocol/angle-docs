@@ -10,16 +10,24 @@ description: AMMs and Chains integrated within Merkl
 | 🦄 UniswapV3 - Polygon           | 6 hours        |
 | 🦄 UniswapV3 - Optimism          | 6 hours        |
 | 🦄 UniswapV3 - Arbitrum          | 6 hours        |
+| 🦄 UniswapV3 - Base              | 6 hours        |
 | 🍣 SushiswapV3 - Ethereum        | 12 hours       |
 | 🍣 SushiswapV3 - Polygon         | 6 hours        |
 | 🍣 SushiswapV3 - Optimism        | 6 hours        |
 | 🍣 SushiswapV3 - Arbitrum        | 6 hours        |
 | 🍣 SushiswapV3 - Base            | 6 hours        |
+| 🍣 SushiswapV3 - CoreDAO         | 6 hours        |
+| 🍣 SushiswapV3 - Thundercore     | 6 hours        |
 | 🥞 PancakeSwapV3 - Ethereum      | 12 hours       |
 | 🥞 PancakeSwapV3 - Polygon zkEVM | 12 hours       |
 | 🪞 Retro - Polygon                | 6 hours        |
+| 🐉 Quickswap - Polygon           | 6 hours        |
 | ⚔️ Camelot - Arbitrum            | 6 hours        |
+| Horiza - Arbitrum                | 6 hours        |
 | 🔵 BaseSwap - Base               | 6 hours        |
+| 🦉 SwapR - GnosisChain           | 6 hours        |
+| Blueprint - Ethereum             | 12 hours       |
+| Zero - Polygon zkEVM             | 6 hours        |
 
 {% hint style="info" %}
 Can't find your AMM in this list? Contact us through [this form](https://tally.so/r/3XJODP).
