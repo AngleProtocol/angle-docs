@@ -30,6 +30,7 @@ In clear terms, the guardian role enables to:
 - Pause and unpause some contracts functionalities
 - Update rapidly some parameters like users minting and burning fees, or the debt ceiling for an asset in the borrowing module
 - [Some governance votes](https://snapshot.org/#/anglegovernance.eth/proposal/0xf9f6528492784d496f6edd91ee748f1d1e6bd213d86cf09e891fb93642a6c7c2) have also granted a guardian address with the ability to occasionally sponsor the acquisition of some collateral assets within the Transmuter system on a budget granted by governance
+- The guardian is reponsible for the planned emissions of the ANGLE token.
 
 {% hint style="info" %}
 Angle smart contracts have been designed to limit a guardian's ability to impact the protocol in a way that is harmful to the system. For instance, a guardian cannot modify references to an oracle contract and hence manipulate prices at its advantage.
