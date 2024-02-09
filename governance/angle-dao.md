@@ -23,7 +23,6 @@ In particular, it can make the following changes:
 - Grant/revoke roles
 - Deploy new stablecoins
 - Deploy/revoke collateral types across the different modules of the protocol
-- Vote for [gauge rewards weights](veANGLE/gauges.md)
 - Upgrade oracles and other contracts throughout the system
 - Deploy the surplus of the protocol
 - Launch new Direct deposit modules
@@ -165,14 +164,6 @@ On another level, the contracts handling the access control of the protocol can 
 For some proposals about offchain policy changes on for instance the governance processes of the protocol or about contracts of the protocol which have not been linked yet to the execution module, the protocol has a [Snapshot](https://snapshot.org/#/anglegovernance.eth/) space where veANGLE holders can vote and express their positions using gasless offchain signatures.
 
 This Snapshot space can also be used to run temperature checks before votes that could be potentially disputed.
-
-## Voting on rewards distribution
-
-Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens onchain and can be done through the gauge page of the [app](https://app.angle.money/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
-
-Note here that the delegation mechanism used for Angle onchain voting mechanism does not apply for gauge weight allocations. If an address has delegated its veANGLE voting power to another address for Angle governance proposals, it can still use its voting power to influence the distribution of Angle liquidity mining rewards.
-
-More info on the details of this process in the [Gauges](veANGLE/gauges.md) page.
 
 ## Security
 
