@@ -34,7 +34,7 @@ coverY: 0
 ## Social
 
 - 🐦 [Twitter](https://twitter.com/AngleProtocol)
-- 💬 [Discord](https://discord.gg/3vaHCJw7Mz)
+- 💬 [Discord](https://discord.gg/47mmUUwfMu)
   ✍️ [Blog](https://angle.money/blog)
 - 📺 [YouTube Channel](https://www.youtube.com/@anglelabs)
 

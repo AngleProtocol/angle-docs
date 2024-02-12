@@ -22,7 +22,7 @@ Angle works as a set of smart contracts, and the best way to track the state of 
 
 Angle related products are integrated in multiple places in DeFi. A non-exhaustive list of Angle integrations can be found [here](../links.md).
 
-If you think about more data that would be useful to display about Angle or are planning to build a dashboard about the protocol, feel free to reach out in our [Discord](https://discord.gg/bwHQTMsf)!
+If you think about more data that would be useful to display about Angle or are planning to build a dashboard about the protocol, feel free to reach out in our [Discord](https://discord.gg/47mmUUwfMu)!
 
 ## Angle Community Dune Dashboards
 

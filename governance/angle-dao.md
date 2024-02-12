@@ -48,7 +48,7 @@ All governance contract addresses can be found [here](https://developers.angle.m
 
 Before involving any onchain action, the first step in any governance process is getting a proposal out to be debated.
 
-Governance proposals and improvements are usually first discussed on our [Discord](https://discord.com/invite/5Af6xum9bc), where there is a dedicated **proposals** section.
+Governance proposals and improvements are usually first discussed on our [Discord](https://discord.gg/47mmUUwfMu), where there is a dedicated **proposals** section.
 
 More formal proposals (which are closer to being implemented) are then discussed in our governance forum at [gov.angle.money](https://gov.angle.money).
 
