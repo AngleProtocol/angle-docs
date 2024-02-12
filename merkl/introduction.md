@@ -65,7 +65,7 @@ With Merkl, if you incentivize a pool that is compatible with one of the liquidi
 As the system is offchain, new types of position managers can easily be added into the system. For instance, it would be possible to reward users of protocols that use position manager tokens on other contracts, as a collateral to borrow for example.
 
 {% hint style="info" %}
-The list of liquidity position managers supported for each AMM and chain can be directly found on the incentivized pools on [Merkl app](https://merkl.angle.money). If you want to add support for a type of liquidity position manager that is not supported or directly reward the underlying users of a smart contract that indirectly controls AMM liquidity, fill [this form](https://tally.so/r/w4JYLr) and drop a message on the Merkl channel of the [Angle Discord server](https://discord.gg/ByFYzSUt).
+The list of liquidity position managers supported for each AMM and chain can be directly found on the incentivized pools on [Merkl app](https://merkl.angle.money). If you want to add support for a type of liquidity position manager that is not supported or directly reward the underlying users of a smart contract that indirectly controls AMM liquidity, fill [this form](https://tally.so/r/w4JYLr) and drop a message on the Merkl channel of the [Angle Discord server](https://discord.gg/47mmUUwfMu).
 {% endhint %}
 
 #### Blacklist and LP contracts unable to claim rewards
