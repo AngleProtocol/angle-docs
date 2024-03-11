@@ -14,7 +14,7 @@ description: Fees and Revenue in Angle Borrowing Module
 
 ### Rationale
 
-At the top level, three different fees can be charged to users borrowing agTokens:
+At the top level, three different fees can be charged to users borrowing stablecoins:
 
 - A mint fee
 - A stability fee
@@ -25,7 +25,7 @@ Note that some (or all) of these fees can be set to 0. Additionally, a fee calle
 Collecting these fees creates revenue for the protocol, which serves multiple purposes:
 
 - Accumulating reserves for riskier assets in case positions get under-collateralized
-- Helping maintain peg of agTokens in extreme market conditions, by incentivizing or disincentivizing borrowing
+- Helping maintain peg of stablecoins in extreme market conditions, by incentivizing or disincentivizing borrowing
 - Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
 
 {% hint style="info" %}
@@ -34,9 +34,9 @@ The state of the fees taken for each type of vault can be checked directly on th
 
 ### Mint Fee
 
-When users open a vault, they deposit collateral and can mint agTokens depending on the collateral ratio of the vault. At this point, they could be charged a mint fee that would increase their debt.
+When users open a vault, they deposit collateral and can mint stablecoins depending on the collateral ratio of the vault. At this point, they could be charged a mint fee that would increase their debt.
 
-For example, if the mint fee is 1%, after minting 100 agTokens users would find themselves with 101 agTokens of debt.
+For example, if the mint fee is 1%, after minting 100 stablecoins users would find themselves with 101 stablecoin of debt.
 
 This fee is set by governance, and it is most often set to 0, meaning it is an option available for governance.
 
@@ -46,7 +46,7 @@ The stability fee is similar to a **compounding interest rate** charged on the l
 
 #### Example
 
-For example, if a user borrows 10,000 agTokens (`x`) for a time `t` of 2 years and the stability fee `r` is 2% / year, they will have an outstanding debt `d` of:
+For example, if a user borrows 10,000 stablecoins (`x`) for a time `t` of 2 years and the stability fee `r` is 2% / year, they will have an outstanding debt `d` of:
 
 $$
 d = x\times(1+r)^{t} \\ d=10,000 \times 1.02^{2} \\ d=10,404
@@ -78,8 +78,8 @@ In summary, users may pay fees to the protocol in the form of an increase of the
 
 This debt increase through fees may happen at four (optional) moments:
 
-1. When minting agTokens if there is a **mint fee**
-2. During the life of the vault if agTokens are borrowed, through the **stability fee**
+1. When minting stablecoins if there is a **mint fee**
+2. During the life of the vault if stablecoins are borrowed, through the **stability fee**
 3. When repaying an agToken debt if there is a **repay fee**
 4. When a liquidation happens, through the **liquidation surcharge**
 

@@ -8,7 +8,7 @@ description: Angle Borrowing Module Overview
 
 Angle Borrowing Module is one of the minting mechanisms for Angle stablecoins.
 
-It is based on a **debt mechanism**, similar to the one used by Maker with DAI. Users can deposit tokens as collateral into the protocol, and borrow agTokens from this deposit depending on specific parameters.
+It is based on a **debt mechanism**, similar to the one used by Maker with DAI. Users can deposit tokens as collateral into the protocol, and borrow Angle stablecoins from this deposit depending on specific parameters.
 
 This module can be deployed across different EVM compatible networks and work for any kind of stablecoin of the protocol.
 
@@ -20,7 +20,7 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 ## 🏦 Main Features
 
-**Borrowing agTokens from collateral deposit:** With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) agTokens from their deposits according to specific parameters. This allows them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
+**Borrowing Angle stablecoins from collateral deposit:** With the Angle Borrowing module, users can deposit collateral tokens in a vault and mint (borrow) stablecoins from their deposits according to specific parameters. This allows them to keep exposure to their tokens deposited as collateral, while benefitting from disposable liquidity in stablecoins.
 
 **Leveraged-yield and self-repaying loans:** Any yield-bearing token can be accepted as a collateral. Users can deposit collateral, borrow stablecoins and get their debt automatically repaid by the increase in value of their collateral. They can also swap their borrowed stablecoins for more of the yield-bearing token enabling them to boost the yield they are earning.
 

@@ -12,12 +12,12 @@ coverY: -82
 
 {% embed url="https://www.youtube.com/embed/DDoY_CUrd7M" %}
 
-It can be used to issue stablecoins, called agTokens, designed to maintain the value of the assets they are pegged to.
+It can be used to issue stablecoins designed to maintain the value of the assets they are pegged to.
 
 The protocol consists of several different modules, or sets of smart contracts, from which stablecoins can be issued or minted.
 Key modules include a [Borrowing module](borrowing-module/) allowing to borrow Angle stablecoins by providing collateral and a price stability module called [Transmuter](transmuter/README.md) that facilitates the exchange of stable assets for Angle stablecoins.
 
-Additionally, the protocol is engaged into [Direct Deposit Modules](other/amo.md), also known as Algorithmic Market Operations (AMOs), which play a crucial role in boosting the liquidity of agTokens across various protocols.
+Additionally, the protocol is engaged into [Direct Deposit Modules](other/amo.md), also known as Algorithmic Market Operations (AMOs), which play a crucial role in boosting the liquidity of its stablecoins across various protocols.
 
 Angle earns a yield from all these modules, and part of it is automatically allocated [through savings products](savings/README.md) to stablecoin holders, so they can also earn a native yield on their assets.
 
@@ -25,15 +25,19 @@ In this document, we provide a detailed breakdown of the various components that
 
 ### [Stablecoins](stablecoins.md)
 
-Angle is so far behind one stablecoin, **agEUR**, pegged to the value of the Euro - €. agEUR holders can stake their stablecoins for **stEUR** in order to earn a native € yield.
+Angle is so far behind one stablecoin, **EURA** (previously agEUR), pegged to the value of the Euro - €. EURA holders can stake their stablecoins for **stEUR** in order to earn a native € yield.
+
+{% hint style="info" %}
+EURA used to be known as agEUR but was rebranded in March 2024.
+{% endhint %}
 
 ### [Borrowing module](borrowing-module/)
 
-Angle Borrowing module is deployed on multiple EVM compatible networks beyond Ethereum (like Polygon or Optimism). It allows users to deposit collateral and borrow agTokens (debt) against their collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
+Angle Borrowing module is deployed on multiple EVM compatible networks beyond Ethereum (like Polygon or Optimism). It allows users to deposit collateral and borrow Angle stablecoins (debt) against their collateral. It is designed to enable getting leverage on almost any asset through an agToken loan, or to simply let people get access to stablecoins while keeping their exposure to a volatile asset or to a yield-bearing token.
 
 ### [Transmuter](transmuter/)
 
-Transmuter is deployed on Ethereum. It works as a basket of different stablecoins that can be used to mint agEUR. Thanks to its dynamic fee model and its internal circuit breakers, the system is able to autonomously control its exposures to the assets it has in reserves and guarantee that agEUR's backing is properly diversified. It is on top of that a trustless system that lets anyone and at any time (including during black swan events) redeem agEUR for a portion of the assets in the backing.
+Transmuter is deployed on Ethereum. It works as a basket of different stablecoins that can be used to mint Angle stablecoins. Thanks to its dynamic fee model and its internal circuit breakers, the system is able to autonomously control its exposures to the assets it has in reserves and guarantee that the backing of each stablecoin is properly diversified. It is on top of that a trustless system that lets anyone and at any time (including during black swan events) redeem Angle stablecoins for a portion of the assets in the backing.
 
 It is designed as a resilient improvement over the price stability module systems of protocols like [Maker](https://makerdao.com/en/) that showed their limits during the USDC depeg situation in March 2023.
 
@@ -67,7 +71,7 @@ This is notably the case of [🥨 Merkl](merkl/introduction.md), an incentive fr
 
 ## 🖼 Branding
 
-If you're writing an article, creating designs and animations about Angle, check out this [assets repository](https://github.com/AngleProtocol/angle-assets) with all the visual elements about the Angle brand, including logos, icons and images.
+If you're writing an article, creating designs and animations about Angle, check out this [assets page](https://anglemoney.notion.site/Angle-Media-Assets-be211b3e9d7d4fb9965048825c88f66c?pvs=4) with all the visual elements about the Angle brand, including logos, icons and images.
 
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 

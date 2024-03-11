@@ -6,7 +6,7 @@ description: How to bridge agEUR and ANGLE to different networks with the Angle 
 
 Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging agEUR and ANGLE](https://app.angle.money/bridges-agEUR) between many EVM-compatible networks.
 
-To bridge agEUR or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
+To bridge EURA or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
 
 ![Bridge app page](../../../.gitbook/assets/bridge2.png)
 
@@ -22,7 +22,7 @@ Not having enough funds on the origin chain to pay for gas is the most frequentl
 **Table of contents:**
 
 - [Bridge limits](#bridge-limits)
-  - [How to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
+  - [How to get back EURA from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
 - [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
 - [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
 
@@ -33,18 +33,18 @@ Angle's bridge system implements total and hourly limits for the amounts that ca
 The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
 
 {% hint style="info" %}
-If the limits are reached when processing a bridge transaction, you won't receive agEUR in your wallet on the destination chain.
+If the limits are reached when processing a bridge transaction, you won't receive EURA in your wallet on the destination chain.
 
-Instead, **you will receive [lz-agEUR tokens in your wallet that can be used to redeem agEUR later](#how-to-get-back-ageur-from-lz-ageur)**, when the limits reset.
+Instead, **you will receive [lz-agEUR tokens in your wallet that can be used to redeem EURA later](#how-to-get-back-ageur-from-lz-ageur)**, when the limits reset.
 {% endhint %}
 
 Information on the current limits are displayed in the callout below the inputs.
 
 ![Bridge app page](../../../.gitbook/assets/bridge3.png)
 
-### How to get back agEUR from lz-agEUR
+### How to get back EURA from lz-agEUR
 
-On each network where agEUR can be bridged, there is a lz-agEUR contract. You can find their addresses on the [smart contracts addresses](https://developers.angle.money/overview/smart-contracts) page.
+On each network where EURA can be bridged, there is a lz-agEUR contract. You can find their addresses on the [smart contracts addresses](https://developers.angle.money/overview/smart-contracts) page.
 
 If you hit a bridge limit, you should have received lz-agEUR tokens in your wallet. In this case, you can go to the token contract ([example on Optimism](https://optimistic.etherscan.io/address/0x840b25c87b626a259ca5ac32124fa752f0230a72#writeProxyContract)).
 
@@ -55,7 +55,7 @@ Then follow these steps:
 1. Click on `Write as Proxy`
 2. Connect your wallet to Etherscan by clicking on the `Connect to Web3` button.
 3. Scroll down to the function `withdraw()`
-4. Enter the amount of lz-agEUR you want to exchange for agEUR, and your wallet address. _The amount input needs to be in the correct decimals format: you need to multiply the amount by `10^18`. For example, to exchange `123` lz-agEUR, you need to input `123000000000000000000`._
+4. Enter the amount of lz-agEUR you want to exchange for EURA, and your wallet address. _The amount input needs to be in the correct decimals format: you need to multiply the amount by `10^18`. For example, to exchange `123` lz-agEUR, you need to input `123000000000000000000`._
 5. And send the transaction
 
 [Example of a withdraw transaction](https://optimistic.etherscan.io/tx/0x20799daf2e30ccf2ec4cf1f66b85f01273b3fc26bc786ad25d7b187eb810f721)
@@ -86,4 +86,4 @@ For example, with a gas price of 100 you will need ~0.03 gas token (ETH, MATIC, 
 
 If you don't know whether you should have received funds in your wallet after a bridge transaction, you should check on [LayerZeroScan](https://layerzeroscan.com/) with the hash of the bridge transaction from the origin network.
 
-If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back agEUR from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).
+If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back EURA from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).

@@ -6,7 +6,7 @@ coverY: 0
 
 # 🌉 Angle Cross-Chain Setup
 
-Angle is a cross-chain protocol that allows the native issuance of its stablecoins (also called agTokens) on different chains.
+Angle is a cross-chain protocol that allows the native issuance of its stablecoins on different chains.
 
 To make sure that Angle stablecoins can easily be bridged from one chain to another and that the UX for interacting with the protocol remains smooth while keeping high security standards, the protocol relies on a custom bridge infrastructure.
 
@@ -18,8 +18,8 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 - The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
 - Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
-- The smart contracts for the agTokens and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
-- So far, the most widely used solution to bridge agEUR and ANGLE cross-chain is LayerZero.
+- The smart contracts for the stablecoins and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
+- So far, the most widely used solution to bridge EURA and ANGLE cross-chain is LayerZero.
 
 ## Angle Bridge Infrastructure Details
 
@@ -31,7 +31,7 @@ There can be as many representations for a single token as there are bridges tha
 
 This comes with the disadvantage of increasing fees and slippage for people bridging on top of fragmenting token liquidity through different standards.
 
-To keep a single standard for each of its tokens, Angle allows approved bridged versions of agEUR and ANGLE to be swapped 1:1 to a canonical ("official") version of agEUR (or ANGLE) on every chain.
+To keep a single standard for each of its tokens, Angle allows approved bridged versions of EURA and ANGLE to be swapped 1:1 to a canonical ("official") version of EURA (or ANGLE) on every chain.
 
 This guarantees that only **a single standard is kept for each token** and that fees for users bridging are minimal (no slippage).
 
@@ -45,7 +45,7 @@ This system comes however at greater risks for the protocol. If a whitelisted br
 
 To limit the risk associated with each bridge, a total and hourly cap on the quantity of each token that can be bridged to & from specific networks can be specified directly in the smart contracts of each token.
 
-For instance, it's not possible to bridge on some chains more than 10k agEUR per hour and 1m agEUR overall using LayerZero. This guarantees that in case of a bridge hack, the exposure of the protocol would remain limited to what can be bridged for a couple of hours.
+For instance, it's not possible to bridge on some chains more than 10k EURA per hour and 1m EURA overall using LayerZero. This guarantees that in case of a bridge hack, the exposure of the protocol would remain limited to what can be bridged for a couple of hours.
 
 Limits can be set by Angle governance for each chain, for each token and for each bridge solution relatively to the amount of the given token circulating on the chain.
 
@@ -53,9 +53,9 @@ Limits can be set by Angle governance for each chain, for each token and for eac
 
 ### About LayerZero
 
-[LayerZero](https://layerzero.network/) is so far one of the only whitelisted solution to mint agTokens and the ANGLE token across a wide range of sidechains (the other solution being Polygon PoS bridge that is whitelisted just on Polygon). It is the solution that is used under the hood on the [Angle App](https://app.angle.money/bridges-agEUR).
+[LayerZero](https://layerzero.network/) is so far one of the only whitelisted solution to mint stablecoins and the ANGLE token across a wide range of sidechains (the other solution being Polygon PoS bridge that is whitelisted just on Polygon). It is the solution that is used under the hood on the [Angle App](https://app.angle.money/bridges-agEUR).
 
-The bridge is natively integrated with the agEUR and the ANGLE tokens on the chains on which it is supported: this means that users should not see the intermediary bridge token and directly receive canonical agEUR (or ANGLE) in one transaction when using the bridge.
+The bridge is natively integrated with the EURA and the ANGLE tokens on the chains on which it is supported: this means that users should not see the intermediary bridge token and directly receive canonical EURA (or ANGLE) in one transaction when using the bridge.
 
 With LayerZero, bridging transactions can revert on the origin chains when the amount to be bridged is above the limit that can currently be bridged. In this case, users can directly get their tokens back.
 
@@ -67,12 +67,12 @@ When bridging to a network with LayerZero, you need enough of the gas token on t
 
 ## Bridge Solutions
 
-The Angle Bridge infrastructure described in this page only applies to the chains where LayerZero is supported. On the other chains, the canonical version of the agEUR and ANGLE are the ones written down below:
+The Angle Bridge infrastructure described in this page only applies to the chains where LayerZero is supported. On the other chains, the canonical version of the EURA and ANGLE are the ones written down below:
 
-| Chain         | agEUR                                                                                                        | ANGLE                                                          |
+| Chain         | EURA                                                                                                         | ANGLE                                                          |
 | ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | Polygon       | [LayerZero](https://app.angle.money/bridges), [Polygon PoS bridge](https://wallet.polygon.technology/bridge) | [Polygon PoS bridge](https://wallet.polygon.technology/bridge) |
 | NEAR / Aurora | [Rainbow Bridge](https://rainbowbridge.app/transfer)                                                         | [Rainbow Bridge](https://rainbowbridge.app/transfer)           |
 | Solana        | [Wormhole](https://wormholebridge.com/#/transfer)                                                            | [Wormhole](https://wormholebridge.com/#/transfer)              |
 
-On Polygon PoS, the canonical representation of the ANGLE token is that of the [Polygon PoS bridge](https://wallet.polygon.technology/bridge). On this chain as well, beyond LayerZero, it's also possible to bridge agEUR using [Polygon PoS bridge](https://wallet.polygon.technology/bridge) solution.
+On Polygon PoS, the canonical representation of the ANGLE token is that of the [Polygon PoS bridge](https://wallet.polygon.technology/bridge). On this chain as well, beyond LayerZero, it's also possible to bridge EURA using [Polygon PoS bridge](https://wallet.polygon.technology/bridge) solution.

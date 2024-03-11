@@ -4,7 +4,7 @@ description: How to borrow Angle stablecoins from the Angle App
 
 # 🏦 Borrow
 
-The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow Angle stablecoins like agEUR from crypto collateral **on different chains**.
+The [Angle Borrowing module](/borrowing-module/README.md) lets you borrow Angle stablecoins like EURA from crypto collateral **on different chains**.
 
 Essentially, you open a vault with a specific token as collateral, and can get a stablecoin loan in exchange. If the value of the vault collateral goes below a certain amount compared to the value of your loan, you can get [liquidated](/borrowing-module/vaults/liquidations.md).
 
@@ -13,18 +13,18 @@ When opening a vault, you can deposit any token and it will be automatically swa
 Learn more about the mechanisms [here](/borrowing-module/vaults/README.md#leveraging-collateral-exposure).
 
 {% hint style="info" %}
-The borrowing page functionalities are the same whether you're coming it to it for agEUR or another stablecoin. In this guide, we specifically look at agEUR borrowing use cases, but anything that is true for agEUR holds for others.
+The borrowing page functionalities are the same whether you're coming it to it for EURA or another stablecoin. In this guide, we specifically look at EURA borrowing use cases, but anything that is true for EURA holds for others.
 {% endhint %}
 
 ## Add Collateral & Borrow
 
 To borrow an Angle stablecoin, you need to **deposit** collateral tokens into a **vault**. Different vaults accept different tokens which have their specific loan-to-value (LTV). This means that you are able to borrow up to a certain amount of stablecoins from the amount deposited.
 
-For example, wETH LTV at 84% on Optimism for agEUR means that if you deposit 1,000 € worth of wETH on Optimism, you can borrow up to 840 agEUR from this vault.
+For example, wETH LTV at 84% on Optimism for EURA means that if you deposit 1,000 € worth of wETH on Optimism, you can borrow up to 840 EURA from this vault.
 
 You can deposit any token you want in the app, and it will be swapped to the collateral token of the selected vault. You can also borrow a stablecoin in the same transaction that you deposit collateral to your vault. Once a vault is created, it is possible to deposit more collateral without borrowing more stablecoins, and the other way around.
 
-Here are the steps to follow to deposit collateral and borrow agTokens:
+Here are the steps to follow to deposit collateral and borrow stablecoins:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault
 2. Select the type of vault to create, defined by the collateral and stablecoin token and click on borrow
@@ -33,9 +33,9 @@ Here are the steps to follow to deposit collateral and borrow agTokens:
 5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
    _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
 
-In the below example, 200 DAI are swapped to ~0.15 wETH to be deposited as collateral in the vault, and 50 agEUR are borrowed.
+In the below example, 200 DAI are swapped to ~0.15 wETH to be deposited as collateral in the vault, and 50 EURA are borrowed.
 
-![Add/Borrow agEUR](/.gitbook/assets/add-borrow2.png)
+![Add/Borrow EURA](/.gitbook/assets/add-borrow2.png)
 
 {% hint style="info" %}
 A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
@@ -47,7 +47,7 @@ Note that once a vault is opened, you can monitor its health and status from the
 
 ## Leverage
 
-When using the borrow section of the app, you can, in a single transaction, borrow stablecoins like agEUR and directly swap them into more of the token originally used as collateral to leverage your exposition.
+When using the borrow section of the app, you can, in a single transaction, borrow stablecoins like EURA and directly swap them into more of the token originally used as collateral to leverage your exposition.
 
 To do this, when selecting the type of vault to create, click on leverage. Then:
 
@@ -56,9 +56,9 @@ To do this, when selecting the type of vault to create, click on leverage. Then:
 3. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
    _If your transaction requires a wrapping, you'll need to sign a permit for the router contract to interact with your vault and perform the desired transaction._
 
-In this example, a user deposits 20 FRAX in an LUSD vault, and ask for 40 LUSD of additional exposure. In the background, the 20 FRAX are swapped to LUSD and enough agEUR to buy 40 LUSD tokens are borrowed from the vault and swapped to LUSD. The user USD exposure goes from 20 to 60.
+In this example, a user deposits 20 FRAX in an LUSD vault, and ask for 40 LUSD of additional exposure. In the background, the 20 FRAX are swapped to LUSD and enough EURA to buy 40 LUSD tokens are borrowed from the vault and swapped to LUSD. The user USD exposure goes from 20 to 60.
 
-After the operation, this vault would have 60 LUSD as collateral and ~38.23 agEUR of debt.
+After the operation, this vault would have 60 LUSD as collateral and ~38.23 EURA of debt.
 
 ![Leverage with LUSD](/.gitbook/assets/leverage-lusd.png)
 
@@ -76,13 +76,13 @@ All external rewards accumulated by the vault's staked collateral can be [claime
 To check out all these steps, click on the `Transaction Details` on the right side of the screen.
 {% endhint %}
 
-In the following example, 20 FRAX are deposited in the Curve FRAXUSDC pool, the LP tokens are staked on Stake DAO, and deposited as collateral in the vault. 10 agEUR are also borrowed from the vault.
+In the following example, 20 FRAX are deposited in the Curve FRAXUSDC pool, the LP tokens are staked on Stake DAO, and deposited as collateral in the vault. 10 EURA are also borrowed from the vault.
 
 This feature can be interesting when using the leverage functionality of the app. By getting leverage on yield bearing tokens, you can effectively enable multiply your returns.
 
 For example, if the borrowing cost is 0.5% and a collateral with an APR of 3% is used, a 4x leverage can **increase the effective returns** up to 10.5%, assuming collateral price remains constant.
 
-![Add/Borrow agEUR](/.gitbook/assets/borrow-lp.png)
+![Add/Borrow EURA](/.gitbook/assets/borrow-lp.png)
 
 ## Repay your debt or close your vault
 
@@ -100,7 +100,7 @@ Here are the steps to Repay debt, withdraw collateral, or close your vault:
 6. Enter the amount of debt token from your wallet balance you want to use to repay your debt.
 7. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
 
-For example, in the following screenshot, 0.01 wETH is swapped into ~12.45 agEUR to repay part of the vault's debt, and 10 agEUR from the wallet is used to repay some of the remaining agEUR debt.
+For example, in the following screenshot, 0.01 wETH is swapped into ~12.45 EURA to repay part of the vault's debt, and 10 EURA from the wallet is used to repay some of the remaining EURA debt.
 
 ![Repay and withdraw](/.gitbook/assets/repay2.png)
 
@@ -112,7 +112,7 @@ A summary of the changes on your vault and wallet is displayed on the right. You
 
 Angle Borrowing module enables you to transfer your stablecoin debt between two of your vaults on the same chain but with potentially different collateral assets.
 
-If one of your vault has a health factor of 1.05 (and is therefore close from liquidation), and if the stablecoin of the vault is agEUR, you may want to transfer the agEUR debt of this vault to that of another vault you control which has a higher health factor.
+If one of your vault has a health factor of 1.05 (and is therefore close from liquidation), and if the stablecoin of the vault is EURA, you may want to transfer the EURA debt of this vault to that of another vault you control which has a higher health factor.
 
 This operation does not involve any collateral transfer and is very efficient gas-wise: it's thus a way to cheaply avoid liquidations.
 

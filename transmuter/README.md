@@ -20,7 +20,7 @@ Practically speaking, the three operations work as follows:
 - [**Burn:**](mintBurn.md) Stablecoins can be burnt at oracle value for any of the assets in the backing with adaptive fees, provided that the deviation of all assets respective to their target price are reasonable. The idea is to avoid capital outflows changing the exposures of the system in times of uncertainty.
 - [**Redeem:**](redeem.md) Stablecoins can be redeemed at any time against a proportional amount of each asset in the backing. Users should have a way to exit at any time, and so this feature is available in any conditions.
 
-![Transmuter Global Mechanism for agEUR](../.gitbook/assets/docs-Transmuter-global-mechanism.jpg)
+![Transmuter Global Mechanism for EURA](../.gitbook/assets/docs-Transmuter-global-mechanism.jpg)
 
 ## 🏦 Main Properties
 
@@ -56,4 +56,4 @@ The smart contracts of the Transmuter have been audited by Code4rena. The code a
 
 ## 📇 Deployments
 
-Transmuter has been deployed for agEUR on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb).
+Transmuter has been deployed for EURA on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb).

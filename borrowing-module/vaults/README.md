@@ -1,18 +1,18 @@
 ---
-description: Angle Borrowing Module agTokens Vaults
+description: Angle Borrowing Module Vaults
 cover: ../../.gitbook/assets/Angle-vaults-illus.jpg
 coverY: 0
 ---
 
 # 🏦 Vaults
 
-This module's main mechanism is its vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of agTokens from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to use or spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, onchain and in one transaction.
+This module's main mechanism is its vault system. Users can deposit collateral in `VaultManager` contracts, and borrow a certain amount of stablecoins from this vault as a debt that will have to be repaid later. By doing so, they can keep their exposure to the tokens deposited as collateral, while being able to use or spend the borrowed funds. They can also use this mechanism to increase their exposure to the collateral they own, onchain and in one transaction.
 
 ## 🔎 TL;DR
 
 Angle Borrowing module vault-based system lets you:
 
-- Borrow agTokens from tokens deposited as collateral in the protocol
+- Borrow stablecoins from tokens deposited as collateral in the protocol
 - Leverage collateral exposure in one transaction
 - Take out self-repaying loans or earn a leveraged yield
 - Transfer your debt between vaults to avoid liquidation
@@ -20,25 +20,25 @@ Angle Borrowing module vault-based system lets you:
 
 ## Main features
 
-### Borrowing agTokens
+### Borrowing stablecoins
 
-The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as [**collateral**](../glossary.md) into a `VaultManager` contract. When doing so, they can choose to borrow a certain amount of agTokens against their collateral. The agTokens borrowed are minted and deposited into their wallets, for them to use however they want. For instance, one may want to borrow stablecoins to profit from stablecoins yield, while keeping exposure to their collateral.
+The main feature of vaults is the ability to **borrow** Angle stablecoins. A vault is opened when users deposit tokens as [**collateral**](../glossary.md) into a `VaultManager` contract. When doing so, they can choose to borrow a certain amount of stablecoins against their collateral. The stablecoins borrowed are minted and deposited into their wallets, for them to use however they want. For instance, one may want to borrow stablecoins to profit from stablecoins yield, while keeping exposure to their collateral.
 
-Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the agTokens borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
+Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the stablecoins borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
 
 ![Angle Vaults](../../.gitbook/assets/Angle-Vaults.jpg)
 
 ### Leveraging collateral exposure
 
-Users can also take advantage of Angle Borrowing module capital-efficiency features to borrow agTokens to **leverage their collateral exposure** in one transaction.
+Users can also take advantage of Angle Borrowing module capital-efficiency features to borrow stablecoins to **leverage their collateral exposure** in one transaction.
 
-When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. What the protocol does is that it mints the necessary quantity of agTokens, swaps it against the desired collateral, and deposits it back into the vault.
+When users deposit collateral to open a vault, they can choose the Leverage feature and input the amount of additional exposure they want to the collateral token, up to a certain threshold. What the protocol does is that it mints the necessary quantity of stablecoins, swaps it against the desired collateral, and deposits it back into the vault.
 
 ![Angle Leverage exposure](../../.gitbook/assets/Leverage-example.jpg)
 
 ### Leveraged yield & Self-repaying loans
 
-Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used to borrow agTokens. It means that users can take out loans with an interest rate cost smaller than what they are earning from their yield-bearing collateral asset.
+Governance can vote to accept any collateral that can easily be liquidated on any chain for this module. As such, any yield-bearing asset can technically be used to borrow stablecoins. It means that users can take out loans with an interest rate cost smaller than what they are earning from their yield-bearing collateral asset.
 
 The Borrowing module is built such that there is no opportunity cost to deposit yield-bearing assets into it. Any external rewards earned by collateral assets (like staked Curve LP tokens earning CRV) can be claimed from Angle UI. Users earn the same rewards, or more, than what they'd be earning if they hadn't put their asset in Angle.
 
@@ -58,7 +58,7 @@ For more details on how to combine transactions in a modular way with the protoc
 
 Angle Borrowing module is designed so that users can repay their debt without any capital requirement.
 
-At some point, users may want to close their debt towards the protocol. Instead of having to get back the agTokens they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users can just get back the remaining collateral after the debt has been fully paid back.
+At some point, users may want to close their debt towards the protocol. Instead of having to get back the stablecoins they initially borrowed, they can just use the collateral that is in the vault to have it swapped against their debt tokens. In this case, users can just get back the remaining collateral after the debt has been fully paid back.
 
 ![Capital Efficient Debt Repayment](../../.gitbook/assets/capital-efficient-debt-repayment.jpg)
 
@@ -130,7 +130,7 @@ This allows users to interact with multiple vaults from different collaterals in
 
 ### Dust Amounts
 
-To make sure the protocol doesn't accumulate bad debt, the protocol has the possibility to enforce a minimum amount of agTokens to be borrowed. This can be used as a protection to make sure that each position has enough debt so that it's always worth to liquidate it.
+To make sure the protocol doesn't accumulate bad debt, the protocol has the possibility to enforce a minimum amount of stablecoins to be borrowed. This can be used as a protection to make sure that each position has enough debt so that it's always worth to liquidate it.
 
 It's important to keep in mind that this debt-based module relies heavily on [liquidations](liquidations.md) to remain robust and collateralized. If the amounts to liquidate are too small, the profit made by liquidators could be too low with respect to the gas costs, and liquidating is not profitable anymore. In that case, the protocol would be left with under-collateralized positions.
 

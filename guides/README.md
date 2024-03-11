@@ -8,7 +8,7 @@ description: Angle Protocol and App Guides
 
 The Angle Protocol is currently available to anyone on different EVM compatible networks, and can be accessed through an app hosted at [app.angle.money](https://app.angle.money/) which contains most of the features related to the protocol. Here, you will more particularly learn how to:
 
-- [Buy](/guides/app-guides/agEUR/swap.md), [borrow](/guides/app-guides/agEUR/borrow.md), [bridge agEUR](/guides/app-guides/agEUR/bridge.md) or get [leverage](/guides/app-guides/agEUR/leverage.md) on your collateral from stablecoin debt.
+- [Buy](/guides/app-guides/agEUR/swap.md), [borrow](/guides/app-guides/agEUR/borrow.md), or [bridge](/guides/app-guides/agEUR/bridge.md) Angle stablecoins.
 - [Buy ANGLE tokens](ANGLE/buy.md) at the lowest price possible, [lock](ANGLE/lock.md) them to earn yield and vote on rewards distribution and governance proposals
 
 ## UI tour

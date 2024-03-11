@@ -22,7 +22,7 @@ The vision for the ANGLE distribution is that it needs to be multi-year, extende
 
 ### 🪐 Liquidity Mining
 
-40% of tokens are being distributed through whitelisted contracts (called gauges) for agTokens holders providing liquidity on external pools and protocols (like UniV3 or Curve).
+40% of tokens are being distributed through whitelisted contracts (called gauges) for Angle stablecoins holders providing liquidity on external pools and protocols (like UniV3 or Curve).
 
 The amount of ANGLE distributed is divided by 1.5^(1/52) = 1.007827 every week, equivalent to dividing the tokens emission by 1.50 every year.
 
