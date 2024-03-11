@@ -20,7 +20,7 @@ Liquidations in this Borrowing module are designed to be the most borrower frien
 
 ### Health Factor
 
-Each vault has its own collateral ratio (`CR`). Together with the collateral factor (`CF`), they are used to compute the health factor of an open vault. For example, for a vault with 160€ worth of collateral and 100 agEUR borrowed, if the collateral factor is 2/3:
+Each vault has its own collateral ratio (`CR`). Together with the collateral factor (`CF`), they are used to compute the health factor of an open vault. For example, for a vault with 160€ worth of collateral and 100 EURA borrowed, if the collateral factor is 2/3:
 
 $$
 \texttt{HF = CR * CF} \\ \texttt{HF} = 160/100 * 2/3 = 1.07

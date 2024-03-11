@@ -38,7 +38,7 @@ $$
 
 This guarantees that if an asset in the backing depegs then it is not profitable to mint with this asset.
 
-Assume for instance that a collateral $$\texttt{EUR}_A$$ trades at 0.95€ and there are 0 fees, then $$\frac{1}{0.95}$$ $$\texttt{EUR}_A$$ are needed to get 1 agEUR.
+Assume for instance that a collateral $$\texttt{EUR}_B$$ trades at 0.95€ and there are 0 fees, then $$\frac{1}{0.95}$$ $$\texttt{EUR}_B$$ are needed to get 1 EURA.
 
 ## ➫ Burn
 
@@ -54,17 +54,21 @@ $$
 
 In its normal state, the stablecoin can be burnt for any of the assets in the system at their fair value which guarantees a small slippage for burning the asset. But in case of a depeg of one of the asset in the backing, this mechanism is meant to preserve the system's exposures to all assets.
 
-As the stablecoin can be burnt for the same value of assets regardless of the asset it is burnt for, it disincentivizes stablecoin holders from rushing to exit towards the safest asset. In the example with agEUR, users can burn 1 agEUR and redeem an amount of $$\texttt{EUR}_A$$ equal to:
+As the stablecoin can be burnt for the same value of assets regardless of the asset it is burnt for, it disincentivizes stablecoin holders from rushing to exit towards the safest asset. In the example with EURA, users can burn 1 EURA and redeem an amount of $$\texttt{EUR}_B$$ equal to:
 
 $$
-\frac{1-\max(d_{\texttt{EUR}_A},d_{\texttt{EUR}_B},d_{\texttt{EUR}_{\texttt{yield}}})}{p_{\texttt{EUR}_A}}\times(1-\texttt{fee})
+\frac{1-\max(d_{\texttt{EUR}_B},d_{\texttt{EUR}_C},d_{\texttt{EUR}_{\texttt{yield}}})}{p_{\texttt{EUR}_B}}\times(1-\texttt{fee})
 $$
 
-Now, consider the case where $$\texttt{EUR}_A$$ depegs by 5% but not $$\texttt{EUR}_B$$ or $$\texttt{EUR}_{\texttt{yield}}$$, then people burning stablecoins can choose to get 1 $$\texttt{EUR}_A$$ worth 0.95€. They can also choose to get 0.95 $$\texttt{EUR}_B$$ worth 0.95€, or 0.95 $$\texttt{EUR}_{\texttt{yield}}$$ worth 0.95€. In all cases, it's never profitable to burn agEUR for the assets that remain safe in the system.
+Now, consider the case where $$\texttt{EUR}_B$$ depegs by 5% but not $$\texttt{EUR}_C$$ or $$\texttt{EUR}_{\texttt{yield}}$$, then people burning stablecoins can choose to get 1 $$\texttt{EUR}_B$$ worth 0.95€. They can also choose to get 0.95 $$\texttt{EUR}_C$$ worth 0.95€, or 0.95 $$\texttt{EUR}_{\texttt{yield}}$$ worth 0.95€. In all cases, it's never profitable to burn EURA for the assets that remain safe in the system.
 
 {% hint style="info" %}
 As explained in [this page](implementation/collateralsManagement.md), there can be some collateral assets for which only whitelisted addresses are eligible to burn their stablecoins for it.
 {% endhint %}
+
+The availability of these mint and burn functions allow any arbitrageur to take advantage of price deviations of the stablecoin on the secondary market to bring the stablecoin back to peg.
+
+![Stablecoin arbitrage with Transmuter](../.gitbook/assets/Docs-Angle-stability-mechanism.jpg)
 
 ## 🏭 Exposures and Transaction Fees
 
@@ -84,10 +88,14 @@ And so fees for a mint or burn operation depend on the exposure to the concerned
 
 For instance, mint fees can be set to a high value (100%) when the exposure is above a target exposure, while burn fees can be made low to incentivize reducing the exposure. Conversely, when exposure to an asset is below the target window, mint fees can be set low and burn fees high to incentivize users to increase the system's exposure to this asset.
 
-![Fees as a function of the exposure](../.gitbook/assets/fees-exposure.png)
+![Exposure control with Transmuter](../.gitbook/assets/Docs-Transmuter-Exposure-Control.jpg)
 
 With this, it is still possible that exposures go over the bounds where for instance mint fees reach 100%. Reason is that when you burn for an asset, you're mathematically increasing the exposures to all other assets in the system.
 
-Assume the system is targeting a 40% maximum exposure for a stablecoin $$\texttt{EUR}_A$$, and so far 33 agEUR have been issued with $$\texttt{EUR}_A$$, 33 with another stablecoin $$\texttt{EUR}_B$$ and 33 with $$\texttt{EUR}_{\texttt{yield}}$$, then someone burning 15 agEUR for $$\texttt{EUR}_{\texttt{yield}}$$ would bring the exposure to $$\texttt{EUR}_A$$ to above 40%. It should be at this point impossible to mint agEUR with $$\texttt{EUR}_A$$, but burning agEUR for $$\texttt{EUR}_A$$ should come at a low cost.
+Assume the system is targeting a 40% maximum exposure for a stablecoin $$\texttt{EUR}_B$$, and so far 33 EURA have been issued with $$\texttt{EUR}_A$$, 33 with another stablecoin $$\texttt{EUR}_C$$ and 33 with $$\texttt{EUR}_{\texttt{yield}}$$, then someone burning 15 EURA for $$\texttt{EUR}_{\texttt{yield}}$$ would bring the exposure to $$\texttt{EUR}_B$$ to above 40%. It should be at this point impossible to mint EURA with $$\texttt{EUR}_B$$, but burning EURA for $$\texttt{EUR}_B$$ should come at a low cost.
 
 In the Transmuter system, there can be **negative fees** to incentivize people to come with a certain asset. The system however verifies that this does not open arbitrage loops. It is impossible to set negative mint fees if these are in absolute value bigger than the positive burn fees for all the other assets in the system.
+
+Below is an example of how a rebalancing operation may look like in the case of USDA:
+
+![Transmuter rebalancing](../.gitbook/assets/Docs-Transmuter-Rebalancing.jpg)

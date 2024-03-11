@@ -84,7 +84,7 @@ coverY: 0
 - [UniswapV3 EURA - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 - [Uniswap V3 EURA - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
 - [Uniswap V3 ANGLE - ETH (1%)](https://info.uniswap.org/#/pools/0x51c2841333fbbab53b7c2c442cc265bf16430d6d)
-- [Curve EURA - EUROC](https://curve.fi/factory/164)
+- [Curve EURA - EURC](https://curve.fi/factory/164)
 - [Curve EURA - EURs - EURt](https://curve.fi/factory/66)
 - [Curve EURA - EUROe](https://curve.fi/factory/273)
 - [Curve EURA - cEUR - EUROc](https://curve.fi/factory/145)

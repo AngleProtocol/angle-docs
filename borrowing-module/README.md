@@ -12,7 +12,7 @@ It is based on a **debt mechanism**, similar to the one used by Maker with DAI. 
 
 This module can be deployed across different EVM compatible networks and work for any kind of stablecoin of the protocol.
 
-It is also designed to work hands in hands with the other protocol's modules. agEUR, which can also be minted by the protocol's Transmuter module is for instance fully interoperable between both modules.
+It is also designed to work hands in hands with the other protocol's modules. EURA, which can also be minted by the protocol's Transmuter module is for instance fully interoperable between both modules.
 
 {% hint style="info" %}
 Smart contract addresses associated to the Borrowing module on different chains and for the different stablecoins of the protocol can be found [here](https://developers.angle.money/overview/smart-contracts).
@@ -32,7 +32,7 @@ Smart contract addresses associated to the Borrowing module on different chains 
 
 **Improved position management:** Users can easily transfer their debt from one position to another without having to actually transfer collateral between these positions. All positions in this system are composable NFTs.
 
-**Cross-chain compatibility:** The Borrowing module can scale to a wide range of different networks and stablecoins. This allows governance to easily deploy it on networks like layer 2s where transactions are more affordable than on the Ethereum mainnet. Each instance of the Borrowing module is independent and relies on different parameters chosen by governance. For instance, for a same collateral asset on two chains, there may be different amount of agEUR that can be issued on each network: this allows to make sure that liquidations remain profitable on a network based on the available liquidity.
+**Cross-chain compatibility:** The Borrowing module can scale to a wide range of different networks and stablecoins. This allows governance to easily deploy it on networks like layer 2s where transactions are more affordable than on the Ethereum mainnet. Each instance of the Borrowing module is independent and relies on different parameters chosen by governance. For instance, for a same collateral asset on two chains, there may be different amount of EURA that can be issued on each network: this allows to make sure that liquidations remain profitable on a network based on the available liquidity.
 
 {% hint style="info" %}
 [This section](vaults/) presents in greater details vaults in Angle Borrowing Module.

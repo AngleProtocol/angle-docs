@@ -62,7 +62,7 @@ It's important to keep in mind that this fee can be changed by governance, and c
 
 ### Repay Fee
 
-Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that, for agEUR, a user repaying 110 agEUR of debt would have to bring 111.1 agEUR if there is a 1% repaying fee.
+Similarly than at mint, the protocol can charge a fee to users repaying their debt towards the protocol. In practice, this means that, for EURA, a user repaying 110 EURA of debt would have to bring 111.1 EURA if there is a 1% repaying fee.
 
 As for the mint fee, the repay fee is most often set to 0, and you should check the [analytics](https://analytics.angle.money) to check whether there has been updates.
 
@@ -80,7 +80,7 @@ This debt increase through fees may happen at four (optional) moments:
 
 1. When minting stablecoins if there is a **mint fee**
 2. During the life of the vault if stablecoins are borrowed, through the **stability fee**
-3. When repaying an agToken debt if there is a **repay fee**
+3. When repaying a stablecoin debt if there is a **repay fee**
 4. When a liquidation happens, through the **liquidation surcharge**
 
 ## Bad debt

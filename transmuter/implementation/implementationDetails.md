@@ -8,7 +8,7 @@ description: Implementation details for Transmuter
 
 Fees for a specific action (mint or burn) are defined by the values they should take at certain exposures.
 
-For instance, the system may be set such at exposure 0% for $$\texttt{EUR}_A$$ after a mint, mint fees must be $$f=0.1\%$$, at 30% $$f=0.3\%$$, at 32% $$f=0.34\%$$ and at 40% $$f=100\%$$.
+For instance, the system may be set such at exposure 0% for $$\texttt{EUR}_B$$ after a mint, mint fees must be $$f=0.1\%$$, at 30% $$f=0.3\%$$, at 32% $$f=0.34\%$$ and at 40% $$f=100\%$$.
 
 The Transmuter system is implemented such that in the same block (and putting gas cost considerations aside), splitting an order in multiple sub orders involving the same asset gives exactly the same output as making one single order. On top of that, it also enables people to specify when minting or burning whether they want to get an exact amount of tokens in output or to bring an exact amount of tokens in input, with both methods being purely equivalent.
 

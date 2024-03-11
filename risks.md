@@ -36,9 +36,9 @@ The failure of one of the assets in the reserves or a drastic loss in value of o
 
 ## Counterparty Risk
 
-Some of the collateral assets of the protocol (EUROC, USDC for instance) are controlled by centralized entities. There is therefore a counterparty risk related to these entities. Bankruptcy remoteness and the ability to claim the underlying assets of the supported collaterals is an important aspect of the collateral selection process.
+Some of the collateral assets of the protocol (EURC, USDC for instance) are controlled by centralized entities. There is therefore a counterparty risk related to these entities. Bankruptcy remoteness and the ability to claim the underlying assets of the supported collaterals is an important aspect of the collateral selection process.
 
-As part of its [direct deposit modules](./other/amo.md), the protocol invests stablecoins and a portion of its treasury into other protocols (Uniswap, Aave for instance). The hack or a failure of any of these underlying protocols may lead the protocol to lose funds.
+As part of its [direct deposit modules](./other/amo.md), the protocol invests stablecoins and a portion of its treasury into other protocols (Uniswap, Aave, Morpho for instance). The hack or a failure of any of these underlying protocols may lead the protocol to lose funds.
 So far for EURA, the protocol has invested less than 20% of its equity in direct deposit modules.
 
 ## Bad Liquidation Risk

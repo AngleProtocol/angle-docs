@@ -56,4 +56,7 @@ The smart contracts of the Transmuter have been audited by Code4rena. The code a
 
 ## 📇 Deployments
 
-Transmuter has been deployed for EURA on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb).
+Transmuter has been deployed:
+
+- for EURA on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb)
+- for USDA on Ethereum at [this address](https://etherscan.io/address/0x222222fD79264BBE280b4986F6FEfBC3524d0137)
