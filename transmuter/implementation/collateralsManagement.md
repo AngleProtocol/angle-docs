@@ -16,9 +16,9 @@ As the redemption feature is mostly designed for advanced market makers and arbi
 
 Depending on the assets, different types of whitelists may apply and the management of whitelists is delegated to the protocol governance or to external trusted systems.
 
-### For agEUR
+### For EURA
 
-agEUR supports in its backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security. Burning for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
+EURA supports in its backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security. Burning for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
 
 While Angle Governance maintains its own whitelist, Transmuter is also connected to [Keyring Network](https://www.keyring.network) compliance solution for the whitelist. For any address that comes to the protocol, Keyring dynamic whitelist checks that:
 
@@ -28,7 +28,7 @@ While Angle Governance maintains its own whitelist, Transmuter is also connected
 For more details, on how to get setup and verified on Keyring you can check [this guide](https://keyring.notion.site/Keyring-Network-User-Guide-e297b3133d50482896a8f8b83839aacd).
 
 {% hint style="info" %}
-The detailed state of whether whitelisted collateral assets are supported for agEUR can be found in [Angle Analytics](https://analytics.angle.money).
+The detailed state of whether whitelisted collateral assets are supported for EURA can be found in [Angle Analytics](https://analytics.angle.money).
 {% endhint %}
 
 ## 🌾 Collateral Management
@@ -36,7 +36,7 @@ The detailed state of whether whitelisted collateral assets are supported for ag
 While collateral assets in Transmuter remain by default idle in the contract, the system supports the possibility to plug manager contracts or strategies to generate a yield on the assets in the backing.
 
 {% hint style="info" %}
-While possible, this feature is not activated so far for any of the agEUR collateral assets. It could be activated on a per asset level by the protocol governance.
+While possible, this feature is not activated so far for any of the EURA collateral assets. It could be activated on a per asset level by the protocol governance.
 {% endhint %}
 
 Investing a portion of the reserves of Transmuter in yield strategies can enable it to get over-collateralized over time and to build a safety buffer for future depegs of assets in the system. If the protocol gets badly collateralized, this kind of mechanism may also help the protocol slowly re-collateralize itself.

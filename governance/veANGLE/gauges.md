@@ -61,7 +61,7 @@ The idea with Angle gauges is to incentivize liquidity pools for Angle stablecoi
 
 The gauge system can also be used to incentivize different things than just pools directly. For instance, incentives for Curve voters can be linked to a gauge for which received emissions are placed on bribing platforms like Votemarket.
 
-Overall, there is no restriction on which pools or pairs can have a gauge other than that they should pass the gauge governance vote. The idea is however that all gauges should have a link with an Angle Protocol stablecoin (like agEUR) or the Angle protocol more generally, as the governance token of the protocol is being distributed as incentive.
+Overall, there is no restriction on which pools or pairs can have a gauge other than that they should pass the gauge governance vote. The idea is however that all gauges should have a link with an Angle Protocol stablecoin (like EURA) or the Angle protocol more generally, as the governance token of the protocol is being distributed as incentive.
 
 Given that a wide range of contracts can be considered Angle protocol gauges, the system distinguishes several gauge types.
 

@@ -106,7 +106,7 @@ The script computing rewards and updating the reward Merkle root onchain is ran 
 
 To allow anyone to permissionlessly verify that the system is working properly, and to reduce the system's exposure to potential hacks or failures, every new Merkle root update is followed by a 1 hour dispute period. A new Merkle root that aggregates reward distribution data for a chain is only effective after this dispute period.
 
-Anyone can contest the result of a distribution during the dispute period. A dispute can be triggered by sending a pre-defined amount of `disputeToken` (currently 100 agEUR) to the contract distributing rewards. During a dispute, the Merkle root of the distribution contract is frozen to its last valid version. Disputes can then either be considered as valid, in which case the disputer is refunded and the disputed Merkle root is revoked, or invalid. If it is invalid the disputer loses its funds and the dispute period is restarted from scratch (which means the disputed tree is still not considered valid).
+Anyone can contest the result of a distribution during the dispute period. A dispute can be triggered by sending a pre-defined amount of `disputeToken` (currently 100 EURA) to the contract distributing rewards. During a dispute, the Merkle root of the distribution contract is frozen to its last valid version. Disputes can then either be considered as valid, in which case the disputer is refunded and the disputed Merkle root is revoked, or invalid. If it is invalid the disputer loses its funds and the dispute period is restarted from scratch (which means the disputed tree is still not considered valid).
 
 The dispute token, amount, and length can be obtained by directly querying the contract handling reward distribution on the chain of interest.
 
@@ -116,7 +116,7 @@ We have developed [an open-source bot](https://github.com/AngleProtocol/merkl-di
 
 Merkl is free to use for liquidity providers claiming rewards. There is a maintenance fee of 3% applied to incentives that are sent by incentivizors.
 
-This fee is waived for pools which contain agEUR or any other Angle related token.
+This fee is waived for pools which contain EURA or any other Angle related token.
 
 ## Resources
 

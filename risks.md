@@ -30,7 +30,7 @@ Angle is dependent on oracles (Chainlink, Redstone, Pyth among others) to assess
 
 ## Collateral Risk
 
-Angle stablecoins are backed by collateral assets. Within [the Transmuter](./transmuter/README.md) for instance, these should be denominated in the same currency as that of the stablecoin. For instance, agEUR has in its reserves bC3M a tokenized representation of [a Euro ETF](https://www.amundietf.fr/fr/professionnels/produits/fixed-income/amundi-etf-govies-06-months-euro-investment-grade-ucits-etf-dr/fr0010754200).
+Angle stablecoins are backed by collateral assets. Within [the Transmuter](./transmuter/README.md) for instance, these should be denominated in the same currency as that of the stablecoin. For instance, EURA has in its reserves bC3M a tokenized representation of [a Euro ETF](https://www.amundietf.fr/fr/professionnels/produits/fixed-income/amundi-etf-govies-06-months-euro-investment-grade-ucits-etf-dr/fr0010754200).
 
 The failure of one of the assets in the reserves or a drastic loss in value of one of these assets may leave the protocol badly collateralized. Every collateral of a protocol's stablecoin may pose some relative risk.
 
@@ -39,7 +39,7 @@ The failure of one of the assets in the reserves or a drastic loss in value of o
 Some of the collateral assets of the protocol (EUROC, USDC for instance) are controlled by centralized entities. There is therefore a counterparty risk related to these entities. Bankruptcy remoteness and the ability to claim the underlying assets of the supported collaterals is an important aspect of the collateral selection process.
 
 As part of its [direct deposit modules](./other/amo.md), the protocol invests stablecoins and a portion of its treasury into other protocols (Uniswap, Aave for instance). The hack or a failure of any of these underlying protocols may lead the protocol to lose funds.
-So far for agEUR, the protocol has invested less than 20% of its equity in direct deposit modules.
+So far for EURA, the protocol has invested less than 20% of its equity in direct deposit modules.
 
 ## Bad Liquidation Risk
 
@@ -55,6 +55,6 @@ More globally, the systems on which the protocol relies are based on economic an
 
 ## Higher fees or lower than expected returns
 
-The fees at stake in different places of the protocol may be variable (for instance in the borrowing module the rate may be modified by governance or within the Transmuter the minting and burning fees are dynamic based on the system's exposure to its collateral assets). The costs associated with getting or burning agEUR may therefore vary and increase without notice.
+The fees at stake in different places of the protocol may be variable (for instance in the borrowing module the rate may be modified by governance or within the Transmuter the minting and burning fees are dynamic based on the system's exposure to its collateral assets). The costs associated with getting or burning EURA may therefore vary and increase without notice.
 
 Similarly, on Angle Savings contracts, the rate that is paid to stablecoin holders may vary, leading to lower than expected returns.

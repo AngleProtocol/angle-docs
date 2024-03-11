@@ -4,9 +4,9 @@ description: Liquidations in Angle Borrowing Module
 
 # 🎳 Liquidations
 
-Liquidation is the mechanism by which external actors repay the debt of borrowers on their behalf when they become insolvent: it is the process that guarantees the robustness of the Borrowing module and that there is always more collateral than agTokens issued.
+Liquidation is the mechanism by which external actors repay the debt of borrowers on their behalf when they become insolvent: it is the process that guarantees the robustness of the Borrowing module and that there is always more collateral than stablecoins issued.
 
-Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the agTokens borrowed. A liquidation situation for a vault depends on its [health factor](../../new-module/vaults/glossary.md) which depends on the [collateral factor](../../new-module/vaults/glossary.md) of the corresponding vault.
+Angle Vaults can get liquidated if the value of the collateral deposited gets too low compared to the value of the stablecoins borrowed. A liquidation situation for a vault depends on its [health factor](../../new-module/vaults/glossary.md) which depends on the [collateral factor](../../new-module/vaults/glossary.md) of the corresponding vault.
 
 Liquidations in this Borrowing module are designed to be the most borrower friendly in the DeFi space.
 
@@ -30,7 +30,7 @@ If this health factor goes below 1, it means that the value of the collateral ba
 
 ### What happens to a position getting liquidated?
 
-Liquidating a position means repaying part or the entirety of the vault's debt (agTokens) against the collateral it holds (ETH or any other collateral token), usually at a discount.
+Liquidating a position means repaying part or the entirety of the vault's debt (stablecoins) against the collateral it holds (ETH or any other collateral token), usually at a discount.
 
 After getting liquidated, a vault will either be empty, or both the amount of debt and collateral will have been reduced in a way that puts the Health Factor of the vault back above a healthy target.
 

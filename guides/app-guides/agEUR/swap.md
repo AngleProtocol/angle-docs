@@ -11,7 +11,7 @@ Angle stablecoins can be bought from the [swap and buy page](https://app.angle.m
 
 ## Swap
 
-The app uses Odos (which integrates agEUR's native mint & burn mechanism on Ethereum) to provide the best rates to buy or sell Angle stablecoins from an onchain transaction.
+The app uses Odos (which integrates EURA's native mint & burn mechanism on Ethereum) to provide the best rates to buy or sell Angle stablecoins from an onchain transaction.
 
 ### Buying onchain
 
@@ -31,14 +31,14 @@ Here are the steps to buy onchain:
 You can refresh the rates by clicking on the circled arrow on the top right of the inputs.
 {% endhint %}
 
-![Minting agEUR](/.gitbook/assets/new-app-buy.png)
+![Minting EURA](/.gitbook/assets/new-app-buy.png)
 
 ### Selling onchain
 
-Selling an Angle stablecoin through the Swap page works exactly in the opposite way. Click on the arrow between the two inputs to put the stablecoin (e.g agEUR) as `From` token. You can then select the token you want to swap the stablecoin for, enter an amount and confirm your transaction.
+Selling an Angle stablecoin through the Swap page works exactly in the opposite way. Click on the arrow between the two inputs to put the stablecoin (e.g EURA) as `From` token. You can then select the token you want to swap the stablecoin for, enter an amount and confirm your transaction.
 
 ## On-ramp / Off-ramp
 
-agEUR is supported by a wide range of on-ramp and off-ramp providers which make it accessible from a simple credit card payment or bank transfer. All of these are listed in the Buy toggle of the [swap and buy page](https://app.angle.money/swap).
+EURA is supported by a wide range of on-ramp and off-ramp providers which make it accessible from a simple credit card payment or bank transfer. All of these are listed in the Buy toggle of the [swap and buy page](https://app.angle.money/swap).
 
 ![On-ramp](../../../.gitbook/assets/new-app-ramp.png)

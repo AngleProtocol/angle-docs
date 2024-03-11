@@ -20,8 +20,8 @@ $$
 
 The penalty factor can be set with a peak right when the collateral ratio starts to get inferior to 100%. This is a way to:
 
-* deter users from starting a bank run as they would get less than the fair value of the reserves of the system if redeeming
-* reward users who wait for a transitory downturn to pass in a sustainable way.
+- deter users from starting a bank run as they would get less than the fair value of the reserves of the system if redeeming
+- reward users who wait for a transitory downturn to pass in a sustainable way.
 
 ![Penalty Factor Evolution Example](../.gitbook/assets/penaltyFactor.png)
 
@@ -33,7 +33,7 @@ Note that the reason why the penalty factor curve is hyperbolic when the collate
 
 ## 🤔 Example
 
-Consider a state where 100 stablecoins have been issued, and there are 30 $$\texttt{EUR}_A$$, 30 $$\texttt{EUR}_B$$ and 40 $$\texttt{EUR}_{\texttt{yield}}$$ in reserves and $$\texttt{EUR}_A$$ depegs by 5%, the collateral ratio becomes 98.5%. If in this case the penalty is set to be 0.98, a user redeeming 10 agEUR gets 2.94 $$\texttt{EUR}_A$$ worth 2.793€, 2.94 $$\texttt{EUR}_B$$ worth 2.94€, and 3.92 $$\texttt{EUR}_{\texttt{yield}}$$ worth 3.92€.
+Consider a state where 100 stablecoins have been issued, and there are 30 $$\texttt{EUR}_B$$, 30 $$\texttt{EUR}_C$$ and 40 $$\texttt{EUR}_{\texttt{yield}}$$ in reserves and $$\texttt{EUR}_B$$ depegs by 5%, the collateral ratio becomes 98.5%. If in this case the penalty is set to be 0.98, a user redeeming 10 EURA gets 2.94 $$\texttt{EUR}_B$$ worth 2.793€, 2.94 $$\texttt{EUR}_C$$ worth 2.94€, and 3.92 $$\texttt{EUR}_{\texttt{yield}}$$ worth 3.92€.
 
 The user got 9.653€ in value, which is actually less than the 9.85€ they should have obtained if they had been settled at the value of the collateral ratio: the protocol is partly re-collateralized by the redemption, and the redemption increased the overall health of the system.
 
