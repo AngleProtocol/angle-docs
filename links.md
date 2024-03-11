@@ -16,6 +16,7 @@ coverY: 0
 ## Governance
 
 - 💬 [Governance Forum](https://gov.angle.money)
+- 👍 [Governance Votes](https://app.angle.money/governance)
 - 🗳 [Snapshot space](https://snapshot.org/#/anglegovernance.eth)
 
 ## Developers
