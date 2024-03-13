@@ -26,7 +26,7 @@ The main feature of vaults is the ability to **borrow** Angle stablecoins. A vau
 
 Users with borrowed stablecoins should monitor their vaults' [health factor](../glossary.md). This metric keeps track of the "health" of the vault: it compares the collateral ratio of the vault with the minimum accepted. If the value of the collateral with respect to the stablecoins borrowed decreases so much that the health factor goes below 1, then the vault can get [**liquidated**](liquidations.md).
 
-![Angle Vaults](../../.gitbook/assets/Angle-Vaults.jpg)
+![Angle Vaults](../../.gitbook/assets/Angle-vaults.jpg)
 
 ### Leveraging collateral exposure
 
