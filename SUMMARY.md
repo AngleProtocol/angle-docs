@@ -41,9 +41,6 @@
 - [🗳 Angle DAO](governance/angle-dao.md)
 - [🚀 ANGLE Token](governance/angle-token.md)
 - [♠ veANGLE](governance/veANGLE/README.md)
-  - [🔒 Lock Details](governance/veANGLE/lock-details.md)
-  - [🗳 Gauges](governance/veANGLE/gauges.md)
-  - [💥 Boost](governance/veANGLE/boost.md)
 - [💂 Angle Guardian](governance/guardian.md)
 
 ## Resources
