@@ -16,8 +16,8 @@ Angle related contract addresses across different chains and L2s can be found [h
 
 ## 🔎 TL;DR
 
-- The protocol only keeps a single "canonical" representation of an agToken (and of the ANGLE token) per chain.
-- Any bridge solution can be whitelisted to mint the canonical representation of an agToken on a chain.
+- The protocol only keeps a single "canonical" representation of a stablecoin (and of the ANGLE token) per chain.
+- Any bridge solution can be whitelisted to mint the canonical representation of a stablecoin on a chain.
 - The smart contracts for the stablecoins and for the ANGLE token implement global and hourly limits to reduce the exposure of the protocol in case of a bridge hack.
 - So far, the most widely used solution to bridge EURA and ANGLE cross-chain is LayerZero.
 

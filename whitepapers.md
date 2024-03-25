@@ -25,3 +25,7 @@ Borrowing Module Whitepaper
 {% file src="whitepapers/Angle Core Module Whitepaper.pdf" %}
 Angle Core Module Whitepaper
 {% endfile %}
+
+{% hint style="info" %}
+Angle Core module is a previous module for the protocol that was deprecated in May 2023.
+{% endhint %}

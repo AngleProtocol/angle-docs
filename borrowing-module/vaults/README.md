@@ -48,7 +48,7 @@ Support for yield-bearing tokens as collateral thus makes Angle Borrowing module
 
 ### Composable actions
 
-With an opened vault, there are many different actions that can be performed beyond borrowing stablecoins: adding collateral, removing collateral from it, repaying the agToken debt. All these actions can be combined with one another in a single transaction, which notably allows for capital efficient interactions with Angle vaults.
+With an opened vault, there are many different actions that can be performed beyond borrowing stablecoins: adding collateral, removing collateral from it, repaying the stablecoin debt. All these actions can be combined with one another in a single transaction, which notably allows for capital efficient interactions with Angle vaults.
 
 {% hint style="info" %}
 For more details on how to combine transactions in a modular way with the protocol, you can check [this page](https://developers.angle.money/borrowing-module-contracts/smart-contract-docs/vaultmanager) of our developers documentation.
@@ -98,7 +98,7 @@ The higher the collateral ratio, the "safer" the vault, as the price decline of 
 
 Additionally, each vault type has its own **collateral factor** (CF) parameter. It dictates the minimum collateral ratio allowed for vaults of this type. If this ratio drops below this quantity defined by the CF (1/CF more precisely), the vault risks being liquidated.
 
-For example, if the CF of a vault type is at 2/3, or 150% of min collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 agEUR need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
+For example, if the CF of a vault type is at 2/3, or 150% of min collateral ratio, users need to deposit at least x1.5 more than what they want to borrow. In practice, this means that users wanting to borrow 1,000 EURA need to deposit at least 1,500€ of ETH for example. If the value of their ETH deposit drops, pushing their CR below 150%, they are in risk of getting liquidated.
 
 ### Isolated positions & debt transfer
 
@@ -106,7 +106,7 @@ For example, if the CF of a vault type is at 2/3, or 150% of min collateral rati
 
 There is one different smart contract per collateral type in Angle Borrowing module: these contracts are called `VaultManager` contracts. There could be for the same collateral asset different `VaultManager` contracts, corresponding to different parameters.
 
-For instance, we could imagine for the same agToken ETH as a collateral with a minimum collateral ratio of 150% and a 1% interest rate on borrows and ETH with a minimum collateral ratio of 120% and an interest rate of 3%.
+For instance, we could imagine for the same stablecoin ETH as a collateral with a minimum collateral ratio of 150% and a 1% interest rate on borrows and ETH with a minimum collateral ratio of 120% and an interest rate of 3%.
 
 #### Isolated positions & NFTs
 

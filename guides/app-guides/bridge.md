@@ -1,12 +1,12 @@
 ---
-description: How to bridge agEUR and ANGLE to different networks with the Angle App
+description: How to bridge EURA and ANGLE to different networks with the Angle App
 ---
 
 # 🌉 Bridge Angle stablecoins across chains
 
-Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging agEUR and ANGLE](https://app.angle.money/bridges-agEUR) between many EVM-compatible networks.
+Angle App leverages the protocol's [cross-chain bridge setup](../../../other/cross-chain.md) built on LayerZero to enable [bridging its stablecoins and ANGLE](https://app.angle.money/bridges-agEUR) between many EVM-compatible networks.
 
-To bridge EURA or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
+To bridge stablecoins or ANGLE from a network to another, you simply need to head to the [app's bridge page](https://app.angle.money/bridges-agEUR) select the token you want to bridge, enter the amount, and select the destination network.
 
 ![Bridge app page](../../../.gitbook/assets/bridge2.png)
 
@@ -19,32 +19,31 @@ There are two other aspects you need to be careful about:
 Not having enough funds on the origin chain to pay for gas is the most frequently encountered issue, and most likely the one you are facing as well. Try to buy more gas token and try the transaction again.
 {% endhint %}
 
-**Table of contents:**
-
-- [Bridge limits](#bridge-limits)
-  - [How to get back EURA from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur)
-- [Funds required to pay for bridge transaction fees](#funds-required-to-pay-for-bridge-transaction-fees)
-- [I'm not sure if my bridge transaction was confirmed](#im-not-sure-if-my-bridge-transaction-was-confirmed)
-
 ## Bridge limits
 
-Angle's bridge system implements total and hourly limits for the amounts that can be bridged to a chain.
+Angle's bridge system implements total and hourly limits for the amounts that can be bridged to a chain. These limits are particular to each asset (Angle stablecoin or ANGLE token) and to each chain.
 
-The total limits limit how much token can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
+The total limits limit how many tokens can be held by the bridge contract on each chain. The hourly limits limit how much can be bridged to and from each chain.
 
 {% hint style="info" %}
-If the limits are reached when processing a bridge transaction, you won't receive EURA in your wallet on the destination chain.
+If the limits are reached when processing a bridge transaction, you won't receive stablecoins or ANGLE in your wallet on the destination chain.
 
-Instead, **you will receive [lz-agEUR tokens in your wallet that can be used to redeem EURA later](#how-to-get-back-ageur-from-lz-ageur)**, when the limits reset.
+Instead, **you will receive lz tokens in your wallet that can be used to redeem the stablecoin or ANGLE later**, when the limits reset.
 {% endhint %}
 
 Information on the current limits are displayed in the callout below the inputs.
 
 ![Bridge app page](../../../.gitbook/assets/bridge3.png)
 
-### How to get back EURA from lz-agEUR
+### How to get back stablecoins from lz tokens
 
-On each network where EURA can be bridged, there is a lz-agEUR contract. You can find their addresses on the [smart contracts addresses](https://developers.angle.money/overview/smart-contracts) page.
+On each network where stablecoins can be bridged, there is a lz-stablecoin contract. Typically on every chain where EURA can be bridged there is a lz-agEUR contract (due to the previous name of the stablecoin).
+
+You can find their addresses on the [smart contracts addresses](https://developers.angle.money/overview/smart-contracts) page.
+
+{% hint style="info" %}
+Here, we specifically look at EURA bridging use case, but all of this applies to other stablecoins as well. Also, the example here is for Optimism, but it works the same on any chain where Angle Bridging system is live.
+{% endhint %}
 
 If you hit a bridge limit, you should have received lz-agEUR tokens in your wallet. In this case, you can go to the token contract ([example on Optimism](https://optimistic.etherscan.io/address/0x840b25c87b626a259ca5ac32124fa752f0230a72#writeProxyContract)).
 
@@ -66,10 +65,6 @@ Then follow these steps:
 
 If the limits are still empty, you will just get the same amount of `lz-agEUR` back. You can check the current limits on the app [bridge page](https://app.angle.money/bridges-agEUR).
 
-{% hint style="info" %}
-The example here is for Optimism, but it works the same on any chain where Angle Bridging system is live.
-{% endhint %}
-
 ## Funds required to pay for bridge transaction fees
 
 When bridging from a network to another, you need enough gas token on the origin chain to pay for bridge transactions **both on the origin and destination chains**.
@@ -86,4 +81,4 @@ For example, with a gas price of 100 you will need ~0.03 gas token (ETH, MATIC, 
 
 If you don't know whether you should have received funds in your wallet after a bridge transaction, you should check on [LayerZeroScan](https://layerzeroscan.com/) with the hash of the bridge transaction from the origin network.
 
-If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back EURA from lz-agEUR](#how-to-get-back-ageur-from-lz-ageur).
+If the transaction on the destination chain is confirmed but you don't have the tokens in your wallet, you can read the paragraph about [how to get back stablecoins from lz tokens](#how-to-get-back-stablecoins-from-lz-tokens).

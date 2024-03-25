@@ -47,6 +47,8 @@ As explained in [this page](implementation/collateralsManagement.md), there can 
 
 Note that Transmuter could just work with the mint and redemption functionalities. The burn function is more to be seen as a UX facilitator for users who do not want to end up with a multitude of tokens when redeeming. In most circumstances, and when exposures to different assets are close to their targets, the protocol is better off with users redeeming rather than burning for one asset. To this extent, the redemption method should be the cheapest and the privileged method of interaction for advanced traders who can handle multiple tokens at once.
 
-The figure below shows the effect of burning with respect to redeeming in different collateral ratio settings:
+The figures below show the effect of burning with respect to redeeming in different collateral ratio settings:
 
 ![Burning vs. Redeeming in different cases](../.gitbook/assets/docs-Scenarios.jpg)
+
+![Burning vs. Redeeming in different cases](../.gitbook/assets/Docs-USDA-burn-redeem.jpg)
