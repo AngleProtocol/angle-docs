@@ -16,19 +16,20 @@ As the redemption feature is mostly designed for advanced market makers and arbi
 
 Depending on the assets, different types of whitelists may apply and the management of whitelists is delegated to the protocol governance or to external trusted systems.
 
-### For EURA
+### For EURA and USDA
 
-EURA supports in its backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security. Burning for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
+EURA and USDA support in their backing [Backed](https://backed.fi) securities like [bC3M](https://etherscan.io/address/0x2F123cF3F37CE3328CC9B5b8415f9EC5109b45e7), a tokenized Euro security, or [bIB01](https://etherscan.io/token/0xCA30c93B02514f86d5C86a6e375E3A330B435Fb5), a tokenized representation of an ETF investing in US T-bills by Blackrock.
+Burning Angle stablecoins for Backed securities and redeeming Backed securities in the backing is only available to whitelisted users.
 
-While Angle Governance maintains its own whitelist, Transmuter is also connected to [Keyring Network](https://www.keyring.network) compliance solution for the whitelist. For any address that comes to the protocol, Keyring dynamic whitelist checks that:
+While Angle Governance maintains its own whitelist, each Transmuter implementation is also connected to [Keyring Network](https://www.keyring.network) compliance solution for the whitelist. For any address that comes to the protocol, Keyring dynamic whitelist checks that:
 
 - The address has already been KYC-ed by Backed,
-- Or that the address has been whitelisted on their platform according to the Backed Admission Policy. Currently, the whitelist is only open to users that meet [US Regulation S criteria](https://www.ecfr.gov/current/title-17/chapter-II/part-230#subject-group-ECFR69201f82e35ad1c).
+- Or that the address has been whitelisted on their platform according to the Backed Admission Policy. Currently, the whitelist is only open to users that have valid KYC/KYB and are accredited investors.
 
-For more details, on how to get setup and verified on Keyring you can check [this guide](https://keyring.notion.site/Keyring-Network-User-Guide-e297b3133d50482896a8f8b83839aacd).
+For more details on how to get setup and verified on Keyring you can check [this guide](https://docs.keyring.network/docs/end-users/how-to-onboard).
 
 {% hint style="info" %}
-The detailed state of whether whitelisted collateral assets are supported for EURA can be found in [Angle Analytics](https://analytics.angle.money).
+The detailed state of whether whitelisted collateral assets are supported for Angle stablecoins can be found in [Angle Analytics](https://analytics.angle.money).
 {% endhint %}
 
 ## 🌾 Collateral Management
