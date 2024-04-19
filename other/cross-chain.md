@@ -49,8 +49,6 @@ For instance, it's not possible to bridge on some chains more than 10k EURA per 
 
 Limits can be set by Angle governance for each chain, for each token and for each bridge solution relatively to the amount of the given token circulating on the chain.
 
-![Angle Bridge Limits](../.gitbook/assets/bridge-limits.png)
-
 ### About LayerZero
 
 [LayerZero](https://layerzero.network/) is so far one of the only whitelisted solution to mint stablecoins and the ANGLE token across a wide range of sidechains (the other solution being Polygon PoS bridge that is whitelisted just on Polygon). It is the solution that is used under the hood on the [Angle App](https://app.angle.money/bridges-agEUR).

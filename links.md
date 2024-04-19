@@ -82,7 +82,9 @@ coverY: 0
 
 #### On Ethereum
 
-- [UniswapV3 EURA - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
+- [Uniswap V3 EURA - USDA (0.05%)](https://etherscan.io/address/0x580EE6b001348FA0DeB675F4D55259C96c4a3A31)
+- [Arrakis ANGLE - ETH (1%)](https://dashboard.arrakis.finance/?network=ethereum&vault=0xcd80b6713387e02cdd0d77d60f09fd0589ff212c)
+- [Uniswap V3 EURA - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 - [Uniswap V3 EURA - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
 - [Uniswap V3 ANGLE - ETH (1%)](https://info.uniswap.org/#/pools/0x51c2841333fbbab53b7c2c442cc265bf16430d6d)
 - [Curve EURA - EURC](https://curve.fi/factory/164)
@@ -101,18 +103,6 @@ coverY: 0
 - [Uniswap V3 EURA - ETH (0.3%)](https://info.uniswap.org/#/pools/0x9496d107a4b90c7d18c703e8685167f90ac273b0)
 - [Arrakis EURA - USDC (0.01%)](https://beta.arrakis.finance/#/vaults/0xEDECB43233549c51CC3268b5dE840239787AD56c)
 - [Arrakis EURA - ETH (0.05%)](https://beta.arrakis.finance/#/vaults/0x857E0B2eD0E82D5cDEB015E77ebB873C47F99575)
-- [Arrakis ANGLE - ETH (1%)](https://dashboard.arrakis.finance/?network=ethereum&vault=0xcd80b6713387e02cdd0d77d60f09fd0589ff212c)
-
-#### On Polygon
-
-- [Uniswap V3 EURA - USDC (0.01%)](https://info.uniswap.org/#/polygon/pools/0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80)
-- [Retro EURA-USDC](https://polygonscan.com/address/0xc2cb03a819f785bd8eb8d628bad41cd7c1c71f4b)
-- [Quickswap EURA - USDC](https://info.quickswap.exchange/#/pair/0x82a54e66c05fcd555adae593848a4257c9e51ad9)
-- [Quickswap EURA - MAI](https://quickswap.exchange/#/analytics/v3/pair/0x63aefd3aefeedce0860a5ef21c1af548641620dd)
-- [Quickswap EURA - ANGLE](https://info.quickswap.exchange/#/pair/0xbf1ac395731307e83cbf1901957ed0a4faa15a02)
-- [Curve EURA - 4EUR (jEUR, PAR, EURt, EURs)](https://polygon.curve.fi/factory/72)
-- [Curve EURA - jEUR](https://polygon.curve.fi/factory/209)
-- [Arrakis / Gelato EURA - USDC (0.01%)](https://polygonscan.com/address/0x1644de0A8E54626b54AC77463900FcFFD8B94542)
 
 #### On Optimism
 
@@ -126,6 +116,17 @@ coverY: 0
 - [Camelot V3 stEUR-ARB](https://info.camelot.exchange/pair/v3/0xcae4a98685fd488e8d2fc3780baabc7d472f9d01)
 - [Camelot V3 stEUR-wstETH](https://info.camelot.exchange/pair/v3/0x6c41a770583fc7141fbea9ac741f9015a4de6fda)
 - [Kyberswap EURA-USDC](https://kyberswap.com/elastic/add/0xFA5Ed56A203466CbBC2430a43c66b9D8723528E7/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8/40)
+
+#### On Polygon
+
+- [Uniswap V3 EURA - USDC (0.01%)](https://info.uniswap.org/#/polygon/pools/0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80)
+- [Retro EURA-USDC](https://polygonscan.com/address/0xc2cb03a819f785bd8eb8d628bad41cd7c1c71f4b)
+- [Quickswap EURA - USDC](https://info.quickswap.exchange/#/pair/0x82a54e66c05fcd555adae593848a4257c9e51ad9)
+- [Quickswap EURA - MAI](https://quickswap.exchange/#/analytics/v3/pair/0x63aefd3aefeedce0860a5ef21c1af548641620dd)
+- [Quickswap EURA - ANGLE](https://info.quickswap.exchange/#/pair/0xbf1ac395731307e83cbf1901957ed0a4faa15a02)
+- [Curve EURA - 4EUR (jEUR, PAR, EURt, EURs)](https://polygon.curve.fi/factory/72)
+- [Curve EURA - jEUR](https://polygon.curve.fi/factory/209)
+- [Arrakis / Gelato EURA - USDC (0.01%)](https://polygonscan.com/address/0x1644de0A8E54626b54AC77463900FcFFD8B94542)
 
 #### On BNBChain
 

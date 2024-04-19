@@ -20,8 +20,8 @@ Here are the steps to buy onchain:
 1. Go to the [Swap page](https://app.angle.money/swap) of the app.
 2. Select the `Swap` toggle
 3. Select network on which you want to get the stablecoin.
-4. Select the stablecoin you want to buy
-5. Select the token you want to buy the stablecoin with. You can also copy any token's address you like.
+4. Select the token you want to buy (an Angle stablecoin or ANGLE tokens)
+5. Select the token you want to buy the stablecoin (or ANGLE) with. You can also copy any token's address you like.
 6. Enter the amounts you want.
 7. The app integrates Odos and will automatically fetch the best rates for you in the background.
 8. Approve your tokens. More precisely, to interact with Angle (and any other DeFi protocol), you need to approve (this is a transaction which costs ETH) or give permissions (signature) for the tokens you want to spend. This depends on the tokens used and not on the protocol.
