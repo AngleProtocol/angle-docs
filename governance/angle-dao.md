@@ -59,7 +59,7 @@ Once proposals have been discussed, they can be voted on Angle voting module. Th
 Practically speaking, through this system, anyone with enough voting power can submit a proposal to Angle governance smart contracts, under the form of onchain code. For any submitted proposal, there is a delay before it goes into effect. Once this delay is passed, veANGLE holders or their delegates can vote on the submitted code.
 
 {% hint style="warning" %}
-There is no front interface available to submit proposal. The [angle-governance](https://github.com/AngleProtocol/angle-governance) repository comes with prepared scripts and helpers to facilitate the submission of proposals onchain.
+There is no front interface available to submit proposals. The [angle-governance](https://github.com/AngleProtocol/angle-governance) repository comes with prepared scripts and helpers to facilitate the submission of proposals onchain.
 {% endhint %}
 
 If a majority of veANGLE holders vote in favor of a proposal, and if the amount of voters with respect to the total supply of veANGLE at the start of the vote is big enough, proposals can then be pushed to the execution module of the protocol. If there is no majority of support or no quorum for the proposal, then it is simply cancelled and cannot lead to any onchain modification of the protocol's state.
@@ -166,14 +166,6 @@ For some proposals about offchain policy changes on for instance the governance 
 
 This Snapshot space can also be used to run temperature checks before votes that could be potentially disputed.
 
-## Voting on rewards distribution
-
-Last, veANGLE holders of the DAO are responsible for deciding where the liquidity mining rewards get distributed. Voting on this happens onchain and can be done through the gauge page of the [app](https://app.angle.money/gauge). Users can allocate weights to the different pools they want rewards to be distributed to.
-
-Note here that the delegation mechanism used for Angle onchain voting mechanism does not apply for gauge weight allocations. If an address has delegated its veANGLE voting power to another address for Angle governance proposals, it can still use its voting power to influence the distribution of Angle liquidity mining rewards.
-
-More info on the details of this process in the [Gauges](veANGLE/gauges.md) page.
-
 ## Security
 
 Angle governance infrastructure relies on different audited building blocks:
@@ -181,4 +173,4 @@ Angle governance infrastructure relies on different audited building blocks:
 - the voting module and the `Timelock` contracts rely on reference implementations by OpenZeppelin
 - the part of the execution module designed to bridge payloads from one chain to another is forked from [contracts developed and audited by LayerZero](<(https://github.com/LayerZero-Labs/omnichain-governance-executor/tree/main/audits)>) for this exact use case.
 - The delegation mechanism for the voting module is forked from [FRAX audited delegation system](https://github.com/FraxFinance/frax-governance/blob/e465513ac282aa7bfd6744b3136354fae51fed3c/src/VeFxsVotingDelegation.sol) for veTokens.
-- The smart contracts for the veANGLE token and all the logic associated with the liquidity mining emissions [have been audited by Chainsecurity](../resources/audits/README.md).
+- The smart contracts for the veANGLE token [have been audited by Chainsecurity](../resources/audits/README.md).

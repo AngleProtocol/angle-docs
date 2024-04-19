@@ -94,37 +94,15 @@ Here are the steps to Repay debt, withdraw collateral, or close your vault:
 
 1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow)
 2. Click on the `Remove / Repay` button on your vault.
-3. Tick the box above the inputs if you want to repay all your debt and close your vault. You will get all the remaining collateral.
-4. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
-5. Enter the amount collateral you want to use to repay your debt in the bottom left input.
-6. Enter the amount of debt token from your wallet balance you want to use to repay your debt.
-7. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
-
-For example, in the following screenshot, 0.01 wETH is swapped into ~12.45 EURA to repay part of the vault's debt, and 10 EURA from the wallet is used to repay some of the remaining EURA debt.
+3. Enter the amount of collateral you want to remove and the token you want to receive in your wallet.
+4. Enter the amount of debt token from your wallet balance you want to use to repay your debt.
+5. Click on the bottom right button to send your transaction. You can also `simulate` the transaction before confirming it.
 
 ![Repay and withdraw](/.gitbook/assets/repay2.png)
 
 {% hint style="info" %}
 A summary of the changes on your vault and wallet is displayed on the right. You can access all the steps of the transaction by clicking on the `Transaction Details` dropdown.
 {% endhint %}
-
-## Transfer debt between two positions
-
-Angle Borrowing module enables you to transfer your stablecoin debt between two of your vaults on the same chain but with potentially different collateral assets.
-
-If one of your vault has a health factor of 1.05 (and is therefore close from liquidation), and if the stablecoin of the vault is EURA, you may want to transfer the EURA debt of this vault to that of another vault you control which has a higher health factor.
-
-This operation does not involve any collateral transfer and is very efficient gas-wise: it's thus a way to cheaply avoid liquidations.
-
-Here are the steps to transfer debt between two vaults:
-
-1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow)
-2. Click on the `Transfer` button on the vault for which you want to increase the stablecoin debt
-3. Pick the vault from which you want to take debt: the vault you select at this step is the vault which debt is going to be decreased
-4. Enter the amount of stablecoin debt you want to transfer to your vault
-5. Click on the bottom right button to send your transaction. You should see a summary of the evolution of the health factors of the two concerned vaults before launching the transaction.
-
-![Transfer Debt](/.gitbook/assets/transfer-debt-screen.png)
 
 ## Monitoring your positions
 

@@ -14,9 +14,9 @@ coverY: 0
 | Borrowing Module - Polygon                                           | ✅   | ❌   |
 | Borrowing Module - Optimism                                          | ✅   | ❌   |
 | Borrowing Module - Arbitrum                                          | ✅   | ❌   |
-| Flash Loans                                                          | ✅   | ❌   |
+| Flash Loans                                                          | ✅   | ✅   |
 | [Bridge Setup](other/cross-chain.md#bridge-solutions) with LayerZero | ✅   | ✅   |
-| [Lending Algorithmic Market Operation](other/amo.md)                 | ❌   | ✅   |
+| [Morpho Lending Algorithmic Market Operation](other/amo.md)          | ❌   | ✅   |
 
 [Angle Analytics](https://analytics.angle.money) details in real-time how each module is calibered within each stablecoin.
 

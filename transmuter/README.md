@@ -60,3 +60,9 @@ Transmuter has been deployed:
 
 - for EURA on Ethereum at [this address](https://etherscan.io/address/0x00253582b2a3FE112feEC532221d9708c64cEFAb)
 - for USDA on Ethereum at [this address](https://etherscan.io/address/0x222222fD79264BBE280b4986F6FEfBC3524d0137)
+
+## Frontends
+
+Angle Transmuter system has been integrated by various DEX aggregators including 1inch, Odos and Paraswap. Under the hood when using these, you may be minting or burning Angle stablecoins through the Transmuter mechanism.
+
+There is no frontend available for the redemption feature of the Transmuter.
