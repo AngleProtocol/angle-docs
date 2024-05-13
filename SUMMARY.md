@@ -59,10 +59,4 @@
 
 ## Merkl
 
-- [🥨 Merkl Reward Mechanism](merkl/introduction.md)
-- [💰 Create a campaign on Merkl](merkl/incentivizor-guide.md)
-- [📒 Integrate Merkl in your App](merkl/integration-guide.md)
-- [🌊 Provide liquidity and claim](merkl/lp-guide.md)
-- [⛓ Supported Chains and AMMs](merkl/supported-chains-amms.md)
-- [🗒️ Smart Contracts Addresses](merkl/smart-contracts.md)
-- [🖋 Merkl Terms & Conditions](merkl/incentivizor-tc.md)
+- [🥨 Merkl](merkl/introduction.md)
