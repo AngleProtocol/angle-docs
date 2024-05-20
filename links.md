@@ -11,7 +11,6 @@ coverY: 0
 - 📡 [Website](https://angle.money)
 - 📐 [Angle App](https://app.angle.money/)
 - 📊 [Analytics](https://analytics.angle.money)
-- 🥨 [Merkl App](https://merkl.angle.money/)
 
 ## Governance
 
