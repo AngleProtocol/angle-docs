@@ -46,15 +46,11 @@ Till April 2024, ANGLE emissions were ran through a gauge system managed from a 
 
 This Treasury can be used to build protocol reserves through different incentives and to increase incentives through specific rewards programs.
 
-ANGLE tokens from the DAO Treasury are stored on the Timelock contract on mainnet.
-
-2% of these funds were however put in a [multisig](https://etherscan.io/address/0xe02f8e39b8cfa7d3b62307e46077669010883459) controlled by the guardian multisig signer (called the `AngleMaster`) to get more flexibility when it comes to implementing liquidity programs. This multisig is a 2/3 Gnosis multisig controlled by the 3 co-founders of the protocol.
+ANGLE tokens from the DAO Treasury are stored between the emergency multisig and the Timelock contract on mainnet.
 
 ### Grants and Partnerships
 
-12% of the initial ANGLE are held by Angle Labs in a multi-sig. These tokens are available for distribution to the Community as grants or bug bounties, to strategic partners like exchanges for listing, but also to the most active and helpful community members as well as to advisors helping the protocol grow.
-
-Tokens from this pocket are stored in the `AngleMaster` multisig.
+12% of the initial ANGLE are held by Angle Labs [in a multi-sig](https://etherscan.io/address/0xe02F8E39b8cFA7d3b62307E46077669010883459), referred to as the `AngleMaster` multisig. These tokens are available for distribution to the Community as grants or bug bounties, to strategic partners like exchanges for listing, but also to the most active and helpful community members as well as to advisors helping the protocol grow.
 
 ### Angle Labs team and early backers
 

@@ -23,7 +23,6 @@ In particular, it can make the following changes:
 - Grant/revoke roles
 - Deploy new stablecoins
 - Deploy/revoke collateral types across the different modules of the protocol
-- Vote for [gauge rewards weights](veANGLE/gauges.md)
 - Upgrade oracles and other contracts throughout the system
 - Deploy the surplus of the protocol
 - Launch new Direct deposit modules
