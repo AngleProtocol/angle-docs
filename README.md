@@ -76,12 +76,6 @@ The protocol's smart contracts have undergone several audits by Chainsecurity, S
 
 If you're writing an article, creating designs and animations about Angle, check out this [assets page](https://anglemoney.notion.site/Angle-Media-Assets-be211b3e9d7d4fb9965048825c88f66c?pvs=4) with all the visual elements about the Angle brand, including logos, icons and images.
 
-## 📱 Side Products
-
-Some products developed for the Angle Protocol have been released as standalone products so that anyone can take advantage of them.
-
-This is notably the case of [🥨 Merkl](merkl/introduction.md), an incentive framework for AMMs with concentrated liquidity (like Uniswap V3) ran by Angle Labs.
-
 ## ✏️ [Contributing to this doc](https://github.com/AngleProtocol/angle-docs)
 
 This documentation portal is maintained by Angle Labs, Inc. It is built to be the up-to-date source of truth for Angle Protocol production contracts and for Angle Labs products. If there is anything unclear or out of date, please [submit a pull request](https://github.com/AngleProtocol/angle-docs) to the `angle-docs` repository.
