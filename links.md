@@ -79,10 +79,12 @@ coverY: 0
 
 ### DEX
 
+- [Arrakis ANGLE - ETH (1%)](https://dashboard.arrakis.finance/?network=ethereum&vault=0xe668199a86f7eb211c27cba8a809d038e615e8cd)
+- [Arrakis ANGLE - ETH (1%) (Polygon)](https://dashboard.arrakis.finance/?network=polygon&vault=0x14c773ef338c5A46aF2316A5CD00A84ABDa3265e)
+
 #### On Ethereum
 
 - [Uniswap V3 EURA - USDA (0.05%)](https://etherscan.io/address/0x580EE6b001348FA0DeB675F4D55259C96c4a3A31)
-- [Arrakis ANGLE - ETH (1%)](https://dashboard.arrakis.finance/?network=ethereum&vault=0xcd80b6713387e02cdd0d77d60f09fd0589ff212c)
 - [Uniswap V3 EURA - USDC (0.01%)](https://info.uniswap.org/#/pools/0x735a26a57a0a0069dfabd41595a970faf5e1ee8b)
 - [Uniswap V3 EURA - ETH (0.05%)](https://info.uniswap.org/#/pools/0x8db1b906d47dfc1d84a87fc49bd0522e285b98b9)
 - [Uniswap V3 ANGLE - ETH (1%)](https://info.uniswap.org/#/pools/0x51c2841333fbbab53b7c2c442cc265bf16430d6d)
