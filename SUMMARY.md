@@ -45,11 +45,10 @@
 
 ## USER GUIDES
 
-* [👟 First steps](user-guides/first-steps.md)
+* [👟 First steps and settings](user-guides/first-steps.md)
 * [🛒 Buy Angle stablecoins](user-guides/buy-angle-stablecoins.md)
 * [🔄 Swap crypto to Angle stablecoins](user-guides/swap-crypto-to-angle-stablecoins.md)
 * [💰 Earn yield on your stablecoins](user-guides/earn-yield-on-your-stablecoins/README.md)
-  * [❓ Estimate your potential earnings](user-guides/earn-yield-on-your-stablecoins/estimate-your-potential-earnings.md)
   * [💵 Earn a Dollar yield](user-guides/earn-yield-on-your-stablecoins/earn-a-dollar-yield.md)
   * [💶 Earn a Euro yield](user-guides/earn-yield-on-your-stablecoins/earn-a-euro-yield.md)
   * [🔙 Withdraw funds](user-guides/earn-yield-on-your-stablecoins/withdraw-funds.md)

@@ -4,7 +4,9 @@ description: Borrow USDA stablecoins with collaterals
 
 # 🏦 Borrow USDA
 
-USDA borrowing occurs on the [Morpho app](https://app.morpho.org/borrow?network=mainnet\&morphoPrice=0.2) (whereas EURA borrowing is managed by the Angle Protocol and takes place on the Angle app).
+<figure><img src="../.gitbook/assets/Capture d’écran 2024-09-26 à 14.35.35.png" alt=""><figcaption><p>The Morpho app</p></figcaption></figure>
+
+USDA borrowing occurs on the [Morpho protocol](https://app.morpho.org/borrow?network=mainnet\&morphoPrice=0.2) (whereas EURA borrowing is managed by Angle Protocol and takes place on the Angle app).
 
 On Morpho, it’s possible to get USDA loans with various collaterals, especially liquid staking tokens (LSTs) and liquid restaking tokens (LRTs) such as wstETH, Re7WETH, Re7USDT, ezETH, pufETH, PT-USDe, PT-weETH, PT-ezETH, and more.
 

@@ -14,11 +14,11 @@ You can get ANGLE tokens by buying them from any other crypto-asset on [this pag
 
 ANGLE tokens can be locked on the [Lock page](https://app.angle.money/lock).
 
-![ANGLE locking screen](../.gitbook/assets/angle-lock.png)
+<figure><img src="../.gitbook/assets/‎Lock user guide.‎001.jpeg" alt=""><figcaption></figcaption></figure>
 
 ## Creating a lock
 
-To create a lock, head over to the bottom right corner of the screen. There, an expiration date and quantity of tokens need to be specified.
+To create a lock, enter an amount of tokens to be locked and an expiration date.
 
 The more ANGLE you lock and the longer you lock them, the bigger your veANGLE balance will be, and hence the bigger your influence in the Angle protocol.
 
@@ -32,8 +32,6 @@ After executing this, you'll be owning veANGLE tokens. Your veANGLE balance will
 {% hint style="info" %}
 You will only be able to create a lock with your address once. Once an address initiates a lock, it can only increase the lock expiration, or add tokens to the lock.
 {% endhint %}
-
-![Locking veANGLE](../.gitbook/assets/locking-angle.png)
 
 ## Increasing the lock or adding tokens
 

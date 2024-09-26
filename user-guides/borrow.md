@@ -4,6 +4,12 @@ description: Borrow EURA stablecoins with collaterals
 
 # 🏦 Borrow EURA
 
+{% hint style="info" %}
+**Please note that the design of the Angle app changed in September 2024. However, the EURA borrowing experience and the steps to borrow EURA or repay a debt remain unchanged.**
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/‎borrow user guide.‎001.jpeg" alt=""><figcaption></figcaption></figure>
+
 The [Angle Borrowing module](../borrowing-module/) lets you borrow Angle stablecoins like EURA from crypto collateral **on different chains**.
 
 Essentially, you open a vault with a specific token as collateral, and can get a stablecoin loan in exchange. If the value of the vault collateral goes below a certain amount compared to the value of your loan, you can get [liquidated](../borrowing-module/vaults/liquidations.md).
@@ -26,7 +32,7 @@ You can deposit any token you want in the app, and it will be swapped to the col
 
 Here are the steps to follow to deposit collateral and borrow stablecoins:
 
-1. Go to the Borrow section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault
+1. Go to the `Borrow` section of the [app](https://app.angle.money/borrow) and choose the network on which you want to open your vault
 2. Select the type of vault to create, defined by the collateral and stablecoin token and click on borrow
 3. Then, select the token and amount you want to deposit in the first input. If the token is different from the vault collateral, the former will automatically be swapped to the latter
 4. Enter the amount of stablecoins you want to borrow in the second input

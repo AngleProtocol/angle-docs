@@ -4,7 +4,7 @@ description: Bridge USDA, EURA or ANGLE tokens across 12+ chains
 
 # 🌉 Bridge Angle stablecoins
 
-Angle App leverages the protocol's [cross-chain bridge setup](https://docs.angle.money/side-modules/cross-chain) built on LayerZero to enable bridging its stablecoins and ANGLE tokens between 12+ EVM-compatible networks such as Ethereum, Optimism, Arbitrum, Base, BNB, Polygon, Avalanche, Celo and more.
+The Angle app leverages the protocol's [cross-chain bridge setup](https://docs.angle.money/side-modules/cross-chain) built on LayerZero to enable bridging its stablecoins and ANGLE tokens between 12+ EVM-compatible networks such as Ethereum, Optimism, Arbitrum, Base, BNB, Polygon, Avalanche, Celo and more.
 
 {% hint style="info" %}
 Before bridging assets, make sure you having enough funds on the origin chain to pay for transaction fees for both the origin and the destination chains.
@@ -14,7 +14,7 @@ For example, if you bridge tokens from Polygon to Ethereum, you will need MATIC 
 If you do not have enough funds, the transaction might revert or you could get an `internal JSON RPC` error displayed on the Angle app.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/‎User guide 2.‎007.jpeg" alt=""><figcaption><p>Bridge Angle stablecoins from one chain to another</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/‎bridge user guide.‎001.jpeg" alt=""><figcaption><p>Bridge Angle stablecoins from one chain to another</p></figcaption></figure>
 
 1. Open the Angle and connect your wallet
 2. Go to the [`Bridge`](https://app.angle.money/bridge/) section
