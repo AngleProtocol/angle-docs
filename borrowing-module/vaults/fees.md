@@ -26,7 +26,7 @@ Collecting these fees creates revenue for the protocol, which serves multiple pu
 
 - Accumulating reserves for riskier assets in case positions get under-collateralized
 - Helping maintain peg of stablecoins in extreme market conditions, by incentivizing or disincentivizing borrowing
-- Accumulating surplus for veANGLE holders and the whole ANGLE ecosystem
+- Accumulating surplus for the whole ANGLE ecosystem
 
 {% hint style="info" %}
 The state of the fees taken for each type of vault can be checked directly on the [Analytics](https://analytics.angle.money) of the protocol.

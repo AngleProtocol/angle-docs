@@ -14,7 +14,7 @@ Liquidations in this Borrowing module are designed to be the most borrower frien
 
 - Vaults with a health factor below 1 risk getting liquidated
 - Liquidated vaults can lose part or all of their collateral. Owners of such vaults however get to keep the stablecoins they borrowed
-- Angle comes with its unique set of liquidation features such as a variable liquidation amount, a dynamic discount for liquidators based on Dutch auctions, and a potential discount booster for veANGLE holders which overall make this system more borrower friendly than alternatives.
+- Angle comes with its unique set of liquidation features such as a variable liquidation amount and a dynamic discount for liquidators based on Dutch auctions which overall make this system more borrower friendly than alternatives.
 
 ## How liquidations work
 
@@ -93,22 +93,6 @@ With `a` as the liquidation boost, a factor determining the slope of the functio
 This opens some interesting dynamics for liquidators. What happens for a vault that can get liquidated is **a Dutch Auction on the discount** between liquidators. The first liquidator taking action to liquidate is the one which is willing to accept the smallest discount for the collateral upon repaying stablecoins.
 
 This ensures that liquidators are given just what they need to make a profit, unlike in other protocols where they can make instantaneous 13% discount. This is part of what makes the liquidation process far more borrower friendly as liquidated vaults lose the smallest amount possible from their vault.
-
-### Liquidation Booster
-
-By being stakeholders in the protocol, liquidators holding veANGLE could get a higher discount than others depending on their veANGLE balance.
-
-This would give utility to veANGLE, as well as incentivize veANGLE to liquidate before others, further aligning the interests of veANGLE holders with the protocol.
-
-$$
-a = \texttt{baseBoost} \times f(\texttt{veANGLE balance})
-$$
-
-Where `f` is a piecewise linear increasing function of the veANGLE balance, capped by a certain amount.
-
-{% hint style="info" %}
-This feature has never been activated so far.
-{% endhint %}
 
 ### No Capital Requirements
 

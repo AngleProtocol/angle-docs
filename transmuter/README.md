@@ -46,7 +46,7 @@ Built in the aftermath of the USDC depeg as an improvement over price stability 
 
 While the main functionalities of the Transmuter system can work autonomously with no governance involved, Transmuter is not a governance-free system.
 
-The protocol governance (and so veANGLE holders) must be involved to add new collateral assets, to adjust the fee parameters that determine the target and maximum exposures to each asset, to change the different oracle parameters, to modify the settings of the redemption curve, or to simply pause minting or burning from an asset.
+The protocol governance must be involved to add new collateral assets, to adjust the fee parameters that determine the target and maximum exposures to each asset, to change the different oracle parameters, to modify the settings of the redemption curve, or to simply pause minting or burning from an asset.
 
 Governance also has the means to update Transmuter's global accounting and affect the system's collateralization ratio to potentially take into account a profit or a loss made in some other place of the protocol.
 

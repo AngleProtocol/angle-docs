@@ -60,7 +60,7 @@ Globally, each stablecoin of the protocol combines different modules/facilitator
 
 ### 🗳 Governance
 
-Angle is a decentralized protocol governed by [a DAO](governance/angle-dao.md) encapsulating all holders of a governance token called veANGLE. Holders of the token have voting powers to propose and make changes to the underlying code of the Angle Protocol.
+Angle is a decentralized protocol governed by [a DAO](governance/angle-dao.md) encapsulating all holders of a governance token called ANGLE. Holders of the token have voting powers to propose and make changes to the underlying code of the Angle Protocol.
 
 ## ⚒️ [Developers Doc](https://developers.angle.money)
 
