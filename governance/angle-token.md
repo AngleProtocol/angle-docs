@@ -16,7 +16,7 @@ The only address with minting capability is the Angle Governor Multisig.
 
 The ANGLE token is the backbone of the Angle Protocol allowing it to be governed in a fully decentralized way.
 
-The vision for the ANGLE distribution is that it needs to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution is broken down as follows:
+The vision for the ANGLE distribution was that it needed to be multi-year, extended, and sustainable until the protocol reaches ubiquity. With this in mind, the token distribution is broken down as follows:
 
 ![ANGLE Distribution](../.gitbook/assets/angle-token-allocation.jpg)
 
@@ -28,16 +28,12 @@ The amount of ANGLE that can be distributed is divided by 1.5^(1/52) = 1.007827 
 
 Since April 2024, ANGLE token emissions are controlled by a liquidity committee composed so far of the members of [Angle guardian multisig](./guardian.md). In practice this liquidity committee issues far less (up to 90%) ANGLE token than planned in the initial emission schedule of the protocol, and the unused ANGLE tokens could be burnt later on.
 
-The responsibility of the liquidity committee is to ensure the optimal use of ANGLE incentives for the growth of Angle stablecoins and community. veANGLE holders can vote on amending and adjusting the composition of Angle liquidity committee.
+The responsibility of the liquidity committee is to ensure the optimal use of ANGLE incentives for the growth of Angle stablecoins and community. ANGLE holders can vote on amending and adjusting the composition of Angle liquidity committee.
 
 ![ANGLE planned issuance schedule](../.gitbook/assets/liquidity-incentives-distribution.jpg)
 
 {% hint style="info" %}
 [This spreasheet](https://docs.google.com/spreadsheets/d/1fxTBGEnOnzvpdBaeiDzy1j-g5-s75IhGPU8aOdu786g/edit?usp=sharing) summarizes all liquidity emissions by the protocol and its liquidity committee and tracks the difference between the planned emission schedule and the smaller amount of tokens that's actually been issued since launch in 2021.
-{% endhint %}
-
-{% hint style="info" %}
-Till April 2024, ANGLE emissions were ran through a gauge system managed from a contract called the [`AngleDistributor` contract](https://etherscan.io/address/0x4f91F01cE8ec07c9B1f6a82c18811848254917Ab).
 {% endhint %}
 
 ### DAO Treasury
@@ -68,4 +64,5 @@ In order to reduce the exposure of the funds potentially at risk in this contrac
 - January 2022: ANGLE's tokenomics was upgraded with the ability to lock ANGLE into veANGLE, similarly to what Curve does with CRV/veCRV. More info about veANGLE can be found [here](veANGLE/).
 - October 2022: [it was voted](https://snapshot.org/#/anglegovernance.eth/proposal/0x478e838b67f2dffcff6160d4c8adc9622d67db985c981e4cad45c031e284fd63) to reduce ANGLE inflation by 20% with respect to the planned schedule. The week over week decrease factor of 1.007827 remains the same though.
 - March 2023: ANGLE emissions were paused during this period and resumed late April 2023.
-- April 2024: Angle gauge system was deprecated and ANGLE emissions are now ran by a liquidity committee in charge of optimizing the resource allocation of the protocol.
+- April 2024: [Angle gauge system](https://etherscan.io/address/0x4f91F01cE8ec07c9B1f6a82c18811848254917Ab) was deprecated and ANGLE emissions are now ran by a liquidity committee in charge of optimizing the resource allocation of the protocol.
+- February 2025: The veANGLE system was deprecated and ANGLE became again the sole governance token of the protocol.
